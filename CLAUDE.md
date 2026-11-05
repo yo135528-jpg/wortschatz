@@ -45,11 +45,12 @@ Cards are optimized for LEARNING, not translation. One thing to recall per card.
 ## Fields of every note
 - `meaningTr`: concise Turkish meaning. FIRST the meaning that fits the book context. Max ~2 short alternatives, separated by commas. Use parentheses for the object: `(bir şeye) katılmak`.
 - `hintTr`: short Turkish hint shown on the tr2de front so there is exactly ONE correct German answer. Usually the word type plus what is special: `"isim"`, `"fiil, dönüşlü + edat"`, `"fiil, ayrılabilir"`, `"sıfat + edat"`, `"isim + fiil kalıbı"`. If two notes share a Turkish meaning (e.g. "karar vermek" = `sich entscheiden` and `eine Entscheidung treffen`), the hint and cloze MUST tell them apart.
-- `cloze`: German gap sentence for the tr2de front, `___` for each missing part. Rules:
-  - The cloze must not contain the answer (the validator checks the lemma).
-  - For nouns gap the article too (`"___ ___ fiel uns schwer."`), otherwise the article is given away (the validator checks this).
-  - For separable verbs, one gap per part (`"Wir ___ an dem Kurs ___."`).
-  - Prefer a sentence different from the example on the back.
+- `cloze`: German gap sentence for tr2de. Write each answer in square brackets, one bracket per word: `"Wir [nehmen] an dem Kurs [teil]."`. The front shows `Wir ___ an dem Kurs ___.`, the back shows the SAME sentence solved with the answers highlighted. Never write `___` yourself (the validator rejects it). Rules:
+  - The text outside the brackets must not contain the answer (the validator checks the lemma).
+  - For nouns put the article in brackets too (`"[Die] [Entscheidung] fiel uns schwer."`), otherwise the article is given away (the validator checks this).
+  - For separable verbs, one bracket per part (`"Wir [nehmen] an dem Kurs [teil]."`).
+  - Prefer a sentence different from the examples, so the back adds context instead of repeating it.
+- `clozeTr`: natural Turkish translation of the SOLVED cloze sentence (required when there is a cloze), shown under it on the tr2de back.
 - `examples` (1–3):
   - If the user gives a book sentence: use it with `"fromBook": true` (fix obvious typos only).
   - Add ONE new natural B2-level sentence (`"fromBook": false`) that shows the Rektion/typical use.
@@ -63,7 +64,7 @@ Cards are optimized for LEARNING, not translation. One thing to recall per card.
 
 ## What the card faces show (rendered by the app — do not duplicate)
 - de2tr front: headword with article/plural/Rektion/verb forms. Back: Turkish meaning + examples (with `tr`) + grammar + note.
-- tr2de front: `hintTr` + `meaningTr` + `cloze` (no other German). Back: full German headword + examples (with `tr`) + grammar + note.
+- tr2de front: `hintTr` + `meaningTr` + `cloze` (no other German). Back: full German headword + solved cloze with `clozeTr` + examples (with `tr`) + grammar + note.
 - `source`, `tags`, `id` are NOT shown to the user (only used for search and bookkeeping).
 
 ## Quality checklist before finishing

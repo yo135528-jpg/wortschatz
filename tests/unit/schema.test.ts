@@ -26,8 +26,23 @@ describe('cards.json', () => {
   });
 
   it('rejects a noun cloze that reveals the article', () => {
-    const leaky = { ...seed[0], cloze: 'Die ___ fiel uns schwer.' };
+    const leaky = { ...seed[0], cloze: 'Die [Entscheidung] fiel uns schwer.' };
     expect(() => parseNotes([leaky])).toThrow(/reveals the article/);
+  });
+
+  it('rejects the old "___" gap syntax', () => {
+    const old = { ...seed[0], cloze: '___ ___ fiel uns schwer.' };
+    expect(() => parseNotes([old])).toThrow(/[answer]/);
+  });
+
+  it('rejects an unbalanced bracket in the cloze', () => {
+    const broken = { ...seed[0], cloze: '[Die] [Entscheidung fiel uns schwer.' };
+    expect(() => parseNotes([broken])).toThrow(/unbalanced/);
+  });
+
+  it('requires a Turkish translation for the cloze', () => {
+    const { clozeTr: _clozeTr, ...withoutTranslation } = seed[0];
+    expect(() => parseNotes([withoutTranslation])).toThrow(/clozeTr/);
   });
 
   it('requires a cloze for tr2de cards', () => {

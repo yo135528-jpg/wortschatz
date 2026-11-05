@@ -7,7 +7,8 @@
     "rektion": [],
     "meaningTr": "resimli bulmaca, rebus",
     "hintTr": "isim, birleşik",
-    "cloze": "Die Kinder haben ___ ___ in der Zeitung schnell gelöst.",
+    "cloze": "Die Kinder haben [das] [Bilderrätsel] in der Zeitung schnell gelöst.",
+    "clozeTr": "Çocuklar gazetedeki resimli bulmacayı çabucak çözdü.",
     "examples": [
       {
         "de": "Am Wochenende löst mein Opa gern Bilderrätsel.",
@@ -29,7 +30,8 @@
     "rektion": [],
     "meaningTr": "(kağıt) yaprak, (ağaç) yaprak",
     "hintTr": "isim, sayılabilir (tek parça)",
-    "cloze": "Kannst du mir bitte ___ ___ Papier geben?",
+    "cloze": "Kannst du mir bitte [ein] [Blatt] Papier geben?",
+    "clozeTr": "Bana bir yaprak kağıt verebilir misin lütfen?",
     "examples": [
       {
         "de": "Im Herbst fallen die Blätter von den Bäumen.",
@@ -52,7 +54,8 @@
     "rektion": [],
     "meaningTr": "kağıt",
     "hintTr": "isim, madde adı",
-    "cloze": "Der Drucker hat kein ___ mehr.",
+    "cloze": "Der Drucker hat kein [Papier] mehr.",
+    "clozeTr": "Yazıcıda kağıt kalmadı.",
     "examples": [
       {
         "de": "Bitte vergiss nicht, deine Papiere zum Termin mitzubringen.",
@@ -74,7 +77,8 @@
     "rektion": [],
     "meaningTr": "köken, menşe",
     "hintTr": "isim",
-    "cloze": "___ ___ vieler deutscher Wörter ist lateinisch.",
+    "cloze": "[Die] [Herkunft] vieler deutscher Wörter ist lateinisch.",
+    "clozeTr": "Birçok Almanca kelimenin kökeni Latincedir.",
     "examples": [
       {
         "de": "Bei der Bewerbung darf die Herkunft keine Rolle spielen.",
@@ -96,7 +100,8 @@
     "rektion": [],
     "meaningTr": "faaliyet, iş, uğraş",
     "hintTr": "isim, -keit ile biter",
-    "cloze": "Sie übt ___ ___ als Pflegerin seit zehn Jahren aus.",
+    "cloze": "Sie übt [diese] [Tätigkeit] schon seit zehn Jahren aus.",
+    "clozeTr": "Bu işi on yıldır yapıyor.",
     "examples": [
       {
         "de": "Welche Tätigkeiten gehören zu Ihrem Arbeitsalltag?",
@@ -124,7 +129,8 @@
     "rektion": [],
     "meaningTr": "toplamak, biriktirmek",
     "hintTr": "fiil",
-    "cloze": "Mein Bruder ___ seit seiner Kindheit Briefmarken.",
+    "cloze": "Mein Bruder [sammelt] seit seiner Kindheit Briefmarken.",
+    "clozeTr": "Kardeşim çocukluğundan beri pul biriktiriyor.",
     "examples": [
       {
         "de": "In diesem Job konnte ich viel Erfahrung sammeln.",
@@ -152,7 +158,8 @@
     "rektion": [],
     "meaningTr": "tahmin etmek, sanmak",
     "hintTr": "fiil, ver- ön ekli",
-    "cloze": "Die Polizei ___, dass der Täter ins Ausland geflohen ist.",
+    "cloze": "Die Polizei [vermutet], dass der Täter ins Ausland geflohen ist.",
+    "clozeTr": "Polis, failin yurt dışına kaçtığını tahmin ediyor.",
     "examples": [
       {
         "de": "Ich vermute, dass er heute nicht mehr kommt.",
@@ -180,7 +187,8 @@
     "rektion": [{ "preposition": "über", "case": "Akk" }],
     "meaningTr": "(hakkında) bir şey göstermek/söylemek, ifade vermek",
     "hintTr": "fiil, ayrılabilir + edat",
-    "cloze": "Die Note ___ wenig ___ die echten Fähigkeiten eines Schülers ___.",
+    "cloze": "Die Note [sagt] wenig [über] die echten Fähigkeiten eines Schülers [aus].",
+    "clozeTr": "Not, bir öğrencinin gerçek yetenekleri hakkında pek bir şey söylemez.",
     "examples": [
       {
         "de": "Der Zeuge hat vor Gericht gegen den Angeklagten ausgesagt.",
@@ -202,7 +210,8 @@
     "rektion": [],
     "meaningTr": "pizzacı (restoran)",
     "hintTr": "isim",
-    "cloze": "Am Freitag essen wir in ___ ___ um die Ecke.",
+    "cloze": "Am Freitag essen wir in [der] [Pizzeria] um die Ecke.",
+    "clozeTr": "Cuma günü köşedeki pizzacıda yemek yiyoruz.",
     "examples": [
       {
         "de": "In unserer Straße hat eine neue Pizzeria eröffnet.",
@@ -224,7 +233,8 @@
     "rektion": [],
     "meaningTr": "deniz biyoloğu",
     "hintTr": "isim, meslek (erkek)",
-    "cloze": "___ ___ untersucht das Leben im Korallenriff.",
+    "cloze": "[Der] [Meeresbiologe] untersucht das Leben im Korallenriff.",
+    "clozeTr": "Deniz biyoloğu mercan resifindeki yaşamı inceliyor.",
     "examples": [
       {
         "de": "Im Interview hat ein Meeresbiologe über den Klimawandel gesprochen.",
@@ -247,7 +257,8 @@
     "rektion": [],
     "meaningTr": "anket",
     "hintTr": "isim",
-    "cloze": "Laut ___ ___ lesen junge Leute immer weniger Zeitung.",
+    "cloze": "Laut [einer] [Umfrage] lesen junge Leute immer weniger Zeitung.",
+    "clozeTr": "Bir ankete göre gençler giderek daha az gazete okuyor.",
     "examples": [
       {
         "de": "Blitz-Umfrage im Kurs",
@@ -274,7 +285,8 @@
     "rektion": [],
     "meaningTr": "düzenli (olarak)",
     "hintTr": "sıfat/zarf",
-    "cloze": "Du solltest ___ Sport treiben.",
+    "cloze": "Du solltest [regelmäßig] Sport treiben.",
+    "clozeTr": "Düzenli olarak spor yapmalısın.",
     "examples": [
       {
         "de": "Wie viele Ihrer Freunde treffen Sie regelmäßig?",
@@ -301,7 +313,8 @@
     "rektion": [],
     "meaningTr": "(sosyal) ağ",
     "hintTr": "isim",
-    "cloze": "___ ___ hat inzwischen über eine Milliarde Nutzer.",
+    "cloze": "[Das] [Netzwerk] hat inzwischen über eine Milliarde Nutzer.",
+    "clozeTr": "Bu ağın artık bir milyardan fazla kullanıcısı var.",
     "examples": [
       {
         "de": "Wie viele Freunde haben Sie in sozialen Netzwerken?",
@@ -334,7 +347,8 @@
     "rektion": [{ "preposition": "zwischen", "case": "Dat" }],
     "meaningTr": "ayırt etmek, ayrım yapmak",
     "hintTr": "fiil + edat",
-    "cloze": "Kleine Kinder können oft noch nicht ___ Spiel und Realität ___.",
+    "cloze": "Kleine Kinder können oft noch nicht [zwischen] Spiel und Realität [unterscheiden].",
+    "clozeTr": "Küçük çocuklar çoğu zaman oyunla gerçeği henüz ayırt edemez.",
     "examples": [
       {
         "de": "Im Deutschen unterscheidet man zwischen Bekannten und Freunden.",
@@ -361,7 +375,8 @@
     "rektion": [{ "preposition": "zu", "case": "Dat" }],
     "meaningTr": "ilişki",
     "hintTr": "isim + edat",
-    "cloze": "Ich habe ___ sehr gutes ___ zu meinen Eltern.",
+    "cloze": "Ich habe [ein] sehr gutes [Verhältnis] zu meinen Eltern.",
+    "clozeTr": "Annemle babamla çok iyi bir ilişkim var.",
     "examples": [
       {
         "de": "Zu Freunden hat man ein engeres Verhältnis als zu Bekannten.",
@@ -388,7 +403,8 @@
     "rektion": [],
     "meaningTr": "yakın (ilişki); dar",
     "hintTr": "sıfat",
-    "cloze": "Wir sind seit der Schulzeit ___ befreundet.",
+    "cloze": "Wir sind seit der Schulzeit [eng] befreundet.",
+    "clozeTr": "Okul yıllarından beri yakın arkadaşız.",
     "examples": [
       {
         "de": "Zwar sehen wir uns jetzt nicht mehr so häufig, aber ich bin sicher, dass wir weiter enge Freunde bleiben.",
@@ -421,7 +437,8 @@
     "rektion": [{ "preposition": "auf", "case": "Akk" }],
     "meaningTr": "(birine) güvenmek, bel bağlamak",
     "hintTr": "fiil, dönüşlü + edat",
-    "cloze": "Keine Sorge, du kannst dich immer ___ mich ___.",
+    "cloze": "Keine Sorge, du kannst dich immer [auf] mich [verlassen].",
+    "clozeTr": "Merak etme, bana her zaman güvenebilirsin.",
     "examples": [
       {
         "de": "Auf echte Freunde kann man sich immer verlassen, d. h. man kann mit ihnen „durch dick und dünn gehen“.",
@@ -448,7 +465,8 @@
     "rektion": [],
     "meaningTr": "(biriyle) iyi günde kötü günde birlikte olmak",
     "hintTr": "deyim",
-    "cloze": "Echte Freunde gehen mit dir durch ___ und ___.",
+    "cloze": "Echte Freunde gehen mit dir durch [dick] und [dünn].",
+    "clozeTr": "Gerçek arkadaşlar iyi günde kötü günde seninle olur.",
     "examples": [
       {
         "de": "Auf echte Freunde kann man sich immer verlassen, d. h. man kann mit ihnen „durch dick und dünn gehen“.",
@@ -474,7 +492,8 @@
     "rektion": [],
     "meaningTr": "yani, başka bir deyişle",
     "hintTr": "açıklama ifadesi (kısaltması var)",
-    "cloze": "Ich arbeite Teilzeit, ___ ___ nur vormittags.",
+    "cloze": "Ich arbeite Teilzeit, [das] [heißt] nur vormittags.",
+    "clozeTr": "Yarı zamanlı çalışıyorum, yani sadece öğleden önce.",
     "examples": [
       {
         "de": "Auf echte Freunde kann man sich immer verlassen, d. h. man kann mit ihnen „durch dick und dünn gehen“.",
@@ -507,7 +526,8 @@
     "rektion": [{ "preposition": "als", "case": "Akk" }],
     "meaningTr": "(… olarak) nitelendirmek, adlandırmak",
     "hintTr": "fiil, be- ön ekli + als",
-    "cloze": "Viele ___ ihn ___ den besten Spieler der Welt.",
+    "cloze": "Viele [bezeichnen] ihn [als] den besten Spieler der Welt.",
+    "clozeTr": "Birçokları onu dünyanın en iyi oyuncusu olarak nitelendiriyor.",
     "examples": [
       {
         "de": "In der Schweiz bezeichnet man Freunde als Kollegen.",
@@ -540,7 +560,8 @@
     "rektion": [{ "preposition": "zu", "case": "Dat" }],
     "meaningTr": "(bir şeye) yol açmak",
     "hintTr": "fiil + edat",
-    "cloze": "Zu viel Stress kann ___ Schlafproblemen ___.",
+    "cloze": "Zu viel Stress kann [zu] Schlafproblemen [führen].",
+    "clozeTr": "Fazla stres uyku sorunlarına yol açabilir.",
     "examples": [
       {
         "de": "Dies führt bei Deutschen und Österreichern, die mit diesem Wort nur Arbeitskollegen bezeichnen, manchmal zu Missverständnissen.",
@@ -567,7 +588,8 @@
     "rektion": [],
     "meaningTr": "yanlış anlama, yanlış anlaşılma",
     "hintTr": "isim",
-    "cloze": "Das war nur ___ ___, ich habe es nicht so gemeint.",
+    "cloze": "Das war nur [ein] [Missverständnis], ich habe es nicht so gemeint.",
+    "clozeTr": "Bu sadece bir yanlış anlamaydı, öyle demek istemedim.",
     "examples": [
       {
         "de": "Dies führt bei Deutschen und Österreichern, die mit diesem Wort nur Arbeitskollegen bezeichnen, manchmal zu Missverständnissen.",
@@ -594,7 +616,8 @@
     "rektion": [],
     "meaningTr": "tanıdık",
     "hintTr": "isim (sıfattan türemiş)",
-    "cloze": "Er ist kein richtiger Freund, nur ein ___.",
+    "cloze": "Er ist kein richtiger Freund, nur ein [Bekannter].",
+    "clozeTr": "O gerçek bir arkadaş değil, sadece bir tanıdık.",
     "examples": [
       {
         "de": "Im Deutschen unterscheidet man zwischen Bekannten und Freunden.",
@@ -622,7 +645,8 @@
     "rektion": [],
     "meaningTr": "ifade, söz; beyan",
     "hintTr": "isim",
-    "cloze": "___ ___ des Politikers hat viele Leute geärgert.",
+    "cloze": "[Die] [Aussage] des Politikers hat viele Leute geärgert.",
+    "clozeTr": "Politikacının sözleri birçok insanı kızdırdı.",
     "examples": [
       {
         "de": "Lesen Sie die Aussagen von Leserinnen und Lesern einer Frauenzeitschrift.",
@@ -649,7 +673,8 @@
     "rektion": [],
     "meaningTr": "dergi",
     "hintTr": "isim",
-    "cloze": "Im Wartezimmer lese ich gern ___ ___.",
+    "cloze": "Im Wartezimmer lese ich gern [eine] [Zeitschrift].",
+    "clozeTr": "Bekleme salonunda dergi okumayı severim.",
     "examples": [
       {
         "de": "Lesen Sie die Aussagen von Leserinnen und Lesern einer Frauenzeitschrift.",
@@ -676,7 +701,8 @@
     "rektion": [],
     "meaningTr": "gençlik arkadaşı",
     "hintTr": "isim",
-    "cloze": "Ich kenne ihn, seit ich 15 bin. Er ist ___ ___ von mir.",
+    "cloze": "Ich kenne ihn, seit ich 15 bin. Er ist [ein] [Jugendfreund] von mir.",
+    "clozeTr": "Onu 15 yaşımdan beri tanıyorum. O benim bir gençlik arkadaşım.",
     "examples": [
       {
         "de": "Helmut ist so was wie ein Jugendfreund.",
@@ -703,7 +729,8 @@
     "rektion": [],
     "meaningTr": "okul arkadaşı",
     "hintTr": "isim",
-    "cloze": "Mit ___ ___ aus der Grundschule habe ich noch Kontakt.",
+    "cloze": "Mit [meinem] [Schulfreund] aus der Grundschule habe ich noch Kontakt.",
+    "clozeTr": "İlkokuldaki okul arkadaşımla hâlâ görüşüyorum.",
     "examples": [
       {
         "de": "Ich habe nicht nur einen guten Schulfreund, sondern gleich sechs.",
@@ -730,7 +757,8 @@
     "rektion": [],
     "meaningTr": "tatilde tanışılan kişi",
     "hintTr": "isim",
-    "cloze": "Sie ist ___ ___ aus Italien, wir schreiben uns ab und zu.",
+    "cloze": "Sie ist [eine] [Urlaubsbekanntschaft] aus Italien, wir schreiben uns ab und zu.",
+    "clozeTr": "O, İtalya'da tatilde tanıştığım biri; ara sıra yazışıyoruz.",
     "examples": [
       {
         "de": "Gérard ist das, was man eine Urlaubsbekanntschaft nennt.",
@@ -763,7 +791,8 @@
     "rektion": [],
     "meaningTr": "(birine bir ad) demek, adlandırmak; söylemek",
     "hintTr": "fiil (karışık çekim)",
-    "cloze": "Eigentlich heiße ich Thomas, aber alle ___ mich Tom.",
+    "cloze": "Eigentlich heiße ich Thomas, aber alle [nennen] mich Tom.",
+    "clozeTr": "Aslında adım Thomas ama herkes bana Tom diyor.",
     "examples": [
       {
         "de": "Ich weiß nicht, wie ich Gisela nennen soll.",
@@ -790,7 +819,8 @@
     "rektion": [],
     "meaningTr": "kapı komşusu olmak",
     "hintTr": "kalıp",
-    "cloze": "Wir wohnen seit Jahren ___ ___ ___, aber wir kennen uns kaum.",
+    "cloze": "Wir wohnen seit Jahren [Tür] [an] [Tür], aber wir kennen uns kaum.",
+    "clozeTr": "Yıllardır kapı komşuyuz ama birbirimizi pek tanımıyoruz.",
     "examples": [
       {
         "de": "Wir haben ein paar Jahre Tür an Tür gewohnt und damals echt viel zusammen gemacht.",
@@ -816,7 +846,8 @@
     "rektion": [],
     "meaningTr": "o zamanlar",
     "hintTr": "zarf (geçmiş)",
-    "cloze": "Als Kind habe ich in Izmir gewohnt. ___ gab es noch kein Internet.",
+    "cloze": "Als Kind habe ich in Izmir gewohnt. [Damals] gab es noch kein Internet.",
+    "clozeTr": "Çocukken İzmir'de yaşadım. O zamanlar henüz internet yoktu.",
     "examples": [
       {
         "de": "Wir haben ein paar Jahre Tür an Tür gewohnt und damals echt viel zusammen gemacht.",
@@ -842,7 +873,8 @@
     "rektion": [],
     "meaningTr": "hem … hem (de)",
     "hintTr": "iki parçalı bağlaç",
-    "cloze": "Er spricht ___ Englisch ___ ___ Französisch.",
+    "cloze": "Er spricht [sowohl] Englisch [als] [auch] Französisch.",
+    "clozeTr": "Hem İngilizce hem de Fransızca konuşuyor.",
     "examples": [
       {
         "de": "Wir haben sowohl in derselben Firma gearbeitet, als auch im selben Chor gesungen.",
@@ -869,7 +901,8 @@
     "rektion": [],
     "meaningTr": "aynı (kendisi)",
     "hintTr": "belirteç (artikel gibi çekimlenir)",
-    "cloze": "Sie trägt heute ___ Kleid wie gestern.",
+    "cloze": "Sie trägt heute [dasselbe] Kleid wie gestern.",
+    "clozeTr": "Bugün dünkü elbisenin aynısını giyiyor.",
     "examples": [
       {
         "de": "Wir haben sowohl in derselben Firma gearbeitet, als auch im selben Chor gesungen.",
@@ -902,7 +935,8 @@
     "rektion": [],
     "meaningTr": "koro",
     "hintTr": "isim",
-    "cloze": "Meine Mutter singt seit 20 Jahren in ___ ___.",
+    "cloze": "Meine Mutter singt seit 20 Jahren in [einem] [Chor].",
+    "clozeTr": "Annem 20 yıldır bir koroda şarkı söylüyor.",
     "examples": [
       {
         "de": "Wir haben sowohl in derselben Firma gearbeitet, als auch im selben Chor gesungen.",
@@ -929,7 +963,8 @@
     "rektion": [],
     "meaningTr": "farklı, çeşitli",
     "hintTr": "sıfat (ver- ile başlar)",
-    "cloze": "Das Kleid gibt es in fünf ___ Farben.",
+    "cloze": "Das Kleid gibt es in fünf [verschiedenen] Farben.",
+    "clozeTr": "Elbisenin beş farklı rengi var.",
     "examples": [
       {
         "de": "Heute wohnen wir in verschiedenen Städten und sehen uns nur noch ab und zu.",
@@ -955,7 +990,8 @@
     "rektion": [],
     "meaningTr": "ara sıra",
     "hintTr": "kalıp (zarf)",
-    "cloze": "Wir sehen uns nur noch ___ ___ ___.",
+    "cloze": "Wir sehen uns nur noch [ab] [und] [zu].",
+    "clozeTr": "Artık sadece ara sıra görüşüyoruz.",
     "examples": [
       {
         "de": "Heute wohnen wir in verschiedenen Städten und sehen uns nur noch ab und zu.",
@@ -988,7 +1024,8 @@
     "rektion": [],
     "meaningTr": "(karşılıklı) paylaşmak, değiş tokuş etmek; değiştirmek",
     "hintTr": "fiil, ayrılabilir",
-    "cloze": "Nach dem Meeting ___ wir unsere Telefonnummern ___.",
+    "cloze": "Nach dem Meeting [tauschen] wir unsere Telefonnummern [aus].",
+    "clozeTr": "Toplantıdan sonra telefon numaralarımızı paylaşıyoruz.",
     "examples": [
       {
         "de": "Wenn wir uns sehen, tauschen wir erst mal alle Neuigkeiten aus.",
@@ -1014,7 +1051,8 @@
     "rektion": [],
     "meaningTr": "önce bir, ilk önce",
     "hintTr": "zarf, günlük dil",
-    "cloze": "Lass uns ___ ___ einen Kaffee trinken, dann reden wir.",
+    "cloze": "Lass uns [erst] [mal] einen Kaffee trinken, dann reden wir.",
+    "clozeTr": "Önce bir kahve içelim, sonra konuşuruz.",
     "examples": [
       {
         "de": "Wenn wir uns sehen, tauschen wir erst mal alle Neuigkeiten aus.",
@@ -1041,7 +1079,8 @@
     "rektion": [],
     "meaningTr": "haber, yenilik",
     "hintTr": "isim",
-    "cloze": "Ich habe ___ tolle ___ für dich: Ich bekomme ein Baby!",
+    "cloze": "Ich habe [eine] tolle [Neuigkeit] für dich: Ich bekomme ein Baby!",
+    "clozeTr": "Sana harika bir haberim var: Bebeğim olacak!",
     "examples": [
       {
         "de": "Wenn wir uns sehen, tauschen wir erst mal alle Neuigkeiten aus.",
@@ -1068,7 +1107,8 @@
     "rektion": [{ "preposition": "mit", "case": "Dat" }],
     "meaningTr": "(biriyle) arkadaş",
     "hintTr": "sıfat + edat",
-    "cloze": "Ich bin schon seit der Schulzeit ___ ihr ___.",
+    "cloze": "Ich bin schon seit der Schulzeit [mit] ihr [befreundet].",
+    "clozeTr": "Okul yıllarından beri onunla arkadaşım.",
     "examples": [
       {
         "de": "Ich muss sagen, ich hatte nie wieder eine Nachbarin, mit der ich so gut befreundet war.",
@@ -1094,7 +1134,8 @@
     "rektion": [],
     "meaningTr": "sadece … değil, … de",
     "hintTr": "iki parçalı bağlaç",
-    "cloze": "Sie spricht nicht nur Deutsch, ___ ___ Spanisch.",
+    "cloze": "Sie spricht nicht nur Deutsch, [sondern] [auch] Spanisch.",
+    "clozeTr": "Sadece Almanca değil, İspanyolca da konuşuyor.",
     "examples": [
       {
         "de": "Einige Monate haben wir uns nicht nur regelmäßig geschrieben, sondern auch oft telefoniert.",
@@ -1121,7 +1162,8 @@
     "rektion": [],
     "meaningTr": "ziyarete gelmek",
     "hintTr": "kalıp",
-    "cloze": "Am Wochenende kommen meine Eltern ___ ___.",
+    "cloze": "Am Wochenende kommen meine Eltern [zu] [Besuch].",
+    "clozeTr": "Hafta sonu annemle babam ziyarete geliyor.",
     "examples": [
       {
         "de": "Einmal kam er zu mir nach Hamburg zu Besuch.",
@@ -1147,7 +1189,8 @@
     "rektion": [],
     "meaningTr": "(biriyle) bağlantıyı kaybetmek, gözden kaybetmek",
     "hintTr": "deyim",
-    "cloze": "Nach der Schule haben wir uns leider ___ ___ ___ verloren.",
+    "cloze": "Nach der Schule haben wir uns leider [aus] [den] [Augen] verloren.",
+    "clozeTr": "Okuldan sonra maalesef birbirimizi gözden kaybettik.",
     "examples": [
       {
         "de": "Danach haben wir uns aus den Augen verloren.",
@@ -1173,7 +1216,8 @@
     "rektion": [],
     "meaningTr": "geçenlerde",
     "hintTr": "zarf (yakın geçmiş)",
-    "cloze": "___ habe ich deinen Bruder im Supermarkt getroffen.",
+    "cloze": "[Neulich] habe ich deinen Bruder im Supermarkt getroffen.",
+    "clozeTr": "Geçenlerde kardeşini süpermarkette gördüm.",
     "examples": [
       {
         "de": "Doch neulich bekam ich eine E-Mail von ihm.",
@@ -1199,7 +1243,8 @@
     "rektion": [],
     "meaningTr": "ikilemde kalmak, karar verememek",
     "hintTr": "deyim",
-    "cloze": "Soll ich das Jobangebot annehmen? Ich bin total ___ ___ ___.",
+    "cloze": "Soll ich das Jobangebot annehmen? Ich bin total [hin-] [und] [hergerissen].",
+    "clozeTr": "İş teklifini kabul etmeli miyim? Tamamen ikilemde kaldım.",
     "examples": [
       {
         "de": "Nun bin ich hin- und hergerissen.",
@@ -1225,7 +1270,8 @@
     "rektion": [],
     "meaningTr": "bir yandan … öte yandan",
     "hintTr": "iki parçalı bağlaç",
-    "cloze": "___ möchte ich reisen, ___ fehlt mir das Geld.",
+    "cloze": "[Einerseits] möchte ich reisen, [andererseits] fehlt mir das Geld.",
+    "clozeTr": "Bir yandan seyahat etmek istiyorum, öte yandan param yok.",
     "examples": [
       {
         "de": "Einerseits würde ich ihn sehr gern wiedersehen, andererseits bringt so ein Treffen wahrscheinlich nichts.",
@@ -1252,7 +1298,8 @@
     "rektion": [],
     "meaningTr": "(bir şey) bir işe yaramaz",
     "hintTr": "kalıp, günlük dil",
-    "cloze": "Es ___ ___, sich jetzt darüber zu ärgern.",
+    "cloze": "Es [bringt] [nichts], sich jetzt darüber zu ärgern.",
+    "clozeTr": "Şimdi buna sinirlenmenin bir faydası yok.",
     "examples": [
       {
         "de": "Einerseits würde ich ihn sehr gern wiedersehen, andererseits bringt so ein Treffen wahrscheinlich nichts.",
@@ -1279,7 +1326,8 @@
     "rektion": [],
     "meaningTr": "buluşma, toplantı",
     "hintTr": "isim (fiilden)",
-    "cloze": "___ ___ mit den alten Kollegen war sehr lustig.",
+    "cloze": "[Das] [Treffen] mit den alten Kollegen war sehr lustig.",
+    "clozeTr": "Eski iş arkadaşlarıyla buluşma çok eğlenceliydi.",
     "examples": [
       {
         "de": "Einerseits würde ich ihn sehr gern wiedersehen, andererseits bringt so ein Treffen wahrscheinlich nichts.",
@@ -1306,7 +1354,8 @@
     "rektion": [],
     "meaningTr": "kolye; zincir",
     "hintTr": "isim",
-    "cloze": "Zum Geburtstag hat sie ___ goldene ___ bekommen.",
+    "cloze": "Zum Geburtstag hat sie [eine] goldene [Kette] bekommen.",
+    "clozeTr": "Doğum gününde altın bir kolye aldı.",
     "examples": [
       {
         "de": "Zum Geburtstag haben mir die sechs zusammen eine Kette geschenkt mit ihren Namen auf der Rückseite.",
@@ -1333,7 +1382,8 @@
     "rektion": [],
     "meaningTr": "arka yüz, arka taraf",
     "hintTr": "isim",
-    "cloze": "Bitte unterschreiben Sie auf ___ ___ des Formulars.",
+    "cloze": "Bitte unterschreiben Sie auf [der] [Rückseite] des Formulars.",
+    "clozeTr": "Lütfen formun arka yüzünü imzalayın.",
     "examples": [
       {
         "de": "Zum Geburtstag haben mir die sechs zusammen eine Kette geschenkt mit ihren Namen auf der Rückseite.",
@@ -1359,7 +1409,8 @@
     "rektion": [],
     "meaningTr": "…-e rağmen, …-dığı halde",
     "hintTr": "bağlaç (yan cümle)",
-    "cloze": "___ es regnet, gehen wir spazieren.",
+    "cloze": "[Obwohl] es regnet, gehen wir spazieren.",
+    "clozeTr": "Yağmur yağmasına rağmen yürüyüşe çıkıyoruz.",
     "examples": [
       {
         "de": "Obwohl ich jetzt im Ausland studiere, ist der Kontakt nicht abgerissen.",
@@ -1387,7 +1438,8 @@
     "rektion": [],
     "meaningTr": "yurt dışı",
     "hintTr": "isim",
-    "cloze": "___ ___ ist für viele junge Leute sehr attraktiv.",
+    "cloze": "[Das] [Ausland] ist für viele junge Leute sehr attraktiv.",
+    "clozeTr": "Yurt dışı birçok genç için çok cazip.",
     "examples": [
       {
         "de": "Obwohl ich jetzt im Ausland studiere, ist der Kontakt nicht abgerissen.",
@@ -1421,7 +1473,8 @@
     "rektion": [],
     "meaningTr": "(bağlantı) kopmak; yıkmak",
     "hintTr": "fiil, ayrılabilir",
-    "cloze": "Seit dem Umzug ist der Kontakt zu ihr leider ___.",
+    "cloze": "Seit dem Umzug ist der Kontakt zu ihr leider [abgerissen].",
+    "clozeTr": "Taşındığımdan beri onunla bağlantı maalesef koptu.",
     "examples": [
       {
         "de": "Obwohl ich jetzt im Ausland studiere, ist der Kontakt nicht abgerissen.",
@@ -1448,7 +1501,8 @@
     "rektion": [],
     "meaningTr": "gerçi … ama",
     "hintTr": "iki parçalı bağlaç",
-    "cloze": "Die Wohnung ist ___ klein, ___ sehr gemütlich.",
+    "cloze": "Die Wohnung ist [zwar] klein, [aber] sehr gemütlich.",
+    "clozeTr": "Daire gerçi küçük ama çok rahat.",
     "examples": [
       {
         "de": "Zwar sehen wir uns jetzt nicht mehr so häufig, aber ich bin sicher, dass wir weiter enge Freunde bleiben.",
@@ -1476,7 +1530,8 @@
     "rektion": [],
     "meaningTr": "sık (sık)",
     "hintTr": "sıfat/zarf (= oft)",
-    "cloze": "Kopfschmerzen sind ein ___ Problem bei Stress.",
+    "cloze": "Kopfschmerzen sind ein [häufiges] Problem bei Stress.",
+    "clozeTr": "Baş ağrısı streste sık görülen bir sorundur.",
     "examples": [
       {
         "de": "Zwar sehen wir uns jetzt nicht mehr so häufig, aber ich bin sicher, dass wir weiter enge Freunde bleiben.",
@@ -1502,7 +1557,8 @@
     "rektion": [],
     "meaningTr": "… gibi bir şey",
     "hintTr": "kalıp, günlük dil",
-    "cloze": "Er ist ___ ___ ___ ein großer Bruder für mich.",
+    "cloze": "Er ist [so] [was] [wie] ein großer Bruder für mich.",
+    "clozeTr": "O benim için büyük bir ağabey gibi bir şey.",
     "examples": [
       {
         "de": "Helmut ist so was wie ein Jugendfreund.",
@@ -1529,7 +1585,8 @@
     "rektion": [],
     "meaningTr": "farklı",
     "hintTr": "sıfat (-lich ile biter)",
-    "cloze": "Die Meinungen im Team sind sehr ___.",
+    "cloze": "Die Meinungen im Team sind sehr [unterschiedlich].",
+    "clozeTr": "Ekipteki görüşler çok farklı.",
     "examples": [
       {
         "de": "In vielen Punkten sind wir total unterschiedlich, aber wir haben denselben Geschmack.",
@@ -1556,7 +1613,8 @@
     "rektion": [],
     "meaningTr": "zevk; tat",
     "hintTr": "isim",
-    "cloze": "Die Suppe hat ___ komischen ___.",
+    "cloze": "Die Suppe hat [einen] komischen [Geschmack].",
+    "clozeTr": "Çorbanın tuhaf bir tadı var.",
     "examples": [
       {
         "de": "In vielen Punkten sind wir total unterschiedlich, aber wir haben denselben Geschmack.",
@@ -1582,7 +1640,8 @@
     "rektion": [],
     "meaningTr": "birkaç haftada bir",
     "hintTr": "zaman kalıbı",
-    "cloze": "Wir telefonieren ___ ___ Tage.",
+    "cloze": "Wir telefonieren [alle] [paar] Tage.",
+    "clozeTr": "Birkaç günde bir telefonlaşıyoruz.",
     "examples": [
       {
         "de": "Wir sehen uns alle paar Wochen mal.",
@@ -1609,7 +1668,8 @@
     "rektion": [],
     "meaningTr": "ya … ya da",
     "hintTr": "iki parçalı bağlaç",
-    "cloze": "Wir fahren ___ mit dem Zug ___ mit dem Auto.",
+    "cloze": "Wir fahren [entweder] mit dem Zug [oder] mit dem Auto.",
+    "clozeTr": "Ya trenle ya da arabayla gideceğiz.",
     "examples": [
       {
         "de": "Entweder gehen wir dann was essen oder wir treffen uns bei einem von uns zu Hause.",
@@ -1636,7 +1696,8 @@
     "rektion": [],
     "meaningTr": "birbiriyle, birlikte",
     "hintTr": "zarf",
-    "cloze": "Seit dem Streit reden die beiden nicht mehr ___.",
+    "cloze": "Seit dem Streit reden die beiden nicht mehr [miteinander].",
+    "clozeTr": "Kavgadan beri ikisi birbiriyle konuşmuyor.",
     "examples": [
       {
         "de": "Oft reden wir dann die halbe Nacht miteinander.",
@@ -1662,7 +1723,8 @@
     "rektion": [{ "preposition": null, "case": "Dat" }],
     "meaningTr": "(birine) fark etmez, sorun olmaz",
     "hintTr": "kalıp, ayrılabilir fiil + Dat",
-    "cloze": "Es ___ mir nichts ___, wenn du etwas später kommst.",
+    "cloze": "Es [macht] mir nichts [aus], wenn du etwas später kommst.",
+    "clozeTr": "Biraz geç gelmen benim için sorun değil.",
     "examples": [
       {
         "de": "Es macht weder ihm noch mir etwas aus, wenn wir am nächsten Tag total müde sind.",
@@ -1689,7 +1751,8 @@
     "rektion": [],
     "meaningTr": "ne … ne de",
     "hintTr": "iki parçalı bağlaç",
-    "cloze": "Ich habe ___ Zeit ___ Lust.",
+    "cloze": "Ich habe [weder] Zeit [noch] Lust.",
+    "clozeTr": "Ne vaktim ne de isteğim var.",
     "examples": [
       {
         "de": "Es macht weder ihm noch mir etwas aus, wenn wir am nächsten Tag total müde sind.",
@@ -1717,7 +1780,8 @@
     "rektion": [],
     "meaningTr": "gerçek, hakiki; (günlük dilde) gerçekten",
     "hintTr": "sıfat",
-    "cloze": "Ist der Ring aus ___ Gold?",
+    "cloze": "Ist der Ring aus [echtem] Gold?",
+    "clozeTr": "Yüzük gerçek altından mı?",
     "examples": [
       {
         "de": "Wir haben ein paar Jahre Tür an Tür gewohnt und damals echt viel zusammen gemacht.",
@@ -1743,7 +1807,8 @@
     "rektion": [],
     "meaningTr": "birkaç, bazı",
     "hintTr": "belirteç (çoğul)",
-    "cloze": "Ich habe noch ___ Fragen zu dem Vertrag.",
+    "cloze": "Ich habe noch [einige] Fragen zu dem Vertrag.",
+    "clozeTr": "Sözleşmeyle ilgili birkaç sorum daha var.",
     "examples": [
       {
         "de": "Einige Monate haben wir uns nicht nur regelmäßig geschrieben, sondern auch oft telefoniert.",

@@ -7,7 +7,8 @@
     "rektion": [{ "preposition": "für", "case": "Akk" }],
     "meaningTr": "karar",
     "hintTr": "isim",
-    "cloze": "___ ___ für das neue Projekt fiel uns nicht leicht.",
+    "cloze": "[Die] [Entscheidung] für das neue Projekt fiel uns nicht leicht.",
+    "clozeTr": "Yeni proje için karar vermek bize kolay gelmedi.",
     "examples": [
       {
         "de": "Die Entscheidung für das neue Projekt fiel uns nicht leicht.",
@@ -35,7 +36,8 @@
     "rektion": [{ "preposition": "für", "case": "Akk" }],
     "meaningTr": "(birçok seçenek arasından) bir şeyi seçmek, bir şeyde karar kılmak",
     "hintTr": "fiil, dönüşlü + edat",
-    "cloze": "Nach langem Überlegen hat sie sich ___ das Studium in Wien ___.",
+    "cloze": "Nach langem Überlegen hat sie sich [für] das Studium in Wien [entschieden].",
+    "clozeTr": "Uzun uzun düşündükten sonra Viyana'da okumayı seçti.",
     "examples": [
       {
         "de": "Nach langem Überlegen hat sie sich für das Studium in Wien entschieden.",
@@ -63,7 +65,8 @@
     "rektion": [{ "preposition": "an", "case": "Dat" }],
     "meaningTr": "(bir şeye) katılmak",
     "hintTr": "fiil, ayrılabilir + edat",
-    "cloze": "Wir ___ morgen ___ einem Deutschkurs ___.",
+    "cloze": "Wir [nehmen] morgen [an] einem Deutschkurs [teil].",
+    "clozeTr": "Yarın bir Almanca kursuna katılıyoruz.",
     "examples": [
       {
         "de": "Wir nehmen morgen an einem Deutschkurs teil.",
@@ -85,7 +88,8 @@
     "rektion": [{ "preposition": "auf", "case": "Akk" }],
     "meaningTr": "(bir şeyle) gurur duyan",
     "hintTr": "sıfat + edat",
-    "cloze": "Die Eltern sind sehr ___ ___ ihre Tochter.",
+    "cloze": "Die Eltern sind sehr [stolz] [auf] ihre Tochter.",
+    "clozeTr": "Anne babası kızlarıyla çok gurur duyuyor.",
     "examples": [
       {
         "de": "Die Eltern sind sehr stolz auf ihre Tochter.",
@@ -106,7 +110,8 @@
     "rektion": [],
     "meaningTr": "karar vermek",
     "hintTr": "isim + fiil kalıbı (Nomen-Verb-Verbindung)",
-    "cloze": "Bis Freitag müssen wir eine ___ ___.",
+    "cloze": "Bis Freitag müssen wir eine [Entscheidung] [treffen].",
+    "clozeTr": "Cuma'ya kadar bir karar vermemiz gerekiyor.",
     "examples": [
       {
         "de": "Bis Freitag müssen wir eine Entscheidung treffen.",

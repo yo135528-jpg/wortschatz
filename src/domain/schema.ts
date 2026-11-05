@@ -1,4 +1,5 @@
 import { z } from 'zod';
+import { clozeSyntaxErrors, clozeWithGaps } from './cloze';
 
 /** Grammatical case used in a Rektion (government) entry. */
 export const CaseSchema = z.enum(['Akk', 'Dat', 'Gen']);
@@ -33,8 +34,10 @@ const baseNote = {
   meaningTr: z.string().min(1),
   /** Disambiguation hint for tr2de, e.g. word type. */
   hintTr: z.string().min(1),
-  /** German gap sentence for tr2de; "___" marks the gap(s). */
-  cloze: z.string().includes('___').optional(),
+  /** German gap sentence for tr2de; each answer in [brackets]: "Wir [nehmen] an dem Kurs [teil]." */
+  cloze: z.string().min(1).optional(),
+  /** Turkish translation of the solved cloze, shown on the tr2de back. */
+  clozeTr: z.string().min(1).optional(),
   examples: z.array(ExampleSchema).min(1).max(3),
   /** Short Turkish grammar explanation (word order, declension ...), only when it helps. */
   grammarTr: z.string().min(1).nullable().default(null),
@@ -114,13 +117,19 @@ export const NotesFileSchema = z.array(NoteSchema).superRefine((notes, ctx) => {
     }
     seenIds.set(note.id, index);
 
-    // A gap sentence makes the tr2de answer unambiguous.
+    // A gap sentence makes the tr2de answer unambiguous; its translation completes the feedback.
     if (note.directions.includes('tr2de') && !note.cloze) {
       ctx.addIssue({ code: 'custom', path: [index, 'cloze'], message: 'tr2de cards need a cloze sentence' });
     }
-    // The cloze must not leak the answer.
+    if (note.cloze && !note.clozeTr) {
+      ctx.addIssue({ code: 'custom', path: [index, 'clozeTr'], message: 'cloze needs a Turkish translation (clozeTr)' });
+    }
     if (note.cloze) {
-      const cloze = note.cloze.toLowerCase();
+      for (const message of clozeSyntaxErrors(note.cloze)) {
+        ctx.addIssue({ code: 'custom', path: [index, 'cloze'], message });
+      }
+      // Checks run on what the learner sees on the front: the sentence with gaps.
+      const cloze = clozeWithGaps(note.cloze).toLowerCase();
       if (!note.lemma.includes(' ') && cloze.includes(note.lemma.toLowerCase())) {
         ctx.addIssue({ code: 'custom', path: [index, 'cloze'], message: 'cloze contains the lemma itself' });
       }
@@ -128,7 +137,7 @@ export const NotesFileSchema = z.array(NoteSchema).superRefine((notes, ctx) => {
         ctx.addIssue({
           code: 'custom',
           path: [index, 'cloze'],
-          message: 'noun cloze reveals the article; gap the article too ("___ ___")',
+          message: 'noun cloze reveals the article; gap the article too ("[Die] [Entscheidung] ...")',
         });
       }
     }

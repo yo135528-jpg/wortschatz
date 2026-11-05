@@ -61,3 +61,18 @@ test('back side shows the Turkish translation of examples in both directions', a
     await expect(card.getByTestId('back').getByTestId('example-tr').first()).toBeVisible();
   }
 });
+
+test('tr2de back solves the same gap sentence and translates it', async ({ page }) => {
+  await page.getByTestId('mode-tr2de').click();
+  const card = page.getByTestId('card');
+  // Fixture "entscheidung-86e2": "[Die] [Entscheidung] für das neue Projekt fiel uns nicht leicht."
+  await expect(card.getByTestId('front').getByTestId('cloze')).toHaveText(
+    '___ ___ für das neue Projekt fiel uns nicht leicht.',
+  );
+
+  await card.click();
+  const solution = card.getByTestId('back').getByTestId('cloze-solution');
+  await expect(solution).toContainText('Die Entscheidung für das neue Projekt fiel uns nicht leicht.');
+  await expect(solution.locator('mark')).toHaveText(['Die', 'Entscheidung']);
+  await expect(solution.getByTestId('cloze-tr')).toHaveText('Yeni proje için karar vermek bize kolay gelmedi.');
+});

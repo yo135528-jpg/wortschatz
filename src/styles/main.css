@@ -205,6 +205,16 @@ main {
 .examples { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.6rem; text-align: left; }
 .examples li { background: var(--surface-2); border-radius: 10px; padding: 0.55rem 0.75rem; }
 .example-de { font-style: italic; }
+.cloze-solution { text-align: left; }
+.gap-answer {
+  background: transparent;
+  color: inherit;
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: var(--good, currentColor);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
 .example-tr { color: var(--muted); font-size: 0.9rem; margin-top: 0.2rem; }
 .badge { margin-left: 0.3rem; font-size: 0.85rem; }
 .note { margin: 0; font-size: 0.9rem; color: var(--muted); text-align: left; }

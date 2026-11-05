@@ -1,3 +1,4 @@
+import { clozeSolved, clozeWithGaps, parseCloze } from '../domain/cloze';
 import { buildHeadword, typeLabelTr, type Headword } from '../domain/format';
 import type { Direction, Note } from '../domain/schema';
 import { h } from './dom';
@@ -41,6 +42,21 @@ function examplesView(note: Note): HTMLElement {
   );
 }
 
+/** tr2de back: the same gap sentence, solved, answers highlighted, with its translation. */
+function clozeSolutionView(note: Note): HTMLElement | null {
+  if (!note.cloze) return null;
+  const sentence = parseCloze(note.cloze).map((part) =>
+    part.kind === 'text' ? part.value : h('mark', { class: 'gap-answer' }, part.answer),
+  );
+  return h(
+    'div',
+    { class: 'cloze cloze-solution', 'data-testid': 'cloze-solution' },
+    h('span', { class: 'cloze-de' }, ...sentence),
+    speakButton(clozeSolved(note.cloze)),
+    note.clozeTr && h('div', { class: 'example-tr', 'data-testid': 'cloze-tr' }, note.clozeTr),
+  );
+}
+
 function grammarView(note: Note): HTMLElement | null {
   return note.grammarTr
     ? h('p', { class: 'grammar', 'data-testid': 'grammar' }, h('strong', {}, 'Dilbilgisi: '), note.grammarTr)
@@ -66,7 +82,7 @@ export function renderFront(note: Note, direction: Direction): HTMLElement {
     { class: 'face-content' },
     h('div', { class: 'card-type' }, note.hintTr),
     h('div', { class: 'meaning meaning-large', 'data-testid': 'meaning' }, note.meaningTr),
-    note.cloze && h('div', { class: 'cloze' }, note.cloze),
+    note.cloze && h('div', { class: 'cloze', 'data-testid': 'cloze' }, clozeWithGaps(note.cloze)),
   );
 }
 
@@ -88,6 +104,7 @@ export function renderBack(note: Note, direction: Direction): HTMLElement {
     { class: 'face-content' },
     h('div', { class: 'meaning meaning-small' }, note.meaningTr),
     headwordView(buildHeadword(note), 'large'),
+    clozeSolutionView(note),
     examplesView(note),
     grammarView(note),
     noteView(note),
