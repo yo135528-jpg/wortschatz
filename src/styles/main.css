@@ -208,6 +208,15 @@ main {
 .example-tr { color: var(--muted); font-size: 0.9rem; margin-top: 0.2rem; }
 .badge { margin-left: 0.3rem; font-size: 0.85rem; }
 .note { margin: 0; font-size: 0.9rem; color: var(--muted); text-align: left; }
+.grammar {
+  margin: 0;
+  padding: 0.5rem 0.7rem;
+  font-size: 0.9rem;
+  text-align: left;
+  border-left: 3px solid var(--border);
+  background: var(--surface-2);
+  border-radius: 6px;
+}
 
 .speak {
   border: 0;

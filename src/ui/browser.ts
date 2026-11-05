@@ -104,7 +104,6 @@ export class BrowserView {
       'div',
       { class: 'note-details' },
       renderBack(note, 'tr2de'),
-      h('p', { class: 'muted small' }, `${note.source} · ${note.tags.join(', ')} · ${note.id}`),
       ...rows,
     );
   }

@@ -53,7 +53,8 @@ Cards are optimized for LEARNING, not translation. One thing to recall per card.
 - `examples` (1–3):
   - If the user gives a book sentence: use it with `"fromBook": true` (fix obvious typos only).
   - Add ONE new natural B2-level sentence (`"fromBook": false`) that shows the Rektion/typical use.
-  - `tr`: natural Turkish translation (shown only on the de2tr back).
+  - `tr`: natural Turkish translation (shown on the back in both directions).
+- `grammarTr`: short Turkish grammar explanation where it really helps (word order of two-part conjunctions, verb position after `obwohl`, adjectival nouns, n-Deklination, haben/sein choice, declension like `denselben`). Show forms with a tiny example. Otherwise omit it (defaults to `null`). Grammar goes HERE, not in `note`.
 - `note`: only when it really matters: false friends (`aktuell` ≠ aktüel → "güncel"), confusables (`seit` vs `seid`), register (`umgangssprachlich`, `gehoben`), a common mistake (`eine Entscheidung machen` ✗). Otherwise `null`. One sentence, in Turkish.
 - `directions`: default `["de2tr", "tr2de"]`. Use only `["de2tr"]` for words the user only needs to recognize (very rare/literary words), and say so in the summary.
 - `source`: e.g. `"B2 book, Kapitel 3"` (ask once if the chapter is unknown, then reuse it).
@@ -61,8 +62,9 @@ Cards are optimized for LEARNING, not translation. One thing to recall per card.
 - `createdAt`: today's date `YYYY-MM-DD`.
 
 ## What the card faces show (rendered by the app — do not duplicate)
-- de2tr front: headword with article/plural/Rektion/verb forms. Back: Turkish meaning + examples + note.
-- tr2de front: `hintTr` + `meaningTr` + `cloze` (no other German). Back: full German headword + examples + note.
+- de2tr front: headword with article/plural/Rektion/verb forms. Back: Turkish meaning + examples (with `tr`) + grammar + note.
+- tr2de front: `hintTr` + `meaningTr` + `cloze` (no other German). Back: full German headword + examples (with `tr`) + grammar + note.
+- `source`, `tags`, `id` are NOT shown to the user (only used for search and bookkeeping).
 
 ## Quality checklist before finishing
 - [ ] Lemma correct, gender/plural/verb forms double-checked (when unsure, say so instead of guessing).

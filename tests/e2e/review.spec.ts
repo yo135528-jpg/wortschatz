@@ -52,3 +52,12 @@ test('mode toggle filters the queue by direction and is remembered', async ({ pa
   await openApp(page, { reload: true });
   await expect(page.getByTestId('card')).toHaveAttribute('data-direction', 'tr2de');
 });
+
+test('back side shows the Turkish translation of examples in both directions', async ({ page }) => {
+  for (const mode of ['mode-de2tr', 'mode-tr2de'] as const) {
+    await page.getByTestId(mode).click();
+    const card = page.getByTestId('card');
+    await card.click();
+    await expect(card.getByTestId('back').getByTestId('example-tr').first()).toBeVisible();
+  }
+});

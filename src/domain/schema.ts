@@ -14,7 +14,7 @@ export const RektionSchema = z.object({
 
 export const ExampleSchema = z.object({
   de: z.string().min(1),
-  /** Optional Turkish translation, shown only on the de2tr back. */
+  /** Optional Turkish translation, shown on the back in both directions. */
   tr: z.string().min(1).optional(),
   /** True if the sentence is taken from the textbook. */
   fromBook: z.boolean(),
@@ -36,6 +36,8 @@ const baseNote = {
   /** German gap sentence for tr2de; "___" marks the gap(s). */
   cloze: z.string().includes('___').optional(),
   examples: z.array(ExampleSchema).min(1).max(3),
+  /** Short Turkish grammar explanation (word order, declension ...), only when it helps. */
+  grammarTr: z.string().min(1).nullable().default(null),
   /** Register / false friend / confusable note, only when it matters. */
   note: z.string().min(1).nullable().default(null),
   directions: z.array(DirectionSchema).min(1).default(['de2tr', 'tr2de']),

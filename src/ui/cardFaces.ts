@@ -24,7 +24,7 @@ function headwordView(headword: Headword, size: 'large' | 'small'): HTMLElement 
   );
 }
 
-function examplesView(note: Note, withTranslation: boolean): HTMLElement {
+function examplesView(note: Note): HTMLElement {
   return h(
     'ul',
     { class: 'examples' },
@@ -35,10 +35,16 @@ function examplesView(note: Note, withTranslation: boolean): HTMLElement {
         h('span', { class: 'example-de' }, example.de),
         speakButton(example.de),
         example.fromBook && h('span', { class: 'badge', title: 'Kitaptan' }, '📖'),
-        withTranslation && example.tr && h('div', { class: 'example-tr' }, example.tr),
+        example.tr && h('div', { class: 'example-tr', 'data-testid': 'example-tr' }, example.tr),
       ),
     ),
   );
+}
+
+function grammarView(note: Note): HTMLElement | null {
+  return note.grammarTr
+    ? h('p', { class: 'grammar', 'data-testid': 'grammar' }, h('strong', {}, 'Dilbilgisi: '), note.grammarTr)
+    : null;
 }
 
 function noteView(note: Note): HTMLElement | null {
@@ -72,7 +78,8 @@ export function renderBack(note: Note, direction: Direction): HTMLElement {
       { class: 'face-content' },
       headwordView(buildHeadword(note), 'small'),
       h('div', { class: 'meaning meaning-large', 'data-testid': 'meaning' }, note.meaningTr),
-      examplesView(note, true),
+      examplesView(note),
+      grammarView(note),
       noteView(note),
     );
   }
@@ -81,7 +88,8 @@ export function renderBack(note: Note, direction: Direction): HTMLElement {
     { class: 'face-content' },
     h('div', { class: 'meaning meaning-small' }, note.meaningTr),
     headwordView(buildHeadword(note), 'large'),
-    examplesView(note, false),
+    examplesView(note),
+    grammarView(note),
     noteView(note),
   );
 }
