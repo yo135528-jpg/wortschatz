@@ -204,35 +204,6 @@
     "createdAt": "2026-11-05"
   },
   {
-    "id": "aussagen-cb2d",
-    "type": "verb",
-    "lemma": "aussagen",
-    "verb": {
-      "reflexive": null,
-      "separablePrefix": "aus",
-      "praeteritum": "sagte aus",
-      "partizip2": "ausgesagt",
-      "auxiliary": "haben"
-    },
-    "rektion": [{ "preposition": "über", "case": "Akk" }],
-    "meaningTr": "(hakkında) bir şey göstermek/söylemek, ifade vermek",
-    "hintTr": "fiil, ayrılabilir + edat",
-    "cloze": "Die Note [sagt] wenig [über] die echten Fähigkeiten eines Schülers [aus].",
-    "clozeTr": "Not, bir öğrencinin gerçek yetenekleri hakkında pek bir şey söylemez.",
-    "examples": [
-      {
-        "de": "Der Zeuge hat vor Gericht gegen den Angeklagten ausgesagt.",
-        "tr": "Tanık mahkemede sanığın aleyhine ifade verdi.",
-        "fromBook": false
-      }
-    ],
-    "note": "İsmi: die Aussage (ifade, beyan).",
-    "directions": ["de2tr", "tr2de"],
-    "source": "Kursbuch, Kapitel 1, S. 13",
-    "tags": ["kapitel-1", "kommunikation"],
-    "createdAt": "2026-11-05"
-  },
-  {
     "id": "pizzeria-0927",
     "type": "noun",
     "lemma": "Pizzeria",
