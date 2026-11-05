@@ -7,6 +7,7 @@ Static Vite + TypeScript app (no framework), deployed to GitHub Pages. Schedulin
 - Review STATE lives in the browser's IndexedDB, keyed `"<noteId>:<direction>"`.
 - `src/storage/merge.ts` (pure): new cards get fresh state, existing state is never overwritten, removed notes are ignored (state kept).
 - Each note produces up to two cards, `de2tr` and `tr2de`, each with its own FSRS state.
+- Tests never depend on real content: unit and e2e tests use `tests/fixtures/notes.json` (e2e via `vite --mode e2e` alias). Add/remove words freely.
 - Commands: `npm run validate` · `npm test` (Vitest) · `npm run e2e` (Playwright) · `npm run build` · `npm run new-id -- "<lemma>" <type> [gender]`.
 
 ## Language

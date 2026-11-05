@@ -4,10 +4,15 @@ import { buildHeadword, headwordToString } from '../../src/domain/format';
 import { createNoteId, slugify } from '../../src/domain/id';
 import { parseNotes } from '../../src/domain/schema';
 
-const seed = JSON.parse(readFileSync(new URL('../../src/data/cards.json', import.meta.url), 'utf8'));
+const readJson = (path: string) => JSON.parse(readFileSync(new URL(path, import.meta.url), 'utf8'));
+// Real content: only checked for validity, since it changes as words are added or removed.
+const content = readJson('../../src/data/cards.json');
+// Stable fixture notes for behaviour tests, independent of the real content.
+const seed = readJson('../fixtures/notes.json');
 
 describe('cards.json', () => {
   it('is valid against the schema', () => {
+    expect(() => parseNotes(content)).not.toThrow();
     expect(() => parseNotes(seed)).not.toThrow();
   });
 

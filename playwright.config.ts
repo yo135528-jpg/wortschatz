@@ -15,7 +15,7 @@ export default defineConfig({
   // Mobile-first app, so tests run on a phone-sized viewport.
   projects: [{ name: 'mobile-chrome', use: { ...devices['Pixel 7'] } }],
   webServer: {
-    command: `npx vite --port ${PORT} --strictPort`,
+    command: `npx vite --mode e2e --port ${PORT} --strictPort`,
     url: `http://localhost:${PORT}`,
     reuseExistingServer: !process.env.CI,
   },
