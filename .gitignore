@@ -3,3 +3,6 @@ dist
 test-results
 playwright-report
 *.log
+
+# Photos of textbook pages (copyrighted, large) - local only
+book-pages/
