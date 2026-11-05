@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#14161a" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#f6f5f2" media="(prefers-color-scheme: light)" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇩🇪</text></svg>" />
+    <title>Wortschatz</title>
+  </head>
+  <body>
+    <header class="topbar">
+      <h1>Wortschatz</h1>
+      <div class="mode-toggle" role="group" aria-label="Çalışma modu">
+        <button type="button" data-mode="de2tr" data-testid="mode-de2tr">DE→TR</button>
+        <button type="button" data-mode="tr2de" data-testid="mode-tr2de">TR→DE</button>
+        <button type="button" data-mode="mixed" data-testid="mode-mixed">Karışık</button>
+      </div>
+    </header>
+
+    <main>
+      <section id="view-review" class="view" aria-label="Tekrar"></section>
+      <section id="view-browse" class="view" aria-label="Kartlar" hidden></section>
+      <section id="view-stats" class="view" aria-label="İstatistik" hidden></section>
+      <section id="view-settings" class="view" aria-label="Ayarlar" hidden></section>
+    </main>
+
+    <nav class="tabbar" aria-label="Menü">
+      <button type="button" data-tab="review" data-testid="tab-review"><span>📚</span>Tekrar</button>
+      <button type="button" data-tab="browse" data-testid="tab-browse"><span>🔎</span>Kartlar</button>
+      <button type="button" data-tab="stats" data-testid="tab-stats"><span>📊</span>İstatistik</button>
+      <button type="button" data-tab="settings" data-testid="tab-settings"><span>⚙️</span>Ayarlar</button>
+    </nav>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

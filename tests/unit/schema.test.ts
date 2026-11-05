@@ -1,0 +1,59 @@
+import { readFileSync } from 'node:fs';
+import { describe, expect, it } from 'vitest';
+import { buildHeadword, headwordToString } from '../../src/domain/format';
+import { createNoteId, slugify } from '../../src/domain/id';
+import { parseNotes } from '../../src/domain/schema';
+
+const seed = JSON.parse(readFileSync(new URL('../../src/data/cards.json', import.meta.url), 'utf8'));
+
+describe('cards.json', () => {
+  it('is valid against the schema', () => {
+    expect(() => parseNotes(seed)).not.toThrow();
+  });
+
+  it('rejects duplicate ids', () => {
+    expect(() => parseNotes([seed[0], seed[0]])).toThrow(/duplicate id/);
+  });
+
+  it('rejects a noun without gender', () => {
+    const broken = { ...seed[0], noun: { plural: '-en' } };
+    expect(() => parseNotes([broken])).toThrow(/noun\.gender/);
+  });
+
+  it('rejects a noun cloze that reveals the article', () => {
+    const leaky = { ...seed[0], cloze: 'Die ___ fiel uns schwer.' };
+    expect(() => parseNotes([leaky])).toThrow(/reveals the article/);
+  });
+
+  it('requires a cloze for tr2de cards', () => {
+    const { cloze: _cloze, ...withoutCloze } = seed[0];
+    expect(() => parseNotes([withoutCloze])).toThrow(/cloze/);
+  });
+});
+
+describe('headword formatting', () => {
+  const notes = parseNotes(seed);
+  const byId = (id: string) => headwordToString(buildHeadword(notes.find((n) => n.id === id)!));
+
+  it('formats nouns, reflexive verbs, separable verbs and adjectives', () => {
+    expect(byId('entscheidung-86e2')).toBe('die Entscheidung, -en für + Akk');
+    expect(byId('entscheiden-bb52')).toBe('sich entscheiden für + Akk');
+    expect(byId('teilnehmen-2109')).toBe('teil|nehmen an + Dat');
+    expect(byId('stolz-3362')).toBe('stolz auf + Akk');
+  });
+
+  it('shows verb forms with the right auxiliary', () => {
+    const verb = notes.find((n) => n.id === 'teilnehmen-2109')!;
+    expect(buildHeadword(verb).forms).toBe('nahm teil · hat teilgenommen');
+  });
+});
+
+describe('ids', () => {
+  it('slugifies umlauts and ß', () => {
+    expect(slugify('Größe überprüfen')).toBe('groesse-ueberpruefen');
+  });
+
+  it('distinguishes homonyms by gender', () => {
+    expect(createNoteId('See', 'noun', 'der')).not.toBe(createNoteId('See', 'noun', 'die'));
+  });
+});
