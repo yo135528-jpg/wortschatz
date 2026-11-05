@@ -37,7 +37,8 @@
         "fromBook": false
       }
     ],
-    "note": "\"ein Blatt Papier\" = bir yaprak kağıt; araya \"von\" girmez.",
+    "grammarTr": "Ölçü ifadelerinde ikinci isim \"von\" almaz ve çekimlenmez: ein Blatt Papier, eine Tasse Kaffee, ein Glas Wasser.",
+    "note": null,
     "directions": ["de2tr", "tr2de"],
     "source": "Seed example",
     "tags": ["alltag"],
@@ -231,7 +232,8 @@
         "fromBook": false
       }
     ],
-    "note": "n-Deklination: den/dem/des Meeresbiologen. Kadın: die Meeresbiologin.",
+    "grammarTr": "n-Deklination: Nominativ tekil dışında her halde -n alır: den/dem/des Meeresbiologen.",
+    "note": "Kadın: die Meeresbiologin.",
     "directions": ["de2tr", "tr2de"],
     "source": "Seed example",
     "tags": ["beruf", "umwelt"],
@@ -432,6 +434,7 @@
         "fromBook": false
       }
     ],
+    "grammarTr": "sich verlassen auf + Akk: Ich verlasse mich auf dich. Bir yan cümleye gönderme yaparken \"darauf\" kullanılır: Ich verlasse mich darauf, dass …",
     "note": "Dönüşsüz \"verlassen\" = terk etmek, ayrılmak (Er hat das Haus verlassen).",
     "directions": ["de2tr", "tr2de"],
     "source": "Kursbuch, Kapitel 1, S. 14",
@@ -604,7 +607,8 @@
         "fromBook": false
       }
     ],
-    "note": "Sıfat gibi çekimlenir: ein Bekannter, die Bekannten; kadın: eine Bekannte.",
+    "grammarTr": "Sıfat gibi çekimlenir: der Bekannte / ein Bekannter, die Bekannten; kadın: die Bekannte / eine Bekannte.",
+    "note": null,
     "directions": ["de2tr", "tr2de"],
     "source": "Kursbuch, Kapitel 1, S. 14",
     "tags": ["kapitel-1", "freundschaft"],
@@ -772,7 +776,8 @@
         "fromBook": false
       }
     ],
-    "note": "Karışık çekim: nannte, genannt. İki Akk alır: jemanden etwas nennen.",
+    "grammarTr": "Karışık çekim: kök değişir (nannte, genannt) ama ekler zayıf fiil gibidir; aynı grup: kennen, brennen, rennen. İki Akk alır: Sie nennen ihn Tom.",
+    "note": null,
     "directions": ["de2tr", "tr2de"],
     "source": "Kursbuch, Kapitel 1, S. 14",
     "tags": ["kapitel-1", "freundschaft"],
@@ -850,6 +855,7 @@
         "fromBook": false
       }
     ],
+    "grammarTr": "İki özneyi bağlarsa fiil çoğul olur: Sowohl Anna als auch Tom kommen.",
     "note": null,
     "directions": ["de2tr", "tr2de"],
     "source": "Kursbuch, Kapitel 1, S. 14",
@@ -874,9 +880,15 @@
         "de": "Wir sind im selben Jahr geboren.",
         "tr": "Aynı yıl doğduk.",
         "fromBook": false
+      },
+      {
+        "de": "In vielen Punkten sind wir total unterschiedlich, aber wir haben denselben Geschmack.",
+        "tr": "Birçok konuda tamamen farklıyız ama aynı zevke sahibiz.",
+        "fromBook": true
       }
     ],
-    "note": "Bitişik yazılır; edatla kaynaşınca: im selben = in demselben.",
+    "grammarTr": "İlk kısım artikel gibi, \"-selbe\" kısmı sıfat gibi çekimlenir: denselben Geschmack (Akk, eril), in derselben Firma (Dat, dişil), dasselbe Kleid (Akk, nötr). Edatla kaynaşınca: im selben = in demselben.",
+    "note": null,
     "directions": ["de2tr", "tr2de"],
     "source": "Kursbuch, Kapitel 1, S. 14",
     "tags": ["kapitel-1", "freundschaft"],
@@ -1095,6 +1107,7 @@
         "fromBook": false
       }
     ],
+    "grammarTr": "\"sondern\"dan önce virgül konur; \"auch\" genelde hemen arkasından gelir. Kelime sırası değişmez.",
     "note": null,
     "directions": ["de2tr", "tr2de"],
     "source": "Kursbuch, Kapitel 1, S. 14",
@@ -1225,6 +1238,7 @@
         "fromBook": false
       }
     ],
+    "grammarTr": "İkisi de zarf gibi davranır: cümle başındaysa çekimli fiil hemen arkasından gelir (Einerseits möchte ich …, andererseits fehlt mir …).",
     "note": null,
     "directions": ["de2tr", "tr2de"],
     "source": "Kursbuch, Kapitel 1, S. 14",
@@ -1358,7 +1372,8 @@
         "fromBook": false
       }
     ],
-    "note": "Yan cümle kurar, fiil sona gider; \"trotzdem\" ise ana cümlede kullanılır.",
+    "grammarTr": "Yan cümle kurar, çekimli fiil en sona gider: Obwohl es regnet, … Yan cümle önde gelirse ana cümle fiille başlar: …, gehen wir spazieren.",
+    "note": "\"trotzdem\" ile karıştırma: trotzdem ana cümlede zarftır (Es regnet, trotzdem gehen wir spazieren).",
     "directions": ["de2tr", "tr2de"],
     "source": "Kursbuch, Kapitel 1, S. 14",
     "tags": ["kapitel-1", "freundschaft"],
@@ -1385,7 +1400,8 @@
         "fromBook": false
       }
     ],
-    "note": "im Ausland = yurt dışında, ins Ausland = yurt dışına.",
+    "grammarTr": "Nereye? → ins Ausland (Akk); nerede? → im Ausland (Dat).",
+    "note": null,
     "directions": ["de2tr", "tr2de"],
     "source": "Kursbuch, Kapitel 1, S. 14",
     "tags": ["kapitel-1", "freundschaft"],
@@ -1418,7 +1434,8 @@
         "fromBook": false
       }
     ],
-    "note": "\"Kopmak\" anlamında sein, \"yıkmak\" anlamında haben ile.",
+    "grammarTr": "Geçişsiz \"kopmak\" → sein (Der Kontakt ist abgerissen); geçişli \"yıkmak\" → haben (Sie haben das Haus abgerissen).",
+    "note": null,
     "directions": ["de2tr", "tr2de"],
     "source": "Kursbuch, Kapitel 1, S. 14",
     "tags": ["kapitel-1", "freundschaft"],
@@ -1444,6 +1461,7 @@
         "fromBook": false
       }
     ],
+    "grammarTr": "\"zwar\" ilk cümlenin içinde ya da başında durur (Zwar sehen wir uns …); \"aber\" ikinci cümleyi bağlar ve kelime sırasını değiştirmez.",
     "note": null,
     "directions": ["de2tr", "tr2de"],
     "source": "Kursbuch, Kapitel 1, S. 14",
@@ -1577,7 +1595,8 @@
         "fromBook": false
       }
     ],
-    "note": "alle + zaman = her … -de bir: alle zwei Wochen (iki haftada bir).",
+    "grammarTr": "\"alle\" + çoğul zaman = her … -de bir: alle zwei Tage, alle paar Monate.",
+    "note": null,
     "directions": ["de2tr", "tr2de"],
     "source": "Kursbuch, Kapitel 1, S. 14",
     "tags": ["kapitel-1", "freundschaft"],
@@ -1603,6 +1622,7 @@
         "fromBook": false
       }
     ],
+    "grammarTr": "\"entweder\" cümle başındaysa fiil ya hemen arkasından gelir (Entweder gehen wir …) ya da normal sıra kalır (Entweder du kommst …). \"oder\" sırayı değiştirmez.",
     "note": null,
     "directions": ["de2tr", "tr2de"],
     "source": "Kursbuch, Kapitel 1, S. 14",
@@ -1655,6 +1675,7 @@
         "fromBook": false
       }
     ],
+    "grammarTr": "\"ausmachen\" ayrılabilir: Es macht mir nichts aus. Kişi Dativ'dir: mir, dir, ihm, uns.",
     "note": null,
     "directions": ["de2tr", "tr2de"],
     "source": "Kursbuch, Kapitel 1, S. 14",
@@ -1681,7 +1702,8 @@
         "fromBook": false
       }
     ],
-    "note": "Kendisi olumsuzdur, ayrıca \"nicht\" eklenmez.",
+    "grammarTr": "Kendisi olumsuzdur; ayrıca \"nicht\" veya \"kein\" eklenmez. İki özneyi bağlarsa fiil genelde çoğul olur: Weder er noch sie wissen es.",
+    "note": null,
     "directions": ["de2tr", "tr2de"],
     "source": "Kursbuch, Kapitel 1, S. 14",
     "tags": ["kapitel-1", "freundschaft"],
@@ -1734,6 +1756,7 @@
         "fromBook": false
       }
     ],
+    "grammarTr": "Çoğul isimle kullanılır ve sıfat gibi çekimlenir: einige Fragen, mit einigen Freunden.",
     "note": "Tekil hali \"einiges\" = bazı şeyler (Ich habe einiges gelernt).",
     "directions": ["de2tr", "tr2de"],
     "source": "Kursbuch, Kapitel 1, S. 14",
