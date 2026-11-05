@@ -20,5 +20,1724 @@
     "source": "Seed example",
     "tags": ["raetsel"],
     "createdAt": "2026-11-05"
+  },
+  {
+    "id": "blatt-e6f8",
+    "type": "noun",
+    "lemma": "Blatt",
+    "noun": { "gender": "das", "plural": "¨-er" },
+    "rektion": [],
+    "meaningTr": "(kağıt) yaprak, (ağaç) yaprak",
+    "hintTr": "isim, sayılabilir (tek parça)",
+    "cloze": "Kannst du mir bitte ___ ___ Papier geben?",
+    "examples": [
+      {
+        "de": "Im Herbst fallen die Blätter von den Bäumen.",
+        "tr": "Sonbaharda yapraklar ağaçlardan düşer.",
+        "fromBook": false
+      }
+    ],
+    "note": "\"ein Blatt Papier\" = bir yaprak kağıt; araya \"von\" girmez.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Seed example",
+    "tags": ["alltag"],
+    "createdAt": "2026-11-05"
+  },
+  {
+    "id": "papier-8784",
+    "type": "noun",
+    "lemma": "Papier",
+    "noun": { "gender": "das", "plural": "-e" },
+    "rektion": [],
+    "meaningTr": "kağıt",
+    "hintTr": "isim, madde adı",
+    "cloze": "Der Drucker hat kein ___ mehr.",
+    "examples": [
+      {
+        "de": "Bitte vergiss nicht, deine Papiere zum Termin mitzubringen.",
+        "tr": "Lütfen randevuya belgelerini getirmeyi unutma.",
+        "fromBook": false
+      }
+    ],
+    "note": "Çoğulu \"die Papiere\" genelde \"belgeler, evrak\" anlamına gelir.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Seed example",
+    "tags": ["alltag"],
+    "createdAt": "2026-11-05"
+  },
+  {
+    "id": "herkunft-efbc",
+    "type": "noun",
+    "lemma": "Herkunft",
+    "noun": { "gender": "die", "plural": "¨-e" },
+    "rektion": [],
+    "meaningTr": "köken, menşe",
+    "hintTr": "isim",
+    "cloze": "___ ___ vieler deutscher Wörter ist lateinisch.",
+    "examples": [
+      {
+        "de": "Bei der Bewerbung darf die Herkunft keine Rolle spielen.",
+        "tr": "İş başvurusunda kökenin hiçbir rolü olmamalı.",
+        "fromBook": false
+      }
+    ],
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Seed example",
+    "tags": ["gesellschaft"],
+    "createdAt": "2026-11-05"
+  },
+  {
+    "id": "taetigkeit-4f8a",
+    "type": "noun",
+    "lemma": "Tätigkeit",
+    "noun": { "gender": "die", "plural": "-en" },
+    "rektion": [],
+    "meaningTr": "faaliyet, iş, uğraş",
+    "hintTr": "isim, -keit ile biter",
+    "cloze": "Sie übt ___ ___ als Pflegerin seit zehn Jahren aus.",
+    "examples": [
+      {
+        "de": "Welche Tätigkeiten gehören zu Ihrem Arbeitsalltag?",
+        "tr": "İş gününüz hangi faaliyetleri kapsıyor?",
+        "fromBook": false
+      }
+    ],
+    "note": "Tipik kalıp: eine Tätigkeit ausüben (bir işi yapmak, icra etmek).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Seed example",
+    "tags": ["arbeit"],
+    "createdAt": "2026-11-05"
+  },
+  {
+    "id": "sammeln-ba01",
+    "type": "verb",
+    "lemma": "sammeln",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": null,
+      "praeteritum": "sammelte",
+      "partizip2": "gesammelt",
+      "auxiliary": "haben"
+    },
+    "rektion": [],
+    "meaningTr": "toplamak, biriktirmek",
+    "hintTr": "fiil",
+    "cloze": "Mein Bruder ___ seit seiner Kindheit Briefmarken.",
+    "examples": [
+      {
+        "de": "In diesem Job konnte ich viel Erfahrung sammeln.",
+        "tr": "Bu işte çok tecrübe edinebildim.",
+        "fromBook": false
+      }
+    ],
+    "note": "Sık kalıp: Erfahrungen sammeln (tecrübe edinmek).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Seed example",
+    "tags": ["alltag"],
+    "createdAt": "2026-11-05"
+  },
+  {
+    "id": "vermuten-1b02",
+    "type": "verb",
+    "lemma": "vermuten",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": null,
+      "praeteritum": "vermutete",
+      "partizip2": "vermutet",
+      "auxiliary": "haben"
+    },
+    "rektion": [],
+    "meaningTr": "tahmin etmek, sanmak",
+    "hintTr": "fiil, ver- ön ekli",
+    "cloze": "Die Polizei ___, dass der Täter ins Ausland geflohen ist.",
+    "examples": [
+      {
+        "de": "Ich vermute, dass er heute nicht mehr kommt.",
+        "tr": "Sanırım bugün artık gelmeyecek.",
+        "fromBook": false
+      }
+    ],
+    "note": "İsmi: die Vermutung (tahmin, varsayım).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Seed example",
+    "tags": ["denken"],
+    "createdAt": "2026-11-05"
+  },
+  {
+    "id": "aussagen-cb2d",
+    "type": "verb",
+    "lemma": "aussagen",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": "aus",
+      "praeteritum": "sagte aus",
+      "partizip2": "ausgesagt",
+      "auxiliary": "haben"
+    },
+    "rektion": [{ "preposition": "über", "case": "Akk" }],
+    "meaningTr": "(hakkında) bir şey göstermek/söylemek, ifade vermek",
+    "hintTr": "fiil, ayrılabilir + edat",
+    "cloze": "Die Note ___ wenig ___ die echten Fähigkeiten eines Schülers ___.",
+    "examples": [
+      {
+        "de": "Der Zeuge hat vor Gericht gegen den Angeklagten ausgesagt.",
+        "tr": "Tanık mahkemede sanığın aleyhine ifade verdi.",
+        "fromBook": false
+      }
+    ],
+    "note": "İsmi: die Aussage (ifade, beyan).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Seed example",
+    "tags": ["kommunikation"],
+    "createdAt": "2026-11-05"
+  },
+  {
+    "id": "pizzeria-0927",
+    "type": "noun",
+    "lemma": "Pizzeria",
+    "noun": { "gender": "die", "plural": "-s" },
+    "rektion": [],
+    "meaningTr": "pizzacı (restoran)",
+    "hintTr": "isim",
+    "cloze": "Am Freitag essen wir in ___ ___ um die Ecke.",
+    "examples": [
+      {
+        "de": "In unserer Straße hat eine neue Pizzeria eröffnet.",
+        "tr": "Sokağımızda yeni bir pizzacı açıldı.",
+        "fromBook": false
+      }
+    ],
+    "note": "Çoğul: die Pizzerias veya die Pizzerien (ikisi de doğru).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Seed example",
+    "tags": ["essen"],
+    "createdAt": "2026-11-05"
+  },
+  {
+    "id": "meeresbiologe-ab32",
+    "type": "noun",
+    "lemma": "Meeresbiologe",
+    "noun": { "gender": "der", "plural": "-n" },
+    "rektion": [],
+    "meaningTr": "deniz biyoloğu",
+    "hintTr": "isim, meslek (erkek)",
+    "cloze": "___ ___ untersucht das Leben im Korallenriff.",
+    "examples": [
+      {
+        "de": "Im Interview hat ein Meeresbiologe über den Klimawandel gesprochen.",
+        "tr": "Röportajda bir deniz biyoloğu iklim değişikliği hakkında konuştu.",
+        "fromBook": false
+      }
+    ],
+    "note": "n-Deklination: den/dem/des Meeresbiologen. Kadın: die Meeresbiologin.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Seed example",
+    "tags": ["beruf", "umwelt"],
+    "createdAt": "2026-11-05"
+  },
+  {
+    "id": "umfrage-6126",
+    "type": "noun",
+    "lemma": "Umfrage",
+    "noun": { "gender": "die", "plural": "-n" },
+    "rektion": [],
+    "meaningTr": "anket",
+    "hintTr": "isim",
+    "cloze": "Laut ___ ___ lesen junge Leute immer weniger Zeitung.",
+    "examples": [
+      {
+        "de": "Blitz-Umfrage im Kurs",
+        "tr": "Kursta hızlı anket",
+        "fromBook": true
+      },
+      {
+        "de": "Wir haben im Kurs eine kurze Umfrage gemacht.",
+        "tr": "Kursta kısa bir anket yaptık.",
+        "fromBook": false
+      }
+    ],
+    "note": "Blitzumfrage = kısa, hızlı anket.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 14",
+    "tags": ["kapitel-1", "freundschaft"],
+    "createdAt": "2026-11-05"
+  },
+  {
+    "id": "regelmaessig-2aa1",
+    "type": "adjective",
+    "lemma": "regelmäßig",
+    "adjective": { "comparative": null, "superlative": null },
+    "rektion": [],
+    "meaningTr": "düzenli (olarak)",
+    "hintTr": "sıfat/zarf",
+    "cloze": "Du solltest ___ Sport treiben.",
+    "examples": [
+      {
+        "de": "Wie viele Ihrer Freunde treffen Sie regelmäßig?",
+        "tr": "Arkadaşlarınızdan kaçıyla düzenli olarak buluşuyorsunuz?",
+        "fromBook": true
+      },
+      {
+        "de": "Der Bus fährt regelmäßig alle zehn Minuten.",
+        "tr": "Otobüs düzenli olarak her on dakikada bir geçer.",
+        "fromBook": false
+      }
+    ],
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 14",
+    "tags": ["kapitel-1", "freundschaft"],
+    "createdAt": "2026-11-05"
+  },
+  {
+    "id": "netzwerk-5c83",
+    "type": "noun",
+    "lemma": "Netzwerk",
+    "noun": { "gender": "das", "plural": "-e" },
+    "rektion": [],
+    "meaningTr": "(sosyal) ağ",
+    "hintTr": "isim",
+    "cloze": "___ ___ hat inzwischen über eine Milliarde Nutzer.",
+    "examples": [
+      {
+        "de": "Wie viele Freunde haben Sie in sozialen Netzwerken?",
+        "tr": "Sosyal ağlarda kaç arkadaşınız var?",
+        "fromBook": true
+      },
+      {
+        "de": "Über berufliche Netzwerke findet man oft leichter einen Job.",
+        "tr": "Mesleki ağlar sayesinde genelde daha kolay iş bulunur.",
+        "fromBook": false
+      }
+    ],
+    "note": "soziale Netzwerke = sosyal ağlar, sosyal medya.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 14",
+    "tags": ["kapitel-1", "freundschaft"],
+    "createdAt": "2026-11-05"
+  },
+  {
+    "id": "unterscheiden-de4f",
+    "type": "verb",
+    "lemma": "unterscheiden",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": null,
+      "praeteritum": "unterschied",
+      "partizip2": "unterschieden",
+      "auxiliary": "haben"
+    },
+    "rektion": [{ "preposition": "zwischen", "case": "Dat" }],
+    "meaningTr": "ayırt etmek, ayrım yapmak",
+    "hintTr": "fiil + edat",
+    "cloze": "Kleine Kinder können oft noch nicht ___ Spiel und Realität ___.",
+    "examples": [
+      {
+        "de": "Im Deutschen unterscheidet man zwischen Bekannten und Freunden.",
+        "tr": "Almancada tanıdıklar ile arkadaşlar arasında ayrım yapılır.",
+        "fromBook": true
+      },
+      {
+        "de": "Die Zwillinge kann man kaum voneinander unterscheiden.",
+        "tr": "İkizleri birbirinden neredeyse ayırt edemezsin.",
+        "fromBook": false
+      }
+    ],
+    "note": "Dönüşlü: sich unterscheiden von + Dat = …-den farklı olmak.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 14",
+    "tags": ["kapitel-1", "freundschaft"],
+    "createdAt": "2026-11-05"
+  },
+  {
+    "id": "verhaeltnis-3b6e",
+    "type": "noun",
+    "lemma": "Verhältnis",
+    "noun": { "gender": "das", "plural": "-se" },
+    "rektion": [{ "preposition": "zu", "case": "Dat" }],
+    "meaningTr": "ilişki",
+    "hintTr": "isim + edat",
+    "cloze": "Ich habe ___ sehr gutes ___ zu meinen Eltern.",
+    "examples": [
+      {
+        "de": "Zu Freunden hat man ein engeres Verhältnis als zu Bekannten.",
+        "tr": "Arkadaşlarla tanıdıklara göre daha yakın bir ilişki kurulur.",
+        "fromBook": true
+      },
+      {
+        "de": "Das Verhältnis zwischen den beiden Ländern ist angespannt.",
+        "tr": "İki ülke arasındaki ilişki gergin.",
+        "fromBook": false
+      }
+    ],
+    "note": "Çoğul \"Verhältnisse\" = koşullar (in armen Verhältnissen leben).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 14",
+    "tags": ["kapitel-1", "freundschaft"],
+    "createdAt": "2026-11-05"
+  },
+  {
+    "id": "eng-9bc8",
+    "type": "adjective",
+    "lemma": "eng",
+    "adjective": { "comparative": null, "superlative": null },
+    "rektion": [],
+    "meaningTr": "yakın (ilişki); dar",
+    "hintTr": "sıfat",
+    "cloze": "Wir sind seit der Schulzeit ___ befreundet.",
+    "examples": [
+      {
+        "de": "Zwar sehen wir uns jetzt nicht mehr so häufig, aber ich bin sicher, dass wir weiter enge Freunde bleiben.",
+        "tr": "Gerçi artık o kadar sık görüşmüyoruz ama yakın arkadaş kalacağımızdan eminim.",
+        "fromBook": true
+      },
+      {
+        "de": "Die Hose ist mir zu eng.",
+        "tr": "Pantolon bana çok dar.",
+        "fromBook": false
+      }
+    ],
+    "note": "İki anlamı var: yakın (enge Freunde) ve dar (eine enge Straße).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 14",
+    "tags": ["kapitel-1", "freundschaft"],
+    "createdAt": "2026-11-05"
+  },
+  {
+    "id": "verlassen-85cd",
+    "type": "verb",
+    "lemma": "verlassen",
+    "verb": {
+      "reflexive": "Akk",
+      "separablePrefix": null,
+      "praeteritum": "verließ",
+      "partizip2": "verlassen",
+      "auxiliary": "haben"
+    },
+    "rektion": [{ "preposition": "auf", "case": "Akk" }],
+    "meaningTr": "(birine) güvenmek, bel bağlamak",
+    "hintTr": "fiil, dönüşlü + edat",
+    "cloze": "Keine Sorge, du kannst dich immer ___ mich ___.",
+    "examples": [
+      {
+        "de": "Auf echte Freunde kann man sich immer verlassen, d. h. man kann mit ihnen „durch dick und dünn gehen“.",
+        "tr": "Gerçek arkadaşlara her zaman güvenilebilir, yani onlarla „iyi günde kötü günde“ birlikte olunabilir.",
+        "fromBook": true
+      },
+      {
+        "de": "Ich verlasse mich darauf, dass du pünktlich bist.",
+        "tr": "Senin dakik olacağına güveniyorum.",
+        "fromBook": false
+      }
+    ],
+    "note": "Dönüşsüz \"verlassen\" = terk etmek, ayrılmak (Er hat das Haus verlassen).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 14",
+    "tags": ["kapitel-1", "freundschaft"],
+    "createdAt": "2026-11-05"
+  },
+  {
+    "id": "mit-jemandem-durch-dick-und-duenn-gehen-ec05",
+    "type": "expression",
+    "lemma": "mit jemandem durch dick und dünn gehen",
+    "rektion": [],
+    "meaningTr": "(biriyle) iyi günde kötü günde birlikte olmak",
+    "hintTr": "deyim",
+    "cloze": "Echte Freunde gehen mit dir durch ___ und ___.",
+    "examples": [
+      {
+        "de": "Auf echte Freunde kann man sich immer verlassen, d. h. man kann mit ihnen „durch dick und dünn gehen“.",
+        "tr": "Gerçek arkadaşlara her zaman güvenilebilir, yani onlarla „iyi günde kötü günde“ birlikte olunabilir.",
+        "fromBook": true
+      },
+      {
+        "de": "Wir sind schon seit der Schulzeit zusammen durch dick und dünn gegangen.",
+        "tr": "Okul yıllarından beri iyi günde kötü günde hep birlikteyiz.",
+        "fromBook": false
+      }
+    ],
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 14",
+    "tags": ["kapitel-1", "freundschaft"],
+    "createdAt": "2026-11-05"
+  },
+  {
+    "id": "das-heisst-d-h-9865",
+    "type": "other",
+    "lemma": "das heißt (d. h.)",
+    "rektion": [],
+    "meaningTr": "yani, başka bir deyişle",
+    "hintTr": "açıklama ifadesi (kısaltması var)",
+    "cloze": "Ich arbeite Teilzeit, ___ ___ nur vormittags.",
+    "examples": [
+      {
+        "de": "Auf echte Freunde kann man sich immer verlassen, d. h. man kann mit ihnen „durch dick und dünn gehen“.",
+        "tr": "Gerçek arkadaşlara her zaman güvenilebilir, yani onlarla „iyi günde kötü günde“ birlikte olunabilir.",
+        "fromBook": true
+      },
+      {
+        "de": "Der Kurs ist am Wochenende, das heißt am Samstag und Sonntag.",
+        "tr": "Kurs hafta sonu, yani cumartesi ve pazar.",
+        "fromBook": false
+      }
+    ],
+    "note": "Yazıda kısaltılır: d. h.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 14",
+    "tags": ["kapitel-1", "freundschaft"],
+    "createdAt": "2026-11-05"
+  },
+  {
+    "id": "bezeichnen-dd17",
+    "type": "verb",
+    "lemma": "bezeichnen",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": null,
+      "praeteritum": "bezeichnete",
+      "partizip2": "bezeichnet",
+      "auxiliary": "haben"
+    },
+    "rektion": [{ "preposition": "als", "case": "Akk" }],
+    "meaningTr": "(… olarak) nitelendirmek, adlandırmak",
+    "hintTr": "fiil, be- ön ekli + als",
+    "cloze": "Viele ___ ihn ___ den besten Spieler der Welt.",
+    "examples": [
+      {
+        "de": "In der Schweiz bezeichnet man Freunde als Kollegen.",
+        "tr": "İsviçre'de arkadaşlara \"Kollegen\" denir.",
+        "fromBook": true
+      },
+      {
+        "de": "Ich würde mich nicht als Experten bezeichnen.",
+        "tr": "Kendime uzman demezdim.",
+        "fromBook": false
+      }
+    ],
+    "note": "İsmi: die Bezeichnung (ad, terim).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 14",
+    "tags": ["kapitel-1", "freundschaft"],
+    "createdAt": "2026-11-05"
+  },
+  {
+    "id": "fuehren-b5dd",
+    "type": "verb",
+    "lemma": "führen",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": null,
+      "praeteritum": "führte",
+      "partizip2": "geführt",
+      "auxiliary": "haben"
+    },
+    "rektion": [{ "preposition": "zu", "case": "Dat" }],
+    "meaningTr": "(bir şeye) yol açmak",
+    "hintTr": "fiil + edat",
+    "cloze": "Zu viel Stress kann ___ Schlafproblemen ___.",
+    "examples": [
+      {
+        "de": "Dies führt bei Deutschen und Österreichern, die mit diesem Wort nur Arbeitskollegen bezeichnen, manchmal zu Missverständnissen.",
+        "tr": "Bu, bu kelimeyi yalnızca iş arkadaşları için kullanan Almanlar ve Avusturyalılarda bazen yanlış anlamalara yol açar.",
+        "fromBook": true
+      },
+      {
+        "de": "Das Gespräch hat zu keinem Ergebnis geführt.",
+        "tr": "Görüşme hiçbir sonuca varmadı.",
+        "fromBook": false
+      }
+    ],
+    "note": "Diğer anlamları: yönetmek (eine Firma führen), götürmek.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 14",
+    "tags": ["kapitel-1", "freundschaft"],
+    "createdAt": "2026-11-05"
+  },
+  {
+    "id": "missverstaendnis-0303",
+    "type": "noun",
+    "lemma": "Missverständnis",
+    "noun": { "gender": "das", "plural": "-se" },
+    "rektion": [],
+    "meaningTr": "yanlış anlama, yanlış anlaşılma",
+    "hintTr": "isim",
+    "cloze": "Das war nur ___ ___, ich habe es nicht so gemeint.",
+    "examples": [
+      {
+        "de": "Dies führt bei Deutschen und Österreichern, die mit diesem Wort nur Arbeitskollegen bezeichnen, manchmal zu Missverständnissen.",
+        "tr": "Bu, bu kelimeyi yalnızca iş arkadaşları için kullanan Almanlar ve Avusturyalılarda bazen yanlış anlamalara yol açar.",
+        "fromBook": true
+      },
+      {
+        "de": "Lass uns das Missverständnis gleich klären.",
+        "tr": "Bu yanlış anlaşılmayı hemen açıklığa kavuşturalım.",
+        "fromBook": false
+      }
+    ],
+    "note": "Fiili: missverstehen (yanlış anlamak).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 14",
+    "tags": ["kapitel-1", "freundschaft"],
+    "createdAt": "2026-11-05"
+  },
+  {
+    "id": "bekannte-b962",
+    "type": "noun",
+    "lemma": "Bekannte",
+    "noun": { "gender": "der", "plural": "-n" },
+    "rektion": [],
+    "meaningTr": "tanıdık",
+    "hintTr": "isim (sıfattan türemiş)",
+    "cloze": "Er ist kein richtiger Freund, nur ein ___.",
+    "examples": [
+      {
+        "de": "Im Deutschen unterscheidet man zwischen Bekannten und Freunden.",
+        "tr": "Almancada tanıdıklar ile arkadaşlar arasında ayrım yapılır.",
+        "fromBook": true
+      },
+      {
+        "de": "Über einen Bekannten habe ich die Wohnung gefunden.",
+        "tr": "Daireyi bir tanıdık aracılığıyla buldum.",
+        "fromBook": false
+      }
+    ],
+    "note": "Sıfat gibi çekimlenir: ein Bekannter, die Bekannten; kadın: eine Bekannte.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 14",
+    "tags": ["kapitel-1", "freundschaft"],
+    "createdAt": "2026-11-05"
+  },
+  {
+    "id": "aussage-149c",
+    "type": "noun",
+    "lemma": "Aussage",
+    "noun": { "gender": "die", "plural": "-n" },
+    "rektion": [],
+    "meaningTr": "ifade, söz; beyan",
+    "hintTr": "isim",
+    "cloze": "___ ___ des Politikers hat viele Leute geärgert.",
+    "examples": [
+      {
+        "de": "Lesen Sie die Aussagen von Leserinnen und Lesern einer Frauenzeitschrift.",
+        "tr": "Bir kadın dergisinin okurlarının görüşlerini okuyun.",
+        "fromBook": true
+      },
+      {
+        "de": "Der Zeuge hat vor Gericht eine Aussage gemacht.",
+        "tr": "Tanık mahkemede ifade verdi.",
+        "fromBook": false
+      }
+    ],
+    "note": "Fiili: aussagen.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 14",
+    "tags": ["kapitel-1", "freundschaft"],
+    "createdAt": "2026-11-05"
+  },
+  {
+    "id": "zeitschrift-a7e6",
+    "type": "noun",
+    "lemma": "Zeitschrift",
+    "noun": { "gender": "die", "plural": "-en" },
+    "rektion": [],
+    "meaningTr": "dergi",
+    "hintTr": "isim",
+    "cloze": "Im Wartezimmer lese ich gern ___ ___.",
+    "examples": [
+      {
+        "de": "Lesen Sie die Aussagen von Leserinnen und Lesern einer Frauenzeitschrift.",
+        "tr": "Bir kadın dergisinin okurlarının görüşlerini okuyun.",
+        "fromBook": true
+      },
+      {
+        "de": "Diese Zeitschrift erscheint jeden Monat.",
+        "tr": "Bu dergi her ay çıkıyor.",
+        "fromBook": false
+      }
+    ],
+    "note": "die Zeitung = gazete, die Zeitschrift = dergi.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 14",
+    "tags": ["kapitel-1", "freundschaft"],
+    "createdAt": "2026-11-05"
+  },
+  {
+    "id": "jugendfreund-36a3",
+    "type": "noun",
+    "lemma": "Jugendfreund",
+    "noun": { "gender": "der", "plural": "-e" },
+    "rektion": [],
+    "meaningTr": "gençlik arkadaşı",
+    "hintTr": "isim",
+    "cloze": "Ich kenne ihn, seit ich 15 bin. Er ist ___ ___ von mir.",
+    "examples": [
+      {
+        "de": "Helmut ist so was wie ein Jugendfreund.",
+        "tr": "Helmut bir gençlik arkadaşı gibi bir şey.",
+        "fromBook": true
+      },
+      {
+        "de": "Auf der Hochzeit habe ich viele alte Jugendfreunde wiedergesehen.",
+        "tr": "Düğünde birçok eski gençlik arkadaşımı tekrar gördüm.",
+        "fromBook": false
+      }
+    ],
+    "note": "Kadın: die Jugendfreundin.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 14",
+    "tags": ["kapitel-1", "freundschaft"],
+    "createdAt": "2026-11-05"
+  },
+  {
+    "id": "schulfreund-0839",
+    "type": "noun",
+    "lemma": "Schulfreund",
+    "noun": { "gender": "der", "plural": "-e" },
+    "rektion": [],
+    "meaningTr": "okul arkadaşı",
+    "hintTr": "isim",
+    "cloze": "Mit ___ ___ aus der Grundschule habe ich noch Kontakt.",
+    "examples": [
+      {
+        "de": "Ich habe nicht nur einen guten Schulfreund, sondern gleich sechs.",
+        "tr": "Sadece bir iyi okul arkadaşım değil, hem de altı tane var.",
+        "fromBook": true
+      },
+      {
+        "de": "Er ist ein alter Schulfreund meines Vaters.",
+        "tr": "O, babamın eski bir okul arkadaşı.",
+        "fromBook": false
+      }
+    ],
+    "note": "Kadın: die Schulfreundin.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 14",
+    "tags": ["kapitel-1", "freundschaft"],
+    "createdAt": "2026-11-05"
+  },
+  {
+    "id": "urlaubsbekanntschaft-8995",
+    "type": "noun",
+    "lemma": "Urlaubsbekanntschaft",
+    "noun": { "gender": "die", "plural": "-en" },
+    "rektion": [],
+    "meaningTr": "tatilde tanışılan kişi",
+    "hintTr": "isim",
+    "cloze": "Sie ist ___ ___ aus Italien, wir schreiben uns ab und zu.",
+    "examples": [
+      {
+        "de": "Gérard ist das, was man eine Urlaubsbekanntschaft nennt.",
+        "tr": "Gérard, tatilde tanışılan biri denen türden biri.",
+        "fromBook": true
+      },
+      {
+        "de": "Aus einer Urlaubsbekanntschaft wurde eine echte Freundschaft.",
+        "tr": "Tatilde tanıştığımız biri gerçek bir arkadaşa dönüştü.",
+        "fromBook": false
+      }
+    ],
+    "note": "die Bekanntschaft = tanışıklık; jemandes Bekanntschaft machen = biriyle tanışmak.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 14",
+    "tags": ["kapitel-1", "freundschaft"],
+    "createdAt": "2026-11-05"
+  },
+  {
+    "id": "nennen-ab56",
+    "type": "verb",
+    "lemma": "nennen",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": null,
+      "praeteritum": "nannte",
+      "partizip2": "genannt",
+      "auxiliary": "haben"
+    },
+    "rektion": [],
+    "meaningTr": "(birine bir ad) demek, adlandırmak; söylemek",
+    "hintTr": "fiil (karışık çekim)",
+    "cloze": "Eigentlich heiße ich Thomas, aber alle ___ mich Tom.",
+    "examples": [
+      {
+        "de": "Ich weiß nicht, wie ich Gisela nennen soll.",
+        "tr": "Gisela'ya ne demem gerektiğini bilmiyorum.",
+        "fromBook": true
+      },
+      {
+        "de": "Können Sie mir einen Grund nennen?",
+        "tr": "Bana bir neden söyleyebilir misiniz?",
+        "fromBook": false
+      }
+    ],
+    "note": "Karışık çekim: nannte, genannt. İki Akk alır: jemanden etwas nennen.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 14",
+    "tags": ["kapitel-1", "freundschaft"],
+    "createdAt": "2026-11-05"
+  },
+  {
+    "id": "tuer-an-tuer-wohnen-f33b",
+    "type": "expression",
+    "lemma": "Tür an Tür wohnen",
+    "rektion": [],
+    "meaningTr": "kapı komşusu olmak",
+    "hintTr": "kalıp",
+    "cloze": "Wir wohnen seit Jahren ___ ___ ___, aber wir kennen uns kaum.",
+    "examples": [
+      {
+        "de": "Wir haben ein paar Jahre Tür an Tür gewohnt und damals echt viel zusammen gemacht.",
+        "tr": "Birkaç yıl kapı komşusuyduk ve o zamanlar gerçekten çok şeyi birlikte yaptık.",
+        "fromBook": true
+      },
+      {
+        "de": "Mit meiner besten Freundin wohne ich Tür an Tür.",
+        "tr": "En yakın arkadaşımla kapı komşuyuz.",
+        "fromBook": false
+      }
+    ],
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 14",
+    "tags": ["kapitel-1", "freundschaft"],
+    "createdAt": "2026-11-05"
+  },
+  {
+    "id": "damals-09a9",
+    "type": "other",
+    "lemma": "damals",
+    "rektion": [],
+    "meaningTr": "o zamanlar",
+    "hintTr": "zarf (geçmiş)",
+    "cloze": "Als Kind habe ich in Izmir gewohnt. ___ gab es noch kein Internet.",
+    "examples": [
+      {
+        "de": "Wir haben ein paar Jahre Tür an Tür gewohnt und damals echt viel zusammen gemacht.",
+        "tr": "Birkaç yıl kapı komşusuyduk ve o zamanlar gerçekten çok şeyi birlikte yaptık.",
+        "fromBook": true
+      },
+      {
+        "de": "Damals war alles noch viel einfacher.",
+        "tr": "O zamanlar her şey çok daha basitti.",
+        "fromBook": false
+      }
+    ],
+    "note": "\"dann\" (sonra) ile karıştırma; damals = geçmişteki o dönem.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 14",
+    "tags": ["kapitel-1", "freundschaft"],
+    "createdAt": "2026-11-05"
+  },
+  {
+    "id": "sowohl-als-auch-659a",
+    "type": "other",
+    "lemma": "sowohl … als auch …",
+    "rektion": [],
+    "meaningTr": "hem … hem (de)",
+    "hintTr": "iki parçalı bağlaç",
+    "cloze": "Er spricht ___ Englisch ___ ___ Französisch.",
+    "examples": [
+      {
+        "de": "Wir haben sowohl in derselben Firma gearbeitet, als auch im selben Chor gesungen.",
+        "tr": "Hem aynı firmada çalıştık hem de aynı koroda şarkı söyledik.",
+        "fromBook": true
+      },
+      {
+        "de": "Das Hotel ist sowohl für Familien als auch für Geschäftsleute geeignet.",
+        "tr": "Otel hem aileler hem de iş insanları için uygun.",
+        "fromBook": false
+      }
+    ],
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 14",
+    "tags": ["kapitel-1", "freundschaft"],
+    "createdAt": "2026-11-05"
+  },
+  {
+    "id": "derselbe-dieselbe-dasselbe-e3e7",
+    "type": "other",
+    "lemma": "derselbe, dieselbe, dasselbe",
+    "rektion": [],
+    "meaningTr": "aynı (kendisi)",
+    "hintTr": "belirteç (artikel gibi çekimlenir)",
+    "cloze": "Sie trägt heute ___ Kleid wie gestern.",
+    "examples": [
+      {
+        "de": "Wir haben sowohl in derselben Firma gearbeitet, als auch im selben Chor gesungen.",
+        "tr": "Hem aynı firmada çalıştık hem de aynı koroda şarkı söyledik.",
+        "fromBook": true
+      },
+      {
+        "de": "Wir sind im selben Jahr geboren.",
+        "tr": "Aynı yıl doğduk.",
+        "fromBook": false
+      }
+    ],
+    "note": "Bitişik yazılır; edatla kaynaşınca: im selben = in demselben.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 14",
+    "tags": ["kapitel-1", "freundschaft"],
+    "createdAt": "2026-11-05"
+  },
+  {
+    "id": "chor-bfda",
+    "type": "noun",
+    "lemma": "Chor",
+    "noun": { "gender": "der", "plural": "¨-e" },
+    "rektion": [],
+    "meaningTr": "koro",
+    "hintTr": "isim",
+    "cloze": "Meine Mutter singt seit 20 Jahren in ___ ___.",
+    "examples": [
+      {
+        "de": "Wir haben sowohl in derselben Firma gearbeitet, als auch im selben Chor gesungen.",
+        "tr": "Hem aynı firmada çalıştık hem de aynı koroda şarkı söyledik.",
+        "fromBook": true
+      },
+      {
+        "de": "Der Chor gibt am Sonntag ein Konzert.",
+        "tr": "Koro pazar günü bir konser veriyor.",
+        "fromBook": false
+      }
+    ],
+    "note": "Okunuşu: \"kor\" (ch = k).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 14",
+    "tags": ["kapitel-1", "freundschaft"],
+    "createdAt": "2026-11-05"
+  },
+  {
+    "id": "verschieden-f3de",
+    "type": "adjective",
+    "lemma": "verschieden",
+    "adjective": { "comparative": null, "superlative": null },
+    "rektion": [],
+    "meaningTr": "farklı, çeşitli",
+    "hintTr": "sıfat (ver- ile başlar)",
+    "cloze": "Das Kleid gibt es in fünf ___ Farben.",
+    "examples": [
+      {
+        "de": "Heute wohnen wir in verschiedenen Städten und sehen uns nur noch ab und zu.",
+        "tr": "Bugün farklı şehirlerde oturuyoruz ve artık sadece ara sıra görüşüyoruz.",
+        "fromBook": true
+      },
+      {
+        "de": "Wir haben ganz verschiedene Meinungen.",
+        "tr": "Tamamen farklı fikirlerdeyiz.",
+        "fromBook": false
+      }
+    ],
+    "note": "unterschiedlich ile neredeyse aynı; çoğulda \"çeşitli\" anlamı öne çıkar.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 14",
+    "tags": ["kapitel-1", "freundschaft"],
+    "createdAt": "2026-11-05"
+  },
+  {
+    "id": "ab-und-zu-0b60",
+    "type": "expression",
+    "lemma": "ab und zu",
+    "rektion": [],
+    "meaningTr": "ara sıra",
+    "hintTr": "kalıp (zarf)",
+    "cloze": "Wir sehen uns nur noch ___ ___ ___.",
+    "examples": [
+      {
+        "de": "Heute wohnen wir in verschiedenen Städten und sehen uns nur noch ab und zu.",
+        "tr": "Bugün farklı şehirlerde oturuyoruz ve artık sadece ara sıra görüşüyoruz.",
+        "fromBook": true
+      },
+      {
+        "de": "Ab und zu gehe ich ins Theater.",
+        "tr": "Ara sıra tiyatroya giderim.",
+        "fromBook": false
+      }
+    ],
+    "note": "Eş anlamlı: manchmal, hin und wieder.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 14",
+    "tags": ["kapitel-1", "freundschaft"],
+    "createdAt": "2026-11-05"
+  },
+  {
+    "id": "austauschen-1564",
+    "type": "verb",
+    "lemma": "austauschen",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": "aus",
+      "praeteritum": "tauschte aus",
+      "partizip2": "ausgetauscht",
+      "auxiliary": "haben"
+    },
+    "rektion": [],
+    "meaningTr": "(karşılıklı) paylaşmak, değiş tokuş etmek; değiştirmek",
+    "hintTr": "fiil, ayrılabilir",
+    "cloze": "Nach dem Meeting ___ wir unsere Telefonnummern ___.",
+    "examples": [
+      {
+        "de": "Wenn wir uns sehen, tauschen wir erst mal alle Neuigkeiten aus.",
+        "tr": "Görüştüğümüzde önce bütün haberleri paylaşıyoruz.",
+        "fromBook": true
+      },
+      {
+        "de": "Der Mechaniker hat die Bremsen ausgetauscht.",
+        "tr": "Tamirci frenleri değiştirdi.",
+        "fromBook": false
+      }
+    ],
+    "note": "sich austauschen über + Akk = (bir konuda) fikir alışverişi yapmak.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 14",
+    "tags": ["kapitel-1", "freundschaft"],
+    "createdAt": "2026-11-05"
+  },
+  {
+    "id": "erst-mal-2533",
+    "type": "other",
+    "lemma": "erst mal",
+    "rektion": [],
+    "meaningTr": "önce bir, ilk önce",
+    "hintTr": "zarf, günlük dil",
+    "cloze": "Lass uns ___ ___ einen Kaffee trinken, dann reden wir.",
+    "examples": [
+      {
+        "de": "Wenn wir uns sehen, tauschen wir erst mal alle Neuigkeiten aus.",
+        "tr": "Görüştüğümüzde önce bütün haberleri paylaşıyoruz.",
+        "fromBook": true
+      },
+      {
+        "de": "Ich muss erst mal nachdenken.",
+        "tr": "Önce bir düşünmem lazım.",
+        "fromBook": false
+      }
+    ],
+    "note": "Günlük dil; yazı dilinde: zuerst, erst einmal.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 14",
+    "tags": ["kapitel-1", "freundschaft"],
+    "createdAt": "2026-11-05"
+  },
+  {
+    "id": "neuigkeit-9f1e",
+    "type": "noun",
+    "lemma": "Neuigkeit",
+    "noun": { "gender": "die", "plural": "-en" },
+    "rektion": [],
+    "meaningTr": "haber, yenilik",
+    "hintTr": "isim",
+    "cloze": "Ich habe ___ tolle ___ für dich: Ich bekomme ein Baby!",
+    "examples": [
+      {
+        "de": "Wenn wir uns sehen, tauschen wir erst mal alle Neuigkeiten aus.",
+        "tr": "Görüştüğümüzde önce bütün haberleri paylaşıyoruz.",
+        "fromBook": true
+      },
+      {
+        "de": "Gibt es Neuigkeiten zu deiner Bewerbung?",
+        "tr": "Başvurunla ilgili yeni bir haber var mı?",
+        "fromBook": false
+      }
+    ],
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 14",
+    "tags": ["kapitel-1", "freundschaft"],
+    "createdAt": "2026-11-05"
+  },
+  {
+    "id": "befreundet-2630",
+    "type": "adjective",
+    "lemma": "befreundet",
+    "adjective": { "comparative": null, "superlative": null },
+    "rektion": [{ "preposition": "mit", "case": "Dat" }],
+    "meaningTr": "(biriyle) arkadaş",
+    "hintTr": "sıfat + edat",
+    "cloze": "Ich bin schon seit der Schulzeit ___ ihr ___.",
+    "examples": [
+      {
+        "de": "Ich muss sagen, ich hatte nie wieder eine Nachbarin, mit der ich so gut befreundet war.",
+        "tr": "Şunu söylemeliyim, bir daha hiç bu kadar iyi arkadaş olduğum bir komşum olmadı.",
+        "fromBook": true
+      },
+      {
+        "de": "Unsere Familien sind seit Jahren miteinander befreundet.",
+        "tr": "Ailelerimiz yıllardır birbirleriyle dost.",
+        "fromBook": false
+      }
+    ],
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 14",
+    "tags": ["kapitel-1", "freundschaft"],
+    "createdAt": "2026-11-05"
+  },
+  {
+    "id": "nicht-nur-sondern-auch-752a",
+    "type": "other",
+    "lemma": "nicht nur …, sondern auch …",
+    "rektion": [],
+    "meaningTr": "sadece … değil, … de",
+    "hintTr": "iki parçalı bağlaç",
+    "cloze": "Sie spricht nicht nur Deutsch, ___ ___ Spanisch.",
+    "examples": [
+      {
+        "de": "Einige Monate haben wir uns nicht nur regelmäßig geschrieben, sondern auch oft telefoniert.",
+        "tr": "Birkaç ay boyunca sadece düzenli yazışmadık, sık sık telefonla da konuştuk.",
+        "fromBook": true
+      },
+      {
+        "de": "Das Restaurant ist nicht nur günstig, sondern auch sehr gemütlich.",
+        "tr": "Restoran sadece ucuz değil, aynı zamanda çok rahat.",
+        "fromBook": false
+      }
+    ],
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 14",
+    "tags": ["kapitel-1", "freundschaft"],
+    "createdAt": "2026-11-05"
+  },
+  {
+    "id": "zu-besuch-kommen-b8cb",
+    "type": "expression",
+    "lemma": "zu Besuch kommen",
+    "rektion": [],
+    "meaningTr": "ziyarete gelmek",
+    "hintTr": "kalıp",
+    "cloze": "Am Wochenende kommen meine Eltern ___ ___.",
+    "examples": [
+      {
+        "de": "Einmal kam er zu mir nach Hamburg zu Besuch.",
+        "tr": "Bir keresinde Hamburg'a bana ziyarete geldi.",
+        "fromBook": true
+      },
+      {
+        "de": "Wann kommst du mal wieder zu Besuch?",
+        "tr": "Ne zaman yine ziyarete geleceksin?",
+        "fromBook": false
+      }
+    ],
+    "note": "zu Besuch sein = misafir olmak.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 14",
+    "tags": ["kapitel-1", "freundschaft"],
+    "createdAt": "2026-11-05"
+  },
+  {
+    "id": "jemanden-aus-den-augen-verlieren-54eb",
+    "type": "expression",
+    "lemma": "jemanden aus den Augen verlieren",
+    "rektion": [],
+    "meaningTr": "(biriyle) bağlantıyı kaybetmek, gözden kaybetmek",
+    "hintTr": "deyim",
+    "cloze": "Nach der Schule haben wir uns leider ___ ___ ___ verloren.",
+    "examples": [
+      {
+        "de": "Danach haben wir uns aus den Augen verloren.",
+        "tr": "Sonra birbirimizi gözden kaybettik.",
+        "fromBook": true
+      },
+      {
+        "de": "Lass uns in Kontakt bleiben, ich will dich nicht aus den Augen verlieren.",
+        "tr": "İrtibatta kalalım, seni kaybetmek istemiyorum.",
+        "fromBook": false
+      }
+    ],
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 14",
+    "tags": ["kapitel-1", "freundschaft"],
+    "createdAt": "2026-11-05"
+  },
+  {
+    "id": "neulich-266f",
+    "type": "other",
+    "lemma": "neulich",
+    "rektion": [],
+    "meaningTr": "geçenlerde",
+    "hintTr": "zarf (yakın geçmiş)",
+    "cloze": "___ habe ich deinen Bruder im Supermarkt getroffen.",
+    "examples": [
+      {
+        "de": "Doch neulich bekam ich eine E-Mail von ihm.",
+        "tr": "Ama geçenlerde ondan bir e-posta aldım.",
+        "fromBook": true
+      },
+      {
+        "de": "Wir haben neulich darüber gesprochen.",
+        "tr": "Geçenlerde bunun hakkında konuştuk.",
+        "fromBook": false
+      }
+    ],
+    "note": "Sadece geçmiş için kullanılır; eş anlamlı: vor Kurzem.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 14",
+    "tags": ["kapitel-1", "freundschaft"],
+    "createdAt": "2026-11-05"
+  },
+  {
+    "id": "hin-und-hergerissen-sein-e368",
+    "type": "expression",
+    "lemma": "hin- und hergerissen sein",
+    "rektion": [],
+    "meaningTr": "ikilemde kalmak, karar verememek",
+    "hintTr": "deyim",
+    "cloze": "Soll ich das Jobangebot annehmen? Ich bin total ___ ___ ___.",
+    "examples": [
+      {
+        "de": "Nun bin ich hin- und hergerissen.",
+        "tr": "Şimdi ikilemde kaldım.",
+        "fromBook": true
+      },
+      {
+        "de": "Zwischen den beiden Wohnungen bin ich hin- und hergerissen.",
+        "tr": "İki daire arasında kaldım.",
+        "fromBook": false
+      }
+    ],
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 14",
+    "tags": ["kapitel-1", "freundschaft"],
+    "createdAt": "2026-11-05"
+  },
+  {
+    "id": "einerseits-andererseits-5d53",
+    "type": "other",
+    "lemma": "einerseits … andererseits …",
+    "rektion": [],
+    "meaningTr": "bir yandan … öte yandan",
+    "hintTr": "iki parçalı bağlaç",
+    "cloze": "___ möchte ich reisen, ___ fehlt mir das Geld.",
+    "examples": [
+      {
+        "de": "Einerseits würde ich ihn sehr gern wiedersehen, andererseits bringt so ein Treffen wahrscheinlich nichts.",
+        "tr": "Bir yandan onu tekrar görmeyi çok isterim, öte yandan böyle bir buluşma muhtemelen bir işe yaramaz.",
+        "fromBook": true
+      },
+      {
+        "de": "Einerseits ist die Stadt teuer, andererseits gibt es hier viele Jobs.",
+        "tr": "Bir yandan şehir pahalı, öte yandan burada çok iş var.",
+        "fromBook": false
+      }
+    ],
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 14",
+    "tags": ["kapitel-1", "freundschaft"],
+    "createdAt": "2026-11-05"
+  },
+  {
+    "id": "etwas-bringt-nichts-3fbe",
+    "type": "expression",
+    "lemma": "etwas bringt nichts",
+    "rektion": [],
+    "meaningTr": "(bir şey) bir işe yaramaz",
+    "hintTr": "kalıp, günlük dil",
+    "cloze": "Es ___ ___, sich jetzt darüber zu ärgern.",
+    "examples": [
+      {
+        "de": "Einerseits würde ich ihn sehr gern wiedersehen, andererseits bringt so ein Treffen wahrscheinlich nichts.",
+        "tr": "Bir yandan onu tekrar görmeyi çok isterim, öte yandan böyle bir buluşma muhtemelen bir işe yaramaz.",
+        "fromBook": true
+      },
+      {
+        "de": "Mit ihm zu diskutieren bringt nichts, er hört sowieso nicht zu.",
+        "tr": "Onunla tartışmak işe yaramaz, zaten dinlemiyor.",
+        "fromBook": false
+      }
+    ],
+    "note": "Günlük dil. Olumlu hali: Das bringt viel (çok işe yarar).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 14",
+    "tags": ["kapitel-1", "freundschaft"],
+    "createdAt": "2026-11-05"
+  },
+  {
+    "id": "treffen-4b37",
+    "type": "noun",
+    "lemma": "Treffen",
+    "noun": { "gender": "das", "plural": "-" },
+    "rektion": [],
+    "meaningTr": "buluşma, toplantı",
+    "hintTr": "isim (fiilden)",
+    "cloze": "___ ___ mit den alten Kollegen war sehr lustig.",
+    "examples": [
+      {
+        "de": "Einerseits würde ich ihn sehr gern wiedersehen, andererseits bringt so ein Treffen wahrscheinlich nichts.",
+        "tr": "Bir yandan onu tekrar görmeyi çok isterim, öte yandan böyle bir buluşma muhtemelen bir işe yaramaz.",
+        "fromBook": true
+      },
+      {
+        "de": "Wir haben ein Treffen für nächste Woche vereinbart.",
+        "tr": "Gelecek hafta için bir buluşma ayarladık.",
+        "fromBook": false
+      }
+    ],
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 14",
+    "tags": ["kapitel-1", "freundschaft"],
+    "createdAt": "2026-11-05"
+  },
+  {
+    "id": "kette-765c",
+    "type": "noun",
+    "lemma": "Kette",
+    "noun": { "gender": "die", "plural": "-n" },
+    "rektion": [],
+    "meaningTr": "kolye; zincir",
+    "hintTr": "isim",
+    "cloze": "Zum Geburtstag hat sie ___ goldene ___ bekommen.",
+    "examples": [
+      {
+        "de": "Zum Geburtstag haben mir die sechs zusammen eine Kette geschenkt mit ihren Namen auf der Rückseite.",
+        "tr": "Doğum günümde altısı birlikte bana arkasında isimleri olan bir kolye hediye ettiler.",
+        "fromBook": true
+      },
+      {
+        "de": "Das Fahrrad ist mit einer Kette gesichert.",
+        "tr": "Bisiklet bir zincirle kilitli.",
+        "fromBook": false
+      }
+    ],
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 14",
+    "tags": ["kapitel-1", "freundschaft"],
+    "createdAt": "2026-11-05"
+  },
+  {
+    "id": "rueckseite-0ed7",
+    "type": "noun",
+    "lemma": "Rückseite",
+    "noun": { "gender": "die", "plural": "-n" },
+    "rektion": [],
+    "meaningTr": "arka yüz, arka taraf",
+    "hintTr": "isim",
+    "cloze": "Bitte unterschreiben Sie auf ___ ___ des Formulars.",
+    "examples": [
+      {
+        "de": "Zum Geburtstag haben mir die sechs zusammen eine Kette geschenkt mit ihren Namen auf der Rückseite.",
+        "tr": "Doğum günümde altısı birlikte bana arkasında isimleri olan bir kolye hediye ettiler.",
+        "fromBook": true
+      },
+      {
+        "de": "Die Lösungen stehen auf der Rückseite.",
+        "tr": "Çözümler arka sayfada.",
+        "fromBook": false
+      }
+    ],
+    "note": "Karşıtı: die Vorderseite (ön yüz).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 14",
+    "tags": ["kapitel-1", "freundschaft"],
+    "createdAt": "2026-11-05"
+  },
+  {
+    "id": "obwohl-6398",
+    "type": "other",
+    "lemma": "obwohl",
+    "rektion": [],
+    "meaningTr": "…-e rağmen, …-dığı halde",
+    "hintTr": "bağlaç (yan cümle)",
+    "cloze": "___ es regnet, gehen wir spazieren.",
+    "examples": [
+      {
+        "de": "Obwohl ich jetzt im Ausland studiere, ist der Kontakt nicht abgerissen.",
+        "tr": "Şu an yurt dışında okumama rağmen bağlantı kopmadı.",
+        "fromBook": true
+      },
+      {
+        "de": "Er ist zur Arbeit gegangen, obwohl er krank war.",
+        "tr": "Hasta olmasına rağmen işe gitti.",
+        "fromBook": false
+      }
+    ],
+    "note": "Yan cümle kurar, fiil sona gider; \"trotzdem\" ise ana cümlede kullanılır.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 14",
+    "tags": ["kapitel-1", "freundschaft"],
+    "createdAt": "2026-11-05"
+  },
+  {
+    "id": "ausland-7a57",
+    "type": "noun",
+    "lemma": "Ausland",
+    "noun": { "gender": "das", "plural": null },
+    "rektion": [],
+    "meaningTr": "yurt dışı",
+    "hintTr": "isim",
+    "cloze": "___ ___ ist für viele junge Leute sehr attraktiv.",
+    "examples": [
+      {
+        "de": "Obwohl ich jetzt im Ausland studiere, ist der Kontakt nicht abgerissen.",
+        "tr": "Şu an yurt dışında okumama rağmen bağlantı kopmadı.",
+        "fromBook": true
+      },
+      {
+        "de": "Nach dem Studium möchte sie ins Ausland gehen.",
+        "tr": "Üniversiteden sonra yurt dışına gitmek istiyor.",
+        "fromBook": false
+      }
+    ],
+    "note": "im Ausland = yurt dışında, ins Ausland = yurt dışına.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 14",
+    "tags": ["kapitel-1", "freundschaft"],
+    "createdAt": "2026-11-05"
+  },
+  {
+    "id": "abreissen-98e3",
+    "type": "verb",
+    "lemma": "abreißen",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": "ab",
+      "praeteritum": "riss ab",
+      "partizip2": "abgerissen",
+      "auxiliary": "haben/sein"
+    },
+    "rektion": [],
+    "meaningTr": "(bağlantı) kopmak; yıkmak",
+    "hintTr": "fiil, ayrılabilir",
+    "cloze": "Seit dem Umzug ist der Kontakt zu ihr leider ___.",
+    "examples": [
+      {
+        "de": "Obwohl ich jetzt im Ausland studiere, ist der Kontakt nicht abgerissen.",
+        "tr": "Şu an yurt dışında okumama rağmen bağlantı kopmadı.",
+        "fromBook": true
+      },
+      {
+        "de": "Das alte Gebäude wird nächstes Jahr abgerissen.",
+        "tr": "Eski bina gelecek yıl yıkılacak.",
+        "fromBook": false
+      }
+    ],
+    "note": "\"Kopmak\" anlamında sein, \"yıkmak\" anlamında haben ile.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 14",
+    "tags": ["kapitel-1", "freundschaft"],
+    "createdAt": "2026-11-05"
+  },
+  {
+    "id": "zwar-aber-d4eb",
+    "type": "other",
+    "lemma": "zwar … aber …",
+    "rektion": [],
+    "meaningTr": "gerçi … ama",
+    "hintTr": "iki parçalı bağlaç",
+    "cloze": "Die Wohnung ist ___ klein, ___ sehr gemütlich.",
+    "examples": [
+      {
+        "de": "Zwar sehen wir uns jetzt nicht mehr so häufig, aber ich bin sicher, dass wir weiter enge Freunde bleiben.",
+        "tr": "Gerçi artık o kadar sık görüşmüyoruz ama yakın arkadaş kalacağımızdan eminim.",
+        "fromBook": true
+      },
+      {
+        "de": "Ich habe zwar wenig Zeit, aber ich helfe dir gern.",
+        "tr": "Gerçi pek vaktim yok ama sana seve seve yardım ederim.",
+        "fromBook": false
+      }
+    ],
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 14",
+    "tags": ["kapitel-1", "freundschaft"],
+    "createdAt": "2026-11-05"
+  },
+  {
+    "id": "haeufig-7d01",
+    "type": "adjective",
+    "lemma": "häufig",
+    "adjective": { "comparative": null, "superlative": null },
+    "rektion": [],
+    "meaningTr": "sık (sık)",
+    "hintTr": "sıfat/zarf (= oft)",
+    "cloze": "Kopfschmerzen sind ein ___ Problem bei Stress.",
+    "examples": [
+      {
+        "de": "Zwar sehen wir uns jetzt nicht mehr so häufig, aber ich bin sicher, dass wir weiter enge Freunde bleiben.",
+        "tr": "Gerçi artık o kadar sık görüşmüyoruz ama yakın arkadaş kalacağımızdan eminim.",
+        "fromBook": true
+      },
+      {
+        "de": "Wie häufig gehst du ins Fitnessstudio?",
+        "tr": "Spor salonuna ne sıklıkla gidiyorsun?",
+        "fromBook": false
+      }
+    ],
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 14",
+    "tags": ["kapitel-1", "freundschaft"],
+    "createdAt": "2026-11-05"
+  },
+  {
+    "id": "so-was-wie-4397",
+    "type": "expression",
+    "lemma": "so was wie",
+    "rektion": [],
+    "meaningTr": "… gibi bir şey",
+    "hintTr": "kalıp, günlük dil",
+    "cloze": "Er ist ___ ___ ___ ein großer Bruder für mich.",
+    "examples": [
+      {
+        "de": "Helmut ist so was wie ein Jugendfreund.",
+        "tr": "Helmut bir gençlik arkadaşı gibi bir şey.",
+        "fromBook": true
+      },
+      {
+        "de": "Gibt es hier so was wie einen Supermarkt?",
+        "tr": "Burada süpermarket gibi bir şey var mı?",
+        "fromBook": false
+      }
+    ],
+    "note": "Günlük dil; yazıda: so etwas wie.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 14",
+    "tags": ["kapitel-1", "freundschaft"],
+    "createdAt": "2026-11-05"
+  },
+  {
+    "id": "unterschiedlich-be0e",
+    "type": "adjective",
+    "lemma": "unterschiedlich",
+    "adjective": { "comparative": null, "superlative": null },
+    "rektion": [],
+    "meaningTr": "farklı",
+    "hintTr": "sıfat (-lich ile biter)",
+    "cloze": "Die Meinungen im Team sind sehr ___.",
+    "examples": [
+      {
+        "de": "In vielen Punkten sind wir total unterschiedlich, aber wir haben denselben Geschmack.",
+        "tr": "Birçok konuda tamamen farklıyız ama aynı zevke sahibiz.",
+        "fromBook": true
+      },
+      {
+        "de": "Die Preise sind je nach Saison unterschiedlich.",
+        "tr": "Fiyatlar sezona göre değişiyor.",
+        "fromBook": false
+      }
+    ],
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 14",
+    "tags": ["kapitel-1", "freundschaft"],
+    "createdAt": "2026-11-05"
+  },
+  {
+    "id": "geschmack-cd00",
+    "type": "noun",
+    "lemma": "Geschmack",
+    "noun": { "gender": "der", "plural": "¨-er" },
+    "rektion": [],
+    "meaningTr": "zevk; tat",
+    "hintTr": "isim",
+    "cloze": "Die Suppe hat ___ komischen ___.",
+    "examples": [
+      {
+        "de": "In vielen Punkten sind wir total unterschiedlich, aber wir haben denselben Geschmack.",
+        "tr": "Birçok konuda tamamen farklıyız ama aynı zevke sahibiz.",
+        "fromBook": true
+      },
+      {
+        "de": "Über Geschmack lässt sich nicht streiten.",
+        "tr": "Zevkler ve renkler tartışılmaz.",
+        "fromBook": false
+      }
+    ],
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 14",
+    "tags": ["kapitel-1", "freundschaft"],
+    "createdAt": "2026-11-05"
+  },
+  {
+    "id": "alle-paar-wochen-3cbb",
+    "type": "expression",
+    "lemma": "alle paar Wochen",
+    "rektion": [],
+    "meaningTr": "birkaç haftada bir",
+    "hintTr": "zaman kalıbı",
+    "cloze": "Wir telefonieren ___ ___ Tage.",
+    "examples": [
+      {
+        "de": "Wir sehen uns alle paar Wochen mal.",
+        "tr": "Birkaç haftada bir görüşüyoruz.",
+        "fromBook": true
+      },
+      {
+        "de": "Alle paar Monate fahre ich nach Hause.",
+        "tr": "Birkaç ayda bir eve gidiyorum.",
+        "fromBook": false
+      }
+    ],
+    "note": "alle + zaman = her … -de bir: alle zwei Wochen (iki haftada bir).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 14",
+    "tags": ["kapitel-1", "freundschaft"],
+    "createdAt": "2026-11-05"
+  },
+  {
+    "id": "entweder-oder-72b3",
+    "type": "other",
+    "lemma": "entweder … oder …",
+    "rektion": [],
+    "meaningTr": "ya … ya da",
+    "hintTr": "iki parçalı bağlaç",
+    "cloze": "Wir fahren ___ mit dem Zug ___ mit dem Auto.",
+    "examples": [
+      {
+        "de": "Entweder gehen wir dann was essen oder wir treffen uns bei einem von uns zu Hause.",
+        "tr": "Ya bir şeyler yemeye gidiyoruz ya da birimizin evinde buluşuyoruz.",
+        "fromBook": true
+      },
+      {
+        "de": "Entweder du kommst jetzt mit, oder ich gehe allein.",
+        "tr": "Ya şimdi benimle gelirsin ya da tek giderim.",
+        "fromBook": false
+      }
+    ],
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 14",
+    "tags": ["kapitel-1", "freundschaft"],
+    "createdAt": "2026-11-05"
+  },
+  {
+    "id": "miteinander-f8d3",
+    "type": "other",
+    "lemma": "miteinander",
+    "rektion": [],
+    "meaningTr": "birbiriyle, birlikte",
+    "hintTr": "zarf",
+    "cloze": "Seit dem Streit reden die beiden nicht mehr ___.",
+    "examples": [
+      {
+        "de": "Oft reden wir dann die halbe Nacht miteinander.",
+        "tr": "Çoğu zaman gecenin yarısına kadar birbirimizle konuşuyoruz.",
+        "fromBook": true
+      },
+      {
+        "de": "Im Team arbeiten wir sehr gut miteinander.",
+        "tr": "Ekipte birbirimizle çok iyi çalışıyoruz.",
+        "fromBook": false
+      }
+    ],
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 14",
+    "tags": ["kapitel-1", "freundschaft"],
+    "createdAt": "2026-11-05"
+  },
+  {
+    "id": "es-macht-jemandem-nichts-aus-5665",
+    "type": "expression",
+    "lemma": "es macht jemandem nichts aus",
+    "rektion": [{ "preposition": null, "case": "Dat" }],
+    "meaningTr": "(birine) fark etmez, sorun olmaz",
+    "hintTr": "kalıp, ayrılabilir fiil + Dat",
+    "cloze": "Es ___ mir nichts ___, wenn du etwas später kommst.",
+    "examples": [
+      {
+        "de": "Es macht weder ihm noch mir etwas aus, wenn wir am nächsten Tag total müde sind.",
+        "tr": "Ertesi gün çok yorgun olmamız ne onun ne de benim için sorun oluyor.",
+        "fromBook": true
+      },
+      {
+        "de": "Macht es Ihnen etwas aus, das Fenster zu schließen?",
+        "tr": "Pencereyi kapatmanızın sakıncası var mı?",
+        "fromBook": false
+      }
+    ],
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 14",
+    "tags": ["kapitel-1", "freundschaft"],
+    "createdAt": "2026-11-05"
+  },
+  {
+    "id": "weder-noch-b342",
+    "type": "other",
+    "lemma": "weder … noch …",
+    "rektion": [],
+    "meaningTr": "ne … ne de",
+    "hintTr": "iki parçalı bağlaç",
+    "cloze": "Ich habe ___ Zeit ___ Lust.",
+    "examples": [
+      {
+        "de": "Es macht weder ihm noch mir etwas aus, wenn wir am nächsten Tag total müde sind.",
+        "tr": "Ertesi gün çok yorgun olmamız ne onun ne de benim için sorun oluyor.",
+        "fromBook": true
+      },
+      {
+        "de": "Er trinkt weder Kaffee noch Tee.",
+        "tr": "Ne kahve ne de çay içer.",
+        "fromBook": false
+      }
+    ],
+    "note": "Kendisi olumsuzdur, ayrıca \"nicht\" eklenmez.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 14",
+    "tags": ["kapitel-1", "freundschaft"],
+    "createdAt": "2026-11-05"
+  },
+  {
+    "id": "echt-385c",
+    "type": "adjective",
+    "lemma": "echt",
+    "adjective": { "comparative": null, "superlative": null },
+    "rektion": [],
+    "meaningTr": "gerçek, hakiki; (günlük dilde) gerçekten",
+    "hintTr": "sıfat",
+    "cloze": "Ist der Ring aus ___ Gold?",
+    "examples": [
+      {
+        "de": "Wir haben ein paar Jahre Tür an Tür gewohnt und damals echt viel zusammen gemacht.",
+        "tr": "Birkaç yıl kapı komşusuyduk ve o zamanlar gerçekten çok şeyi birlikte yaptık.",
+        "fromBook": true
+      },
+      {
+        "de": "Der Film war echt gut!",
+        "tr": "Film gerçekten çok iyiydi!",
+        "fromBook": false
+      }
+    ],
+    "note": "Zarf olarak günlük dilde \"gerçekten, çok\" demek (echt toll).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 14",
+    "tags": ["kapitel-1", "freundschaft"],
+    "createdAt": "2026-11-05"
+  },
+  {
+    "id": "einige-56c8",
+    "type": "other",
+    "lemma": "einige",
+    "rektion": [],
+    "meaningTr": "birkaç, bazı",
+    "hintTr": "belirteç (çoğul)",
+    "cloze": "Ich habe noch ___ Fragen zu dem Vertrag.",
+    "examples": [
+      {
+        "de": "Einige Monate haben wir uns nicht nur regelmäßig geschrieben, sondern auch oft telefoniert.",
+        "tr": "Birkaç ay boyunca sadece düzenli yazışmadık, sık sık telefonla da konuştuk.",
+        "fromBook": true
+      },
+      {
+        "de": "Einige meiner Freunde wohnen im Ausland.",
+        "tr": "Bazı arkadaşlarım yurt dışında yaşıyor.",
+        "fromBook": false
+      }
+    ],
+    "note": "Tekil hali \"einiges\" = bazı şeyler (Ich habe einiges gelernt).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 14",
+    "tags": ["kapitel-1", "freundschaft"],
+    "createdAt": "2026-11-05"
   }
 ]
