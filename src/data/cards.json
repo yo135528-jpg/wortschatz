@@ -4329,5 +4329,34 @@
         "fromBook": false
       }
     ]
+  },
+  {
+    "id": "erdbevoelkerung-cff7",
+    "type": "noun",
+    "lemma": "Erdbevölkerung",
+    "noun": { "gender": "die", "plural": null },
+    "rektion": [],
+    "grammarTr": "die Erde + die Bevölkerung → die Erdbevölkerung. Birleşik isimde artikeli son kelime belirler.",
+    "note": "Asıl kelime: die Bevölkerung (nüfus, halk), ör. die Bevölkerung Deutschlands.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 16",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "dünya nüfusu",
+    "hintTr": "isim, birleşik",
+    "cloze": "[Die] [Erdbevölkerung] wächst jedes Jahr um etwa 70 Millionen Menschen.",
+    "clozeTr": "Dünya nüfusu her yıl yaklaşık 70 milyon kişi artıyor.",
+    "examples": [
+      {
+        "de": "Die Welt wird immer kleiner. Die Erdbevölkerung rückt näher zusammen.",
+        "tr": "Dünya giderek küçülüyor. Dünya nüfusu birbirine daha çok yaklaşıyor.",
+        "fromBook": true
+      },
+      {
+        "de": "Etwa die Hälfte der Erdbevölkerung lebt in Städten.",
+        "tr": "Dünya nüfusunun yaklaşık yarısı şehirlerde yaşıyor.",
+        "fromBook": false
+      }
+    ]
   }
 ]
