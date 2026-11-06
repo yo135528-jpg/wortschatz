@@ -291,7 +291,55 @@ main {
   border-radius: 0;
   text-align: left;
 }
-.note-title { font-weight: 600; }
+.note-title { font-weight: 600; display: flex; align-items: center; gap: 0.45rem; }
+
+.browse-controls { display: grid; gap: 0.5rem; margin-bottom: 0.9rem; }
+.browse-summary { display: flex; justify-content: space-between; align-items: center; color: var(--muted); font-size: 0.85rem; }
+.legend { display: flex; gap: 0.5rem; font-weight: 600; }
+.chips { display: flex; flex-wrap: wrap; gap: 0.35rem; align-items: center; }
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  background: var(--surface);
+}
+.chip[aria-pressed='true'] { background: var(--text); border-color: var(--text); color: var(--bg); }
+.chip-count { color: var(--muted); font-size: 0.78rem; font-weight: 500; }
+.chip[aria-pressed='true'] .chip-count { color: inherit; opacity: 0.7; }
+.sort {
+  margin-left: auto;
+  padding: 0.3rem 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--text);
+  font-size: 0.82rem;
+}
+
+/* Status dot: grey = new, orange = learning, green = mature, ring = suspended, red = hard. */
+.dot { width: 0.55rem; height: 0.55rem; border-radius: 50%; flex: none; background: var(--border); }
+.dot-learning { background: var(--hard); }
+.dot-mature { background: var(--good); }
+.dot-suspended { background: transparent; box-shadow: inset 0 0 0 1.5px var(--muted); }
+.dot-hard { background: var(--again); }
+
+.browse-list { display: grid; gap: 0.9rem; }
+.group { display: grid; gap: 0.5rem; }
+.group-header {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  border: 0;
+  background: transparent;
+  padding: 0.2rem 0;
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-align: left;
+}
+.chevron { color: var(--muted); width: 0.8rem; }
 .note-meta { color: var(--muted); font-size: 0.85rem; }
 .note-details { padding: 0 0.9rem 0.9rem; display: grid; gap: 0.6rem; }
 .card-row { display: flex; align-items: center; gap: 0.6rem; flex-wrap: wrap; }
