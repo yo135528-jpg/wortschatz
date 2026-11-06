@@ -7209,5 +7209,271 @@
         "fromBook": false
       }
     ]
+  },
+  {
+    "id": "mitbekommen-e16c",
+    "type": "verb",
+    "lemma": "mitbekommen",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": "mit",
+      "praeteritum": "bekam mit",
+      "partizip2": "mitbekommen",
+      "auxiliary": "haben"
+    },
+    "rektion": [],
+    "grammarTr": null,
+    "note": "Çok yaygın gündelik fiil: „Hast du das mitbekommen?\" = Duydun mu / haberin var mı?",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Alltagssprache, Kapitel 1 (Diskussion S. 17)",
+    "tags": ["kapitel-1", "umgangssprache"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "(bir şeyden) haberi olmak, fark etmek; anlamak",
+    "hintTr": "fiil, ayrılabilir (gündelik)",
+    "cloze": "Hast du [mitbekommen], dass Lena schwanger ist?",
+    "clozeTr": "Lena'nın hamile olduğunu duydun mu?",
+    "examples": [
+      {
+        "de": "Soziale Netzwerke finde ich praktisch, weil ich so mitbekomme, was meine Freunde in der Türkei machen.",
+        "tr": "Sosyal ağları pratik buluyorum, çünkü Türkiye'deki arkadaşlarımın ne yaptığından böylece haberim oluyor.",
+        "fromBook": false
+      },
+      {
+        "de": "Sorry, das habe ich nicht mitbekommen. Kannst du das wiederholen?",
+        "tr": "Pardon, onu kaçırdım. Tekrar eder misin?",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "ehrlich-gesagt-85e7",
+    "type": "expression",
+    "rektion": [],
+    "grammarTr": "Cümle başında 1. sırayı doldurur, fiil hemen arkasından gelir: Ehrlich gesagt HABE ich …",
+    "note": "Aynı anlam: wenn ich ehrlich bin, um ehrlich zu sein.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Alltagssprache, Kapitel 1 (Diskussion S. 17)",
+    "tags": ["kapitel-1", "umgangssprache"],
+    "createdAt": "2026-11-06",
+    "lemma": "ehrlich gesagt",
+    "meaningTr": "açıkçası, doğrusu",
+    "hintTr": "kalıp (gündelik, cümle başı)",
+    "cloze": "[Ehrlich] [gesagt] habe ich keine Lust auf die Party.",
+    "clozeTr": "Açıkçası partiye gitmeye hiç hevesim yok.",
+    "examples": [
+      {
+        "de": "Also, ehrlich gesagt hat mich der Text ein bisschen überrascht.",
+        "tr": "Açıkçası metin beni biraz şaşırttı.",
+        "fromBook": false
+      },
+      {
+        "de": "Wenn ich ehrlich bin, kenne ich die Hälfte kaum.",
+        "tr": "Dürüst olmak gerekirse yarısını doğru dürüst tanımıyorum.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "das-haette-ich-nicht-gedacht-dd33",
+    "type": "expression",
+    "rektion": [],
+    "grammarTr": "hätte + Partizip II = Konjunktiv II geçmiş zaman (olmamış bir düşünce): Das hätte ich nicht gedacht.",
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Alltagssprache, Kapitel 1 (Diskussion S. 17)",
+    "tags": ["kapitel-1", "umgangssprache"],
+    "createdAt": "2026-11-06",
+    "lemma": "Das hätte ich nicht gedacht!",
+    "meaningTr": "Hiç beklemezdim! / Bunu tahmin etmezdim!",
+    "hintTr": "kalıp (şaşırma, Konjunktiv II)",
+    "cloze": "Er ist schon 50? [Das] [hätte] ich nicht [gedacht]!",
+    "clozeTr": "50 yaşında mı? Hiç tahmin etmezdim!",
+    "examples": [
+      {
+        "de": "Dass jeder jeden über so wenige Ecken kennt, hätte ich nicht gedacht.",
+        "tr": "Herkesin herkesi bu kadar az kişi üzerinden tanıdığını düşünmezdim.",
+        "fromBook": false
+      },
+      {
+        "de": "Du hast den Kuchen selbst gebacken? Das hätte ich nicht gedacht!",
+        "tr": "Pastayı kendin mi yaptın? Hiç beklemezdim!",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "eher-1db7",
+    "type": "other",
+    "rektion": [],
+    "grammarTr": null,
+    "note": "Kalıp: eher … als … (…den çok …). Konuşmada yumuşatıcı: „Das ist eher schwierig.\" = Bu biraz zor.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Alltagssprache, Kapitel 1 (Diskussion S. 17)",
+    "tags": ["kapitel-1", "umgangssprache"],
+    "createdAt": "2026-11-06",
+    "lemma": "eher",
+    "meaningTr": "daha çok, -den ziyade; daha erken",
+    "hintTr": "zarf",
+    "cloze": "Ich bin nicht faul, ich bin [eher] müde.",
+    "clozeTr": "Tembel değilim, daha çok yorgunum.",
+    "examples": [
+      {
+        "de": "Ich bin selbst auf Instagram, aber eher passiv.",
+        "tr": "Ben de Instagram'dayım ama pek aktif değilim.",
+        "fromBook": false
+      },
+      {
+        "de": "Ich trinke eher Tee als Kaffee.",
+        "tr": "Kahveden çok çay içerim.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "kaum-e623",
+    "type": "other",
+    "rektion": [],
+    "grammarTr": null,
+    "note": "Cümleye olumsuz anlam katar ama nicht gerekmez: Ich kenne ihn kaum (= neredeyse tanımıyorum).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Alltagssprache, Kapitel 1 (Diskussion S. 17)",
+    "tags": ["kapitel-1", "umgangssprache"],
+    "createdAt": "2026-11-06",
+    "lemma": "kaum",
+    "meaningTr": "neredeyse hiç, doğru dürüst …-mamak; zar zor",
+    "hintTr": "zarf (olumsuz anlam)",
+    "cloze": "Ich war so müde, dass ich die Augen [kaum] offen halten konnte.",
+    "clozeTr": "O kadar yorgundum ki gözlerimi zar zor açık tutabiliyordum.",
+    "examples": [
+      {
+        "de": "Wenn ich ehrlich bin, kenne ich die Hälfte kaum.",
+        "tr": "Dürüst olmak gerekirse yarısını doğru dürüst tanımıyorum.",
+        "fromBook": false
+      },
+      {
+        "de": "Wir haben uns seit Jahren kaum gesehen.",
+        "tr": "Yıllardır neredeyse hiç görüşmedik.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "trotzdem-71be",
+    "type": "other",
+    "rektion": [],
+    "grammarTr": "Cümle başında 1. sırayı doldurur, fiil hemen arkasından gelir: Trotzdem FINDE ich … obwohl ise yan cümle açar, fiil sona gider: Obwohl ich krank war, …",
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Alltagssprache, Kapitel 1 (Diskussion S. 17)",
+    "tags": ["kapitel-1", "umgangssprache"],
+    "createdAt": "2026-11-06",
+    "lemma": "trotzdem",
+    "meaningTr": "yine de, buna rağmen",
+    "hintTr": "zarf (bağlaç gibi)",
+    "cloze": "Es hat geregnet, aber wir sind [trotzdem] spazieren gegangen.",
+    "clozeTr": "Yağmur yağıyordu ama yine de yürüyüşe çıktık.",
+    "examples": [
+      {
+        "de": "Trotzdem finde ich soziale Netzwerke praktisch.",
+        "tr": "Yine de sosyal ağları pratik buluyorum.",
+        "fromBook": false
+      },
+      {
+        "de": "Ich war krank, trotzdem bin ich zur Arbeit gegangen.",
+        "tr": "Hastaydım, yine de işe gittim.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "also-20e4",
+    "type": "other",
+    "rektion": [],
+    "grammarTr": null,
+    "note": "İngilizce „also\" (ayrıca) ile karıştırma! Almanca „ayrıca\" = auch.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Alltagssprache, Kapitel 1 (Diskussion S. 17)",
+    "tags": ["kapitel-1", "umgangssprache"],
+    "createdAt": "2026-11-06",
+    "lemma": "also",
+    "meaningTr": "yani; şey… (konuşmaya başlarken)",
+    "hintTr": "parçacık (gündelik)",
+    "cloze": "[Also], ich fange mal an: Mein Name ist Ömer.",
+    "clozeTr": "Şey, ben başlayayım: Benim adım Ömer.",
+    "examples": [
+      {
+        "de": "Also, ehrlich gesagt hat mich der Text ein bisschen überrascht.",
+        "tr": "Açıkçası metin beni biraz şaşırttı.",
+        "fromBook": false
+      },
+      {
+        "de": "Du kommst also nicht mit?",
+        "tr": "Yani gelmiyorsun, öyle mi?",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "anschauen-a986",
+    "type": "verb",
+    "lemma": "anschauen",
+    "verb": {
+      "reflexive": "Dat",
+      "separablePrefix": "an",
+      "praeteritum": "schaute an",
+      "partizip2": "angeschaut",
+      "auxiliary": "haben"
+    },
+    "rektion": [],
+    "grammarTr": "sich (Dat) etwas anschauen: Ich schaue MIR den Film an. Güney Almanya / Avusturya'da daha yaygın; kuzeyde: sich etwas ansehen.",
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Alltagssprache, Kapitel 1 (Diskussion S. 17)",
+    "tags": ["kapitel-1", "umgangssprache"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "(bir şeye) bakmak, izlemek, göz atmak",
+    "hintTr": "fiil, ayrılabilir, dönüşlü (Dat)",
+    "cloze": "Heute Abend [schauen] wir [uns] einen Film [an].",
+    "clozeTr": "Bu akşam bir film izleyeceğiz.",
+    "examples": [
+      {
+        "de": "Ich schaue mir meistens nur Fotos an.",
+        "tr": "Genelde sadece fotoğraflara bakıyorum.",
+        "fromBook": false
+      },
+      {
+        "de": "Schau dir das mal an!",
+        "tr": "Şuna bir bak!",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "wie-ist-das-bei-dir-36fc",
+    "type": "expression",
+    "rektion": [],
+    "grammarTr": null,
+    "note": "Cevap kalıpları: Bei mir ist das genauso. / Bei mir ist das ganz anders.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Alltagssprache, Kapitel 1 (Diskussion S. 17)",
+    "tags": ["kapitel-1", "umgangssprache"],
+    "createdAt": "2026-11-06",
+    "lemma": "Wie ist das bei dir?",
+    "meaningTr": "Senin için nasıl? / Sende durum ne?",
+    "hintTr": "kalıp (soruyu karşıya çevirme)",
+    "cloze": "Ich stehe jeden Tag um sechs auf. [Wie] [ist] das [bei] dir?",
+    "clozeTr": "Ben her gün altıda kalkıyorum. Sen nasılsın, sende durum ne?",
+    "examples": [
+      {
+        "de": "Solche Leute habe ich vielleicht zwei, drei. Wie ist das bei dir?",
+        "tr": "Öyle insanlardan belki iki üç tane var. Senin için nasıl?",
+        "fromBook": false
+      },
+      {
+        "de": "Bei mir ist das genauso.",
+        "tr": "Bende de aynı.",
+        "fromBook": false
+      }
+    ]
   }
 ]
