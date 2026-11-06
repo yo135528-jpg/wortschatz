@@ -374,3 +374,12 @@ main {
 @media (prefers-reduced-motion: reduce) {
   .card-inner { transition: none; }
 }
+
+.voice-select {
+  max-width: 60%;
+  padding: 0.45rem 0.6rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface-2);
+  color: var(--text);
+}

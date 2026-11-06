@@ -1,5 +1,15 @@
 import type { App } from '../app';
 import { h } from './dom';
+import {
+  currentRate,
+  currentVoice,
+  germanVoices,
+  isSpeechSupported,
+  onVoicesChanged,
+  setRate,
+  setVoice,
+  speakGerman,
+} from './tts';
 
 function numberField(
   label: string,
@@ -35,6 +45,69 @@ function downloadText(filename: string, text: string): void {
   link.click();
   link.remove();
   URL.revokeObjectURL(url);
+}
+
+const RATES: [number, string][] = [
+  [0.7, 'Yavaş'],
+  [0.9, 'Normal'],
+  [1, 'Hızlı'],
+];
+const SAMPLE_SENTENCE = 'Auf echte Freunde kann man sich immer verlassen.';
+
+/** Voice and speed for read-aloud; stored per device because every device has other voices. */
+function speechPanel(): HTMLElement | null {
+  if (!isSpeechSupported()) return null;
+  const voiceSelect = h('select', {
+    class: 'voice-select',
+    'aria-label': 'Ses',
+    'data-testid': 'setting-voice',
+    onchange: (event: Event) => {
+      setVoice((event.target as HTMLSelectElement).value);
+      speakGerman(SAMPLE_SENTENCE);
+    },
+  });
+  const fillVoices = () => {
+    const selected = currentVoice()?.name;
+    const voices = germanVoices();
+    voiceSelect.replaceChildren(
+      ...(voices.length
+        ? voices.map((v) => h('option', { value: v.name, selected: v.name === selected }, v.name))
+        : [h('option', { value: '' }, 'Almanca ses bulunamadı')]),
+    );
+  };
+  fillVoices();
+  onVoicesChanged(fillVoices);
+
+  const rateSelect = h(
+    'select',
+    {
+      class: 'voice-select',
+      'aria-label': 'Hız',
+      onchange: (event: Event) => {
+        setRate(Number((event.target as HTMLSelectElement).value));
+        speakGerman(SAMPLE_SENTENCE);
+      },
+    },
+    ...RATES.map(([value, label]) => h('option', { value, selected: currentRate() === value }, label)),
+  );
+
+  return h(
+    'section',
+    { class: 'panel' },
+    h('h2', {}, 'Sesli okuma'),
+    h('label', { class: 'field' }, h('span', {}, 'Ses'), voiceSelect),
+    h('label', { class: 'field' }, h('span', {}, 'Hız'), rateSelect),
+    h(
+      'div',
+      { class: 'button-row' },
+      h('button', { type: 'button', onclick: () => speakGerman(SAMPLE_SENTENCE) }, '🔊 Dene'),
+    ),
+    h(
+      'p',
+      { class: 'muted small' },
+      'En doğal sesler listenin başında (Chrome: „Google Deutsch", Edge: „… Online (Natural)"). Seçim sadece bu cihazda saklanır.',
+    ),
+  );
 }
 
 export function renderSettings(app: App, root: HTMLElement): void {
@@ -80,6 +153,7 @@ export function renderSettings(app: App, root: HTMLElement): void {
       ),
       h('p', { class: 'muted small' }, 'Yüksek hedef = daha sık tekrar. 0.90 çoğu kişi için iyi bir denge.'),
     ),
+    ...[speechPanel()].filter((panel) => panel !== null),
     h(
       'section',
       { class: 'panel' },
