@@ -26,8 +26,14 @@ export function voiceScore(voice: VoiceLike): number {
   return score;
 }
 
+/** Score of old local system voices (e.g. Microsoft Hedda); hidden when anything better exists. */
+const LOCAL_VOICE_MAX_SCORE = 1;
+
 export function rankGermanVoices<T extends VoiceLike>(voices: T[]): T[] {
-  return voices.filter((v) => voiceScore(v) >= 0).sort((a, b) => voiceScore(b) - voiceScore(a));
+  const german = voices.filter((v) => voiceScore(v) >= 0).sort((a, b) => voiceScore(b) - voiceScore(a));
+  const good = german.filter((v) => voiceScore(v) > LOCAL_VOICE_MAX_SCORE);
+  // Offline there may be only local voices; a robotic voice is still better than none.
+  return good.length ? good : german;
 }
 
 function readStorage(key: string): string | null {
