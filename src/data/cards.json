@@ -341,6 +341,11 @@
         "de": "Über berufliche Netzwerke findet man oft leichter einen Job.",
         "tr": "Mesleki ağlar sayesinde genelde daha kolay iş bulunur.",
         "fromBook": false
+      },
+      {
+        "de": "Viele fühlen sich heutzutage wegen der sozialen Netzwerke besser in der Welt vernetzt.",
+        "tr": "Bugün birçok kişi sosyal ağlar sayesinde dünyayla daha iyi bağlantıda hissediyor.",
+        "fromBook": true
       }
     ],
     "note": "soziale Netzwerke = sosyal ağlar, sosyal medya.",
@@ -644,6 +649,11 @@
         "de": "Über einen Bekannten habe ich die Wohnung gefunden.",
         "tr": "Daireyi bir tanıdık aracılığıyla buldum.",
         "fromBook": false
+      },
+      {
+        "de": "Die Nutzer haben in der Freundesliste von Freunden gestöbert und Bekannte entdeckt.",
+        "tr": "Kullanıcılar arkadaşlarının arkadaş listelerini karıştırıp tanıdıklar keşfetti.",
+        "fromBook": true
       }
     ],
     "grammarTr": "Sıfat gibi çekimlenir: der Bekannte / ein Bekannter, die Bekannten; kadın: die Bekannte / eine Bekannte.",
@@ -1387,6 +1397,11 @@
         "de": "Das Fahrrad ist mit einer Kette gesichert.",
         "tr": "Bisiklet bir zincirle kilitli.",
         "fromBook": false
+      },
+      {
+        "de": "Milgram stellte also fest: Die Beziehungskette zwischen Menschen hat durchschnittlich sechs Glieder.",
+        "tr": "Yani Milgram şunu tespit etti: İnsanlar arasındaki ilişki zinciri ortalama altı halkadan oluşur.",
+        "fromBook": true
       }
     ],
     "note": null,
@@ -2937,6 +2952,11 @@
         "de": "Unter Erfolg versteht jeder etwas anderes.",
         "tr": "Herkes başarıdan farklı bir şey anlar.",
         "fromBook": false
+      },
+      {
+        "de": "Es kommt also darauf an, was man unter einem „Freund\" versteht.",
+        "tr": "Yani „arkadaş\" kelimesinden ne anlaşıldığına bağlı.",
+        "fromBook": true
       }
     ],
     "note": null,
@@ -2972,5 +2992,1342 @@
     "source": "Kursbuch, Kapitel 1, S. 15",
     "tags": ["kapitel-1", "freundschaft"],
     "createdAt": "2026-11-05"
+  },
+  {
+    "id": "jemanden-ueber-sechs-ecken-kennen-4c7f",
+    "type": "expression",
+    "rektion": [],
+    "grammarTr": null,
+    "note": "Sayı değişebilir: über zwei/drei/sechs Ecken.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 16",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "lemma": "jemanden über sechs Ecken kennen",
+    "meaningTr": "(birini) dolaylı yoldan tanımak, tanıdığın tanıdığı olmak",
+    "hintTr": "deyim",
+    "cloze": "Ich kenne ihn nur [über] drei [Ecken].",
+    "clozeTr": "Onu sadece dolaylı yoldan tanıyorum.",
+    "examples": [
+      {
+        "de": "Den kenne ich über sechs Ecken.",
+        "tr": "Onu tanıdığımın tanıdığının tanıdığı olarak tanıyorum.",
+        "fromBook": true
+      },
+      {
+        "de": "Nicht über sechs, sondern über 4,74 Ecken kennt jeder jeden.",
+        "tr": "Herkes herkesi altı değil, 4,74 aracı üzerinden tanıyor.",
+        "fromBook": true
+      }
+    ]
+  },
+  {
+    "id": "hinzufuegen-7872",
+    "type": "verb",
+    "lemma": "hinzufügen",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": "hinzu",
+      "praeteritum": "fügte hinzu",
+      "partizip2": "hinzugefügt",
+      "auxiliary": "haben"
+    },
+    "rektion": [{ "preposition": "zu", "case": "Dat" }],
+    "grammarTr": null,
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 16",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "eklemek",
+    "hintTr": "fiil, ayrılabilir + edat",
+    "cloze": "Kannst du mich bitte zu deinen Kontakten [hinzufügen]?",
+    "clozeTr": "Beni kişilerine ekleyebilir misin lütfen?",
+    "examples": [
+      {
+        "de": "Ich habe ihn zu meinen Freunden hinzugefügt.",
+        "tr": "Onu arkadaşlarıma ekledim.",
+        "fromBook": true
+      },
+      {
+        "de": "Dem habe ich nichts hinzuzufügen.",
+        "tr": "Buna ekleyecek bir şeyim yok.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "zusammenruecken-68f5",
+    "type": "verb",
+    "lemma": "zusammenrücken",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": "zusammen",
+      "praeteritum": "rückte zusammen",
+      "partizip2": "zusammengerückt",
+      "auxiliary": "sein"
+    },
+    "rektion": [],
+    "grammarTr": null,
+    "note": "Gerçek anlamı da var: (oturanlar) sıkışıp yer açmak.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 16",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "birbirine yaklaşmak, kenetlenmek",
+    "hintTr": "fiil, ayrılabilir",
+    "cloze": "In schwierigen Zeiten [rücken] die Menschen enger [zusammen].",
+    "clozeTr": "Zor zamanlarda insanlar birbirine daha çok kenetlenir.",
+    "examples": [
+      {
+        "de": "Die Welt wird immer kleiner. Die Erdbevölkerung rückt näher zusammen.",
+        "tr": "Dünya giderek küçülüyor. Dünya nüfusu birbirine daha çok yaklaşıyor.",
+        "fromBook": true
+      },
+      {
+        "de": "Wenn alle ein bisschen zusammenrücken, haben wir noch Platz für dich.",
+        "tr": "Herkes biraz sıkışırsa sana da yer açılır.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "redensart-52ad",
+    "type": "noun",
+    "lemma": "Redensart",
+    "noun": { "gender": "die", "plural": "-en" },
+    "rektion": [],
+    "grammarTr": null,
+    "note": "Eş anlamlı: die Redewendung.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 16",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "deyim, söz",
+    "hintTr": "isim",
+    "cloze": "„Wer A sagt, muss auch B sagen\" ist [eine] bekannte [Redensart].",
+    "clozeTr": "„A diyen B de demeli\" bilinen bir deyimdir.",
+    "examples": [
+      {
+        "de": "Über sechs Ecken kennt jeder Mensch jeden. So heißt es in einer Redensart.",
+        "tr": "Herkes herkesi altı aracı üzerinden tanır. Bir deyimde böyle denir.",
+        "fromBook": true
+      },
+      {
+        "de": "Diese Redensart kann man nicht wörtlich übersetzen.",
+        "tr": "Bu deyim kelimesi kelimesine çevrilemez.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "psychologe-66a9",
+    "type": "noun",
+    "lemma": "Psychologe",
+    "noun": { "gender": "der", "plural": "-n" },
+    "rektion": [],
+    "grammarTr": "n-Deklination: Nom dışındaki tüm hallerde -n alır: den/dem/des Psychologen. Aynı kural: der Soziologe, der Kollege. Kadın: die Psychologin, -nen.",
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 16",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "psikolog",
+    "hintTr": "isim (erkek)",
+    "cloze": "Wegen ihrer Ängste geht sie seit einem Jahr zu [einem] [Psychologen].",
+    "clozeTr": "Korkuları yüzünden bir yıldır bir psikoloğa gidiyor.",
+    "examples": [
+      {
+        "de": "Bereits 1967 machte der amerikanische Psychologe Stanley Milgram ein Experiment.",
+        "tr": "Daha 1967'de Amerikalı psikolog Stanley Milgram bir deney yaptı.",
+        "fromBook": true
+      },
+      {
+        "de": "Ein Psychologe hat die Ergebnisse der Studie erklärt.",
+        "tr": "Bir psikolog araştırmanın sonuçlarını açıkladı.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "freiwillig-68a2",
+    "type": "adjective",
+    "lemma": "freiwillig",
+    "adjective": { "comparative": null, "superlative": null },
+    "rektion": [],
+    "grammarTr": "İsim olarak sıfat gibi çekimlenir: der Freiwillige / ein Freiwilliger, die Freiwilligen.",
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 16",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "gönüllü",
+    "hintTr": "sıfat",
+    "cloze": "Niemand hat ihn gezwungen, er hat das ganz [freiwillig] gemacht.",
+    "clozeTr": "Onu kimse zorlamadı, bunu tamamen gönüllü yaptı.",
+    "examples": [
+      {
+        "de": "60 Freiwillige mussten ein Paket nach einem bestimmten System verschicken.",
+        "tr": "60 gönüllü bir paketi belirli bir sisteme göre göndermek zorundaydı.",
+        "fromBook": true
+      },
+      {
+        "de": "Sie arbeitet freiwillig im Tierheim.",
+        "tr": "Hayvan barınağında gönüllü çalışıyor.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "bestimmt-1d1f",
+    "type": "adjective",
+    "lemma": "bestimmt",
+    "adjective": { "comparative": null, "superlative": null },
+    "rektion": [],
+    "grammarTr": null,
+    "note": "Zarf olarak \"kesinlikle, mutlaka\" anlamına gelir (Er kommt bestimmt).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 16",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "belirli; kesinlikle",
+    "hintTr": "sıfat",
+    "cloze": "Suchst du ein [bestimmtes] Buch oder schaust du nur?",
+    "clozeTr": "Belirli bir kitap mı arıyorsun, yoksa sadece bakıyor musun?",
+    "examples": [
+      {
+        "de": "Oft haben die Nutzer explizit nach einer bestimmten Person gesucht.",
+        "tr": "Kullanıcılar çoğu zaman açıkça belirli bir kişiyi aradı.",
+        "fromBook": true
+      },
+      {
+        "de": "Keine Sorge, er kommt bestimmt noch.",
+        "tr": "Merak etme, kesin gelir.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "durchschnittlich-a58d",
+    "type": "adjective",
+    "lemma": "durchschnittlich",
+    "adjective": { "comparative": null, "superlative": null },
+    "rektion": [],
+    "grammarTr": null,
+    "note": "İsmi: der Durchschnitt (ortalama); im Durchschnitt = ortalamada.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 16",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "ortalama (olarak)",
+    "hintTr": "sıfat/zarf",
+    "cloze": "Deutsche trinken [durchschnittlich] drei Tassen Kaffee pro Tag.",
+    "clozeTr": "Almanlar günde ortalama üç fincan kahve içiyor.",
+    "examples": [
+      {
+        "de": "Die Pakete erreichten ihr Ziel nach durchschnittlich 5,5 Stationen.",
+        "tr": "Paketler hedeflerine ortalama 5,5 aşamadan sonra ulaştı.",
+        "fromBook": true
+      },
+      {
+        "de": "Seine Noten sind eher durchschnittlich.",
+        "tr": "Notları ortalama sayılır.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "feststellen-2709",
+    "type": "verb",
+    "lemma": "feststellen",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": "fest",
+      "praeteritum": "stellte fest",
+      "partizip2": "festgestellt",
+      "auxiliary": "haben"
+    },
+    "rektion": [],
+    "grammarTr": null,
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 16",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "tespit etmek, fark etmek",
+    "hintTr": "fiil, ayrılabilir",
+    "cloze": "Zu Hause [stellte] ich [fest], dass mein Schlüssel weg war.",
+    "clozeTr": "Evde anahtarımın kaybolduğunu fark ettim.",
+    "examples": [
+      {
+        "de": "Milgram stellte also fest: Die Beziehungskette zwischen Menschen hat durchschnittlich sechs Glieder.",
+        "tr": "Yani Milgram şunu tespit etti: İnsanlar arasındaki ilişki zinciri ortalama altı halkadan oluşur.",
+        "fromBook": true
+      },
+      {
+        "de": "Der Arzt hat nichts Schlimmes festgestellt.",
+        "tr": "Doktor kötü bir şey tespit etmedi.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "herausfinden-8866",
+    "type": "verb",
+    "lemma": "herausfinden",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": "heraus",
+      "praeteritum": "fand heraus",
+      "partizip2": "herausgefunden",
+      "auxiliary": "haben"
+    },
+    "rektion": [],
+    "grammarTr": "zu ayrılabilir önekle fiilin arasına girer: um heraus-zu-finden.",
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 16",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "öğrenmek, ortaya çıkarmak",
+    "hintTr": "fiil, ayrılabilir",
+    "cloze": "Die Polizei hat schnell [herausgefunden], wer der Täter war.",
+    "clozeTr": "Polis failin kim olduğunu çabucak ortaya çıkardı.",
+    "examples": [
+      {
+        "de": "Um herauszufinden, wie vernetzt die Menschen heutzutage sind, wurden die Daten von 721 Millionen Nutzern ausgewertet.",
+        "tr": "İnsanların bugün ne kadar bağlantılı olduğunu öğrenmek için 721 milyon kullanıcının verileri analiz edildi.",
+        "fromBook": true
+      },
+      {
+        "de": "Ich muss noch herausfinden, wann der Zug fährt.",
+        "tr": "Trenin ne zaman kalktığını daha öğrenmem lazım.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "vernetzt-3a46",
+    "type": "adjective",
+    "lemma": "vernetzt",
+    "adjective": { "comparative": null, "superlative": null },
+    "rektion": [],
+    "grammarTr": null,
+    "note": "Fiili: (sich) vernetzen = (birbiriyle) bağlantı kurmak.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 16",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "(ağ ile) bağlantılı",
+    "hintTr": "sıfat (Partizip II)",
+    "cloze": "Durch das Internet sind wir heute weltweit [vernetzt].",
+    "clozeTr": "İnternet sayesinde bugün dünya çapında birbirimize bağlıyız.",
+    "examples": [
+      {
+        "de": "Viele fühlen sich heutzutage wegen der sozialen Netzwerke besser in der Welt vernetzt.",
+        "tr": "Bugün birçok kişi sosyal ağlar sayesinde dünyayla daha iyi bağlantıda hissediyor.",
+        "fromBook": true
+      },
+      {
+        "de": "Sie ist in der Branche sehr gut vernetzt.",
+        "tr": "Sektörde çok iyi bir çevresi var.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "auswerten-ce46",
+    "type": "verb",
+    "lemma": "auswerten",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": "aus",
+      "praeteritum": "wertete aus",
+      "partizip2": "ausgewertet",
+      "auxiliary": "haben"
+    },
+    "rektion": [],
+    "grammarTr": null,
+    "note": "İsmi: die Auswertung, -en (değerlendirme, analiz).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 16",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "(veriyi) değerlendirmek, analiz etmek",
+    "hintTr": "fiil, ayrılabilir",
+    "cloze": "Wir [werten] die Fragebögen nächste Woche [aus].",
+    "clozeTr": "Anketleri gelecek hafta değerlendireceğiz.",
+    "examples": [
+      {
+        "de": "Dabei wurden die Daten von 721 Millionen Nutzern eines sozialen Netzwerks ausgewertet.",
+        "tr": "Bu sırada bir sosyal ağın 721 milyon kullanıcısının verileri analiz edildi.",
+        "fromBook": true
+      },
+      {
+        "de": "Die Ergebnisse der Umfrage müssen noch ausgewertet werden.",
+        "tr": "Anketin sonuçlarının daha değerlendirilmesi gerekiyor.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "beliebig-f977",
+    "type": "adjective",
+    "lemma": "beliebig",
+    "adjective": { "comparative": null, "superlative": null },
+    "rektion": [],
+    "grammarTr": null,
+    "note": "beliebt (sevilen, popüler) ile karıştırma.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 16",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "herhangi, istenilen",
+    "hintTr": "sıfat",
+    "cloze": "Sie können eine [beliebige] Zahl zwischen eins und zehn wählen.",
+    "clozeTr": "Bir ile on arasında istediğiniz bir sayıyı seçebilirsiniz.",
+    "examples": [
+      {
+        "de": "Ein Nutzer ist nur 4,74 Online-Kontakte von einem beliebigen anderen Nutzer entfernt.",
+        "tr": "Bir kullanıcı, herhangi başka bir kullanıcıdan sadece 4,74 çevrimiçi bağlantı uzaklıkta.",
+        "fromBook": true
+      },
+      {
+        "de": "Das Programm lässt sich beliebig oft wiederholen.",
+        "tr": "Program istenildiği kadar tekrarlanabilir.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "entfernt-0c9c",
+    "type": "adjective",
+    "lemma": "entfernt",
+    "adjective": { "comparative": null, "superlative": null },
+    "rektion": [{ "preposition": "von", "case": "Dat" }],
+    "grammarTr": "Ölçü + von + Dat + entfernt: zwei Kilometer von hier entfernt.",
+    "note": "İsmi: die Entfernung, -en (mesafe).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 16",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "uzak(ta)",
+    "hintTr": "sıfat + edat",
+    "cloze": "Das Hotel ist nur fünf Minuten [vom] Strand [entfernt].",
+    "clozeTr": "Otel plajdan sadece beş dakika uzaklıkta.",
+    "examples": [
+      {
+        "de": "Ein Nutzer ist nur 4,74 Online-Kontakte von einem beliebigen anderen Nutzer entfernt.",
+        "tr": "Bir kullanıcı, herhangi başka bir kullanıcıdan sadece 4,74 çevrimiçi bağlantı uzaklıkta.",
+        "fromBook": true
+      },
+      {
+        "de": "Wir sind weit davon entfernt, das Problem gelöst zu haben.",
+        "tr": "Sorunu çözmekten çok uzağız.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "zeitalter-73e9",
+    "type": "noun",
+    "lemma": "Zeitalter",
+    "noun": { "gender": "das", "plural": "-" },
+    "rektion": [],
+    "grammarTr": null,
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 16",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "çağ, devir",
+    "hintTr": "isim, birleşik",
+    "cloze": "Wir leben in [einem] digitalen [Zeitalter].",
+    "clozeTr": "Dijital bir çağda yaşıyoruz.",
+    "examples": [
+      {
+        "de": "Besonders im Zeitalter der modernen Medien.",
+        "tr": "Özellikle modern medya çağında.",
+        "fromBook": true
+      },
+      {
+        "de": "Mit der Dampfmaschine begann ein neues Zeitalter.",
+        "tr": "Buhar makinesiyle yeni bir çağ başladı.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "innerhalb-d91c",
+    "type": "other",
+    "rektion": [{ "preposition": null, "case": "Gen" }],
+    "grammarTr": "Hem yer hem zaman için: innerhalb der Stadt / innerhalb von zwei Tagen (artikel yoksa von + Dat). Karşıtı: außerhalb.",
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 16",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "lemma": "innerhalb",
+    "meaningTr": "içinde, dahilinde",
+    "hintTr": "edat + Gen",
+    "cloze": "Bitte antworten Sie [innerhalb] einer Woche.",
+    "clozeTr": "Lütfen bir hafta içinde cevap verin.",
+    "examples": [
+      {
+        "de": "Innerhalb eines Landes trennen die meisten sogar nur drei Kontakte.",
+        "tr": "Bir ülke içinde çoğu kişiyi birbirinden sadece üç bağlantı ayırıyor.",
+        "fromBook": true
+      },
+      {
+        "de": "Innerhalb der Firma spricht man Englisch.",
+        "tr": "Şirket içinde İngilizce konuşuluyor.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "heutzutage-8bc1",
+    "type": "other",
+    "rektion": [],
+    "grammarTr": null,
+    "note": "heute = bugün (tarih olarak); heutzutage = günümüzde (genel olarak).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 16",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "lemma": "heutzutage",
+    "meaningTr": "günümüzde, bugünlerde",
+    "hintTr": "zarf",
+    "cloze": "[Heutzutage] hat fast jeder ein Smartphone.",
+    "clozeTr": "Günümüzde neredeyse herkesin akıllı telefonu var.",
+    "examples": [
+      {
+        "de": "Viele fühlen sich heutzutage wegen der sozialen Netzwerke besser in der Welt vernetzt.",
+        "tr": "Bugün birçok kişi sosyal ağlar sayesinde dünyayla daha iyi bağlantıda hissediyor.",
+        "fromBook": true
+      },
+      {
+        "de": "Heutzutage arbeiten viele Menschen von zu Hause aus.",
+        "tr": "Günümüzde birçok kişi evden çalışıyor.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "mitgliedschaft-5e17",
+    "type": "noun",
+    "lemma": "Mitgliedschaft",
+    "noun": { "gender": "die", "plural": "-en" },
+    "rektion": [{ "preposition": "in", "case": "Dat" }],
+    "grammarTr": null,
+    "note": "das Mitglied, -er = üye.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 16",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "üyelik",
+    "hintTr": "isim + edat",
+    "cloze": "Ich habe [meine] [Mitgliedschaft] [im] Fitnessstudio gekündigt.",
+    "clozeTr": "Spor salonundaki üyeliğimi iptal ettim.",
+    "examples": [
+      {
+        "de": "Welches sind die Hauptgründe für Ihre Mitgliedschaft in einem sozialen Netzwerk?",
+        "tr": "Bir sosyal ağa üye olmanızın başlıca nedenleri nelerdir?",
+        "fromBook": true
+      },
+      {
+        "de": "Die Mitgliedschaft im Verein kostet 50 Euro im Jahr.",
+        "tr": "Derneğe üyelik yıllık 50 avro.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "anfrage-5d55",
+    "type": "noun",
+    "lemma": "Anfrage",
+    "noun": { "gender": "die", "plural": "-n" },
+    "rektion": [],
+    "grammarTr": null,
+    "note": "Fiili: anfragen; resmi e-postalarda çok sık geçer.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 16",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "istek, talep, (bilgi) sorusu",
+    "hintTr": "isim",
+    "cloze": "Vielen Dank für [Ihre] [Anfrage], wir melden uns morgen.",
+    "clozeTr": "Talebiniz için teşekkürler, yarın size dönüş yapacağız.",
+    "examples": [
+      {
+        "de": "Die Nutzer haben Freundschaftsanfragen bekommen.",
+        "tr": "Kullanıcılar arkadaşlık istekleri aldı.",
+        "fromBook": true
+      },
+      {
+        "de": "Ich habe eine Anfrage an die Firma geschickt.",
+        "tr": "Şirkete bir talep gönderdim.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "vorschlagen-d4be",
+    "type": "verb",
+    "lemma": "vorschlagen",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": "vor",
+      "praeteritum": "schlug vor",
+      "partizip2": "vorgeschlagen",
+      "auxiliary": "haben"
+    },
+    "rektion": [
+      { "preposition": null, "case": "Dat" },
+      { "preposition": null, "case": "Akk" }
+    ],
+    "grammarTr": "Sıra: Dat isim → Akk isim (den Nutzern Freunde). Akk zamir ise önce gelir: Es hat sie ihnen vorgeschlagen.",
+    "note": "İsmi: der Vorschlag, ¨-e (öneri); einen Vorschlag machen.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 16",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "(birine bir şey) önermek",
+    "hintTr": "fiil, ayrılabilir",
+    "cloze": "Ich [schlage] dir einen Kompromiss [vor].",
+    "clozeTr": "Sana bir uzlaşma öneriyorum.",
+    "examples": [
+      {
+        "de": "Das soziale Netzwerk hat den Nutzern mögliche Freunde vorgeschlagen.",
+        "tr": "Sosyal ağ, kullanıcılara olası arkadaşlar önerdi.",
+        "fromBook": true
+      },
+      {
+        "de": "Er hat vorgeschlagen, dass wir uns am Freitag treffen.",
+        "tr": "Cuma günü buluşmamızı önerdi.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "stoebern-7fee",
+    "type": "verb",
+    "lemma": "stöbern",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": null,
+      "praeteritum": "stöberte",
+      "partizip2": "gestöbert",
+      "auxiliary": "haben"
+    },
+    "rektion": [{ "preposition": "in", "case": "Dat" }],
+    "grammarTr": null,
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 16",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "karıştırmak, göz gezdirmek",
+    "hintTr": "fiil + edat",
+    "cloze": "Am Wochenende [stöbere] ich gern in alten Buchläden.",
+    "clozeTr": "Hafta sonları eski kitapçıları karıştırmayı severim.",
+    "examples": [
+      {
+        "de": "Die Nutzer haben in der Freundesliste von Freunden gestöbert und Bekannte entdeckt.",
+        "tr": "Kullanıcılar arkadaşlarının arkadaş listelerini karıştırıp tanıdıklar keşfetti.",
+        "fromBook": true
+      },
+      {
+        "de": "Er hat in meinen Sachen gestöbert!",
+        "tr": "Eşyalarımı karıştırmış!",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "lauter-a1f6",
+    "type": "other",
+    "rektion": [],
+    "grammarTr": "Hiç çekimlenmez: lauter Freunde, lauter Fehler. „vor lauter + isim\" = …den dolayı (Vor lauter Angst …).",
+    "note": "laut (yüksek sesle) sıfatının karşılaştırması „lauter\" ile karıştırma: Sprich lauter!",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 16",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "lemma": "lauter",
+    "meaningTr": "bir sürü, tamamen (… -dan ibaret)",
+    "hintTr": "çekimsiz kelime (= nur)",
+    "cloze": "Auf der Party waren [lauter] Leute, die ich nicht kannte.",
+    "clozeTr": "Partide tanımadığım bir sürü insan vardı.",
+    "examples": [
+      {
+        "de": "Ob man sich allein fühlt oder unter lauter Freunden, kommt also darauf an, was man unter einem „Freund\" versteht.",
+        "tr": "İnsanın kendini yalnız mı yoksa bir sürü arkadaşın arasında mı hissettiği, „arkadaş\" kelimesinden ne anladığına bağlı.",
+        "fromBook": true
+      },
+      {
+        "de": "Vor lauter Arbeit habe ich vergessen zu essen.",
+        "tr": "İşten başımı kaldıramadığım için yemek yemeyi unuttum.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "auf-etwas-ankommen-bb95",
+    "type": "expression",
+    "rektion": [{ "preposition": "auf", "case": "Akk" }],
+    "grammarTr": "Genelde özne „es\"tir: Es kommt darauf an, ob/was/wie … Kısa cevap: Kommt drauf an.",
+    "note": "Diğer anlamı: es kommt auf etwas an = bir şey önemli olmak (Es kommt auf jede Minute an).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 16",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "lemma": "auf etwas ankommen",
+    "meaningTr": "(bir şeye) bağlı olmak",
+    "hintTr": "kalıp, es + fiil + edat",
+    "cloze": "Ob wir grillen, [kommt] aufs Wetter [an].",
+    "clozeTr": "Mangal yapıp yapmayacağımız havaya bağlı.",
+    "examples": [
+      {
+        "de": "Ob man sich allein fühlt oder unter lauter Freunden, kommt also darauf an, was man unter einem „Freund\" versteht.",
+        "tr": "İnsanın kendini yalnız mı yoksa bir sürü arkadaşın arasında mı hissettiği, „arkadaş\" kelimesinden ne anladığına bağlı.",
+        "fromBook": true
+      },
+      {
+        "de": "Kommst du mit? – Das kommt darauf an, wann ihr losfahrt.",
+        "tr": "Geliyor musun? – Ne zaman yola çıktığınıza bağlı.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "in-dieser-hinsicht-915e",
+    "type": "expression",
+    "rektion": [],
+    "grammarTr": null,
+    "note": "Varyantlar: in jeder Hinsicht (her bakımdan), in mancher Hinsicht (bazı açılardan).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 16",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "lemma": "in dieser Hinsicht",
+    "meaningTr": "bu bakımdan, bu konuda",
+    "hintTr": "kalıp (edat + isim)",
+    "cloze": "Er ist sehr ordentlich, [in] dieser [Hinsicht] ist er wie sein Vater.",
+    "clozeTr": "Çok düzenli, bu bakımdan babası gibi.",
+    "examples": [
+      {
+        "de": "Viele Nutzer sind in dieser Hinsicht großzügig.",
+        "tr": "Birçok kullanıcı bu konuda rahat davranıyor.",
+        "fromBook": true
+      },
+      {
+        "de": "In jeder Hinsicht war die Reise ein Erfolg.",
+        "tr": "Gezi her bakımdan başarılıydı.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "grosszuegig-624e",
+    "type": "adjective",
+    "lemma": "großzügig",
+    "adjective": { "comparative": null, "superlative": null },
+    "rektion": [],
+    "grammarTr": null,
+    "note": "Karşıtı: geizig (cimri).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 16",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "cömert; (kurallarda) rahat, esnek",
+    "hintTr": "sıfat",
+    "cloze": "Mein Onkel ist sehr [großzügig], er bezahlt immer für alle.",
+    "clozeTr": "Amcam çok cömert, her zaman herkesin hesabını o öder.",
+    "examples": [
+      {
+        "de": "Viele Nutzer sind in dieser Hinsicht großzügig.",
+        "tr": "Birçok kullanıcı bu konuda rahat davranıyor.",
+        "fromBook": true
+      },
+      {
+        "de": "Die Wohnung ist großzügig geschnitten.",
+        "tr": "Dairenin planı ferah.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "aufnehmen-5c83",
+    "type": "verb",
+    "lemma": "aufnehmen",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": "auf",
+      "praeteritum": "nahm auf",
+      "partizip2": "aufgenommen",
+      "auxiliary": "haben"
+    },
+    "rektion": [{ "preposition": "in", "case": "Akk" }],
+    "grammarTr": "in + Akk (nereye?): in die Liste aufnehmen. Düzensiz: nimmt auf – nahm auf – aufgenommen.",
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 16",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "(bir yere) almak, kabul etmek; kaydetmek",
+    "hintTr": "fiil, ayrılabilir + edat",
+    "cloze": "Der Verein hat ihn sofort als Mitglied [aufgenommen].",
+    "clozeTr": "Dernek onu hemen üye olarak kabul etti.",
+    "examples": [
+      {
+        "de": "Viele von ihnen nehmen auch Unbekannte in die Liste ihrer „Freunde\" auf.",
+        "tr": "Birçoğu tanımadığı kişileri de „arkadaş\" listesine alıyor.",
+        "fromBook": true
+      },
+      {
+        "de": "Wir haben das Gespräch mit dem Handy aufgenommen.",
+        "tr": "Konuşmayı telefonla kaydettik.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "unternehmen-80f6",
+    "type": "noun",
+    "lemma": "Unternehmen",
+    "noun": { "gender": "das", "plural": "-" },
+    "rektion": [],
+    "grammarTr": null,
+    "note": "Fiil olarak unternehmen = (bir şey) yapmak: Was unternehmen wir am Wochenende?",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 17",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "şirket, işletme",
+    "hintTr": "isim (fiilden türemiş)",
+    "cloze": "Er arbeitet für [ein] internationales [Unternehmen].",
+    "clozeTr": "Uluslararası bir şirkette çalışıyor.",
+    "examples": [
+      {
+        "de": "Ein Unternehmen hat eine aktuelle Untersuchung in Auftrag gegeben.",
+        "tr": "Bir şirket güncel bir araştırma yaptırdı.",
+        "fromBook": true
+      },
+      {
+        "de": "Das Unternehmen hat über 500 Mitarbeiter.",
+        "tr": "Şirketin 500'den fazla çalışanı var.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "etwas-in-auftrag-geben-9241",
+    "type": "expression",
+    "rektion": [],
+    "grammarTr": null,
+    "note": "Pasif karşılığı: im Auftrag von … (… adına, … tarafından yaptırılan).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 17",
+    "tags": ["kapitel-1", "soziale-netzwerke", "nomen-verb"],
+    "createdAt": "2026-11-06",
+    "lemma": "etwas in Auftrag geben",
+    "meaningTr": "(bir işi) yaptırmak, sipariş etmek",
+    "hintTr": "isim + fiil kalıbı",
+    "cloze": "Die Stadt hat eine neue Studie [in] [Auftrag] [gegeben].",
+    "clozeTr": "Belediye yeni bir araştırma yaptırdı.",
+    "examples": [
+      {
+        "de": "Ein Unternehmen hat eine aktuelle Untersuchung in Auftrag gegeben.",
+        "tr": "Bir şirket güncel bir araştırma yaptırdı.",
+        "fromBook": true
+      },
+      {
+        "de": "Wir haben ein Gutachten in Auftrag gegeben.",
+        "tr": "Bir bilirkişi raporu hazırlattık.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "untersuchung-7d32",
+    "type": "noun",
+    "lemma": "Untersuchung",
+    "noun": { "gender": "die", "plural": "-en" },
+    "rektion": [],
+    "grammarTr": null,
+    "note": "Fiili: untersuchen. Yakın anlamlı: die Studie, die Umfrage (anket).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 17",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "araştırma, inceleme; muayene",
+    "hintTr": "isim (-ung ile biter)",
+    "cloze": "Laut [einer] neuen [Untersuchung] schlafen Jugendliche zu wenig.",
+    "clozeTr": "Yeni bir araştırmaya göre gençler çok az uyuyor.",
+    "examples": [
+      {
+        "de": "Ein Unternehmen hat eine aktuelle Untersuchung in Auftrag gegeben.",
+        "tr": "Bir şirket güncel bir araştırma yaptırdı.",
+        "fromBook": true
+      },
+      {
+        "de": "Morgen habe ich eine Untersuchung beim Arzt.",
+        "tr": "Yarın doktorda muayenem var.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "ergebnis-ff5c",
+    "type": "noun",
+    "lemma": "Ergebnis",
+    "noun": { "gender": "das", "plural": "-se" },
+    "rektion": [],
+    "grammarTr": "-nis ile biten isimlerde çoğulda s ikilenir: das Ergebnis → die Ergebnisse.",
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 17",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "sonuç",
+    "hintTr": "isim",
+    "cloze": "Wir warten noch auf [das] [Ergebnis] der Prüfung.",
+    "clozeTr": "Sınavın sonucunu hâlâ bekliyoruz.",
+    "examples": [
+      {
+        "de": "Die Ergebnisse dieser Untersuchung wurden gerade veröffentlicht.",
+        "tr": "Bu araştırmanın sonuçları az önce yayımlandı.",
+        "fromBook": true
+      },
+      {
+        "de": "Das Spiel endete mit einem Ergebnis von 2:1.",
+        "tr": "Maç 2-1 sonuçlandı.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "veroeffentlichen-4987",
+    "type": "verb",
+    "lemma": "veröffentlichen",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": null,
+      "praeteritum": "veröffentlichte",
+      "partizip2": "veröffentlicht",
+      "auxiliary": "haben"
+    },
+    "rektion": [],
+    "grammarTr": "ver- ayrılmaz, Partizip II ge- almaz: veröffentlicht.",
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 17",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "yayımlamak",
+    "hintTr": "fiil (ayrılmaz)",
+    "cloze": "Die Autorin hat letztes Jahr ihren ersten Roman [veröffentlicht].",
+    "clozeTr": "Yazar geçen yıl ilk romanını yayımladı.",
+    "examples": [
+      {
+        "de": "Die Ergebnisse dieser Untersuchung wurden gerade veröffentlicht.",
+        "tr": "Bu araştırmanın sonuçları az önce yayımlandı.",
+        "fromBook": true
+      },
+      {
+        "de": "Das Foto wurde ohne meine Erlaubnis veröffentlicht.",
+        "tr": "Fotoğraf iznim olmadan yayımlandı.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "mittlerweile-8c88",
+    "type": "other",
+    "rektion": [],
+    "grammarTr": null,
+    "note": "Eş anlamlı: inzwischen.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 17",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "lemma": "mittlerweile",
+    "meaningTr": "artık, bu arada (zamanla)",
+    "hintTr": "zarf",
+    "cloze": "Früher war er schüchtern, aber [mittlerweile] redet er viel.",
+    "clozeTr": "Eskiden utangaçtı ama artık çok konuşuyor.",
+    "examples": [
+      {
+        "de": "Sie zeigen, dass die Menschen weltweit mittlerweile in enger Verbindung miteinander stehen.",
+        "tr": "Bunlar, insanların artık dünya çapında birbirleriyle sıkı bağlantı içinde olduğunu gösteriyor.",
+        "fromBook": true
+      },
+      {
+        "de": "Ich wohne mittlerweile seit fünf Jahren in Berlin.",
+        "tr": "Artık beş yıldır Berlin'de oturuyorum.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "verbindung-3d8b",
+    "type": "noun",
+    "lemma": "Verbindung",
+    "noun": { "gender": "die", "plural": "-en" },
+    "rektion": [{ "preposition": "mit", "case": "Dat" }],
+    "grammarTr": "Kalıplar: mit jemandem in Verbindung stehen (irtibatta olmak), sich mit jemandem in Verbindung setzen (irtibata geçmek).",
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 17",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "bağlantı, irtibat",
+    "hintTr": "isim + edat (-ung ile biter)",
+    "cloze": "Wir stehen seit Jahren in [enger] [Verbindung] [mit] der Firma.",
+    "clozeTr": "Yıllardır şirketle sıkı bir irtibat içindeyiz.",
+    "examples": [
+      {
+        "de": "Sie zeigen, dass die Menschen weltweit mittlerweile in enger Verbindung miteinander stehen.",
+        "tr": "Bunlar, insanların artık dünya çapında birbirleriyle sıkı bağlantı içinde olduğunu gösteriyor.",
+        "fromBook": true
+      },
+      {
+        "de": "Im Zug ist die Internetverbindung oft schlecht.",
+        "tr": "Trende internet bağlantısı genelde kötü.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "ermoeglichen-2fce",
+    "type": "verb",
+    "lemma": "ermöglichen",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": null,
+      "praeteritum": "ermöglichte",
+      "partizip2": "ermöglicht",
+      "auxiliary": "haben"
+    },
+    "rektion": [
+      { "preposition": null, "case": "Dat" },
+      { "preposition": null, "case": "Akk" }
+    ],
+    "grammarTr": null,
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 17",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "mümkün kılmak, olanak sağlamak",
+    "hintTr": "fiil (ayrılmaz)",
+    "cloze": "Das Stipendium [ermöglicht] ihr ein Studium im Ausland.",
+    "clozeTr": "Burs, ona yurt dışında okuma olanağı sağlıyor.",
+    "examples": [
+      {
+        "de": "Heute ermöglichen soziale Netzwerke eine große Zahl von Kontakten mit anderen.",
+        "tr": "Bugün sosyal ağlar başkalarıyla çok sayıda bağlantıyı mümkün kılıyor.",
+        "fromBook": true
+      },
+      {
+        "de": "Meine Eltern haben mir das Studium ermöglicht.",
+        "tr": "Ailem üniversite okumamı mümkün kıldı.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "aeussern-6045",
+    "type": "verb",
+    "lemma": "äußern",
+    "verb": {
+      "reflexive": "Akk",
+      "separablePrefix": null,
+      "praeteritum": "äußerte",
+      "partizip2": "geäußert",
+      "auxiliary": "haben"
+    },
+    "rektion": [{ "preposition": "zu", "case": "Dat" }],
+    "grammarTr": "İki kullanım: seine Meinung äußern (dönüşsüz, + Akk) / sich zu etwas äußern (dönüşlü, + zu + Dat).",
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 17",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "(görüş) bildirmek, (bir konuda) açıklama yapmak",
+    "hintTr": "fiil, dönüşlü + edat",
+    "cloze": "Der Minister wollte [sich] [zu] dem Skandal nicht [äußern].",
+    "clozeTr": "Bakan skandal hakkında açıklama yapmak istemedi.",
+    "examples": [
+      {
+        "de": "Bringen Sie Ihre Erfahrungen ein und äußern Sie Ihre Meinung.",
+        "tr": "Deneyimlerinizi paylaşın ve fikrinizi belirtin.",
+        "fromBook": true
+      },
+      {
+        "de": "Möchten Sie sich dazu äußern?",
+        "tr": "Bu konuda bir şey söylemek ister misiniz?",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "begruenden-ff8f",
+    "type": "verb",
+    "lemma": "begründen",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": null,
+      "praeteritum": "begründete",
+      "partizip2": "begründet",
+      "auxiliary": "haben"
+    },
+    "rektion": [],
+    "grammarTr": "etwas mit etwas begründen: Er begründet es mit Zeitmangel.",
+    "note": "İsmi: die Begründung, -en (gerekçe).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 17",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "gerekçelendirmek, gerekçesini söylemek",
+    "hintTr": "fiil (ayrılmaz)",
+    "cloze": "Können Sie Ihre Entscheidung bitte [begründen]?",
+    "clozeTr": "Kararınızın gerekçesini açıklayabilir misiniz lütfen?",
+    "examples": [
+      {
+        "de": "Begründen Sie Ihre Argumente.",
+        "tr": "Argümanlarınızı gerekçelendirin.",
+        "fromBook": true
+      },
+      {
+        "de": "Er hat seine Kündigung mit dem schlechten Gehalt begründet.",
+        "tr": "İstifasını düşük maaşla gerekçelendirdi.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "entnehmen-8a74",
+    "type": "verb",
+    "lemma": "entnehmen",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": null,
+      "praeteritum": "entnahm",
+      "partizip2": "entnommen",
+      "auxiliary": "haben"
+    },
+    "rektion": [
+      { "preposition": null, "case": "Dat" },
+      { "preposition": null, "case": "Akk" }
+    ],
+    "grammarTr": "Kaynak Dativ'de: dem Text / der Tabelle etwas entnehmen. Düzensiz: entnimmt – entnahm – entnommen.",
+    "note": "Resmi yazışma kalıbı: Wie Sie dem Anhang entnehmen können, … (Ekten görebileceğiniz gibi …)",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 17",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "(bir kaynaktan bilgi) çıkarmak, almak",
+    "hintTr": "fiil (ayrılmaz) + Dat",
+    "cloze": "Wie Sie der Tabelle [entnehmen] können, sind die Preise gestiegen.",
+    "clozeTr": "Tablodan görebileceğiniz gibi fiyatlar arttı.",
+    "examples": [
+      {
+        "de": "Ich kann jetzt einem Zeitungstext die Ergebnisse einer Umfrage zu Freundschaften entnehmen.",
+        "tr": "Artık bir gazete metninden arkadaşlıklarla ilgili bir anketin sonuçlarını çıkarabiliyorum.",
+        "fromBook": true
+      },
+      {
+        "de": "Der Arzt hat mir Blut entnommen.",
+        "tr": "Doktor kanımı aldı.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "zusammenfassen-a750",
+    "type": "verb",
+    "lemma": "zusammenfassen",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": "zusammen",
+      "praeteritum": "fasste zusammen",
+      "partizip2": "zusammengefasst",
+      "auxiliary": "haben"
+    },
+    "rektion": [],
+    "grammarTr": null,
+    "note": "Sunum kalıbı: Zusammenfassend lässt sich sagen, dass … (Özetle şu söylenebilir: …)",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 17",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "özetlemek",
+    "hintTr": "fiil, ayrılabilir",
+    "cloze": "Zum Schluss [fasse] ich die wichtigsten Punkte kurz [zusammen].",
+    "clozeTr": "Son olarak en önemli noktaları kısaca özetliyorum.",
+    "examples": [
+      {
+        "de": "Mithilfe der markierten Stellen lässt sich der Inhalt des Textes rasch rekonstruieren und zusammenfassen.",
+        "tr": "İşaretlenen yerler sayesinde metnin içeriği hızla yeniden kurulup özetlenebilir.",
+        "fromBook": true
+      },
+      {
+        "de": "Kannst du den Artikel in zwei Sätzen zusammenfassen?",
+        "tr": "Makaleyi iki cümlede özetleyebilir misin?",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "mithilfe-5923",
+    "type": "other",
+    "rektion": [{ "preposition": null, "case": "Gen" }],
+    "grammarTr": "Artikel varsa Genitiv (mithilfe des Lehrers), yoksa von + Dat (mithilfe von Freunden). Yazımı: mithilfe veya mit Hilfe.",
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 17",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "lemma": "mithilfe",
+    "meaningTr": "yardımıyla, sayesinde",
+    "hintTr": "edat + Gen",
+    "cloze": "[Mithilfe] eines Wörterbuchs habe ich den Brief verstanden.",
+    "clozeTr": "Bir sözlük yardımıyla mektubu anladım.",
+    "examples": [
+      {
+        "de": "Mithilfe der markierten Stellen lässt sich der Inhalt des Textes rasch rekonstruieren und zusammenfassen.",
+        "tr": "İşaretlenen yerler sayesinde metnin içeriği hızla yeniden kurulup özetlenebilir.",
+        "fromBook": true
+      },
+      {
+        "de": "Mithilfe von Freunden haben wir den Umzug geschafft.",
+        "tr": "Arkadaşların yardımıyla taşınmayı başardık.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "glied-2712",
+    "type": "noun",
+    "lemma": "Glied",
+    "noun": { "gender": "das", "plural": "-er" },
+    "rektion": [],
+    "grammarTr": null,
+    "note": "Çoğulda genelde \"uzuvlar, kollar-bacaklar\" anlamında: Mir tun alle Glieder weh.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 16",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "(zincir) halka; uzuv",
+    "hintTr": "isim",
+    "cloze": "Eine Kette ist nur so stark wie [ihr] schwächstes [Glied].",
+    "clozeTr": "Bir zincir ancak en zayıf halkası kadar güçlüdür.",
+    "examples": [
+      {
+        "de": "Milgram stellte also fest: Die Beziehungskette zwischen Menschen hat durchschnittlich sechs Glieder.",
+        "tr": "Yani Milgram şunu tespit etti: İnsanlar arasındaki ilişki zinciri ortalama altı halkadan oluşur.",
+        "fromBook": true
+      },
+      {
+        "de": "Nach dem langen Flug taten mir alle Glieder weh.",
+        "tr": "Uzun uçuştan sonra her yerim ağrıyordu.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "absender-6c32",
+    "type": "noun",
+    "lemma": "Absender",
+    "noun": { "gender": "der", "plural": "-" },
+    "rektion": [],
+    "grammarTr": null,
+    "note": "Karşıtı: der Empfänger (alıcı). Kadın: die Absenderin.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 16",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "gönderen, gönderici",
+    "hintTr": "isim",
+    "cloze": "Auf dem Brief stand [kein] [Absender].",
+    "clozeTr": "Mektubun üzerinde gönderen yazmıyordu.",
+    "examples": [
+      {
+        "de": "Das Paket durfte nicht direkt an die Zielperson gesendet werden, sondern an eine Person, die den Absender persönlich kannte.",
+        "tr": "Paket doğrudan hedef kişiye değil, göndereni şahsen tanıyan birine gönderilmeliydi.",
+        "fromBook": true
+      },
+      {
+        "de": "Bitte schreiben Sie den Absender oben links auf den Umschlag.",
+        "tr": "Lütfen göndereni zarfın sol üst köşesine yazın.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "explizit-9bc5",
+    "type": "adjective",
+    "lemma": "explizit",
+    "adjective": { "comparative": null, "superlative": null },
+    "rektion": [],
+    "grammarTr": null,
+    "note": "Günlük dilde daha sık: ausdrücklich, deutlich. Karşıtı: implizit (örtük).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 16",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "açıkça, açık",
+    "hintTr": "sıfat/zarf (resmi)",
+    "cloze": "Der Datenschutz wird im Vertrag [explizit] erwähnt.",
+    "clozeTr": "Veri koruma sözleşmede açıkça belirtiliyor.",
+    "examples": [
+      {
+        "de": "Oft haben die Nutzer explizit nach einer bestimmten Person gesucht.",
+        "tr": "Kullanıcılar çoğu zaman açıkça belirli bir kişiyi aradı.",
+        "fromBook": true
+      },
+      {
+        "de": "Er hat das nicht explizit gesagt, aber man hat es verstanden.",
+        "tr": "Bunu açıkça söylemedi ama anlaşıldı.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "einbringen-80f9",
+    "type": "verb",
+    "lemma": "einbringen",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": "ein",
+      "praeteritum": "brachte ein",
+      "partizip2": "eingebracht",
+      "auxiliary": "haben"
+    },
+    "rektion": [{ "preposition": "in", "case": "Akk" }],
+    "grammarTr": "Düzensiz: bringt ein – brachte ein – eingebracht. sich einbringen (in + Akk) = (bir şeye) aktif katılmak, katkı sağlamak.",
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 16",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "(fikir, deneyim) katmak, ortaya koymak",
+    "hintTr": "fiil, ayrılabilir",
+    "cloze": "Im Team kann jeder seine eigenen Ideen [einbringen].",
+    "clozeTr": "Takımda herkes kendi fikirlerini ortaya koyabilir.",
+    "examples": [
+      {
+        "de": "Bringen Sie Ihre Erfahrungen ein und äußern Sie Ihre Meinung.",
+        "tr": "Deneyimlerinizi paylaşın ve fikrinizi belirtin.",
+        "fromBook": true
+      },
+      {
+        "de": "Sie hat sich stark in das Projekt eingebracht.",
+        "tr": "Projeye kendini çok verdi.",
+        "fromBook": false
+      }
+    ]
   }
 ]
