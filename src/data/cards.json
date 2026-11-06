@@ -1067,6 +1067,11 @@
         "de": "Der Mechaniker hat die Bremsen ausgetauscht.",
         "tr": "Tamirci frenleri değiştirdi.",
         "fromBook": false
+      },
+      {
+        "de": "Hörer sitzen im Studio und tauschen sich mit Experten aus.",
+        "tr": "Dinleyiciler stüdyoda oturup uzmanlarla fikir alışverişi yapıyor.",
+        "fromBook": true
       }
     ],
     "note": "sich austauschen über + Akk = (bir konuda) fikir alışverişi yapmak.",
@@ -1150,6 +1155,11 @@
         "de": "Unsere Familien sind seit Jahren miteinander befreundet.",
         "tr": "Ailelerimiz yıllardır birbirleriyle dost.",
         "fromBook": false
+      },
+      {
+        "de": "Gleich am ersten Tag habe ich dort Anna kennengelernt, und mit ihr bin ich inzwischen eng befreundet.",
+        "tr": "Daha ilk gün orada Anna ile tanıştım, artık onunla çok yakın arkadaşız.",
+        "fromBook": true
       }
     ],
     "note": null,
@@ -1578,6 +1588,11 @@
         "de": "Wie häufig gehst du ins Fitnessstudio?",
         "tr": "Spor salonuna ne sıklıkla gidiyorsun?",
         "fromBook": false
+      },
+      {
+        "de": "Ich denke, es ist häufig so, dass …",
+        "tr": "Bence çoğu zaman şöyle oluyor: …",
+        "fromBook": true
       }
     ],
     "note": null,
@@ -2985,6 +3000,11 @@
         "de": "Wir haben einen ähnlichen Geschmack.",
         "tr": "Benzer zevklerimiz var.",
         "fromBook": false
+      },
+      {
+        "de": "Etwas Ähnliches habe ich auch schon erlebt.",
+        "tr": "Benzer bir şey benim de başıma geldi.",
+        "fromBook": true
       }
     ],
     "note": "Fiili: jemandem ähneln (birine benzemek).",
@@ -3268,6 +3288,11 @@
         "de": "Der Arzt hat nichts Schlimmes festgestellt.",
         "tr": "Doktor kötü bir şey tespit etmedi.",
         "fromBook": false
+      },
+      {
+        "de": "Ich habe (schon) oft festgestellt, dass …",
+        "tr": "Şunu sık sık fark ettim: …",
+        "fromBook": true
       }
     ]
   },
@@ -5113,6 +5138,11 @@
         "de": "Bitte trennen Sie den Müll.",
         "tr": "Lütfen çöpleri ayrıştırın.",
         "fromBook": false
+      },
+      {
+        "de": "Ich denke, es ist besser, wenn man Beruf und Freundschaft trennt.",
+        "tr": "Bence iş ile arkadaşlığı ayırmak daha iyi.",
+        "fromBook": true
       }
     ]
   },
@@ -5746,6 +5776,1436 @@
       {
         "de": "Wir haben das nur mündlich vereinbart.",
         "tr": "Bunu sadece sözlü olarak kararlaştırdık.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "ankuendigung-8d9d",
+    "type": "noun",
+    "lemma": "Ankündigung",
+    "noun": { "gender": "die", "plural": "-en" },
+    "rektion": [],
+    "grammarTr": null,
+    "note": "Fiili: ankündigen (duyurmak, haber vermek).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 18",
+    "tags": ["kapitel-1", "freundschaft", "hoeren"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "duyuru, ilan",
+    "hintTr": "isim (-ung ile biter)",
+    "cloze": "Laut [der] [Ankündigung] beginnt das Konzert um 20 Uhr.",
+    "clozeTr": "Duyuruya göre konser saat 20'de başlıyor.",
+    "examples": [
+      {
+        "de": "Lesen Sie die Ankündigung im Internet.",
+        "tr": "İnternetteki duyuruyu okuyun.",
+        "fromBook": true
+      },
+      {
+        "de": "Die Firma hat die Ankündigung erst gestern gemacht.",
+        "tr": "Şirket duyuruyu ancak dün yaptı.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "art-9fe6",
+    "type": "noun",
+    "lemma": "Art",
+    "noun": { "gender": "die", "plural": "-en" },
+    "rektion": [],
+    "grammarTr": null,
+    "note": "Kalıplar: auf diese Art (bu şekilde), Tierart (hayvan türü).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 18",
+    "tags": ["kapitel-1", "freundschaft", "hoeren"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "tür, çeşit; tarz",
+    "hintTr": "isim",
+    "cloze": "Was für [eine] [Art] von Musik hörst du gern?",
+    "clozeTr": "Ne tür müzik dinlemeyi seversin?",
+    "examples": [
+      {
+        "de": "Um was für eine Art von Sendung geht es?",
+        "tr": "Bu ne tür bir program?",
+        "fromBook": true
+      },
+      {
+        "de": "Mir gefällt seine Art, mit Menschen zu reden.",
+        "tr": "İnsanlarla konuşma tarzını seviyorum.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "sendung-f8e1",
+    "type": "noun",
+    "lemma": "Sendung",
+    "noun": { "gender": "die", "plural": "-en" },
+    "rektion": [],
+    "grammarTr": null,
+    "note": "Fiili: senden (yayınlamak; göndermek).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 18",
+    "tags": ["kapitel-1", "freundschaft", "hoeren"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "(radyo, TV) program, yayın; gönderi",
+    "hintTr": "isim (-ung ile biter)",
+    "cloze": "Hast du gestern [die] [Sendung] über Japan gesehen?",
+    "clozeTr": "Dün Japonya hakkındaki programı izledin mi?",
+    "examples": [
+      {
+        "de": "Worum geht es in der Sendung wohl?",
+        "tr": "Program acaba ne hakkında?",
+        "fromBook": true
+      },
+      {
+        "de": "Ihre Sendung ist unterwegs und kommt morgen an.",
+        "tr": "Gönderiniz yolda, yarın ulaşacak.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "ratgebersendung-43d5",
+    "type": "noun",
+    "lemma": "Ratgebersendung",
+    "noun": { "gender": "die", "plural": "-en" },
+    "rektion": [],
+    "grammarTr": null,
+    "note": "der Ratgeber, - = danışman; tavsiye kitabı (raten = tavsiye etmek).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 18",
+    "tags": ["kapitel-1", "freundschaft", "hoeren"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "tavsiye programı (dinleyicilere öneri verilen program)",
+    "hintTr": "isim, birleşik",
+    "cloze": "In [der] [Ratgebersendung] bekommen Hörer Tipps von Experten.",
+    "clozeTr": "Bu tavsiye programında dinleyiciler uzmanlardan öneriler alıyor.",
+    "examples": [
+      {
+        "de": "Eine Ratgebersendung: Hörer rufen im Studio an und bekommen Tipps.",
+        "tr": "Tavsiye programı: Dinleyiciler stüdyoyu arıyor ve öneri alıyor.",
+        "fromBook": true
+      },
+      {
+        "de": "Meine Mutter hört jeden Morgen eine Ratgebersendung zum Thema Gesundheit.",
+        "tr": "Annem her sabah sağlık üzerine bir tavsiye programı dinliyor.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "hoerer-0795",
+    "type": "noun",
+    "lemma": "Hörer",
+    "noun": { "gender": "der", "plural": "-" },
+    "rektion": [],
+    "grammarTr": null,
+    "note": "Kadın: die Hörerin, -nen. Kalıp: den Hörer auflegen (telefonu kapatmak).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 18",
+    "tags": ["kapitel-1", "freundschaft", "hoeren"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "dinleyici; (telefon) ahize",
+    "hintTr": "isim (erkek)",
+    "cloze": "Die Sendung hat jeden Abend über eine Million [Hörer].",
+    "clozeTr": "Programın her akşam bir milyondan fazla dinleyicisi var.",
+    "examples": [
+      {
+        "de": "Hörer rufen im Studio an und bekommen Tipps.",
+        "tr": "Dinleyiciler stüdyoyu arıyor ve öneri alıyor.",
+        "fromBook": true
+      },
+      {
+        "de": "Er hat einfach den Hörer aufgelegt.",
+        "tr": "Telefonu yüzüme kapattı.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "forum-7420",
+    "type": "noun",
+    "lemma": "Forum",
+    "noun": { "gender": "das", "plural": "Foren" },
+    "rektion": [],
+    "grammarTr": "Düzensiz çoğul: das Forum → die Foren (das Museum → die Museen gibi).",
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 18",
+    "tags": ["kapitel-1", "freundschaft", "hoeren"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "forum, tartışma ortamı",
+    "hintTr": "isim (düzensiz çoğul)",
+    "cloze": "Ich habe die Frage in [einem] [Forum] im Internet gestellt.",
+    "clozeTr": "Soruyu internette bir forumda sordum.",
+    "examples": [
+      {
+        "de": "Ein Forum: Hörer rufen an und äußern sich zu einem Thema.",
+        "tr": "Forum: Dinleyiciler arayıp bir konu hakkında görüş bildiriyor.",
+        "fromBook": true
+      },
+      {
+        "de": "In vielen Foren tauschen sich Eltern über Erziehung aus.",
+        "tr": "Birçok forumda ebeveynler çocuk yetiştirme üzerine fikir alışverişi yapıyor.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "gespraechsrunde-487e",
+    "type": "noun",
+    "lemma": "Gesprächsrunde",
+    "noun": { "gender": "die", "plural": "-n" },
+    "rektion": [],
+    "grammarTr": "das Gespräch + -s- + die Runde. Artikeli son kelime belirler: die.",
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 18",
+    "tags": ["kapitel-1", "freundschaft", "hoeren"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "tartışma programı, sohbet toplantısı",
+    "hintTr": "isim, birleşik",
+    "cloze": "Zu [der] [Gesprächsrunde] im Fernsehen waren vier Politiker eingeladen.",
+    "clozeTr": "Televizyondaki tartışma programına dört politikacı davet edilmişti.",
+    "examples": [
+      {
+        "de": "Eine Gesprächsrunde: Hörer sitzen im Studio und tauschen sich mit Experten aus.",
+        "tr": "Tartışma programı: Dinleyiciler stüdyoda oturup uzmanlarla fikir alışverişi yapıyor.",
+        "fromBook": true
+      },
+      {
+        "de": "Nach dem Vortrag gibt es eine offene Gesprächsrunde.",
+        "tr": "Sunumdan sonra herkese açık bir sohbet bölümü var.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "experte-dee1",
+    "type": "noun",
+    "lemma": "Experte",
+    "noun": { "gender": "der", "plural": "-n" },
+    "rektion": [],
+    "grammarTr": "n-Deklination: den/dem/des Experten. Kadın: die Expertin, -nen. Rektion: Experte für + Akk.",
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 18",
+    "tags": ["kapitel-1", "freundschaft", "hoeren"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "uzman",
+    "hintTr": "isim (erkek)",
+    "cloze": "Bei diesem Problem solltest du [einen] [Experten] fragen.",
+    "clozeTr": "Bu sorunda bir uzmana danışmalısın.",
+    "examples": [
+      {
+        "de": "Hörer sitzen im Studio und tauschen sich mit Experten aus.",
+        "tr": "Dinleyiciler stüdyoda oturup uzmanlarla fikir alışverişi yapıyor.",
+        "fromBook": true
+      },
+      {
+        "de": "Er ist Experte für Computersicherheit.",
+        "tr": "Bilgisayar güvenliği uzmanı.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "moderation-4a9d",
+    "type": "noun",
+    "lemma": "Moderation",
+    "noun": { "gender": "die", "plural": "-en" },
+    "rektion": [],
+    "grammarTr": null,
+    "note": "der Moderator / die Moderatorin = sunucu; moderieren = (program) sunmak.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 18",
+    "tags": ["kapitel-1", "freundschaft", "hoeren"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "(program) sunuculuk, yönetim",
+    "hintTr": "isim",
+    "cloze": "Die Show läuft heute unter [der] [Moderation] von Michaela Schmidt.",
+    "clozeTr": "Program bugün Michaela Schmidt'in sunumuyla yayınlanıyor.",
+    "examples": [
+      {
+        "de": "Heutiges Thema: Freundschaft. Moderation: Michaela Schmidt.",
+        "tr": "Bugünün konusu: Arkadaşlık. Sunucu: Michaela Schmidt.",
+        "fromBook": true
+      },
+      {
+        "de": "Die Moderation der Diskussion war sehr gut.",
+        "tr": "Tartışmanın yönetimi çok iyiydi.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "freuen-0c9f",
+    "type": "verb",
+    "lemma": "freuen",
+    "verb": {
+      "reflexive": "Akk",
+      "separablePrefix": null,
+      "praeteritum": "freute",
+      "partizip2": "gefreut",
+      "auxiliary": "haben"
+    },
+    "rektion": [
+      { "preposition": "auf", "case": "Akk" },
+      { "preposition": "über", "case": "Akk" }
+    ],
+    "grammarTr": "sich freuen AUF + Akk = gelecekteki bir şeyi beklemek (auf den Urlaub). sich freuen ÜBER + Akk = olmuş bir şeye sevinmek (über das Geschenk).",
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 18",
+    "tags": ["kapitel-1", "freundschaft", "hoeren"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "(bir şeyi) dört gözle beklemek; (bir şeye) sevinmek",
+    "hintTr": "fiil, dönüşlü + edat",
+    "cloze": "Ich [freue] [mich] schon [auf] die Ferien.",
+    "clozeTr": "Tatili dört gözle bekliyorum.",
+    "examples": [
+      {
+        "de": "Wir freuen uns auf Ihre Fragen.",
+        "tr": "Sorularınızı bekliyoruz.",
+        "fromBook": true
+      },
+      {
+        "de": "Sie hat sich sehr über das Geschenk gefreut.",
+        "tr": "Hediyeye çok sevindi.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "wohl-1bbb",
+    "type": "other",
+    "rektion": [],
+    "grammarTr": null,
+    "note": "Soruda „acaba\", düz cümlede „herhalde\" anlamı verir. sich wohlfühlen (kendini iyi hissetmek) ile karıştırma.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 18",
+    "tags": ["kapitel-1", "freundschaft", "hoeren"],
+    "createdAt": "2026-11-06",
+    "lemma": "wohl",
+    "meaningTr": "herhalde, acaba; muhtemelen",
+    "hintTr": "parçacık (tahmin)",
+    "cloze": "Er ist nicht gekommen, er ist [wohl] krank.",
+    "clozeTr": "Gelmedi, herhalde hasta.",
+    "examples": [
+      {
+        "de": "Worum geht es in der Sendung wohl?",
+        "tr": "Program acaba ne hakkında?",
+        "fromBook": true
+      },
+      {
+        "de": "Wer hat wohl die Tür offen gelassen?",
+        "tr": "Kapıyı acaba kim açık bıraktı?",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "anrufer-1555",
+    "type": "noun",
+    "lemma": "Anrufer",
+    "noun": { "gender": "der", "plural": "-" },
+    "rektion": [],
+    "grammarTr": null,
+    "note": "Kadın: die Anruferin, -nen. Fiili: anrufen.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 18",
+    "tags": ["kapitel-1", "freundschaft", "hoeren"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "arayan (kişi)",
+    "hintTr": "isim (erkek)",
+    "cloze": "Die Moderatorin begrüßt [den] nächsten [Anrufer].",
+    "clozeTr": "Sunucu sıradaki arayanı selamlıyor.",
+    "examples": [
+      {
+        "de": "Anrufer fragen, Experten antworten.",
+        "tr": "Dinleyiciler soruyor, uzmanlar cevaplıyor.",
+        "fromBook": true
+      },
+      {
+        "de": "Der Anrufer wollte seinen Namen nicht nennen.",
+        "tr": "Arayan kişi adını söylemek istemedi.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "abschnitt-776c",
+    "type": "noun",
+    "lemma": "Abschnitt",
+    "noun": { "gender": "der", "plural": "-e" },
+    "rektion": [],
+    "grammarTr": null,
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 18",
+    "tags": ["kapitel-1", "freundschaft", "hoeren"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "bölüm, kısım",
+    "hintTr": "isim",
+    "cloze": "Lesen Sie zuerst nur [den] ersten [Abschnitt] des Textes.",
+    "clozeTr": "Önce metnin sadece ilk bölümünü okuyun.",
+    "examples": [
+      {
+        "de": "Hören Sie die Sendung in Abschnitten und beantworten Sie die Fragen.",
+        "tr": "Programı bölüm bölüm dinleyin ve soruları cevaplayın.",
+        "fromBook": true
+      },
+      {
+        "de": "Das war ein schwieriger Abschnitt in meinem Leben.",
+        "tr": "O, hayatımın zor bir dönemiydi.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "vermutung-67f8",
+    "type": "noun",
+    "lemma": "Vermutung",
+    "noun": { "gender": "die", "plural": "-en" },
+    "rektion": [],
+    "grammarTr": null,
+    "note": "Fiili: vermuten (tahmin etmek).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 18",
+    "tags": ["kapitel-1", "freundschaft", "hoeren"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "tahmin, varsayım",
+    "hintTr": "isim (-ung ile biter)",
+    "cloze": "Meine [Vermutung] war richtig: Er hatte den Termin vergessen.",
+    "clozeTr": "Tahminim doğruydu: Randevuyu unutmuştu.",
+    "examples": [
+      {
+        "de": "War Ihre Vermutung aus 1b richtig?",
+        "tr": "1b'deki tahmininiz doğru muydu?",
+        "fromBook": true
+      },
+      {
+        "de": "Das ist nur eine Vermutung, ich weiß es nicht genau.",
+        "tr": "Bu sadece bir tahmin, kesin bilmiyorum.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "zu-gast-sein-d77a",
+    "type": "expression",
+    "rektion": [],
+    "grammarTr": null,
+    "note": "der Gast, ¨-e = misafir; der Gastgeber = ev sahibi.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 18",
+    "tags": ["kapitel-1", "freundschaft", "hoeren"],
+    "createdAt": "2026-11-06",
+    "lemma": "zu Gast sein",
+    "meaningTr": "misafir olmak, konuk olmak",
+    "hintTr": "kalıp",
+    "cloze": "Heute [ist] ein bekannter Autor bei uns [zu] [Gast].",
+    "clozeTr": "Bugün tanınmış bir yazar konuğumuz.",
+    "examples": [
+      {
+        "de": "Wer ist zu Gast im Studio?",
+        "tr": "Stüdyoda konuk kim?",
+        "fromBook": true
+      },
+      {
+        "de": "Am Wochenende sind wir bei Freunden zu Gast.",
+        "tr": "Hafta sonu arkadaşlarda misafiriz.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "wert-2be2",
+    "type": "noun",
+    "lemma": "Wert",
+    "noun": { "gender": "der", "plural": "-e" },
+    "rektion": [],
+    "grammarTr": null,
+    "note": "Kalıp: Wert legen auf + Akk = bir şeye önem vermek.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 18",
+    "tags": ["kapitel-1", "freundschaft", "hoeren"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "değer, önem",
+    "hintTr": "isim",
+    "cloze": "Ich lege großen [Wert] [auf] Pünktlichkeit.",
+    "clozeTr": "Dakikliğe çok önem veririm.",
+    "examples": [
+      {
+        "de": "Welchen Wert hat Freundschaft nach Ansicht des Experten heute?",
+        "tr": "Uzmana göre arkadaşlığın bugün nasıl bir değeri var?",
+        "fromBook": true
+      },
+      {
+        "de": "Der Ring hat für mich einen großen persönlichen Wert.",
+        "tr": "Yüzüğün benim için büyük bir manevi değeri var.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "meiner-ansicht-nach-5869",
+    "type": "expression",
+    "rektion": [],
+    "grammarTr": "Başka biri için: nach Ansicht + Gen (nach Ansicht des Experten) ya da seiner/ihrer Ansicht nach. Eş anlamlı: meiner Meinung nach.",
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 18",
+    "tags": ["kapitel-1", "freundschaft", "hoeren"],
+    "createdAt": "2026-11-06",
+    "lemma": "meiner Ansicht nach",
+    "meaningTr": "bence, bana göre",
+    "hintTr": "kalıp (görüş bildirme)",
+    "cloze": "[Meiner] [Ansicht] [nach] sollte man Beruf und Freundschaft trennen.",
+    "clozeTr": "Bence iş ile arkadaşlığı ayırmak gerekir.",
+    "examples": [
+      {
+        "de": "Welchen Wert hat Freundschaft nach Ansicht des Experten heute?",
+        "tr": "Uzmana göre arkadaşlığın bugün nasıl bir değeri var?",
+        "fromBook": true
+      },
+      {
+        "de": "Meiner Ansicht nach ist das eine gute Idee.",
+        "tr": "Bence bu iyi bir fikir.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "verwirrung-9236",
+    "type": "noun",
+    "lemma": "Verwirrung",
+    "noun": { "gender": "die", "plural": "-en" },
+    "rektion": [],
+    "grammarTr": null,
+    "note": "Fiili: verwirren (kafasını karıştırmak); sıfat: verwirrt (kafası karışık).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 18",
+    "tags": ["kapitel-1", "freundschaft", "hoeren"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "karışıklık, kafa karışıklığı",
+    "hintTr": "isim (-ung ile biter)",
+    "cloze": "Die neue Regel hat bei allen für [große] [Verwirrung] gesorgt.",
+    "clozeTr": "Yeni kural herkesin kafasını karıştırdı.",
+    "examples": [
+      {
+        "de": "Welche „Verwirrung\" sieht der Experte bei dem Wort „Freund\"?",
+        "tr": "Uzman „arkadaş\" kelimesinde nasıl bir kafa karışıklığı görüyor?",
+        "fromBook": true
+      },
+      {
+        "de": "Entschuldigung für die Verwirrung!",
+        "tr": "Karışıklık için özür dilerim!",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "zunehmen-4100",
+    "type": "verb",
+    "lemma": "zunehmen",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": "zu",
+      "praeteritum": "nahm zu",
+      "partizip2": "zugenommen",
+      "auxiliary": "haben"
+    },
+    "rektion": [],
+    "grammarTr": null,
+    "note": "Karşıtı: abnehmen (azalmak; kilo vermek).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 18",
+    "tags": ["kapitel-1", "freundschaft", "hoeren"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "artmak; kilo almak",
+    "hintTr": "fiil, ayrılabilir",
+    "cloze": "Im Urlaub habe ich drei Kilo [zugenommen].",
+    "clozeTr": "Tatilde üç kilo aldım.",
+    "examples": [
+      {
+        "de": "Die Zahl der Freundschaften nimmt zu.",
+        "tr": "Arkadaşlıkların sayısı artıyor.",
+        "fromBook": true
+      },
+      {
+        "de": "Der Verkehr in der Stadt nimmt jedes Jahr zu.",
+        "tr": "Şehirdeki trafik her yıl artıyor.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "wert-ddd6",
+    "type": "adjective",
+    "lemma": "wert",
+    "adjective": { "comparative": null, "superlative": null },
+    "rektion": [{ "preposition": null, "case": "Akk" }],
+    "grammarTr": "Sadece sein/werden ile, yüklem olarak: etwas ist + Akk + wert (Das ist viel Geld wert). İsmi: der Wert.",
+    "note": "Kalıp: Das ist es (mir) wert. = (Bana göre) buna değer.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 18",
+    "tags": ["kapitel-1", "freundschaft", "hoeren"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "(bir şeye) değer",
+    "hintTr": "sıfat (+ Akk)",
+    "cloze": "Der Film ist es nicht [wert], dass du dafür ins Kino gehst.",
+    "clozeTr": "Film, sinemaya gitmene değmez.",
+    "examples": [
+      {
+        "de": "Freundschaften werden weniger wert.",
+        "tr": "Arkadaşlıkların değeri azalıyor.",
+        "fromBook": true
+      },
+      {
+        "de": "Das alte Auto ist kaum noch 500 Euro wert.",
+        "tr": "Eski araba artık 500 avro bile etmez.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "erfahren-6459",
+    "type": "verb",
+    "lemma": "erfahren",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": null,
+      "praeteritum": "erfuhr",
+      "partizip2": "erfahren",
+      "auxiliary": "haben"
+    },
+    "rektion": [
+      { "preposition": "von", "case": "Dat" },
+      { "preposition": "über", "case": "Akk" }
+    ],
+    "grammarTr": "Düzensiz: erfährt – erfuhr – erfahren. Sıfat olarak erfahren = tecrübeli (ein erfahrener Arzt).",
+    "note": "herausfinden = araştırıp bulmak; erfahren = bir bilgiyi duymak, haber almak.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 19",
+    "tags": ["kapitel-1", "freundschaft", "hoeren"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "(bir haberi) öğrenmek, duymak",
+    "hintTr": "fiil (ayrılmaz) + edat",
+    "cloze": "Von seiner Hochzeit habe ich erst aus der Zeitung [erfahren].",
+    "clozeTr": "Düğününü ancak gazeteden öğrendim.",
+    "examples": [
+      {
+        "de": "Was erfährt man über die Anruferin Lissy?",
+        "tr": "Arayan Lissy hakkında ne öğreniyoruz?",
+        "fromBook": true
+      },
+      {
+        "de": "Wann erfahren wir die Ergebnisse der Prüfung?",
+        "tr": "Sınav sonuçlarını ne zaman öğreneceğiz?",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "ausgehen-51f2",
+    "type": "verb",
+    "lemma": "ausgehen",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": "aus",
+      "praeteritum": "ging aus",
+      "partizip2": "ausgegangen",
+      "auxiliary": "sein"
+    },
+    "rektion": [],
+    "grammarTr": null,
+    "note": "Başka anlamları: (ışık) sönmek; davon ausgehen, dass … = … varsaymak.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 19",
+    "tags": ["kapitel-1", "freundschaft", "hoeren"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "(eğlenmek için) dışarı çıkmak",
+    "hintTr": "fiil, ayrılabilir",
+    "cloze": "Am Freitagabend [gehen] wir oft zusammen [aus].",
+    "clozeTr": "Cuma akşamları sık sık birlikte dışarı çıkıyoruz.",
+    "examples": [
+      {
+        "de": "Sie geht ganz selten aus.",
+        "tr": "Çok nadiren dışarı çıkıyor.",
+        "fromBook": true
+      },
+      {
+        "de": "Das Licht ist plötzlich ausgegangen.",
+        "tr": "Işık birden söndü.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "unkonventionell-9e35",
+    "type": "adjective",
+    "lemma": "unkonventionell",
+    "adjective": { "comparative": null, "superlative": null },
+    "rektion": [],
+    "grammarTr": null,
+    "note": "Karşıtı: konventionell (geleneksel, alışılmış).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 19",
+    "tags": ["kapitel-1", "freundschaft", "hoeren"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "alışılmışın dışında, sıra dışı",
+    "hintTr": "sıfat",
+    "cloze": "Sie hat einen sehr [unkonventionellen] Kleidungsstil.",
+    "clozeTr": "Çok sıra dışı bir giyim tarzı var.",
+    "examples": [
+      {
+        "de": "Sie ist aktiv und unkonventionell.",
+        "tr": "Hareketli ve sıra dışı biri.",
+        "fromBook": true
+      },
+      {
+        "de": "Er löst Probleme oft auf unkonventionelle Weise.",
+        "tr": "Sorunları genelde alışılmadık yollarla çözer.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "empfehlen-e0f8",
+    "type": "verb",
+    "lemma": "empfehlen",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": null,
+      "praeteritum": "empfahl",
+      "partizip2": "empfohlen",
+      "auxiliary": "haben"
+    },
+    "rektion": [
+      { "preposition": null, "case": "Dat" },
+      { "preposition": null, "case": "Akk" }
+    ],
+    "grammarTr": "Düzensiz: empfiehlt – empfahl – empfohlen. İsmi: die Empfehlung, -en.",
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 19",
+    "tags": ["kapitel-1", "freundschaft", "hoeren"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "önermek, tavsiye etmek",
+    "hintTr": "fiil (ayrılmaz) + Dat + Akk",
+    "cloze": "Kannst du mir ein gutes Restaurant in der Nähe [empfehlen]?",
+    "clozeTr": "Bana yakınlarda iyi bir restoran önerebilir misin?",
+    "examples": [
+      {
+        "de": "Was empfiehlt der Experte der Anruferin?",
+        "tr": "Uzman arayan kadına ne öneriyor?",
+        "fromBook": true
+      },
+      {
+        "de": "Der Arzt hat mir empfohlen, mehr Sport zu machen.",
+        "tr": "Doktor bana daha çok spor yapmamı önerdi.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "alltaeglich-4f3c",
+    "type": "adjective",
+    "lemma": "alltäglich",
+    "adjective": { "comparative": null, "superlative": null },
+    "rektion": [],
+    "grammarTr": null,
+    "note": "der Alltag = gündelik hayat.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 19",
+    "tags": ["kapitel-1", "freundschaft", "hoeren"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "gündelik, sıradan",
+    "hintTr": "sıfat",
+    "cloze": "Wir haben über ganz [alltägliche] Dinge gesprochen.",
+    "clozeTr": "Tamamen gündelik şeylerden konuştuk.",
+    "examples": [
+      {
+        "de": "Sie soll mit Freunden über alltägliche Dinge wie Autos reden.",
+        "tr": "Arkadaşlarıyla arabalar gibi gündelik konulardan konuşmalı.",
+        "fromBook": true
+      },
+      {
+        "de": "Stress ist für viele Menschen etwas Alltägliches.",
+        "tr": "Stres birçok insan için sıradan bir şey.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "herausbekommen-f1c4",
+    "type": "verb",
+    "lemma": "herausbekommen",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": "heraus",
+      "praeteritum": "bekam heraus",
+      "partizip2": "herausbekommen",
+      "auxiliary": "haben"
+    },
+    "rektion": [],
+    "grammarTr": null,
+    "note": "herausfinden ile neredeyse aynı, daha gündelik. Diğer anlam: para üstü almak (Sie bekommen 2 Euro heraus).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 19",
+    "tags": ["kapitel-1", "freundschaft", "hoeren"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "(çabalayarak) öğrenmek, çözmek",
+    "hintTr": "fiil, ayrılabilir (gündelik)",
+    "cloze": "Ich habe nie [herausbekommen], wer mir die Blumen geschickt hat.",
+    "clozeTr": "Çiçekleri bana kimin gönderdiğini hiç çözemedim.",
+    "examples": [
+      {
+        "de": "Sie soll herausbekommen, worüber andere eigentlich reden wollen.",
+        "tr": "Başkalarının aslında neyden konuşmak istediğini anlamaya çalışmalı.",
+        "fromBook": true
+      },
+      {
+        "de": "Hast du die Lösung herausbekommen?",
+        "tr": "Çözümü bulabildin mi?",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "eigentlich-cbd5",
+    "type": "other",
+    "rektion": [],
+    "grammarTr": null,
+    "note": "Soruda yumuşatıcı: „Wie heißt du eigentlich?\" = Bu arada adın ne?",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 19",
+    "tags": ["kapitel-1", "freundschaft", "hoeren"],
+    "createdAt": "2026-11-06",
+    "lemma": "eigentlich",
+    "meaningTr": "aslında, esasen",
+    "hintTr": "zarf/parçacık",
+    "cloze": "[Eigentlich] wollte ich heute zu Hause bleiben, aber dann bin ich doch mitgekommen.",
+    "clozeTr": "Aslında bugün evde kalmak istiyordum ama sonra yine de geldim.",
+    "examples": [
+      {
+        "de": "Sie soll herausbekommen, worüber andere eigentlich reden wollen.",
+        "tr": "Başkalarının aslında neyden konuşmak istediğini anlamaya çalışmalı.",
+        "fromBook": true
+      },
+      {
+        "de": "Was machst du eigentlich beruflich?",
+        "tr": "Bu arada sen ne iş yapıyorsun?",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "berichten-4786",
+    "type": "verb",
+    "lemma": "berichten",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": null,
+      "praeteritum": "berichtete",
+      "partizip2": "berichtet",
+      "auxiliary": "haben"
+    },
+    "rektion": [
+      { "preposition": "über", "case": "Akk" },
+      { "preposition": "von", "case": "Dat" }
+    ],
+    "grammarTr": null,
+    "note": "İsmi: der Bericht, -e (rapor, haber). erzählen'den daha resmi.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 19",
+    "tags": ["kapitel-1", "freundschaft", "hoeren"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "anlatmak, haber vermek",
+    "hintTr": "fiil (ayrılmaz) + edat",
+    "cloze": "Die Zeitung hat ausführlich [über] den Unfall [berichtet].",
+    "clozeTr": "Gazete kazayı ayrıntılı olarak haberleştirdi.",
+    "examples": [
+      {
+        "de": "Was berichtet Frau Herrmann?",
+        "tr": "Bayan Herrmann ne anlatıyor?",
+        "fromBook": true
+      },
+      {
+        "de": "Sie berichtet von ihren Erfahrungen im Ausland.",
+        "tr": "Yurt dışındaki deneyimlerini anlatıyor.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "abbrechen-4232",
+    "type": "verb",
+    "lemma": "abbrechen",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": "ab",
+      "praeteritum": "brach ab",
+      "partizip2": "abgebrochen",
+      "auxiliary": "haben/sein"
+    },
+    "rektion": [],
+    "grammarTr": "Nesneli (bir şeyi kesmek) → haben: Er hat das Studium abgebrochen. Nesnesiz (kendiliğinden kopmak) → sein: Der Kontakt ist abgebrochen.",
+    "note": "Yakın anlamlı: Der Kontakt ist abgerissen.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 19",
+    "tags": ["kapitel-1", "freundschaft", "hoeren"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "(yarıda) kesmek, bırakmak; kopmak",
+    "hintTr": "fiil, ayrılabilir",
+    "cloze": "Er hat sein Studium nach zwei Semestern [abgebrochen].",
+    "clozeTr": "Üniversiteyi iki dönem sonra bıraktı.",
+    "examples": [
+      {
+        "de": "Der Kontakt zu ihrer Freundin ist abgebrochen.",
+        "tr": "Arkadaşıyla bağlantısı koptu.",
+        "fromBook": true
+      },
+      {
+        "de": "Wir mussten das Spiel wegen des Regens abbrechen.",
+        "tr": "Yağmur yüzünden maçı yarıda kesmek zorunda kaldık.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "streiten-9c64",
+    "type": "verb",
+    "lemma": "streiten",
+    "verb": {
+      "reflexive": "Akk",
+      "separablePrefix": null,
+      "praeteritum": "stritt",
+      "partizip2": "gestritten",
+      "auxiliary": "haben"
+    },
+    "rektion": [
+      { "preposition": "mit", "case": "Dat" },
+      { "preposition": "über", "case": "Akk" }
+    ],
+    "grammarTr": "Düzensiz: streitet – stritt – gestritten. sich mit jemandem (über etwas) streiten. İsmi: der Streit.",
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 19",
+    "tags": ["kapitel-1", "freundschaft", "hoeren"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "(biriyle) kavga etmek, tartışmak",
+    "hintTr": "fiil, dönüşlü + edat",
+    "cloze": "Meine Geschwister [streiten] [sich] ständig [über] die Fernbedienung.",
+    "clozeTr": "Kardeşlerim sürekli kumanda yüzünden kavga ediyor.",
+    "examples": [
+      {
+        "de": "Sie hat sich mit ihrer Freundin gestritten.",
+        "tr": "Arkadaşıyla kavga etti.",
+        "fromBook": true
+      },
+      {
+        "de": "Darüber kann man streiten.",
+        "tr": "Bu tartışılır.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "raten-e84c",
+    "type": "verb",
+    "lemma": "raten",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": null,
+      "praeteritum": "riet",
+      "partizip2": "geraten",
+      "auxiliary": "haben"
+    },
+    "rektion": [
+      { "preposition": null, "case": "Dat" },
+      { "preposition": "zu", "case": "Dat" }
+    ],
+    "grammarTr": "Düzensiz: rät – riet – geraten. jemandem raten, etwas zu tun / jemandem zu etwas raten (Ich rate dir zur Vorsicht).",
+    "note": "empfehlen genelde bir şey önerir (Restaurant empfehlen); raten bir davranış öğütler (Ich rate dir, … zu …).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 19",
+    "tags": ["kapitel-1", "freundschaft", "hoeren"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "(birine) öğüt vermek, tavsiye etmek; tahmin etmek",
+    "hintTr": "fiil + Dat (düzensiz)",
+    "cloze": "Ich [rate] dir, früher loszufahren, weil es Stau gibt.",
+    "clozeTr": "Trafik olduğu için erken yola çıkmanı tavsiye ederim.",
+    "examples": [
+      {
+        "de": "Was rät der Experte Frau Herrmann?",
+        "tr": "Uzman Bayan Herrmann'a ne tavsiye ediyor?",
+        "fromBook": true
+      },
+      {
+        "de": "Rate mal, wen ich heute getroffen habe!",
+        "tr": "Bil bakalım bugün kime rastladım!",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "pflegen-a22f",
+    "type": "verb",
+    "lemma": "pflegen",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": null,
+      "praeteritum": "pflegte",
+      "partizip2": "gepflegt",
+      "auxiliary": "haben"
+    },
+    "rektion": [],
+    "grammarTr": null,
+    "note": "Kalıplar: Kontakte/Freundschaften pflegen. die Pflege = bakım; der Pfleger = hasta bakıcı.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 19",
+    "tags": ["kapitel-1", "freundschaft", "hoeren"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "(ilişkiyi) sürdürmek, özen göstermek; bakmak",
+    "hintTr": "fiil",
+    "cloze": "Wer Freundschaften nicht [pflegt], verliert sie irgendwann.",
+    "clozeTr": "Arkadaşlıklarına özen göstermeyen, bir gün onları kaybeder.",
+    "examples": [
+      {
+        "de": "Sie soll den Kontakt zu Freunden pflegen.",
+        "tr": "Arkadaşlarıyla bağlantısını sürdürmeli.",
+        "fromBook": true
+      },
+      {
+        "de": "Sie pflegt ihre kranke Mutter zu Hause.",
+        "tr": "Hasta annesine evde bakıyor.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "unterhalten-82c2",
+    "type": "verb",
+    "lemma": "unterhalten",
+    "verb": {
+      "reflexive": "Akk",
+      "separablePrefix": null,
+      "praeteritum": "unterhielt",
+      "partizip2": "unterhalten",
+      "auxiliary": "haben"
+    },
+    "rektion": [
+      { "preposition": "mit", "case": "Dat" },
+      { "preposition": "über", "case": "Akk" }
+    ],
+    "grammarTr": "unter- burada ayrılmaz, vurgu -hal- üzerinde: Wir unterhalten uns. Düzensiz: unterhält – unterhielt – unterhalten.",
+    "note": "Dönüşsüz: jemanden unterhalten = eğlendirmek. die Unterhaltung = sohbet; eğlence.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 19",
+    "tags": ["kapitel-1", "freundschaft", "hoeren"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "(biriyle bir konuda) sohbet etmek",
+    "hintTr": "fiil, dönüşlü + edat",
+    "cloze": "Nach dem Essen haben wir [uns] lange [über] Politik [unterhalten].",
+    "clozeTr": "Yemekten sonra uzun uzun politika üzerine sohbet ettik.",
+    "examples": [
+      {
+        "de": "Unterhalten Sie sich über die Sendung.",
+        "tr": "Program hakkında sohbet edin.",
+        "fromBook": true
+      },
+      {
+        "de": "Ich habe mich gut mit ihr unterhalten.",
+        "tr": "Onunla güzel bir sohbet ettim.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "beitrag-9cd0",
+    "type": "noun",
+    "lemma": "Beitrag",
+    "noun": { "gender": "der", "plural": "¨-e" },
+    "rektion": [],
+    "grammarTr": null,
+    "note": "Kalıp: einen Beitrag leisten (katkıda bulunmak). Fiili: beitragen zu + Dat.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 19",
+    "tags": ["kapitel-1", "freundschaft", "hoeren"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "katkı; (program, gazete) yazı, bölüm; aidat",
+    "hintTr": "isim",
+    "cloze": "Jeder hat [einen] kleinen [Beitrag] zum Fest geleistet.",
+    "clozeTr": "Herkes kutlamaya küçük bir katkıda bulundu.",
+    "examples": [
+      {
+        "de": "Welchen Hörerbeitrag fanden Sie (nicht) interessant? Warum?",
+        "tr": "Hangi dinleyici konuşmasını ilginç buldunuz (ya da bulmadınız)? Neden?",
+        "fromBook": true
+      },
+      {
+        "de": "Der Beitrag für den Sportverein kostet 20 Euro im Monat.",
+        "tr": "Spor kulübünün aidatı ayda 20 avro.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "mich-wuerde-interessieren-ob-be5f",
+    "type": "expression",
+    "rektion": [],
+    "grammarTr": "Ardından yan cümle: ob (evet/hayır) ya da soru kelimesi (wie, was, warum …) + fiil sonda.",
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 19",
+    "tags": ["kapitel-1", "freundschaft", "hoeren"],
+    "createdAt": "2026-11-06",
+    "lemma": "Mich würde interessieren, ob …",
+    "meaningTr": "… merak ediyorum (kibar soru)",
+    "hintTr": "kalıp (kibar soru, Konjunktiv II)",
+    "cloze": "Mich [würde] [interessieren], ob du schon einmal im Ausland gelebt hast.",
+    "clozeTr": "Hiç yurt dışında yaşadın mı, merak ediyorum.",
+    "examples": [
+      {
+        "de": "Mich würde mal interessieren, ob schon mal jemand am Arbeitsplatz einen wirklich guten Freund gefunden hat.",
+        "tr": "Acaba iş yerinde gerçekten iyi bir arkadaş bulan oldu mu, merak ediyorum.",
+        "fromBook": true
+      },
+      {
+        "de": "Mich würde interessieren, wie Sie das gemacht haben.",
+        "tr": "Bunu nasıl yaptığınızı merak ediyorum.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "ich-haette-eine-frage-zu-c519",
+    "type": "expression",
+    "rektion": [],
+    "grammarTr": null,
+    "note": "„Ich habe eine Frage\" daha düz; „hätte\" kibar ve yumuşak.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 19",
+    "tags": ["kapitel-1", "freundschaft", "hoeren"],
+    "createdAt": "2026-11-06",
+    "lemma": "Ich hätte eine Frage zu …",
+    "meaningTr": "… hakkında bir sorum olacaktı",
+    "hintTr": "kalıp (kibar soru, Konjunktiv II)",
+    "cloze": "Entschuldigung, ich [hätte] eine [Frage] zu Ihrem Vortrag.",
+    "clozeTr": "Affedersiniz, sunumunuzla ilgili bir sorum olacaktı.",
+    "examples": [
+      {
+        "de": "Ich hätte eine Frage zu …",
+        "tr": "… hakkında bir sorum olacaktı.",
+        "fromBook": true
+      },
+      {
+        "de": "Ich hätte da noch eine Frage zur Rechnung.",
+        "tr": "Faturayla ilgili bir sorum daha olacaktı.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "ich-wuesste-gern-e1a3",
+    "type": "expression",
+    "rektion": [],
+    "grammarTr": "wüsste = wissen'in Konjunktiv II hali (wusste + Umlaut). Aynı anlam: Ich würde gern wissen, …",
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 19",
+    "tags": ["kapitel-1", "freundschaft", "hoeren"],
+    "createdAt": "2026-11-06",
+    "lemma": "Ich wüsste gern, …",
+    "meaningTr": "… bilmek isterdim",
+    "hintTr": "kalıp (kibar soru, Konjunktiv II)",
+    "cloze": "Ich [wüsste] [gern], wann der nächste Zug nach Berlin fährt.",
+    "clozeTr": "Berlin'e bir sonraki trenin ne zaman kalktığını öğrenmek isterdim.",
+    "examples": [
+      {
+        "de": "Ich wüsste gern, …",
+        "tr": "… bilmek isterdim.",
+        "fromBook": true
+      },
+      {
+        "de": "Ich wüsste gern, was du davon hältst.",
+        "tr": "Bu konuda ne düşündüğünü bilmek isterdim.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "den-eindruck-haben-cae1",
+    "type": "expression",
+    "rektion": [],
+    "grammarTr": null,
+    "note": "İlgili: einen guten Eindruck machen (iyi bir izlenim bırakmak).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 19",
+    "tags": ["kapitel-1", "freundschaft", "hoeren", "nomen-verb"],
+    "createdAt": "2026-11-06",
+    "lemma": "den Eindruck haben",
+    "meaningTr": "… izlenimine kapılmak, … gibi gelmek",
+    "hintTr": "isim + fiil kalıbı",
+    "cloze": "Ich [habe] [den] [Eindruck], dass er sich nicht wohlfühlt.",
+    "clozeTr": "Bana öyle geliyor ki kendini iyi hissetmiyor.",
+    "examples": [
+      {
+        "de": "Ich hatte den Eindruck, dass … Stimmt das?",
+        "tr": "Bana öyle geldi ki … Doğru mu?",
+        "fromBook": true
+      },
+      {
+        "de": "Sie hatte den Eindruck, dass niemand ihr zuhört.",
+        "tr": "Kimsenin onu dinlemediği izlenimine kapıldı.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "eindruck-f75b",
+    "type": "noun",
+    "lemma": "Eindruck",
+    "noun": { "gender": "der", "plural": "¨-e" },
+    "rektion": [],
+    "grammarTr": null,
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 19",
+    "tags": ["kapitel-1", "freundschaft", "hoeren"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "izlenim",
+    "hintTr": "isim",
+    "cloze": "Beim Vorstellungsgespräch hat sie [einen] sehr guten [Eindruck] gemacht.",
+    "clozeTr": "İş görüşmesinde çok iyi bir izlenim bıraktı.",
+    "examples": [
+      {
+        "de": "Ich hatte den Eindruck, dass … Stimmt das?",
+        "tr": "Bana öyle geldi ki … Doğru mu?",
+        "fromBook": true
+      },
+      {
+        "de": "Der erste Eindruck ist oft der wichtigste.",
+        "tr": "İlk izlenim çoğu zaman en önemlisidir.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "erlebnis-d43b",
+    "type": "noun",
+    "lemma": "Erlebnis",
+    "noun": { "gender": "das", "plural": "-se" },
+    "rektion": [],
+    "grammarTr": null,
+    "note": "das Erlebnis = yaşanmış tek bir olay; die Erfahrung = deneyimden çıkan bilgi/tecrübe.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 19",
+    "tags": ["kapitel-1", "freundschaft", "hoeren"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "(yaşanmış) olay, deneyim",
+    "hintTr": "isim",
+    "cloze": "Der Flug mit dem Ballon war [ein] tolles [Erlebnis].",
+    "clozeTr": "Balon uçuşu harika bir deneyimdi.",
+    "examples": [
+      {
+        "de": "Über eigene Erlebnisse und Erfahrungen berichten.",
+        "tr": "Kendi yaşadıklarını ve deneyimlerini anlatmak.",
+        "fromBook": true
+      },
+      {
+        "de": "Von diesem Erlebnis erzähle ich noch heute.",
+        "tr": "O yaşadığımı bugün bile anlatırım.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "auffallen-73ae",
+    "type": "verb",
+    "lemma": "auffallen",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": "auf",
+      "praeteritum": "fiel auf",
+      "partizip2": "aufgefallen",
+      "auxiliary": "sein"
+    },
+    "rektion": [{ "preposition": null, "case": "Dat" }],
+    "grammarTr": "Kişi Dativ'de, fark edilen şey özne: Mir (Dat) ist der Fehler (Nom) aufgefallen. Perfekt sein ile.",
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 19",
+    "tags": ["kapitel-1", "freundschaft", "hoeren"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "(birinin) dikkatini çekmek, gözüne çarpmak",
+    "hintTr": "fiil, ayrılabilir + Dat",
+    "cloze": "Mir [ist] sofort [aufgefallen], dass du eine neue Brille hast.",
+    "clozeTr": "Yeni gözlüğün olduğu hemen dikkatimi çekti.",
+    "examples": [
+      {
+        "de": "Mir ist aufgefallen, dass …",
+        "tr": "… dikkatimi çekti.",
+        "fromBook": true
+      },
+      {
+        "de": "Er fällt mit seinen bunten Hemden überall auf.",
+        "tr": "Renkli gömlekleriyle her yerde dikkat çekiyor.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "erleben-51b3",
+    "type": "verb",
+    "lemma": "erleben",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": null,
+      "praeteritum": "erlebte",
+      "partizip2": "erlebt",
+      "auxiliary": "haben"
+    },
+    "rektion": [],
+    "grammarTr": null,
+    "note": "leben = yaşamak (hayatta olmak, bir yerde oturmak); erleben = bir olayı yaşamak.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 19",
+    "tags": ["kapitel-1", "freundschaft", "hoeren"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "yaşamak, başından geçmek",
+    "hintTr": "fiil (ayrılmaz)",
+    "cloze": "Auf meiner Reise habe ich viel [erlebt].",
+    "clozeTr": "Seyahatimde çok şey yaşadım.",
+    "examples": [
+      {
+        "de": "Etwas Ähnliches habe ich auch schon erlebt.",
+        "tr": "Benzer bir şey benim de başıma geldi.",
+        "fromBook": true
+      },
+      {
+        "de": "So etwas habe ich noch nie erlebt!",
+        "tr": "Böyle bir şeyi hiç yaşamadım!",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "inzwischen-0369",
+    "type": "other",
+    "rektion": [],
+    "grammarTr": null,
+    "note": "Eş anlamlı: mittlerweile.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 19",
+    "tags": ["kapitel-1", "freundschaft", "hoeren"],
+    "createdAt": "2026-11-06",
+    "lemma": "inzwischen",
+    "meaningTr": "artık, bu arada; o zamandan beri",
+    "hintTr": "zarf",
+    "cloze": "Früher habe ich in Köln gewohnt, [inzwischen] lebe ich in München.",
+    "clozeTr": "Eskiden Köln'de oturuyordum, artık Münih'te yaşıyorum.",
+    "examples": [
+      {
+        "de": "Gleich am ersten Tag habe ich dort Anna kennengelernt, und mit ihr bin ich inzwischen eng befreundet.",
+        "tr": "Daha ilk gün orada Anna ile tanıştım, artık onunla çok yakın arkadaşız.",
+        "fromBook": true
+      },
+      {
+        "de": "Ich koche schnell, du kannst inzwischen den Tisch decken.",
+        "tr": "Ben hemen yemek yapıyorum, sen bu arada sofrayı kurabilirsin.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "abstrakt-ff6e",
+    "type": "adjective",
+    "lemma": "abstrakt",
+    "adjective": { "comparative": null, "superlative": null },
+    "rektion": [],
+    "grammarTr": null,
+    "note": "Karşıtı: konkret (somut).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 19",
+    "tags": ["kapitel-1", "freundschaft", "hoeren"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "soyut",
+    "hintTr": "sıfat",
+    "cloze": "Kannst du ein Beispiel geben? Das ist mir zu [abstrakt].",
+    "clozeTr": "Bir örnek verebilir misin? Bu bana fazla soyut geldi.",
+    "examples": [
+      {
+        "de": "Ich kann jetzt abstraktere Erklärungen eines Experten über menschliche Beziehungen verstehen.",
+        "tr": "Artık bir uzmanın insan ilişkileri hakkındaki daha soyut açıklamalarını anlayabiliyorum.",
+        "fromBook": true
+      },
+      {
+        "de": "Sie malt vor allem abstrakte Bilder.",
+        "tr": "Daha çok soyut resimler yapıyor.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "erklaerung-e2b5",
+    "type": "noun",
+    "lemma": "Erklärung",
+    "noun": { "gender": "die", "plural": "-en" },
+    "rektion": [],
+    "grammarTr": null,
+    "note": "Fiili: erklären.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 19",
+    "tags": ["kapitel-1", "freundschaft", "hoeren"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "açıklama",
+    "hintTr": "isim (-ung ile biter)",
+    "cloze": "Für sein Verhalten gibt es [keine] [Erklärung].",
+    "clozeTr": "Davranışının hiçbir açıklaması yok.",
+    "examples": [
+      {
+        "de": "Ich kann jetzt abstraktere Erklärungen eines Experten über menschliche Beziehungen verstehen.",
+        "tr": "Artık bir uzmanın insan ilişkileri hakkındaki daha soyut açıklamalarını anlayabiliyorum.",
+        "fromBook": true
+      },
+      {
+        "de": "Danke für die gute Erklärung, jetzt verstehe ich es.",
+        "tr": "Güzel açıklama için teşekkürler, şimdi anladım.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "menschlich-62da",
+    "type": "adjective",
+    "lemma": "menschlich",
+    "adjective": { "comparative": null, "superlative": null },
+    "rektion": [],
+    "grammarTr": null,
+    "note": "Yakın: zwischenmenschlich (insanlar arası).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 19",
+    "tags": ["kapitel-1", "freundschaft", "hoeren"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "insani; insanca",
+    "hintTr": "sıfat",
+    "cloze": "Fehler zu machen ist ganz [menschlich].",
+    "clozeTr": "Hata yapmak çok insani bir şey.",
+    "examples": [
+      {
+        "de": "Ich kann jetzt abstraktere Erklärungen eines Experten über menschliche Beziehungen verstehen.",
+        "tr": "Artık bir uzmanın insan ilişkileri hakkındaki daha soyut açıklamalarını anlayabiliyorum.",
+        "fromBook": true
+      },
+      {
+        "de": "Der Chef ist streng, aber sehr menschlich.",
+        "tr": "Patron sıkı ama çok insancıl.",
         "fromBook": false
       }
     ]
