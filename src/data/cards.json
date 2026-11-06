@@ -4358,5 +4358,1396 @@
         "fromBook": false
       }
     ]
+  },
+  {
+    "id": "experiment-976c",
+    "type": "noun",
+    "lemma": "Experiment",
+    "noun": { "gender": "das", "plural": "-e" },
+    "rektion": [],
+    "grammarTr": null,
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 16",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "deney",
+    "hintTr": "isim",
+    "cloze": "Im Chemieunterricht haben wir [ein] spannendes [Experiment] gemacht.",
+    "clozeTr": "Kimya dersinde heyecan verici bir deney yaptık.",
+    "examples": [
+      {
+        "de": "Bereits 1967 machte der amerikanische Psychologe Stanley Milgram ein Experiment.",
+        "tr": "Daha 1967'de Amerikalı psikolog Stanley Milgram bir deney yaptı.",
+        "fromBook": true
+      },
+      {
+        "de": "Das Experiment hat gezeigt, dass die Theorie stimmt.",
+        "tr": "Deney, teorinin doğru olduğunu gösterdi.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "bereits-8945",
+    "type": "other",
+    "rektion": [],
+    "grammarTr": null,
+    "note": "schon ile aynı anlam, ama daha resmi; yazı dilinde sık.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 16",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "lemma": "bereits",
+    "meaningTr": "daha, zaten, çoktan",
+    "hintTr": "zarf (= schon)",
+    "cloze": "Als wir ankamen, war der Film [bereits] zu Ende.",
+    "clozeTr": "Vardığımızda film çoktan bitmişti.",
+    "examples": [
+      {
+        "de": "Bereits 1967 machte der amerikanische Psychologe Stanley Milgram ein Experiment.",
+        "tr": "Daha 1967'de Amerikalı psikolog Stanley Milgram bir deney yaptı.",
+        "fromBook": true
+      },
+      {
+        "de": "Haben Sie bereits einen Termin?",
+        "tr": "Randevunuz zaten var mı?",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "verschicken-11bf",
+    "type": "verb",
+    "lemma": "verschicken",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": null,
+      "praeteritum": "verschickte",
+      "partizip2": "verschickt",
+      "auxiliary": "haben"
+    },
+    "rektion": [],
+    "grammarTr": null,
+    "note": "Genelde birden çok kişiye/yere göndermek için: Einladungen, Pakete verschicken.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 16",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "(posta ile) göndermek, yollamak",
+    "hintTr": "fiil (ayrılmaz)",
+    "cloze": "Wir haben die Einladungen schon letzte Woche [verschickt].",
+    "clozeTr": "Davetiyeleri daha geçen hafta gönderdik.",
+    "examples": [
+      {
+        "de": "60 Freiwillige mussten ein Paket nach einem bestimmten System verschicken.",
+        "tr": "60 gönüllü bir paketi belirli bir sisteme göre göndermek zorundaydı.",
+        "fromBook": true
+      },
+      {
+        "de": "Die Firma verschickt ihre Waren in die ganze Welt.",
+        "tr": "Şirket mallarını tüm dünyaya gönderiyor.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "zielperson-ad80",
+    "type": "noun",
+    "lemma": "Zielperson",
+    "noun": { "gender": "die", "plural": "-en" },
+    "rektion": [],
+    "grammarTr": null,
+    "note": "das Ziel (hedef) + die Person; benzer: die Zielgruppe (hedef kitle).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 16",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "hedef kişi",
+    "hintTr": "isim, birleşik",
+    "cloze": "Der Brief sollte am Ende [die] [Zielperson] erreichen.",
+    "clozeTr": "Mektup sonunda hedef kişiye ulaşmalıydı.",
+    "examples": [
+      {
+        "de": "Das Paket durfte nicht direkt an die Zielperson gesendet werden, sondern an eine Person, die den Absender persönlich kannte.",
+        "tr": "Paket doğrudan hedef kişiye değil, göndereni şahsen tanıyan birine gönderilmeliydi.",
+        "fromBook": true
+      },
+      {
+        "de": "Die Werbung richtet sich an eine klare Zielgruppe.",
+        "tr": "Reklam belirli bir hedef kitleye yönelik.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "senden-428f",
+    "type": "verb",
+    "lemma": "senden",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": null,
+      "praeteritum": "sendete/sandte",
+      "partizip2": "gesendet/gesandt",
+      "auxiliary": "haben"
+    },
+    "rektion": [],
+    "grammarTr": "İki biçim: \"göndermek\" anlamında sandte/gesandt de olur; \"yayınlamak\" (TV, radyo) anlamında sadece sendete/gesendet.",
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 16",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "göndermek; yayınlamak",
+    "hintTr": "fiil",
+    "cloze": "Ich [sende] Ihnen die Unterlagen per E-Mail.",
+    "clozeTr": "Belgeleri size e-postayla gönderiyorum.",
+    "examples": [
+      {
+        "de": "Das Paket durfte nicht direkt an die Zielperson gesendet werden, sondern an eine Person, die den Absender persönlich kannte.",
+        "tr": "Paket doğrudan hedef kişiye değil, göndereni şahsen tanıyan birine gönderilmeliydi.",
+        "fromBook": true
+      },
+      {
+        "de": "Das Fernsehen sendet das Spiel live.",
+        "tr": "Televizyon maçı canlı yayınlıyor.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "persoenlich-0a68",
+    "type": "adjective",
+    "lemma": "persönlich",
+    "adjective": { "comparative": null, "superlative": null },
+    "rektion": [],
+    "grammarTr": null,
+    "note": "etwas persönlich nehmen = bir şeyi üstüne alınmak.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 16",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "şahsen, kişisel",
+    "hintTr": "sıfat/zarf",
+    "cloze": "Das möchte ich ihm lieber [persönlich] sagen, nicht am Telefon.",
+    "clozeTr": "Bunu ona telefonda değil, şahsen söylemeyi tercih ederim.",
+    "examples": [
+      {
+        "de": "Das Paket durfte nicht direkt an die Zielperson gesendet werden, sondern an eine Person, die den Absender persönlich kannte.",
+        "tr": "Paket doğrudan hedef kişiye değil, göndereni şahsen tanıyan birine gönderilmeliydi.",
+        "fromBook": true
+      },
+      {
+        "de": "Nimm das bitte nicht persönlich!",
+        "tr": "Lütfen bunu üstüne alınma!",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "erreichen-7e2f",
+    "type": "verb",
+    "lemma": "erreichen",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": null,
+      "praeteritum": "erreichte",
+      "partizip2": "erreicht",
+      "auxiliary": "haben"
+    },
+    "rektion": [],
+    "grammarTr": "Doğrudan Akk alır, edat yok: ✓ Ich erreiche das Ziel. ✗ Ich erreiche zum Ziel.",
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 16",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "ulaşmak, yetişmek; (birine) ulaşmak",
+    "hintTr": "fiil (ayrılmaz) + Akk",
+    "cloze": "Wenn wir uns beeilen, [erreichen] wir den Zug noch.",
+    "clozeTr": "Acele edersek trene hâlâ yetişiriz.",
+    "examples": [
+      {
+        "de": "Die Pakete erreichten ihr Ziel nach durchschnittlich 5,5 Stationen.",
+        "tr": "Paketler hedeflerine ortalama 5,5 aşamadan sonra ulaştı.",
+        "fromBook": true
+      },
+      {
+        "de": "Ich habe dich gestern den ganzen Tag nicht erreicht.",
+        "tr": "Dün bütün gün sana ulaşamadım.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "ziel-d8df",
+    "type": "noun",
+    "lemma": "Ziel",
+    "noun": { "gender": "das", "plural": "-e" },
+    "rektion": [],
+    "grammarTr": null,
+    "note": "Kalıp: sich ein Ziel setzen (kendine hedef koymak).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 16",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "hedef, amaç; varış yeri",
+    "hintTr": "isim",
+    "cloze": "Mein [Ziel] ist es, die B2-Prüfung zu bestehen.",
+    "clozeTr": "Hedefim B2 sınavını geçmek.",
+    "examples": [
+      {
+        "de": "Die Pakete erreichten ihr Ziel nach durchschnittlich 5,5 Stationen.",
+        "tr": "Paketler hedeflerine ortalama 5,5 aşamadan sonra ulaştı.",
+        "fromBook": true
+      },
+      {
+        "de": "Wir haben unser Ziel erreicht.",
+        "tr": "Hedefimize ulaştık.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "station-fbf3",
+    "type": "noun",
+    "lemma": "Station",
+    "noun": { "gender": "die", "plural": "-en" },
+    "rektion": [],
+    "grammarTr": null,
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 16",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "aşama, durak; (hastane) servis",
+    "hintTr": "isim",
+    "cloze": "Die letzte [Station] unserer Reise war Wien.",
+    "clozeTr": "Yolculuğumuzun son durağı Viyana'ydı.",
+    "examples": [
+      {
+        "de": "Die Pakete erreichten ihr Ziel nach durchschnittlich 5,5 Stationen.",
+        "tr": "Paketler hedeflerine ortalama 5,5 aşamadan sonra ulaştı.",
+        "fromBook": true
+      },
+      {
+        "de": "Sie arbeitet als Krankenschwester auf der Station 4.",
+        "tr": "4 numaralı serviste hemşire olarak çalışıyor.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "dabei-5aa8",
+    "type": "other",
+    "rektion": [],
+    "grammarTr": null,
+    "note": "etwas dabeihaben = bir şeyi yanında bulundurmak.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 16",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "lemma": "dabei",
+    "meaningTr": "bu sırada, bunu yaparken; yanında",
+    "hintTr": "zarf",
+    "cloze": "Er hat gekocht und [dabei] Musik gehört.",
+    "clozeTr": "Yemek yaptı ve bu sırada müzik dinledi.",
+    "examples": [
+      {
+        "de": "Dabei zeigte sich, dass die Beziehungskette sogar noch kürzer ist.",
+        "tr": "Bu sırada, ilişki zincirinin daha da kısa olduğu ortaya çıktı.",
+        "fromBook": true
+      },
+      {
+        "de": "Hast du deinen Ausweis dabei?",
+        "tr": "Kimliğin yanında mı?",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "zeigen-3fce",
+    "type": "verb",
+    "lemma": "zeigen",
+    "verb": {
+      "reflexive": "Akk",
+      "separablePrefix": null,
+      "praeteritum": "zeigte",
+      "partizip2": "gezeigt",
+      "auxiliary": "haben"
+    },
+    "rektion": [],
+    "grammarTr": "Kalıp: Es zeigt sich, dass … (… olduğu ortaya çıkıyor). Dönüşsüz zeigen = göstermek.",
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 16",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "ortaya çıkmak, belli olmak",
+    "hintTr": "fiil, dönüşlü",
+    "cloze": "Ob die Idee gut war, [wird] [sich] erst später [zeigen].",
+    "clozeTr": "Fikrin iyi olup olmadığı ancak sonra belli olacak.",
+    "examples": [
+      {
+        "de": "Dabei zeigte sich, dass die Beziehungskette sogar noch kürzer ist.",
+        "tr": "Bu sırada, ilişki zincirinin daha da kısa olduğu ortaya çıktı.",
+        "fromBook": true
+      },
+      {
+        "de": "Es hat sich gezeigt, dass der Plan nicht funktioniert.",
+        "tr": "Planın işe yaramadığı ortaya çıktı.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "nutzer-b46c",
+    "type": "noun",
+    "lemma": "Nutzer",
+    "noun": { "gender": "der", "plural": "-" },
+    "rektion": [],
+    "grammarTr": null,
+    "note": "Kadın: die Nutzerin, -nen. Fiili: nutzen. Eş anlamlı: der Benutzer, der User (gündelik).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 16",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "kullanıcı",
+    "hintTr": "isim (erkek)",
+    "cloze": "Die App hat schon über eine Million [Nutzer].",
+    "clozeTr": "Uygulamanın şimdiden bir milyondan fazla kullanıcısı var.",
+    "examples": [
+      {
+        "de": "Dabei wurden die Daten von 721 Millionen Nutzern eines sozialen Netzwerks ausgewertet.",
+        "tr": "Bu sırada bir sosyal ağın 721 milyon kullanıcısının verileri analiz edildi.",
+        "fromBook": true
+      },
+      {
+        "de": "Jeder Nutzer braucht ein eigenes Passwort.",
+        "tr": "Her kullanıcının kendi şifresi olmalı.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "daten-63fd",
+    "type": "noun",
+    "lemma": "Daten",
+    "noun": { "gender": "die", "plural": null },
+    "rektion": [],
+    "grammarTr": "Bu anlamda sadece çoğul (Pluraletantum): die Daten. \"das Datum, die Daten\" = tarih ile aynı yazılır.",
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 16",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "veriler",
+    "hintTr": "isim (sadece çoğul)",
+    "cloze": "Das Programm speichert [die] [Daten] automatisch.",
+    "clozeTr": "Program verileri otomatik olarak kaydediyor.",
+    "examples": [
+      {
+        "de": "Dabei wurden die Daten von 721 Millionen Nutzern eines sozialen Netzwerks ausgewertet.",
+        "tr": "Bu sırada bir sosyal ağın 721 milyon kullanıcısının verileri analiz edildi.",
+        "fromBook": true
+      },
+      {
+        "de": "Geben Sie bitte Ihre persönlichen Daten ein.",
+        "tr": "Lütfen kişisel bilgilerinizi girin.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "selbst-e7a6",
+    "type": "other",
+    "rektion": [],
+    "grammarTr": "İsimden ÖNCE = \"bile\" (Selbst Kinder wissen das). Kelimeden SONRA / vurgulu = \"kendisi\" (Ich habe es selbst gemacht).",
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 16",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "lemma": "selbst",
+    "meaningTr": "bile (= sogar); kendisi",
+    "hintTr": "parçacık (cümle başında)",
+    "cloze": "[Selbst] mein Opa hat jetzt ein Smartphone.",
+    "clozeTr": "Dedemin bile artık akıllı telefonu var.",
+    "examples": [
+      {
+        "de": "Selbst bei Usern in der sibirischen Tundra oder im peruanischen Regenwald ist es sehr wahrscheinlich, dass ein Freund eines Freundes einen Freund eines Freundes dieser Person kennt.",
+        "tr": "Sibirya tundrasındaki ya da Peru yağmur ormanlarındaki kullanıcılarda bile, bir arkadaşın arkadaşının bu kişinin bir arkadaşının arkadaşını tanıması çok muhtemel.",
+        "fromBook": true
+      },
+      {
+        "de": "Das habe ich selbst gemacht.",
+        "tr": "Bunu kendim yaptım.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "regenwald-453f",
+    "type": "noun",
+    "lemma": "Regenwald",
+    "noun": { "gender": "der", "plural": "¨-er" },
+    "rektion": [],
+    "grammarTr": null,
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 16",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "yağmur ormanı",
+    "hintTr": "isim, birleşik",
+    "cloze": "Jedes Jahr wird [ein] großer Teil [des] [Regenwaldes] abgeholzt.",
+    "clozeTr": "Her yıl yağmur ormanının büyük bir kısmı kesiliyor.",
+    "examples": [
+      {
+        "de": "Selbst bei Usern in der sibirischen Tundra oder im peruanischen Regenwald ist es sehr wahrscheinlich, dass ein Freund eines Freundes einen Freund eines Freundes dieser Person kennt.",
+        "tr": "Sibirya tundrasındaki ya da Peru yağmur ormanlarındaki kullanıcılarda bile, bir arkadaşın arkadaşının bu kişinin bir arkadaşının arkadaşını tanıması çok muhtemel.",
+        "fromBook": true
+      },
+      {
+        "de": "Im Regenwald leben unzählige Tierarten.",
+        "tr": "Yağmur ormanında sayısız hayvan türü yaşıyor.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "medium-1ff0",
+    "type": "noun",
+    "lemma": "Medium",
+    "noun": { "gender": "das", "plural": "Medien" },
+    "rektion": [],
+    "grammarTr": "Düzensiz çoğul: das Medium → die Medien. Benzer: das Museum → die Museen, das Studium → die Studien.",
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 16",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "medya aracı; (çoğul) medya",
+    "hintTr": "isim (düzensiz çoğul)",
+    "cloze": "Über das Thema wird in [den] [Medien] viel berichtet.",
+    "clozeTr": "Bu konu medyada çok haberleştiriliyor.",
+    "examples": [
+      {
+        "de": "Besonders im Zeitalter der modernen Medien.",
+        "tr": "Özellikle modern medya çağında.",
+        "fromBook": true
+      },
+      {
+        "de": "Jugendliche informieren sich vor allem über soziale Medien.",
+        "tr": "Gençler özellikle sosyal medyadan bilgi ediniyor.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "hauptgrund-6bf0",
+    "type": "noun",
+    "lemma": "Hauptgrund",
+    "noun": { "gender": "der", "plural": "¨-e" },
+    "rektion": [{ "preposition": "für", "case": "Akk" }],
+    "grammarTr": null,
+    "note": "Haupt- = ana, baş: das Hauptproblem, die Hauptstadt, der Hauptteil.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 16",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "başlıca neden",
+    "hintTr": "isim + edat, birleşik",
+    "cloze": "[Der] [Hauptgrund] [für] meinen Umzug war die neue Arbeit.",
+    "clozeTr": "Taşınmamın başlıca nedeni yeni işti.",
+    "examples": [
+      {
+        "de": "Welches sind die Hauptgründe für Ihre Mitgliedschaft in einem sozialen Netzwerk?",
+        "tr": "Bir sosyal ağa üye olmanızın başlıca nedenleri nelerdir?",
+        "fromBook": true
+      },
+      {
+        "de": "Zeitmangel ist der Hauptgrund dafür, dass viele keinen Sport machen.",
+        "tr": "Zaman eksikliği, birçok kişinin spor yapmamasının başlıca nedeni.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "mitglied-1a76",
+    "type": "noun",
+    "lemma": "Mitglied",
+    "noun": { "gender": "das", "plural": "-er" },
+    "rektion": [],
+    "grammarTr": null,
+    "note": "Kişi olsa da her zaman das: das Mitglied (erkek de kadın da).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 16",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "üye",
+    "hintTr": "isim (dikkat: das)",
+    "cloze": "Seit zwei Jahren bin ich [Mitglied] im Sportverein.",
+    "clozeTr": "İki yıldır spor kulübünün üyesiyim.",
+    "examples": [
+      {
+        "de": "Welches sind die Hauptgründe für Ihre Mitgliedschaft in einem sozialen Netzwerk?",
+        "tr": "Bir sosyal ağa üye olmanızın başlıca nedenleri nelerdir?",
+        "fromBook": true
+      },
+      {
+        "de": "Alle Mitglieder der Familie waren da.",
+        "tr": "Ailenin bütün üyeleri oradaydı.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "freundschaftsanfrage-fbeb",
+    "type": "noun",
+    "lemma": "Freundschaftsanfrage",
+    "noun": { "gender": "die", "plural": "-n" },
+    "rektion": [],
+    "grammarTr": "die Freundschaft + -s- + die Anfrage. -schaft ile biten isimlerden sonra bağlantı -s- gelir.",
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 16",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "arkadaşlık isteği",
+    "hintTr": "isim, birleşik",
+    "cloze": "Mein Chef hat mir [eine] [Freundschaftsanfrage] geschickt.",
+    "clozeTr": "Patronum bana arkadaşlık isteği gönderdi.",
+    "examples": [
+      {
+        "de": "Die Nutzer haben Freundschaftsanfragen bekommen.",
+        "tr": "Kullanıcılar arkadaşlık istekleri aldı.",
+        "fromBook": true
+      },
+      {
+        "de": "Ich nehme keine Freundschaftsanfragen von Fremden an.",
+        "tr": "Yabancılardan gelen arkadaşlık isteklerini kabul etmiyorum.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "freundesliste-a2b0",
+    "type": "noun",
+    "lemma": "Freundesliste",
+    "noun": { "gender": "die", "plural": "-n" },
+    "rektion": [],
+    "grammarTr": null,
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 16",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "arkadaş listesi",
+    "hintTr": "isim, birleşik",
+    "cloze": "Ich habe ihn aus [meiner] [Freundesliste] gelöscht.",
+    "clozeTr": "Onu arkadaş listemden sildim.",
+    "examples": [
+      {
+        "de": "Die Nutzer haben in der Freundesliste von Freunden gestöbert und Bekannte entdeckt.",
+        "tr": "Kullanıcılar arkadaşlarının arkadaş listelerini karıştırıp tanıdıklar keşfetti.",
+        "fromBook": true
+      },
+      {
+        "de": "Auf meiner Freundesliste stehen über 300 Leute.",
+        "tr": "Arkadaş listemde 300'den fazla kişi var.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "entdecken-7b49",
+    "type": "verb",
+    "lemma": "entdecken",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": null,
+      "praeteritum": "entdeckte",
+      "partizip2": "entdeckt",
+      "auxiliary": "haben"
+    },
+    "rektion": [],
+    "grammarTr": null,
+    "note": "İsmi: die Entdeckung, -en (keşif).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 16",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "keşfetmek, fark etmek",
+    "hintTr": "fiil (ayrılmaz)",
+    "cloze": "Im Urlaub haben wir ein kleines Restaurant [entdeckt].",
+    "clozeTr": "Tatilde küçük bir restoran keşfettik.",
+    "examples": [
+      {
+        "de": "Die Nutzer haben in der Freundesliste von Freunden gestöbert und Bekannte entdeckt.",
+        "tr": "Kullanıcılar arkadaşlarının arkadaş listelerini karıştırıp tanıdıklar keşfetti.",
+        "fromBook": true
+      },
+      {
+        "de": "Kolumbus hat 1492 Amerika entdeckt.",
+        "tr": "Kolomb 1492'de Amerika'yı keşfetti.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "mehrfachnennung-a592",
+    "type": "noun",
+    "lemma": "Mehrfachnennung",
+    "noun": { "gender": "die", "plural": "-en" },
+    "rektion": [],
+    "grammarTr": null,
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 16",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "birden fazla seçenek işaretleme",
+    "hintTr": "isim, birleşik (anket dili)",
+    "cloze": "Bei dieser Frage ist [eine] [Mehrfachnennung] möglich.",
+    "clozeTr": "Bu soruda birden fazla seçenek işaretlenebilir.",
+    "examples": [
+      {
+        "de": "Mehrfachnennungen waren erlaubt.",
+        "tr": "Birden fazla seçenek işaretlenebiliyordu.",
+        "fromBook": true
+      },
+      {
+        "de": "Wegen der Mehrfachnennungen ergibt die Summe mehr als 100 Prozent.",
+        "tr": "Birden fazla seçenek işaretlenebildiği için toplam yüzde 100'ü aşıyor.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "unbekannte-5705",
+    "type": "noun",
+    "lemma": "Unbekannte",
+    "noun": { "gender": "der", "plural": "-n" },
+    "rektion": [],
+    "grammarTr": "Sıfat gibi çekimlenir: der Unbekannte / ein Unbekannter, die Unbekannten; kadın: die Unbekannte / eine Unbekannte.",
+    "note": "Karşıtı: der/die Bekannte (tanıdık).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 16",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "tanımadık kişi, yabancı",
+    "hintTr": "isim (sıfattan türemiş)",
+    "cloze": "Ein [Unbekannter] hat mich auf der Straße angesprochen.",
+    "clozeTr": "Tanımadığım biri sokakta bana laf attı.",
+    "examples": [
+      {
+        "de": "Viele von ihnen nehmen auch Unbekannte in die Liste ihrer „Freunde\" auf.",
+        "tr": "Birçoğu tanımadığı kişileri de „arkadaş\" listesine alıyor.",
+        "fromBook": true
+      },
+      {
+        "de": "Öffne die Tür nicht für Unbekannte.",
+        "tr": "Kapıyı tanımadığın kişilere açma.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "sogar-130b",
+    "type": "other",
+    "rektion": [],
+    "grammarTr": null,
+    "note": "Yakın anlamlı: selbst (cümle başında, isimden önce).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 16",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "lemma": "sogar",
+    "meaningTr": "hatta, bile",
+    "hintTr": "parçacık",
+    "cloze": "Es war so kalt, dass [sogar] der See gefroren war.",
+    "clozeTr": "O kadar soğuktu ki göl bile donmuştu.",
+    "examples": [
+      {
+        "de": "Innerhalb eines Landes trennen die meisten sogar nur drei Kontakte.",
+        "tr": "Bir ülke içinde çoğu kişiyi birbirinden sadece üç bağlantı bile ayırıyor.",
+        "fromBook": true
+      },
+      {
+        "de": "Er spricht vier Sprachen, sogar Japanisch.",
+        "tr": "Dört dil konuşuyor, hatta Japonca bile.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "trennen-117e",
+    "type": "verb",
+    "lemma": "trennen",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": null,
+      "praeteritum": "trennte",
+      "partizip2": "getrennt",
+      "auxiliary": "haben"
+    },
+    "rektion": [{ "preposition": "von", "case": "Dat" }],
+    "grammarTr": "sich von jemandem trennen = biriyle ayrılmak. Sıfat: getrennt (ayrı): getrennt bezahlen.",
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 16",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "ayırmak; (sich) ayrılmak",
+    "hintTr": "fiil + edat",
+    "cloze": "Nach zehn Jahren Ehe haben sie [sich] [getrennt].",
+    "clozeTr": "On yıllık evlilikten sonra ayrıldılar.",
+    "examples": [
+      {
+        "de": "Innerhalb eines Landes trennen die meisten sogar nur drei Kontakte.",
+        "tr": "Bir ülke içinde çoğu kişiyi birbirinden sadece üç bağlantı bile ayırıyor.",
+        "fromBook": true
+      },
+      {
+        "de": "Bitte trennen Sie den Müll.",
+        "tr": "Lütfen çöpleri ayrıştırın.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "erfassen-82c5",
+    "type": "verb",
+    "lemma": "erfassen",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": null,
+      "praeteritum": "erfasste",
+      "partizip2": "erfasst",
+      "auxiliary": "haben"
+    },
+    "rektion": [],
+    "grammarTr": null,
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 16",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "kavramak; (veri) kaydetmek",
+    "hintTr": "fiil (ayrılmaz)",
+    "cloze": "Sie hat die Situation sofort [erfasst] und reagiert.",
+    "clozeTr": "Durumu hemen kavradı ve tepki verdi.",
+    "examples": [
+      {
+        "de": "Um die Informationen eines Textes rasch zu erfassen, markiert man die Fakten, die der Text enthält, wie z. B. Zahlen und Daten.",
+        "tr": "Bir metnin bilgilerini hızla kavramak için, metnin içerdiği olguları, örneğin sayıları ve tarihleri işaretlersiniz.",
+        "fromBook": true
+      },
+      {
+        "de": "Alle Daten werden elektronisch erfasst.",
+        "tr": "Bütün veriler elektronik olarak kaydediliyor.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "markieren-5780",
+    "type": "verb",
+    "lemma": "markieren",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": null,
+      "praeteritum": "markierte",
+      "partizip2": "markiert",
+      "auxiliary": "haben"
+    },
+    "rektion": [],
+    "grammarTr": "-ieren fiilleri Partizip II'de ge- almaz: markiert, rekonstruiert, diskutiert.",
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 16",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "işaretlemek",
+    "hintTr": "fiil (-ieren)",
+    "cloze": "[Markieren] Sie die wichtigsten Wörter im Text.",
+    "clozeTr": "Metindeki en önemli kelimeleri işaretleyin.",
+    "examples": [
+      {
+        "de": "Um die Informationen eines Textes rasch zu erfassen, markiert man die Fakten, die der Text enthält, wie z. B. Zahlen und Daten.",
+        "tr": "Bir metnin bilgilerini hızla kavramak için, metnin içerdiği olguları, örneğin sayıları ve tarihleri işaretlersiniz.",
+        "fromBook": true
+      },
+      {
+        "de": "Ich markiere neue Wörter immer gelb.",
+        "tr": "Yeni kelimeleri her zaman sarıyla işaretlerim.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "fakt-9ff2",
+    "type": "noun",
+    "lemma": "Fakt",
+    "noun": { "gender": "der", "plural": "-en" },
+    "rektion": [],
+    "grammarTr": null,
+    "note": "Eş anlamlı: die Tatsache, -n (daha yaygın).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 16",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "olgu, gerçek",
+    "hintTr": "isim",
+    "cloze": "Das ist keine Meinung, das ist [ein] [Fakt].",
+    "clozeTr": "Bu bir görüş değil, bu bir gerçek.",
+    "examples": [
+      {
+        "de": "Um die Informationen eines Textes rasch zu erfassen, markiert man die Fakten, die der Text enthält, wie z. B. Zahlen und Daten.",
+        "tr": "Bir metnin bilgilerini hızla kavramak için, metnin içerdiği olguları, örneğin sayıları ve tarihleri işaretlersiniz.",
+        "fromBook": true
+      },
+      {
+        "de": "Die Fakten sprechen für sich.",
+        "tr": "Gerçekler ortada.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "enthalten-05f3",
+    "type": "verb",
+    "lemma": "enthalten",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": null,
+      "praeteritum": "enthielt",
+      "partizip2": "enthalten",
+      "auxiliary": "haben"
+    },
+    "rektion": [],
+    "grammarTr": "Düzensiz: enthält – enthielt – enthalten. Kalıp: in etwas enthalten sein = bir şeye dahil olmak.",
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 16",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "içermek, kapsamak",
+    "hintTr": "fiil (ayrılmaz)",
+    "cloze": "Dieser Saft [enthält] viel Zucker.",
+    "clozeTr": "Bu meyve suyu çok şeker içeriyor.",
+    "examples": [
+      {
+        "de": "Um die Informationen eines Textes rasch zu erfassen, markiert man die Fakten, die der Text enthält, wie z. B. Zahlen und Daten.",
+        "tr": "Bir metnin bilgilerini hızla kavramak için, metnin içerdiği olguları, örneğin sayıları ve tarihleri işaretlersiniz.",
+        "fromBook": true
+      },
+      {
+        "de": "Im Preis ist das Frühstück enthalten.",
+        "tr": "Kahvaltı fiyata dahil.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "stelle-93d8",
+    "type": "noun",
+    "lemma": "Stelle",
+    "noun": { "gender": "die", "plural": "-n" },
+    "rektion": [],
+    "grammarTr": null,
+    "note": "Kalıplar: an deiner Stelle (senin yerinde olsam), auf der Stelle (hemen).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 16",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "(metinde) yer, kısım; iş yeri, pozisyon",
+    "hintTr": "isim",
+    "cloze": "Lies bitte [die] [Stelle] noch einmal vor, die du so lustig findest.",
+    "clozeTr": "Çok komik bulduğun o kısmı lütfen bir daha oku.",
+    "examples": [
+      {
+        "de": "Mithilfe der markierten Stellen lässt sich der Inhalt des Textes rasch rekonstruieren und zusammenfassen.",
+        "tr": "İşaretlenen yerler sayesinde metnin içeriği hızla yeniden kurulup özetlenebilir.",
+        "fromBook": true
+      },
+      {
+        "de": "Sie hat eine neue Stelle bei einer Bank gefunden.",
+        "tr": "Bir bankada yeni bir iş buldu.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "rasch-1dd0",
+    "type": "other",
+    "rektion": [],
+    "grammarTr": null,
+    "note": "schnell ile aynı anlam, daha çok yazı dilinde.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 16",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "lemma": "rasch",
+    "meaningTr": "hızla, çabucak",
+    "hintTr": "zarf/sıfat (yazı dili)",
+    "cloze": "Der Arzt kam [rasch] und half dem Verletzten.",
+    "clozeTr": "Doktor hızla geldi ve yaralıya yardım etti.",
+    "examples": [
+      {
+        "de": "Mithilfe der markierten Stellen lässt sich der Inhalt des Textes rasch rekonstruieren und zusammenfassen.",
+        "tr": "İşaretlenen yerler sayesinde metnin içeriği hızla yeniden kurulup özetlenebilir.",
+        "fromBook": true
+      },
+      {
+        "de": "Wir brauchen eine rasche Lösung.",
+        "tr": "Hızlı bir çözüme ihtiyacımız var.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "rekonstruieren-9800",
+    "type": "verb",
+    "lemma": "rekonstruieren",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": null,
+      "praeteritum": "rekonstruierte",
+      "partizip2": "rekonstruiert",
+      "auxiliary": "haben"
+    },
+    "rektion": [],
+    "grammarTr": null,
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 16",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "yeniden kurmak, (olayları) canlandırmak",
+    "hintTr": "fiil (-ieren)",
+    "cloze": "Die Polizei versucht, den Unfall genau zu [rekonstruieren].",
+    "clozeTr": "Polis kazayı tam olarak yeniden canlandırmaya çalışıyor.",
+    "examples": [
+      {
+        "de": "Mithilfe der markierten Stellen lässt sich der Inhalt des Textes rasch rekonstruieren und zusammenfassen.",
+        "tr": "İşaretlenen yerler sayesinde metnin içeriği hızla yeniden kurulup özetlenebilir.",
+        "fromBook": true
+      },
+      {
+        "de": "Mit den Notizen kann man den Vortrag später leicht rekonstruieren.",
+        "tr": "Notlarla sunum sonradan kolayca yeniden kurulabilir.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "inhalt-3164",
+    "type": "noun",
+    "lemma": "Inhalt",
+    "noun": { "gender": "der", "plural": "-e" },
+    "rektion": [],
+    "grammarTr": null,
+    "note": "das Inhaltsverzeichnis = içindekiler (kitapta).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 16",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "içerik",
+    "hintTr": "isim",
+    "cloze": "Kannst du mir kurz [den] [Inhalt] des Films erzählen?",
+    "clozeTr": "Bana filmin konusunu kısaca anlatabilir misin?",
+    "examples": [
+      {
+        "de": "Mithilfe der markierten Stellen lässt sich der Inhalt des Textes rasch rekonstruieren und zusammenfassen.",
+        "tr": "İşaretlenen yerler sayesinde metnin içeriği hızla yeniden kurulup özetlenebilir.",
+        "fromBook": true
+      },
+      {
+        "de": "Der Inhalt des Pakets war beschädigt.",
+        "tr": "Paketin içindekiler hasar görmüştü.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "soziologe-430b",
+    "type": "noun",
+    "lemma": "Soziologe",
+    "noun": { "gender": "der", "plural": "-n" },
+    "rektion": [],
+    "grammarTr": "n-Deklination: den/dem/des Soziologen (der Psychologe gibi). Kadın: die Soziologin, -nen.",
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 17",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "sosyolog",
+    "hintTr": "isim (erkek)",
+    "cloze": "Wir haben [einen] [Soziologen] zu der Diskussion eingeladen.",
+    "clozeTr": "Tartışmaya bir sosyolog davet ettik.",
+    "examples": [
+      {
+        "de": "Bereits vor knapp 50 Jahren fand ein Soziologe heraus, wie eng die Beziehungskette zwischen den Menschen ist.",
+        "tr": "Daha neredeyse 50 yıl önce bir sosyolog, insanlar arasındaki ilişki zincirinin ne kadar sıkı olduğunu ortaya çıkardı.",
+        "fromBook": true
+      },
+      {
+        "de": "Soziologen untersuchen, wie Menschen zusammenleben.",
+        "tr": "Sosyologlar insanların nasıl bir arada yaşadığını inceler.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "knapp-cc9f",
+    "type": "other",
+    "rektion": [],
+    "grammarTr": null,
+    "note": "Sayıdan önce = biraz eksik (knapp 50 = 50'den biraz az). Sıfat olarak = kıt, dar: knappe Zeit.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 17",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "lemma": "knapp",
+    "meaningTr": "neredeyse, -e yakın (sayıdan önce)",
+    "hintTr": "sıfat/zarf",
+    "cloze": "Die Fahrt dauert [knapp] zwei Stunden.",
+    "clozeTr": "Yolculuk iki saate yakın sürüyor.",
+    "examples": [
+      {
+        "de": "Bereits vor knapp 50 Jahren fand ein Soziologe heraus, wie eng die Beziehungskette zwischen den Menschen ist.",
+        "tr": "Daha neredeyse 50 yıl önce bir sosyolog, insanlar arasındaki ilişki zincirinin ne kadar sıkı olduğunu ortaya çıkardı.",
+        "fromBook": true
+      },
+      {
+        "de": "Das Geld ist diesen Monat knapp.",
+        "tr": "Bu ay para kıt.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "sinn-d4dc",
+    "type": "noun",
+    "lemma": "Sinn",
+    "noun": { "gender": "der", "plural": "-e" },
+    "rektion": [],
+    "grammarTr": null,
+    "note": "Kalıplar: im … Sinn (… anlamında), Sinn ergeben/machen (anlamlı olmak), keinen Sinn haben.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 17",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "anlam; duyu",
+    "hintTr": "isim",
+    "cloze": "Ich verstehe [den] [Sinn] dieser Regel nicht.",
+    "clozeTr": "Bu kuralın anlamını anlamıyorum.",
+    "examples": [
+      {
+        "de": "Diese sind aber etwas anderes als Freunde im alten Sinn.",
+        "tr": "Ama bunlar eski anlamdaki arkadaşlardan farklı bir şey.",
+        "fromBook": true
+      },
+      {
+        "de": "Es hat keinen Sinn, weiter zu warten.",
+        "tr": "Daha fazla beklemenin anlamı yok.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "ergaenzung-20c7",
+    "type": "noun",
+    "lemma": "Ergänzung",
+    "noun": { "gender": "die", "plural": "-en" },
+    "rektion": [],
+    "grammarTr": null,
+    "note": "Fiili: ergänzen (tamamlamak) — \"Ergänzen Sie\" alıştırmalarda sık.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 17",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "(gramer) tümleç, nesne; ek, tamamlama",
+    "hintTr": "isim (-ung ile biter)",
+    "cloze": "Das Verb „geben\" braucht zwei [Ergänzungen]: Dativ und Akkusativ.",
+    "clozeTr": "„geben\" fiili iki nesne ister: Dativ ve Akkusativ.",
+    "examples": [
+      {
+        "de": "Sind beide Ergänzungen Pronomen, steht Akkusativ vor Dativ.",
+        "tr": "İki nesne de zamirse Akkusativ, Dativ'den önce gelir.",
+        "fromBook": true
+      },
+      {
+        "de": "Als Ergänzung zum Kurs gibt es ein Arbeitsbuch.",
+        "tr": "Kursa ek olarak bir çalışma kitabı var.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "pronomen-843f",
+    "type": "noun",
+    "lemma": "Pronomen",
+    "noun": { "gender": "das", "plural": "-" },
+    "rektion": [],
+    "grammarTr": null,
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 17",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "zamir",
+    "hintTr": "isim (gramer terimi)",
+    "cloze": "„Er\", „sie\" und „es\" sind [Pronomen].",
+    "clozeTr": "„er\", „sie\" ve „es\" zamirdir.",
+    "examples": [
+      {
+        "de": "Ist eine der Ergänzungen ein Pronomen, steht das Pronomen vor der anderen Ergänzung.",
+        "tr": "Nesnelerden biri zamirse, zamir diğer nesneden önce gelir.",
+        "fromBook": true
+      },
+      {
+        "de": "Ersetzen Sie das Nomen durch ein Pronomen.",
+        "tr": "İsmi bir zamirle değiştirin.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "angabe-0ff7",
+    "type": "noun",
+    "lemma": "Angabe",
+    "noun": { "gender": "die", "plural": "-n" },
+    "rektion": [],
+    "grammarTr": "Mittelfeld'de Angaben genelde TeKaMoLo sırasıyla: temporal → kausal → modal → lokal (Ich fahre morgen wegen der Arbeit mit dem Zug nach Berlin).",
+    "note": "Fiili: angeben (belirtmek; caka satmak).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 17",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "(gramer) zarf öğesi; bilgi, veri",
+    "hintTr": "isim",
+    "cloze": "Bitte machen Sie hier [die] [Angaben] zu Ihrer Person.",
+    "clozeTr": "Lütfen kişisel bilgilerinizi buraya yazın.",
+    "examples": [
+      {
+        "de": "Bei der Reihenfolge von Angaben steht die Zeitangabe vor den anderen Angaben.",
+        "tr": "Zarf öğelerinin sıralamasında zaman bilgisi diğerlerinden önce gelir.",
+        "fromBook": true
+      },
+      {
+        "de": "Alle Angaben sind ohne Gewähr.",
+        "tr": "Tüm bilgiler garanti edilmez.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "reihenfolge-d4bb",
+    "type": "noun",
+    "lemma": "Reihenfolge",
+    "noun": { "gender": "die", "plural": "-n" },
+    "rektion": [],
+    "grammarTr": null,
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 17",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "sıra, sıralama",
+    "hintTr": "isim, birleşik",
+    "cloze": "Bringen Sie die Sätze in [die] richtige [Reihenfolge].",
+    "clozeTr": "Cümleleri doğru sıraya koyun.",
+    "examples": [
+      {
+        "de": "Bei der Reihenfolge von Angaben steht die Zeitangabe vor den anderen Angaben.",
+        "tr": "Zarf öğelerinin sıralamasında zaman bilgisi diğerlerinden önce gelir.",
+        "fromBook": true
+      },
+      {
+        "de": "Die Namen stehen in alphabetischer Reihenfolge.",
+        "tr": "İsimler alfabetik sırayla yazılı.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "lernpartner-ec91",
+    "type": "noun",
+    "lemma": "Lernpartner",
+    "noun": { "gender": "der", "plural": "-" },
+    "rektion": [],
+    "grammarTr": null,
+    "note": "Kadın: die Lernpartnerin, -nen.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 17",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "çalışma arkadaşı",
+    "hintTr": "isim, birleşik",
+    "cloze": "Ich übe jeden Abend mit [meinem] [Lernpartner] Deutsch.",
+    "clozeTr": "Her akşam çalışma arkadaşımla Almanca pratik yapıyorum.",
+    "examples": [
+      {
+        "de": "Diskutieren Sie mit Ihrer Lernpartnerin / Ihrem Lernpartner über den Inhalt des Textes.",
+        "tr": "Çalışma arkadaşınızla metnin içeriğini tartışın.",
+        "fromBook": true
+      },
+      {
+        "de": "Einen Lernpartner zu haben motiviert.",
+        "tr": "Bir çalışma arkadaşının olması motive eder.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "erfahrung-869b",
+    "type": "noun",
+    "lemma": "Erfahrung",
+    "noun": { "gender": "die", "plural": "-en" },
+    "rektion": [{ "preposition": "mit", "case": "Dat" }],
+    "grammarTr": null,
+    "note": "Kalıp: Erfahrungen machen (deneyim edinmek) ✓, Erfahrungen haben ✓.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 17",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "deneyim, tecrübe",
+    "hintTr": "isim + edat",
+    "cloze": "Ich habe gute [Erfahrungen] [mit] dieser Firma gemacht.",
+    "clozeTr": "Bu şirketle iyi deneyimlerim oldu.",
+    "examples": [
+      {
+        "de": "Haben Sie Erfahrungen mit sozialen Netzwerken?",
+        "tr": "Sosyal ağlarla deneyiminiz var mı?",
+        "fromBook": true
+      },
+      {
+        "de": "Für diese Stelle braucht man drei Jahre Berufserfahrung.",
+        "tr": "Bu pozisyon için üç yıllık iş deneyimi gerekiyor.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "argument-da5c",
+    "type": "noun",
+    "lemma": "Argument",
+    "noun": { "gender": "das", "plural": "-e" },
+    "rektion": [
+      { "preposition": "für", "case": "Akk" },
+      { "preposition": "gegen", "case": "Akk" }
+    ],
+    "grammarTr": null,
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 17",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "argüman, gerekçe",
+    "hintTr": "isim + edat",
+    "cloze": "Das ist [ein] gutes [Argument] [für] ein Studium im Ausland.",
+    "clozeTr": "Bu, yurt dışında okumak için iyi bir argüman.",
+    "examples": [
+      {
+        "de": "Bringen Sie Ihre Erfahrungen ein und äußern Sie Ihre Meinung. Begründen Sie Ihre Argumente.",
+        "tr": "Deneyimlerinizi paylaşın ve fikrinizi belirtin. Argümanlarınızı gerekçelendirin.",
+        "fromBook": true
+      },
+      {
+        "de": "Welche Argumente sprechen dagegen?",
+        "tr": "Buna karşı hangi argümanlar var?",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "diskussion-b861",
+    "type": "noun",
+    "lemma": "Diskussion",
+    "noun": { "gender": "die", "plural": "-en" },
+    "rektion": [{ "preposition": "über", "case": "Akk" }],
+    "grammarTr": null,
+    "note": "Fiili: diskutieren über + Akk (✗ diskutieren von).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 17",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "tartışma",
+    "hintTr": "isim + edat",
+    "cloze": "Nach dem Vortrag gab es [eine] lange [Diskussion] [über] das Thema.",
+    "clozeTr": "Sunumdan sonra konu hakkında uzun bir tartışma oldu.",
+    "examples": [
+      {
+        "de": "Diskussion: Haben Sie Erfahrungen mit sozialen Netzwerken?",
+        "tr": "Tartışma: Sosyal ağlarla deneyiminiz var mı?",
+        "fromBook": true
+      },
+      {
+        "de": "Das steht nicht zur Diskussion.",
+        "tr": "Bu tartışmaya açık değil.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "zeitungsartikel-b5e1",
+    "type": "noun",
+    "lemma": "Zeitungsartikel",
+    "noun": { "gender": "der", "plural": "-" },
+    "rektion": [],
+    "grammarTr": "die Zeitung + -s- + der Artikel: -ung ile biten isimlerden sonra bağlantı -s- gelir; artikeli son kelime belirler.",
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 17",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "gazete makalesi, haber yazısı",
+    "hintTr": "isim, birleşik",
+    "cloze": "Ich habe [einen] interessanten [Zeitungsartikel] über Freundschaft gelesen.",
+    "clozeTr": "Arkadaşlık hakkında ilginç bir gazete makalesi okudum.",
+    "examples": [
+      {
+        "de": "Ich kann jetzt den Inhalt eines Zeitungsartikels mündlich zusammenfassen.",
+        "tr": "Artık bir gazete makalesinin içeriğini sözlü olarak özetleyebiliyorum.",
+        "fromBook": true
+      },
+      {
+        "de": "Der Zeitungsartikel hat eine große Diskussion ausgelöst.",
+        "tr": "Gazete makalesi büyük bir tartışma başlattı.",
+        "fromBook": false
+      }
+    ]
+  },
+  {
+    "id": "muendlich-2549",
+    "type": "adjective",
+    "lemma": "mündlich",
+    "adjective": { "comparative": null, "superlative": null },
+    "rektion": [],
+    "grammarTr": null,
+    "note": "Karşıtı: schriftlich (yazılı).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 17",
+    "tags": ["kapitel-1", "soziale-netzwerke"],
+    "createdAt": "2026-11-06",
+    "meaningTr": "sözlü",
+    "hintTr": "sıfat",
+    "cloze": "Morgen habe ich die [mündliche] Prüfung.",
+    "clozeTr": "Yarın sözlü sınavım var.",
+    "examples": [
+      {
+        "de": "Ich kann jetzt den Inhalt eines Zeitungsartikels mündlich zusammenfassen.",
+        "tr": "Artık bir gazete makalesinin içeriğini sözlü olarak özetleyebiliyorum.",
+        "fromBook": true
+      },
+      {
+        "de": "Wir haben das nur mündlich vereinbart.",
+        "tr": "Bunu sadece sözlü olarak kararlaştırdık.",
+        "fromBook": false
+      }
+    ]
   }
 ]
