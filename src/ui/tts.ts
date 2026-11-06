@@ -1,12 +1,15 @@
-import audioManifest from '../data/audio.json';
-import { audioId } from '../domain/speech';
 import { h } from './dom';
+import { geminiClip } from './geminiTts';
 
-// Voice choice is per device (each device has different voices), so it lives in localStorage,
-// not in the synced settings.
+// Voice choice and API key are per device (each device has other voices; the key must never be
+// deployed), so they live in localStorage, not in the synced settings.
 const VOICE_KEY = 'wortschatz.tts.voice';
 const RATE_KEY = 'wortschatz.tts.rate';
+const GEMINI_KEY = 'wortschatz.gemini.key';
 const DEFAULT_RATE = 0.9;
+/** Prefix of voice values that mean "Gemini voice <name>", e.g. "gemini:Kore". */
+export const GEMINI_PREFIX = 'gemini:';
+const DEFAULT_GEMINI_VOICE = `${GEMINI_PREFIX}Kore`;
 
 /** Minimal shape of SpeechSynthesisVoice, so the ranking can be unit-tested. */
 export interface VoiceLike {
@@ -46,9 +49,10 @@ function readStorage(key: string): string | null {
   }
 }
 
-function writeStorage(key: string, value: string): void {
+function writeStorage(key: string, value: string | null): void {
   try {
-    localStorage.setItem(key, value);
+    if (value === null) localStorage.removeItem(key);
+    else localStorage.setItem(key, value);
   } catch {
     // Storage blocked (private mode): the choice just is not remembered.
   }
@@ -62,15 +66,29 @@ export function germanVoices(): SpeechSynthesisVoice[] {
   return isSpeechSupported() ? rankGermanVoices(speechSynthesis.getVoices()) : [];
 }
 
-/** The voice the user picked, or the most natural one available. */
-export function currentVoice(): SpeechSynthesisVoice | null {
-  const voices = germanVoices();
-  const saved = readStorage(VOICE_KEY);
-  return voices.find((v) => v.name === saved) ?? voices[0] ?? null;
+export function geminiKey(): string | null {
+  return readStorage(GEMINI_KEY);
 }
 
-export function setVoice(name: string): void {
-  writeStorage(VOICE_KEY, name);
+export function setGeminiKey(key: string): void {
+  writeStorage(GEMINI_KEY, key.trim() || null);
+}
+
+/** Selected voice value: "gemini:<name>" or a browser voice name. Gemini is the default once a key exists. */
+export function selectedVoice(): string {
+  const saved = readStorage(VOICE_KEY);
+  if (saved?.startsWith(GEMINI_PREFIX)) return geminiKey() ? saved : (germanVoices()[0]?.name ?? '');
+  if (saved) return saved;
+  return geminiKey() ? DEFAULT_GEMINI_VOICE : (germanVoices()[0]?.name ?? '');
+}
+
+export function setVoice(value: string): void {
+  writeStorage(VOICE_KEY, value);
+}
+
+function browserVoice(): SpeechSynthesisVoice | null {
+  const voices = germanVoices();
+  return voices.find((v) => v.name === selectedVoice()) ?? voices[0] ?? null;
 }
 
 export function currentRate(): number {
@@ -87,18 +105,14 @@ export function onVoicesChanged(callback: () => void): void {
   if (isSpeechSupported()) speechSynthesis.addEventListener('voiceschanged', callback);
 }
 
-/** Pseudo voice name for the pre-generated AI clips. */
-export const AI_VOICE = 'ai';
-const aiClips = new Set(Object.keys((audioManifest as { clips: Record<string, string> }).clips));
 let currentAudio: HTMLAudioElement | null = null;
+/** Increases on every new request, so a slow Gemini answer never plays over a newer one. */
+let requestNumber = 0;
+let lastError: string | null = null;
 
-export function hasAiAudio(): boolean {
-  return aiClips.size > 0;
-}
-
-/** AI voice is the default whenever clips exist; the user can switch to a browser voice. */
-export function usesAiVoice(): boolean {
-  return hasAiAudio() && (readStorage(VOICE_KEY) ?? AI_VOICE) === AI_VOICE;
+/** Last Gemini error (shown in Settings), null if the last request worked. */
+export function lastSpeechError(): string | null {
+  return lastError;
 }
 
 function stopSpeaking(): void {
@@ -107,48 +121,65 @@ function stopSpeaking(): void {
   if (isSpeechSupported()) speechSynthesis.cancel();
 }
 
-/** Plays the AI clip for this text; returns false if there is none (then the browser voice is used). */
-function playAiClip(text: string): boolean {
-  const id = audioId(text);
-  if (!usesAiVoice() || !aiClips.has(id)) return false;
-  const audio = new Audio(`${import.meta.env.BASE_URL}audio/${id}.mp3`);
-  audio.playbackRate = currentRate() / DEFAULT_RATE;
-  currentAudio = audio;
-  audio.play().catch(() => speakWithBrowser(text));
-  return true;
-}
-
-export function speakGerman(text: string): void {
-  stopSpeaking();
-  if (playAiClip(text)) return;
-  speakWithBrowser(text);
-}
-
 function speakWithBrowser(text: string): void {
   if (!isSpeechSupported()) return;
   const utterance = new SpeechSynthesisUtterance(text);
   utterance.lang = 'de-DE';
   utterance.rate = currentRate();
-  const voice = currentVoice();
+  const voice = browserVoice();
   if (voice) utterance.voice = voice;
   speechSynthesis.speak(utterance);
 }
 
+async function speakWithGemini(text: string, voice: string, apiKey: string, request: number): Promise<void> {
+  try {
+    const blob = await geminiClip(text, voice, apiKey);
+    if (request !== requestNumber) return;
+    lastError = null;
+    const url = URL.createObjectURL(blob);
+    const audio = new Audio(url);
+    audio.playbackRate = currentRate() / DEFAULT_RATE;
+    audio.addEventListener('ended', () => URL.revokeObjectURL(url));
+    currentAudio = audio;
+    await audio.play();
+  } catch (error) {
+    lastError = (error as Error).message;
+    console.warn('[tts] Gemini failed, using browser voice:', lastError);
+    if (request === requestNumber) speakWithBrowser(text);
+  }
+}
+
+/** Speaks with the selected voice; resolves when playback has started (or failed). */
+export async function speakGerman(text: string): Promise<void> {
+  stopSpeaking();
+  const request = ++requestNumber;
+  const voice = selectedVoice();
+  const apiKey = geminiKey();
+  if (voice.startsWith(GEMINI_PREFIX) && apiKey) {
+    await speakWithGemini(text, voice.slice(GEMINI_PREFIX.length), apiKey, request);
+  } else {
+    speakWithBrowser(text);
+  }
+}
+
 /** Small speaker button; stops propagation so it does not flip the card. */
 export function speakButton(text: string): HTMLButtonElement | null {
-  if (!isSpeechSupported() && !aiClips.has(audioId(text))) return null;
-  return h(
+  if (!isSpeechSupported() && !geminiKey()) return null;
+  const button = h(
     'button',
     {
       class: 'speak',
       type: 'button',
       'aria-label': `Vorlesen: ${text}`,
       'data-testid': 'speak',
-      onclick: (event: Event) => {
+      onclick: async (event: Event) => {
         event.stopPropagation();
-        speakGerman(text);
+        button.classList.add('loading');
+        await speakGerman(text);
+        button.classList.remove('loading');
       },
     },
     '🔊',
   );
+  return button;
 }

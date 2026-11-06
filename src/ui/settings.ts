@@ -1,14 +1,15 @@
 import type { App } from '../app';
 import { h } from './dom';
+import { clearGeminiCache, GEMINI_VOICES } from './geminiTts';
 import {
-  AI_VOICE,
-  hasAiAudio,
-  usesAiVoice,
   currentRate,
-  currentVoice,
+  GEMINI_PREFIX,
+  geminiKey,
   germanVoices,
-  isSpeechSupported,
+  lastSpeechError,
   onVoicesChanged,
+  selectedVoice,
+  setGeminiKey,
   setRate,
   setVoice,
   speakGerman,
@@ -57,26 +58,34 @@ const RATES: [number, string][] = [
 ];
 const SAMPLE_SENTENCE = 'Auf echte Freunde kann man sich immer verlassen.';
 
-/** Voice and speed for read-aloud; stored per device because every device has other voices. */
-function speechPanel(): HTMLElement | null {
-  if (!isSpeechSupported()) return null;
+/** Voice, speed and Gemini key for read-aloud; stored per device, never synced or deployed. */
+function speechPanel(): HTMLElement {
+  const speechStatus = h('p', { class: 'status', role: 'status', 'data-testid': 'speech-status' });
+  const tryVoice = async () => {
+    speechStatus.textContent = geminiKey() && selectedVoice().startsWith(GEMINI_PREFIX) ? '⏳ Gemini sesi yükleniyor…' : '';
+    await speakGerman(SAMPLE_SENTENCE);
+    const error = lastSpeechError();
+    speechStatus.textContent = error ? `✗ ${error} Tarayıcı sesi kullanıldı.` : '';
+  };
+
   const voiceSelect = h('select', {
     class: 'voice-select',
     'aria-label': 'Ses',
     'data-testid': 'setting-voice',
     onchange: (event: Event) => {
       setVoice((event.target as HTMLSelectElement).value);
-      speakGerman(SAMPLE_SENTENCE);
+      void tryVoice();
     },
   });
   const fillVoices = () => {
-    const ai = usesAiVoice();
-    const selected = currentVoice()?.name;
-    const voices = germanVoices();
+    const selected = selectedVoice();
+    const browser = germanVoices();
+    const option = (value: string, label: string) => h('option', { value, selected: value === selected }, label);
     voiceSelect.replaceChildren(
-      ...(hasAiAudio() ? [h('option', { value: AI_VOICE, selected: ai }, '✨ Yapay zekâ sesi (Gemini)')] : []),
-      ...voices.map((v) => h('option', { value: v.name, selected: !ai && v.name === selected }, v.name)),
-      ...(voices.length || hasAiAudio() ? [] : [h('option', { value: '' }, 'Almanca ses bulunamadı')]),
+      ...(geminiKey()
+        ? [h('optgroup', { label: '✨ Yapay zekâ (Gemini)' }, ...GEMINI_VOICES.map(([name, label]) => option(`${GEMINI_PREFIX}${name}`, label)))]
+        : []),
+      ...(browser.length ? [h('optgroup', { label: 'Tarayıcı sesi' }, ...browser.map((v) => option(v.name, v.name)))] : []),
     );
   };
   fillVoices();
@@ -89,27 +98,58 @@ function speechPanel(): HTMLElement | null {
       'aria-label': 'Hız',
       onchange: (event: Event) => {
         setRate(Number((event.target as HTMLSelectElement).value));
-        speakGerman(SAMPLE_SENTENCE);
+        void tryVoice();
       },
     },
     ...RATES.map(([value, label]) => h('option', { value, selected: currentRate() === value }, label)),
   );
 
+  const keyInput = h('input', {
+    type: 'password',
+    class: 'key-input',
+    placeholder: 'AI Studio API anahtarı',
+    autocomplete: 'off',
+    'aria-label': 'Gemini API anahtarı',
+    'data-testid': 'setting-gemini-key',
+    value: geminiKey() ?? '',
+    onchange: (event: Event) => {
+      const hadKey = Boolean(geminiKey());
+      setGeminiKey((event.target as HTMLInputElement).value);
+      // First key: switch to the AI voice right away.
+      if (!hadKey && geminiKey()) setVoice(`${GEMINI_PREFIX}${GEMINI_VOICES[0]?.[0] ?? 'Kore'}`);
+      fillVoices();
+      speechStatus.textContent = geminiKey() ? '✓ Anahtar kaydedildi.' : 'Anahtar silindi.';
+    },
+  });
+
   return h(
     'section',
     { class: 'panel' },
     h('h2', {}, 'Sesli okuma'),
+    h('label', { class: 'field' }, h('span', {}, 'Gemini anahtarı'), keyInput),
     h('label', { class: 'field' }, h('span', {}, 'Ses'), voiceSelect),
     h('label', { class: 'field' }, h('span', {}, 'Hız'), rateSelect),
     h(
       'div',
       { class: 'button-row' },
-      h('button', { type: 'button', onclick: () => speakGerman(SAMPLE_SENTENCE) }, '🔊 Dene'),
+      h('button', { type: 'button', onclick: () => void tryVoice() }, '🔊 Dene'),
+      h(
+        'button',
+        {
+          type: 'button',
+          onclick: async () => {
+            await clearGeminiCache();
+            speechStatus.textContent = '✓ Ses önbelleği temizlendi.';
+          },
+        },
+        'Önbelleği temizle',
+      ),
     ),
+    speechStatus,
     h(
       'p',
       { class: 'muted small' },
-      'Yapay zekâ sesi olmayan cümlelerde tarayıcı sesi kullanılır. Seçim sadece bu cihazda saklanır.',
+      'Anahtarı aistudio.google.com/apikey adresinden alırsın. Sadece bu tarayıcıda saklanır, siteye yüklenmez. Her cümle ilk çalışta Gemini\'den gelir (1–3 sn), sonra önbellekten anında çalar. Hata olursa tarayıcı sesi kullanılır.',
     ),
   );
 }
@@ -157,7 +197,7 @@ export function renderSettings(app: App, root: HTMLElement): void {
       ),
       h('p', { class: 'muted small' }, 'Yüksek hedef = daha sık tekrar. 0.90 çoğu kişi için iyi bir denge.'),
     ),
-    ...[speechPanel()].filter((panel) => panel !== null),
+    speechPanel(),
     h(
       'section',
       { class: 'panel' },

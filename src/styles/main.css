@@ -383,3 +383,13 @@ main {
   background: var(--surface-2);
   color: var(--text);
 }
+.key-input {
+  width: 60%;
+  padding: 0.45rem 0.6rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface-2);
+  color: var(--text);
+}
+.speak.loading { animation: pulse 0.9s ease-in-out infinite; }
+@keyframes pulse { 50% { opacity: 0.35; } }
