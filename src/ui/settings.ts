@@ -1,6 +1,9 @@
 import type { App } from '../app';
 import { h } from './dom';
 import {
+  AI_VOICE,
+  hasAiAudio,
+  usesAiVoice,
   currentRate,
   currentVoice,
   germanVoices,
@@ -67,12 +70,13 @@ function speechPanel(): HTMLElement | null {
     },
   });
   const fillVoices = () => {
+    const ai = usesAiVoice();
     const selected = currentVoice()?.name;
     const voices = germanVoices();
     voiceSelect.replaceChildren(
-      ...(voices.length
-        ? voices.map((v) => h('option', { value: v.name, selected: v.name === selected }, v.name))
-        : [h('option', { value: '' }, 'Almanca ses bulunamadı')]),
+      ...(hasAiAudio() ? [h('option', { value: AI_VOICE, selected: ai }, '✨ Yapay zekâ sesi (Gemini)')] : []),
+      ...voices.map((v) => h('option', { value: v.name, selected: !ai && v.name === selected }, v.name)),
+      ...(voices.length || hasAiAudio() ? [] : [h('option', { value: '' }, 'Almanca ses bulunamadı')]),
     );
   };
   fillVoices();
@@ -105,7 +109,7 @@ function speechPanel(): HTMLElement | null {
     h(
       'p',
       { class: 'muted small' },
-      'En doğal sesler listenin başında (Chrome: „Google Deutsch", Edge: „… Online (Natural)"). Seçim sadece bu cihazda saklanır.',
+      'Yapay zekâ sesi olmayan cümlelerde tarayıcı sesi kullanılır. Seçim sadece bu cihazda saklanır.',
     ),
   );
 }

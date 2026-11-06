@@ -1,3 +1,5 @@
+import audioManifest from '../data/audio.json';
+import { audioId } from '../domain/speech';
 import { h } from './dom';
 
 // Voice choice is per device (each device has different voices), so it lives in localStorage,
@@ -85,9 +87,45 @@ export function onVoicesChanged(callback: () => void): void {
   if (isSpeechSupported()) speechSynthesis.addEventListener('voiceschanged', callback);
 }
 
+/** Pseudo voice name for the pre-generated AI clips. */
+export const AI_VOICE = 'ai';
+const aiClips = new Set(Object.keys((audioManifest as { clips: Record<string, string> }).clips));
+let currentAudio: HTMLAudioElement | null = null;
+
+export function hasAiAudio(): boolean {
+  return aiClips.size > 0;
+}
+
+/** AI voice is the default whenever clips exist; the user can switch to a browser voice. */
+export function usesAiVoice(): boolean {
+  return hasAiAudio() && (readStorage(VOICE_KEY) ?? AI_VOICE) === AI_VOICE;
+}
+
+function stopSpeaking(): void {
+  currentAudio?.pause();
+  currentAudio = null;
+  if (isSpeechSupported()) speechSynthesis.cancel();
+}
+
+/** Plays the AI clip for this text; returns false if there is none (then the browser voice is used). */
+function playAiClip(text: string): boolean {
+  const id = audioId(text);
+  if (!usesAiVoice() || !aiClips.has(id)) return false;
+  const audio = new Audio(`${import.meta.env.BASE_URL}audio/${id}.mp3`);
+  audio.playbackRate = currentRate() / DEFAULT_RATE;
+  currentAudio = audio;
+  audio.play().catch(() => speakWithBrowser(text));
+  return true;
+}
+
 export function speakGerman(text: string): void {
+  stopSpeaking();
+  if (playAiClip(text)) return;
+  speakWithBrowser(text);
+}
+
+function speakWithBrowser(text: string): void {
   if (!isSpeechSupported()) return;
-  speechSynthesis.cancel();
   const utterance = new SpeechSynthesisUtterance(text);
   utterance.lang = 'de-DE';
   utterance.rate = currentRate();
@@ -98,7 +136,7 @@ export function speakGerman(text: string): void {
 
 /** Small speaker button; stops propagation so it does not flip the card. */
 export function speakButton(text: string): HTMLButtonElement | null {
-  if (!isSpeechSupported()) return null;
+  if (!isSpeechSupported() && !aiClips.has(audioId(text))) return null;
   return h(
     'button',
     {
