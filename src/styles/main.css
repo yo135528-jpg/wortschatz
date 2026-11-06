@@ -83,7 +83,8 @@ kbd {
   align-items: center;
   justify-content: space-between;
   gap: 0.75rem;
-  padding: calc(env(safe-area-inset-top) + 0.6rem) 1rem 0.6rem;
+  /* Align title and mode toggle with the 640px content column on wide screens. */
+  padding: calc(env(safe-area-inset-top) + 0.6rem) max(1rem, calc((100% - 640px) / 2 + 1rem)) 0.6rem;
   background: color-mix(in srgb, var(--bg) 88%, transparent);
   backdrop-filter: blur(8px);
 }
@@ -121,7 +122,8 @@ main {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   height: calc(var(--tabbar-h) + env(safe-area-inset-bottom));
-  padding-bottom: env(safe-area-inset-bottom);
+  /* Keep the buttons within the 640px content column; the bar background stays full width. */
+  padding: 0 max(0px, calc((100% - 640px) / 2)) env(safe-area-inset-bottom);
   background: var(--surface);
   border-top: 1px solid var(--border);
 }
