@@ -3011,12 +3011,12 @@
     "examples": [
       {
         "de": "Den kenne ich über sechs Ecken.",
-        "tr": "Onu tanıdığımın tanıdığının tanıdığı olarak tanıyorum.",
+        "tr": "Onu ancak tanıdığımın tanıdığı olarak biliyorum.",
         "fromBook": true
       },
       {
         "de": "Nicht über sechs, sondern über 4,74 Ecken kennt jeder jeden.",
-        "tr": "Herkes herkesi altı değil, 4,74 aracı üzerinden tanıyor.",
+        "tr": "Herkesi herkese bağlayan tanıdık zinciri altı değil, ortalama 4,74 kişi.",
         "fromBook": true
       }
     ]
@@ -3110,7 +3110,7 @@
     "examples": [
       {
         "de": "Über sechs Ecken kennt jeder Mensch jeden. So heißt es in einer Redensart.",
-        "tr": "Herkes herkesi altı aracı üzerinden tanır. Bir deyimde böyle denir.",
+        "tr": "Halk arasında, dünyadaki herkesin birbirine en fazla altı tanıdık uzaklıkta olduğu söylenir.",
         "fromBook": true
       },
       {
@@ -3226,7 +3226,7 @@
     "examples": [
       {
         "de": "Die Pakete erreichten ihr Ziel nach durchschnittlich 5,5 Stationen.",
-        "tr": "Paketler hedeflerine ortalama 5,5 aşamadan sonra ulaştı.",
+        "tr": "Paketler ortalama 5,5 kişiden geçerek hedefe ulaştı.",
         "fromBook": true
       },
       {
@@ -3389,7 +3389,7 @@
     "examples": [
       {
         "de": "Ein Nutzer ist nur 4,74 Online-Kontakte von einem beliebigen anderen Nutzer entfernt.",
-        "tr": "Bir kullanıcı, herhangi başka bir kullanıcıdan sadece 4,74 çevrimiçi bağlantı uzaklıkta.",
+        "tr": "Bir kullanıcı ile rastgele seçilen başka bir kullanıcı arasında ortalama sadece 4,74 çevrimiçi bağlantı var.",
         "fromBook": true
       },
       {
@@ -3418,7 +3418,7 @@
     "examples": [
       {
         "de": "Ein Nutzer ist nur 4,74 Online-Kontakte von einem beliebigen anderen Nutzer entfernt.",
-        "tr": "Bir kullanıcı, herhangi başka bir kullanıcıdan sadece 4,74 çevrimiçi bağlantı uzaklıkta.",
+        "tr": "Bir kullanıcı ile rastgele seçilen başka bir kullanıcı arasında ortalama sadece 4,74 çevrimiçi bağlantı var.",
         "fromBook": true
       },
       {
@@ -3475,7 +3475,7 @@
     "examples": [
       {
         "de": "Innerhalb eines Landes trennen die meisten sogar nur drei Kontakte.",
-        "tr": "Bir ülke içinde çoğu kişiyi birbirinden sadece üç bağlantı ayırıyor.",
+        "tr": "Aynı ülkede ise çoğu insan arasında hatta sadece üç bağlantı var.",
         "fromBook": true
       },
       {
@@ -4569,7 +4569,7 @@
     "examples": [
       {
         "de": "Die Pakete erreichten ihr Ziel nach durchschnittlich 5,5 Stationen.",
-        "tr": "Paketler hedeflerine ortalama 5,5 aşamadan sonra ulaştı.",
+        "tr": "Paketler ortalama 5,5 kişiden geçerek hedefe ulaştı.",
         "fromBook": true
       },
       {
@@ -4598,7 +4598,7 @@
     "examples": [
       {
         "de": "Die Pakete erreichten ihr Ziel nach durchschnittlich 5,5 Stationen.",
-        "tr": "Paketler hedeflerine ortalama 5,5 aşamadan sonra ulaştı.",
+        "tr": "Paketler ortalama 5,5 kişiden geçerek hedefe ulaştı.",
         "fromBook": true
       },
       {
@@ -4620,14 +4620,14 @@
     "source": "Kursbuch, Kapitel 1, S. 16",
     "tags": ["kapitel-1", "soziale-netzwerke"],
     "createdAt": "2026-11-06",
-    "meaningTr": "aşama, durak; (hastane) servis",
+    "meaningTr": "durak, ara nokta; (hastane) servis",
     "hintTr": "isim",
     "cloze": "Die letzte [Station] unserer Reise war Wien.",
     "clozeTr": "Yolculuğumuzun son durağı Viyana'ydı.",
     "examples": [
       {
         "de": "Die Pakete erreichten ihr Ziel nach durchschnittlich 5,5 Stationen.",
-        "tr": "Paketler hedeflerine ortalama 5,5 aşamadan sonra ulaştı.",
+        "tr": "Paketler ortalama 5,5 kişiden geçerek hedefe ulaştı.",
         "fromBook": true
       },
       {
@@ -5071,7 +5071,7 @@
     "examples": [
       {
         "de": "Innerhalb eines Landes trennen die meisten sogar nur drei Kontakte.",
-        "tr": "Bir ülke içinde çoğu kişiyi birbirinden sadece üç bağlantı bile ayırıyor.",
+        "tr": "Aynı ülkede ise çoğu insan arasında hatta sadece üç bağlantı var.",
         "fromBook": true
       },
       {
@@ -5106,7 +5106,7 @@
     "examples": [
       {
         "de": "Innerhalb eines Landes trennen die meisten sogar nur drei Kontakte.",
-        "tr": "Bir ülke içinde çoğu kişiyi birbirinden sadece üç bağlantı bile ayırıyor.",
+        "tr": "Aynı ülkede ise çoğu insan arasında hatta sadece üç bağlantı var.",
         "fromBook": true
       },
       {
