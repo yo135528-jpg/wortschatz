@@ -1934,6 +1934,11 @@
         "de": "Die Polizei sucht noch nach dem Motiv für die Tat.",
         "tr": "Polis hâlâ suçun sebebini arıyor.",
         "fromBook": false
+      },
+      {
+        "de": "Sprechen Sie über das Bildmotiv auf der Vorderseite.",
+        "tr": "Ön yüzdeki resim motifi hakkında konuşun.",
+        "fromBook": true
       }
     ],
     "note": null,
@@ -7475,5 +7480,3117 @@
         "fromBook": false
       }
     ]
+  },
+  {
+    "id": "lebensalter-2262",
+    "type": "noun",
+    "lemma": "Lebensalter",
+    "noun": { "gender": "das", "plural": "-" },
+    "rektion": [],
+    "meaningTr": "yaş, hayat dönemi",
+    "hintTr": "isim, birleşik (Leben + Alter)",
+    "cloze": "[Das] [Lebensalter] spielt bei echter Freundschaft keine Rolle.",
+    "clozeTr": "Gerçek arkadaşlıkta yaşın hiçbir önemi yok.",
+    "examples": [
+      {
+        "de": "Lebensalter und Lebensabschnitte",
+        "tr": "Yaşlar ve hayat dönemleri",
+        "fromBook": true
+      },
+      {
+        "de": "Im hohen Lebensalter werden Freunde besonders wichtig.",
+        "tr": "İleri yaşta arkadaşlar özellikle önem kazanır.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 20",
+    "tags": ["kapitel-1", "lebensphasen"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "lebensabschnitt-c693",
+    "type": "noun",
+    "lemma": "Lebensabschnitt",
+    "noun": { "gender": "der", "plural": "-e" },
+    "rektion": [],
+    "meaningTr": "hayat dönemi, hayatın bir bölümü",
+    "hintTr": "isim, birleşik (Leben + Abschnitt)",
+    "cloze": "Das Studium war [ein] wichtiger [Lebensabschnitt] für mich.",
+    "clozeTr": "Üniversite yılları benim için önemli bir dönemdi.",
+    "examples": [
+      {
+        "de": "Für mich beginnt jetzt ein neuer Lebensabschnitt.",
+        "tr": "Benim için şimdi yeni bir dönem başlıyor.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 20",
+    "tags": ["kapitel-1", "lebensphasen"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "lebensphase-dc13",
+    "type": "noun",
+    "lemma": "Lebensphase",
+    "noun": { "gender": "die", "plural": "-n" },
+    "rektion": [],
+    "meaningTr": "hayat evresi, yaşam aşaması",
+    "hintTr": "isim, birleşik (Leben + Phase)",
+    "cloze": "In [jeder] [Lebensphase] braucht man andere Freunde.",
+    "clozeTr": "Hayatın her evresinde insanın farklı arkadaşlara ihtiyacı olur.",
+    "examples": [
+      {
+        "de": "Ich kann jetzt Lebensphasen benennen.",
+        "tr": "Artık hayat evrelerini adlandırabilirim.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 20",
+    "tags": ["kapitel-1", "lebensphasen"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "benennen-f8c5",
+    "type": "verb",
+    "lemma": "benennen",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": null,
+      "praeteritum": "benannte",
+      "partizip2": "benannt",
+      "auxiliary": "haben"
+    },
+    "rektion": [],
+    "meaningTr": "adlandırmak, adını söylemek",
+    "hintTr": "fiil (ayrılmaz)",
+    "cloze": "Können Sie die Teile des Fahrrads auf Deutsch [benennen]?",
+    "clozeTr": "Bisikletin parçalarının adını Almanca söyleyebilir misiniz?",
+    "examples": [
+      {
+        "de": "Ich kann jetzt Lebensphasen benennen.",
+        "tr": "Artık hayat evrelerini adlandırabilirim.",
+        "fromBook": true
+      },
+      {
+        "de": "Die Straße wurde nach einer Schriftstellerin benannt.",
+        "tr": "Sokağa bir kadın yazarın adı verildi.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": "Düzensiz, nennen gibi: benennt – benannte – benannt.",
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 20",
+    "tags": ["kapitel-1", "lebensphasen"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "erwachsene-81f5",
+    "type": "noun",
+    "lemma": "Erwachsene",
+    "noun": { "gender": "der", "plural": "-n" },
+    "rektion": [],
+    "meaningTr": "yetişkin",
+    "hintTr": "isim (sıfattan türeme)",
+    "cloze": "[Ein] [Erwachsener] zahlt zehn Euro, Kinder zahlen die Hälfte.",
+    "clozeTr": "Bir yetişkin on avro öder, çocuklar yarısını.",
+    "examples": [
+      {
+        "de": "Der Film ist nur für Erwachsene.",
+        "tr": "Film sadece yetişkinler için.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": "Sıfat gibi çekilir: der Erwachsene / ein Erwachsener, die Erwachsenen / (çoğul, artikelsiz) Erwachsene. Kadın: die Erwachsene / eine Erwachsene.",
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 20",
+    "tags": ["kapitel-1", "lebensphasen"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "jugend-e9e2",
+    "type": "noun",
+    "lemma": "Jugend",
+    "noun": { "gender": "die", "plural": null },
+    "rektion": [],
+    "meaningTr": "gençlik (dönemi)",
+    "hintTr": "isim (dönemin adı)",
+    "cloze": "In [der] [Jugend] habe ich viel Fußball gespielt.",
+    "clozeTr": "Gençliğimde çok futbol oynadım.",
+    "examples": [
+      {
+        "de": "Die Jugend von heute verbringt viel Zeit online.",
+        "tr": "Bugünün gençleri internette çok zaman geçiriyor.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "die Jugend = gençlik dönemi ya da topluca gençler; tek bir genç = der/die Jugendliche.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 20",
+    "tags": ["kapitel-1", "lebensphasen"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "jugendliche-42a8",
+    "type": "noun",
+    "lemma": "Jugendliche",
+    "noun": { "gender": "der", "plural": "-n" },
+    "rektion": [],
+    "meaningTr": "genç, ergen",
+    "hintTr": "isim (sıfattan türeme)",
+    "cloze": "[Der] [Jugendliche] hat in den Ferien sein erstes Praktikum gemacht.",
+    "clozeTr": "Genç, tatilde ilk stajını yaptı.",
+    "examples": [
+      {
+        "de": "Für Jugendliche unter 16 ist der Eintritt frei.",
+        "tr": "16 yaşından küçük gençler için giriş ücretsiz.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": "Sıfat gibi çekilir: der Jugendliche / ein Jugendlicher, die Jugendlichen / (artikelsiz) Jugendliche. Kadın: die Jugendliche.",
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 20",
+    "tags": ["kapitel-1", "lebensphasen"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "teenager-421b",
+    "type": "noun",
+    "lemma": "Teenager",
+    "noun": { "gender": "der", "plural": "-" },
+    "rektion": [],
+    "meaningTr": "ergen, genç",
+    "hintTr": "isim (İngilizceden alınma)",
+    "cloze": "Als [Teenager] habe ich mich oft mit meinen Eltern gestritten.",
+    "clozeTr": "Ergenken ailemle sık sık kavga ederdim.",
+    "examples": [
+      {
+        "de": "Unser Sohn ist jetzt ein Teenager und will nur noch mit Freunden weg.",
+        "tr": "Oğlumuz artık ergen ve sadece arkadaşlarıyla dışarı çıkmak istiyor.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 20",
+    "tags": ["kapitel-1", "lebensphasen"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "kindergartenzeit-32cd",
+    "type": "noun",
+    "lemma": "Kindergartenzeit",
+    "noun": { "gender": "die", "plural": null },
+    "rektion": [],
+    "meaningTr": "anaokulu yılları",
+    "hintTr": "isim, birleşik",
+    "cloze": "Wir kennen uns schon seit [der] [Kindergartenzeit].",
+    "clozeTr": "Anaokulundan beri tanışıyoruz.",
+    "examples": [
+      {
+        "de": "An meine Kindergartenzeit kann ich mich kaum erinnern.",
+        "tr": "Anaokulu yıllarımı neredeyse hiç hatırlamıyorum.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 20",
+    "tags": ["kapitel-1", "lebensphasen"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "schulzeit-1150",
+    "type": "noun",
+    "lemma": "Schulzeit",
+    "noun": { "gender": "die", "plural": "-en" },
+    "rektion": [],
+    "meaningTr": "okul yılları",
+    "hintTr": "isim, birleşik",
+    "cloze": "In [der] [Schulzeit] war ich sehr schüchtern.",
+    "clozeTr": "Okul yıllarımda çok utangaçtım.",
+    "examples": [
+      {
+        "de": "Nach der Schulzeit haben wir uns aus den Augen verloren.",
+        "tr": "Okuldan sonra birbirimizi gözden kaybettik.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 20",
+    "tags": ["kapitel-1", "lebensphasen"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "kindheit-3291",
+    "type": "noun",
+    "lemma": "Kindheit",
+    "noun": { "gender": "die", "plural": null },
+    "rektion": [],
+    "meaningTr": "çocukluk",
+    "hintTr": "isim",
+    "cloze": "Ich hatte [eine] sehr glückliche [Kindheit].",
+    "clozeTr": "Çok mutlu bir çocukluğum oldu.",
+    "examples": [
+      {
+        "de": "In meiner Kindheit haben wir auf dem Land gelebt.",
+        "tr": "Çocukluğumda kırsalda yaşadık.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 20",
+    "tags": ["kapitel-1", "lebensphasen"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "alter-ec95",
+    "type": "noun",
+    "lemma": "Alter",
+    "noun": { "gender": "das", "plural": "-" },
+    "rektion": [],
+    "meaningTr": "yaş; yaşlılık",
+    "hintTr": "isim",
+    "cloze": "[Das] [Alter] spielt bei dieser Stelle keine Rolle.",
+    "clozeTr": "Bu iş için yaşın bir önemi yok.",
+    "examples": [
+      {
+        "de": "Im Alter von 18 Jahren bin ich von zu Hause ausgezogen.",
+        "tr": "18 yaşında evden ayrıldım.",
+        "fromBook": false
+      },
+      {
+        "de": "Im Alter braucht man oft mehr Hilfe.",
+        "tr": "Yaşlılıkta insan çoğu zaman daha fazla yardıma ihtiyaç duyar.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "das Alter = yaş / yaşlılık; der/die Alte = yaşlı adam / kadın (sıfattan, kaba kaçabilir).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 20",
+    "tags": ["kapitel-1", "lebensphasen"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "senior-20d4",
+    "type": "noun",
+    "lemma": "Senior",
+    "noun": { "gender": "der", "plural": "-en" },
+    "rektion": [],
+    "meaningTr": "yaşlı (kişi), emekli yaşta kişi",
+    "hintTr": "isim (kibar ifade)",
+    "cloze": "Der Sportverein bietet spezielle Kurse für [Senioren] an.",
+    "clozeTr": "Spor kulübü yaşlılar için özel kurslar sunuyor.",
+    "examples": [
+      {
+        "de": "Viele Senioren nutzen heute ein Smartphone.",
+        "tr": "Bugün birçok yaşlı akıllı telefon kullanıyor.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "Kadın: die Seniorin, -nen. „die Alten“ yerine kibar kelime.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 20",
+    "tags": ["kapitel-1", "lebensphasen"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "rentner-d52a",
+    "type": "noun",
+    "lemma": "Rentner",
+    "noun": { "gender": "der", "plural": "-" },
+    "rektion": [],
+    "meaningTr": "emekli",
+    "hintTr": "isim",
+    "cloze": "Mein Vater ist seit zwei Jahren [Rentner] und reist viel.",
+    "clozeTr": "Babam iki yıldır emekli ve çok seyahat ediyor.",
+    "examples": [
+      {
+        "de": "Seit sie Rentnerin ist, hat sie endlich Zeit für ihren Garten.",
+        "tr": "Emekli olduğundan beri nihayet bahçesine vakit ayırabiliyor.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "Kadın: die Rentnerin, -nen. die Rente = emekli maaşı; in Rente gehen = emekli olmak.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 20",
+    "tags": ["kapitel-1", "lebensphasen"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "erwachsenenalter-65f4",
+    "type": "noun",
+    "lemma": "Erwachsenenalter",
+    "noun": { "gender": "das", "plural": null },
+    "rektion": [],
+    "meaningTr": "yetişkinlik (çağı)",
+    "hintTr": "isim, birleşik",
+    "cloze": "[Das] [Erwachsenenalter] beginnt in Deutschland rechtlich mit 18.",
+    "clozeTr": "Almanya’da yetişkinlik hukuken 18 yaşında başlar.",
+    "examples": [
+      {
+        "de": "Viele Freundschaften aus der Schulzeit halten bis ins Erwachsenenalter.",
+        "tr": "Okul yıllarından kalan birçok arkadaşlık yetişkinliğe kadar sürer.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 20",
+    "tags": ["kapitel-1", "lebensphasen"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "eine-feste-beziehung-haben-df10",
+    "type": "expression",
+    "lemma": "eine feste Beziehung haben",
+    "rektion": [],
+    "meaningTr": "ciddi bir ilişkisi olmak",
+    "hintTr": "kalıp (isim + fiil)",
+    "cloze": "Hast du gerade [eine] [feste] [Beziehung]?",
+    "clozeTr": "Şu an ciddi bir ilişkin var mı?",
+    "examples": [
+      {
+        "de": "Seit einem Jahr hat sie eine feste Beziehung.",
+        "tr": "Bir yıldır ciddi bir ilişkisi var.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "Olumsuz: keine feste Beziehung haben.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 20",
+    "tags": ["kapitel-1", "liebe"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "geschieden-fead",
+    "type": "adjective",
+    "lemma": "geschieden",
+    "adjective": { "comparative": null, "superlative": null },
+    "rektion": [],
+    "meaningTr": "boşanmış",
+    "hintTr": "sıfat (medeni hal)",
+    "cloze": "Meine Eltern sind seit zehn Jahren [geschieden].",
+    "clozeTr": "Annemle babam on yıldır boşanmış durumda.",
+    "examples": [
+      {
+        "de": "Er ist geschieden und hat zwei Kinder.",
+        "tr": "Boşanmış ve iki çocuğu var.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "Boşanmak: sich scheiden lassen (Sie haben sich scheiden lassen). die Scheidung = boşanma.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 20",
+    "tags": ["kapitel-1", "liebe"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "heiraten-867e",
+    "type": "verb",
+    "lemma": "heiraten",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": null,
+      "praeteritum": "heiratete",
+      "partizip2": "geheiratet",
+      "auxiliary": "haben"
+    },
+    "rektion": [{ "preposition": null, "case": "Akk" }],
+    "meaningTr": "(biriyle) evlenmek",
+    "hintTr": "fiil (+ Akk, edatsız)",
+    "cloze": "Nächsten Sommer [heiraten] Anna und Tom.",
+    "clozeTr": "Anna ile Tom gelecek yaz evleniyor.",
+    "examples": [
+      {
+        "de": "Er hat seine Jugendliebe geheiratet.",
+        "tr": "Gençlik aşkıyla evlendi.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "Türkçede „biriyle evlenmek“ ama Almancada edat yok: jemanden heiraten (✗ mit jemandem heiraten).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 20",
+    "tags": ["kapitel-1", "liebe"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "verlieben-9f3a",
+    "type": "verb",
+    "lemma": "verlieben",
+    "verb": {
+      "reflexive": "Akk",
+      "separablePrefix": null,
+      "praeteritum": "verliebte",
+      "partizip2": "verliebt",
+      "auxiliary": "haben"
+    },
+    "rektion": [{ "preposition": "in", "case": "Akk" }],
+    "meaningTr": "(birine) âşık olmak",
+    "hintTr": "fiil, dönüşlü + edat",
+    "cloze": "Sie hat [sich] im Urlaub [in] einen Spanier [verliebt].",
+    "clozeTr": "Tatilde bir İspanyol’a âşık oldu.",
+    "examples": [
+      {
+        "de": "Mein Freund Tom hat sich ganz plötzlich verliebt. Das hat mich überrascht.",
+        "tr": "Arkadaşım Tom birdenbire âşık oldu. Buna şaşırdım.",
+        "fromBook": true
+      },
+      {
+        "de": "Ich habe mich auf den ersten Blick in ihn verliebt.",
+        "tr": "Ona ilk görüşte âşık oldum.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": "Olay: sich in jemanden verlieben (âşık olmak). Durum: in jemanden verliebt sein (âşık olmak/olmuş olmak): Er ist in sie verliebt.",
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 20",
+    "tags": ["kapitel-1", "liebe"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "verloben-a2a3",
+    "type": "verb",
+    "lemma": "verloben",
+    "verb": {
+      "reflexive": "Akk",
+      "separablePrefix": null,
+      "praeteritum": "verlobte",
+      "partizip2": "verlobt",
+      "auxiliary": "haben"
+    },
+    "rektion": [{ "preposition": "mit", "case": "Dat" }],
+    "meaningTr": "(biriyle) nişanlanmak",
+    "hintTr": "fiil, dönüşlü + edat",
+    "cloze": "Nach drei Jahren Beziehung haben sie [sich] [verlobt].",
+    "clozeTr": "Üç yıllık ilişkiden sonra nişanlandılar.",
+    "examples": [
+      {
+        "de": "Meine Schwester hat sich mit ihrem Freund verlobt.",
+        "tr": "Kız kardeşim erkek arkadaşıyla nişanlandı.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": "verlobt sein = nişanlı olmak. der/die Verlobte = nişanlı (kişi), die Verlobung = nişan.",
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 20",
+    "tags": ["kapitel-1", "liebe"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "verheiratet-d6ff",
+    "type": "adjective",
+    "lemma": "verheiratet",
+    "adjective": { "comparative": null, "superlative": null },
+    "rektion": [{ "preposition": "mit", "case": "Dat" }],
+    "meaningTr": "evli",
+    "hintTr": "sıfat + edat (medeni hal)",
+    "cloze": "Seit wann bist du [mit] ihm [verheiratet]?",
+    "clozeTr": "Ne zamandan beri onunla evlisin?",
+    "examples": [
+      {
+        "de": "Sie sind seit 30 Jahren glücklich verheiratet.",
+        "tr": "30 yıldır mutlu bir evlilikleri var.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "heiraten = evlenmek (olay); verheiratet sein = evli olmak (durum).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 20",
+    "tags": ["kapitel-1", "liebe"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "zusammenleben-31ec",
+    "type": "verb",
+    "lemma": "zusammenleben",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": "zusammen",
+      "praeteritum": "lebte zusammen",
+      "partizip2": "zusammengelebt",
+      "auxiliary": "haben"
+    },
+    "rektion": [{ "preposition": "mit", "case": "Dat" }],
+    "meaningTr": "birlikte yaşamak",
+    "hintTr": "fiil, ayrılabilir",
+    "cloze": "Wir [leben] seit zwei Jahren [zusammen].",
+    "clozeTr": "İki yıldır birlikte yaşıyoruz.",
+    "examples": [
+      {
+        "de": "Bevor sie geheiratet haben, haben sie fünf Jahre zusammengelebt.",
+        "tr": "Evlenmeden önce beş yıl birlikte yaşadılar.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 20",
+    "tags": ["kapitel-1", "liebe"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "parallelklasse-c065",
+    "type": "noun",
+    "lemma": "Parallelklasse",
+    "noun": { "gender": "die", "plural": "-n" },
+    "rektion": [],
+    "meaningTr": "paralel sınıf, aynı seviyedeki diğer şube",
+    "hintTr": "isim, birleşik (okul)",
+    "cloze": "Mein bester Freund war in [der] [Parallelklasse].",
+    "clozeTr": "En yakın arkadaşım diğer şubedeydi.",
+    "examples": [
+      {
+        "de": "Die Parallelklasse schreibt den Test erst morgen.",
+        "tr": "Diğer şube sınava ancak yarın girecek.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 20",
+    "tags": ["kapitel-1", "liebe", "schule"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "single-24b4",
+    "type": "noun",
+    "lemma": "Single",
+    "noun": { "gender": "der", "plural": "-s" },
+    "rektion": [],
+    "meaningTr": "bekâr (kişi), ilişkisi olmayan",
+    "hintTr": "isim (İngilizceden)",
+    "cloze": "Nach der Trennung war er lange [Single].",
+    "clozeTr": "Ayrılıktan sonra uzun süre yalnızdı.",
+    "examples": [
+      {
+        "de": "Immer mehr Menschen in Großstädten leben als Single.",
+        "tr": "Büyük şehirlerde giderek daha fazla insan yalnız yaşıyor.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "ledig = resmî olarak hiç evlenmemiş; Single = şu an ilişkisi yok.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 20",
+    "tags": ["kapitel-1", "liebe"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "schliesslich-ee7c",
+    "type": "other",
+    "lemma": "schließlich",
+    "rektion": [],
+    "meaningTr": "sonunda; ne de olsa",
+    "hintTr": "zarf",
+    "cloze": "Nach langem Suchen hat er [schließlich] eine Wohnung gefunden.",
+    "clozeTr": "Uzun aramalardan sonra sonunda bir ev buldu.",
+    "examples": [
+      {
+        "de": "Hilf ihm doch, er ist schließlich dein Bruder.",
+        "tr": "Ona yardım etsene, ne de olsa o senin kardeşin.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "endlich = sabırsızlıkla beklenen „nihayet“; schließlich = bir sürecin sonunda.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 20",
+    "tags": ["kapitel-1", "liebe"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "ueberraschen-d907",
+    "type": "verb",
+    "lemma": "überraschen",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": null,
+      "praeteritum": "überraschte",
+      "partizip2": "überrascht",
+      "auxiliary": "haben"
+    },
+    "rektion": [],
+    "meaningTr": "şaşırtmak; sürpriz yapmak",
+    "hintTr": "fiil (ayrılmaz)",
+    "cloze": "Dein Besuch hat mich wirklich [überrascht].",
+    "clozeTr": "Ziyaretin beni gerçekten şaşırttı.",
+    "examples": [
+      {
+        "de": "Mein Freund Tom hat sich ganz plötzlich verliebt. Das hat mich überrascht.",
+        "tr": "Arkadaşım Tom birdenbire âşık oldu. Buna şaşırdım.",
+        "fromBook": true
+      },
+      {
+        "de": "Wir wollen sie zum Geburtstag mit einer Party überraschen.",
+        "tr": "Doğum gününde ona bir partiyle sürpriz yapmak istiyoruz.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "die Überraschung = sürpriz. überrascht sein (von + Dat) = şaşırmak.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 20",
+    "tags": ["kapitel-1", "liebe"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "wortbildung-b4a0",
+    "type": "noun",
+    "lemma": "Wortbildung",
+    "noun": { "gender": "die", "plural": "-en" },
+    "rektion": [],
+    "meaningTr": "kelime türetme",
+    "hintTr": "isim, birleşik (dil bilgisi)",
+    "cloze": "Mit [der] [Wortbildung] kann man aus einem Verb ein Nomen machen.",
+    "clozeTr": "Kelime türetmeyle bir fiilden isim yapılabilir.",
+    "examples": [
+      {
+        "de": "Wortbildung: Nachsilben bei Nomen",
+        "tr": "Kelime türetme: isimlerde son ekler",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 20",
+    "tags": ["kapitel-1", "wortbildung"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "nachsilbe-3458",
+    "type": "noun",
+    "lemma": "Nachsilbe",
+    "noun": { "gender": "die", "plural": "-n" },
+    "rektion": [],
+    "meaningTr": "son ek",
+    "hintTr": "isim (dil bilgisi)",
+    "cloze": "[Die] [Nachsilbe] -ung macht aus einem Verb ein Nomen.",
+    "clozeTr": "-ung son eki bir fiili isme çevirir.",
+    "examples": [
+      {
+        "de": "Nomen mit den gleichen Nachsilben haben meistens den gleichen Artikel.",
+        "tr": "Aynı son eki alan isimler genellikle aynı artikeli alır.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": "der: -er, -ist, -or (Lehrer, Realist, Direktor) · das: -nis (Bedürfnis) · die: -e, -keit, -heit, -ung, -ion, -schaft (Liebe, Dankbarkeit, Integration, Freundschaft). İstisnalar: die Erlaubnis, die Kenntnis, der Name, der Junge, das Ende.",
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 20",
+    "tags": ["kapitel-1", "wortbildung", "grammatik"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "bekanntschaft-e0bb",
+    "type": "noun",
+    "lemma": "Bekanntschaft",
+    "noun": { "gender": "die", "plural": "-en" },
+    "rektion": [],
+    "meaningTr": "tanışıklık; tanıdık",
+    "hintTr": "isim (-schaft)",
+    "cloze": "Im Urlaub habe ich [eine] nette [Bekanntschaft] gemacht.",
+    "clozeTr": "Tatilde hoş biriyle tanıştım.",
+    "examples": [
+      {
+        "de": "Er ist eine alte Bekanntschaft von mir.",
+        "tr": "O benim eski bir tanıdığım.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "Kalıp: jemandes Bekanntschaft machen = biriyle tanışmak.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 20",
+    "tags": ["kapitel-1", "wortbildung", "freundschaft"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "dankbarkeit-0b33",
+    "type": "noun",
+    "lemma": "Dankbarkeit",
+    "noun": { "gender": "die", "plural": null },
+    "rektion": [],
+    "meaningTr": "minnettarlık, şükran",
+    "hintTr": "isim (-keit)",
+    "cloze": "Ich möchte [meine] [Dankbarkeit] mit einem kleinen Geschenk zeigen.",
+    "clozeTr": "Minnettarlığımı küçük bir hediyeyle göstermek istiyorum.",
+    "examples": [
+      {
+        "de": "Aus Dankbarkeit hat sie ihm einen Kuchen gebacken.",
+        "tr": "Teşekkür olarak ona bir pasta yaptı.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": "dankbar (sıfat) + -keit → die Dankbarkeit.",
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 20",
+    "tags": ["kapitel-1", "wortbildung"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "integration-4e9d",
+    "type": "noun",
+    "lemma": "Integration",
+    "noun": { "gender": "die", "plural": "-en" },
+    "rektion": [],
+    "meaningTr": "entegrasyon, uyum",
+    "hintTr": "isim (-ion)",
+    "cloze": "Sprachkurse helfen bei [der] [Integration] in ein neues Land.",
+    "clozeTr": "Dil kursları yeni bir ülkeye uyum sağlamaya yardımcı olur.",
+    "examples": [
+      {
+        "de": "Die Integration in einem neuen Land braucht Zeit.",
+        "tr": "Yeni bir ülkeye uyum sağlamak zaman alır.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "Fiil: sich integrieren (uyum sağlamak).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 20",
+    "tags": ["kapitel-1", "wortbildung"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "beduerfnis-a7e0",
+    "type": "noun",
+    "lemma": "Bedürfnis",
+    "noun": { "gender": "das", "plural": "-se" },
+    "rektion": [{ "preposition": "nach", "case": "Dat" }],
+    "meaningTr": "ihtiyaç, gereksinim",
+    "hintTr": "isim + edat (-nis)",
+    "cloze": "Jeder Mensch hat [das] [Bedürfnis] [nach] Nähe.",
+    "clozeTr": "Her insanın yakınlık ihtiyacı vardır.",
+    "examples": [
+      {
+        "de": "Wir müssen auf die Bedürfnisse unserer Kunden achten.",
+        "tr": "Müşterilerimizin ihtiyaçlarına dikkat etmeliyiz.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 20",
+    "tags": ["kapitel-1", "wortbildung"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "realist-c792",
+    "type": "noun",
+    "lemma": "Realist",
+    "noun": { "gender": "der", "plural": "-en" },
+    "rektion": [],
+    "meaningTr": "gerçekçi (kişi)",
+    "hintTr": "isim (-ist)",
+    "cloze": "Ich bin [ein] [Realist], kein Träumer.",
+    "clozeTr": "Ben gerçekçi biriyim, hayalperest değil.",
+    "examples": [
+      {
+        "de": "Als Realist weiß er, dass das Projekt schwierig wird.",
+        "tr": "Gerçekçi biri olarak projenin zor olacağını biliyor.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": "n-Deklination: den/dem/des Realisten. Sıfat: realistisch.",
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 20",
+    "tags": ["kapitel-1", "wortbildung"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "freundschaft-b40a",
+    "type": "noun",
+    "lemma": "Freundschaft",
+    "noun": { "gender": "die", "plural": "-en" },
+    "rektion": [{ "preposition": "zu", "case": "Dat" }],
+    "meaningTr": "arkadaşlık, dostluk",
+    "hintTr": "isim (-schaft)",
+    "cloze": "[Die] [Freundschaft] zu ihr ist mir sehr wichtig.",
+    "clozeTr": "Onunla olan arkadaşlığım benim için çok önemli.",
+    "examples": [
+      {
+        "de": "Freundschaft, was bedeutet sie uns heute eigentlich noch?",
+        "tr": "Arkadaşlık bugün bizim için aslında hâlâ ne ifade ediyor?",
+        "fromBook": true
+      },
+      {
+        "de": "Unsere Freundschaft hat schon 20 Jahre gehalten.",
+        "tr": "Arkadaşlığımız 20 yıldır sürüyor.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 20",
+    "tags": ["kapitel-1", "wortbildung", "freundschaft"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "komiker-e990",
+    "type": "noun",
+    "lemma": "Komiker",
+    "noun": { "gender": "der", "plural": "-" },
+    "rektion": [],
+    "meaningTr": "komedyen",
+    "hintTr": "isim (-er)",
+    "cloze": "[Der] [Komiker] hat das ganze Publikum zum Lachen gebracht.",
+    "clozeTr": "Komedyen bütün seyircileri güldürdü.",
+    "examples": [
+      {
+        "de": "Er ist ein bekannter Komiker im Fernsehen.",
+        "tr": "Televizyonda tanınmış bir komedyen.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "Kadın: die Komikerin, -nen. komisch = komik / tuhaf.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 20",
+    "tags": ["kapitel-1", "wortbildung"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "ausdruck-20ae",
+    "type": "noun",
+    "lemma": "Ausdruck",
+    "noun": { "gender": "der", "plural": "¨-e" },
+    "rektion": [],
+    "meaningTr": "ifade, deyim",
+    "hintTr": "isim",
+    "cloze": "[Den] [Ausdruck] habe ich noch nie gehört.",
+    "clozeTr": "Bu ifadeyi hiç duymadım.",
+    "examples": [
+      {
+        "de": "Ich kann jetzt Ausdrücke zum Thema Freundschaft und Liebe verwenden.",
+        "tr": "Artık arkadaşlık ve aşk konusundaki ifadeleri kullanabilirim.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "Fiil: ausdrücken (ifade etmek).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 20",
+    "tags": ["kapitel-1", "wortbildung"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "verwenden-cdb4",
+    "type": "verb",
+    "lemma": "verwenden",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": null,
+      "praeteritum": "verwendete",
+      "partizip2": "verwendet",
+      "auxiliary": "haben"
+    },
+    "rektion": [],
+    "meaningTr": "kullanmak",
+    "hintTr": "fiil (ayrılmaz)",
+    "cloze": "Für den Kuchen [verwende] ich nur frische Eier.",
+    "clozeTr": "Pasta için sadece taze yumurta kullanırım.",
+    "examples": [
+      {
+        "de": "Ich kann jetzt Ausdrücke zum Thema Freundschaft und Liebe verwenden.",
+        "tr": "Artık arkadaşlık ve aşk konusundaki ifadeleri kullanabilirim.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "benutzen ile aynı anlam, biraz daha resmî. Eski formlar da var: verwandte – verwandt.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 20",
+    "tags": ["kapitel-1", "wortbildung"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "ueberlegen-d5a0",
+    "type": "verb",
+    "lemma": "überlegen",
+    "verb": {
+      "reflexive": "Dat",
+      "separablePrefix": null,
+      "praeteritum": "überlegte",
+      "partizip2": "überlegt",
+      "auxiliary": "haben"
+    },
+    "rektion": [],
+    "meaningTr": "düşünmek, düşünüp taşınmak",
+    "hintTr": "fiil (ayrılmaz), çoğu zaman dönüşlü (Dat)",
+    "cloze": "Ich muss [mir] das noch [überlegen].",
+    "clozeTr": "Bunu daha düşünmem lazım.",
+    "examples": [
+      {
+        "de": "Überlegen Sie kurz: Was kann man von seinen Freunden und Kollegen lernen?",
+        "tr": "Kısaca düşünün: İnsan arkadaşlarından ve iş arkadaşlarından ne öğrenebilir?",
+        "fromBook": true
+      },
+      {
+        "de": "Er hat es sich anders überlegt.",
+        "tr": "Fikrini değiştirdi.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": "Dönüşlü kullanım: sich (Dat) etwas überlegen → Ich überlege es mir. Ayrılmaz: überlegt (✗ übergelegt). Kalıp: es sich anders überlegen = fikrini değiştirmek.",
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 21",
+    "tags": ["kapitel-1", "praesentation"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "bereich-6f2e",
+    "type": "noun",
+    "lemma": "Bereich",
+    "noun": { "gender": "der", "plural": "-e" },
+    "rektion": [],
+    "meaningTr": "alan",
+    "hintTr": "isim",
+    "cloze": "In welchem [Bereich] möchten Sie später arbeiten?",
+    "clozeTr": "İleride hangi alanda çalışmak istiyorsunuz?",
+    "examples": [
+      {
+        "de": "Welche Situationen im privaten Bereich fallen Ihnen zu dem Foto ein?",
+        "tr": "Fotoğrafa bakınca özel hayattan hangi durumlar aklınıza geliyor?",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 21",
+    "tags": ["kapitel-1", "praesentation"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "einfallen-b396",
+    "type": "verb",
+    "lemma": "einfallen",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": "ein",
+      "praeteritum": "fiel ein",
+      "partizip2": "eingefallen",
+      "auxiliary": "sein"
+    },
+    "rektion": [{ "preposition": null, "case": "Dat" }],
+    "meaningTr": "aklına gelmek",
+    "hintTr": "fiil, ayrılabilir + Dat",
+    "cloze": "Mir [fällt] sein Name gerade nicht [ein].",
+    "clozeTr": "Şu an adı aklıma gelmiyor.",
+    "examples": [
+      {
+        "de": "Welche Situationen im privaten Bereich fallen Ihnen zu dem Foto ein?",
+        "tr": "Fotoğrafa bakınca özel hayattan hangi durumlar aklınıza geliyor?",
+        "fromBook": true
+      },
+      {
+        "de": "Dazu fällt mir nichts ein.",
+        "tr": "Bu konuda aklıma hiçbir şey gelmiyor.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": "Kişi Dativ, akla gelen şey özne: Mir fällt eine Idee ein. Perfekt sein ile: Mir ist nichts eingefallen.",
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 21",
+    "tags": ["kapitel-1", "praesentation"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "berufsleben-d788",
+    "type": "noun",
+    "lemma": "Berufsleben",
+    "noun": { "gender": "das", "plural": null },
+    "rektion": [],
+    "meaningTr": "iş hayatı",
+    "hintTr": "isim, birleşik",
+    "cloze": "Nach dem Studium beginnt [das] [Berufsleben].",
+    "clozeTr": "Üniversiteden sonra iş hayatı başlar.",
+    "examples": [
+      {
+        "de": "An welche Situationen im Berufsleben erinnert es Sie?",
+        "tr": "Size iş hayatından hangi durumları hatırlatıyor?",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 21",
+    "tags": ["kapitel-1", "praesentation", "arbeit"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "erinnern-27bf",
+    "type": "verb",
+    "lemma": "erinnern",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": null,
+      "praeteritum": "erinnerte",
+      "partizip2": "erinnert",
+      "auxiliary": "haben"
+    },
+    "rektion": [{ "preposition": "an", "case": "Akk" }],
+    "meaningTr": "(birine bir şeyi) hatırlatmak; sich erinnern: hatırlamak",
+    "hintTr": "fiil + edat",
+    "cloze": "Kannst du mich morgen bitte [an] den Termin [erinnern]?",
+    "clozeTr": "Yarın bana randevuyu hatırlatır mısın lütfen?",
+    "examples": [
+      {
+        "de": "An welche Situationen im Berufsleben erinnert es Sie?",
+        "tr": "Size iş hayatından hangi durumları hatırlatıyor?",
+        "fromBook": true
+      },
+      {
+        "de": "Ich erinnere mich gern an meine Schulzeit.",
+        "tr": "Okul yıllarımı severek hatırlarım.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": "jemanden an etwas (Akk) erinnern = hatırlatmak. sich an etwas (Akk) erinnern = hatırlamak: Erinnerst du dich an ihn?",
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 21",
+    "tags": ["kapitel-1", "praesentation"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "praesentation-eb50",
+    "type": "noun",
+    "lemma": "Präsentation",
+    "noun": { "gender": "die", "plural": "-en" },
+    "rektion": [],
+    "meaningTr": "sunum",
+    "hintTr": "isim",
+    "cloze": "Morgen muss ich [eine] [Präsentation] vor dem ganzen Team halten.",
+    "clozeTr": "Yarın bütün ekibin önünde bir sunum yapmam gerekiyor.",
+    "examples": [
+      {
+        "de": "Bereiten Sie eine Präsentation in drei Schritten vor.",
+        "tr": "Üç adımda bir sunum hazırlayın.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "Kalıp: eine Präsentation halten (einen Vortrag halten gibi).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 21",
+    "tags": ["kapitel-1", "praesentation"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "schritt-48dd",
+    "type": "noun",
+    "lemma": "Schritt",
+    "noun": { "gender": "der", "plural": "-e" },
+    "rektion": [],
+    "meaningTr": "adım",
+    "hintTr": "isim",
+    "cloze": "Das war [ein] wichtiger [Schritt] in die richtige Richtung.",
+    "clozeTr": "Bu, doğru yönde atılmış önemli bir adımdı.",
+    "examples": [
+      {
+        "de": "Bereiten Sie eine Präsentation in drei Schritten vor.",
+        "tr": "Üç adımda bir sunum hazırlayın.",
+        "fromBook": true
+      },
+      {
+        "de": "Wir gehen das Schritt für Schritt durch.",
+        "tr": "Bunu adım adım ele alalım.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 21",
+    "tags": ["kapitel-1", "praesentation"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "handlung-f848",
+    "type": "noun",
+    "lemma": "Handlung",
+    "noun": { "gender": "die", "plural": "-en" },
+    "rektion": [],
+    "meaningTr": "(film/kitapta) konu, olay örgüsü; eylem",
+    "hintTr": "isim",
+    "cloze": "[Die] [Handlung] des Films spielt im Berlin der 20er-Jahre.",
+    "clozeTr": "Filmin konusu 1920’lerin Berlin’inde geçiyor.",
+    "examples": [
+      {
+        "de": "einen Film, den Sie gesehen haben (Handlung, Schauspieler, Ihre Meinung etc.)",
+        "tr": "izlediğiniz bir film (konusu, oyuncular, fikriniz vb.)",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 21",
+    "tags": ["kapitel-1", "praesentation", "film"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "schauspieler-1ac0",
+    "type": "noun",
+    "lemma": "Schauspieler",
+    "noun": { "gender": "der", "plural": "-" },
+    "rektion": [],
+    "meaningTr": "oyuncu, aktör",
+    "hintTr": "isim",
+    "cloze": "[Der] [Schauspieler] hat für die Rolle einen Preis bekommen.",
+    "clozeTr": "Oyuncu bu rolle bir ödül aldı.",
+    "examples": [
+      {
+        "de": "Sie möchte später Schauspielerin werden.",
+        "tr": "İleride oyuncu olmak istiyor.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "Kadın: die Schauspielerin, -nen.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 21",
+    "tags": ["kapitel-1", "praesentation", "film"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "veranstaltung-a35f",
+    "type": "noun",
+    "lemma": "Veranstaltung",
+    "noun": { "gender": "die", "plural": "-en" },
+    "rektion": [],
+    "meaningTr": "etkinlik, organizasyon",
+    "hintTr": "isim",
+    "cloze": "Wo findet [die] [Veranstaltung] statt?",
+    "clozeTr": "Etkinlik nerede yapılıyor?",
+    "examples": [
+      {
+        "de": "eine Musikveranstaltung, die Sie besucht haben (Musikrichtung, Musiker, Ort etc.)",
+        "tr": "gittiğiniz bir müzik etkinliği (müzik türü, müzisyen, yer vb.)",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "Birleşik: die Musikveranstaltung. Fiil: veranstalten (düzenlemek).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 21",
+    "tags": ["kapitel-1", "praesentation"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "musikrichtung-175a",
+    "type": "noun",
+    "lemma": "Musikrichtung",
+    "noun": { "gender": "die", "plural": "-en" },
+    "rektion": [],
+    "meaningTr": "müzik türü",
+    "hintTr": "isim, birleşik",
+    "cloze": "Welche [Musikrichtung] hörst du am liebsten?",
+    "clozeTr": "En çok hangi müzik türünü dinliyorsun?",
+    "examples": [
+      {
+        "de": "Jazz ist nicht so meine Musikrichtung.",
+        "tr": "Caz pek benim tarzım değil.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 21",
+    "tags": ["kapitel-1", "praesentation"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "ereignis-db97",
+    "type": "noun",
+    "lemma": "Ereignis",
+    "noun": { "gender": "das", "plural": "-se" },
+    "rektion": [],
+    "meaningTr": "olay",
+    "hintTr": "isim (-nis)",
+    "cloze": "Die Hochzeit war [ein] großes [Ereignis] für die ganze Familie.",
+    "clozeTr": "Düğün bütün aile için büyük bir olaydı.",
+    "examples": [
+      {
+        "de": "ein Sportereignis, das Sie besucht haben (Sportart, Ort, Personen, Ergebnis etc.)",
+        "tr": "izlediğiniz bir spor etkinliği (spor dalı, yer, kişiler, sonuç vb.)",
+        "fromBook": true
+      },
+      {
+        "de": "Grüße von einer Reise, Ereignis in der Familie …",
+        "tr": "Bir seyahatten selamlar, ailede bir olay …",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "das Erlebnis = kişinin yaşadığı olay; das Ereignis = (genel, önemli) olay.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 21",
+    "tags": ["kapitel-1", "praesentation"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "sportart-9836",
+    "type": "noun",
+    "lemma": "Sportart",
+    "noun": { "gender": "die", "plural": "-en" },
+    "rektion": [],
+    "meaningTr": "spor dalı",
+    "hintTr": "isim, birleşik",
+    "cloze": "Fußball ist in Deutschland [die] beliebteste [Sportart].",
+    "clozeTr": "Futbol Almanya’daki en popüler spor dalı.",
+    "examples": [
+      {
+        "de": "Welche Sportarten machst du?",
+        "tr": "Hangi sporları yapıyorsun?",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 21",
+    "tags": ["kapitel-1", "praesentation", "sport"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "material-5b4a",
+    "type": "noun",
+    "lemma": "Material",
+    "noun": { "gender": "das", "plural": "-ien" },
+    "rektion": [],
+    "meaningTr": "malzeme, materyal",
+    "hintTr": "isim",
+    "cloze": "Aus welchem [Material] ist die Tasche?",
+    "clozeTr": "Çanta hangi malzemeden?",
+    "examples": [
+      {
+        "de": "Sammeln Sie zunächst Material, zum Beispiel Titel, Handlung oder Inhalt.",
+        "tr": "Önce materyal toplayın, örneğin başlık, konu ya da içerik.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": "Çoğul: die Materialien.",
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 21",
+    "tags": ["kapitel-1", "praesentation"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "zunaechst-5070",
+    "type": "other",
+    "lemma": "zunächst",
+    "rektion": [],
+    "meaningTr": "önce, ilk olarak",
+    "hintTr": "zarf",
+    "cloze": "[Zunächst] möchte ich mich kurz vorstellen.",
+    "clozeTr": "Önce kısaca kendimi tanıtmak istiyorum.",
+    "examples": [
+      {
+        "de": "Sammeln Sie zunächst Material, zum Beispiel Titel, Handlung oder Inhalt.",
+        "tr": "Önce materyal toplayın, örneğin başlık, konu ya da içerik.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "zuerst ile aynı anlam, biraz daha yazı dili.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 21",
+    "tags": ["kapitel-1", "praesentation"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "sinnvoll-c775",
+    "type": "adjective",
+    "lemma": "sinnvoll",
+    "adjective": { "comparative": null, "superlative": null },
+    "rektion": [],
+    "meaningTr": "mantıklı, anlamlı",
+    "hintTr": "sıfat",
+    "cloze": "Es ist nicht [sinnvoll], jetzt noch länger zu warten.",
+    "clozeTr": "Şimdi daha fazla beklemek mantıklı değil.",
+    "examples": [
+      {
+        "de": "Bringen Sie das Material anschließend in eine sinnvolle Reihenfolge.",
+        "tr": "Ardından materyali mantıklı bir sıraya koyun.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": "der Sinn + -voll. Zıttı: sinnlos (anlamsız).",
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 21",
+    "tags": ["kapitel-1", "praesentation"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "folie-db6c",
+    "type": "noun",
+    "lemma": "Folie",
+    "noun": { "gender": "die", "plural": "-n" },
+    "rektion": [],
+    "meaningTr": "(sunum) slayt; folyo",
+    "hintTr": "isim",
+    "cloze": "Auf [der] nächsten [Folie] sehen Sie die Ergebnisse.",
+    "clozeTr": "Bir sonraki slaytta sonuçları görüyorsunuz.",
+    "examples": [
+      {
+        "de": "Legen Sie dann Präsentationsfolien an.",
+        "tr": "Sonra sunum slaytlarını oluşturun.",
+        "fromBook": true
+      },
+      {
+        "de": "eine Folie mit dem Titel Ihrer Präsentation",
+        "tr": "sunumunuzun başlığının olduğu bir slayt",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "Birleşik: die Präsentationsfolie, -n.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 21",
+    "tags": ["kapitel-1", "praesentation"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "anlegen-fc9a",
+    "type": "verb",
+    "lemma": "anlegen",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": "an",
+      "praeteritum": "legte an",
+      "partizip2": "angelegt",
+      "auxiliary": "haben"
+    },
+    "rektion": [],
+    "meaningTr": "oluşturmak (dosya, liste)",
+    "hintTr": "fiil, ayrılabilir",
+    "cloze": "[Legen] Sie bitte für jedes Projekt eine neue Datei [an].",
+    "clozeTr": "Lütfen her proje için yeni bir dosya oluşturun.",
+    "examples": [
+      {
+        "de": "Legen Sie dann Präsentationsfolien an.",
+        "tr": "Sonra sunum slaytlarını oluşturun.",
+        "fromBook": true
+      },
+      {
+        "de": "Ich habe eine Liste mit allen Adressen angelegt.",
+        "tr": "Bütün adreslerle bir liste oluşturdum.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 21",
+    "tags": ["kapitel-1", "praesentation"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "inhaltsverzeichnis-dbce",
+    "type": "noun",
+    "lemma": "Inhaltsverzeichnis",
+    "noun": { "gender": "das", "plural": "-se" },
+    "rektion": [],
+    "meaningTr": "içindekiler (listesi)",
+    "hintTr": "isim, birleşik",
+    "cloze": "[Das] [Inhaltsverzeichnis] steht am Anfang des Buches.",
+    "clozeTr": "İçindekiler kitabın başında yer alır.",
+    "examples": [
+      {
+        "de": "ein Inhaltsverzeichnis mit den wichtigsten Punkten",
+        "tr": "en önemli noktaları içeren bir içindekiler listesi",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 21",
+    "tags": ["kapitel-1", "praesentation"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "abschlussfolie-7d80",
+    "type": "noun",
+    "lemma": "Abschlussfolie",
+    "noun": { "gender": "die", "plural": "-n" },
+    "rektion": [],
+    "meaningTr": "kapanış slaytı",
+    "hintTr": "isim, birleşik",
+    "cloze": "Auf [der] [Abschlussfolie] stehen meine Kontaktdaten.",
+    "clozeTr": "Kapanış slaytında iletişim bilgilerim yer alıyor.",
+    "examples": [
+      {
+        "de": "eine Abschlussfolie mit einem Dank und Ihrer Kontaktadresse",
+        "tr": "teşekkür ve iletişim adresinizin yer aldığı bir kapanış slaytı",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "der Abschluss = bitiş, kapanış.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 21",
+    "tags": ["kapitel-1", "praesentation"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "ausarbeiten-ad59",
+    "type": "verb",
+    "lemma": "ausarbeiten",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": "aus",
+      "praeteritum": "arbeitete aus",
+      "partizip2": "ausgearbeitet",
+      "auxiliary": "haben"
+    },
+    "rektion": [],
+    "meaningTr": "ayrıntılı hazırlamak, geliştirmek",
+    "hintTr": "fiil, ayrılabilir",
+    "cloze": "Bis Freitag muss ich den Vortrag noch [ausarbeiten].",
+    "clozeTr": "Cumaya kadar sunumu ayrıntılı hazırlamam gerekiyor.",
+    "examples": [
+      {
+        "de": "Arbeiten Sie die Folien aus.",
+        "tr": "Slaytları ayrıntılı şekilde hazırlayın.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 21",
+    "tags": ["kapitel-1", "praesentation"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "gestalten-7ca3",
+    "type": "verb",
+    "lemma": "gestalten",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": null,
+      "praeteritum": "gestaltete",
+      "partizip2": "gestaltet",
+      "auxiliary": "haben"
+    },
+    "rektion": [],
+    "meaningTr": "tasarlamak, düzenlemek, şekillendirmek",
+    "hintTr": "fiil",
+    "cloze": "Die Kinder haben die Wand im Klassenzimmer selbst [gestaltet].",
+    "clozeTr": "Çocuklar sınıftaki duvarı kendileri süsledi.",
+    "examples": [
+      {
+        "de": "Gestalten Sie die Folien übersichtlich.",
+        "tr": "Slaytları anlaşılır bir şekilde düzenleyin.",
+        "fromBook": true
+      },
+      {
+        "de": "Gestalten Sie Ihre Karte so, dass sie zum Adressaten passt.",
+        "tr": "Kartınızı alıcısına uygun olacak şekilde tasarlayın.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 21",
+    "tags": ["kapitel-1", "praesentation"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "uebersichtlich-d49a",
+    "type": "adjective",
+    "lemma": "übersichtlich",
+    "adjective": { "comparative": null, "superlative": null },
+    "rektion": [],
+    "meaningTr": "derli toplu, anlaşılır",
+    "hintTr": "sıfat",
+    "cloze": "Die Tabelle ist sehr [übersichtlich], man findet alles sofort.",
+    "clozeTr": "Tablo çok derli toplu, her şey hemen bulunuyor.",
+    "examples": [
+      {
+        "de": "Gestalten Sie die Folien übersichtlich.",
+        "tr": "Slaytları anlaşılır bir şekilde düzenleyin.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "die Übersicht = genel bakış, özet.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 21",
+    "tags": ["kapitel-1", "praesentation"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "stichwort-2760",
+    "type": "noun",
+    "lemma": "Stichwort",
+    "noun": { "gender": "das", "plural": "¨-er" },
+    "rektion": [],
+    "meaningTr": "anahtar kelime, not (kısa)",
+    "hintTr": "isim, birleşik",
+    "cloze": "Schreib dir [die] wichtigsten [Stichwörter] auf eine Karteikarte.",
+    "clozeTr": "En önemli anahtar kelimeleri bir not kartına yaz.",
+    "examples": [
+      {
+        "de": "Schreiben Sie auf jede Folie nur wenige Stichwörter.",
+        "tr": "Her slayta sadece birkaç anahtar kelime yazın.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "Çoğul: Stichwörter (sözlük maddeleri, notlar) ya da Stichworte (notlar); ikisi de kullanılır.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 21",
+    "tags": ["kapitel-1", "praesentation"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "einfuegen-322c",
+    "type": "verb",
+    "lemma": "einfügen",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": "ein",
+      "praeteritum": "fügte ein",
+      "partizip2": "eingefügt",
+      "auxiliary": "haben"
+    },
+    "rektion": [],
+    "meaningTr": "(araya, içine) eklemek",
+    "hintTr": "fiil, ayrılabilir",
+    "cloze": "Kannst du hier noch ein Foto [einfügen]?",
+    "clozeTr": "Buraya bir fotoğraf daha ekleyebilir misin?",
+    "examples": [
+      {
+        "de": "Fügen Sie passende Bilder ein, wenn Sie möchten.",
+        "tr": "İsterseniz uygun resimler ekleyin.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "hinzufügen = genel olarak eklemek; einfügen = araya/içine yerleştirmek (kopieren und einfügen = kopyala-yapıştır).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 21",
+    "tags": ["kapitel-1", "praesentation"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "passend-997e",
+    "type": "adjective",
+    "lemma": "passend",
+    "adjective": { "comparative": null, "superlative": null },
+    "rektion": [],
+    "meaningTr": "uygun",
+    "hintTr": "sıfat",
+    "cloze": "Ich suche noch [passende] Schuhe zu dem Kleid.",
+    "clozeTr": "Elbiseye uygun ayakkabı arıyorum.",
+    "examples": [
+      {
+        "de": "Fügen Sie passende Bilder ein, wenn Sie möchten.",
+        "tr": "İsterseniz uygun resimler ekleyin.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "Fiil: passen zu + Dat (uymak).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 21",
+    "tags": ["kapitel-1", "praesentation"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "redemittel-7d0a",
+    "type": "noun",
+    "lemma": "Redemittel",
+    "noun": { "gender": "das", "plural": "-" },
+    "rektion": [],
+    "meaningTr": "kalıp ifade, konuşma kalıbı",
+    "hintTr": "isim, birleşik",
+    "cloze": "[Die] [Redemittel] im Kasten helfen Ihnen beim Sprechen.",
+    "clozeTr": "Kutudaki kalıp ifadeler konuşmanıza yardımcı olur.",
+    "examples": [
+      {
+        "de": "Halten Sie Ihre Präsentation mithilfe der Redemittel im Kurs.",
+        "tr": "Sunumunuzu kalıp ifadelerin yardımıyla kursta yapın.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 21",
+    "tags": ["kapitel-1", "praesentation"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "zuhoerer-1c16",
+    "type": "noun",
+    "lemma": "Zuhörer",
+    "noun": { "gender": "der", "plural": "-" },
+    "rektion": [],
+    "meaningTr": "dinleyici",
+    "hintTr": "isim",
+    "cloze": "[Die] [Zuhörer] haben am Ende lange geklatscht.",
+    "clozeTr": "Dinleyiciler sonunda uzun süre alkışladı.",
+    "examples": [
+      {
+        "de": "Die Zuhörer geben Feedback und fragen nach.",
+        "tr": "Dinleyiciler geri bildirim verir ve sorular sorar.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "Kadın: die Zuhörerin, -nen. Fiil: zuhören + Dat. Radyo dinleyicisi: der Hörer.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 21",
+    "tags": ["kapitel-1", "praesentation"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "nachfragen-84ab",
+    "type": "verb",
+    "lemma": "nachfragen",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": "nach",
+      "praeteritum": "fragte nach",
+      "partizip2": "nachgefragt",
+      "auxiliary": "haben"
+    },
+    "rektion": [],
+    "meaningTr": "(ayrıntı için) sormak, tekrar sormak",
+    "hintTr": "fiil, ayrılabilir",
+    "cloze": "Wenn du etwas nicht verstehst, [frag] einfach [nach].",
+    "clozeTr": "Bir şey anlamazsan sorman yeterli.",
+    "examples": [
+      {
+        "de": "Die Zuhörer geben Feedback und fragen nach.",
+        "tr": "Dinleyiciler geri bildirim verir ve sorular sorar.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "die Nachfrage = soru; ekonomide: talep.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 21",
+    "tags": ["kapitel-1", "praesentation"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "einleiten-8f13",
+    "type": "verb",
+    "lemma": "einleiten",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": "ein",
+      "praeteritum": "leitete ein",
+      "partizip2": "eingeleitet",
+      "auxiliary": "haben"
+    },
+    "rektion": [],
+    "meaningTr": "(konuşmaya) giriş yapmak, başlatmak",
+    "hintTr": "fiil, ayrılabilir",
+    "cloze": "Sie hat ihren Vortrag mit einer kurzen Geschichte [eingeleitet].",
+    "clozeTr": "Sunumuna kısa bir hikâyeyle giriş yaptı.",
+    "examples": [
+      {
+        "de": "die Präsentation einleiten",
+        "tr": "sunuma giriş yapmak",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "İsim: die Einleitung (giriş).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 21",
+    "tags": ["kapitel-1", "praesentation"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "abschliessen-c53d",
+    "type": "verb",
+    "lemma": "abschließen",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": "ab",
+      "praeteritum": "schloss ab",
+      "partizip2": "abgeschlossen",
+      "auxiliary": "haben"
+    },
+    "rektion": [],
+    "meaningTr": "bitirmek, sonuçlandırmak; kilitlemek",
+    "hintTr": "fiil, ayrılabilir",
+    "cloze": "Ich möchte meine Präsentation mit einem Zitat [abschließen].",
+    "clozeTr": "Sunumumu bir alıntıyla bitirmek istiyorum.",
+    "examples": [
+      {
+        "de": "die Präsentation abschließen",
+        "tr": "sunumu bitirmek",
+        "fromBook": true
+      },
+      {
+        "de": "Hast du die Tür abgeschlossen?",
+        "tr": "Kapıyı kilitledin mi?",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "der Abschluss = bitiş; diploma (Schulabschluss). Düzensiz: schloss ab – abgeschlossen.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 21",
+    "tags": ["kapitel-1", "praesentation"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "entscheiden-bb52",
+    "type": "verb",
+    "lemma": "entscheiden",
+    "verb": {
+      "reflexive": "Akk",
+      "separablePrefix": null,
+      "praeteritum": "entschied",
+      "partizip2": "entschieden",
+      "auxiliary": "haben"
+    },
+    "rektion": [
+      { "preposition": "für", "case": "Akk" },
+      { "preposition": "gegen", "case": "Akk" }
+    ],
+    "meaningTr": "karar vermek; (bir şeyi) seçmek",
+    "hintTr": "fiil, dönüşlü + edat",
+    "cloze": "Ich habe [mich] [für] das blaue Kleid [entschieden].",
+    "clozeTr": "Mavi elbisede karar kıldım.",
+    "examples": [
+      {
+        "de": "Ich habe mich für dieses Buch entschieden, weil es mich sehr bewegt hat.",
+        "tr": "Bu kitabı seçtim, çünkü beni çok etkiledi.",
+        "fromBook": false
+      },
+      {
+        "de": "Wir haben uns gegen den Umzug entschieden.",
+        "tr": "Taşınmamaya karar verdik.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": "Düzensiz: entscheidet – entschied – entschieden. sich für/gegen etwas (Akk) entscheiden. İsim: die Entscheidung.",
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 21",
+    "tags": ["kapitel-1", "praesentation"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "auswaehlen-cf9d",
+    "type": "verb",
+    "lemma": "auswählen",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": "aus",
+      "praeteritum": "wählte aus",
+      "partizip2": "ausgewählt",
+      "auxiliary": "haben"
+    },
+    "rektion": [],
+    "meaningTr": "seçmek",
+    "hintTr": "fiil, ayrılabilir",
+    "cloze": "Bitte [wählen] Sie ein Thema für Ihren Vortrag [aus].",
+    "clozeTr": "Lütfen sunumunuz için bir konu seçin.",
+    "examples": [
+      {
+        "de": "Ich habe dieses Thema ausgewählt, weil es mich sehr interessiert.",
+        "tr": "Bu konuyu seçtim, çünkü beni çok ilgilendiriyor.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "die Auswahl = seçim, seçenekler.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 21",
+    "tags": ["kapitel-1", "praesentation"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "das-besondere-an-ist-554f",
+    "type": "expression",
+    "lemma": "Das Besondere an … ist …",
+    "rektion": [],
+    "meaningTr": "…’in en özel yanı …",
+    "hintTr": "kalıp (sunum)",
+    "cloze": "[Das] [Besondere] [an] diesem Film ist die Musik.",
+    "clozeTr": "Bu filmin en özel yanı müziği.",
+    "examples": [
+      {
+        "de": "Das Besondere an der Stadt ist ihre Lage am Meer.",
+        "tr": "Şehrin en özel yanı deniz kenarındaki konumu.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": "Besondere sıfattan isim: das Besondere, etwas Besonderes (özel bir şey).",
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 21",
+    "tags": ["kapitel-1", "praesentation"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "empfehlung-6a84",
+    "type": "noun",
+    "lemma": "Empfehlung",
+    "noun": { "gender": "die", "plural": "-en" },
+    "rektion": [],
+    "meaningTr": "tavsiye, öneri",
+    "hintTr": "isim",
+    "cloze": "Das Restaurant war [eine] tolle [Empfehlung] von dir.",
+    "clozeTr": "O restoran senin harika bir tavsiyendi.",
+    "examples": [
+      {
+        "de": "Auf Empfehlung meines Arztes mache ich jetzt mehr Sport.",
+        "tr": "Doktorumun tavsiyesi üzerine artık daha fazla spor yapıyorum.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "Fiil: empfehlen (empfahl – empfohlen).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 21",
+    "tags": ["kapitel-1", "praesentation"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "uebergang-8dba",
+    "type": "noun",
+    "lemma": "Übergang",
+    "noun": { "gender": "der", "plural": "¨-e" },
+    "rektion": [],
+    "meaningTr": "geçiş",
+    "hintTr": "isim",
+    "cloze": "[Der] [Übergang] zum nächsten Thema war etwas holprig.",
+    "clozeTr": "Bir sonraki konuya geçiş biraz aksak oldu.",
+    "examples": [
+      {
+        "de": "Übergänge formulieren",
+        "tr": "geçiş cümleleri kurmak",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 21",
+    "tags": ["kapitel-1", "praesentation"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "formulieren-fd3e",
+    "type": "verb",
+    "lemma": "formulieren",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": null,
+      "praeteritum": "formulierte",
+      "partizip2": "formuliert",
+      "auxiliary": "haben"
+    },
+    "rektion": [],
+    "meaningTr": "ifade etmek, (cümle) kurmak",
+    "hintTr": "fiil",
+    "cloze": "Kannst du die Frage bitte anders [formulieren]?",
+    "clozeTr": "Soruyu lütfen başka şekilde sorabilir misin?",
+    "examples": [
+      {
+        "de": "Übergänge formulieren",
+        "tr": "geçiş cümleleri kurmak",
+        "fromBook": true
+      },
+      {
+        "de": "Er formuliert seine Gedanken immer sehr klar.",
+        "tr": "Düşüncelerini her zaman çok net ifade eder.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 21",
+    "tags": ["kapitel-1", "praesentation"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "erwaehnen-186f",
+    "type": "verb",
+    "lemma": "erwähnen",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": null,
+      "praeteritum": "erwähnte",
+      "partizip2": "erwähnt",
+      "auxiliary": "haben"
+    },
+    "rektion": [{ "preposition": null, "case": "Akk" }],
+    "meaningTr": "bahsetmek, değinmek",
+    "hintTr": "fiil (+ Akk, edatsız)",
+    "cloze": "Seine neue Freundin hat er mit keinem Wort [erwähnt].",
+    "clozeTr": "Yeni kız arkadaşından hiç bahsetmedi.",
+    "examples": [
+      {
+        "de": "Wichtig ist hier noch zu erwähnen, dass …",
+        "tr": "Burada şunu da belirtmek önemli: …",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "Edat almaz: etwas erwähnen (✗ über etwas erwähnen).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 21",
+    "tags": ["kapitel-1", "praesentation"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "darueber-hinaus-35a1",
+    "type": "other",
+    "lemma": "darüber hinaus",
+    "rektion": [],
+    "meaningTr": "bunun ötesinde, ayrıca",
+    "hintTr": "bağlayıcı zarf (resmî)",
+    "cloze": "Das Hotel ist günstig. [Darüber] [hinaus] liegt es direkt am Strand.",
+    "clozeTr": "Otel uygun fiyatlı. Bunun yanında doğrudan plajın üzerinde.",
+    "examples": [
+      {
+        "de": "Er spricht Englisch und darüber hinaus auch etwas Japanisch.",
+        "tr": "İngilizce konuşuyor, bunun yanında biraz da Japonca biliyor.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": "Cümle başındaysa Position 1 sayılır, fiil hemen arkasından gelir: Darüber hinaus LIEGT es …",
+    "note": "außerdem ile aynı anlam, daha resmî.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 21",
+    "tags": ["kapitel-1", "praesentation"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "nicht-zuletzt-b7d5",
+    "type": "other",
+    "lemma": "nicht zuletzt",
+    "rektion": [],
+    "meaningTr": "özellikle de; son ama önemli olarak",
+    "hintTr": "zarf kalıbı",
+    "cloze": "Ich danke meiner Familie und [nicht] [zuletzt] meinen Freunden.",
+    "clozeTr": "Aileme ve tabii ki de arkadaşlarıma teşekkür ediyorum.",
+    "examples": [
+      {
+        "de": "Viele Rentner ziehen nicht zuletzt wegen des Wetters nach Spanien.",
+        "tr": "Birçok emekli, özellikle de hava yüzünden İspanya’ya taşınıyor.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 21",
+    "tags": ["kapitel-1", "praesentation"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "einblick-656f",
+    "type": "noun",
+    "lemma": "Einblick",
+    "noun": { "gender": "der", "plural": "-e" },
+    "rektion": [{ "preposition": "in", "case": "Akk" }],
+    "meaningTr": "(bir konuya) fikir, bakış, içgörü",
+    "hintTr": "isim + edat",
+    "cloze": "Das Praktikum hat mir [einen] guten [Einblick] [in] den Beruf gegeben.",
+    "clozeTr": "Staj bana meslek hakkında iyi bir fikir verdi.",
+    "examples": [
+      {
+        "de": "Ich hoffe, ich konnte Ihnen ein paar spannende Einblicke geben.",
+        "tr": "Umarım size konuya dair birkaç ilgi çekici fikir verebilmişimdir.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 21",
+    "tags": ["kapitel-1", "praesentation"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "aufmerksamkeit-2738",
+    "type": "noun",
+    "lemma": "Aufmerksamkeit",
+    "noun": { "gender": "die", "plural": "-en" },
+    "rektion": [],
+    "meaningTr": "dikkat, ilgi",
+    "hintTr": "isim",
+    "cloze": "Vielen Dank für [Ihre] [Aufmerksamkeit]!",
+    "clozeTr": "İlginiz için çok teşekkürler!",
+    "examples": [
+      {
+        "de": "Ich danke Ihnen für die Aufmerksamkeit.",
+        "tr": "Dinlediğiniz için teşekkür ederim.",
+        "fromBook": true
+      },
+      {
+        "de": "Kleine Kinder brauchen viel Aufmerksamkeit.",
+        "tr": "Küçük çocukların çok ilgiye ihtiyacı var.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "aufmerksam = dikkatli, düşünceli.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 21",
+    "tags": ["kapitel-1", "praesentation"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "wie-haben-sie-das-gemeint-8e5b",
+    "type": "expression",
+    "lemma": "Wie haben Sie das gemeint?",
+    "rektion": [],
+    "meaningTr": "Bununla ne demek istediniz?",
+    "hintTr": "kalıp (geri soru)",
+    "cloze": "Das verstehe ich nicht ganz. [Wie] hast du das [gemeint]?",
+    "clozeTr": "Bunu tam anlamadım. Ne demek istedin?",
+    "examples": [
+      {
+        "de": "Wie haben Sie das gemeint: „Freunde sind Lebenszeugen“?",
+        "tr": "„Arkadaşlar hayatın tanıklarıdır“ derken ne demek istediniz?",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "Samimi: Wie hast du das gemeint? / Was meinst du damit?",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 21",
+    "tags": ["kapitel-1", "praesentation"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "vorderseite-fee5",
+    "type": "noun",
+    "lemma": "Vorderseite",
+    "noun": { "gender": "die", "plural": "-n" },
+    "rektion": [],
+    "meaningTr": "ön yüz",
+    "hintTr": "isim, birleşik",
+    "cloze": "Auf [der] [Vorderseite] der Karte ist ein Foto vom Meer.",
+    "clozeTr": "Kartın ön yüzünde denizin bir fotoğrafı var.",
+    "examples": [
+      {
+        "de": "Sprechen Sie über das Bildmotiv auf der Vorderseite und den Text auf der Rückseite.",
+        "tr": "Ön yüzdeki resim ve arka yüzdeki yazı hakkında konuşun.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "Zıttı: die Rückseite (arka yüz).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 22",
+    "tags": ["kapitel-1", "schreiben"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "grusskarte-1d95",
+    "type": "noun",
+    "lemma": "Grußkarte",
+    "noun": { "gender": "die", "plural": "-n" },
+    "rektion": [],
+    "meaningTr": "tebrik kartı",
+    "hintTr": "isim, birleşik",
+    "cloze": "Zum Geburtstag hat sie mir [eine] schöne [Grußkarte] geschickt.",
+    "clozeTr": "Doğum günümde bana güzel bir tebrik kartı gönderdi.",
+    "examples": [
+      {
+        "de": "Welche Elemente gehören unbedingt zu einer Grußkarte?",
+        "tr": "Bir tebrik kartında mutlaka hangi öğeler olmalı?",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 22",
+    "tags": ["kapitel-1", "schreiben"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "gelegenheit-1bd2",
+    "type": "noun",
+    "lemma": "Gelegenheit",
+    "noun": { "gender": "die", "plural": "-en" },
+    "rektion": [],
+    "meaningTr": "fırsat; vesile",
+    "hintTr": "isim",
+    "cloze": "Bei [der] nächsten [Gelegenheit] rufe ich ihn an.",
+    "clozeTr": "İlk fırsatta onu arayacağım.",
+    "examples": [
+      {
+        "de": "Zu welchen Gelegenheiten wurden diese Karten geschrieben?",
+        "tr": "Bu kartlar hangi vesilelerle yazıldı?",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 22",
+    "tags": ["kapitel-1", "schreiben"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "jahreszeitlich-d241",
+    "type": "adjective",
+    "lemma": "jahreszeitlich",
+    "adjective": { "comparative": null, "superlative": null },
+    "rektion": [],
+    "meaningTr": "mevsimsel, mevsimlik",
+    "hintTr": "sıfat",
+    "cloze": "Das Restaurant bietet [jahreszeitliche] Gerichte an.",
+    "clozeTr": "Restoran mevsimlik yemekler sunuyor.",
+    "examples": [
+      {
+        "de": "ein jahreszeitliches Fest",
+        "tr": "mevsimsel bir bayram",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "die Jahreszeit = mevsim.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 22",
+    "tags": ["kapitel-1", "schreiben"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "gruss-cca5",
+    "type": "noun",
+    "lemma": "Gruß",
+    "noun": { "gender": "der", "plural": "¨-e" },
+    "rektion": [],
+    "meaningTr": "selam",
+    "hintTr": "isim",
+    "cloze": "Schöne [Grüße] an deine Eltern!",
+    "clozeTr": "Annenle babana selamlar!",
+    "examples": [
+      {
+        "de": "Grüße von einer Reise",
+        "tr": "Bir seyahatten selamlar",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "Mektup sonu: Viele Grüße / Liebe Grüße (samimi), Mit freundlichen Grüßen (resmî).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 22",
+    "tags": ["kapitel-1", "schreiben"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "element-5591",
+    "type": "noun",
+    "lemma": "Element",
+    "noun": { "gender": "das", "plural": "-e" },
+    "rektion": [],
+    "meaningTr": "öğe, unsur",
+    "hintTr": "isim",
+    "cloze": "Das Foto ist [ein] wichtiges [Element] der Karte.",
+    "clozeTr": "Fotoğraf, kartın önemli bir öğesi.",
+    "examples": [
+      {
+        "de": "Welche Elemente gehören unbedingt zu einer Grußkarte?",
+        "tr": "Bir tebrik kartında mutlaka hangi öğeler olmalı?",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 22",
+    "tags": ["kapitel-1", "schreiben"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "unbedingt-1c05",
+    "type": "other",
+    "lemma": "unbedingt",
+    "rektion": [],
+    "meaningTr": "mutlaka, kesinlikle",
+    "hintTr": "zarf",
+    "cloze": "Den Film musst du [unbedingt] sehen!",
+    "clozeTr": "O filmi mutlaka görmelisin!",
+    "examples": [
+      {
+        "de": "Welche Elemente gehören unbedingt zu einer Grußkarte?",
+        "tr": "Bir tebrik kartında mutlaka hangi öğeler olmalı?",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "nicht unbedingt = illa ki değil, şart değil.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 22",
+    "tags": ["kapitel-1", "schreiben"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "kreativ-fd8a",
+    "type": "adjective",
+    "lemma": "kreativ",
+    "adjective": { "comparative": null, "superlative": null },
+    "rektion": [],
+    "meaningTr": "yaratıcı",
+    "hintTr": "sıfat",
+    "cloze": "Sie ist sehr [kreativ] und malt in ihrer Freizeit.",
+    "clozeTr": "Çok yaratıcı ve boş zamanlarında resim yapıyor.",
+    "examples": [
+      {
+        "de": "Welche kreativen Elemente verwendet die Verfasserin von Karte 2?",
+        "tr": "2. kartın yazarı hangi yaratıcı öğeleri kullanıyor?",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 22",
+    "tags": ["kapitel-1", "schreiben"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "verfasser-0583",
+    "type": "noun",
+    "lemma": "Verfasser",
+    "noun": { "gender": "der", "plural": "-" },
+    "rektion": [],
+    "meaningTr": "(bir metnin) yazarı",
+    "hintTr": "isim",
+    "cloze": "[Der] [Verfasser] des Briefes ist unbekannt.",
+    "clozeTr": "Mektubun yazarı bilinmiyor.",
+    "examples": [
+      {
+        "de": "Welche kreativen Elemente verwendet die Verfasserin von Karte 2?",
+        "tr": "2. kartın yazarı hangi yaratıcı öğeleri kullanıyor?",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "Kadın: die Verfasserin, -nen. der Autor = kitap yazarı; der Verfasser = herhangi bir metni yazan kişi.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 22",
+    "tags": ["kapitel-1", "schreiben"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "fantasie-4b38",
+    "type": "noun",
+    "lemma": "Fantasie",
+    "noun": { "gender": "die", "plural": "-n" },
+    "rektion": [],
+    "meaningTr": "hayal gücü",
+    "hintTr": "isim",
+    "cloze": "Kinder haben oft [eine] große [Fantasie].",
+    "clozeTr": "Çocukların çoğu zaman güçlü bir hayal gücü vardır.",
+    "examples": [
+      {
+        "de": "außer dem Fantasie-Wort „Mjam-mjam“",
+        "tr": "„Mjam-mjam“ uydurma kelimesi dışında",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "Phantasie diye de yazılır. das Fantasiewort = uydurma kelime.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 22",
+    "tags": ["kapitel-1", "schreiben"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "gestaltung-f057",
+    "type": "noun",
+    "lemma": "Gestaltung",
+    "noun": { "gender": "die", "plural": "-en" },
+    "rektion": [],
+    "meaningTr": "tasarım, düzenleme",
+    "hintTr": "isim (-ung)",
+    "cloze": "[Die] [Gestaltung] der Webseite gefällt mir gut.",
+    "clozeTr": "Web sitesinin tasarımını beğendim.",
+    "examples": [
+      {
+        "de": "Geben Sie weitere Beispiele für die kreative Gestaltung.",
+        "tr": "Yaratıcı tasarım için başka örnekler verin.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "Fiil: gestalten.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 22",
+    "tags": ["kapitel-1", "schreiben"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "symbol-044b",
+    "type": "noun",
+    "lemma": "Symbol",
+    "noun": { "gender": "das", "plural": "-e" },
+    "rektion": [],
+    "meaningTr": "sembol, simge",
+    "hintTr": "isim",
+    "cloze": "Die Taube ist [ein] [Symbol] für den Frieden.",
+    "clozeTr": "Güvercin barışın simgesidir.",
+    "examples": [
+      {
+        "de": "Auf der Karte sind viele kleine Symbole, zum Beispiel Herzen und Sterne.",
+        "tr": "Kartta kalpler ve yıldızlar gibi birçok küçük sembol var.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 22",
+    "tags": ["kapitel-1", "schreiben"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "adressat-dab7",
+    "type": "noun",
+    "lemma": "Adressat",
+    "noun": { "gender": "der", "plural": "-en" },
+    "rektion": [],
+    "meaningTr": "alıcı, muhatap",
+    "hintTr": "isim",
+    "cloze": "Der Brief kam zurück, weil [der] [Adressat] unbekannt war.",
+    "clozeTr": "Alıcı bilinmediği için mektup geri geldi.",
+    "examples": [
+      {
+        "de": "Gestalten Sie Ihre Karte so, dass sie zum Adressaten passt.",
+        "tr": "Kartınızı alıcısına uygun olacak şekilde tasarlayın.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": "n-Deklination: den/dem/des Adressaten.",
+    "note": "der Absender (gönderen) ↔ der Adressat / der Empfänger (alıcı).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 22",
+    "tags": ["kapitel-1", "schreiben"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "kursanfang-b3de",
+    "type": "noun",
+    "lemma": "Kursanfang",
+    "noun": { "gender": "der", "plural": "¨-e" },
+    "rektion": [],
+    "meaningTr": "kursun başı",
+    "hintTr": "isim, birleşik",
+    "cloze": "Seit [dem] [Kursanfang] habe ich viel gelernt.",
+    "clozeTr": "Kurs başladığından beri çok şey öğrendim.",
+    "examples": [
+      {
+        "de": "Schreiben Sie, was Sie am Kursanfang schon erlebt haben.",
+        "tr": "Kursun başında neler yaşadığınızı yazın.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 22",
+    "tags": ["kapitel-1", "schreiben"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "kursteilnehmer-7004",
+    "type": "noun",
+    "lemma": "Kursteilnehmer",
+    "noun": { "gender": "der", "plural": "-" },
+    "rektion": [],
+    "meaningTr": "kursiyer, kurs katılımcısı",
+    "hintTr": "isim, birleşik",
+    "cloze": "[Die] [Kursteilnehmer] kommen aus zwölf Ländern.",
+    "clozeTr": "Kursiyerler on iki farklı ülkeden geliyor.",
+    "examples": [
+      {
+        "de": "Schreiben Sie eine Karte, entweder an einen Kursteilnehmenden oder an Ihre Lehrerin.",
+        "tr": "Ya bir kursiyere ya da öğretmeninize bir kart yazın.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "Kadın: die Kursteilnehmerin. Cinsiyetsiz: der/die Kursteilnehmende. teilnehmen an + Dat = katılmak.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 22",
+    "tags": ["kapitel-1", "schreiben"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "bewerten-c644",
+    "type": "verb",
+    "lemma": "bewerten",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": null,
+      "praeteritum": "bewertete",
+      "partizip2": "bewertet",
+      "auxiliary": "haben"
+    },
+    "rektion": [],
+    "meaningTr": "değerlendirmek, puan vermek",
+    "hintTr": "fiil (ayrılmaz)",
+    "cloze": "Die Lehrerin [bewertet] die Aufsätze nach klaren Kriterien.",
+    "clozeTr": "Öğretmen kompozisyonları net kriterlere göre değerlendiriyor.",
+    "examples": [
+      {
+        "de": "den Kurs schriftlich bewerten",
+        "tr": "kursu yazılı olarak değerlendirmek",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "die Bewertung = değerlendirme; internette yorum/puan.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 22",
+    "tags": ["kapitel-1", "schreiben"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "bisher-b43e",
+    "type": "other",
+    "lemma": "bisher",
+    "rektion": [],
+    "meaningTr": "şimdiye kadar",
+    "hintTr": "zarf",
+    "cloze": "[Bisher] hat alles gut geklappt.",
+    "clozeTr": "Şimdiye kadar her şey yolunda gitti.",
+    "examples": [
+      {
+        "de": "Bisher gefällt mir der Kurs ausgezeichnet.",
+        "tr": "Kurs şimdiye kadar çok hoşuma gidiyor.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "bis jetzt ile aynı anlam.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 22",
+    "tags": ["kapitel-1", "schreiben"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "ausgezeichnet-811b",
+    "type": "adjective",
+    "lemma": "ausgezeichnet",
+    "adjective": { "comparative": null, "superlative": null },
+    "rektion": [],
+    "meaningTr": "mükemmel, çok iyi",
+    "hintTr": "sıfat",
+    "cloze": "Das Essen in dem Restaurant war [ausgezeichnet].",
+    "clozeTr": "O restoranda yemek mükemmeldi.",
+    "examples": [
+      {
+        "de": "Bisher gefällt mir der Kurs ausgezeichnet.",
+        "tr": "Kurs şimdiye kadar çok hoşuma gidiyor.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "auszeichnen = ödüllendirmek; ausgezeichnet sıfat olarak = mükemmel.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 22",
+    "tags": ["kapitel-1", "schreiben"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "aufregend-50cd",
+    "type": "adjective",
+    "lemma": "aufregend",
+    "adjective": { "comparative": null, "superlative": null },
+    "rektion": [],
+    "meaningTr": "heyecan verici",
+    "hintTr": "sıfat",
+    "cloze": "Die erste Woche in Berlin war sehr [aufregend].",
+    "clozeTr": "Berlin’deki ilk hafta çok heyecan vericiydi.",
+    "examples": [
+      {
+        "de": "In der ersten Woche ist schon etwas Aufregendes passiert.",
+        "tr": "Daha ilk hafta heyecan verici bir şey oldu.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "Dikkat: sich aufregen = sinirlenmek, telaşlanmak.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 22",
+    "tags": ["kapitel-1", "schreiben"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "etwas-zu-lachen-haben-f5ef",
+    "type": "expression",
+    "lemma": "etwas zu lachen haben",
+    "rektion": [],
+    "meaningTr": "gülecek bir şey olmak, eğlenmek",
+    "hintTr": "kalıp",
+    "cloze": "Mit ihm hat man immer [etwas] [zu] [lachen].",
+    "clozeTr": "Onunla hep gülecek bir şey olur.",
+    "examples": [
+      {
+        "de": "In den ersten Tagen haben wir schon etwas zu lachen gehabt.",
+        "tr": "Daha ilk günlerde epey güldük.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "Olumsuz: nichts zu lachen haben = (zor durumda) hiç gülecek hali olmamak.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 22",
+    "tags": ["kapitel-1", "schreiben", "umgangssprache"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "ich-faende-es-gut-wenn-0602",
+    "type": "expression",
+    "lemma": "Ich fände es gut, wenn …",
+    "rektion": [],
+    "meaningTr": "… olsa iyi olur bence",
+    "hintTr": "kalıp (öneri, Konjunktiv II)",
+    "cloze": "Ich [fände] es gut, wenn wir mehr sprechen würden.",
+    "clozeTr": "Daha çok konuşsak iyi olur bence.",
+    "examples": [
+      {
+        "de": "Ich fände es gut, wenn wir öfter Filme im Kurs sehen würden.",
+        "tr": "Kursta daha sık film izlesek iyi olur bence.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": "fände = finden fiilinin Konjunktiv II hali (= würde finden).",
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 22",
+    "tags": ["kapitel-1", "schreiben"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "auswertung-1536",
+    "type": "noun",
+    "lemma": "Auswertung",
+    "noun": { "gender": "die", "plural": "-en" },
+    "rektion": [],
+    "meaningTr": "değerlendirme, analiz",
+    "hintTr": "isim (-ung)",
+    "cloze": "[Die] [Auswertung] der Umfrage dauert noch eine Woche.",
+    "clozeTr": "Anketin değerlendirilmesi bir hafta daha sürecek.",
+    "examples": [
+      {
+        "de": "Die Auswertung der Daten hat gezeigt, dass viele Menschen einsam sind.",
+        "tr": "Verilerin analizi birçok insanın yalnız olduğunu gösterdi.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "Fiil: auswerten.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 22",
+    "tags": ["kapitel-1", "schreiben"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "abstimmen-62d2",
+    "type": "verb",
+    "lemma": "abstimmen",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": "ab",
+      "praeteritum": "stimmte ab",
+      "partizip2": "abgestimmt",
+      "auxiliary": "haben"
+    },
+    "rektion": [{ "preposition": "über", "case": "Akk" }],
+    "meaningTr": "oylamak, oy vermek",
+    "hintTr": "fiil, ayrılabilir + edat",
+    "cloze": "Morgen [stimmen] wir [über] das neue Projekt [ab].",
+    "clozeTr": "Yarın yeni projeyi oylayacağız.",
+    "examples": [
+      {
+        "de": "Welche Karten gefallen Ihnen am besten? Stimmen Sie im Kurs ab.",
+        "tr": "Hangi kartları en çok beğendiniz? Kursta oylayın.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "die Abstimmung = oylama.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 22",
+    "tags": ["kapitel-1", "schreiben"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "erhalten-470d",
+    "type": "verb",
+    "lemma": "erhalten",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": null,
+      "praeteritum": "erhielt",
+      "partizip2": "erhalten",
+      "auxiliary": "haben"
+    },
+    "rektion": [],
+    "meaningTr": "almak (gelen bir şeyi)",
+    "hintTr": "fiil (ayrılmaz)",
+    "cloze": "Haben Sie meine E-Mail schon [erhalten]?",
+    "clozeTr": "E-postamı aldınız mı?",
+    "examples": [
+      {
+        "de": "Ihre Lehrerin erhält die Karten und liest sie im Kurs vor.",
+        "tr": "Öğretmeniniz kartları alır ve kursta yüksek sesle okur.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "bekommen ile aynı anlam, daha resmî. Düzensiz: erhält – erhielt – erhalten.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 22",
+    "tags": ["kapitel-1", "schreiben"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "vorlesen-e4f6",
+    "type": "verb",
+    "lemma": "vorlesen",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": "vor",
+      "praeteritum": "las vor",
+      "partizip2": "vorgelesen",
+      "auxiliary": "haben"
+    },
+    "rektion": [{ "preposition": null, "case": "Dat" }],
+    "meaningTr": "sesli okumak, (birine) okumak",
+    "hintTr": "fiil, ayrılabilir",
+    "cloze": "Abends [liest] der Vater den Kindern eine Geschichte [vor].",
+    "clozeTr": "Babası akşamları çocuklara bir hikâye okuyor.",
+    "examples": [
+      {
+        "de": "Ihre Lehrerin erhält die Karten und liest sie im Kurs vor.",
+        "tr": "Öğretmeniniz kartları alır ve kursta yüksek sesle okur.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 22",
+    "tags": ["kapitel-1", "schreiben"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "zweiteilig-9a4d",
+    "type": "adjective",
+    "lemma": "zweiteilig",
+    "adjective": { "comparative": null, "superlative": null },
+    "rektion": [],
+    "meaningTr": "iki parçalı, iki bölümlük",
+    "hintTr": "sıfat",
+    "cloze": "Das ist ein [zweiteiliger] Film, der zweite Teil kommt nächstes Jahr.",
+    "clozeTr": "Bu iki bölümlük bir film, ikinci bölümü seneye geliyor.",
+    "examples": [
+      {
+        "de": "Zweiteilige Konnektoren haben verschiedene Funktionen.",
+        "tr": "İki parçalı bağlaçların farklı işlevleri vardır.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 24",
+    "tags": ["kapitel-1", "grammatik"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "funktion-d225",
+    "type": "noun",
+    "lemma": "Funktion",
+    "noun": { "gender": "die", "plural": "-en" },
+    "rektion": [],
+    "meaningTr": "işlev, fonksiyon; özellik",
+    "hintTr": "isim",
+    "cloze": "Welche [Funktion] hat dieser Knopf?",
+    "clozeTr": "Bu düğme ne işe yarıyor?",
+    "examples": [
+      {
+        "de": "Zweiteilige Konnektoren haben verschiedene Funktionen: Aufzählungen, Alternativen, Gegensätze und Einschränkungen.",
+        "tr": "İki parçalı bağlaçların farklı işlevleri vardır: sıralama, seçenek, zıtlık ve kısıtlama.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 24",
+    "tags": ["kapitel-1", "grammatik"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "aufzaehlung-3b8f",
+    "type": "noun",
+    "lemma": "Aufzählung",
+    "noun": { "gender": "die", "plural": "-en" },
+    "rektion": [],
+    "meaningTr": "sıralama, sayma (liste)",
+    "hintTr": "isim (-ung)",
+    "cloze": "[Die] [Aufzählung] aller Gründe würde zu lange dauern.",
+    "clozeTr": "Bütün sebepleri saymak çok uzun sürer.",
+    "examples": [
+      {
+        "de": "Zweiteilige Konnektoren haben verschiedene Funktionen: Aufzählungen, Alternativen, Gegensätze und Einschränkungen.",
+        "tr": "İki parçalı bağlaçların farklı işlevleri vardır: sıralama, seçenek, zıtlık ve kısıtlama.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "Fiil: aufzählen (saymak, sıralamak).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 24",
+    "tags": ["kapitel-1", "grammatik"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "alternative-788c",
+    "type": "noun",
+    "lemma": "Alternative",
+    "noun": { "gender": "die", "plural": "-n" },
+    "rektion": [{ "preposition": "zu", "case": "Dat" }],
+    "meaningTr": "alternatif, seçenek",
+    "hintTr": "isim + edat",
+    "cloze": "Gibt es [eine] [Alternative] [zu] diesem Plan?",
+    "clozeTr": "Bu plana bir alternatif var mı?",
+    "examples": [
+      {
+        "de": "Das Fahrrad ist eine gute Alternative zum Auto.",
+        "tr": "Bisiklet arabaya iyi bir alternatif.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 24",
+    "tags": ["kapitel-1", "grammatik"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "hauptsatz-fc82",
+    "type": "noun",
+    "lemma": "Hauptsatz",
+    "noun": { "gender": "der", "plural": "¨-e" },
+    "rektion": [],
+    "meaningTr": "ana cümle",
+    "hintTr": "isim (dil bilgisi)",
+    "cloze": "In [einem] [Hauptsatz] steht das Verb auf Position 2.",
+    "clozeTr": "Ana cümlede fiil 2. pozisyonda durur.",
+    "examples": [
+      {
+        "de": "Mittelfeld im Hauptsatz",
+        "tr": "Ana cümlede orta alan",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "der Nebensatz = yan cümle (fiil sonda).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 24",
+    "tags": ["kapitel-1", "grammatik"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "mittelfeld-0b29",
+    "type": "noun",
+    "lemma": "Mittelfeld",
+    "noun": { "gender": "das", "plural": "-er" },
+    "rektion": [],
+    "meaningTr": "(cümlede) orta alan",
+    "hintTr": "isim (dil bilgisi)",
+    "cloze": "Im [Mittelfeld] stehen meistens die Ergänzungen und Angaben.",
+    "clozeTr": "Orta alanda genellikle tümleçler ve zarflar yer alır.",
+    "examples": [
+      {
+        "de": "Mittelfeld im Hauptsatz",
+        "tr": "Ana cümlede orta alan",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": "Çekimli fiil (Pos. 2) ile cümle sonu arasındaki alan. Angaben sırası te-ka-mo-lo: temporal (wann?) – kausal (warum?) – modal (wie?) – lokal (wo?): Man ist heutzutage wegen der sozialen Netzwerke wirklich weltweit vernetzt.",
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 24",
+    "tags": ["kapitel-1", "grammatik"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "merkhilfe-df14",
+    "type": "noun",
+    "lemma": "Merkhilfe",
+    "noun": { "gender": "die", "plural": "-n" },
+    "rektion": [],
+    "meaningTr": "ezber ipucu, hatırlatıcı",
+    "hintTr": "isim, birleşik",
+    "cloze": "„TeKaMoLo“ ist [eine] gute [Merkhilfe] für die Wortstellung.",
+    "clozeTr": "„TeKaMoLo“ kelime sırası için iyi bir ezber ipucu.",
+    "examples": [
+      {
+        "de": "Merkhilfe: te-ka-mo-lo.",
+        "tr": "Hatırlatıcı: te-ka-mo-lo.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "sich (Dat) etwas merken = aklında tutmak.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 24",
+    "tags": ["kapitel-1", "grammatik"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "idealist-5123",
+    "type": "noun",
+    "lemma": "Idealist",
+    "noun": { "gender": "der", "plural": "-en" },
+    "rektion": [],
+    "meaningTr": "idealist (kişi)",
+    "hintTr": "isim (-ist)",
+    "cloze": "Er war schon immer [ein] [Idealist] und wollte die Welt verbessern.",
+    "clozeTr": "Her zaman idealist biriydi ve dünyayı daha iyi hale getirmek istiyordu.",
+    "examples": [
+      {
+        "de": "Als Idealistin arbeitet sie für eine Umweltorganisation.",
+        "tr": "İdealist biri olarak bir çevre örgütünde çalışıyor.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": "n-Deklination: den/dem/des Idealisten.",
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 24",
+    "tags": ["kapitel-1", "grammatik", "wortbildung"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "direktor-7d58",
+    "type": "noun",
+    "lemma": "Direktor",
+    "noun": { "gender": "der", "plural": "-en" },
+    "rektion": [],
+    "meaningTr": "müdür, direktör",
+    "hintTr": "isim (-or)",
+    "cloze": "[Der] [Direktor] der Schule hat alle Eltern eingeladen.",
+    "clozeTr": "Okul müdürü bütün velileri davet etti.",
+    "examples": [
+      {
+        "de": "Sie ist seit drei Jahren Direktorin des Museums.",
+        "tr": "Üç yıldır müzenin müdürü.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "Çoğulda vurgu kayar: Direk-TO-ren. Kadın: die Direktorin, -nen.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 24",
+    "tags": ["kapitel-1", "grammatik", "wortbildung"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "ventilator-dda6",
+    "type": "noun",
+    "lemma": "Ventilator",
+    "noun": { "gender": "der", "plural": "-en" },
+    "rektion": [],
+    "meaningTr": "vantilatör",
+    "hintTr": "isim (-or)",
+    "cloze": "Im Sommer läuft [der] [Ventilator] den ganzen Tag.",
+    "clozeTr": "Yazın vantilatör bütün gün çalışıyor.",
+    "examples": [
+      {
+        "de": "Ohne Ventilator kann ich bei der Hitze nicht schlafen.",
+        "tr": "Bu sıcakta vantilatörsüz uyuyamıyorum.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 24",
+    "tags": ["kapitel-1", "grammatik", "wortbildung"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "ehe-348b",
+    "type": "noun",
+    "lemma": "Ehe",
+    "noun": { "gender": "die", "plural": "-n" },
+    "rektion": [],
+    "meaningTr": "evlilik",
+    "hintTr": "isim (-e)",
+    "cloze": "Nach zwanzig Jahren [Ehe] haben sie sich getrennt.",
+    "clozeTr": "Yirmi yıllık evlilikten sonra ayrıldılar.",
+    "examples": [
+      {
+        "de": "Ihre Ehe ist sehr glücklich.",
+        "tr": "Evlilikleri çok mutlu.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "der Ehemann / die Ehefrau = eş; das Ehepaar = evli çift.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 24",
+    "tags": ["kapitel-1", "grammatik", "liebe"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "einsamkeit-6937",
+    "type": "noun",
+    "lemma": "Einsamkeit",
+    "noun": { "gender": "die", "plural": null },
+    "rektion": [],
+    "meaningTr": "yalnızlık",
+    "hintTr": "isim (-keit)",
+    "cloze": "Viele alte Menschen leiden unter [der] [Einsamkeit].",
+    "clozeTr": "Birçok yaşlı insan yalnızlıktan muzdarip.",
+    "examples": [
+      {
+        "de": "Nach dem Umzug hat sie die Einsamkeit sehr gespürt.",
+        "tr": "Taşındıktan sonra yalnızlığı çok hissetti.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "allein = tek başına (nötr); einsam = yalnız (duygusal, olumsuz).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 24",
+    "tags": ["kapitel-1", "grammatik", "wortbildung"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "erlaubnis-e0b0",
+    "type": "noun",
+    "lemma": "Erlaubnis",
+    "noun": { "gender": "die", "plural": "-se" },
+    "rektion": [],
+    "meaningTr": "izin",
+    "hintTr": "isim (-nis, istisna!)",
+    "cloze": "Für den Ausflug brauchen die Kinder [die] [Erlaubnis] der Eltern.",
+    "clozeTr": "Gezi için çocukların ailelerinden izin alması gerekiyor.",
+    "examples": [
+      {
+        "de": "Hast du die Erlaubnis, hier zu parken?",
+        "tr": "Burada park etme iznin var mı?",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": "-nis ile biten isimler genelde das (das Erlebnis), ama: die Erlaubnis, die Kenntnis.",
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 24",
+    "tags": ["kapitel-1", "grammatik", "wortbildung"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "kenntnis-75df",
+    "type": "noun",
+    "lemma": "Kenntnis",
+    "noun": { "gender": "die", "plural": "-se" },
+    "rektion": [],
+    "meaningTr": "bilgi (çoğulda: bilgi birikimi)",
+    "hintTr": "isim (-nis, istisna!)",
+    "cloze": "Für die Stelle sind gute [Kenntnisse] in Excel nötig.",
+    "clozeTr": "Bu pozisyon için iyi düzeyde Excel bilgisi gerekli.",
+    "examples": [
+      {
+        "de": "Meine Deutschkenntnisse sind in den letzten Monaten besser geworden.",
+        "tr": "Almancam son aylarda daha iyi oldu.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": "-nis ile biten isimler genelde das, ama: die Kenntnis, die Erlaubnis.",
+    "note": "Kalıp: etwas zur Kenntnis nehmen = bir şeyi not etmek, bilgi edinmek.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 24",
+    "tags": ["kapitel-1", "grammatik", "wortbildung"],
+    "createdAt": "2026-11-07"
+  },
+  {
+    "id": "ausnahme-00ad",
+    "type": "noun",
+    "lemma": "Ausnahme",
+    "noun": { "gender": "die", "plural": "-n" },
+    "rektion": [],
+    "meaningTr": "istisna",
+    "hintTr": "isim",
+    "cloze": "[Die] [Ausnahme] bestätigt die Regel.",
+    "clozeTr": "İstisnalar kuralı bozmaz.",
+    "examples": [
+      {
+        "de": "Bei diesen Nachsilben gibt es Ausnahmen, z. B. die Erlaubnis, die Kenntnis und der Name, der Junge, das Ende.",
+        "tr": "Bu son eklerde istisnalar var, örneğin die Erlaubnis, die Kenntnis ve der Name, der Junge, das Ende.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "Kalıp: mit Ausnahme von + Dat = … hariç.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 1, S. 24",
+    "tags": ["kapitel-1", "grammatik"],
+    "createdAt": "2026-11-07"
   }
 ]
