@@ -1,0 +1,128 @@
+[
+  {
+    "id": "entscheidung-86e2",
+    "type": "noun",
+    "lemma": "Entscheidung",
+    "noun": { "gender": "die", "plural": "-en" },
+    "rektion": [{ "preposition": "für", "case": "Akk" }],
+    "meaningTr": "karar",
+    "hintTr": "isim",
+    "cloze": "[Die] [Entscheidung] für das neue Projekt fiel uns nicht leicht.",
+    "clozeTr": "Yeni proje için karar vermek bize kolay gelmedi.",
+    "examples": [
+      {
+        "de": "Die Entscheidung für das neue Projekt fiel uns nicht leicht.",
+        "tr": "Yeni proje lehine karar vermek bizim için kolay olmadı.",
+        "fromBook": false
+      }
+    ],
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Seed example",
+    "tags": ["seed"],
+    "createdAt": "2026-11-05"
+  },
+  {
+    "id": "entscheiden-bb52",
+    "type": "verb",
+    "lemma": "entscheiden",
+    "verb": {
+      "reflexive": "Akk",
+      "separablePrefix": null,
+      "praeteritum": "entschied",
+      "partizip2": "entschieden",
+      "auxiliary": "haben"
+    },
+    "rektion": [{ "preposition": "für", "case": "Akk" }],
+    "meaningTr": "(birçok seçenek arasından) bir şeyi seçmek, bir şeyde karar kılmak",
+    "hintTr": "fiil, dönüşlü + edat",
+    "cloze": "Nach langem Überlegen hat sie sich [für] das Studium in Wien [entschieden].",
+    "clozeTr": "Uzun uzun düşündükten sonra Viyana'da okumayı seçti.",
+    "examples": [
+      {
+        "de": "Nach langem Überlegen hat sie sich für das Studium in Wien entschieden.",
+        "tr": "Uzun uzun düşündükten sonra Viyana'da okumayı seçti.",
+        "fromBook": false
+      }
+    ],
+    "note": "Karşıtı: sich gegen + Akk entscheiden (bir şeyden vazgeçmek, karşı karar vermek).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Seed example",
+    "tags": ["seed"],
+    "createdAt": "2026-11-05"
+  },
+  {
+    "id": "teilnehmen-2109",
+    "type": "verb",
+    "lemma": "teilnehmen",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": "teil",
+      "praeteritum": "nahm teil",
+      "partizip2": "teilgenommen",
+      "auxiliary": "haben"
+    },
+    "rektion": [{ "preposition": "an", "case": "Dat" }],
+    "meaningTr": "(bir şeye) katılmak",
+    "hintTr": "fiil, ayrılabilir + edat",
+    "cloze": "Wir [nehmen] morgen [an] einem Deutschkurs [teil].",
+    "clozeTr": "Yarın bir Almanca kursuna katılıyoruz.",
+    "examples": [
+      {
+        "de": "Wir nehmen morgen an einem Deutschkurs teil.",
+        "tr": "Yarın bir Almanca kursuna katılıyoruz.",
+        "fromBook": false
+      }
+    ],
+    "note": "Aynı anlam: mitmachen bei + Dat (günlük dil).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Seed example",
+    "tags": ["seed"],
+    "createdAt": "2026-11-05"
+  },
+  {
+    "id": "stolz-3362",
+    "type": "adjective",
+    "lemma": "stolz",
+    "adjective": { "comparative": null, "superlative": null },
+    "rektion": [{ "preposition": "auf", "case": "Akk" }],
+    "meaningTr": "(bir şeyle) gurur duyan",
+    "hintTr": "sıfat + edat",
+    "cloze": "Die Eltern sind sehr [stolz] [auf] ihre Tochter.",
+    "clozeTr": "Anne babası kızlarıyla çok gurur duyuyor.",
+    "examples": [
+      {
+        "de": "Die Eltern sind sehr stolz auf ihre Tochter.",
+        "tr": "Anne babası kızlarıyla çok gurur duyuyor.",
+        "fromBook": false
+      }
+    ],
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Seed example",
+    "tags": ["seed"],
+    "createdAt": "2026-11-05"
+  },
+  {
+    "id": "eine-entscheidung-treffen-e001",
+    "type": "expression",
+    "lemma": "eine Entscheidung treffen",
+    "rektion": [],
+    "meaningTr": "karar vermek",
+    "hintTr": "isim + fiil kalıbı (Nomen-Verb-Verbindung)",
+    "cloze": "Bis Freitag müssen wir eine [Entscheidung] [treffen].",
+    "clozeTr": "Cuma'ya kadar bir karar vermemiz gerekiyor.",
+    "examples": [
+      {
+        "de": "Bis Freitag müssen wir eine Entscheidung treffen.",
+        "tr": "Cuma'ya kadar bir karar vermemiz gerekiyor.",
+        "fromBook": false
+      }
+    ],
+    "note": "\"eine Entscheidung machen\" yanlış. Fiil her zaman \"treffen\".",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Seed example",
+    "tags": ["seed", "nomen-verb"],
+    "createdAt": "2026-11-05"
+  }
+]

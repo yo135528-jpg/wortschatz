@@ -1,0 +1,11 @@
+node_modules
+dist
+test-results
+playwright-report
+*.log
+
+# Photos of textbook pages (copyrighted, large) - local only
+book-pages/
+
+# Local secrets (API keys)
+.env.local
