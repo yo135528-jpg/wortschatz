@@ -6,6 +6,7 @@ Static Vite + TypeScript app (no framework), deployed to GitHub Pages. Schedulin
 - `src/data/cards.json` = CONTENT only (notes). Written by Claude, committed to git.
 - Review STATE lives in the browser's IndexedDB, keyed `"<noteId>:<direction>"`.
 - `src/storage/merge.ts` (pure): new cards get fresh state, existing state is never overwritten, removed notes are ignored (state kept).
+- Grammar reference (Gramer tab): `src/data/grammar/{a1,a2,b1,b2}.ts`, typed + zod-validated (`src/domain/grammar.ts`), validated by `npm run validate`. Explanations in Turkish, examples in German with natural Turkish. When a book chapter teaches a topic, set `book` on it and keep content consistent with the cards.
 - Each note produces up to two cards, `de2tr` and `tr2de`, each with its own FSRS state.
 - Tests never depend on real content: unit and e2e tests use `tests/fixtures/notes.json` (e2e via `vite --mode e2e` alias). Add/remove words freely.
 - Commands: `npm run validate` · `npm test` (Vitest) · `npm run e2e` (Playwright) · `npm run build` · `npm run new-id -- "<lemma>" <type> [gender]`.

@@ -5,13 +5,16 @@ import { parseNotes } from './domain/schema';
 import { openDatabase } from './storage/db';
 import type { StudyMode } from './storage/types';
 import { BrowserView } from './ui/browser';
+import { GRAMMAR_TOPICS } from './data/grammar';
+import { parseGrammar } from './domain/grammar';
+import { GrammarView } from './ui/grammar';
 import { byId, h } from './ui/dom';
 import { ReviewView } from './ui/review';
 import { renderSettings } from './ui/settings';
 import { renderStats } from './ui/stats';
 
-type Tab = 'review' | 'browse' | 'stats' | 'settings';
-const TABS: Tab[] = ['review', 'browse', 'stats', 'settings'];
+type Tab = 'review' | 'browse' | 'grammar' | 'stats' | 'settings';
+const TABS: Tab[] = ['review', 'browse', 'grammar', 'stats', 'settings'];
 
 async function start(): Promise<void> {
   const notes = parseNotes(rawNotes);
@@ -20,6 +23,8 @@ async function start(): Promise<void> {
   const views = Object.fromEntries(TABS.map((tab) => [tab, byId(`view-${tab}`)])) as Record<Tab, HTMLElement>;
   const review = new ReviewView(app, views.review);
   const browser = new BrowserView(app, views.browse);
+  // Static reference content: rendered once, independent of review state.
+  new GrammarView(parseGrammar(GRAMMAR_TOPICS), views.grammar);
   let activeTab: Tab = 'review';
 
   const renderActive = () => {
