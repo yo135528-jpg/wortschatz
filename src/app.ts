@@ -15,6 +15,7 @@ import type { CardState, ReviewLogEntry, Settings } from './storage/types';
 import { createScheduler, newFsrsCard, rateCard, type ButtonGrade, type Scheduler } from './scheduling/fsrs';
 import { buildQueue, nextLearningDue } from './scheduling/queue';
 import { computeStats, type Stats } from './scheduling/stats';
+import { startOfStudyDay } from './scheduling/day';
 
 /**
  * Application state and actions. The UI reads from here and calls the actions;
@@ -70,6 +71,16 @@ export class App {
 
   nextLearningDue(now = new Date()): Date | null {
     return nextLearningDue(this.allStates, this.settings.mode, now);
+  }
+
+  /** Number of ratings given in the current study day (all card states). */
+  reviewedToday(now = new Date()): number {
+    const start = startOfStudyDay(now);
+    return this.logs.filter((log) => log.revlog.reviewTime >= start).length;
+  }
+
+  get reviewLogs(): readonly ReviewLogEntry[] {
+    return this.logs;
   }
 
   stats(now = new Date()): Stats {

@@ -7,6 +7,10 @@ const fixtureNotes = fileURLToPath(new URL('./tests/fixtures/notes.json', import
 export default defineConfig(({ mode }) => ({
   // Relative base works on GitHub Pages regardless of the repository name.
   base: './',
+  build: {
+    // The main chunk is mostly cards.json (needed on the first screen); grammar and street German load lazily.
+    chunkSizeWarningLimit: 900,
+  },
   resolve: {
     alias: mode === 'e2e' ? [{ find: /^.*\/data\/cards\.json$/, replacement: fixtureNotes }] : [],
   },

@@ -9,6 +9,7 @@ import {
   type LevelFilter,
 } from '../domain/grammar';
 import { h } from './dom';
+import { navigate } from './router';
 
 /** Renders "**bold**" markers as <strong> using text nodes only (no HTML parsing). */
 function rich(value: string): Node {
@@ -40,9 +41,16 @@ export class GrammarView {
   }
 
   private open(id: string | null): void {
-    this.openId = id;
+    navigate({ name: 'grammar', id });
+  }
+
+  /** Shows the list (null) or a topic; called by the router. */
+  show(id: string | null): void {
+    const next = id && this.byId.has(id) ? id : null;
+    const changed = next !== this.openId;
+    this.openId = next;
     this.render();
-    window.scrollTo({ top: 0 });
+    if (changed) window.scrollTo({ top: 0 });
   }
 
   // ---------- List ----------

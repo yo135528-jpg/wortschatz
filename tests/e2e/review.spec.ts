@@ -2,7 +2,7 @@ import { expect, test } from '@playwright/test';
 import { openApp } from './helpers';
 
 test.beforeEach(async ({ page }) => {
-  await openApp(page);
+  await openApp(page, { hash: '#/study/review' });
   await expect(page.getByTestId('card')).toBeVisible();
 });
 
@@ -33,7 +33,7 @@ test('rating a card moves to the next one and shows intervals', async ({ page })
   await expect(page.getByTestId('card')).not.toHaveAttribute('data-key', firstKey!);
   await expect(page.getByTestId('remaining')).toHaveText('4 kart kaldı');
 
-  await page.getByTestId('tab-stats').click();
+  await page.getByTestId('tab-progress').click();
   await expect(page.getByTestId('stat-learned')).toHaveText('1');
 });
 

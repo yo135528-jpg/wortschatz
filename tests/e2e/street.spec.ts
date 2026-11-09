@@ -3,7 +3,8 @@ import { openApp } from './helpers';
 
 test('street tab: open a topic, see phrases, go back', async ({ page }) => {
   await openApp(page);
-  await page.getByTestId('tab-street').click();
+  await page.getByTestId('tab-library').click();
+  await page.getByTestId('lib-street').click();
   await expect(page.getByTestId('mode-tr2de')).toBeHidden();
 
   const topics = page.getByTestId('street-topic');
@@ -19,8 +20,7 @@ test('street tab: open a topic, see phrases, go back', async ({ page }) => {
 });
 
 test('street search and register filter show matching phrases', async ({ page }) => {
-  await openApp(page);
-  await page.getByTestId('tab-street').click();
+  await openApp(page, { hash: '#/library/street' });
 
   await page.getByTestId('street-search').fill('pleite');
   await expect(page.getByTestId('street-phrase').filter({ hasText: 'Ich bin pleite.' })).toBeVisible();

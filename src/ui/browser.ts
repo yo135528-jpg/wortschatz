@@ -7,6 +7,7 @@ import {
   buildRows,
   filterRows,
   groupBySource,
+  groupLabel,
   sortRows,
   summarize,
   type NoteRow,
@@ -44,12 +45,13 @@ export class BrowserView {
   private readonly closedGroups = new Set<string>();
   private readonly controls: HTMLElement;
   private readonly list: HTMLElement;
+  private readonly search: HTMLInputElement;
 
   constructor(
     private readonly app: App,
     root: HTMLElement,
   ) {
-    const search = h('input', {
+    this.search = h('input', {
       type: 'search',
       class: 'search',
       placeholder: 'Ara: kelime, anlam, etiket…',
@@ -62,7 +64,23 @@ export class BrowserView {
     });
     this.controls = h('div', { class: 'browse-controls' });
     this.list = h('div', { class: 'browse-list', 'data-testid': 'note-list' });
-    root.append(search, this.controls, this.list);
+    root.append(this.search, this.controls, this.list);
+  }
+
+  /** Opens one note (from a link or search result), clearing filters so it is visible. */
+  focus(noteId: string | null): void {
+    if (noteId && this.app.notes.has(noteId)) {
+      this.openNoteId = noteId;
+      this.query = '';
+      this.search.value = '';
+      this.type = 'all';
+      this.status = 'all';
+      this.closedGroups.delete(groupLabel(this.app.notes.get(noteId)!.source));
+    }
+    this.refresh();
+    if (noteId) {
+      this.list.querySelector(`[data-id="${CSS.escape(noteId)}"]`)?.scrollIntoView({ block: 'center' });
+    }
   }
 
   refresh(): void {
@@ -192,7 +210,7 @@ export class BrowserView {
     const headword = buildHeadword(note);
     return h(
       'li',
-      { class: `note-item ${isOpen ? 'open' : ''}`, 'data-testid': 'note-item' },
+      { class: `note-item ${isOpen ? 'open' : ''}`, 'data-testid': 'note-item', 'data-id': note.id },
       h(
         'button',
         {

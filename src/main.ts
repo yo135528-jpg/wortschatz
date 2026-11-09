@@ -1,57 +1,123 @@
 import './styles/main.css';
 import rawNotes from './data/cards.json';
 import { App } from './app';
+import { loadGrammar, loadStreet } from './content';
 import { parseNotes } from './domain/schema';
 import { openDatabase } from './storage/db';
 import type { StudyMode } from './storage/types';
 import { BrowserView } from './ui/browser';
-import { GRAMMAR_TOPICS } from './data/grammar';
-import { parseGrammar } from './domain/grammar';
-import { GrammarView } from './ui/grammar';
-import { STREET_TOPICS } from './data/street';
-import { parseStreet } from './domain/street';
-import { StreetView } from './ui/street';
 import { byId, h } from './ui/dom';
+import { GrammarView } from './ui/grammar';
 import { ReviewView } from './ui/review';
+import { parseRoute, routeHash, tabOf, type Route, type RouteName } from './ui/router';
+import { SearchView } from './ui/search';
 import { renderSettings } from './ui/settings';
 import { renderStats } from './ui/stats';
+import { StreetView } from './ui/street';
+import { StudyView } from './ui/study';
+import { STUDY_ITEMS } from './ui/studyItems';
+import { DrillView } from './ui/drill';
+import { TodayView } from './ui/today';
+import { registerServiceWorker } from './pwa';
 
-type Tab = 'review' | 'browse' | 'grammar' | 'street' | 'stats' | 'settings';
-const TABS: Tab[] = ['review', 'browse', 'grammar', 'street', 'stats', 'settings'];
+type ViewName = Exclude<RouteName, never>;
+const VIEW_NAMES: ViewName[] = [
+  'today',
+  'study',
+  'review',
+  'drill',
+  'words',
+  'grammar',
+  'street',
+  'search',
+  'progress',
+  'settings',
+];
+const LIBRARY: RouteName[] = ['words', 'grammar', 'street'];
 
 async function start(): Promise<void> {
   const notes = parseNotes(rawNotes);
   const app = await App.load(await openDatabase(), notes);
 
-  const views = Object.fromEntries(TABS.map((tab) => [tab, byId(`view-${tab}`)])) as Record<Tab, HTMLElement>;
+  const views = Object.fromEntries(VIEW_NAMES.map((name) => [name, byId(`view-${name}`)])) as Record<ViewName, HTMLElement>;
+  const today = new TodayView(app, views.today);
+  const study = new StudyView(app, views.study, STUDY_ITEMS);
   const review = new ReviewView(app, views.review);
-  const browser = new BrowserView(app, views.browse);
-  // Static reference content: rendered once, independent of review state.
-  new GrammarView(parseGrammar(GRAMMAR_TOPICS), views.grammar);
-  new StreetView(parseStreet(STREET_TOPICS), views.street);
-  // The study-mode toggle only matters while reviewing cards.
+  const drill = new DrillView(app, views.drill);
+  const browser = new BrowserView(app, views.words);
+  const search = new SearchView(app, views.search);
+  // Reference content is loaded lazily on first visit (separate chunks).
+  let grammar: Promise<GrammarView> | null = null;
+  let street: Promise<StreetView> | null = null;
+  const grammarView = () => (grammar ??= loadGrammar().then((topics) => new GrammarView(topics, views.grammar)));
+  const streetView = () => (street ??= loadStreet().then((topics) => new StreetView(topics, views.street)));
+
   const modeToggle = byId('mode-toggle');
-  let activeTab: Tab = 'review';
+  const libraryNav = byId('library-nav');
+  const libraryTab = document.querySelector<HTMLAnchorElement>('[data-tab="library"]')!;
+  let route: Route = parseRoute(location.hash);
 
+  /** Re-renders the visible screen with fresh state (after a rating, settings change …). */
   const renderActive = () => {
-    if (activeTab === 'browse') browser.refresh();
-    if (activeTab === 'stats') renderStats(app, views.stats);
+    switch (route.name) {
+      case 'today':
+        return today.refresh();
+      case 'study':
+        return study.refresh();
+      case 'words':
+        return browser.refresh();
+      case 'progress':
+        return renderStats(app, views.progress);
+      default:
+        return undefined;
+    }
   };
 
-  const showTab = (tab: Tab) => {
-    activeTab = tab;
-    for (const name of TABS) views[name].hidden = name !== tab;
-    modeToggle.hidden = tab !== 'review';
-    document.querySelectorAll<HTMLButtonElement>('[data-tab]').forEach((button) => {
-      button.setAttribute('aria-current', String(button.dataset.tab === tab));
+  const show = async (next: Route) => {
+    const previous = route;
+    route = next;
+    for (const name of VIEW_NAMES) views[name].hidden = name !== next.name;
+    modeToggle.hidden = next.name !== 'review';
+    libraryNav.hidden = !LIBRARY.includes(next.name);
+    libraryNav.querySelectorAll<HTMLAnchorElement>('[data-lib]').forEach((link) => {
+      link.setAttribute('aria-current', String(link.dataset.lib === next.name));
     });
-    if (tab === 'settings') renderSettings(app, views.settings);
-    renderActive();
+    const tab = tabOf(next);
+    document.querySelectorAll<HTMLAnchorElement>('[data-tab]').forEach((link) => {
+      link.setAttribute('aria-current', String(link.dataset.tab === tab));
+    });
+    // The library tab reopens the last library screen.
+    if (LIBRARY.includes(next.name)) libraryTab.href = routeHash(next.name === 'words' ? { name: 'words', id: null } : next);
+    if (previous.name !== next.name) window.scrollTo({ top: 0 });
+
+    switch (next.name) {
+      case 'review':
+        review.refresh();
+        break;
+      case 'drill':
+        drill.show(next.kind);
+        break;
+      case 'words':
+        browser.focus(next.id);
+        break;
+      case 'grammar':
+        (await grammarView()).show(next.id);
+        break;
+      case 'street':
+        (await streetView()).show(next.id);
+        break;
+      case 'search':
+        search.show(next.query);
+        break;
+      case 'settings':
+        renderSettings(app, views.settings);
+        break;
+      default:
+        renderActive();
+    }
   };
 
-  document.querySelectorAll<HTMLButtonElement>('[data-tab]').forEach((button) => {
-    button.addEventListener('click', () => showTab(button.dataset.tab as Tab));
-  });
+  window.addEventListener('hashchange', () => void show(parseRoute(location.hash)));
 
   // Mode toggle: filters the queue only; schedules stay separate per direction.
   const modeButtons = document.querySelectorAll<HTMLButtonElement>('[data-mode]');
@@ -63,15 +129,15 @@ async function start(): Promise<void> {
 
   app.onChange(() => {
     syncMode();
-    review.refresh();
-    renderActive();
+    if (route.name === 'review') review.refresh();
+    else renderActive();
   });
 
   syncMode();
-  review.refresh();
-  showTab('review');
+  await show(route);
   // Signals that all event handlers are attached (used by e2e tests).
   document.body.dataset.ready = 'true';
+  registerServiceWorker();
 }
 
 start().catch((error: Error) => {

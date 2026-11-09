@@ -3,7 +3,8 @@ import { openApp } from './helpers';
 
 test('grammar tab: filter by level, open a topic and go back', async ({ page }) => {
   await openApp(page);
-  await page.getByTestId('tab-grammar').click();
+  await page.getByTestId('tab-library').click();
+  await page.getByTestId('lib-grammar').click();
 
   const topics = page.getByTestId('grammar-topic');
   await expect(topics.first()).toBeVisible();
@@ -23,7 +24,8 @@ test('grammar tab: filter by level, open a topic and go back', async ({ page }) 
 
 test('grammar search finds a topic by an example word', async ({ page }) => {
   await openApp(page);
-  await page.getByTestId('tab-grammar').click();
+  await page.getByTestId('tab-library').click();
+  await page.getByTestId('lib-grammar').click();
   await page.getByTestId('grammar-search').fill('weder');
   await expect(page.locator('[data-testid="grammar-topic"][data-id="zweiteilige-konnektoren"]')).toBeVisible();
 });

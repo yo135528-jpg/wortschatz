@@ -13,6 +13,7 @@ import {
   type StreetTopic,
 } from '../domain/street';
 import { h } from './dom';
+import { navigate } from './router';
 import { speakButton } from './tts';
 
 /** Renders "**bold**" markers as <strong> using text nodes only (no HTML parsing). */
@@ -46,9 +47,16 @@ export class StreetView {
   }
 
   private open(id: string | null): void {
-    this.openId = id;
+    navigate({ name: 'street', id });
+  }
+
+  /** Shows the list (null) or a topic; called by the router. */
+  show(id: string | null): void {
+    const next = id && this.byId.has(id) ? id : null;
+    const changed = next !== this.openId;
+    this.openId = next;
     this.render();
-    window.scrollTo({ top: 0 });
+    if (changed) window.scrollTo({ top: 0 });
   }
 
   // ---------- Home ----------
