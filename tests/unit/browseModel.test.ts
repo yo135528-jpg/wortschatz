@@ -3,6 +3,7 @@ import { State, createScheduler, newFsrsCard } from '../../src/scheduling/fsrs';
 import type { CardState } from '../../src/storage/types';
 import {
   buildRows,
+  cardScheduleLabel,
   filterRows,
   groupBySource,
   groupLabel,
@@ -80,5 +81,36 @@ describe('rows', () => {
     expect(summary.cards).toBe(6);
     expect(summary.byStatus).toEqual({ new: 2, learning: 1, mature: 0, suspended: 0 });
     expect(summary.hard).toBe(1);
+  });
+});
+
+describe('cardScheduleLabel', () => {
+  const at = (iso: string) => new Date(iso);
+
+  it('says suspended cards are not asked', () => {
+    expect(cardScheduleLabel(card('a', { state: State.Review }, true), now)).toBe('Sorulmuyor');
+  });
+
+  it('says new cards have not been studied yet', () => {
+    expect(cardScheduleLabel(card('a'), now)).toBe('Henüz çalışılmadı');
+  });
+
+  it('uses today/tomorrow for near due dates, overdue counts as today', () => {
+    expect(cardScheduleLabel(card('a', { state: State.Review, dueAt: at('2026-11-01T10:00:00Z') }), now)).toBe(
+      'Sonraki tekrar: bugün',
+    );
+    expect(cardScheduleLabel(card('a', { state: State.Learning, dueAt: now }), now)).toBe('Sonraki tekrar: bugün');
+    expect(cardScheduleLabel(card('a', { state: State.Review, dueAt: at('2026-11-06T10:00:00Z') }), now)).toBe(
+      'Sonraki tekrar: yarın',
+    );
+  });
+
+  it('shows day and month, and the year only when it differs', () => {
+    expect(cardScheduleLabel(card('a', { state: State.Review, dueAt: at('2026-11-20T10:00:00Z') }), now)).toBe(
+      'Sonraki tekrar: 20 Kasım',
+    );
+    expect(cardScheduleLabel(card('a', { state: State.Review, dueAt: at('2027-01-15T10:00:00Z') }), now)).toBe(
+      'Sonraki tekrar: 15 Ocak 2027',
+    );
   });
 });

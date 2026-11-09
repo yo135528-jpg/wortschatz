@@ -154,7 +154,7 @@ function speechPanel(): HTMLElement {
   );
 }
 
-export function renderSettings(app: App, root: HTMLElement): void {
+export function renderSettings(app: App, root: HTMLElement, extraPanels: HTMLElement[] = []): void {
   const status = h('p', { class: 'status', role: 'status', 'data-testid': 'backup-status' });
   const { settings } = app;
 
@@ -198,6 +198,7 @@ export function renderSettings(app: App, root: HTMLElement): void {
       h('p', { class: 'muted small' }, 'Yüksek hedef = daha sık tekrar. 0.90 çoğu kişi için iyi bir denge.'),
     ),
     speechPanel(),
+    ...extraPanels,
     h(
       'section',
       { class: 'panel' },

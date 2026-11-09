@@ -2,11 +2,12 @@ import type { App } from '../app';
 import { buildHeadword, headwordToString, typeLabelTr } from '../domain/format';
 import type { Note, NoteType } from '../domain/schema';
 import { cardKey } from '../domain/cards';
-import { State } from '../scheduling/fsrs';
 import {
+  cardScheduleLabel,
   buildRows,
   filterRows,
   groupBySource,
+  groupLabel,
   sortRows,
   summarize,
   type NoteRow,
@@ -17,13 +18,6 @@ import {
 } from './browseModel';
 import { renderBack } from './cardFaces';
 import { h } from './dom';
-
-const STATE_LABELS: Record<number, string> = {
-  [State.New]: 'yeni',
-  [State.Learning]: 'öğreniliyor',
-  [State.Review]: 'tekrar',
-  [State.Relearning]: 'yeniden',
-};
 
 const STATUS_LABELS: Record<NoteStatus, string> = {
   new: 'Yeni',
@@ -51,12 +45,13 @@ export class BrowserView {
   private readonly closedGroups = new Set<string>();
   private readonly controls: HTMLElement;
   private readonly list: HTMLElement;
+  private readonly search: HTMLInputElement;
 
   constructor(
     private readonly app: App,
     root: HTMLElement,
   ) {
-    const search = h('input', {
+    this.search = h('input', {
       type: 'search',
       class: 'search',
       placeholder: 'Ara: kelime, anlam, etiket…',
@@ -69,7 +64,23 @@ export class BrowserView {
     });
     this.controls = h('div', { class: 'browse-controls' });
     this.list = h('div', { class: 'browse-list', 'data-testid': 'note-list' });
-    root.append(search, this.controls, this.list);
+    root.append(this.search, this.controls, this.list);
+  }
+
+  /** Opens one note (from a link or search result), clearing filters so it is visible. */
+  focus(noteId: string | null): void {
+    if (noteId && this.app.notes.has(noteId)) {
+      this.openNoteId = noteId;
+      this.query = '';
+      this.search.value = '';
+      this.type = 'all';
+      this.status = 'all';
+      this.closedGroups.delete(groupLabel(this.app.notes.get(noteId)!.source));
+    }
+    this.refresh();
+    if (noteId) {
+      this.list.querySelector(`[data-id="${CSS.escape(noteId)}"]`)?.scrollIntoView({ block: 'center' });
+    }
   }
 
   refresh(): void {
@@ -199,7 +210,7 @@ export class BrowserView {
     const headword = buildHeadword(note);
     return h(
       'li',
-      { class: `note-item ${isOpen ? 'open' : ''}`, 'data-testid': 'note-item' },
+      { class: `note-item ${isOpen ? 'open' : ''}`, 'data-testid': 'note-item', 'data-id': note.id },
       h(
         'button',
         {
@@ -217,7 +228,12 @@ export class BrowserView {
           h('span', { class: `dot dot-${status}`, title: STATUS_LABELS[status] }),
           h('span', { class: headword.article ? `g-${headword.article}` : '' }, headwordToString(headword)),
         ),
-        h('span', { class: 'note-meta' }, `${typeLabelTr(note.type)} · ${note.meaningTr}`),
+        h(
+          'span',
+          { class: 'note-meta' },
+          h('span', { class: 'note-meaning' }, note.meaningTr),
+          h('span', { class: `tag t-${note.type}` }, typeLabelTr(note.type)),
+        ),
       ),
       isOpen && this.renderDetails(note),
     );
@@ -227,24 +243,32 @@ export class BrowserView {
     const rows = note.directions.map((direction) => {
       const state = this.app.allStates.find((s) => s.key === cardKey(note.id, direction));
       if (!state) return null;
-      const due = state.fsrs.state === State.New ? '—' : state.fsrs.dueAt.toLocaleDateString('tr-TR');
+      const label = direction === 'de2tr' ? 'Almanca → Türkçe' : 'Türkçe → Almanca';
       return h(
         'div',
-        { class: 'card-row' },
-        h('span', { class: 'direction' }, direction === 'de2tr' ? 'DE → TR' : 'TR → DE'),
-        h('span', { class: 'muted' }, `${STATE_LABELS[state.fsrs.state] ?? ''} · vade ${due}`),
+        { class: `card-row ${state.suspended ? 'is-suspended' : ''}` },
+        h('span', { class: 'direction' }, label),
+        h('span', { class: 'schedule' }, cardScheduleLabel(state, new Date())),
         h(
           'button',
           {
             type: 'button',
             class: `suspend ${state.suspended ? 'is-suspended' : ''}`,
             'data-testid': `suspend-${direction}`,
+            title: state.suspended
+              ? 'Bu kart yeniden çalışmaya dahil edilir'
+              : 'Bu kart çalışırken sorulmaz, ilerlemen silinmez',
             onclick: () => void this.app.setSuspended(state.key, !state.suspended),
           },
-          state.suspended ? 'Askıdan al' : 'Askıya al',
+          state.suspended ? 'Tekrar sor' : 'Sorma',
         ),
       );
     });
-    return h('div', { class: 'note-details' }, renderBack(note, 'tr2de'), ...rows);
+    return h(
+      'div',
+      { class: 'note-details' },
+      renderBack(note, 'tr2de'),
+      h('div', { class: 'card-rows' }, h('div', { class: 'card-rows-title' }, 'Çalışma durumu'), ...rows),
+    );
   }
 }

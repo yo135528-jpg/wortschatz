@@ -1,0 +1,17 @@
+{
+  "name": "Wortschatz – Almanca",
+  "short_name": "Wortschatz",
+  "description": "Almanca öğrenme: kelime kartları, gramer, sokak dili ve antrenmanlar.",
+  "lang": "tr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f6f5f2",
+  "theme_color": "#3b6fd8",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

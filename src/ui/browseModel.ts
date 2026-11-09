@@ -1,5 +1,6 @@
 import type { Note, NoteType } from '../domain/schema';
 import { State } from '../scheduling/fsrs';
+import { pageOf } from '../domain/scope';
 import type { CardState } from '../storage/types';
 
 /** Learning status of a note, derived from the FSRS state of its cards. */
@@ -82,9 +83,7 @@ export function sortRows(rows: NoteRow[], order: SortOrder): NoteRow[] {
 }
 
 /** "Kursbuch, Kapitel 1, S. 16" → "Kapitel 1 · S. 16". */
-export function groupLabel(source: string): string {
-  return source.replace(/^Kursbuch,\s*/, '').replace(/,\s*/g, ' · ');
-}
+export const groupLabel = pageOf;
 
 export interface Group {
   label: string;
@@ -117,4 +116,27 @@ export function summarize(rows: NoteRow[]): Summary {
     byStatus,
     hard: rows.filter((row) => row.lapses >= HARD_LAPSES).length,
   };
+}
+
+const DAY_MS = 24 * 60 * 60 * 1000;
+
+function startOfDay(date: Date): number {
+  return new Date(date.getFullYear(), date.getMonth(), date.getDate()).getTime();
+}
+
+/** Plain-Turkish schedule line for one card, e.g. "Sonraki tekrar: yarın". */
+export function cardScheduleLabel(state: CardState, now: Date): string {
+  if (state.suspended) return 'Sorulmuyor';
+  if (state.fsrs.state === State.New) return 'Henüz çalışılmadı';
+  const due = state.fsrs.dueAt;
+  const days = Math.round((startOfDay(due) - startOfDay(now)) / DAY_MS);
+  if (days <= 0) return 'Sonraki tekrar: bugün';
+  if (days === 1) return 'Sonraki tekrar: yarın';
+  const sameYear = due.getFullYear() === now.getFullYear();
+  const date = due.toLocaleDateString('tr-TR', {
+    day: 'numeric',
+    month: 'long',
+    ...(sameYear ? {} : { year: 'numeric' }),
+  });
+  return `Sonraki tekrar: ${date}`;
 }

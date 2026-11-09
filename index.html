@@ -5,33 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="theme-color" content="#14161a" media="(prefers-color-scheme: dark)" />
     <meta name="theme-color" content="#f6f5f2" media="(prefers-color-scheme: light)" />
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇩🇪</text></svg>" />
+    <link rel="icon" type="image/png" href="./icons/icon-192.png" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Wortschatz" />
     <title>Wortschatz</title>
   </head>
   <body>
     <header class="topbar">
-      <h1>Wortschatz</h1>
-      <div class="mode-toggle" role="group" aria-label="Çalışma modu">
+      <a class="brand" href="#/" data-testid="brand"><h1>Wortschatz</h1></a>
+      <div class="mode-toggle" id="mode-toggle" role="group" aria-label="Çalışma modu" hidden>
         <button type="button" data-mode="de2tr" data-testid="mode-de2tr">DE→TR</button>
         <button type="button" data-mode="tr2de" data-testid="mode-tr2de">TR→DE</button>
         <button type="button" data-mode="mixed" data-testid="mode-mixed">Karışık</button>
       </div>
+      <a class="icon-link" href="#/settings" data-testid="tab-settings" aria-label="Ayarlar">⚙️</a>
     </header>
 
     <main>
-      <section id="view-review" class="view" aria-label="Tekrar"></section>
-      <section id="view-browse" class="view" aria-label="Kartlar" hidden></section>
+      <nav class="library-nav segmented" id="library-nav" aria-label="Kütüphane" hidden>
+        <a href="#/library/words" data-lib="words" data-testid="lib-words">Kelimeler</a>
+        <a href="#/library/grammar" data-lib="grammar" data-testid="lib-grammar">Gramer</a>
+        <a href="#/library/street" data-lib="street" data-testid="lib-street">Sokak dili</a>
+      </nav>
+      <section id="view-today" class="view" aria-label="Bugün"></section>
+      <section id="view-study" class="view" aria-label="Çalış" hidden></section>
+      <section id="view-review" class="view" aria-label="Kart tekrarı" hidden></section>
+      <section id="view-drill" class="view" aria-label="Antrenman" hidden></section>
+      <section id="view-words" class="view" aria-label="Kelimeler" hidden></section>
       <section id="view-grammar" class="view" aria-label="Gramer" hidden></section>
-      <section id="view-stats" class="view" aria-label="İstatistik" hidden></section>
+      <section id="view-street" class="view" aria-label="Sokak dili" hidden></section>
+      <section id="view-search" class="view" aria-label="Arama" hidden></section>
+      <section id="view-progress" class="view" aria-label="İlerleme" hidden></section>
       <section id="view-settings" class="view" aria-label="Ayarlar" hidden></section>
     </main>
 
     <nav class="tabbar" aria-label="Menü">
-      <button type="button" data-tab="review" data-testid="tab-review"><span>📚</span>Tekrar</button>
-      <button type="button" data-tab="browse" data-testid="tab-browse"><span>🔎</span>Kartlar</button>
-      <button type="button" data-tab="grammar" data-testid="tab-grammar"><span>📖</span>Gramer</button>
-      <button type="button" data-tab="stats" data-testid="tab-stats"><span>📊</span>İstatistik</button>
-      <button type="button" data-tab="settings" data-testid="tab-settings"><span>⚙️</span>Ayarlar</button>
+      <a href="#/" data-tab="today" data-testid="tab-today"><span>🏠</span>Bugün</a>
+      <a href="#/study" data-tab="study" data-testid="tab-study"><span>📚</span>Çalış</a>
+      <a href="#/library/words" data-tab="library" data-testid="tab-library"><span>📖</span>Kütüphane</a>
+      <a href="#/progress" data-tab="progress" data-testid="tab-progress"><span>📊</span>İlerleme</a>
     </nav>
 
     <script type="module" src="/src/main.ts"></script>

@@ -3,7 +3,7 @@ import { expect, test } from '@playwright/test';
 import { openApp } from './helpers';
 
 test('export/import round-trip restores review state', async ({ page }, testInfo) => {
-  await openApp(page);
+  await openApp(page, { hash: '#/study/review' });
 
   // Review two cards so there is state worth backing up.
   for (let i = 0; i < 2; i++) {
@@ -34,7 +34,7 @@ test('export/import round-trip restores review state', async ({ page }, testInfo
       }),
   );
   await openApp(page, { reload: true });
-  await page.getByTestId('tab-stats').click();
+  await page.getByTestId('tab-progress').click();
   await expect(page.getByTestId('stat-learned')).toHaveText('0');
 
   // Import the backup.
@@ -45,7 +45,7 @@ test('export/import round-trip restores review state', async ({ page }, testInfo
   await (await chooserPromise).setFiles(backupPath);
   await expect(page.getByTestId('backup-status')).toHaveText('✓ İçe aktarıldı.');
 
-  await page.getByTestId('tab-stats').click();
+  await page.getByTestId('tab-progress').click();
   await expect(page.getByTestId('stat-learned')).toHaveText('2');
 });
 

@@ -1,3 +1,6 @@
+import { loadGrammar } from '../content';
+import { grammarTopicsFor } from '../domain/links';
+import { href } from './router';
 import { clozeSolved, clozeWithGaps, parseCloze } from '../domain/cloze';
 import { buildHeadword, typeLabelTr, type Headword } from '../domain/format';
 import type { Direction, Note } from '../domain/schema';
@@ -97,6 +100,7 @@ export function renderBack(note: Note, direction: Direction): HTMLElement {
       examplesView(note),
       grammarView(note),
       noteView(note),
+      grammarLinks(note),
     );
   }
   return h(
@@ -108,7 +112,41 @@ export function renderBack(note: Note, direction: Direction): HTMLElement {
     examplesView(note),
     grammarView(note),
     noteView(note),
+    grammarLinks(note),
   );
+}
+
+/**
+ * "📖 İlgili gramer" chips. Topic titles live in the lazily loaded grammar chunk,
+ * so the chips are filled in once it is loaded.
+ */
+function grammarLinks(note: Note): HTMLElement | null {
+  const ids = grammarTopicsFor(note);
+  if (ids.length === 0) return null;
+  const chips = h('div', { class: 'chips grammar-links', 'data-testid': 'grammar-links' });
+  void loadGrammar().then((topics) => {
+    const byId = new Map(topics.map((topic) => [topic.id, topic]));
+    chips.replaceChildren(
+      h('span', { class: 'muted small' }, '📖 İlgili gramer:'),
+      ...ids.flatMap((id) => {
+        const topic = byId.get(id);
+        if (!topic) return [];
+        return [
+          h(
+            'a',
+            {
+              class: 'chip',
+              href: href({ name: 'grammar', id }),
+              // Inside a card: following the link must not flip it.
+              onclick: (event: Event) => event.stopPropagation(),
+            },
+            `${topic.level} · ${topic.titleDe}`,
+          ),
+        ];
+      }),
+    );
+  });
+  return chips;
 }
 
 /** Gender of the note, used for the colored card border. */

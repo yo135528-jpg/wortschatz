@@ -2,7 +2,7 @@ import { expect, test } from '@playwright/test';
 import { openApp } from './helpers';
 
 test.beforeEach(async ({ page }) => {
-  await openApp(page);
+  await openApp(page, { hash: '#/study/review' });
   await expect(page.getByTestId('card')).toBeVisible();
 });
 
@@ -33,7 +33,7 @@ test('rating a card moves to the next one and shows intervals', async ({ page })
   await expect(page.getByTestId('card')).not.toHaveAttribute('data-key', firstKey!);
   await expect(page.getByTestId('remaining')).toHaveText('4 kart kaldı');
 
-  await page.getByTestId('tab-stats').click();
+  await page.getByTestId('tab-progress').click();
   await expect(page.getByTestId('stat-learned')).toHaveText('1');
 });
 
@@ -75,4 +75,41 @@ test('tr2de back solves the same gap sentence and translates it', async ({ page 
   await expect(solution).toContainText('Die Entscheidung für das neue Projekt fiel uns nicht leicht.');
   await expect(solution.locator('mark')).toHaveText(['Die', 'Entscheidung']);
   await expect(solution.getByTestId('cloze-tr')).toHaveText('Yeni proje için karar vermek bize kolay gelmedi.');
+});
+
+test('undo brings back the last rated card', async ({ page }) => {
+  const firstKey = await page.getByTestId('card').getAttribute('data-key');
+  await expect(page.getByTestId('undo')).toBeDisabled();
+  await page.getByTestId('show-answer').click();
+  await page.getByTestId('rate-good').click();
+  await expect(page.getByTestId('remaining')).toHaveText('4 kart kaldı');
+
+  await page.getByTestId('undo').click();
+  await expect(page.getByTestId('card')).toHaveAttribute('data-key', firstKey!);
+  await expect(page.getByTestId('remaining')).toHaveText('5 kart kaldı');
+  await expect(page.getByTestId('undo')).toBeDisabled();
+});
+
+test('typed answers: tr2de card checks the typed gap words', async ({ page }) => {
+  await page.getByTestId('mode-tr2de').click();
+  await page.getByTestId('type-answers').check();
+  const key = await page.getByTestId('card').getAttribute('data-key');
+  // Fixture cloze answers per note (gap words in reading order).
+  const answers: Record<string, string> = {
+    'entscheidung-86e2:tr2de': 'Die Entscheidung',
+    'entscheiden-bb52:tr2de': 'für entschieden',
+    'teilnehmen-2109:tr2de': 'nehmen an teil',
+  };
+  await page.getByTestId('type-input').fill(answers[key!] ?? 'falsch');
+  await page.keyboard.press('Enter');
+  await expect(page.getByTestId('card')).toHaveClass(/is-flipped/);
+  await expect(page.getByTestId('typed-verdict')).toHaveClass(answers[key!] ? /is-correct/ : /is-wrong/);
+});
+
+test('scope filter is remembered', async ({ page }) => {
+  // All fixture notes share one source, so the queue size stays the same; the choice must persist.
+  await page.getByTestId('review-scope').selectOption({ label: 'Seed example' });
+  await expect(page.getByTestId('remaining')).toHaveText('5 kart kaldı');
+  await openApp(page, { reload: true });
+  await expect(page.getByTestId('review-scope')).toHaveValue('c:Seed example');
 });
