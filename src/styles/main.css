@@ -20,6 +20,13 @@
   --type-adjective: #0e8582;
   --type-expression: #b03a86;
   --type-other: #5f6675;
+  --cat-pronoun: #b03a86;
+  --cat-preposition: #2e7aa8;
+  --cat-sentence: #4a55b0;
+  --cat-connector: #6b7d1f;
+  --cat-passive: #9c4a2f;
+  --cat-mood: #8a6d0f;
+  --cat-wordformation: #5f6675;
 
   --again: #d23b4a;
   --hard: #c9821d;
@@ -49,6 +56,13 @@
     --type-adjective: #4fd1c9;
     --type-expression: #f28cc8;
     --type-other: #a3a9b6;
+    --cat-pronoun: #f28cc8;
+    --cat-preposition: #6cb8e6;
+    --cat-sentence: #9ba5ff;
+    --cat-connector: #b8cc5c;
+    --cat-passive: #f09a7c;
+    --cat-mood: #e3c45a;
+    --cat-wordformation: #a3a9b6;
     --shadow: 0 6px 24px rgb(0 0 0 / 0.4);
   }
 }
@@ -354,7 +368,7 @@ main {
 .chevron { color: var(--muted); width: 0.8rem; }
 .note-meta { display: flex; align-items: baseline; gap: 0.75rem; width: 100%; font-size: 0.9rem; }
 .note-meaning { color: var(--text); flex: 1; min-width: 0; }
-.note-type {
+.tag {
   --t: var(--muted);
   flex-shrink: 0;
   padding: 0.1rem 0.55rem;
@@ -371,6 +385,16 @@ main {
 .t-adjective { --t: var(--type-adjective); }
 .t-expression { --t: var(--type-expression); }
 .t-other { --t: var(--type-other); }
+.c-verb { --t: var(--type-verb); }
+.c-noun { --t: var(--type-noun); }
+.c-pronoun { --t: var(--cat-pronoun); }
+.c-adjective { --t: var(--type-adjective); }
+.c-preposition { --t: var(--cat-preposition); }
+.c-sentence { --t: var(--cat-sentence); }
+.c-connector { --t: var(--cat-connector); }
+.c-passive { --t: var(--cat-passive); }
+.c-mood { --t: var(--cat-mood); }
+.c-wordformation { --t: var(--cat-wordformation); }
 .note-details { padding: 0 0.9rem 0.9rem; display: grid; gap: 0.6rem; }
 .card-rows { display: grid; gap: 0.45rem; padding-top: 0.6rem; border-top: 1px solid var(--border); }
 .card-rows-title { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
@@ -459,7 +483,7 @@ main {
 }
 .grammar-item-title { font-weight: 600; }
 .grammar-item-sub { grid-column: 1; font-size: 0.88rem; }
-.grammar-item-cat { grid-column: 2; grid-row: 1 / span 2; align-self: center; font-size: 0.72rem; color: var(--muted); text-align: right; max-width: 8.5rem; }
+.grammar-item-cat { grid-column: 2; grid-row: 1 / span 2; align-self: center; justify-self: end; text-align: center; max-width: 9.5rem; }
 
 .grammar-back { margin-bottom: 0.8rem; }
 .grammar-detail { display: grid; gap: 0.85rem; }
