@@ -217,7 +217,12 @@ export class BrowserView {
           h('span', { class: `dot dot-${status}`, title: STATUS_LABELS[status] }),
           h('span', { class: headword.article ? `g-${headword.article}` : '' }, headwordToString(headword)),
         ),
-        h('span', { class: 'note-meta' }, `${typeLabelTr(note.type)} · ${note.meaningTr}`),
+        h(
+          'span',
+          { class: 'note-meta' },
+          h('span', { class: 'type-tag' }, typeLabelTr(note.type)),
+          h('span', { class: 'note-meaning' }, note.meaningTr),
+        ),
       ),
       isOpen && this.renderDetails(note),
     );
