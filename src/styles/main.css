@@ -811,3 +811,23 @@ button:disabled { opacity: 0.5; cursor: not-allowed; }
 .search-item-title { font-weight: 650; }
 .search-item-sub { font-size: 0.85rem; color: var(--muted); }
 .search-more { display: inline-block; margin-top: 0.4rem; color: var(--accent); font-size: 0.9rem; }
+
+/* ---------- Review toolbar, typed answers, session summary ---------- */
+.review-toolbar { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem 0.6rem; margin: 0.25rem 0 0.75rem; }
+.review-toolbar .queue-info { margin: 0 0 0 auto; }
+.scope-select { max-width: 11rem; padding: 0.35rem 0.5rem; border: 1px solid var(--border); border-radius: 8px; background: var(--surface); color: var(--text); font-size: 0.85rem; }
+.toggle { display: inline-flex; align-items: center; gap: 0.25rem; font-size: 0.85rem; cursor: pointer; }
+.undo { padding: 0.3rem 0.6rem; font-size: 0.85rem; }
+.type-input { margin-top: 0.8rem; }
+.typed-verdict { margin: 0 0 0.6rem; padding: 0.55rem 0.8rem; border-radius: 10px; font-weight: 650; }
+.typed-verdict.is-correct { background: color-mix(in srgb, var(--good) 15%, transparent); color: var(--good); }
+.typed-verdict.is-almost { background: color-mix(in srgb, var(--hard) 15%, transparent); color: var(--hard); }
+.typed-verdict.is-wrong { background: color-mix(in srgb, var(--again) 12%, transparent); color: var(--again); }
+.session-summary { display: grid; gap: 0.6rem; justify-items: center; margin-top: 1.2rem; padding: 1rem; border-radius: 14px; background: var(--surface); border: 1px solid var(--border); }
+.session-title { margin: 0; font-weight: 650; }
+.session-bars { display: flex; flex-wrap: wrap; gap: 0.4rem; justify-content: center; }
+.session-pill { padding: 0.2rem 0.6rem; border-radius: 999px; font-size: 0.8rem; font-weight: 600; color: #fff; }
+.session-pill.rate-1 { background: var(--again); }
+.session-pill.rate-2 { background: var(--hard); }
+.session-pill.rate-3 { background: var(--good); }
+.session-pill.rate-4 { background: var(--easy); }

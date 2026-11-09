@@ -1,4 +1,5 @@
 import type { Note } from './domain/schema';
+import { inScope } from './domain/scope';
 import { createBackup, parseBackup } from './storage/backup';
 import {
   getAllCardStates,
@@ -8,6 +9,7 @@ import {
   replaceAll,
   saveReview,
   saveSettings,
+  undoReview,
   type Database,
 } from './storage/db';
 import { mergeState } from './storage/merge';
@@ -21,8 +23,12 @@ import { startOfStudyDay } from './scheduling/day';
  * Application state and actions. The UI reads from here and calls the actions;
  * every action persists to IndexedDB before updating in-memory state.
  */
+const UNDO_LIMIT = 20;
+
 export class App {
   private listeners = new Set<() => void>();
+  /** Recent ratings that can be undone, newest last. */
+  private undoStack: { previous: CardState; logId: number }[] = [];
   private constructor(
     private readonly db: Database,
     readonly notes: Map<string, Note>,
@@ -65,12 +71,22 @@ export class App {
     return this.scheduler;
   }
 
+  /** Card states inside the chosen study scope (chapter/page). */
+  private scopedStates(): CardState[] {
+    const { scope } = this.settings;
+    if (!scope) return this.allStates;
+    return this.allStates.filter((state) => {
+      const note = this.notes.get(state.noteId);
+      return note !== undefined && inScope(note, scope);
+    });
+  }
+
   queue(now = new Date()): CardState[] {
-    return buildQueue(this.allStates, this.logs, { ...this.settings, now });
+    return buildQueue(this.scopedStates(), this.logs, { ...this.settings, now });
   }
 
   nextLearningDue(now = new Date()): Date | null {
-    return nextLearningDue(this.allStates, this.settings.mode, now);
+    return nextLearningDue(this.scopedStates(), this.settings.mode, now);
   }
 
   /** Number of ratings given in the current study day (all card states). */
@@ -93,10 +109,27 @@ export class App {
     const { card, revlog } = rateCard(this.scheduler, current.fsrs, grade, now);
     const next: CardState = { ...current, fsrs: card };
     const log: ReviewLogEntry = { key, revlog };
-    await saveReview(this.db, next, log);
+    const logId = await saveReview(this.db, next, log);
     this.states.set(key, next);
-    this.logs.push(log);
+    this.logs.push({ ...log, id: logId });
+    this.undoStack.push({ previous: current, logId });
+    if (this.undoStack.length > UNDO_LIMIT) this.undoStack.shift();
     this.emit();
+  }
+
+  get canUndo(): boolean {
+    return this.undoStack.length > 0;
+  }
+
+  /** Reverts the last rating; returns the card key so the UI can show that card again. */
+  async undo(): Promise<string | null> {
+    const last = this.undoStack.pop();
+    if (!last) return null;
+    await undoReview(this.db, last.previous, last.logId);
+    this.states.set(last.previous.key, last.previous);
+    this.logs = this.logs.filter((log) => log.id !== last.logId);
+    this.emit();
+    return last.previous.key;
   }
 
   async setSuspended(key: string, suspended: boolean): Promise<void> {
@@ -136,6 +169,7 @@ export class App {
     this.scheduler = await createScheduler(this.settings.desiredRetention);
     this.states = new Map(merged.active.map((s) => [s.key, s]));
     this.logs = await getAllLogs(this.db);
+    this.undoStack = [];
     this.emit();
   }
 }

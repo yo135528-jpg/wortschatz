@@ -1,5 +1,6 @@
 import type { Note, NoteType } from '../domain/schema';
 import { State } from '../scheduling/fsrs';
+import { pageOf } from '../domain/scope';
 import type { CardState } from '../storage/types';
 
 /** Learning status of a note, derived from the FSRS state of its cards. */
@@ -82,9 +83,7 @@ export function sortRows(rows: NoteRow[], order: SortOrder): NoteRow[] {
 }
 
 /** "Kursbuch, Kapitel 1, S. 16" → "Kapitel 1 · S. 16". */
-export function groupLabel(source: string): string {
-  return source.replace(/^Kursbuch,\s*/, '').replace(/,\s*/g, ' · ');
-}
+export const groupLabel = pageOf;
 
 export interface Group {
   label: string;

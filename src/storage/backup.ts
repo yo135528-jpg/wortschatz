@@ -41,6 +41,9 @@ const BackupSchema = z.object({
     newPerDay: z.number().int().min(0),
     reviewsPerDay: z.number().int().min(0),
     mode: z.enum(['de2tr', 'tr2de', 'mixed']),
+    // Added later: older backups do not have them.
+    scope: z.string().default(''),
+    typeAnswers: z.boolean().default(false),
   }),
   cards: z.array(
     z.object({

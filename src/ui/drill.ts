@@ -15,7 +15,9 @@ import {
   type Question,
 } from '../domain/drills';
 import type { Note } from '../domain/schema';
-import { buildRows, groupLabel } from './browseModel';
+import { buildRows } from './browseModel';
+import { ALL_SCOPE, inScope } from '../domain/scope';
+import { scopeSelect } from './scopeSelect';
 import { h } from './dom';
 import { href } from './router';
 import { isSpeechSupported, geminiKey, speakButton, speakGerman } from './tts';
@@ -99,8 +101,8 @@ export const DRILLS: Record<DrillKind, DrillInfo> = {
   },
 };
 
-const CHAPTER_KEY = 'wortschatz.drill-chapter';
-const ALL = '';
+const CHAPTER_KEY = 'wortschatz.drill-scope';
+const ALL = ALL_SCOPE;
 
 function readChapter(): string {
   try {
@@ -160,11 +162,7 @@ export class DrillView {
 
   private notes(): Note[] {
     const notes = [...this.app.notes.values()];
-    return this.chapter === ALL ? notes : notes.filter((note) => groupLabel(note.source) === this.chapter);
-  }
-
-  private chapters(): string[] {
-    return [...new Set([...this.app.notes.values()].map((note) => groupLabel(note.source)))];
+    return notes.filter((note) => inScope(note, this.chapter));
   }
 
   private header(): HTMLElement {
@@ -184,18 +182,15 @@ export class DrillView {
       ? h(
           'label',
           { class: 'field' },
-          h('span', {}, 'Bölüm'),
-          h(
-            'select',
-            {
-              'data-testid': 'drill-chapter',
-              onchange: (event: Event) => {
-                this.chapter = (event.target as HTMLSelectElement).value;
-                writeChapter(this.chapter);
-              },
+          h('span', {}, 'Kelimeler'),
+          scopeSelect(
+            this.app.notes.values(),
+            this.chapter,
+            (scope) => {
+              this.chapter = scope;
+              writeChapter(scope);
             },
-            h('option', { value: ALL, selected: this.chapter === ALL }, 'Tüm kelimeler'),
-            ...this.chapters().map((chapter) => h('option', { value: chapter, selected: this.chapter === chapter }, chapter)),
+            'drill-chapter',
           ),
         )
       : null;

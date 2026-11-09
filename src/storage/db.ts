@@ -39,9 +39,16 @@ export async function putCardStates(db: Database, states: CardState[]): Promise<
 }
 
 /** Saves the new card state and its review log atomically. */
-export async function saveReview(db: Database, state: CardState, log: ReviewLogEntry): Promise<void> {
+export async function saveReview(db: Database, state: CardState, log: ReviewLogEntry): Promise<number> {
   const tx = db.transaction(['cards', 'logs'], 'readwrite');
-  await Promise.all([tx.objectStore('cards').put(state), tx.objectStore('logs').add(log), tx.done]);
+  const [, id] = await Promise.all([tx.objectStore('cards').put(state), tx.objectStore('logs').add(log), tx.done]);
+  return id;
+}
+
+/** Reverts a review: restores the previous card state and deletes its log entry. */
+export async function undoReview(db: Database, previous: CardState, logId: number): Promise<void> {
+  const tx = db.transaction(['cards', 'logs'], 'readwrite');
+  await Promise.all([tx.objectStore('cards').put(previous), tx.objectStore('logs').delete(logId), tx.done]);
 }
 
 export function getAllLogs(db: Database): Promise<ReviewLogEntry[]> {

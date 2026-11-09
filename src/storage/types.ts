@@ -25,6 +25,10 @@ export interface Settings {
   newPerDay: number;
   reviewsPerDay: number;
   mode: StudyMode;
+  /** Which words the review uses: "" = all, "c:<chapter>", "p:<page>" (see domain/scope). */
+  scope: string;
+  /** tr2de cards: type the answer before flipping. */
+  typeAnswers: boolean;
 }
 
 export const DEFAULT_SETTINGS: Settings = {
@@ -32,4 +36,6 @@ export const DEFAULT_SETTINGS: Settings = {
   newPerDay: 15,
   reviewsPerDay: 200,
   mode: 'mixed',
+  scope: '',
+  typeAnswers: false,
 };
