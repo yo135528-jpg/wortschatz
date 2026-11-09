@@ -8,6 +8,11 @@ Static Vite + TypeScript app (no framework), deployed to GitHub Pages. Started a
 - `src/storage/merge.ts` (pure): new cards get fresh state, existing state is never overwritten, removed notes are ignored (state kept).
 - Grammar reference (Gramer tab): `src/data/grammar/{a1,a2,b1,b2}.ts`, typed + zod-validated (`src/domain/grammar.ts`), validated by `npm run validate`. Explanations in Turkish, examples in German with natural Turkish. When a book chapter teaches a topic, set `book` on it and keep content consistent with the cards.
 - Street German (Sokak tab): `src/data/street/*.ts`, typed + zod-validated (`src/domain/street.ts`), validated by `npm run validate`. Topic by topic, each phrase has a `register` (`alltag`, `locker`, `jugend`, `regional` + `region`, `derb`), natural Turkish `tr`, optional `standard` (written form), `example`, `note`. Only real, current spoken German; when unsure about a phrase, leave it out.
+- Screens & routing: hash router (`src/ui/router.ts`), bottom bar Bugün · Çalış · Kütüphane (Kelimeler/Gramer/Sokak) · İlerleme, settings at `#/settings`. Grammar and street content load lazily (`src/content.ts`).
+- Drills (`src/domain/drills.ts`, `src/ui/drill.ts`) are practice only and never change FSRS state. Typed answers use `src/domain/answer.ts` (typo/umlaut tolerant).
+- Words ↔ grammar links are derived by rules in `src/domain/links.ts` (no per-note field); new rules must point to existing topic ids (tested).
+- Street phrases added as cards are rebuilt at runtime from `settings.streetPhrases` (`src/domain/streetCards.ts`).
+- Optional device sync via the learner's private GitHub Gist (`src/storage/sync.ts`): logs are unioned, the most recently reviewed card state wins.
 - Each note produces up to two cards, `de2tr` and `tr2de`, each with its own FSRS state.
 - Tests never depend on real content: unit and e2e tests use `tests/fixtures/notes.json` (e2e via `vite --mode e2e` alias). Add/remove words freely.
 - Commands: `npm run validate` · `npm test` (Vitest) · `npm run e2e` (Playwright) · `npm run build` · `npm run new-id -- "<lemma>" <type> [gender]`.

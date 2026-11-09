@@ -20,6 +20,7 @@ import { StudyView } from './ui/study';
 import { STUDY_ITEMS } from './ui/studyItems';
 import { DrillView } from './ui/drill';
 import { TodayView } from './ui/today';
+import { SyncController } from './ui/sync';
 import { registerServiceWorker } from './pwa';
 
 type ViewName = Exclude<RouteName, never>;
@@ -41,9 +42,14 @@ async function start(): Promise<void> {
   const notes = parseNotes(rawNotes);
   const app = await App.load(await openDatabase(), notes);
   // Street-German phrases the learner added as cards are rebuilt from the content.
-  if (app.settings.streetPhrases.length) {
-    await app.addNotes(streetNotes(await loadStreet(), app.settings.streetPhrases, studyDayLabel(new Date())));
-  }
+  const loadStreetCards = async () => {
+    const missing = app.settings.streetPhrases.length
+      ? streetNotes(await loadStreet(), app.settings.streetPhrases, studyDayLabel(new Date())).filter((n) => !app.notes.has(n.id))
+      : [];
+    await app.addNotes(missing);
+  };
+  await loadStreetCards();
+  const sync = new SyncController(app, loadStreetCards);
   const streetCards: StreetCardActions = {
     has: (topic, phrase) => app.settings.streetPhrases.includes(phraseKey(topic, phrase)),
     async toggle(topic, phrase) {
@@ -131,7 +137,7 @@ async function start(): Promise<void> {
         search.show(next.query);
         break;
       case 'settings':
-        renderSettings(app, views.settings);
+        renderSettings(app, views.settings, [sync.panel()]);
         break;
       default:
         renderActive();
@@ -159,6 +165,7 @@ async function start(): Promise<void> {
   // Signals that all event handlers are attached (used by e2e tests).
   document.body.dataset.ready = 'true';
   registerServiceWorker();
+  sync.startAuto();
 }
 
 start().catch((error: Error) => {
