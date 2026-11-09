@@ -49,7 +49,7 @@ async function start(): Promise<void> {
   // Reference content is loaded lazily on first visit (separate chunks).
   let grammar: Promise<GrammarView> | null = null;
   let street: Promise<StreetView> | null = null;
-  const grammarView = () => (grammar ??= loadGrammar().then((topics) => new GrammarView(topics, views.grammar)));
+  const grammarView = () => (grammar ??= loadGrammar().then((topics) => new GrammarView(topics, views.grammar, notes)));
   const streetView = () => (street ??= loadStreet().then((topics) => new StreetView(topics, views.street)));
 
   const modeToggle = byId('mode-toggle');

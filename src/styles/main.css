@@ -865,3 +865,6 @@ button:disabled { opacity: 0.5; cursor: not-allowed; }
 .meter { display: flex; gap: 2px; height: 10px; border-radius: 999px; background: var(--surface-2); overflow: hidden; }
 .meter span { height: 100%; }
 .meter span:first-child { border-radius: 999px 0 0 999px; }
+.grammar-links { justify-content: center; margin-top: 0.2rem; }
+.grammar-links a.chip { text-decoration: none; color: var(--text); }
+.grammar-related a.chip { text-decoration: none; color: var(--text); }

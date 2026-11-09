@@ -66,3 +66,11 @@ test('global search finds words, grammar and street phrases', async ({ page }) =
   await page.getByTestId('search-word').first().click();
   await expect(page.locator('[data-testid="note-item"][data-id="entscheidung-86e2"]')).toHaveClass(/open/);
 });
+
+test('a word links to its grammar topic and the topic lists the word back', async ({ page }) => {
+  await openApp(page, { hash: '#/library/words/entscheiden-bb52' });
+  const links = page.locator('[data-testid="note-item"][data-id="entscheiden-bb52"] [data-testid="grammar-links"]');
+  await links.getByRole('link', { name: /Reflexive|reflexive/i }).click();
+  await expect(page.getByTestId('grammar-detail')).toHaveAttribute('data-id', 'reflexive-verben');
+  await expect(page.getByTestId('grammar-words')).toContainText('entscheiden');
+});

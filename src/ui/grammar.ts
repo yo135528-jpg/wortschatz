@@ -9,7 +9,10 @@ import {
   type LevelFilter,
 } from '../domain/grammar';
 import { h } from './dom';
-import { navigate } from './router';
+import { href, navigate } from './router';
+import { notesForTopic } from '../domain/links';
+import { buildHeadword, headwordToString } from '../domain/format';
+import type { Note } from '../domain/schema';
 
 /** Renders "**bold**" markers as <strong> using text nodes only (no HTML parsing). */
 function rich(value: string): Node {
@@ -30,6 +33,8 @@ export class GrammarView {
   constructor(
     private readonly topics: GrammarTopic[],
     private readonly root: HTMLElement,
+    /** The learner's words, to list the ones that use a topic. */
+    private readonly notes: Note[] = [],
   ) {
     this.byId = new Map(topics.map((topic) => [topic.id, topic]));
     this.render();
@@ -166,6 +171,7 @@ export class GrammarView {
         { class: 'grammar-detail', 'data-testid': 'grammar-detail', 'data-id': topic.id },
         header,
         ...topic.blocks.map((block) => this.renderBlock(block)),
+        this.renderWords(topic),
         related.length
           ? h(
               'section',
@@ -186,6 +192,26 @@ export class GrammarView {
           : null,
       ),
     ];
+  }
+
+  /** "Kelimelerinden örnekler": the learner's own words that use this structure. */
+  private renderWords(topic: GrammarTopic): HTMLElement | null {
+    const words = notesForTopic(this.notes, topic.id);
+    if (words.length === 0) return null;
+    const shown = words.slice(0, 12);
+    return h(
+      'section',
+      { class: 'grammar-related', 'data-testid': 'grammar-words' },
+      h('h3', {}, `Kelimelerinden (${words.length})`),
+      h(
+        'div',
+        { class: 'chips' },
+        ...shown.map((note) =>
+          h('a', { class: 'chip', href: href({ name: 'words', id: note.id }) }, headwordToString(buildHeadword(note))),
+        ),
+        words.length > shown.length ? h('span', { class: 'muted small' }, `+${words.length - shown.length}`) : null,
+      ),
+    );
   }
 
   private renderBlock(block: GrammarBlock): HTMLElement {
