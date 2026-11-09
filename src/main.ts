@@ -8,13 +8,16 @@ import { BrowserView } from './ui/browser';
 import { GRAMMAR_TOPICS } from './data/grammar';
 import { parseGrammar } from './domain/grammar';
 import { GrammarView } from './ui/grammar';
+import { STREET_TOPICS } from './data/street';
+import { parseStreet } from './domain/street';
+import { StreetView } from './ui/street';
 import { byId, h } from './ui/dom';
 import { ReviewView } from './ui/review';
 import { renderSettings } from './ui/settings';
 import { renderStats } from './ui/stats';
 
-type Tab = 'review' | 'browse' | 'grammar' | 'stats' | 'settings';
-const TABS: Tab[] = ['review', 'browse', 'grammar', 'stats', 'settings'];
+type Tab = 'review' | 'browse' | 'grammar' | 'street' | 'stats' | 'settings';
+const TABS: Tab[] = ['review', 'browse', 'grammar', 'street', 'stats', 'settings'];
 
 async function start(): Promise<void> {
   const notes = parseNotes(rawNotes);
@@ -25,6 +28,9 @@ async function start(): Promise<void> {
   const browser = new BrowserView(app, views.browse);
   // Static reference content: rendered once, independent of review state.
   new GrammarView(parseGrammar(GRAMMAR_TOPICS), views.grammar);
+  new StreetView(parseStreet(STREET_TOPICS), views.street);
+  // The study-mode toggle only matters while reviewing cards.
+  const modeToggle = byId('mode-toggle');
   let activeTab: Tab = 'review';
 
   const renderActive = () => {
@@ -35,6 +41,7 @@ async function start(): Promise<void> {
   const showTab = (tab: Tab) => {
     activeTab = tab;
     for (const name of TABS) views[name].hidden = name !== tab;
+    modeToggle.hidden = tab !== 'review';
     document.querySelectorAll<HTMLButtonElement>('[data-tab]').forEach((button) => {
       button.setAttribute('aria-current', String(button.dataset.tab === tab));
     });

@@ -1,5 +1,5 @@
 /**
- * Validates src/data/cards.json (and the grammar reference) against the zod schemas and checks for likely duplicates.
+ * Validates src/data/cards.json (plus the grammar reference and street German) against the zod schemas and checks for likely duplicates.
  * Run: npm run validate
  */
 import { readFileSync } from 'node:fs';
@@ -7,6 +7,8 @@ import { fileURLToPath } from 'node:url';
 import { parseNotes, type Note } from '../src/domain/schema';
 import { GRAMMAR_TOPICS } from '../src/data/grammar';
 import { parseGrammar } from '../src/domain/grammar';
+import { STREET_TOPICS } from '../src/data/street';
+import { parseStreet, topicPhrases } from '../src/domain/street';
 
 const file = fileURLToPath(new URL('../src/data/cards.json', import.meta.url));
 
@@ -36,6 +38,10 @@ try {
 
   const topics = parseGrammar(GRAMMAR_TOPICS);
   console.log(`✓ grammar is valid: ${topics.length} topics`);
+
+  const street = parseStreet(STREET_TOPICS);
+  const phraseCount = street.reduce((sum, topic) => sum + topicPhrases(topic).length, 0);
+  console.log(`✓ street German is valid: ${street.length} topics, ${phraseCount} phrases`);
 } catch (error) {
   console.error(`✗ ${(error as Error).message}`);
   process.exit(1);
