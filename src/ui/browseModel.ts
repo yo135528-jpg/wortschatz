@@ -118,3 +118,26 @@ export function summarize(rows: NoteRow[]): Summary {
     hard: rows.filter((row) => row.lapses >= HARD_LAPSES).length,
   };
 }
+
+const DAY_MS = 24 * 60 * 60 * 1000;
+
+function startOfDay(date: Date): number {
+  return new Date(date.getFullYear(), date.getMonth(), date.getDate()).getTime();
+}
+
+/** Plain-Turkish schedule line for one card, e.g. "Sonraki tekrar: yarın". */
+export function cardScheduleLabel(state: CardState, now: Date): string {
+  if (state.suspended) return 'Sorulmuyor';
+  if (state.fsrs.state === State.New) return 'Henüz çalışılmadı';
+  const due = state.fsrs.dueAt;
+  const days = Math.round((startOfDay(due) - startOfDay(now)) / DAY_MS);
+  if (days <= 0) return 'Sonraki tekrar: bugün';
+  if (days === 1) return 'Sonraki tekrar: yarın';
+  const sameYear = due.getFullYear() === now.getFullYear();
+  const date = due.toLocaleDateString('tr-TR', {
+    day: 'numeric',
+    month: 'long',
+    ...(sameYear ? {} : { year: 'numeric' }),
+  });
+  return `Sonraki tekrar: ${date}`;
+}

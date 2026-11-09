@@ -372,8 +372,13 @@ main {
 .t-expression { --t: var(--type-expression); }
 .t-other { --t: var(--type-other); }
 .note-details { padding: 0 0.9rem 0.9rem; display: grid; gap: 0.6rem; }
-.card-row { display: flex; align-items: center; gap: 0.6rem; flex-wrap: wrap; }
-.card-row .direction { font-weight: 600; min-width: 4.5rem; }
+.card-rows { display: grid; gap: 0.45rem; padding-top: 0.6rem; border-top: 1px solid var(--border); }
+.card-rows-title { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
+.card-row { display: flex; align-items: center; gap: 0.2rem 0.75rem; flex-wrap: wrap; }
+.card-row .direction { font-weight: 600; font-size: 0.9rem; min-width: 8.5rem; }
+.card-row .schedule { color: var(--muted); font-size: 0.88rem; }
+.card-row.is-suspended .direction,
+.card-row.is-suspended .schedule { opacity: 0.55; }
 .card-row .suspend { margin-left: auto; padding: 0.3rem 0.7rem; font-size: 0.85rem; }
 .suspend.is-suspended { border-color: var(--hard); color: var(--hard); }
 

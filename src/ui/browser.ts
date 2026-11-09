@@ -2,8 +2,8 @@ import type { App } from '../app';
 import { buildHeadword, headwordToString, typeLabelTr } from '../domain/format';
 import type { Note, NoteType } from '../domain/schema';
 import { cardKey } from '../domain/cards';
-import { State } from '../scheduling/fsrs';
 import {
+  cardScheduleLabel,
   buildRows,
   filterRows,
   groupBySource,
@@ -17,13 +17,6 @@ import {
 } from './browseModel';
 import { renderBack } from './cardFaces';
 import { h } from './dom';
-
-const STATE_LABELS: Record<number, string> = {
-  [State.New]: 'yeni',
-  [State.Learning]: 'öğreniliyor',
-  [State.Review]: 'tekrar',
-  [State.Relearning]: 'yeniden',
-};
 
 const STATUS_LABELS: Record<NoteStatus, string> = {
   new: 'Yeni',
@@ -232,24 +225,32 @@ export class BrowserView {
     const rows = note.directions.map((direction) => {
       const state = this.app.allStates.find((s) => s.key === cardKey(note.id, direction));
       if (!state) return null;
-      const due = state.fsrs.state === State.New ? '—' : state.fsrs.dueAt.toLocaleDateString('tr-TR');
+      const label = direction === 'de2tr' ? 'Almanca → Türkçe' : 'Türkçe → Almanca';
       return h(
         'div',
-        { class: 'card-row' },
-        h('span', { class: 'direction' }, direction === 'de2tr' ? 'DE → TR' : 'TR → DE'),
-        h('span', { class: 'muted' }, `${STATE_LABELS[state.fsrs.state] ?? ''} · vade ${due}`),
+        { class: `card-row ${state.suspended ? 'is-suspended' : ''}` },
+        h('span', { class: 'direction' }, label),
+        h('span', { class: 'schedule' }, cardScheduleLabel(state, new Date())),
         h(
           'button',
           {
             type: 'button',
             class: `suspend ${state.suspended ? 'is-suspended' : ''}`,
             'data-testid': `suspend-${direction}`,
+            title: state.suspended
+              ? 'Bu kart yeniden çalışmaya dahil edilir'
+              : 'Bu kart çalışırken sorulmaz, ilerlemen silinmez',
             onclick: () => void this.app.setSuspended(state.key, !state.suspended),
           },
-          state.suspended ? 'Askıdan al' : 'Askıya al',
+          state.suspended ? 'Tekrar sor' : 'Sorma',
         ),
       );
     });
-    return h('div', { class: 'note-details' }, renderBack(note, 'tr2de'), ...rows);
+    return h(
+      'div',
+      { class: 'note-details' },
+      renderBack(note, 'tr2de'),
+      h('div', { class: 'card-rows' }, h('div', { class: 'card-rows-title' }, 'Çalışma durumu'), ...rows),
+    );
   }
 }
