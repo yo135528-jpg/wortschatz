@@ -25,6 +25,12 @@ function rich(value: string): Node {
 
 const plain = (value: string) => value.replaceAll('**', '');
 
+/** Adding a phrase to the spaced-repetition cards (provided by main.ts). */
+export interface StreetCardActions {
+  has(topic: StreetTopic, phrase: StreetPhrase): boolean;
+  toggle(topic: StreetTopic, phrase: StreetPhrase): Promise<boolean>;
+}
+
 /** "Sokak dili": spoken German by topic, with register filter and phrase search. */
 export class StreetView {
   private register: RegisterFilter = 'all';
@@ -36,6 +42,7 @@ export class StreetView {
   constructor(
     private readonly topics: StreetTopic[],
     private readonly root: HTMLElement,
+    private readonly cards: StreetCardActions | null = null,
   ) {
     this.byId = new Map(topics.map((topic) => [topic.id, topic]));
     this.render();
@@ -192,7 +199,7 @@ export class StreetView {
             { type: 'button', class: 'street-hit-topic', onclick: () => this.open(topic.id) },
             `${topic.icon} ${topic.titleTr} →`,
           ),
-          h('ul', { class: 'phrase-list' }, ...items.map((hit) => this.renderPhrase(hit.phrase))),
+          h('ul', { class: 'phrase-list' }, ...items.map((hit) => this.renderPhrase(hit.phrase, hit.topic))),
         ),
       ),
     ];
@@ -222,7 +229,7 @@ export class StreetView {
           h('p', { class: 'grammar-subtitle muted' }, topic.titleDe),
           h('p', { class: 'grammar-summary' }, rich(topic.intro)),
         ),
-        ...topic.blocks.map((block) => this.renderBlock(block)),
+        ...topic.blocks.map((block) => this.renderBlock(block, topic)),
         related.length
           ? h(
               'section',
@@ -241,7 +248,7 @@ export class StreetView {
     ];
   }
 
-  private renderBlock(block: StreetBlock): HTMLElement {
+  private renderBlock(block: StreetBlock, topic: StreetTopic): HTMLElement {
     switch (block.type) {
       case 'text':
         return h('p', { class: 'grammar-text' }, rich(block.text));
@@ -254,7 +261,7 @@ export class StreetView {
           'section',
           { class: 'phrase-section' },
           block.heading ? h('h3', { class: 'phrase-heading' }, block.heading) : null,
-          h('ul', { class: 'phrase-list' }, ...block.items.map((item) => this.renderPhrase(item))),
+          h('ul', { class: 'phrase-list' }, ...block.items.map((item) => this.renderPhrase(item, topic))),
         );
       case 'dialogue':
         return h(
@@ -286,7 +293,7 @@ export class StreetView {
     }
   }
 
-  private renderPhrase(phrase: StreetPhrase): HTMLElement {
+  private renderPhrase(phrase: StreetPhrase, topic: StreetTopic): HTMLElement {
     return h(
       'li',
       { class: `phrase r-${phrase.register}`, 'data-testid': 'street-phrase' },
@@ -312,6 +319,30 @@ export class StreetView {
           )
         : null,
       phrase.note ? h('div', { class: 'phrase-note' }, rich(phrase.note)) : null,
+      this.cardButton(phrase, topic),
     );
+  }
+
+  private cardButton(phrase: StreetPhrase, topic: StreetTopic): HTMLElement | null {
+    const cards = this.cards;
+    if (!cards) return null;
+    const label = (added: boolean) => (added ? '✓ Kartlarda' : '+ Kartlara ekle');
+    const button = h(
+      'button',
+      {
+        type: 'button',
+        class: `add-card ${cards.has(topic, phrase) ? 'is-added' : ''}`,
+        'data-testid': 'add-card',
+        onclick: async () => {
+          button.disabled = true;
+          const added = await cards.toggle(topic, phrase);
+          button.textContent = label(added);
+          button.classList.toggle('is-added', added);
+          button.disabled = false;
+        },
+      },
+      label(cards.has(topic, phrase)),
+    );
+    return button;
   }
 }

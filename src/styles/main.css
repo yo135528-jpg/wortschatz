@@ -868,3 +868,5 @@ button:disabled { opacity: 0.5; cursor: not-allowed; }
 .grammar-links { justify-content: center; margin-top: 0.2rem; }
 .grammar-links a.chip { text-decoration: none; color: var(--text); }
 .grammar-related a.chip { text-decoration: none; color: var(--text); }
+.add-card { justify-self: start; margin-top: 0.2rem; padding: 0.25rem 0.65rem; font-size: 0.8rem; color: var(--accent); border-color: color-mix(in srgb, var(--accent) 40%, var(--border)); }
+.add-card.is-added { color: var(--good); border-color: color-mix(in srgb, var(--good) 45%, var(--border)); background: color-mix(in srgb, var(--good) 8%, var(--surface)); }

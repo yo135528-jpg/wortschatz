@@ -32,3 +32,19 @@ test('street search and register filter show matching phrases', async ({ page })
   const classes = await phrases.evaluateAll((items) => items.map((item) => item.className));
   expect(classes.every((name) => name.includes('r-derb'))).toBe(true);
 });
+
+test('a street phrase can be added to the cards and survives a reload', async ({ page }) => {
+  await openApp(page, { hash: '#/library/street/geld' });
+  const phrase = page.getByTestId('street-phrase').filter({ hasText: 'Ich bin pleite.' });
+  await phrase.getByTestId('add-card').click();
+  await expect(phrase.getByTestId('add-card')).toHaveText('✓ Kartlarda');
+
+  await openApp(page, { hash: '#/library/words', reload: false });
+  await page.getByTestId('search').fill('pleite');
+  await expect(page.getByTestId('note-item')).toHaveCount(1);
+
+  // After a reload the search is empty: 5 fixture words + the added phrase.
+  await openApp(page, { reload: true });
+  await expect(page.getByTestId('note-item')).toHaveCount(6);
+  await expect(page.locator('[data-testid="note-item"]').filter({ hasText: 'Ich bin pleite.' })).toHaveCount(1);
+});

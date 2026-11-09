@@ -44,6 +44,7 @@ const BackupSchema = z.object({
     // Added later: older backups do not have them.
     scope: z.string().default(''),
     typeAnswers: z.boolean().default(false),
+    streetPhrases: z.array(z.string()).default([]),
   }),
   cards: z.array(
     z.object({

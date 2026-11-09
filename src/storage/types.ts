@@ -29,6 +29,8 @@ export interface Settings {
   scope: string;
   /** tr2de cards: type the answer before flipping. */
   typeAnswers: boolean;
+  /** Street-German phrases added as cards ("<topicId>|<German>", see domain/streetCards). */
+  streetPhrases: string[];
 }
 
 export const DEFAULT_SETTINGS: Settings = {
@@ -38,4 +40,5 @@ export const DEFAULT_SETTINGS: Settings = {
   mode: 'mixed',
   scope: '',
   typeAnswers: false,
+  streetPhrases: [],
 };

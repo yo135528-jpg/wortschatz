@@ -13,7 +13,9 @@ import { parseRoute, routeHash, tabOf, type Route, type RouteName } from './ui/r
 import { SearchView } from './ui/search';
 import { renderSettings } from './ui/settings';
 import { renderStats } from './ui/stats';
-import { StreetView } from './ui/street';
+import { StreetView, type StreetCardActions } from './ui/street';
+import { phraseKey, streetNote, streetNotes } from './domain/streetCards';
+import { studyDayLabel } from './scheduling/day';
 import { StudyView } from './ui/study';
 import { STUDY_ITEMS } from './ui/studyItems';
 import { DrillView } from './ui/drill';
@@ -38,6 +40,25 @@ const LIBRARY: RouteName[] = ['words', 'grammar', 'street'];
 async function start(): Promise<void> {
   const notes = parseNotes(rawNotes);
   const app = await App.load(await openDatabase(), notes);
+  // Street-German phrases the learner added as cards are rebuilt from the content.
+  if (app.settings.streetPhrases.length) {
+    await app.addNotes(streetNotes(await loadStreet(), app.settings.streetPhrases, studyDayLabel(new Date())));
+  }
+  const streetCards: StreetCardActions = {
+    has: (topic, phrase) => app.settings.streetPhrases.includes(phraseKey(topic, phrase)),
+    async toggle(topic, phrase) {
+      const key = phraseKey(topic, phrase);
+      const note = streetNote(topic, phrase, studyDayLabel(new Date()));
+      if (app.settings.streetPhrases.includes(key)) {
+        await app.updateSettings({ streetPhrases: app.settings.streetPhrases.filter((k) => k !== key) });
+        app.removeNotes([note.id]);
+        return false;
+      }
+      await app.updateSettings({ streetPhrases: [...app.settings.streetPhrases, key] });
+      await app.addNotes([note]);
+      return true;
+    },
+  };
 
   const views = Object.fromEntries(VIEW_NAMES.map((name) => [name, byId(`view-${name}`)])) as Record<ViewName, HTMLElement>;
   const today = new TodayView(app, views.today);
@@ -50,7 +71,7 @@ async function start(): Promise<void> {
   let grammar: Promise<GrammarView> | null = null;
   let street: Promise<StreetView> | null = null;
   const grammarView = () => (grammar ??= loadGrammar().then((topics) => new GrammarView(topics, views.grammar, notes)));
-  const streetView = () => (street ??= loadStreet().then((topics) => new StreetView(topics, views.street)));
+  const streetView = () => (street ??= loadStreet().then((topics) => new StreetView(topics, views.street, streetCards)));
 
   const modeToggle = byId('mode-toggle');
   const libraryNav = byId('library-nav');

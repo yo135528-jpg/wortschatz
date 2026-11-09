@@ -117,6 +117,27 @@ export class App {
     this.emit();
   }
 
+  /**
+   * Adds notes that are not in cards.json (street-German phrases) and creates
+   * state for their new cards. Existing state is reused (same note id → same key).
+   */
+  async addNotes(notes: Note[], now = new Date()): Promise<void> {
+    if (notes.length === 0) return;
+    for (const note of notes) this.notes.set(note.id, note);
+    const merged = mergeState(notes, await getAllCardStates(this.db), () => newFsrsCard(this.scheduler, now));
+    if (merged.created.length) await putCardStates(this.db, merged.created);
+    for (const state of merged.active) this.states.set(state.key, state);
+    this.emit();
+  }
+
+  /** Removes runtime notes from the app; their stored state is kept (like removed cards.json notes). */
+  removeNotes(ids: string[]): void {
+    const remove = new Set(ids);
+    for (const id of ids) this.notes.delete(id);
+    for (const [key, state] of this.states) if (remove.has(state.noteId)) this.states.delete(key);
+    this.emit();
+  }
+
   get canUndo(): boolean {
     return this.undoStack.length > 0;
   }
