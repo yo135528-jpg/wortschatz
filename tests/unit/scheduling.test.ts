@@ -10,7 +10,7 @@ import {
   type ButtonGrade,
 } from '../../src/scheduling/fsrs';
 import { buildQueue, countToday } from '../../src/scheduling/queue';
-import { computeStreak } from '../../src/scheduling/stats';
+import { activityCalendar, computeStreak, dueForecast, groupProgress } from '../../src/scheduling/stats';
 import { createBackup, parseBackup } from '../../src/storage/backup';
 import { mergeState } from '../../src/storage/merge';
 import { DEFAULT_SETTINGS, type CardState, type ReviewLogEntry } from '../../src/storage/types';
@@ -141,5 +141,42 @@ describe('backup', () => {
   it('rejects unrelated JSON', () => {
     expect(() => parseBackup('{"hello":1}')).toThrow(/invalid/);
     expect(() => parseBackup('not json')).toThrow(/not valid JSON/);
+  });
+});
+
+describe('progress charts', () => {
+  const logAt = (iso: string): ReviewLogEntry => ({
+    key: 'x',
+    revlog: rateCard(scheduler, newFsrsCard(scheduler, new Date(iso)), Rating.Good, new Date(iso)).revlog,
+  });
+  const at = new Date('2026-11-05T12:00:00'); // a Thursday
+
+  it('calendar covers whole weeks from Monday up to today and counts reviews per day', () => {
+    const days = activityCalendar([logAt('2026-11-04T12:00:00'), logAt('2026-11-04T13:00:00')], at, 2);
+    expect(days[0]!.label).toBe('2026-10-26');
+    expect(days.at(-1)!.label).toBe('2026-11-05');
+    expect(days).toHaveLength(11);
+    expect(days.find((d) => d.label === '2026-11-04')!.count).toBe(2);
+  });
+
+  it('forecast puts overdue cards on day 0 and ignores new and suspended cards', () => {
+    const [a, b, c, d] = freshStates(['a-0001', 'b-0002', 'c-0003', 'd-0004']);
+    const studied = (state: CardState, due: string, suspended = false): CardState => ({
+      ...state,
+      suspended,
+      fsrs: { ...state.fsrs, state: State.Review, dueAt: new Date(due) },
+    });
+    const states = [studied(a!, '2026-11-01T12:00:00'), studied(b!, '2026-11-06T12:00:00'), studied(c!, '2026-11-06T12:00:00', true), d!];
+    expect(dueForecast(states, at, 3).map((day) => day.count)).toEqual([1, 1, 0]);
+  });
+
+  it('groups notes and counts started and mature notes', () => {
+    const [a, b] = freshStates(['a-0001', 'b-0002']);
+    const mature: CardState = { ...a!, fsrs: { ...a!.fsrs, state: State.Review, stability: 40 } };
+    const progress = groupProgress(new Map([['a-0001', 'K1'], ['b-0002', 'K1'], ['c-0003', 'K2']]), [mature, b!]);
+    expect(progress).toEqual([
+      { label: 'K1', total: 2, started: 1, mature: 1 },
+      { label: 'K2', total: 1, started: 0, mature: 0 },
+    ]);
   });
 });
