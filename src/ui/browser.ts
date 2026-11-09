@@ -221,7 +221,7 @@ export class BrowserView {
           'span',
           { class: 'note-meta' },
           h('span', { class: 'note-meaning' }, note.meaningTr),
-          h('span', { class: 'note-type' }, typeLabelTr(note.type)),
+          h('span', { class: `note-type t-${note.type}` }, typeLabelTr(note.type)),
         ),
       ),
       isOpen && this.renderDetails(note),
