@@ -2,13 +2,14 @@ import { buildHeadword, headwordToString } from './format';
 import type { GrammarTopic } from './grammar';
 import { parseInline } from './grammar';
 import type { Note } from './schema';
+import type { RedemittelGroup } from './redemittel';
 import { REGISTER_LABELS, topicPhrases, type StreetTopic } from './street';
 
 /**
  * Practice drills. Pure question generators: they never touch the FSRS schedule,
  * so the learner can practise as much as they like.
  */
-export type DrillKind = 'artikel' | 'verben' | 'rektion' | 'adjektiv' | 'schreiben' | 'zor' | 'dikte' | 'gramer' | 'sokak';
+export type DrillKind = 'artikel' | 'verben' | 'rektion' | 'adjektiv' | 'schreiben' | 'zor' | 'dikte' | 'gramer' | 'sokak' | 'kalip';
 
 export type Field =
   | { kind: 'choice'; label: string; options: string[]; answer: string }
@@ -225,6 +226,36 @@ export function streetQuestions(topics: StreetTopic[], random: Random = Math.ran
         .filter(Boolean)
         .join(' — '),
     } satisfies Question;
+  });
+}
+
+/**
+ * Redemittel: "how do you say this in German?" The wrong options come from OTHER groups,
+ * so the learner has to know which phrase does which job.
+ */
+export function redemittelQuestions(groups: RedemittelGroup[], random: Random = Math.random): Question[] {
+  return groups.flatMap((group) => {
+    const others = groups.filter((other) => other.id !== group.id).flatMap((other) => other.items);
+    return group.items.map((item, index) => {
+      const distractors = shuffle(others, random).slice(0, 3);
+      return {
+        id: `${group.id}#${index}`,
+        skill: `kalip:${group.id}`,
+        title: item.tr,
+        subtitle: `${group.icon} ${group.titleTr}`,
+        fields: [
+          {
+            kind: 'choice',
+            label: 'Almancası',
+            options: shuffle([item.de, ...distractors.map((other) => other.de)], random),
+            answer: item.de,
+          },
+        ],
+        solution: item.example.de,
+        audio: item.example.de,
+        explain: [item.example.tr, item.note].filter(Boolean).join(' — '),
+      } satisfies Question;
+    });
   });
 }
 

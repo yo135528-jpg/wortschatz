@@ -12,6 +12,8 @@ describe('router', () => {
     { name: 'grammar', id: null },
     { name: 'grammar', id: 'passiv' },
     { name: 'street', id: 'fluchen' },
+    { name: 'phrases', id: null },
+    { name: 'phrases', id: 'meinung-aeussern' },
     { name: 'search', query: 'Bock haben' },
     { name: 'progress' },
     { name: 'settings' },

@@ -906,3 +906,5 @@ button:disabled { opacity: 0.5; cursor: not-allowed; }
 .weak-meter { height: 6px; border-radius: 999px; background: var(--surface-2); overflow: hidden; }
 .weak-fill { display: block; height: 100%; border-radius: 999px; background: var(--hard); }
 .weak-value { text-align: right; font-size: 0.85rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+
+.street-hero .button { display: inline-block; margin-top: 0.75rem; }

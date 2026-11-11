@@ -7,7 +7,9 @@ import { fileURLToPath } from 'node:url';
 import { parseNotes, type Note } from '../src/domain/schema';
 import { GRAMMAR_TOPICS } from '../src/data/grammar';
 import { parseGrammar } from '../src/domain/grammar';
+import { REDEMITTEL } from '../src/data/redemittel';
 import { STREET_TOPICS } from '../src/data/street';
+import { parseRedemittel } from '../src/domain/redemittel';
 import { parseStreet, topicPhrases } from '../src/domain/street';
 
 const file = fileURLToPath(new URL('../src/data/cards.json', import.meta.url));
@@ -42,6 +44,10 @@ try {
   const street = parseStreet(STREET_TOPICS);
   const phraseCount = street.reduce((sum, topic) => sum + topicPhrases(topic).length, 0);
   console.log(`✓ street German is valid: ${street.length} topics, ${phraseCount} phrases`);
+
+  const redemittel = parseRedemittel(REDEMITTEL);
+  const redemittelCount = redemittel.reduce((sum, group) => sum + group.items.length, 0);
+  console.log(`✓ Redemittel are valid: ${redemittel.length} groups, ${redemittelCount} phrases`);
 } catch (error) {
   console.error(`✗ ${(error as Error).message}`);
   process.exit(1);

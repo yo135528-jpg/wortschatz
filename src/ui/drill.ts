@@ -1,11 +1,12 @@
 import type { App } from '../app';
-import { loadGrammar, loadStreet } from '../content';
+import { loadGrammar, loadRedemittel, loadStreet } from '../content';
 import { checkAnswer, diffWords, type Verdict } from '../domain/answer';
 import {
   artikelQuestions,
   dictationQuestions,
   grammarQuestions,
   pickRound,
+  redemittelQuestions,
   rektionQuestions,
   streetQuestions,
   verbQuestions,
@@ -112,6 +113,13 @@ export const DRILLS: Record<DrillKind, DrillInfo> = {
     description: 'Bu ifade ne demek? 4 seçenekten bul.',
     fromNotes: false,
     build: async () => streetQuestions(await loadStreet()),
+  },
+  kalip: {
+    icon: '🗣️',
+    title: 'Kalıplar (Redemittel)',
+    description: 'Bunu Almanca nasıl söylersin? Doğru kalıbı seç.',
+    fromNotes: false,
+    build: async () => redemittelQuestions(await loadRedemittel()),
   },
 };
 

@@ -94,3 +94,21 @@ test('adjective drill explains the ending and a weak skill shows up in the study
   await page.getByTestId('drill-back').click();
   await expect(page.getByTestId('weak-spots')).toContainText('Sıfat çekimi');
 });
+
+test('phrases tab: open a group, go back, and practise', async ({ page }) => {
+  await openApp(page, { hash: '#/library/words' });
+  await page.getByTestId('lib-phrases').click();
+  await page.locator('[data-testid="redemittel-group"][data-id="meinung-aeussern"]').click();
+  await expect(page.getByTestId('redemittel-detail')).toContainText('Meiner Meinung nach');
+
+  await page.goBack();
+  await expect(page.getByTestId('redemittel-group').first()).toBeVisible();
+
+  await page.getByTestId('redemittel-search').fill('bence');
+  await expect(page.getByTestId('redemittel-item').first()).toContainText('Meiner Meinung nach');
+
+  await page.getByTestId('redemittel-drill').click();
+  await page.getByTestId('drill-go').click();
+  await page.getByTestId('drill-choice').first().click();
+  await expect(page.getByTestId('drill-feedback')).toBeVisible();
+});

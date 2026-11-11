@@ -4,7 +4,7 @@ import { DRILLS } from './drill';
 import type { StudyItem } from './study';
 
 /** Display order of the drills in the "Çalış" hub. */
-const ORDER: DrillKind[] = ['schreiben', 'artikel', 'verben', 'rektion', 'adjektiv', 'zor', 'dikte', 'gramer', 'sokak'];
+const ORDER: DrillKind[] = ['schreiben', 'artikel', 'verben', 'rektion', 'adjektiv', 'zor', 'dikte', 'gramer', 'kalip', 'sokak'];
 
 export const STUDY_ITEMS: StudyItem[] = ORDER.map((kind) => ({
   route: { name: 'drill', kind },

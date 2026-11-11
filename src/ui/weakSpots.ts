@@ -1,4 +1,4 @@
-import { loadGrammar } from '../content';
+import { loadGrammar, loadRedemittel } from '../content';
 import { weakSkills, type WeakSkill } from '../domain/skills';
 import { h } from './dom';
 import { href, type Route } from './router';
@@ -24,10 +24,15 @@ export async function loadWeakSpots(limit = 3): Promise<WeakSpot[]> {
   if (weak.length === 0) return [];
   const needsGrammar = weak.some((entry) => entry.skill.startsWith('gramer:'));
   const topics = needsGrammar ? await loadGrammar() : [];
+  const groups = weak.some((entry) => entry.skill.startsWith('kalip:')) ? await loadRedemittel() : [];
   return weak.flatMap((entry) => {
     if (entry.skill.startsWith('gramer:')) {
       const topic = topics.find((t) => t.id === entry.skill.slice('gramer:'.length));
       return topic ? [{ ...entry, label: topic.titleDe, route: { name: 'grammar', id: topic.id } as Route }] : [];
+    }
+    if (entry.skill.startsWith('kalip:')) {
+      const group = groups.find((g) => g.id === entry.skill.slice('kalip:'.length));
+      return group ? [{ ...entry, label: `Kalıplar: ${group.titleTr}`, route: { name: 'phrases', id: group.id } as Route }] : [];
     }
     const known = SKILL_LABELS[entry.skill];
     return known ? [{ ...entry, ...known }] : [];

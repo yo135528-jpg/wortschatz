@@ -1,13 +1,14 @@
 import './styles/main.css';
 import rawNotes from './data/cards.json';
 import { App } from './app';
-import { loadGrammar, loadStreet } from './content';
+import { loadGrammar, loadRedemittel, loadStreet } from './content';
 import { parseNotes } from './domain/schema';
 import { openDatabase } from './storage/db';
 import type { StudyMode } from './storage/types';
 import { BrowserView } from './ui/browser';
 import { byId, h } from './ui/dom';
 import { GrammarView } from './ui/grammar';
+import { RedemittelView } from './ui/redemittel';
 import { ReviewView } from './ui/review';
 import { parseRoute, routeHash, tabOf, type Route, type RouteName } from './ui/router';
 import { SearchView } from './ui/search';
@@ -32,11 +33,12 @@ const VIEW_NAMES: ViewName[] = [
   'words',
   'grammar',
   'street',
+  'phrases',
   'search',
   'progress',
   'settings',
 ];
-const LIBRARY: RouteName[] = ['words', 'grammar', 'street'];
+const LIBRARY: RouteName[] = ['words', 'grammar', 'street', 'phrases'];
 
 async function start(): Promise<void> {
   const notes = parseNotes(rawNotes);
@@ -76,6 +78,8 @@ async function start(): Promise<void> {
   // Reference content is loaded lazily on first visit (separate chunks).
   let grammar: Promise<GrammarView> | null = null;
   let street: Promise<StreetView> | null = null;
+  let phrases: Promise<RedemittelView> | null = null;
+  const phrasesView = () => (phrases ??= loadRedemittel().then((groups) => new RedemittelView(groups, views.phrases)));
   const grammarView = () => (grammar ??= loadGrammar().then((topics) => new GrammarView(topics, views.grammar, notes)));
   const streetView = () => (street ??= loadStreet().then((topics) => new StreetView(topics, views.street, streetCards)));
 
@@ -132,6 +136,9 @@ async function start(): Promise<void> {
         break;
       case 'street':
         (await streetView()).show(next.id);
+        break;
+      case 'phrases':
+        (await phrasesView()).show(next.id);
         break;
       case 'search':
         search.show(next.query);
