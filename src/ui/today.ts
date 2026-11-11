@@ -79,7 +79,7 @@ export class TodayView {
         type: 'search',
         class: 'search',
         name: 'q',
-        placeholder: 'Her şeyde ara: kelime, gramer, sokak dili…',
+        placeholder: 'Her şeyde ara: kelime, gramer, kalıp…',
         'aria-label': 'Her şeyde ara',
         'data-testid': 'global-search',
       }),

@@ -37,13 +37,20 @@ export function mergeBackups(local: Backup, remote: Backup, now: Date): Backup {
     ...local.settings,
     streetPhrases: [...new Set([...local.settings.streetPhrases, ...remote.settings.streetPhrases])],
   };
-  return createBackup([...cards.values()], sortedLogs, settings, now);
+  // Practice results: per skill, the device that practised most recently wins.
+  const skills = { ...remote.skills };
+  for (const [skill, stat] of Object.entries(local.skills)) {
+    const other = skills[skill];
+    if (!other || stat.last >= other.last) skills[skill] = stat;
+  }
+  return createBackup([...cards.values()], sortedLogs, settings, now, skills);
 }
 
 /** True when merging brought in anything this device did not have. */
 export function hasRemoteChanges(local: Backup, merged: Backup): boolean {
   if (merged.logs.length !== local.logs.length) return true;
   if (merged.settings.streetPhrases.length !== local.settings.streetPhrases.length) return true;
+  if (Object.entries(merged.skills).some(([skill, stat]) => local.skills[skill]?.last !== stat.last)) return true;
   const localByKey = new Map(local.cards.map((card) => [card.key, card]));
   return merged.cards.some((card) => {
     const mine = localByKey.get(card.key);

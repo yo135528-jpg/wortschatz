@@ -13,6 +13,7 @@ import {
   type Database,
 } from './storage/db';
 import { mergeState } from './storage/merge';
+import { readSkillStats, writeSkillStats } from './storage/skillStore';
 import type { CardState, ReviewLogEntry, Settings } from './storage/types';
 import { createScheduler, newFsrsCard, rateCard, type ButtonGrade, type Scheduler } from './scheduling/fsrs';
 import { buildQueue, nextLearningDue, prioritize } from './scheduling/queue';
@@ -178,13 +179,14 @@ export class App {
   async exportJson(now = new Date()): Promise<string> {
     const cards = await getAllCardStates(this.db);
     const logs = await getAllLogs(this.db);
-    return JSON.stringify(createBackup(cards, logs, this.settings, now), null, 2);
+    return JSON.stringify(createBackup(cards, logs, this.settings, now, readSkillStats()), null, 2);
   }
 
   /** Replaces all state with the backup, then re-merges with current cards.json. */
   async importJson(json: string, now = new Date()): Promise<void> {
     const backup = parseBackup(json);
     await replaceAll(this.db, backup);
+    writeSkillStats(backup.skills);
     const notes = [...this.notes.values()];
     const merged = mergeState(notes, backup.cards, () => newFsrsCard(this.scheduler, now));
     if (merged.created.length) await putCardStates(this.db, merged.created);

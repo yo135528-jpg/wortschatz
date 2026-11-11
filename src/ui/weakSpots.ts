@@ -2,7 +2,7 @@ import { loadGrammar, loadRedemittel } from '../content';
 import { weakSkills, type WeakSkill } from '../domain/skills';
 import { h } from './dom';
 import { href, type Route } from './router';
-import { readSkillStats } from './skillStore';
+import { readSkillStats } from '../storage/skillStore';
 
 const SKILL_LABELS: Record<string, { label: string; route: Route }> = {
   artikel: { label: 'der · die · das', route: { name: 'drill', kind: 'artikel' } },

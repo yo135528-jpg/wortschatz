@@ -67,6 +67,13 @@ test('global search finds words, grammar and street phrases', async ({ page }) =
   await expect(page.locator('[data-testid="note-item"][data-id="entscheidung-86e2"]')).toHaveClass(/open/);
 });
 
+test('global search also finds Redemittel', async ({ page }) => {
+  await openApp(page, { hash: '#/search?q=bence' });
+  await expect(page.getByTestId('search-phrase').first()).toContainText('Meiner Meinung nach');
+  await page.getByTestId('search-phrase').first().click();
+  await expect(page.getByTestId('redemittel-detail')).toBeVisible();
+});
+
 test('a word links to its grammar topic and the topic lists the word back', async ({ page }) => {
   await openApp(page, { hash: '#/library/words/entscheiden-bb52' });
   const links = page.locator('[data-testid="note-item"][data-id="entscheiden-bb52"] [data-testid="grammar-links"]');

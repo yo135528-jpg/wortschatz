@@ -71,3 +71,30 @@ describe('syncWithGist', () => {
     await expect(syncWithGist({ token: 'bad', gistId: null }, local)).rejects.toThrow(/geçersiz/);
   });
 });
+
+describe('practice results in backups', () => {
+  const withSkills = (skills: Backup['skills']): Backup =>
+    parseBackup(JSON.stringify(createBackup([], [], DEFAULT_SETTINGS, t0, skills)));
+
+  it('older backups without skills still load', () => {
+    const { skills: _skills, ...old } = createBackup([], [], DEFAULT_SETTINGS, t0);
+    expect(parseBackup(JSON.stringify(old)).skills).toEqual({});
+  });
+
+  it('merge keeps, per skill, the device that practised last', () => {
+    const local = withSkills({
+      artikel: { right: 9, wrong: 1, last: '2026-11-10T10:00:00.000Z' },
+      verben: { right: 1, wrong: 4, last: '2026-11-02T10:00:00.000Z' },
+    });
+    const remote = withSkills({
+      verben: { right: 8, wrong: 2, last: '2026-11-09T10:00:00.000Z' },
+      rektion: { right: 2, wrong: 3, last: '2026-11-01T10:00:00.000Z' },
+    });
+    const merged = mergeBackups(local, remote, t0);
+    expect(merged.skills.artikel!.right).toBe(9);
+    expect(merged.skills.verben!.right).toBe(8);
+    expect(merged.skills.rektion!.wrong).toBe(3);
+    expect(hasRemoteChanges(local, merged)).toBe(true);
+    expect(hasRemoteChanges(local, mergeBackups(local, local, t0))).toBe(false);
+  });
+});

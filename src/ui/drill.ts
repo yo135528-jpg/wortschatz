@@ -18,7 +18,7 @@ import {
 import { articleQuestions, noArticleQuestions } from '../domain/adjectives';
 import { shuffle } from '../domain/drills';
 import type { Note } from '../domain/schema';
-import { saveSkillAnswer } from './skillStore';
+import { saveSkillAnswer } from '../storage/skillStore';
 import { buildRows } from './browseModel';
 import { ALL_SCOPE, inScope } from '../domain/scope';
 import { scopeSelect } from './scopeSelect';

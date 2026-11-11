@@ -180,6 +180,9 @@ main {
   transform-style: preserve-3d;
 }
 .card.is-flipped .card-inner { transform: rotateY(180deg); }
+/* Only the visible side sets the height: a short question is not padded to the size of a long answer. */
+.card-inner { position: relative; }
+.card:not(.is-flipped) .face-back, .card.is-flipped .face-front { position: absolute; inset: 0; overflow: hidden; }
 
 .face {
   grid-area: 1 / 1;
@@ -622,7 +625,9 @@ main {
   color: var(--muted);
   text-decoration: none;
 }
-.tabbar a span { font-size: 1.2rem; }
+.icon { width: 1.5rem; height: 1.5rem; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.icon-link { display: inline-flex; color: var(--muted); }
+.icon-link:hover { color: var(--text); }
 .tabbar a[aria-current='true'] { color: var(--accent); font-weight: 600; }
 
 .segmented {
