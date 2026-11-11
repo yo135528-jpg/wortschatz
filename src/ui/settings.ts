@@ -1,4 +1,5 @@
 import type { App } from '../app';
+import { scopeOptions } from '../domain/scope';
 import { h } from './dom';
 import { clearGeminiCache, GEMINI_VOICES } from './geminiTts';
 import {
@@ -185,6 +186,24 @@ export function renderSettings(app: App, root: HTMLElement, extraPanels: HTMLEle
       numberField('Günlük yeni kart', 'setting-new', settings.newPerDay, { min: 0, max: 500, step: 1 }, (v) =>
         void app.updateSettings({ newPerDay: v }),
       ),
+      h(
+        'label',
+        { class: 'field' },
+        h('span', {}, 'Yeni kartlarda öncelik'),
+        h(
+          'select',
+          {
+            class: 'scope-select',
+            'data-testid': 'setting-new-first',
+            onchange: (event: Event) => void app.updateSettings({ newFirst: (event.target as HTMLSelectElement).value }),
+          },
+          h('option', { value: '', selected: settings.newFirst === '' }, 'Kitap sırası'),
+          ...scopeOptions(app.notes.values()).chapters.map((chapter) =>
+            h('option', { value: `c:${chapter}`, selected: settings.newFirst === `c:${chapter}` }, `Önce ${chapter}`),
+          ),
+        ),
+      ),
+      h('p', { class: 'muted small' }, 'Şu an çalıştığın bölümü seç: yeni kartlar önce oradan gelir, tekrarlar etkilenmez.'),
       numberField('Günlük tekrar limiti', 'setting-reviews', settings.reviewsPerDay, { min: 0, max: 9999, step: 1 }, (v) =>
         void app.updateSettings({ reviewsPerDay: v }),
       ),

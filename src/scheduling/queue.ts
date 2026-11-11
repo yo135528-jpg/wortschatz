@@ -82,6 +82,17 @@ export function buildQueue(states: CardState[], logs: ReviewLogEntry[], options:
 
 export const LEARN_AHEAD_MINUTES = 20;
 
+/**
+ * Moves the focused cards to the front, keeping the book order inside both groups.
+ * Only the order of NEW cards depends on the list order, so this decides what is introduced first.
+ */
+export function prioritize<T>(states: T[], isFocus: (state: T) => boolean): T[] {
+  const focus: T[] = [];
+  const rest: T[] = [];
+  for (const state of states) (isFocus(state) ? focus : rest).push(state);
+  return focus.length ? [...focus, ...rest] : states;
+}
+
 function notesStartedToday(states: CardState[], logs: ReviewLogEntry[], now: Date): Set<string> {
   const start = startOfStudyDay(now);
   const noteByKey = new Map(states.map((s) => [s.key, s.noteId]));

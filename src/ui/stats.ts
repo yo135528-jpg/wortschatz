@@ -163,7 +163,7 @@ export function renderStats(app: App, root: HTMLElement): void {
     h(
       'p',
       { class: 'muted small' },
-      `Hatırlama oranı: son 30 günde olgun kartlardaki tekrarların "Again" olmayan payı. Hedef: ${Math.round(
+      `Hatırlama oranı: son 30 günde olgun kartlardaki tekrarların „Tekrar“ denmeyen payı. Hedef: ${Math.round(
         app.settings.desiredRetention * 100,
       )}%. Oturmuş: kartın hafızada en az 3 hafta kalacağı tahmin ediliyor.`,
     ),

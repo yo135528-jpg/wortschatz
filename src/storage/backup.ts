@@ -43,6 +43,7 @@ const BackupSchema = z.object({
     mode: z.enum(['de2tr', 'tr2de', 'mixed']),
     // Added later: older backups do not have them.
     scope: z.string().default(''),
+    newFirst: z.string().default(''),
     typeAnswers: z.boolean().default(false),
     streetPhrases: z.array(z.string()).default([]),
   }),

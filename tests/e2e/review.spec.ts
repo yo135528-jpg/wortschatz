@@ -27,7 +27,7 @@ test('rating a card moves to the next one and shows intervals', async ({ page })
   await expect(page.getByTestId('remaining')).toHaveText('5 kart kaldı');
 
   await page.getByTestId('show-answer').click();
-  await expect(page.getByTestId('rate-easy')).toContainText(/\d+(m|h|d|mo|y)/);
+  await expect(page.getByTestId('rate-easy')).toContainText(/\d+ (dk|sa|gün|ay|yıl)/);
   await page.getByTestId('rate-good').click();
 
   await expect(page.getByTestId('card')).not.toHaveAttribute('data-key', firstKey!);

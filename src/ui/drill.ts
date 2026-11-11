@@ -76,7 +76,7 @@ export const DRILLS: Record<DrillKind, DrillInfo> = {
     description: 'Daha önce unuttuğun kelimeleri yazarak çalış.',
     fromNotes: true,
     build: ({ app, notes }) => writingQuestions(hardNotes(app, notes)),
-    emptyText: 'Henüz unuttuğun bir kelime yok. Kart tekrarında "Again" dediğin kelimeler burada toplanır.',
+    emptyText: 'Henüz unuttuğun bir kelime yok. Kart tekrarında „Tekrar“ dediğin kelimeler burada toplanır.',
   },
   dikte: {
     icon: '🎧',

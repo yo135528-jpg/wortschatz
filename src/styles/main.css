@@ -109,6 +109,10 @@ kbd {
   padding: 0 0.3em;
 }
 [hidden] { display: none !important; }
+/* Keyboard hints make no sense on touch screens. */
+@media (hover: none), (pointer: coarse) {
+  kbd { display: none; }
+}
 .muted { color: var(--muted); }
 .small { font-size: 0.85rem; }
 
@@ -179,7 +183,7 @@ main {
 
 .face {
   grid-area: 1 / 1;
-  min-height: 46dvh;
+  min-height: 34dvh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -263,10 +267,17 @@ main {
   vertical-align: middle;
 }
 
+.review-actions {
+  position: sticky;
+  bottom: calc(var(--tabbar-h) + env(safe-area-inset-bottom));
+  z-index: 1;
+  margin: 0 -1rem;
+  padding: 0.75rem 1rem;
+  background: linear-gradient(to bottom, transparent, var(--bg) 0.75rem);
+}
 .show-answer {
   display: block;
   width: 100%;
-  margin-top: 1rem;
   padding: 0.9rem;
   font-weight: 600;
   background: var(--accent);
@@ -275,7 +286,8 @@ main {
 }
 .show-answer kbd { color: rgb(255 255 255 / 0.8); border-color: rgb(255 255 255 / 0.5); }
 
-.answer-bar { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.5rem; margin-top: 1rem; }
+.answer-bar { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.5rem; }
+.rate { background: var(--surface); }
 .rate {
   display: flex;
   flex-direction: column;
@@ -394,6 +406,8 @@ main {
 .c-mood { --t: var(--cat-mood); }
 .c-wordformation { --t: var(--cat-wordformation); }
 .note-details { padding: 0 0.9rem 0.9rem; display: grid; gap: 0.6rem; }
+/* The row above already shows the meaning. */
+.note-details .meaning-small { display: none; }
 .card-rows { display: grid; gap: 0.45rem; padding-top: 0.6rem; border-top: 1px solid var(--border); }
 .card-rows-title { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
 .card-row { display: flex; align-items: center; gap: 0.2rem 0.75rem; flex-wrap: wrap; }
@@ -729,7 +743,7 @@ button:disabled { opacity: 0.5; cursor: not-allowed; }
 /* ---------- Drill ---------- */
 .drill-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.6rem; }
 .drill-top .grammar-back { margin-bottom: 0; }
-.drill-start, .drill-done { display: grid; gap: 0.7rem; text-align: center; padding: 1rem 0; }
+.drill-start, .drill-done { display: grid; grid-template-columns: minmax(0, 1fr); gap: 0.7rem; text-align: center; padding: 1rem 0; }
 .drill-start h2, .drill-done h2 { margin: 0; }
 .drill-start p, .drill-done p { margin: 0; }
 .drill-start .field { text-align: left; }

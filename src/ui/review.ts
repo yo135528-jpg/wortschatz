@@ -9,7 +9,9 @@ import { genderClass, renderBack, renderFront } from './cardFaces';
 import { h } from './dom';
 import { scopeSelect } from './scopeSelect';
 
-const BUTTON_LABELS: Record<ButtonGrade, string> = { 1: 'Again', 2: 'Hard', 3: 'Good', 4: 'Easy' };
+/** Stable ids for test ids; the visible labels are Turkish. */
+const BUTTON_IDS: Record<ButtonGrade, string> = { 1: 'again', 2: 'hard', 3: 'good', 4: 'easy' };
+const BUTTON_LABELS: Record<ButtonGrade, string> = { 1: 'Tekrar', 2: 'Zor', 3: 'İyi', 4: 'Kolay' };
 
 /** Review screen: shows the first card of the queue, flips, and rates. */
 export class ReviewView {
@@ -212,7 +214,7 @@ export class ReviewView {
           {
             class: `rate rate-${grade}`,
             type: 'button',
-            'data-testid': `rate-${BUTTON_LABELS[grade].toLowerCase()}`,
+            'data-testid': `rate-${BUTTON_IDS[grade]}`,
             onclick: () => void this.rate(grade),
           },
           h('span', { class: 'rate-interval' }, formatInterval(now, due[grade])),
@@ -226,18 +228,23 @@ export class ReviewView {
       this.toolbar(remaining),
       h('p', { class: 'typed-verdict', 'data-testid': 'typed-verdict', hidden: true }),
       cardElement,
+      // Sticky above the tab bar, so the buttons stay under the thumb however long the card is.
       h(
-        'button',
-        {
-          class: 'show-answer',
-          type: 'button',
-          'data-testid': 'show-answer',
-          onclick: () => (typeInput ? this.checkTyped(note, typeInput) : this.flip()),
-        },
-        typeInput ? 'Kontrol et ' : 'Cevabı göster ',
-        h('kbd', {}, typeInput ? 'Enter' : 'Space'),
+        'div',
+        { class: 'review-actions' },
+        h(
+          'button',
+          {
+            class: 'show-answer',
+            type: 'button',
+            'data-testid': 'show-answer',
+            onclick: () => (typeInput ? this.checkTyped(note, typeInput) : this.flip()),
+          },
+          typeInput ? 'Kontrol et ' : 'Cevabı göster ',
+          h('kbd', {}, typeInput ? 'Enter' : 'Space'),
+        ),
+        answerBar,
       ),
-      answerBar,
     );
     typeInput?.focus({ preventScroll: true });
   }

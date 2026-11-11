@@ -15,7 +15,7 @@ import {
 import { mergeState } from './storage/merge';
 import type { CardState, ReviewLogEntry, Settings } from './storage/types';
 import { createScheduler, newFsrsCard, rateCard, type ButtonGrade, type Scheduler } from './scheduling/fsrs';
-import { buildQueue, nextLearningDue } from './scheduling/queue';
+import { buildQueue, nextLearningDue, prioritize } from './scheduling/queue';
 import { computeStats, type Stats } from './scheduling/stats';
 import { startOfStudyDay } from './scheduling/day';
 
@@ -73,12 +73,14 @@ export class App {
 
   /** Card states inside the chosen study scope (chapter/page). */
   private scopedStates(): CardState[] {
-    const { scope } = this.settings;
-    if (!scope) return this.allStates;
-    return this.allStates.filter((state) => {
+    const { scope, newFirst } = this.settings;
+    const matches = (state: CardState, wanted: string) => {
       const note = this.notes.get(state.noteId);
-      return note !== undefined && inScope(note, scope);
-    });
+      return note !== undefined && inScope(note, wanted);
+    };
+    const scoped = scope ? this.allStates.filter((state) => matches(state, scope)) : this.allStates;
+    // The chapter the learner is working on right now gets its new cards first.
+    return newFirst ? prioritize(scoped, (state) => matches(state, newFirst)) : scoped;
   }
 
   queue(now = new Date()): CardState[] {
