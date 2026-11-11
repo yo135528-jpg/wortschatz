@@ -74,3 +74,23 @@ test('a word links to its grammar topic and the topic lists the word back', asyn
   await expect(page.getByTestId('grammar-detail')).toHaveAttribute('data-id', 'reflexive-verben');
   await expect(page.getByTestId('grammar-words')).toContainText('entscheiden');
 });
+
+test('adjective drill explains the ending and a weak skill shows up in the study hub', async ({ page }) => {
+  await openApp(page, { hash: '#/study' });
+  await expect(page.getByTestId('weak-spots')).toBeHidden();
+  await page.getByTestId('study-adjektiv').click();
+  await page.getByTestId('drill-go').click();
+
+  // Always answering "-es" is mostly wrong, so the skill ends up weak.
+  for (let i = 0; i < 40; i++) {
+    if (await page.getByTestId('drill-done').isVisible()) break;
+    await expect(page.getByTestId('drill-question')).toContainText('___');
+    await page.getByTestId('drill-choice').filter({ hasText: /^-es$/ }).click();
+    await expect(page.getByTestId('drill-feedback')).toContainText('→');
+    await page.getByTestId('drill-next').click();
+  }
+  await expect(page.getByTestId('drill-done')).toBeVisible();
+
+  await page.getByTestId('drill-back').click();
+  await expect(page.getByTestId('weak-spots')).toContainText('Sıfat çekimi');
+});

@@ -8,7 +8,7 @@ import { REGISTER_LABELS, topicPhrases, type StreetTopic } from './street';
  * Practice drills. Pure question generators: they never touch the FSRS schedule,
  * so the learner can practise as much as they like.
  */
-export type DrillKind = 'artikel' | 'verben' | 'rektion' | 'schreiben' | 'zor' | 'dikte' | 'gramer' | 'sokak';
+export type DrillKind = 'artikel' | 'verben' | 'rektion' | 'adjektiv' | 'schreiben' | 'zor' | 'dikte' | 'gramer' | 'sokak';
 
 export type Field =
   | { kind: 'choice'; label: string; options: string[]; answer: string }
@@ -32,6 +32,8 @@ export interface Question {
   solution: string;
   /** Optional Turkish explanation / translation shown after answering. */
   explain?: string;
+  /** What this question trains ("gramer:<topicId>"); results are counted per skill. Defaults to the drill kind. */
+  skill?: string;
 }
 
 export type Random = () => number;
@@ -187,6 +189,7 @@ export function grammarQuestions(topics: GrammarTopic[]): Question[] {
             return [
               {
                 id: `${topic.id}#${index}`,
+                skill: `gramer:${topic.id}`,
                 title: topic.titleDe,
                 subtitle: item.tr,
                 sentence,
