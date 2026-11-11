@@ -23,6 +23,8 @@ export class ReviewView {
   private preferKey: string | null = null;
   /** Ratings in this session (since the app was opened), for the summary. */
   private session: Record<ButtonGrade, number> = { 1: 0, 2: 0, 3: 0, 4: 0 };
+  /** The options row survives re-renders (every rating rebuilds the screen). */
+  private optionsOpen = false;
 
   constructor(
     private readonly app: App,
@@ -119,21 +121,44 @@ export class ReviewView {
 
   private toolbar(remaining: number | null): HTMLElement {
     const { settings } = this.app;
+    // Rarely changed options stay folded away, so the card is the first thing on the screen.
+    const filtered = Boolean(settings.scope) || settings.typeAnswers;
+    const body = h(
+        'div',
+        { class: 'review-options-body', hidden: !this.optionsOpen },
+        scopeSelect(this.app.notes.values(), settings.scope, (scope) => void this.app.updateSettings({ scope }), 'review-scope'),
+        h(
+          'label',
+          { class: 'toggle', title: 'TR→DE kartlarında cevabı yazarak ver' },
+          h('input', {
+            type: 'checkbox',
+            checked: settings.typeAnswers,
+            'data-testid': 'type-answers',
+            onchange: (event: Event) => void this.app.updateSettings({ typeAnswers: (event.target as HTMLInputElement).checked }),
+          }),
+          ' ⌨️ Yazarak cevapla',
+        ),
+    );
+    const optionsButton = h(
+      'button',
+      {
+        type: 'button',
+        class: 'undo',
+        'data-testid': 'review-options',
+        'aria-expanded': String(this.optionsOpen),
+        onclick: () => {
+          // Toggled in place: a re-render would flip the card back.
+          this.optionsOpen = !this.optionsOpen;
+          body.hidden = !this.optionsOpen;
+          optionsButton.setAttribute('aria-expanded', String(this.optionsOpen));
+        },
+      },
+      filtered ? 'Seçenekler •' : 'Seçenekler',
+    );
     return h(
       'div',
       { class: 'review-toolbar' },
-      scopeSelect(this.app.notes.values(), settings.scope, (scope) => void this.app.updateSettings({ scope }), 'review-scope'),
-      h(
-        'label',
-        { class: 'toggle', title: 'TR→DE kartlarında cevabı yazarak ver' },
-        h('input', {
-          type: 'checkbox',
-          checked: settings.typeAnswers,
-          'data-testid': 'type-answers',
-          onchange: (event: Event) => void this.app.updateSettings({ typeAnswers: (event.target as HTMLInputElement).checked }),
-        }),
-        ' ⌨️ Yazarak',
-      ),
+      remaining === null ? null : h('span', { class: 'queue-info', 'data-testid': 'remaining' }, `${remaining} kart kaldı`),
       h(
         'button',
         {
@@ -146,7 +171,8 @@ export class ReviewView {
         },
         '↶ Geri al',
       ),
-      remaining === null ? null : h('span', { class: 'queue-info', 'data-testid': 'remaining' }, `${remaining} kart kaldı`),
+      optionsButton,
+      body,
     );
   }
 

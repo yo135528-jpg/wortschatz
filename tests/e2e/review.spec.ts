@@ -92,6 +92,7 @@ test('undo brings back the last rated card', async ({ page }) => {
 
 test('typed answers: tr2de card checks the typed gap words', async ({ page }) => {
   await page.getByTestId('mode-tr2de').click();
+  await page.getByTestId('review-options').click();
   await page.getByTestId('type-answers').check();
   const key = await page.getByTestId('card').getAttribute('data-key');
   // Fixture cloze answers per note (gap words in reading order).
@@ -108,6 +109,7 @@ test('typed answers: tr2de card checks the typed gap words', async ({ page }) =>
 
 test('scope filter is remembered', async ({ page }) => {
   // All fixture notes share one source, so the queue size stays the same; the choice must persist.
+  await page.getByTestId('review-options').click();
   await page.getByTestId('review-scope').selectOption({ label: 'Seed example' });
   await expect(page.getByTestId('remaining')).toHaveText('5 kart kaldı');
   await openApp(page, { reload: true });
