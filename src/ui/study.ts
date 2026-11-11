@@ -1,6 +1,7 @@
 import type { App } from '../app';
 import { h } from './dom';
 import { href, type Route } from './router';
+import { weakSpotsPanel } from './weakSpots';
 
 export interface StudyItem {
   route: Route;
@@ -36,6 +37,7 @@ export class StudyView {
     );
     this.root.replaceChildren(
       review,
+      weakSpotsPanel(),
       h('h2', { class: 'section-title' }, 'Antrenmanlar'),
       h(
         'p',

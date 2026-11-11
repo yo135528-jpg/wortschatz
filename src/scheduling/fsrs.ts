@@ -48,14 +48,14 @@ export function previewDueDates(scheduler: Scheduler, card: FsrsCard, now: Date)
   return result;
 }
 
-/** Human readable interval, e.g. "1m", "10m", "4d", "2mo", "1.2y". */
+/** Human readable Turkish interval, e.g. "1 dk", "14 sa", "4 gün", "2 ay", "1.2 yıl". */
 export function formatInterval(from: Date, to: Date): string {
   const minutes = Math.max(0, (to.getTime() - from.getTime()) / 60_000);
-  if (minutes < 60) return `${Math.max(1, Math.round(minutes))}m`;
+  if (minutes < 60) return `${Math.max(1, Math.round(minutes))} dk`;
   const hours = minutes / 60;
-  if (hours < 24) return `${Math.round(hours)}h`;
+  if (hours < 24) return `${Math.round(hours)} sa`;
   const days = hours / 24;
-  if (days < 30) return `${Math.round(days)}d`;
-  if (days < 365) return `${Math.round(days / 30)}mo`;
-  return `${(days / 365).toFixed(1)}y`;
+  if (days < 30) return `${Math.round(days)} gün`;
+  if (days < 365) return `${Math.round(days / 30)} ay`;
+  return `${(days / 365).toFixed(1)} yıl`;
 }

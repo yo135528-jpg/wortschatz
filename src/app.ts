@@ -13,9 +13,10 @@ import {
   type Database,
 } from './storage/db';
 import { mergeState } from './storage/merge';
+import { readSkillStats, writeSkillStats } from './storage/skillStore';
 import type { CardState, ReviewLogEntry, Settings } from './storage/types';
 import { createScheduler, newFsrsCard, rateCard, type ButtonGrade, type Scheduler } from './scheduling/fsrs';
-import { buildQueue, nextLearningDue } from './scheduling/queue';
+import { buildQueue, nextLearningDue, prioritize } from './scheduling/queue';
 import { computeStats, type Stats } from './scheduling/stats';
 import { startOfStudyDay } from './scheduling/day';
 
@@ -73,12 +74,14 @@ export class App {
 
   /** Card states inside the chosen study scope (chapter/page). */
   private scopedStates(): CardState[] {
-    const { scope } = this.settings;
-    if (!scope) return this.allStates;
-    return this.allStates.filter((state) => {
+    const { scope, newFirst } = this.settings;
+    const matches = (state: CardState, wanted: string) => {
       const note = this.notes.get(state.noteId);
-      return note !== undefined && inScope(note, scope);
-    });
+      return note !== undefined && inScope(note, wanted);
+    };
+    const scoped = scope ? this.allStates.filter((state) => matches(state, scope)) : this.allStates;
+    // The chapter the learner is working on right now gets its new cards first.
+    return newFirst ? prioritize(scoped, (state) => matches(state, newFirst)) : scoped;
   }
 
   queue(now = new Date()): CardState[] {
@@ -176,13 +179,14 @@ export class App {
   async exportJson(now = new Date()): Promise<string> {
     const cards = await getAllCardStates(this.db);
     const logs = await getAllLogs(this.db);
-    return JSON.stringify(createBackup(cards, logs, this.settings, now), null, 2);
+    return JSON.stringify(createBackup(cards, logs, this.settings, now, readSkillStats()), null, 2);
   }
 
   /** Replaces all state with the backup, then re-merges with current cards.json. */
   async importJson(json: string, now = new Date()): Promise<void> {
     const backup = parseBackup(json);
     await replaceAll(this.db, backup);
+    writeSkillStats(backup.skills);
     const notes = [...this.notes.values()];
     const merged = mergeState(notes, backup.cards, () => newFsrsCard(this.scheduler, now));
     if (merged.created.length) await putCardStates(this.db, merged.created);

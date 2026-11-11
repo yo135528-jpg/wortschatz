@@ -9,7 +9,9 @@ import { genderClass, renderBack, renderFront } from './cardFaces';
 import { h } from './dom';
 import { scopeSelect } from './scopeSelect';
 
-const BUTTON_LABELS: Record<ButtonGrade, string> = { 1: 'Again', 2: 'Hard', 3: 'Good', 4: 'Easy' };
+/** Stable ids for test ids; the visible labels are Turkish. */
+const BUTTON_IDS: Record<ButtonGrade, string> = { 1: 'again', 2: 'hard', 3: 'good', 4: 'easy' };
+const BUTTON_LABELS: Record<ButtonGrade, string> = { 1: 'Tekrar', 2: 'Zor', 3: 'İyi', 4: 'Kolay' };
 
 /** Review screen: shows the first card of the queue, flips, and rates. */
 export class ReviewView {
@@ -21,6 +23,8 @@ export class ReviewView {
   private preferKey: string | null = null;
   /** Ratings in this session (since the app was opened), for the summary. */
   private session: Record<ButtonGrade, number> = { 1: 0, 2: 0, 3: 0, 4: 0 };
+  /** The options row survives re-renders (every rating rebuilds the screen). */
+  private optionsOpen = false;
 
   constructor(
     private readonly app: App,
@@ -117,21 +121,44 @@ export class ReviewView {
 
   private toolbar(remaining: number | null): HTMLElement {
     const { settings } = this.app;
+    // Rarely changed options stay folded away, so the card is the first thing on the screen.
+    const filtered = Boolean(settings.scope) || settings.typeAnswers;
+    const body = h(
+        'div',
+        { class: 'review-options-body', hidden: !this.optionsOpen },
+        scopeSelect(this.app.notes.values(), settings.scope, (scope) => void this.app.updateSettings({ scope }), 'review-scope'),
+        h(
+          'label',
+          { class: 'toggle', title: 'TR→DE kartlarında cevabı yazarak ver' },
+          h('input', {
+            type: 'checkbox',
+            checked: settings.typeAnswers,
+            'data-testid': 'type-answers',
+            onchange: (event: Event) => void this.app.updateSettings({ typeAnswers: (event.target as HTMLInputElement).checked }),
+          }),
+          ' ⌨️ Yazarak cevapla',
+        ),
+    );
+    const optionsButton = h(
+      'button',
+      {
+        type: 'button',
+        class: 'undo',
+        'data-testid': 'review-options',
+        'aria-expanded': String(this.optionsOpen),
+        onclick: () => {
+          // Toggled in place: a re-render would flip the card back.
+          this.optionsOpen = !this.optionsOpen;
+          body.hidden = !this.optionsOpen;
+          optionsButton.setAttribute('aria-expanded', String(this.optionsOpen));
+        },
+      },
+      filtered ? 'Seçenekler •' : 'Seçenekler',
+    );
     return h(
       'div',
       { class: 'review-toolbar' },
-      scopeSelect(this.app.notes.values(), settings.scope, (scope) => void this.app.updateSettings({ scope }), 'review-scope'),
-      h(
-        'label',
-        { class: 'toggle', title: 'TR→DE kartlarında cevabı yazarak ver' },
-        h('input', {
-          type: 'checkbox',
-          checked: settings.typeAnswers,
-          'data-testid': 'type-answers',
-          onchange: (event: Event) => void this.app.updateSettings({ typeAnswers: (event.target as HTMLInputElement).checked }),
-        }),
-        ' ⌨️ Yazarak',
-      ),
+      remaining === null ? null : h('span', { class: 'queue-info', 'data-testid': 'remaining' }, `${remaining} kart kaldı`),
       h(
         'button',
         {
@@ -144,7 +171,8 @@ export class ReviewView {
         },
         '↶ Geri al',
       ),
-      remaining === null ? null : h('span', { class: 'queue-info', 'data-testid': 'remaining' }, `${remaining} kart kaldı`),
+      optionsButton,
+      body,
     );
   }
 
@@ -212,7 +240,7 @@ export class ReviewView {
           {
             class: `rate rate-${grade}`,
             type: 'button',
-            'data-testid': `rate-${BUTTON_LABELS[grade].toLowerCase()}`,
+            'data-testid': `rate-${BUTTON_IDS[grade]}`,
             onclick: () => void this.rate(grade),
           },
           h('span', { class: 'rate-interval' }, formatInterval(now, due[grade])),
@@ -226,18 +254,23 @@ export class ReviewView {
       this.toolbar(remaining),
       h('p', { class: 'typed-verdict', 'data-testid': 'typed-verdict', hidden: true }),
       cardElement,
+      // Sticky above the tab bar, so the buttons stay under the thumb however long the card is.
       h(
-        'button',
-        {
-          class: 'show-answer',
-          type: 'button',
-          'data-testid': 'show-answer',
-          onclick: () => (typeInput ? this.checkTyped(note, typeInput) : this.flip()),
-        },
-        typeInput ? 'Kontrol et ' : 'Cevabı göster ',
-        h('kbd', {}, typeInput ? 'Enter' : 'Space'),
+        'div',
+        { class: 'review-actions' },
+        h(
+          'button',
+          {
+            class: 'show-answer',
+            type: 'button',
+            'data-testid': 'show-answer',
+            onclick: () => (typeInput ? this.checkTyped(note, typeInput) : this.flip()),
+          },
+          typeInput ? 'Kontrol et ' : 'Cevabı göster ',
+          h('kbd', {}, typeInput ? 'Enter' : 'Space'),
+        ),
+        answerBar,
       ),
-      answerBar,
     );
     typeInput?.focus({ preventScroll: true });
   }

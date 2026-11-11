@@ -62,9 +62,9 @@ describe('ts-fsrs integration', () => {
 
   it('formats intervals', () => {
     const at = (ms: number) => new Date(now.getTime() + ms);
-    expect(formatInterval(now, at(60_000))).toBe('1m');
-    expect(formatInterval(now, at(4 * 86_400_000))).toBe('4d');
-    expect(formatInterval(now, at(60 * 86_400_000))).toBe('2mo');
+    expect(formatInterval(now, at(60_000))).toBe('1 dk');
+    expect(formatInterval(now, at(4 * 86_400_000))).toBe('4 gün');
+    expect(formatInterval(now, at(60 * 86_400_000))).toBe('2 ay');
   });
 });
 
@@ -178,5 +178,18 @@ describe('progress charts', () => {
       { label: 'K1', total: 2, started: 1, mature: 1 },
       { label: 'K2', total: 1, started: 0, mature: 0 },
     ]);
+  });
+});
+
+describe('prioritize', () => {
+  it('moves focused items first and keeps the order inside both groups', async () => {
+    const { prioritize } = await import('../../src/scheduling/queue');
+    expect(prioritize(['a1', 'b1', 'a2', 'b2'], (s) => s.startsWith('b'))).toEqual(['b1', 'b2', 'a1', 'a2']);
+  });
+
+  it('returns the list unchanged when nothing is focused', async () => {
+    const { prioritize } = await import('../../src/scheduling/queue');
+    const list = ['a1', 'a2'];
+    expect(prioritize(list, () => false)).toBe(list);
   });
 });

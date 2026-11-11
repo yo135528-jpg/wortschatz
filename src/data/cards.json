@@ -15401,5 +15401,77 @@
     "source": "Kursbuch, Kapitel 2, S. 31",
     "tags": ["kapitel-2", "arbeit"],
     "createdAt": "2026-11-08"
+  },
+  {
+    "id": "lernbereit-786e",
+    "type": "adjective",
+    "lemma": "lernbereit",
+    "adjective": { "comparative": null, "superlative": null },
+    "rektion": [],
+    "meaningTr": "öğrenmeye istekli, öğrenmeye açık",
+    "hintTr": "sıfat (kişilik)",
+    "cloze": "Neue Kollegen sollten offen und [lernbereit] sein.",
+    "clozeTr": "Yeni iş arkadaşları açık fikirli ve öğrenmeye istekli olmalı.",
+    "examples": [
+      {
+        "de": "Von einem Auszubildenden erwartet man, dass er teamfähig und lernbereit ist.",
+        "tr": "Bir stajyerden ekip çalışmasına yatkın ve öğrenmeye istekli olması beklenir.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "-bereit = -meye hazır/istekli: hilfsbereit (yardımsever), kompromissbereit (uzlaşmaya açık).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 2, S. 28",
+    "createdAt": "2026-11-10",
+    "tags": ["kapitel-2", "arbeit"]
+  },
+  {
+    "id": "teamfaehigkeit-724f",
+    "type": "noun",
+    "lemma": "Teamfähigkeit",
+    "noun": { "gender": "die", "plural": null },
+    "rektion": [],
+    "meaningTr": "ekip çalışmasına yatkınlık",
+    "hintTr": "isim",
+    "cloze": "[Die] [Teamfähigkeit] wird in fast jeder Stellenanzeige verlangt.",
+    "clozeTr": "Ekip çalışmasına yatkınlık neredeyse her iş ilanında isteniyor.",
+    "examples": [
+      {
+        "de": "Ein Projektleiter braucht vor allem Teamfähigkeit und Durchsetzungsvermögen.",
+        "tr": "Bir proje yöneticisinin her şeyden önce ekip çalışmasına yatkın olması ve sözünü geçirebilmesi gerekir.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": "-keit/-heit/-ung ile biten isimler hep die: teamfähig → die Teamfähigkeit.",
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 2, S. 28",
+    "createdAt": "2026-11-10",
+    "tags": ["kapitel-2", "arbeit"]
+  },
+  {
+    "id": "durchsetzungsvermoegen-38ba",
+    "type": "noun",
+    "lemma": "Durchsetzungsvermögen",
+    "noun": { "gender": "das", "plural": null },
+    "rektion": [],
+    "meaningTr": "sözünü geçirme yeteneği, kararlılık",
+    "hintTr": "isim (sıfat değil)",
+    "cloze": "Als Chefin braucht sie viel [Durchsetzungsvermögen].",
+    "clozeTr": "Şef olarak sözünü geçirebilmesi çok önemli.",
+    "examples": [
+      {
+        "de": "In Verhandlungen mit Geschäftspartnern zeigt er großes Durchsetzungsvermögen.",
+        "tr": "İş ortaklarıyla pazarlıklarda sözünü geçirmeyi çok iyi biliyor.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "das Vermögen burada „yetenek“ demek; tek başına „servet“ anlamına da gelir.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Kursbuch, Kapitel 2, S. 28",
+    "createdAt": "2026-11-10",
+    "tags": ["kapitel-2", "arbeit"]
   }
 ]

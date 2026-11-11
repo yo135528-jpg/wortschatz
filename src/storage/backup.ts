@@ -1,4 +1,5 @@
 import { z } from 'zod';
+import type { SkillStats } from '../domain/skills';
 import type { CardState, ReviewLogEntry, Settings } from './types';
 
 export const BACKUP_FORMAT = 'wortschatz-backup';
@@ -11,6 +12,8 @@ export interface Backup {
   settings: Settings;
   cards: CardState[];
   logs: ReviewLogEntry[];
+  /** Practice results per skill (drills). Missing in older backups. */
+  skills: SkillStats;
 }
 
 const isoDate = z.iso.datetime().transform((value) => new Date(value));
@@ -43,6 +46,7 @@ const BackupSchema = z.object({
     mode: z.enum(['de2tr', 'tr2de', 'mixed']),
     // Added later: older backups do not have them.
     scope: z.string().default(''),
+    newFirst: z.string().default(''),
     typeAnswers: z.boolean().default(false),
     streetPhrases: z.array(z.string()).default([]),
   }),
@@ -62,9 +66,18 @@ const BackupSchema = z.object({
       revlog: FsrsRevlogSchema,
     }),
   ),
+  skills: z
+    .record(z.string(), z.object({ right: z.number().min(0), wrong: z.number().min(0), last: z.string() }))
+    .default({}),
 });
 
-export function createBackup(cards: CardState[], logs: ReviewLogEntry[], settings: Settings, now: Date): Backup {
+export function createBackup(
+  cards: CardState[],
+  logs: ReviewLogEntry[],
+  settings: Settings,
+  now: Date,
+  skills: SkillStats = {},
+): Backup {
   return {
     format: BACKUP_FORMAT,
     version: BACKUP_VERSION,
@@ -72,6 +85,7 @@ export function createBackup(cards: CardState[], logs: ReviewLogEntry[], setting
     settings,
     cards,
     logs,
+    skills,
   };
 }
 

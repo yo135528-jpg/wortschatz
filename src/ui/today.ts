@@ -8,6 +8,7 @@ import { State } from '../scheduling/fsrs';
 import { h } from './dom';
 import { href, navigate } from './router';
 import { speakButton } from './tts';
+import { loadWeakSpots } from './weakSpots';
 
 function greeting(now: Date): string {
   const hour = now.getHours();
@@ -78,7 +79,7 @@ export class TodayView {
         type: 'search',
         class: 'search',
         name: 'q',
-        placeholder: 'Her şeyde ara: kelime, gramer, sokak dili…',
+        placeholder: 'Her şeyde ara: kelime, gramer, kalıp…',
         'aria-label': 'Her şeyde ara',
         'data-testid': 'global-search',
       }),
@@ -101,7 +102,12 @@ export class TodayView {
         .map((phrase) => ({ topic, phrase })),
     );
     const pick = pickOfDay(phrases, label);
-    const topic = pickOfDay(grammar, label, 7);
+    // A grammar topic the learner keeps getting wrong beats a random one.
+    const weakIds = (await loadWeakSpots(5)).flatMap((spot) => (spot.route.name === 'grammar' && spot.route.id ? [spot.route.id] : []));
+    const weakTopic = grammar.find((t) => t.id === weakIds[0]);
+    // Otherwise stay at the learner's level: A1/A2 topics are reference, not daily material.
+    const atLevel = grammar.filter((t) => t.level === 'B1' || t.level === 'B2');
+    const topic = weakTopic ?? pickOfDay(atLevel.length ? atLevel : grammar, label, 7);
     const plain = (value: string) => value.replaceAll('**', '');
 
     const cards: (HTMLElement | null)[] = [
@@ -124,7 +130,7 @@ export class TodayView {
         ? h(
             'a',
             { class: 'daily-card daily-grammar', href: href({ name: 'grammar', id: topic.id }), 'data-testid': 'daily-grammar' },
-            h('p', { class: 'daily-kicker' }, '📖 Günün gramer konusu'),
+            h('p', { class: 'daily-kicker' }, weakTopic ? '📖 Tekrar etmeye değer' : '📖 Günün gramer konusu'),
             h('p', { class: 'daily-de' }, topic.titleDe),
             h('p', { class: 'daily-tr' }, topic.titleTr),
             h(

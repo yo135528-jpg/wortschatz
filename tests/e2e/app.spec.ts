@@ -67,10 +67,55 @@ test('global search finds words, grammar and street phrases', async ({ page }) =
   await expect(page.locator('[data-testid="note-item"][data-id="entscheidung-86e2"]')).toHaveClass(/open/);
 });
 
+test('global search also finds Redemittel', async ({ page }) => {
+  await openApp(page, { hash: '#/search?q=bence' });
+  await expect(page.getByTestId('search-phrase').first()).toContainText('Meiner Meinung nach');
+  await page.getByTestId('search-phrase').first().click();
+  await expect(page.getByTestId('redemittel-detail')).toBeVisible();
+});
+
 test('a word links to its grammar topic and the topic lists the word back', async ({ page }) => {
   await openApp(page, { hash: '#/library/words/entscheiden-bb52' });
   const links = page.locator('[data-testid="note-item"][data-id="entscheiden-bb52"] [data-testid="grammar-links"]');
   await links.getByRole('link', { name: /Reflexive|reflexive/i }).click();
   await expect(page.getByTestId('grammar-detail')).toHaveAttribute('data-id', 'reflexive-verben');
   await expect(page.getByTestId('grammar-words')).toContainText('entscheiden');
+});
+
+test('adjective drill explains the ending and a weak skill shows up in the study hub', async ({ page }) => {
+  await openApp(page, { hash: '#/study' });
+  await expect(page.getByTestId('weak-spots')).toBeHidden();
+  await page.getByTestId('study-adjektiv').click();
+  await page.getByTestId('drill-go').click();
+
+  // Always answering "-es" is mostly wrong, so the skill ends up weak.
+  for (let i = 0; i < 40; i++) {
+    if (await page.getByTestId('drill-done').isVisible()) break;
+    await expect(page.getByTestId('drill-question')).toContainText('___');
+    await page.getByTestId('drill-choice').filter({ hasText: /^-es$/ }).click();
+    await expect(page.getByTestId('drill-feedback')).toContainText('→');
+    await page.getByTestId('drill-next').click();
+  }
+  await expect(page.getByTestId('drill-done')).toBeVisible();
+
+  await page.getByTestId('drill-back').click();
+  await expect(page.getByTestId('weak-spots')).toContainText('Sıfat çekimi');
+});
+
+test('phrases tab: open a group, go back, and practise', async ({ page }) => {
+  await openApp(page, { hash: '#/library/words' });
+  await page.getByTestId('lib-phrases').click();
+  await page.locator('[data-testid="redemittel-group"][data-id="meinung-aeussern"]').click();
+  await expect(page.getByTestId('redemittel-detail')).toContainText('Meiner Meinung nach');
+
+  await page.goBack();
+  await expect(page.getByTestId('redemittel-group').first()).toBeVisible();
+
+  await page.getByTestId('redemittel-search').fill('bence');
+  await expect(page.getByTestId('redemittel-item').first()).toContainText('Meiner Meinung nach');
+
+  await page.getByTestId('redemittel-drill').click();
+  await page.getByTestId('drill-go').click();
+  await page.getByTestId('drill-choice').first().click();
+  await expect(page.getByTestId('drill-feedback')).toBeVisible();
 });

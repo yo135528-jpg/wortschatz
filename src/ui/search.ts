@@ -1,7 +1,8 @@
 import type { App } from '../app';
-import { loadGrammar, loadStreet } from '../content';
+import { loadGrammar, loadRedemittel, loadStreet } from '../content';
 import { buildHeadword, headwordToString, typeLabelTr } from '../domain/format';
 import { filterTopics } from '../domain/grammar';
+import { searchRedemittel } from '../domain/redemittel';
 import { searchPhrases } from '../domain/street';
 import { buildRows, filterRows } from './browseModel';
 import { h } from './dom';
@@ -9,7 +10,7 @@ import { href, replaceRoute } from './router';
 
 const LIMIT = 8;
 
-/** One search box over words, grammar and street German. */
+/** One search box over words, grammar, street German and Redemittel. */
 export class SearchView {
   private readonly input: HTMLInputElement;
   private readonly results: HTMLElement;
@@ -22,7 +23,7 @@ export class SearchView {
     this.input = h('input', {
       type: 'search',
       class: 'search',
-      placeholder: 'Kelime, gramer konusu, sokak ifadesi…',
+      placeholder: 'Kelime, gramer konusu, kalıp, sokak ifadesi…',
       'aria-label': 'Her şeyde ara',
       'data-testid': 'search-all',
       oninput: () => {
@@ -47,7 +48,7 @@ export class SearchView {
       this.results.replaceChildren(h('p', { class: 'muted' }, 'Almanca ya da Türkçe yaz.'));
       return;
     }
-    const [grammar, street] = await Promise.all([loadGrammar(), loadStreet()]);
+    const [grammar, street, redemittel] = await Promise.all([loadGrammar(), loadStreet(), loadRedemittel()]);
     // A newer keystroke started another search while this one was loading.
     if (request !== this.request) return;
 
@@ -58,6 +59,7 @@ export class SearchView {
     });
     const topics = filterTopics(grammar, { level: 'all', query });
     const phrases = searchPhrases(street, { register: 'all', query });
+    const patterns = searchRedemittel(redemittel, query);
 
     const section = (title: string, count: number, items: HTMLElement[], more?: string) =>
       count === 0
@@ -99,6 +101,22 @@ export class SearchView {
               { class: 'search-item', href: href({ name: 'grammar', id: topic.id }), 'data-testid': 'search-grammar' },
               h('span', { class: 'search-item-title' }, `${topic.level} · ${topic.titleDe}`),
               h('span', { class: 'search-item-sub' }, topic.titleTr),
+            ),
+          ),
+        ),
+      ),
+      section(
+        'Kalıplar',
+        patterns.length,
+        patterns.slice(0, LIMIT).map(({ group, item }) =>
+          h(
+            'li',
+            {},
+            h(
+              'a',
+              { class: 'search-item', href: href({ name: 'phrases', id: group.id }), 'data-testid': 'search-phrase' },
+              h('span', { class: 'search-item-title' }, item.de),
+              h('span', { class: 'search-item-sub' }, `${item.tr} · ${group.icon} ${group.titleTr}`),
             ),
           ),
         ),

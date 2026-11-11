@@ -109,6 +109,10 @@ kbd {
   padding: 0 0.3em;
 }
 [hidden] { display: none !important; }
+/* Keyboard hints make no sense on touch screens. */
+@media (hover: none), (pointer: coarse) {
+  kbd { display: none; }
+}
 .muted { color: var(--muted); }
 .small { font-size: 0.85rem; }
 
@@ -176,10 +180,13 @@ main {
   transform-style: preserve-3d;
 }
 .card.is-flipped .card-inner { transform: rotateY(180deg); }
+/* Only the visible side sets the height: a short question is not padded to the size of a long answer. */
+.card-inner { position: relative; }
+.card:not(.is-flipped) .face-back, .card.is-flipped .face-front { position: absolute; inset: 0; overflow: hidden; }
 
 .face {
   grid-area: 1 / 1;
-  min-height: 46dvh;
+  min-height: 34dvh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -263,10 +270,17 @@ main {
   vertical-align: middle;
 }
 
+.review-actions {
+  position: sticky;
+  bottom: calc(var(--tabbar-h) + env(safe-area-inset-bottom));
+  z-index: 1;
+  margin: 0 -1rem;
+  padding: 0.75rem 1rem;
+  background: linear-gradient(to bottom, transparent, var(--bg) 0.75rem);
+}
 .show-answer {
   display: block;
   width: 100%;
-  margin-top: 1rem;
   padding: 0.9rem;
   font-weight: 600;
   background: var(--accent);
@@ -275,7 +289,8 @@ main {
 }
 .show-answer kbd { color: rgb(255 255 255 / 0.8); border-color: rgb(255 255 255 / 0.5); }
 
-.answer-bar { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.5rem; margin-top: 1rem; }
+.answer-bar { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.5rem; }
+.rate { background: var(--surface); }
 .rate {
   display: flex;
   flex-direction: column;
@@ -394,6 +409,8 @@ main {
 .c-mood { --t: var(--cat-mood); }
 .c-wordformation { --t: var(--cat-wordformation); }
 .note-details { padding: 0 0.9rem 0.9rem; display: grid; gap: 0.6rem; }
+/* The row above already shows the meaning. */
+.note-details .meaning-small { display: none; }
 .card-rows { display: grid; gap: 0.45rem; padding-top: 0.6rem; border-top: 1px solid var(--border); }
 .card-rows-title { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
 .card-row { display: flex; align-items: center; gap: 0.2rem 0.75rem; flex-wrap: wrap; }
@@ -608,7 +625,9 @@ main {
   color: var(--muted);
   text-decoration: none;
 }
-.tabbar a span { font-size: 1.2rem; }
+.icon { width: 1.5rem; height: 1.5rem; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.icon-link { display: inline-flex; color: var(--muted); }
+.icon-link:hover { color: var(--text); }
 .tabbar a[aria-current='true'] { color: var(--accent); font-weight: 600; }
 
 .segmented {
@@ -729,7 +748,7 @@ button:disabled { opacity: 0.5; cursor: not-allowed; }
 /* ---------- Drill ---------- */
 .drill-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.6rem; }
 .drill-top .grammar-back { margin-bottom: 0; }
-.drill-start, .drill-done { display: grid; gap: 0.7rem; text-align: center; padding: 1rem 0; }
+.drill-start, .drill-done { display: grid; grid-template-columns: minmax(0, 1fr); gap: 0.7rem; text-align: center; padding: 1rem 0; }
 .drill-start h2, .drill-done h2 { margin: 0; }
 .drill-start p, .drill-done p { margin: 0; }
 .drill-start .field { text-align: left; }
@@ -766,7 +785,7 @@ button:disabled { opacity: 0.5; cursor: not-allowed; }
 .drill-field.is-almost .drill-input { border-color: var(--hard); }
 .drill-field.is-wrong .drill-input { border-color: var(--again); }
 .drill-correct { font-weight: 700; color: var(--good); }
-.choices { display: grid; grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); gap: 0.5rem; }
+.choices { display: grid; grid-template-columns: repeat(auto-fit, minmax(56px, 1fr)); gap: 0.5rem; }
 .choices-list { grid-template-columns: 1fr; }
 .choice { padding: 0.8rem; font-size: 1.05rem; font-weight: 600; }
 .choices-list .choice { text-align: left; font-weight: 500; font-size: 0.95rem; }
@@ -814,7 +833,9 @@ button:disabled { opacity: 0.5; cursor: not-allowed; }
 
 /* ---------- Review toolbar, typed answers, session summary ---------- */
 .review-toolbar { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem 0.6rem; margin: 0.25rem 0 0.75rem; }
-.review-toolbar .queue-info { margin: 0 0 0 auto; }
+.review-toolbar .queue-info { margin: 0 auto 0 0; }
+[data-testid='review-options'][aria-expanded='true'] { background: var(--surface-2); }
+.review-options-body { flex-basis: 100%; display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 0.9rem; }
 .scope-select { max-width: 11rem; padding: 0.35rem 0.5rem; border: 1px solid var(--border); border-radius: 8px; background: var(--surface); color: var(--text); font-size: 0.85rem; }
 .toggle { display: inline-flex; align-items: center; gap: 0.25rem; font-size: 0.85rem; cursor: pointer; }
 .undo { padding: 0.3rem 0.6rem; font-size: 0.85rem; }
@@ -870,3 +891,25 @@ button:disabled { opacity: 0.5; cursor: not-allowed; }
 .grammar-related a.chip { text-decoration: none; color: var(--text); }
 .add-card { justify-self: start; margin-top: 0.2rem; padding: 0.25rem 0.65rem; font-size: 0.8rem; color: var(--accent); border-color: color-mix(in srgb, var(--accent) 40%, var(--border)); }
 .add-card.is-added { color: var(--good); border-color: color-mix(in srgb, var(--good) 45%, var(--border)); background: color-mix(in srgb, var(--good) 8%, var(--surface)); }
+
+/* ---------- Weak spots ---------- */
+.weak-spots { margin: 1.25rem 0 0.5rem; }
+.weak-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.5rem; }
+.weak-item {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 5rem 2.6rem;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.7rem 0.9rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  color: var(--text);
+  text-decoration: none;
+}
+.weak-label { font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.weak-meter { height: 6px; border-radius: 999px; background: var(--surface-2); overflow: hidden; }
+.weak-fill { display: block; height: 100%; border-radius: 999px; background: var(--hard); }
+.weak-value { text-align: right; font-size: 0.85rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+
+.street-hero .button { display: inline-block; margin-top: 0.75rem; }

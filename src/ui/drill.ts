@@ -1,11 +1,12 @@
 import type { App } from '../app';
-import { loadGrammar, loadStreet } from '../content';
+import { loadGrammar, loadRedemittel, loadStreet } from '../content';
 import { checkAnswer, diffWords, type Verdict } from '../domain/answer';
 import {
   artikelQuestions,
   dictationQuestions,
   grammarQuestions,
   pickRound,
+  redemittelQuestions,
   rektionQuestions,
   streetQuestions,
   verbQuestions,
@@ -14,7 +15,10 @@ import {
   type Field,
   type Question,
 } from '../domain/drills';
+import { articleQuestions, noArticleQuestions } from '../domain/adjectives';
+import { shuffle } from '../domain/drills';
 import type { Note } from '../domain/schema';
+import { saveSkillAnswer } from '../storage/skillStore';
 import { buildRows } from './browseModel';
 import { ALL_SCOPE, inScope } from '../domain/scope';
 import { scopeSelect } from './scopeSelect';
@@ -70,13 +74,24 @@ export const DRILLS: Record<DrillKind, DrillInfo> = {
     fromNotes: true,
     build: ({ notes }) => rektionQuestions(notes),
   },
+  adjektiv: {
+    icon: '🎯',
+    title: 'Sıfat çekimi',
+    description: 'mit groß___ Interesse → -em. Artikelli ve artikelsiz.',
+    fromNotes: true,
+    // Half curated no-article phrases (the tricky ones), half built from the learner's nouns.
+    build: ({ notes }) => {
+      const fixed = noArticleQuestions();
+      return [...fixed, ...shuffle(articleQuestions(notes)).slice(0, fixed.length)];
+    },
+  },
   zor: {
     icon: '🧗',
     title: 'Zor kelimeler',
     description: 'Daha önce unuttuğun kelimeleri yazarak çalış.',
     fromNotes: true,
     build: ({ app, notes }) => writingQuestions(hardNotes(app, notes)),
-    emptyText: 'Henüz unuttuğun bir kelime yok. Kart tekrarında "Again" dediğin kelimeler burada toplanır.',
+    emptyText: 'Henüz unuttuğun bir kelime yok. Kart tekrarında „Tekrar“ dediğin kelimeler burada toplanır.',
   },
   dikte: {
     icon: '🎧',
@@ -99,7 +114,17 @@ export const DRILLS: Record<DrillKind, DrillInfo> = {
     fromNotes: false,
     build: async () => streetQuestions(await loadStreet()),
   },
+  kalip: {
+    icon: '🗣️',
+    title: 'Kalıplar (Redemittel)',
+    description: 'Bunu Almanca nasıl söylersin? Doğru kalıbı seç.',
+    fromNotes: false,
+    build: async () => redemittelQuestions(await loadRedemittel()),
+  },
 };
+
+/** Drills whose results count as one skill when a question has no own skill. */
+const TRACKED = new Set<DrillKind>(['artikel', 'verben', 'rektion']);
 
 const CHAPTER_KEY = 'wortschatz.drill-scope';
 const ALL = ALL_SCOPE;
@@ -326,7 +351,8 @@ export class DrillView {
       'div',
       { class: 'drill-field', 'data-field': index },
       h('span', { class: 'drill-label' }, field.label),
-      h('div', { class: `choices ${field.options.length > 3 ? 'choices-list' : ''}` }, ...buttons),
+      // Long options (translations) are stacked; short ones (der/die/das, -em) sit in one row.
+      h('div', { class: `choices ${field.options.some((option) => option.length > 6) ? 'choices-list' : ''}` }, ...buttons),
     );
   }
 
@@ -375,7 +401,12 @@ export class DrillView {
     this.answered = true;
     const verdict: Verdict = verdicts.includes('wrong') ? 'wrong' : verdicts.includes('almost') ? 'almost' : 'correct';
     // Only the first attempt counts for the score.
-    if (!this.results.some((r) => r.question.id === question.id)) this.results.push({ question, verdict });
+    if (!this.results.some((r) => r.question.id === question.id)) {
+      this.results.push({ question, verdict });
+      // Typing and listening drills train single words, not a skill worth tracking.
+      const skill = question.skill ?? (this.kind && TRACKED.has(this.kind) ? this.kind : null);
+      if (skill) saveSkillAnswer(skill, verdict !== 'wrong');
+    }
     // A mistake comes back once at the end of the round.
     if (verdict === 'wrong' && !this.retried.has(question.id)) {
       this.retried.add(question.id);

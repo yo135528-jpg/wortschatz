@@ -27,6 +27,8 @@ export interface Settings {
   mode: StudyMode;
   /** Which words the review uses: "" = all, "c:<chapter>", "p:<page>" (see domain/scope). */
   scope: string;
+  /** New cards from this scope are introduced first ("" = book order). Same encoding as `scope`. */
+  newFirst: string;
   /** tr2de cards: type the answer before flipping. */
   typeAnswers: boolean;
   /** Street-German phrases added as cards ("<topicId>|<German>", see domain/streetCards). */
@@ -39,6 +41,7 @@ export const DEFAULT_SETTINGS: Settings = {
   reviewsPerDay: 200,
   mode: 'mixed',
   scope: '',
+  newFirst: '',
   typeAnswers: false,
   streetPhrases: [],
 };

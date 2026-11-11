@@ -151,8 +151,8 @@ export function renderStats(app: App, root: HTMLElement): void {
       'div',
       { class: 'stats-grid' },
       tile('Bugün vadesi gelen', String(stats.dueToday), 'stat-due'),
-      tile('Yeni', String(stats.newCards), 'stat-new'),
-      tile('Öğrenilmiş', String(stats.learned), 'stat-learned'),
+      tile('Yeni kart', String(stats.newCards), 'stat-new'),
+      tile('Öğrenilmiş kart', String(stats.learned), 'stat-learned'),
       tile('Hatırlama (30 gün)', retention, 'stat-retention'),
       tile('Seri (gün)', `🔥 ${stats.streak}`, 'stat-streak'),
       tile('Toplam tekrar', String(app.reviewLogs.length), 'stat-total'),
@@ -163,7 +163,7 @@ export function renderStats(app: App, root: HTMLElement): void {
     h(
       'p',
       { class: 'muted small' },
-      `Hatırlama oranı: son 30 günde olgun kartlardaki tekrarların "Again" olmayan payı. Hedef: ${Math.round(
+      `Hatırlama oranı: son 30 günde olgun kartlardaki tekrarların „Tekrar“ denmeyen payı. Hedef: ${Math.round(
         app.settings.desiredRetention * 100,
       )}%. Oturmuş: kartın hafızada en az 3 hafta kalacağı tahmin ediliyor.`,
     ),
