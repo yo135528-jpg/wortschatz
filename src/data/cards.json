@@ -19944,5 +19944,776 @@
       "freundschaft"
     ],
     "createdAt": "2026-11-14"
+  },
+  {
+    "id": "weltweit-ba8b",
+    "type": "adjective",
+    "lemma": "weltweit",
+    "adjective": {
+      "comparative": null,
+      "superlative": null
+    },
+    "rektion": [],
+    "meaningTr": "dünya çapında",
+    "hintTr": "sıfat / zarf",
+    "cloze": "Das Unternehmen hat [weltweit] über 5000 Mitarbeiter.",
+    "clozeTr": "Şirketin dünya çapında 5000’den fazla çalışanı var.",
+    "examples": [
+      {
+        "de": "Das Internet verbindet Menschen weltweit.",
+        "tr": "İnternet insanları dünya çapında birbirine bağlıyor.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 14",
+    "tags": [
+      "kapitel-1",
+      "netzwerke"
+    ],
+    "createdAt": "2026-11-15"
+  },
+  {
+    "id": "kontaktieren-b0ad",
+    "type": "verb",
+    "lemma": "kontaktieren",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": null,
+      "praeteritum": "kontaktierte",
+      "partizip2": "kontaktiert",
+      "auxiliary": "haben"
+    },
+    "rektion": [
+      {
+        "preposition": null,
+        "case": "Akk"
+      }
+    ],
+    "meaningTr": "(biriyle) iletişime geçmek, ulaşmak",
+    "hintTr": "fiil (+ Akk)",
+    "cloze": "Bei Problemen [kontaktieren] Sie bitte unseren Kundenservice.",
+    "clozeTr": "Sorun olursa lütfen müşteri hizmetlerimize ulaşın.",
+    "examples": [
+      {
+        "de": "Ich habe ihn mehrmals per E-Mail kontaktiert.",
+        "tr": "Ona birkaç kez e-postayla ulaştım.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "Doğrudan Akkusativ alır (mit yok!): jdn. kontaktieren. Aynı anlam: mit jdm. Kontakt aufnehmen.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 14",
+    "tags": [
+      "kapitel-1",
+      "netzwerke"
+    ],
+    "createdAt": "2026-11-15"
+  },
+  {
+    "id": "informieren-2c4c",
+    "type": "verb",
+    "lemma": "informieren",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": null,
+      "praeteritum": "informierte",
+      "partizip2": "informiert",
+      "auxiliary": "haben"
+    },
+    "rektion": [
+      {
+        "preposition": "über",
+        "case": "Akk"
+      }
+    ],
+    "meaningTr": "bilgilendirmek; (sich) bilgi edinmek",
+    "hintTr": "fiil + edat",
+    "cloze": "Vor der Reise habe ich mich gut [über] das Land [informiert].",
+    "clozeTr": "Yolculuktan önce ülke hakkında iyice bilgi edindim.",
+    "examples": [
+      {
+        "de": "Die Firma informiert ihre Kunden regelmäßig über neue Produkte.",
+        "tr": "Firma müşterilerini yeni ürünler hakkında düzenli olarak bilgilendiriyor.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": "jdn. über etw. informieren = birini bir şey hakkında bilgilendirmek; sich über etw. informieren = bir şey hakkında bilgi edinmek.",
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 14",
+    "tags": [
+      "kapitel-1",
+      "netzwerke"
+    ],
+    "createdAt": "2026-11-15"
+  },
+  {
+    "id": "herstellen-b030",
+    "type": "verb",
+    "lemma": "herstellen",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": "her",
+      "praeteritum": "stellte her",
+      "partizip2": "hergestellt",
+      "auxiliary": "haben"
+    },
+    "rektion": [],
+    "meaningTr": "üretmek; (bağlantı) kurmak",
+    "hintTr": "fiil, ayrılabilir",
+    "cloze": "Diese Firma [stellt] Möbel aus Holz [her].",
+    "clozeTr": "Bu firma ahşaptan mobilya üretiyor.",
+    "examples": [
+      {
+        "de": "Die Autos werden in Deutschland hergestellt.",
+        "tr": "Arabalar Almanya’da üretiliyor.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "der Hersteller = üretici; die Herstellung = üretim.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 14",
+    "tags": [
+      "kapitel-1",
+      "netzwerke"
+    ],
+    "createdAt": "2026-11-15"
+  },
+  {
+    "id": "weitergeben-f001",
+    "type": "verb",
+    "lemma": "weitergeben",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": "weiter",
+      "praeteritum": "gab weiter",
+      "partizip2": "weitergegeben",
+      "auxiliary": "haben"
+    },
+    "rektion": [
+      {
+        "preposition": "an",
+        "case": "Akk"
+      }
+    ],
+    "meaningTr": "(başkasına) iletmek, aktarmak",
+    "hintTr": "fiil, ayrılabilir",
+    "cloze": "Kannst du den Brief bitte an deine Schwester [weitergeben]?",
+    "clozeTr": "Mektubu lütfen kız kardeşine iletebilir misin?",
+    "examples": [
+      {
+        "de": "Großeltern geben ihre Erfahrungen gern an die Enkel weiter.",
+        "tr": "Büyükanne ve büyükbabalar deneyimlerini torunlarına aktarmayı sever.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": "geben gibi çekilir: gibt weiter – gab weiter – hat weitergegeben.",
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 14",
+    "tags": [
+      "kapitel-1",
+      "netzwerke"
+    ],
+    "createdAt": "2026-11-15"
+  },
+  {
+    "id": "versammeln-d65c",
+    "type": "verb",
+    "lemma": "versammeln",
+    "verb": {
+      "reflexive": "Akk",
+      "separablePrefix": null,
+      "praeteritum": "versammelte",
+      "partizip2": "versammelt",
+      "auxiliary": "haben"
+    },
+    "rektion": [],
+    "meaningTr": "toplanmak, bir araya gelmek",
+    "hintTr": "fiil, dönüşlü",
+    "cloze": "Um acht Uhr [versammeln] [sich] alle Mitarbeiter im großen Saal.",
+    "clozeTr": "Saat sekizde bütün çalışanlar büyük salonda toplanıyor.",
+    "examples": [
+      {
+        "de": "Vor dem Rathaus haben sich tausende Menschen versammelt.",
+        "tr": "Belediye binasının önünde binlerce insan toplandı.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "die Versammlung = toplantı. sammeln = (eşya) toplamak, biriktirmek.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 14",
+    "tags": [
+      "kapitel-1",
+      "netzwerke"
+    ],
+    "createdAt": "2026-11-15"
+  },
+  {
+    "id": "mit-jemandem-in-kontakt-sein-ff3a",
+    "type": "expression",
+    "lemma": "mit jemandem in Kontakt sein",
+    "rektion": [
+      {
+        "preposition": "mit",
+        "case": "Dat"
+      }
+    ],
+    "meaningTr": "(biriyle) iletişimde olmak",
+    "hintTr": "kalıp (edat + isim + sein)",
+    "cloze": "Ich [bin] noch immer mit meiner alten Lehrerin [in] [Kontakt].",
+    "clozeTr": "Eski öğretmenimle hâlâ iletişimdeyim.",
+    "examples": [
+      {
+        "de": "Wir sind seit der Schulzeit in Kontakt geblieben.",
+        "tr": "Okul yıllarından beri iletişimimiz kopmadı.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "in Kontakt bleiben = iletişimi sürdürmek; Kontakt aufnehmen = iletişime geçmek.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 14",
+    "tags": [
+      "kapitel-1",
+      "netzwerke",
+      "nomen-verb"
+    ],
+    "createdAt": "2026-11-15"
+  },
+  {
+    "id": "abgeben-b79c",
+    "type": "verb",
+    "lemma": "abgeben",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": "ab",
+      "praeteritum": "gab ab",
+      "partizip2": "abgegeben",
+      "auxiliary": "haben"
+    },
+    "rektion": [],
+    "meaningTr": "teslim etmek, vermek",
+    "hintTr": "fiil, ayrılabilir",
+    "cloze": "Bitte [geben] Sie die Hausarbeit bis Freitag [ab].",
+    "clozeTr": "Lütfen ödevi cumaya kadar teslim edin.",
+    "examples": [
+      {
+        "de": "Den Schlüssel können Sie an der Rezeption abgeben.",
+        "tr": "Anahtarı resepsiyona bırakabilirsiniz.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "Başka kalıplar: eine Meinung abgeben (görüş bildirmek), seine Stimme abgeben (oy vermek).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 14",
+    "tags": [
+      "kapitel-1",
+      "netzwerke"
+    ],
+    "createdAt": "2026-11-15"
+  },
+  {
+    "id": "forschungsinstitut-ef45",
+    "type": "noun",
+    "lemma": "Forschungsinstitut",
+    "noun": {
+      "gender": "das",
+      "plural": "-e"
+    },
+    "rektion": [],
+    "meaningTr": "araştırma enstitüsü",
+    "hintTr": "isim (birleşik)",
+    "cloze": "Nach der Promotion arbeitet sie an [einem] [Forschungsinstitut] in Berlin.",
+    "clozeTr": "Doktoradan sonra Berlin’de bir araştırma enstitüsünde çalışıyor.",
+    "examples": [
+      {
+        "de": "Der Professor schickt dem Forschungsinstitut die Daten.",
+        "tr": "Profesör verileri araştırma enstitüsüne gönderiyor.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "die Forschung = araştırma; forschen = araştırma yapmak.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 14",
+    "tags": [
+      "kapitel-1",
+      "netzwerke"
+    ],
+    "createdAt": "2026-11-15"
+  },
+  {
+    "id": "wissenschaftler-54ff",
+    "type": "noun",
+    "lemma": "Wissenschaftler",
+    "noun": {
+      "gender": "der",
+      "plural": "-"
+    },
+    "rektion": [],
+    "meaningTr": "bilim insanı",
+    "hintTr": "isim",
+    "cloze": "[Die] [Wissenschaftler] haben ein neues Medikament entwickelt.",
+    "clozeTr": "Bilim insanları yeni bir ilaç geliştirdi.",
+    "examples": [
+      {
+        "de": "Viele Wissenschaftler warnen vor dem Klimawandel.",
+        "tr": "Birçok bilim insanı iklim değişikliğine karşı uyarıyor.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "Kadın: die Wissenschaftlerin, -nen. die Wissenschaft = bilim; wissenschaftlich = bilimsel.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 14",
+    "tags": [
+      "kapitel-1",
+      "netzwerke"
+    ],
+    "createdAt": "2026-11-15"
+  },
+  {
+    "id": "leitung-3401",
+    "type": "noun",
+    "lemma": "Leitung",
+    "noun": {
+      "gender": "die",
+      "plural": "-en"
+    },
+    "rektion": [],
+    "meaningTr": "yönetim; (telefon/su) hattı",
+    "hintTr": "isim",
+    "cloze": "Seit Januar hat Frau Kaya [die] [Leitung] der Abteilung.",
+    "clozeTr": "Ocaktan beri bölümün yönetimi Kaya Hanım’da.",
+    "examples": [
+      {
+        "de": "Das Projekt steht unter der Leitung von Professor Weber.",
+        "tr": "Proje Profesör Weber’in yönetiminde.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "leiten = yönetmek; der Leiter = yönetici, müdür. Telefonda: Die Leitung ist besetzt (hat meşgul).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 14",
+    "tags": [
+      "kapitel-1",
+      "netzwerke"
+    ],
+    "createdAt": "2026-11-15"
+  },
+  {
+    "id": "umfassend-b9fe",
+    "type": "adjective",
+    "lemma": "umfassend",
+    "adjective": {
+      "comparative": null,
+      "superlative": null
+    },
+    "rektion": [],
+    "meaningTr": "kapsamlı",
+    "hintTr": "sıfat",
+    "cloze": "Vor der Operation hat der Arzt mich [umfassend] informiert.",
+    "clozeTr": "Ameliyattan önce doktor beni kapsamlı şekilde bilgilendirdi.",
+    "examples": [
+      {
+        "de": "Die Wissenschaftler haben ein umfassendes Projekt geplant.",
+        "tr": "Bilim insanları kapsamlı bir proje planladı.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "umfassen = kapsamak.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 14",
+    "tags": [
+      "kapitel-1",
+      "netzwerke"
+    ],
+    "createdAt": "2026-11-15"
+  },
+  {
+    "id": "versuchsperson-db4f",
+    "type": "noun",
+    "lemma": "Versuchsperson",
+    "noun": {
+      "gender": "die",
+      "plural": "-en"
+    },
+    "rektion": [],
+    "meaningTr": "denek",
+    "hintTr": "isim (birleşik)",
+    "cloze": "Für die Studie werden noch [Versuchspersonen] gesucht.",
+    "clozeTr": "Çalışma için hâlâ denek aranıyor.",
+    "examples": [
+      {
+        "de": "Alle Versuchspersonen bekommen am Ende ein kleines Geschenk.",
+        "tr": "Bütün denekler sonunda küçük bir hediye alıyor.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "der Versuch = deney; deneme. Erkek denek de olsa artikel „die“ (die Person).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 14",
+    "tags": [
+      "kapitel-1",
+      "netzwerke"
+    ],
+    "createdAt": "2026-11-15"
+  },
+  {
+    "id": "zur-verfuegung-stellen-dd09",
+    "type": "expression",
+    "lemma": "zur Verfügung stellen",
+    "rektion": [
+      {
+        "preposition": null,
+        "case": "Dat"
+      }
+    ],
+    "meaningTr": "(birinin) kullanımına sunmak, sağlamak",
+    "hintTr": "isim + fiil kalıbı (+ Dat)",
+    "cloze": "Die Schule [stellt] allen Schülern ein Tablet [zur] [Verfügung].",
+    "clozeTr": "Okul bütün öğrencilere bir tablet sağlıyor.",
+    "examples": [
+      {
+        "de": "Die Stadt stellt den Vereinen kostenlos Räume zur Verfügung.",
+        "tr": "Belediye derneklere ücretsiz salon sağlıyor.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": "jdm. etw. zur Verfügung stellen: kişi Dativ, şey Akkusativ. Karşılığı: zur Verfügung stehen (mevcut olmak).",
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 14",
+    "tags": [
+      "kapitel-1",
+      "netzwerke",
+      "nomen-verb"
+    ],
+    "createdAt": "2026-11-15"
+  },
+  {
+    "id": "journalist-5e55",
+    "type": "noun",
+    "lemma": "Journalist",
+    "noun": {
+      "gender": "der",
+      "plural": "-en"
+    },
+    "rektion": [],
+    "meaningTr": "gazeteci",
+    "hintTr": "isim (n-Deklination)",
+    "cloze": "Nach dem Spiel hat der Trainer mit [einem] [Journalisten] gesprochen.",
+    "clozeTr": "Maçtan sonra antrenör bir gazeteciyle konuştu.",
+    "examples": [
+      {
+        "de": "Ein Journalist interviewte vor Kurzem Jugendliche auf der Straße.",
+        "tr": "Bir gazeteci kısa süre önce sokakta gençlerle röportaj yaptı.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": "n-Deklination: der Journalist, den/dem/des Journalisten. Kadın: die Journalistin.",
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 14",
+    "tags": [
+      "kapitel-1",
+      "netzwerke"
+    ],
+    "createdAt": "2026-11-15"
+  },
+  {
+    "id": "vor-kurzem-9988",
+    "type": "other",
+    "lemma": "vor Kurzem",
+    "rektion": [],
+    "meaningTr": "kısa süre önce, geçenlerde",
+    "hintTr": "zarf (iki kelime)",
+    "cloze": "Wir sind erst [vor] [Kurzem] nach Köln gezogen.",
+    "clozeTr": "Köln’e daha yeni taşındık.",
+    "examples": [
+      {
+        "de": "Ein Journalist interviewte vor Kurzem Jugendliche auf der Straße.",
+        "tr": "Bir gazeteci kısa süre önce sokakta gençlerle röportaj yaptı.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "Aynı anlam: neulich, kürzlich. „vor kurzem“ küçük harfle de yazılabilir.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 14",
+    "tags": [
+      "kapitel-1",
+      "netzwerke"
+    ],
+    "createdAt": "2026-11-15"
+  },
+  {
+    "id": "interviewen-ccb4",
+    "type": "verb",
+    "lemma": "interviewen",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": null,
+      "praeteritum": "interviewte",
+      "partizip2": "interviewt",
+      "auxiliary": "haben"
+    },
+    "rektion": [
+      {
+        "preposition": null,
+        "case": "Akk"
+      }
+    ],
+    "meaningTr": "(biriyle) röportaj yapmak",
+    "hintTr": "fiil (+ Akk)",
+    "cloze": "Für die Zeitung hat sie einen bekannten Schauspieler [interviewt].",
+    "clozeTr": "Gazete için ünlü bir oyuncuyla röportaj yaptı.",
+    "examples": [
+      {
+        "de": "Ein Journalist interviewte vor Kurzem Jugendliche auf der Straße.",
+        "tr": "Bir gazeteci kısa süre önce sokakta gençlerle röportaj yaptı.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "Telaffuz İngilizce gibi: [intervjuuen]. İsim: das Interview, -s.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 14",
+    "tags": [
+      "kapitel-1",
+      "netzwerke"
+    ],
+    "createdAt": "2026-11-15"
+  },
+  {
+    "id": "neugier-57c8",
+    "type": "noun",
+    "lemma": "Neugier",
+    "noun": {
+      "gender": "die",
+      "plural": null
+    },
+    "rektion": [],
+    "meaningTr": "merak",
+    "hintTr": "isim",
+    "cloze": "Aus reiner [Neugier] habe ich die Nachricht gelesen.",
+    "clozeTr": "Sırf meraktan mesajı okudum.",
+    "examples": [
+      {
+        "de": "Die meisten jungen Leute blieben aus Neugierde bei dem Reporter stehen.",
+        "tr": "Gençlerin çoğu meraktan muhabirin yanında durdu.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "Aynı anlam: die Neugierde (kitaptaki biçim). Sıfat: neugierig auf + Akk (meraklı).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 14",
+    "tags": [
+      "kapitel-1",
+      "netzwerke"
+    ],
+    "createdAt": "2026-11-15"
+  },
+  {
+    "id": "ausfuehrlich-bcc1",
+    "type": "adjective",
+    "lemma": "ausführlich",
+    "adjective": {
+      "comparative": null,
+      "superlative": null
+    },
+    "rektion": [],
+    "meaningTr": "ayrıntılı, uzun uzun",
+    "hintTr": "sıfat / zarf",
+    "cloze": "Kannst du mir das bitte etwas [ausführlicher] erklären?",
+    "clozeTr": "Bunu bana biraz daha ayrıntılı açıklayabilir misin?",
+    "examples": [
+      {
+        "de": "Er erklärte ihnen ausführlich den Grund für seine Umfrage.",
+        "tr": "Onlara anketinin nedenini ayrıntılı olarak açıkladı.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "Karşıtı: kurz, knapp.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 14",
+    "tags": [
+      "kapitel-1",
+      "netzwerke"
+    ],
+    "createdAt": "2026-11-15"
+  },
+  {
+    "id": "bereitwillig-f5bb",
+    "type": "adjective",
+    "lemma": "bereitwillig",
+    "adjective": {
+      "comparative": null,
+      "superlative": null
+    },
+    "rektion": [],
+    "meaningTr": "isteyerek, gönüllü olarak",
+    "hintTr": "sıfat / zarf",
+    "cloze": "Der Nachbar hat uns [bereitwillig] beim Umzug geholfen.",
+    "clozeTr": "Komşu taşınmada bize seve seve yardım etti.",
+    "examples": [
+      {
+        "de": "Die Jugendlichen gaben ihm häufig bereitwillig Auskunft.",
+        "tr": "Gençler ona çoğu zaman seve seve bilgi verdi.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "bereit sein zu + Dat / zu + Inf. = hazır olmak, istekli olmak.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 14",
+    "tags": [
+      "kapitel-1",
+      "netzwerke"
+    ],
+    "createdAt": "2026-11-15"
+  },
+  {
+    "id": "auskunft-geben-4dcf",
+    "type": "expression",
+    "lemma": "Auskunft geben",
+    "rektion": [
+      {
+        "preposition": "über",
+        "case": "Akk"
+      }
+    ],
+    "meaningTr": "bilgi vermek",
+    "hintTr": "isim + fiil kalıbı (+ Dat)",
+    "cloze": "Am Schalter kann man Ihnen [Auskunft] über die Züge [geben].",
+    "clozeTr": "Gişede size trenler hakkında bilgi verebilirler.",
+    "examples": [
+      {
+        "de": "Die Jugendlichen gaben ihm häufig bereitwillig Auskunft.",
+        "tr": "Gençler ona çoğu zaman seve seve bilgi verdi.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "die Auskunft, ¨-e = bilgi; danışma (yeri). Resmî dil; günlük dilde: Informationen geben.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 14",
+    "tags": [
+      "kapitel-1",
+      "netzwerke",
+      "nomen-verb"
+    ],
+    "createdAt": "2026-11-15"
+  },
+  {
+    "id": "befragen-56d2",
+    "type": "verb",
+    "lemma": "befragen",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": null,
+      "praeteritum": "befragte",
+      "partizip2": "befragt",
+      "auxiliary": "haben"
+    },
+    "rektion": [
+      {
+        "preposition": "zu",
+        "case": "Dat"
+      }
+    ],
+    "meaningTr": "soru sormak, sorgulamak; (ankette) görüşmek",
+    "hintTr": "fiil (+ Akk)",
+    "cloze": "Die Polizei hat alle Zeugen [befragt].",
+    "clozeTr": "Polis bütün tanıkları sorguladı.",
+    "examples": [
+      {
+        "de": "Schließlich hatte er am Nachmittag mit seinem mobilen Aufnahmegerät 30 Personen befragt.",
+        "tr": "Sonunda öğleden sonra taşınabilir kayıt cihazıyla 30 kişiye soru sormuştu.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "fragen’den farkı: befragen doğrudan Akkusativ alır ve resmî/sistemli soru sormaktır (anket, polis). die Befragung = anket, sorgu.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 14",
+    "tags": [
+      "kapitel-1",
+      "netzwerke"
+    ],
+    "createdAt": "2026-11-15"
+  },
+  {
+    "id": "aufnahmegeraet-9144",
+    "type": "noun",
+    "lemma": "Aufnahmegerät",
+    "noun": {
+      "gender": "das",
+      "plural": "-e"
+    },
+    "rektion": [],
+    "meaningTr": "kayıt cihazı",
+    "hintTr": "isim (birleşik)",
+    "cloze": "Der Reporter schaltete [das] [Aufnahmegerät] ein.",
+    "clozeTr": "Muhabir kayıt cihazını açtı.",
+    "examples": [
+      {
+        "de": "Schließlich hatte er am Nachmittag mit seinem mobilen Aufnahmegerät 30 Personen befragt.",
+        "tr": "Sonunda öğleden sonra taşınabilir kayıt cihazıyla 30 kişiye soru sormuştu.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "die Aufnahme = kayıt; das Gerät = cihaz.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 14",
+    "tags": [
+      "kapitel-1",
+      "netzwerke"
+    ],
+    "createdAt": "2026-11-15"
+  },
+  {
+    "id": "reporter-7145",
+    "type": "noun",
+    "lemma": "Reporter",
+    "noun": {
+      "gender": "der",
+      "plural": "-"
+    },
+    "rektion": [],
+    "meaningTr": "muhabir",
+    "hintTr": "isim",
+    "cloze": "[Der] [Reporter] berichtet live vom Unfallort.",
+    "clozeTr": "Muhabir kaza yerinden canlı bildiriyor.",
+    "examples": [
+      {
+        "de": "Die meisten jungen Leute blieben aus Neugierde bei dem Reporter stehen.",
+        "tr": "Gençlerin çoğu meraktan muhabirin yanında durdu.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "Kadın: die Reporterin, -nen. Journalist’e yakın; Reporter daha çok olay yerinden haber yapar.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 14",
+    "tags": [
+      "kapitel-1",
+      "netzwerke"
+    ],
+    "createdAt": "2026-11-15"
   }
 ]
