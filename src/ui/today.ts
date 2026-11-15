@@ -6,6 +6,7 @@ import { REGISTER_LABELS, topicPhrases } from '../domain/street';
 import { studyDayLabel } from '../scheduling/day';
 import { State } from '../scheduling/fsrs';
 import { h } from './dom';
+import { icon } from './icons';
 import { href, navigate } from './router';
 import { speakButton } from './tts';
 import { loadWeakSpots } from './weakSpots';
@@ -40,7 +41,7 @@ export class TodayView {
     const plan = h(
       'section',
       { class: 'today-plan', 'data-testid': 'today-plan' },
-      h('p', { class: 'today-greeting' }, `${greeting(now)} 👋`),
+      h('p', { class: 'today-greeting' }, greeting(now)),
       remaining > 0
         ? h(
             'h2',
@@ -48,13 +49,18 @@ export class TodayView {
             `Bugün ${remaining} kart seni bekliyor`,
             newCount ? h('span', { class: 'today-sub' }, ` · ${newCount} yeni`) : null,
           )
-        : h('h2', {}, done > 0 ? 'Bugünlük kartlar bitti 🎉' : 'Bugün tekrar edilecek kart yok'),
+        : h('h2', {}, done > 0 ? 'Bugünlük kartlar bitti' : 'Bugün tekrar edilecek kart yok'),
       h(
         'div',
         { class: 'progress', role: 'progressbar', 'aria-valuenow': percent, 'aria-valuemin': 0, 'aria-valuemax': 100 },
         h('div', { class: 'progress-fill', style: `width:${percent}%` }),
       ),
-      h('p', { class: 'today-meta' }, `${done} kart çalışıldı · 🔥 ${stats.streak} günlük seri`),
+      h(
+        'p',
+        { class: 'today-meta' },
+        h('span', {}, `${done} kart çalışıldı`),
+        h('span', { class: 'streak' }, icon('flame'), `${stats.streak} günlük seri`),
+      ),
       remaining > 0
         ? h(
             'button',
@@ -115,14 +121,14 @@ export class TodayView {
         ? h(
             'section',
             { class: 'daily-card daily-street', 'data-testid': 'daily-phrase' },
-            h('p', { class: 'daily-kicker' }, '💬 Günün ifadesi'),
+            h('p', { class: 'daily-kicker' }, icon('chat'), 'Günün ifadesi'),
             h('p', { class: 'daily-de' }, plain(pick.phrase.de), speakButton(plain(pick.phrase.de))),
             h('p', { class: 'daily-tr' }, pick.phrase.tr),
             h(
               'p',
               { class: 'daily-foot' },
               h('span', { class: `tag r-${pick.phrase.register}` }, REGISTER_LABELS[pick.phrase.register]),
-              h('a', { href: href({ name: 'street', id: pick.topic.id }) }, `${pick.topic.icon} ${pick.topic.titleTr} →`),
+              h('a', { href: href({ name: 'street', id: pick.topic.id }) }, pick.topic.titleTr, icon('arrow')),
             ),
           )
         : null,
@@ -130,7 +136,7 @@ export class TodayView {
         ? h(
             'a',
             { class: 'daily-card daily-grammar', href: href({ name: 'grammar', id: topic.id }), 'data-testid': 'daily-grammar' },
-            h('p', { class: 'daily-kicker' }, weakTopic ? '📖 Tekrar etmeye değer' : '📖 Günün gramer konusu'),
+            h('p', { class: 'daily-kicker' }, icon('book'), weakTopic ? 'Tekrar etmeye değer' : 'Günün gramer konusu'),
             h('p', { class: 'daily-de' }, topic.titleDe),
             h('p', { class: 'daily-tr' }, topic.titleTr),
             h(

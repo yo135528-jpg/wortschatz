@@ -119,3 +119,15 @@ test('phrases tab: open a group, go back, and practise', async ({ page }) => {
   await page.getByTestId('drill-choice').first().click();
   await expect(page.getByTestId('drill-feedback')).toBeVisible();
 });
+
+test('theme can be forced in settings and survives a reload', async ({ page }) => {
+  await page.goto('/#/settings');
+  await expect(page.locator('body')).toHaveAttribute('data-ready', 'true');
+  await page.getByTestId('theme-dark').click();
+  await expect(page.locator('html')).toHaveAttribute('data-theme', 'dark');
+  await page.reload();
+  await expect(page.locator('html')).toHaveAttribute('data-theme', 'dark');
+  await expect(page.getByTestId('theme-dark')).toHaveAttribute('aria-pressed', 'true');
+  await page.getByTestId('theme-auto').click();
+  await expect(page.locator('html')).not.toHaveAttribute('data-theme', /.+/);
+});

@@ -113,7 +113,8 @@ async function start(): Promise<void> {
     libraryNav.querySelectorAll<HTMLAnchorElement>('[data-lib]').forEach((link) => {
       link.setAttribute('aria-current', String(link.dataset.lib === next.name));
     });
-    const tab = tabOf(next);
+    // The settings link exists only in the wide-screen side rail.
+    const tab = next.name === 'settings' ? 'settings' : tabOf(next);
     document.querySelectorAll<HTMLAnchorElement>('[data-tab]').forEach((link) => {
       link.setAttribute('aria-current', String(link.dataset.tab === tab));
     });

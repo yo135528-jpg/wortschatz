@@ -9,6 +9,7 @@ import {
   type LevelFilter,
 } from '../domain/grammar';
 import { h } from './dom';
+import { icon } from './icons';
 import { href, navigate } from './router';
 import { notesForTopic } from '../domain/links';
 import { buildHeadword, headwordToString } from '../domain/format';
@@ -159,7 +160,7 @@ export class GrammarView {
       h('h2', { class: 'grammar-title' }, topic.titleDe),
       h('p', { class: 'grammar-subtitle muted' }, topic.titleTr),
       h('p', { class: 'grammar-summary' }, rich(topic.summary)),
-      topic.book ? h('p', { class: 'grammar-book small' }, `📘 Kitapta: ${topic.book}`) : null,
+      topic.book ? h('p', { class: 'grammar-book small' }, icon('book'), `Kitapta: ${topic.book}`) : null,
     );
     const related = topic.related
       .map((id) => this.byId.get(id))
@@ -219,9 +220,9 @@ export class GrammarView {
       case 'text':
         return h('p', { class: 'grammar-text' }, rich(block.text));
       case 'tip':
-        return h('p', { class: 'grammar-callout grammar-tip' }, h('strong', {}, '💡 '), rich(block.text));
+        return h('p', { class: 'grammar-callout grammar-tip' }, icon('bulb'), rich(block.text));
       case 'warning':
-        return h('p', { class: 'grammar-callout grammar-warning' }, h('strong', {}, '⚠️ '), rich(block.text));
+        return h('p', { class: 'grammar-callout grammar-warning' }, icon('warning'), rich(block.text));
       case 'examples':
         return h(
           'ul',

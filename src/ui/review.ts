@@ -7,6 +7,7 @@ import type { CardState } from '../storage/types';
 import { BUTTON_GRADES, formatInterval, previewDueDates, type ButtonGrade } from '../scheduling/fsrs';
 import { genderClass, renderBack, renderFront } from './cardFaces';
 import { h } from './dom';
+import { icon } from './icons';
 import { scopeSelect } from './scopeSelect';
 
 /** Stable ids for test ids; the visible labels are Turkish. */
@@ -136,7 +137,7 @@ export class ReviewView {
             'data-testid': 'type-answers',
             onchange: (event: Event) => void this.app.updateSettings({ typeAnswers: (event.target as HTMLInputElement).checked }),
           }),
-          ' ⌨️ Yazarak cevapla',
+          ' Yazarak cevapla',
         ),
     );
     const optionsButton = h(
@@ -169,7 +170,8 @@ export class ReviewView {
           title: 'Son değerlendirmeyi geri al (Z)',
           onclick: () => void this.undo(),
         },
-        '↶ Geri al',
+        icon('undo'),
+        'Geri al',
       ),
       optionsButton,
       body,
@@ -284,7 +286,7 @@ export class ReviewView {
     return h(
       'div',
       { class: 'empty', 'data-testid': 'empty' },
-      h('div', { class: 'empty-icon' }, '🎉'),
+      h('div', { class: 'empty-icon' }, icon('check')),
       h('p', {}, this.app.settings.scope ? 'Bu bölümde bugünlük bu kadar!' : 'Bugünlük bu kadar!'),
       next && h('p', { class: 'muted' }, `Sıradaki öğrenme kartı ${formatInterval(new Date(), next)} sonra.`),
       this.renderSessionSummary(),

@@ -23,11 +23,12 @@ import { buildRows } from './browseModel';
 import { ALL_SCOPE, inScope } from '../domain/scope';
 import { scopeSelect } from './scopeSelect';
 import { h } from './dom';
+import { icon, type IconName } from './icons';
 import { href } from './router';
 import { isSpeechSupported, geminiKey, speakButton, speakGerman } from './tts';
 
 interface DrillInfo {
-  icon: string;
+  icon: IconName;
   title: string;
   description: string;
   /** Uses the learner's cards (chapter filter applies). */
@@ -47,35 +48,35 @@ function hardNotes(app: App, notes: Note[]): Note[] {
 
 export const DRILLS: Record<DrillKind, DrillInfo> = {
   schreiben: {
-    icon: '⌨️',
+    icon: 'keyboard',
     title: 'Yazarak hatırla',
     description: 'Türkçesini gör, Almancasını yaz (isimler artikeliyle).',
     fromNotes: true,
     build: ({ notes }) => writingQuestions(notes),
   },
   artikel: {
-    icon: '🎨',
+    icon: 'shapes',
     title: 'der · die · das',
     description: 'İsimlerin artikelini hızlıca seç.',
     fromNotes: true,
     build: ({ notes }) => artikelQuestions(notes),
   },
   verben: {
-    icon: '🔁',
+    icon: 'repeat',
     title: 'Fiil çekimleri',
     description: 'Präteritum, Partizip II ve haben/sein.',
     fromNotes: true,
     build: ({ notes }) => verbQuestions(notes),
   },
   rektion: {
-    icon: '🔗',
+    icon: 'link',
     title: 'Fiil + edat',
     description: 'warten ___ + ? → auf + Akk',
     fromNotes: true,
     build: ({ notes }) => rektionQuestions(notes),
   },
   adjektiv: {
-    icon: '🎯',
+    icon: 'target',
     title: 'Sıfat çekimi',
     description: 'mit groß___ Interesse → -em. Artikelli ve artikelsiz.',
     fromNotes: true,
@@ -86,7 +87,7 @@ export const DRILLS: Record<DrillKind, DrillInfo> = {
     },
   },
   zor: {
-    icon: '🧗',
+    icon: 'mountain',
     title: 'Zor kelimeler',
     description: 'Daha önce unuttuğun kelimeleri yazarak çalış.',
     fromNotes: true,
@@ -94,28 +95,28 @@ export const DRILLS: Record<DrillKind, DrillInfo> = {
     emptyText: 'Henüz unuttuğun bir kelime yok. Kart tekrarında „Tekrar“ dediğin kelimeler burada toplanır.',
   },
   dikte: {
-    icon: '🎧',
+    icon: 'headphones',
     title: 'Dikte',
     description: 'Cümleyi dinle, duyduğunu yaz.',
     fromNotes: true,
     build: ({ notes }) => dictationQuestions(notes),
   },
   gramer: {
-    icon: '🧩',
+    icon: 'blank',
     title: 'Gramer boşlukları',
     description: 'Gramer konularındaki örneklerde boşluğu doldur.',
     fromNotes: false,
     build: async () => grammarQuestions(await loadGrammar()),
   },
   sokak: {
-    icon: '💬',
+    icon: 'chat',
     title: 'Sokak dili quiz',
     description: 'Bu ifade ne demek? 4 seçenekten bul.',
     fromNotes: false,
     build: async () => streetQuestions(await loadStreet()),
   },
   kalip: {
-    icon: '🗣️',
+    icon: 'mic',
     title: 'Kalıplar (Redemittel)',
     description: 'Bunu Almanca nasıl söylersin? Doğru kalıbı seç.',
     fromNotes: false,
@@ -224,7 +225,7 @@ export class DrillView {
       h(
         'section',
         { class: 'drill-start', 'data-testid': 'drill-start', 'data-kind': this.kind },
-        h('div', { class: 'drill-start-icon', 'aria-hidden': 'true' }, info.icon),
+        h('div', { class: 'drill-start-icon' }, icon(info.icon)),
         h('h2', {}, info.title),
         h('p', { class: 'muted' }, info.description),
         chapterSelect,
@@ -293,7 +294,7 @@ export class DrillView {
           ? h(
               'div',
               { class: 'drill-audio' },
-              h('button', { type: 'button', class: 'primary', 'data-testid': 'drill-listen', onclick: () => void speakGerman(question.audio!) }, '🔊 Dinle'),
+              h('button', { type: 'button', class: 'primary', 'data-testid': 'drill-listen', onclick: () => void speakGerman(question.audio!) }, icon('speaker'), 'Dinle'),
             )
           : h('h2', { class: 'drill-title' }, question.title, question.audioInPrompt && question.audio ? speakButton(question.audio) : null),
         question.subtitle ? h('p', { class: 'drill-subtitle' }, question.subtitle) : null,
@@ -477,7 +478,7 @@ export class DrillView {
       h(
         'section',
         { class: 'drill-done', 'data-testid': 'drill-done' },
-        h('div', { class: 'drill-start-icon' }, percent >= 80 ? '🏆' : percent >= 50 ? '💪' : '🌱'),
+        h('div', { class: `drill-start-icon ${percent >= 80 ? 'is-great' : percent >= 50 ? 'is-ok' : 'is-low'}` }, icon(percent >= 80 ? 'trophy' : percent >= 50 ? 'target' : 'repeat')),
         h('h2', {}, `${right} / ${firstTries.length} doğru`),
         h('p', { class: 'muted' }, percent >= 80 ? 'Harika gidiyorsun!' : percent >= 50 ? 'İyi, biraz daha pratik.' : 'Tekrar etmeye değer.'),
         mistakes.length

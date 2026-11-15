@@ -13,6 +13,7 @@ import {
   type StreetTopic,
 } from '../domain/street';
 import { h } from './dom';
+import { icon } from './icons';
 import { navigate } from './router';
 import { speakButton } from './tts';
 
@@ -253,9 +254,9 @@ export class StreetView {
       case 'text':
         return h('p', { class: 'grammar-text' }, rich(block.text));
       case 'tip':
-        return h('p', { class: 'grammar-callout grammar-tip' }, h('strong', {}, '💡 '), rich(block.text));
+        return h('p', { class: 'grammar-callout grammar-tip' }, icon('bulb'), rich(block.text));
       case 'warning':
-        return h('p', { class: 'grammar-callout grammar-warning' }, h('strong', {}, '⚠️ '), rich(block.text));
+        return h('p', { class: 'grammar-callout grammar-warning' }, icon('warning'), rich(block.text));
       case 'phrases':
         return h(
           'section',
@@ -267,7 +268,7 @@ export class StreetView {
         return h(
           'section',
           { class: 'dialogue' },
-          h('h3', { class: 'phrase-heading' }, `🎬 ${block.title}`),
+          h('h3', { class: 'phrase-heading' }, icon('play'), block.title),
           ...block.lines.map((line) =>
             h(
               'div',

@@ -1,11 +1,12 @@
 import type { App } from '../app';
 import { h } from './dom';
+import { icon, type IconName } from './icons';
 import { href, type Route } from './router';
 import { weakSpotsPanel } from './weakSpots';
 
 export interface StudyItem {
   route: Route;
-  icon: string;
+  icon: IconName;
   title: string;
   description: string;
   /** Short status text, e.g. "12 kart". */
@@ -26,14 +27,14 @@ export class StudyView {
     const review = h(
       'a',
       { class: 'study-hero', href: href({ name: 'review' }), 'data-testid': 'study-review' },
-      h('span', { class: 'study-hero-icon', 'aria-hidden': 'true' }, '🧠'),
+      h('span', { class: 'study-hero-icon' }, icon('cards')),
       h(
         'span',
         { class: 'study-hero-text' },
         h('span', { class: 'study-hero-title' }, 'Kart tekrarı'),
         h('span', { class: 'study-hero-sub' }, 'Aralıklı tekrar (FSRS): her kartı unutmak üzereyken sorar.'),
       ),
-      h('span', { class: 'study-hero-badge' }, due ? `${due} kart` : '✓'),
+      h('span', { class: 'study-hero-badge' }, due ? `${due} kart` : icon('check')),
     );
     this.root.replaceChildren(
       review,
@@ -55,7 +56,7 @@ export class StudyView {
             h(
               'a',
               { class: 'study-card', href: href(item.route), 'data-testid': item.testId },
-              h('span', { class: 'study-card-icon', 'aria-hidden': 'true' }, item.icon),
+              h('span', { class: 'study-card-icon' }, icon(item.icon)),
               h('span', { class: 'study-card-title' }, item.title),
               h('span', { class: 'study-card-sub' }, item.description),
               badge ? h('span', { class: 'study-card-badge' }, badge) : null,
