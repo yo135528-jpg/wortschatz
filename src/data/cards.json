@@ -20715,5 +20715,187 @@
       "netzwerke"
     ],
     "createdAt": "2026-11-15"
+  },
+  {
+    "id": "die-art-und-weise-f08a",
+    "type": "expression",
+    "lemma": "die Art und Weise",
+    "rektion": [],
+    "meaningTr": "biçim, tarz, yol (bir şeyin yapılış şekli)",
+    "hintTr": "kalıp (isim + isim)",
+    "cloze": "Mir gefällt [die] [Art] [und] [Weise] nicht, wie er mit Kunden spricht.",
+    "clozeTr": "Müşterilerle konuşma tarzı hoşuma gitmiyor.",
+    "examples": [
+      {
+        "de": "Wie oder auf welche Art und Weise? (modal)",
+        "tr": "Nasıl ya da hangi şekilde? (modal)",
+        "fromBook": true
+      },
+      {
+        "de": "Auf diese Art und Weise lernst du die Wörter schneller.",
+        "tr": "Bu şekilde kelimeleri daha hızlı öğrenirsin.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "Artikel dişil (die Art, die Weise). Edatla: auf diese Art und Weise = bu şekilde.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 14",
+    "tags": [
+      "kapitel-1",
+      "grammatik"
+    ],
+    "createdAt": "2026-11-15"
+  },
+  {
+    "id": "aus-diesem-grund-bd59",
+    "type": "expression",
+    "lemma": "aus diesem Grund",
+    "rektion": [],
+    "meaningTr": "bu nedenle, bu yüzden",
+    "hintTr": "kalıp (edat + isim)",
+    "cloze": "Der Zug hatte Verspätung. [Aus] [diesem] [Grund] kam ich zu spät.",
+    "clozeTr": "Tren rötar yaptı. Bu yüzden geç kaldım.",
+    "examples": [
+      {
+        "de": "Warum oder aus welchem Grund? (kausal)",
+        "tr": "Neden ya da hangi sebeple? (kausal)",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": "Cümle başında 1. pozisyonu doldurur, fiil hemen arkasından gelir: Aus diesem Grund bleibe ich zu Hause.",
+    "note": "Aynı anlam: deshalb, deswegen, daher.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 14",
+    "tags": [
+      "kapitel-1",
+      "grammatik"
+    ],
+    "createdAt": "2026-11-15"
+  },
+  {
+    "id": "temporal-c906",
+    "type": "adjective",
+    "lemma": "temporal",
+    "adjective": {
+      "comparative": null,
+      "superlative": null
+    },
+    "rektion": [],
+    "meaningTr": "zamansal (zaman bildiren)",
+    "hintTr": "sıfat (dil bilgisi terimi)",
+    "cloze": "„Am Nachmittag“ ist eine [temporale] Angabe.",
+    "clozeTr": "„Öğleden sonra“ zaman bildiren bir tümleçtir.",
+    "examples": [
+      {
+        "de": "Wann oder wie lange? (temporal)",
+        "tr": "Ne zaman ya da ne kadar süre? (zamansal)",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "Mittelfeld sırası: temporal – kausal – modal – lokal (TeKaMoLo).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 14",
+    "tags": [
+      "kapitel-1",
+      "grammatik"
+    ],
+    "createdAt": "2026-11-15"
+  },
+  {
+    "id": "kausal-5847",
+    "type": "adjective",
+    "lemma": "kausal",
+    "adjective": {
+      "comparative": null,
+      "superlative": null
+    },
+    "rektion": [],
+    "meaningTr": "nedensel (sebep bildiren)",
+    "hintTr": "sıfat (dil bilgisi terimi)",
+    "cloze": "„Aus Neugierde“ ist eine [kausale] Angabe.",
+    "clozeTr": "„Meraktan“ sebep bildiren bir tümleçtir.",
+    "examples": [
+      {
+        "de": "Warum oder aus welchem Grund? (kausal)",
+        "tr": "Neden ya da hangi sebeple? (nedensel)",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "Mittelfeld sırası: temporal – kausal – modal – lokal (TeKaMoLo).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 14",
+    "tags": [
+      "kapitel-1",
+      "grammatik"
+    ],
+    "createdAt": "2026-11-15"
+  },
+  {
+    "id": "modal-40e7",
+    "type": "adjective",
+    "lemma": "modal",
+    "adjective": {
+      "comparative": null,
+      "superlative": null
+    },
+    "rektion": [],
+    "meaningTr": "biçim bildiren (nasıl?)",
+    "hintTr": "sıfat (dil bilgisi terimi)",
+    "cloze": "„Ausführlich“ ist eine [modale] Angabe.",
+    "clozeTr": "„Ayrıntılı olarak“ biçim bildiren bir tümleçtir.",
+    "examples": [
+      {
+        "de": "Wie oder auf welche Art und Weise? (modal)",
+        "tr": "Nasıl ya da hangi şekilde? (biçim)",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "Modalverb (können, müssen …) ile karıştırma. Mittelfeld sırası: TeKaMoLo.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 14",
+    "tags": [
+      "kapitel-1",
+      "grammatik"
+    ],
+    "createdAt": "2026-11-15"
+  },
+  {
+    "id": "lokal-2b55",
+    "type": "adjective",
+    "lemma": "lokal",
+    "adjective": {
+      "comparative": null,
+      "superlative": null
+    },
+    "rektion": [],
+    "meaningTr": "yer bildiren; yerel",
+    "hintTr": "sıfat (dil bilgisi terimi)",
+    "cloze": "„Auf der Straße“ ist eine [lokale] Angabe.",
+    "clozeTr": "„Sokakta“ yer bildiren bir tümleçtir.",
+    "examples": [
+      {
+        "de": "Wo, woher oder wohin? (lokal)",
+        "tr": "Nerede, nereden ya da nereye? (yer)",
+        "fromBook": true
+      },
+      {
+        "de": "Wir kaufen gern bei lokalen Händlern ein.",
+        "tr": "Yerel esnaftan alışveriş yapmayı seviyoruz.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "Gündelik anlamı „yerel“: die lokale Presse = yerel basın. Mittelfeld sırası: TeKaMoLo.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 14",
+    "tags": [
+      "kapitel-1",
+      "grammatik"
+    ],
+    "createdAt": "2026-11-15"
   }
 ]
