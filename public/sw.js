@@ -5,7 +5,8 @@
  * - Built assets (hashed file names) and icons: cache first, they never change.
  * Gemini TTS and other cross-origin requests are not touched.
  */
-const CACHE = 'wortschatz-v1';
+// Bump the version when cached files with fixed names (icons, manifest) change.
+const CACHE = 'wortschatz-v2';
 
 self.addEventListener('install', (event) => {
   event.waitUntil(caches.open(CACHE).then((cache) => cache.addAll(['./', './manifest.webmanifest'])));

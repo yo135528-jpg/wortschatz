@@ -15,7 +15,7 @@ test('export/import round-trip restores review state', async ({ page }, testInfo
   const downloadPromise = page.waitForEvent('download');
   await page.getByTestId('export').click();
   const download = await downloadPromise;
-  expect(download.suggestedFilename()).toMatch(/^wortschatz-backup-\d{4}-\d{2}-\d{2}\.json$/);
+  expect(download.suggestedFilename()).toMatch(/^dilmac-yedek-\d{4}-\d{2}-\d{2}\.json$/);
   const backupPath = testInfo.outputPath('backup.json');
   await download.saveAs(backupPath);
 
