@@ -280,8 +280,15 @@ export class ReviewView {
       ),
     );
 
+    const done = this.app.reviewedToday(now);
+    const percent = Math.round((done / Math.max(1, done + remaining)) * 100);
     this.root.append(
       this.toolbar(remaining),
+      h(
+        'div',
+        { class: 'progress thin', role: 'progressbar', 'aria-label': 'Bugünkü ilerleme', 'aria-valuenow': percent, 'aria-valuemin': 0, 'aria-valuemax': 100 },
+        h('div', { class: 'progress-fill', style: `width:${percent}%` }),
+      ),
       h('p', { class: 'typed-verdict', 'data-testid': 'typed-verdict', hidden: true }),
       cardElement,
       // Sticky above the tab bar, so the buttons stay under the thumb however long the card is.

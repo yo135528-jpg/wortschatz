@@ -3,6 +3,12 @@ import { h } from './dom';
 import { href, navigate } from './router';
 import { speakButton } from './tts';
 
+/** Adds/removes a phrase as a flashcard; implemented in main.ts on top of the app state. */
+export interface RedemittelCardActions {
+  has(group: RedemittelGroup, item: RedemittelItem): boolean;
+  toggle(group: RedemittelGroup, item: RedemittelItem): Promise<boolean>;
+}
+
 /** "Kalıplar" tab: Redemittel grouped by what the learner wants to do. */
 export class RedemittelView {
   private openId: string | null = null;
@@ -13,6 +19,7 @@ export class RedemittelView {
   constructor(
     private readonly groups: RedemittelGroup[],
     private readonly root: HTMLElement,
+    private readonly cards?: RedemittelCardActions,
   ) {
     this.byId = new Map(groups.map((group) => [group.id, group]));
   }
@@ -66,7 +73,7 @@ export class RedemittelView {
     if (hits.length === 0) return [h('p', { class: 'empty muted' }, 'Sonuç yok.')];
     return [
       h('p', { class: 'muted small street-hit-count' }, `${hits.length} kalıp bulundu`),
-      h('ul', { class: 'phrase-list' }, ...hits.map((hit) => this.renderItem(hit.item, hit.group))),
+      h('ul', { class: 'phrase-list' }, ...hits.map((hit) => this.renderItem(hit.item, hit.group, true))),
     ];
   }
 
@@ -125,13 +132,13 @@ export class RedemittelView {
           h('p', { class: 'grammar-subtitle muted' }, `${group.titleDe} · ${SKILL_LABELS[group.skill]}`),
           h('p', { class: 'grammar-summary' }, group.summaryTr),
         ),
-        h('ul', { class: 'phrase-list' }, ...group.items.map((item) => this.renderItem(item, null))),
+        h('ul', { class: 'phrase-list' }, ...group.items.map((item) => this.renderItem(item, group, false))),
       ),
     ];
   }
 
   /** One phrase; in search results it also links to its group. */
-  private renderItem(item: RedemittelItem, group: RedemittelGroup | null): HTMLElement {
+  private renderItem(item: RedemittelItem, group: RedemittelGroup, linkToGroup: boolean): HTMLElement {
     return h(
       'li',
       { class: 'phrase r-locker', 'data-testid': 'redemittel-item' },
@@ -144,9 +151,33 @@ export class RedemittelView {
         h('div', { class: 'example-tr' }, item.example.tr),
       ),
       item.note ? h('div', { class: 'phrase-note' }, item.note) : null,
-      group
+      this.cardButton(item, group),
+      linkToGroup
         ? h('a', { class: 'muted small', href: href({ name: 'phrases', id: group.id }) }, `${group.icon} ${group.titleTr} →`)
         : null,
     );
+  }
+
+  private cardButton(item: RedemittelItem, group: RedemittelGroup): HTMLElement | null {
+    const cards = this.cards;
+    if (!cards) return null;
+    const label = (added: boolean) => (added ? '✓ Kartlarda' : '+ Kartlara ekle');
+    const button = h(
+      'button',
+      {
+        type: 'button',
+        class: `add-card ${cards.has(group, item) ? 'is-added' : ''}`,
+        'data-testid': 'add-card',
+        onclick: async () => {
+          button.disabled = true;
+          const added = await cards.toggle(group, item);
+          button.textContent = label(added);
+          button.classList.toggle('is-added', added);
+          button.disabled = false;
+        },
+      },
+      label(cards.has(group, item)),
+    );
+    return button;
   }
 }

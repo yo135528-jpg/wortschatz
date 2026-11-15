@@ -3,12 +3,13 @@ import rawNotes from './data/cards.json';
 import { App } from './app';
 import { loadGrammar, loadRedemittel, loadStreet } from './content';
 import { parseNotes } from './domain/schema';
+import { sortByBook } from './domain/scope';
 import { openDatabase } from './storage/db';
 import type { StudyMode } from './storage/types';
 import { BrowserView } from './ui/browser';
 import { byId, h } from './ui/dom';
 import { GrammarView } from './ui/grammar';
-import { RedemittelView } from './ui/redemittel';
+import { RedemittelView, type RedemittelCardActions } from './ui/redemittel';
 import { ReviewView } from './ui/review';
 import { parseRoute, routeHash, tabOf, type Route, type RouteName } from './ui/router';
 import { SearchView } from './ui/search';
@@ -16,6 +17,7 @@ import { renderSettings } from './ui/settings';
 import { renderStats } from './ui/stats';
 import { StreetView, type StreetCardActions } from './ui/street';
 import { phraseKey, streetNote, streetNotes } from './domain/streetCards';
+import { isRedemittelKey, redemittelKey, redemittelNote, redemittelNotes } from './domain/redemittelCards';
 import { studyDayLabel } from './scheduling/day';
 import { StudyView } from './ui/study';
 import { STUDY_ITEMS } from './ui/studyItems';
@@ -41,14 +43,17 @@ const VIEW_NAMES: ViewName[] = [
 const LIBRARY: RouteName[] = ['words', 'grammar', 'street', 'phrases'];
 
 async function start(): Promise<void> {
-  const notes = parseNotes(rawNotes);
+  // Study order: per chapter Kursbuch first, then Arbeitsbuch (cards.json is in the order pages were added).
+  const notes = sortByBook(parseNotes(rawNotes));
   const app = await App.load(await openDatabase(), notes);
   // Street-German phrases the learner added as cards are rebuilt from the content.
   const loadStreetCards = async () => {
-    const missing = app.settings.streetPhrases.length
-      ? streetNotes(await loadStreet(), app.settings.streetPhrases, studyDayLabel(new Date())).filter((n) => !app.notes.has(n.id))
-      : [];
-    await app.addNotes(missing);
+    const keys = app.settings.streetPhrases;
+    const day = studyDayLabel(new Date());
+    // The list holds street phrases and (prefixed) Redemittel; each content chunk is loaded only when needed.
+    const street = keys.some((key) => !isRedemittelKey(key)) ? streetNotes(await loadStreet(), keys, day) : [];
+    const phrases = keys.some(isRedemittelKey) ? redemittelNotes(await loadRedemittel(), keys, day) : [];
+    await app.addNotes([...street, ...phrases].filter((note) => !app.notes.has(note.id)));
   };
   await loadStreetCards();
   const sync = new SyncController(app, loadStreetCards);
@@ -57,6 +62,22 @@ async function start(): Promise<void> {
     async toggle(topic, phrase) {
       const key = phraseKey(topic, phrase);
       const note = streetNote(topic, phrase, studyDayLabel(new Date()));
+      if (app.settings.streetPhrases.includes(key)) {
+        await app.updateSettings({ streetPhrases: app.settings.streetPhrases.filter((k) => k !== key) });
+        app.removeNotes([note.id]);
+        return false;
+      }
+      await app.updateSettings({ streetPhrases: [...app.settings.streetPhrases, key] });
+      await app.addNotes([note]);
+      return true;
+    },
+  };
+
+  const phraseCards: RedemittelCardActions = {
+    has: (group, item) => app.settings.streetPhrases.includes(redemittelKey(group, item)),
+    async toggle(group, item) {
+      const key = redemittelKey(group, item);
+      const note = redemittelNote(group, item, studyDayLabel(new Date()));
       if (app.settings.streetPhrases.includes(key)) {
         await app.updateSettings({ streetPhrases: app.settings.streetPhrases.filter((k) => k !== key) });
         app.removeNotes([note.id]);
@@ -79,7 +100,7 @@ async function start(): Promise<void> {
   let grammar: Promise<GrammarView> | null = null;
   let street: Promise<StreetView> | null = null;
   let phrases: Promise<RedemittelView> | null = null;
-  const phrasesView = () => (phrases ??= loadRedemittel().then((groups) => new RedemittelView(groups, views.phrases)));
+  const phrasesView = () => (phrases ??= loadRedemittel().then((groups) => new RedemittelView(groups, views.phrases, phraseCards)));
   const grammarView = () => (grammar ??= loadGrammar().then((topics) => new GrammarView(topics, views.grammar, notes)));
   const streetView = () => (street ??= loadStreet().then((topics) => new StreetView(topics, views.street, streetCards)));
 
