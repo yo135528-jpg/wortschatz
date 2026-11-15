@@ -48,6 +48,7 @@ const BackupSchema = z.object({
     scope: z.string().default(''),
     newFirst: z.string().default(''),
     typeAnswers: z.boolean().default(false),
+    autoSpeak: z.boolean().default(false),
     streetPhrases: z.array(z.string()).default([]),
   }),
   cards: z.array(

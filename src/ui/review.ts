@@ -2,6 +2,7 @@ import type { App } from '../app';
 import { checkAnswer } from '../domain/answer';
 import { clozeAnswers } from '../domain/cloze';
 import { typedAnswers } from '../domain/drills';
+import { buildHeadword } from '../domain/format';
 import type { Note } from '../domain/schema';
 import type { CardState } from '../storage/types';
 import { BUTTON_GRADES, formatInterval, previewDueDates, type ButtonGrade } from '../scheduling/fsrs';
@@ -9,6 +10,7 @@ import { genderClass, renderBack, renderFront } from './cardFaces';
 import { h } from './dom';
 import { icon } from './icons';
 import { scopeSelect } from './scopeSelect';
+import { speakGerman } from './tts';
 
 /** Stable ids for test ids; the visible labels are Turkish. */
 const BUTTON_IDS: Record<ButtonGrade, string> = { 1: 'again', 2: 'hard', 3: 'good', 4: 'easy' };
@@ -26,6 +28,8 @@ export class ReviewView {
   private session: Record<ButtonGrade, number> = { 1: 0, 2: 0, 3: 0, 4: 0 };
   /** The options row survives re-renders (every rating rebuilds the screen). */
   private optionsOpen = false;
+  /** Card whose German side was already read aloud (re-renders must not repeat it). */
+  private spokenKey: string | null = null;
 
   constructor(
     private readonly app: App,
@@ -41,7 +45,10 @@ export class ReviewView {
     const preferred = this.preferKey ? queue.find((state) => state.key === this.preferKey) : undefined;
     const key = this.preferKey;
     this.preferKey = null;
+    const previousKey = this.current?.key;
     this.current = preferred ?? (key ? this.app.allStates.find((s) => s.key === key) : undefined) ?? queue[0] ?? null;
+    // A card that comes back later (learning step) is read again.
+    if (this.current?.key !== previousKey) this.spokenKey = null;
     this.flipped = false;
     this.render();
   }
@@ -106,6 +113,16 @@ export class ReviewView {
     this.root.querySelector('.answer-bar')?.removeAttribute('hidden');
     this.root.querySelector('.show-answer')?.setAttribute('hidden', '');
     this.root.querySelector<HTMLButtonElement>('.rate-3')?.focus({ preventScroll: true });
+    if (this.current?.direction === 'tr2de') this.autoSpeak(this.current);
+  }
+
+  /** Reads the headword once per card when the option is on. */
+  private autoSpeak(card: CardState): void {
+    if (!this.app.settings.autoSpeak || this.spokenKey === card.key) return;
+    const note = this.app.notes.get(card.noteId);
+    if (!note) return;
+    this.spokenKey = card.key;
+    void speakGerman(buildHeadword(note).speech);
   }
 
   private async rate(grade: ButtonGrade): Promise<void> {
@@ -138,6 +155,17 @@ export class ReviewView {
             onchange: (event: Event) => void this.app.updateSettings({ typeAnswers: (event.target as HTMLInputElement).checked }),
           }),
           ' Yazarak cevapla',
+        ),
+        h(
+          'label',
+          { class: 'toggle', title: 'Almanca taraf göründüğünde kendiliğinden seslendir' },
+          h('input', {
+            type: 'checkbox',
+            checked: settings.autoSpeak,
+            'data-testid': 'auto-speak',
+            onchange: (event: Event) => void this.app.updateSettings({ autoSpeak: (event.target as HTMLInputElement).checked }),
+          }),
+          ' Otomatik seslendir',
         ),
     );
     const optionsButton = h(
@@ -275,6 +303,7 @@ export class ReviewView {
       ),
     );
     typeInput?.focus({ preventScroll: true });
+    if (card.direction === 'de2tr' && this.isVisible()) this.autoSpeak(card);
   }
 
   private renderEmpty(): HTMLElement {

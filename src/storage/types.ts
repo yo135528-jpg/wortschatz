@@ -31,6 +31,8 @@ export interface Settings {
   newFirst: string;
   /** tr2de cards: type the answer before flipping. */
   typeAnswers: boolean;
+  /** Read the German side aloud as soon as it is shown (front of de2tr, back of tr2de). */
+  autoSpeak: boolean;
   /** Street-German phrases added as cards ("<topicId>|<German>", see domain/streetCards). */
   streetPhrases: string[];
 }
@@ -43,5 +45,6 @@ export const DEFAULT_SETTINGS: Settings = {
   scope: '',
   newFirst: '',
   typeAnswers: false,
+  autoSpeak: false,
   streetPhrases: [],
 };
