@@ -21033,5 +21033,1316 @@
       "kapitel-1"
     ],
     "createdAt": "2026-11-15"
+  },
+  {
+    "id": "studie-e275",
+    "type": "noun",
+    "lemma": "Studie",
+    "noun": {
+      "gender": "die",
+      "plural": "-n"
+    },
+    "rektion": [],
+    "meaningTr": "(bilimsel) çalışma, araştırma",
+    "hintTr": "isim",
+    "cloze": "Laut [einer] neuen [Studie] schlafen Jugendliche zu wenig.",
+    "clozeTr": "Yeni bir araştırmaya göre gençler çok az uyuyor.",
+    "examples": [
+      {
+        "de": "Eine Studie über Freundschaft wurde deutschlandweit durchgeführt.",
+        "tr": "Dostluk üzerine bir araştırma Almanya çapında yapıldı.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "Karıştırma: das Studium (üniversite öğrenimi) ≠ die Studie (araştırma).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 15",
+    "tags": [
+      "kapitel-1"
+    ],
+    "createdAt": "2026-11-15"
+  },
+  {
+    "id": "zu-studienzwecken-8b8b",
+    "type": "expression",
+    "lemma": "zu Studienzwecken",
+    "rektion": [],
+    "meaningTr": "araştırma amacıyla",
+    "hintTr": "kalıp (edat + isim)",
+    "cloze": "Die Daten werden nur [zu] [Studienzwecken] verwendet.",
+    "clozeTr": "Veriler sadece araştırma amacıyla kullanılıyor.",
+    "examples": [
+      {
+        "de": "Er sammelte die Daten nur zu Studienzwecken.",
+        "tr": "Verileri sadece araştırma amacıyla topladı.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "der Zweck, -e = amaç. zu diesem Zweck = bu amaçla.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 15",
+    "tags": [
+      "kapitel-1"
+    ],
+    "createdAt": "2026-11-15"
+  },
+  {
+    "id": "sozialwissenschaftler-65a5",
+    "type": "noun",
+    "lemma": "Sozialwissenschaftler",
+    "noun": {
+      "gender": "der",
+      "plural": "-"
+    },
+    "rektion": [],
+    "meaningTr": "sosyal bilimci",
+    "hintTr": "isim (birleşik)",
+    "cloze": "[Ein] bekannter [Sozialwissenschaftler] hat das Buch geschrieben.",
+    "clozeTr": "Kitabı tanınmış bir sosyal bilimci yazdı.",
+    "examples": [
+      {
+        "de": "Ein bekannter Sozialwissenschaftler sammelte eine Menge Daten.",
+        "tr": "Tanınmış bir sosyal bilimci bir sürü veri topladı.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "Kadın: die Sozialwissenschaftlerin. die Sozialwissenschaften = sosyal bilimler.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 15",
+    "tags": [
+      "kapitel-1"
+    ],
+    "createdAt": "2026-11-15"
+  },
+  {
+    "id": "detailliert-844d",
+    "type": "adjective",
+    "lemma": "detailliert",
+    "adjective": {
+      "comparative": null,
+      "superlative": null
+    },
+    "rektion": [],
+    "meaningTr": "ayrıntılı",
+    "hintTr": "sıfat",
+    "cloze": "Bitte beschreiben Sie den Unfall möglichst [detailliert].",
+    "clozeTr": "Lütfen kazayı olabildiğince ayrıntılı anlatın.",
+    "examples": [
+      {
+        "de": "Die Menschen wurden im Internet detailliert befragt.",
+        "tr": "İnsanlara internette ayrıntılı sorular soruldu.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "Aynı anlam: ausführlich. das Detail, -s = ayrıntı.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 15",
+    "tags": [
+      "kapitel-1"
+    ],
+    "createdAt": "2026-11-15"
+  },
+  {
+    "id": "in-ruhe-f33c",
+    "type": "expression",
+    "lemma": "in Ruhe",
+    "rektion": [],
+    "meaningTr": "sakin sakin, acele etmeden",
+    "hintTr": "kalıp (edat + isim)",
+    "cloze": "Lies den Vertrag erst [in] [Ruhe] durch, bevor du unterschreibst.",
+    "clozeTr": "İmzalamadan önce sözleşmeyi önce sakin sakin oku.",
+    "examples": [
+      {
+        "de": "Danach konnte er die Daten in Ruhe auswerten.",
+        "tr": "Sonra verileri acele etmeden değerlendirebildi.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "jdn. in Ruhe lassen = birini rahat bırakmak. die Ruhe = sessizlik, huzur.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 15",
+    "tags": [
+      "kapitel-1"
+    ],
+    "createdAt": "2026-11-15"
+  },
+  {
+    "id": "deutschlandweit-4688",
+    "type": "adjective",
+    "lemma": "deutschlandweit",
+    "adjective": {
+      "comparative": null,
+      "superlative": null
+    },
+    "rektion": [],
+    "meaningTr": "Almanya çapında",
+    "hintTr": "sıfat / zarf",
+    "cloze": "Der Streik findet [deutschlandweit] statt.",
+    "clozeTr": "Grev Almanya çapında yapılıyor.",
+    "examples": [
+      {
+        "de": "Die Studie wurde mittlerweile zum dritten Mal deutschlandweit durchgeführt.",
+        "tr": "Araştırma bu arada üçüncü kez Almanya çapında yapıldı.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "Aynı yapı: weltweit, europaweit, bundesweit.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 15",
+    "tags": [
+      "kapitel-1"
+    ],
+    "createdAt": "2026-11-15"
+  },
+  {
+    "id": "durchfuehren-b3f5",
+    "type": "verb",
+    "lemma": "durchführen",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": "durch",
+      "praeteritum": "führte durch",
+      "partizip2": "durchgeführt",
+      "auxiliary": "haben"
+    },
+    "rektion": [],
+    "meaningTr": "yapmak, gerçekleştirmek, uygulamak",
+    "hintTr": "fiil, ayrılabilir",
+    "cloze": "Die Universität [führt] im Sommer eine große Umfrage [durch].",
+    "clozeTr": "Üniversite yazın büyük bir anket yapıyor.",
+    "examples": [
+      {
+        "de": "Wer hat das Experiment durchgeführt?",
+        "tr": "Deneyi kim yaptı?",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "Resmî dil; anket, deney, kontrol, proje için: eine Umfrage / ein Projekt durchführen. İsim: die Durchführung.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 15",
+    "tags": [
+      "kapitel-1"
+    ],
+    "createdAt": "2026-11-15"
+  },
+  {
+    "id": "entwicklung-92c0",
+    "type": "noun",
+    "lemma": "Entwicklung",
+    "noun": {
+      "gender": "die",
+      "plural": "-en"
+    },
+    "rektion": [],
+    "meaningTr": "gelişme, gelişim",
+    "hintTr": "isim",
+    "cloze": "Wir beobachten [die] [Entwicklung] der Preise genau.",
+    "clozeTr": "Fiyatların gelişimini yakından izliyoruz.",
+    "examples": [
+      {
+        "de": "Aus Interesse an den neuesten Entwicklungen gab die Ministerin eine Untersuchung in Auftrag.",
+        "tr": "Bakan en son gelişmelere ilgi duyduğu için bir araştırma yaptırdı.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "Fiil: (sich) entwickeln = geliştirmek / gelişmek.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 15",
+    "tags": [
+      "kapitel-1"
+    ],
+    "createdAt": "2026-11-15"
+  },
+  {
+    "id": "minister-c83b",
+    "type": "noun",
+    "lemma": "Minister",
+    "noun": {
+      "gender": "der",
+      "plural": "-"
+    },
+    "rektion": [],
+    "meaningTr": "bakan",
+    "hintTr": "isim",
+    "cloze": "[Der] [Minister] hat heute eine Pressekonferenz gegeben.",
+    "clozeTr": "Bakan bugün bir basın toplantısı düzenledi.",
+    "examples": [
+      {
+        "de": "Die Familien- und Sozialministerin hatte die Untersuchung in Auftrag gegeben.",
+        "tr": "Aile ve Sosyal İşler Bakanı araştırmayı yaptırmıştı.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "Kadın: die Ministerin, -nen. das Ministerium = bakanlık.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 15",
+    "tags": [
+      "kapitel-1"
+    ],
+    "createdAt": "2026-11-15"
+  },
+  {
+    "id": "per-83f2",
+    "type": "other",
+    "lemma": "per",
+    "rektion": [],
+    "meaningTr": "ile, yoluyla",
+    "hintTr": "edat (+ Akk, artikelsiz)",
+    "cloze": "Schicken Sie mir die Unterlagen bitte [per] E-Mail.",
+    "clozeTr": "Belgeleri bana lütfen e-postayla gönderin.",
+    "examples": [
+      {
+        "de": "Er sammelte die Daten per Umfrage.",
+        "tr": "Verileri anket yoluyla topladı.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "Genelde artikelsiz: per Post, per Telefon, per Du sein (senli benli olmak).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 15",
+    "tags": [
+      "kapitel-1"
+    ],
+    "createdAt": "2026-11-15"
+  },
+  {
+    "id": "inhaltsangabe-2a80",
+    "type": "noun",
+    "lemma": "Inhaltsangabe",
+    "noun": {
+      "gender": "die",
+      "plural": "-n"
+    },
+    "rektion": [],
+    "meaningTr": "özet (içerik özeti)",
+    "hintTr": "isim (birleşik)",
+    "cloze": "Schreiben Sie bitte [eine] kurze [Inhaltsangabe] des Romans.",
+    "clozeTr": "Lütfen romanın kısa bir özetini yazın.",
+    "examples": [
+      {
+        "de": "Lesen Sie die Inhaltsangabe des Films.",
+        "tr": "Filmin özetini okuyun.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 15",
+    "tags": [
+      "kapitel-1",
+      "film"
+    ],
+    "createdAt": "2026-11-15"
+  },
+  {
+    "id": "reichen-076c",
+    "type": "verb",
+    "lemma": "reichen",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": null,
+      "praeteritum": "reichte",
+      "partizip2": "gereicht",
+      "auxiliary": "haben"
+    },
+    "rektion": [
+      {
+        "preposition": "für",
+        "case": "Akk"
+      }
+    ],
+    "meaningTr": "yetmek, yeterli olmak; uzatmak",
+    "hintTr": "fiil",
+    "cloze": "Das Brot [reicht] nicht für alle Gäste.",
+    "clozeTr": "Ekmek bütün misafirlere yetmiyor.",
+    "examples": [
+      {
+        "de": "Jetzt reicht es mir aber!",
+        "tr": "Artık yeter ama!",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "Es reicht! = Yeter! Ayrıca: jdm. etwas reichen = birine bir şeyi uzatmak.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 15",
+    "tags": [
+      "kapitel-1",
+      "film"
+    ],
+    "createdAt": "2026-11-15"
+  },
+  {
+    "id": "westlich-c87d",
+    "type": "adjective",
+    "lemma": "westlich",
+    "adjective": {
+      "comparative": null,
+      "superlative": null
+    },
+    "rektion": [],
+    "meaningTr": "batı(daki), batılı",
+    "hintTr": "sıfat",
+    "cloze": "Die Stadt liegt etwa 50 Kilometer [westlich] von München.",
+    "clozeTr": "Şehir Münih’in yaklaşık 50 kilometre batısında.",
+    "examples": [
+      {
+        "de": "Er wollte die westliche Welt kennenlernen.",
+        "tr": "Batı dünyasını tanımak istiyordu.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "Diğer yönler: östlich, nördlich, südlich. westlich von + Dat.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 15",
+    "tags": [
+      "kapitel-1",
+      "film"
+    ],
+    "createdAt": "2026-11-15"
+  },
+  {
+    "id": "mauer-8c65",
+    "type": "noun",
+    "lemma": "Mauer",
+    "noun": {
+      "gender": "die",
+      "plural": "-n"
+    },
+    "rektion": [],
+    "meaningTr": "(taş) duvar, sur",
+    "hintTr": "isim",
+    "cloze": "Um den alten Garten steht [eine] hohe [Mauer].",
+    "clozeTr": "Eski bahçenin etrafında yüksek bir duvar var.",
+    "examples": [
+      {
+        "de": "Die Berliner Mauer stand von 1961 bis 1989.",
+        "tr": "Berlin Duvarı 1961’den 1989’a kadar ayaktaydı.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "die Mauer = dış/kalın duvar; die Wand = oda duvarı. der Mauerfall = Berlin Duvarı’nın yıkılışı.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 15",
+    "tags": [
+      "kapitel-1",
+      "film"
+    ],
+    "createdAt": "2026-11-15"
+  },
+  {
+    "id": "unbegrenzt-6e86",
+    "type": "adjective",
+    "lemma": "unbegrenzt",
+    "adjective": {
+      "comparative": null,
+      "superlative": null
+    },
+    "rektion": [],
+    "meaningTr": "sınırsız",
+    "hintTr": "sıfat",
+    "cloze": "Mit diesem Tarif kannst du [unbegrenzt] telefonieren.",
+    "clozeTr": "Bu tarifeyle sınırsız konuşabilirsin.",
+    "examples": [
+      {
+        "de": "Die Karte ist unbegrenzt gültig.",
+        "tr": "Kart süresiz geçerli.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "die Grenze = sınır; begrenzt = sınırlı.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 15",
+    "tags": [
+      "kapitel-1",
+      "film"
+    ],
+    "createdAt": "2026-11-15"
+  },
+  {
+    "id": "das-land-der-unbegrenzten-moeglichkeiten-9d02",
+    "type": "expression",
+    "lemma": "das Land der unbegrenzten Möglichkeiten",
+    "rektion": [],
+    "meaningTr": "sınırsız fırsatlar ülkesi (ABD)",
+    "hintTr": "kalıp (ABD için)",
+    "cloze": "Viele träumten davon, ins [Land] [der] [unbegrenzten] [Möglichkeiten] auszuwandern.",
+    "clozeTr": "Birçoğu sınırsız fırsatlar ülkesine göç etmeyi hayal ediyordu.",
+    "examples": [
+      {
+        "de": "Die USA werden oft das Land der unbegrenzten Möglichkeiten genannt.",
+        "tr": "ABD’ye sık sık sınırsız fırsatlar ülkesi denir.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 15",
+    "tags": [
+      "kapitel-1",
+      "film"
+    ],
+    "createdAt": "2026-11-15"
+  },
+  {
+    "id": "abstempeln-74c1",
+    "type": "verb",
+    "lemma": "abstempeln",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": "ab",
+      "praeteritum": "stempelte ab",
+      "partizip2": "abgestempelt",
+      "auxiliary": "haben"
+    },
+    "rektion": [],
+    "meaningTr": "damgalamak, mühürlemek; (mecaz) yaftalamak",
+    "hintTr": "fiil, ayrılabilir",
+    "cloze": "Der Beamte [stempelte] das Formular [ab].",
+    "clozeTr": "Memur formu mühürledi.",
+    "examples": [
+      {
+        "de": "Man sollte Menschen nicht so schnell als Versager abstempeln.",
+        "tr": "İnsanları bu kadar çabuk başarısız diye damgalamamalı.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "der Stempel = damga, mühür. Mecaz: jdn. als etwas abstempeln.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 15",
+    "tags": [
+      "kapitel-1",
+      "film"
+    ],
+    "createdAt": "2026-11-15"
+  },
+  {
+    "id": "fliehen-4255",
+    "type": "verb",
+    "lemma": "fliehen",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": null,
+      "praeteritum": "floh",
+      "partizip2": "geflohen",
+      "auxiliary": "sein"
+    },
+    "rektion": [
+      {
+        "preposition": "vor",
+        "case": "Dat"
+      }
+    ],
+    "meaningTr": "kaçmak (tehlikeden)",
+    "hintTr": "fiil (düzensiz)",
+    "cloze": "Viele Menschen [fliehen] [vor] dem Krieg.",
+    "clozeTr": "Birçok insan savaştan kaçıyor.",
+    "examples": [
+      {
+        "de": "Seine Großeltern sind 1961 in den Westen geflohen.",
+        "tr": "Büyükanne ve büyükbabası 1961’de Batı’ya kaçtı.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": "Düzensiz ve sein ile: flieht – floh – ist geflohen. İsim: die Flucht; der Flüchtling (mülteci).",
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 15",
+    "tags": [
+      "kapitel-1",
+      "film"
+    ],
+    "createdAt": "2026-11-15"
+  },
+  {
+    "id": "jubeln-c8de",
+    "type": "verb",
+    "lemma": "jubeln",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": null,
+      "praeteritum": "jubelte",
+      "partizip2": "gejubelt",
+      "auxiliary": "haben"
+    },
+    "rektion": [],
+    "meaningTr": "sevinç çığlıkları atmak, coşmak",
+    "hintTr": "fiil",
+    "cloze": "Nach dem Tor [jubelten] die Fans im Stadion.",
+    "clozeTr": "Golden sonra stadyumdaki taraftarlar coştu.",
+    "examples": [
+      {
+        "de": "Endlich ist es so weit: Ganz Berlin jubelt.",
+        "tr": "Nihayet o an geldi: Bütün Berlin coşuyor.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "der Jubel = coşku, sevinç gösterisi.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 15",
+    "tags": [
+      "kapitel-1",
+      "film"
+    ],
+    "createdAt": "2026-11-15"
+  },
+  {
+    "id": "allerdings-29ce",
+    "type": "other",
+    "lemma": "allerdings",
+    "rektion": [],
+    "meaningTr": "ancak, gerçi, ama",
+    "hintTr": "zarf (kısıtlama)",
+    "cloze": "Das Hotel ist schön, [allerdings] ziemlich teuer.",
+    "clozeTr": "Otel güzel ama oldukça pahalı.",
+    "examples": [
+      {
+        "de": "Die Wohnung gefällt mir, sie ist allerdings etwas klein.",
+        "tr": "Daire hoşuma gidiyor, gerçi biraz küçük.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": "Bağlaç değil, zarf: cümle başında fiil hemen arkasından gelir. Allerdings ist sie klein.",
+    "note": "Cevap olarak: „Allerdings!“ = Kesinlikle! / Hem de nasıl!",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 15",
+    "tags": [
+      "kapitel-1",
+      "film"
+    ],
+    "createdAt": "2026-11-15"
+  },
+  {
+    "id": "vor-allem-b7bd",
+    "type": "other",
+    "lemma": "vor allem",
+    "rektion": [],
+    "meaningTr": "özellikle, her şeyden önce",
+    "hintTr": "zarf (iki kelime)",
+    "cloze": "Ich mag Obst, [vor] [allem] Erdbeeren.",
+    "clozeTr": "Meyve severim, özellikle çilek.",
+    "examples": [
+      {
+        "de": "Er will vor allem seinen Vater finden.",
+        "tr": "Her şeyden önce babasını bulmak istiyor.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "Aynı anlam: besonders.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 15",
+    "tags": [
+      "kapitel-1",
+      "film"
+    ],
+    "createdAt": "2026-11-15"
+  },
+  {
+    "id": "postamt-9969",
+    "type": "noun",
+    "lemma": "Postamt",
+    "noun": {
+      "gender": "das",
+      "plural": "¨-er"
+    },
+    "rektion": [],
+    "meaningTr": "postane",
+    "hintTr": "isim (birleşik)",
+    "cloze": "Das Paket kannst du morgen [im] [Postamt] abholen.",
+    "clozeTr": "Paketi yarın postaneden alabilirsin.",
+    "examples": [
+      {
+        "de": "Die Karte wurde in einem Postamt in San Francisco abgeschickt.",
+        "tr": "Kart San Francisco’da bir postaneden gönderildi.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "Günlük dilde çoğunlukla: die Post (Ich gehe zur Post).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 15",
+    "tags": [
+      "kapitel-1",
+      "film"
+    ],
+    "createdAt": "2026-11-15"
+  },
+  {
+    "id": "moeglichkeit-b612",
+    "type": "noun",
+    "lemma": "Möglichkeit",
+    "noun": {
+      "gender": "die",
+      "plural": "-en"
+    },
+    "rektion": [],
+    "meaningTr": "imkân, olanak, ihtimal",
+    "hintTr": "isim",
+    "cloze": "Gibt es [eine] [Möglichkeit], den Termin zu verschieben?",
+    "clozeTr": "Randevuyu ertelemenin bir yolu var mı?",
+    "examples": [
+      {
+        "de": "Wir haben zwei Möglichkeiten: Bus oder Zug.",
+        "tr": "İki seçeneğimiz var: otobüs ya da tren.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "Sıfat: möglich. die Gelegenheit = fırsat (uygun an).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 15",
+    "tags": [
+      "kapitel-1",
+      "film"
+    ],
+    "createdAt": "2026-11-15"
+  },
+  {
+    "id": "ostdeutsche-07cb",
+    "type": "noun",
+    "lemma": "Ostdeutsche",
+    "noun": {
+      "gender": "der",
+      "plural": "-n"
+    },
+    "rektion": [],
+    "meaningTr": "Doğu Almanyalı (erkek)",
+    "hintTr": "isim (sıfattan)",
+    "cloze": "Mein Großvater ist [ein] [Ostdeutscher] aus Leipzig.",
+    "clozeTr": "Dedem Leipzig’li bir Doğu Almanyalı.",
+    "examples": [
+      {
+        "de": "Der junge Ostdeutsche Veit will unbedingt nach San Francisco.",
+        "tr": "Genç Doğu Almanyalı Veit mutlaka San Francisco’ya gitmek istiyor.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": "Sıfat gibi çekilir: der Ostdeutsche, ein Ostdeutscher, die Ostdeutsche (kadın). Aynı yapı: der Deutsche.",
+    "note": "die DDR (1949–1990) = Doğu Almanya.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 15",
+    "tags": [
+      "kapitel-1",
+      "film"
+    ],
+    "createdAt": "2026-11-15"
+  },
+  {
+    "id": "nicht-weit-kommen-0b9b",
+    "type": "expression",
+    "lemma": "nicht weit kommen",
+    "rektion": [
+      {
+        "preposition": "mit",
+        "case": "Dat"
+      }
+    ],
+    "meaningTr": "(bir şeyle) pek ilerleyememek, bir yere varamamak",
+    "hintTr": "kalıp",
+    "cloze": "Mit Englisch allein [kommt] man in diesem Dorf [nicht] [weit].",
+    "clozeTr": "Bu köyde sadece İngilizceyle pek bir yere varamazsın.",
+    "examples": [
+      {
+        "de": "Mit dem Wort „Friendship“ kommen die beiden Freunde nicht sehr weit.",
+        "tr": "İki arkadaş „Friendship“ kelimesiyle pek ilerleyemiyor.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 15",
+    "tags": [
+      "kapitel-1",
+      "film"
+    ],
+    "createdAt": "2026-11-15"
+  },
+  {
+    "id": "kritik-dc89",
+    "type": "noun",
+    "lemma": "Kritik",
+    "noun": {
+      "gender": "die",
+      "plural": "-en"
+    },
+    "rektion": [],
+    "meaningTr": "eleştiri; (film/kitap) eleştirisi",
+    "hintTr": "isim",
+    "cloze": "Der neue Film hat sehr gute [Kritiken] bekommen.",
+    "clozeTr": "Yeni film çok iyi eleştiriler aldı.",
+    "examples": [
+      {
+        "de": "Lesen Sie die Filmkritik und markieren Sie.",
+        "tr": "Film eleştirisini okuyun ve işaretleyin.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "Fiil: kritisieren; der Kritiker = eleştirmen. Kritik üben an + Dat = eleştirmek (resmî).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 15",
+    "tags": [
+      "kapitel-1",
+      "film"
+    ],
+    "createdAt": "2026-11-15"
+  },
+  {
+    "id": "hervorragend-de27",
+    "type": "adjective",
+    "lemma": "hervorragend",
+    "adjective": {
+      "comparative": null,
+      "superlative": null
+    },
+    "rektion": [],
+    "meaningTr": "mükemmel, üstün",
+    "hintTr": "sıfat",
+    "cloze": "Das Essen in diesem Restaurant ist [hervorragend].",
+    "clozeTr": "Bu restoranın yemekleri mükemmel.",
+    "examples": [
+      {
+        "de": "Es ist ein hervorragender Film mit viel Humor.",
+        "tr": "Bol mizahlı mükemmel bir film.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "Okul notlarında „sehr gut“ anlamında da: hervorragende Leistungen.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 15",
+    "tags": [
+      "kapitel-1",
+      "film"
+    ],
+    "createdAt": "2026-11-15"
+  },
+  {
+    "id": "humor-51b1",
+    "type": "noun",
+    "lemma": "Humor",
+    "noun": {
+      "gender": "der",
+      "plural": null
+    },
+    "rektion": [],
+    "meaningTr": "mizah, espri anlayışı",
+    "hintTr": "isim",
+    "cloze": "Mein Vater hat [einen] sehr trockenen [Humor].",
+    "clozeTr": "Babamın çok kuru bir espri anlayışı var.",
+    "examples": [
+      {
+        "de": "Es ist ein hervorragender Film mit viel Humor.",
+        "tr": "Bol mizahlı mükemmel bir film.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "Humor haben = espri anlayışı olmak. Sıfat: humorvoll.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 15",
+    "tags": [
+      "kapitel-1",
+      "film"
+    ],
+    "createdAt": "2026-11-15"
+  },
+  {
+    "id": "sehenswert-edea",
+    "type": "adjective",
+    "lemma": "sehenswert",
+    "adjective": {
+      "comparative": null,
+      "superlative": null
+    },
+    "rektion": [],
+    "meaningTr": "görülmeye değer",
+    "hintTr": "sıfat",
+    "cloze": "Die Altstadt von Bamberg ist wirklich [sehenswert].",
+    "clozeTr": "Bamberg’in eski şehri gerçekten görülmeye değer.",
+    "examples": [
+      {
+        "de": "Es ist eine sehenswerte Komödie mit kleinen Mängeln.",
+        "tr": "Küçük kusurları olan, görülmeye değer bir komedi.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "die Sehenswürdigkeit = görülecek yer. Aynı yapı: empfehlenswert, lesenswert.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 15",
+    "tags": [
+      "kapitel-1",
+      "film"
+    ],
+    "createdAt": "2026-11-15"
+  },
+  {
+    "id": "komoedie-03ba",
+    "type": "noun",
+    "lemma": "Komödie",
+    "noun": {
+      "gender": "die",
+      "plural": "-n"
+    },
+    "rektion": [],
+    "meaningTr": "komedi",
+    "hintTr": "isim",
+    "cloze": "Heute Abend sehen wir uns [eine] romantische [Komödie] an.",
+    "clozeTr": "Bu akşam romantik bir komedi izliyoruz.",
+    "examples": [
+      {
+        "de": "Es ist eine sehenswerte Komödie mit kleinen Mängeln.",
+        "tr": "Küçük kusurları olan, görülmeye değer bir komedi.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "Karşıtı: die Tragödie. Diğer türler: der Krimi, der Thriller, das Drama.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 15",
+    "tags": [
+      "kapitel-1",
+      "film"
+    ],
+    "createdAt": "2026-11-15"
+  },
+  {
+    "id": "mangel-98a0",
+    "type": "noun",
+    "lemma": "Mangel",
+    "noun": {
+      "gender": "der",
+      "plural": "¨"
+    },
+    "rektion": [
+      {
+        "preposition": "an",
+        "case": "Dat"
+      }
+    ],
+    "meaningTr": "kusur, eksiklik; eksiklik (bir şeyin yokluğu)",
+    "hintTr": "isim",
+    "cloze": "Das Auto hatte [einen] schweren technischen [Mangel].",
+    "clozeTr": "Arabanın ciddi bir teknik kusuru vardı.",
+    "examples": [
+      {
+        "de": "Es ist eine sehenswerte Komödie mit kleinen Mängeln.",
+        "tr": "Küçük kusurları olan, görülmeye değer bir komedi.",
+        "fromBook": true
+      },
+      {
+        "de": "In vielen Krankenhäusern herrscht Mangel an Personal.",
+        "tr": "Birçok hastanede personel eksikliği var.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "Mangel an + Dat = … eksikliği. Sıfat: mangelhaft (kusurlu; okulda „5“ notu).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 15",
+    "tags": [
+      "kapitel-1",
+      "film"
+    ],
+    "createdAt": "2026-11-15"
+  },
+  {
+    "id": "mittelmaessig-c7e1",
+    "type": "adjective",
+    "lemma": "mittelmäßig",
+    "adjective": {
+      "comparative": null,
+      "superlative": null
+    },
+    "rektion": [],
+    "meaningTr": "vasat, orta karar",
+    "hintTr": "sıfat",
+    "cloze": "Das Hotel war nur [mittelmäßig], aber die Lage war super.",
+    "clozeTr": "Otel sadece vasattı ama konumu harikaydı.",
+    "examples": [
+      {
+        "de": "Es ist ein eher mittelmäßiger, aber lustiger Film.",
+        "tr": "Daha çok vasat ama eğlenceli bir film.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 15",
+    "tags": [
+      "kapitel-1",
+      "film"
+    ],
+    "createdAt": "2026-11-15"
+  },
+  {
+    "id": "regisseur-209f",
+    "type": "noun",
+    "lemma": "Regisseur",
+    "noun": {
+      "gender": "der",
+      "plural": "-e"
+    },
+    "rektion": [],
+    "meaningTr": "yönetmen",
+    "hintTr": "isim (Fransızca kökenli)",
+    "cloze": "[Der] [Regisseur] hat für den Film einen Preis gewonnen.",
+    "clozeTr": "Yönetmen film için bir ödül kazandı.",
+    "examples": [
+      {
+        "de": "Die Story, die der Regisseur Markus Goller verfilmt hat, lebt von ihrer Situationskomik.",
+        "tr": "Yönetmen Markus Goller’in filme aldığı hikâye durum komedisiyle canlı kalıyor.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "Telaffuz: [re-ji-SÖÖR]. Kadın: die Regisseurin. Regie führen = yönetmenlik yapmak.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 15",
+    "tags": [
+      "kapitel-1",
+      "film"
+    ],
+    "createdAt": "2026-11-15"
+  },
+  {
+    "id": "verfilmen-6914",
+    "type": "verb",
+    "lemma": "verfilmen",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": null,
+      "praeteritum": "verfilmte",
+      "partizip2": "verfilmt",
+      "auxiliary": "haben"
+    },
+    "rektion": [],
+    "meaningTr": "filme almak, filmini çekmek",
+    "hintTr": "fiil (ayrılmaz)",
+    "cloze": "Der Roman wurde schon zweimal [verfilmt].",
+    "clozeTr": "Roman şimdiden iki kez filme alındı.",
+    "examples": [
+      {
+        "de": "Die Story, die der Regisseur Markus Goller verfilmt hat, …",
+        "tr": "Yönetmen Markus Goller’in filme aldığı hikâye …",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "die Verfilmung = (kitabın) film uyarlaması.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 15",
+    "tags": [
+      "kapitel-1",
+      "film"
+    ],
+    "createdAt": "2026-11-15"
+  },
+  {
+    "id": "besetzen-57a0",
+    "type": "verb",
+    "lemma": "besetzen",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": null,
+      "praeteritum": "besetzte",
+      "partizip2": "besetzt",
+      "auxiliary": "haben"
+    },
+    "rektion": [],
+    "meaningTr": "(rol) dağıtmak; (yer) tutmak, işgal etmek",
+    "hintTr": "fiil (ayrılmaz)",
+    "cloze": "Die Hauptrolle wurde mit einer jungen Schauspielerin [besetzt].",
+    "clozeTr": "Başrol genç bir oyuncuya verildi.",
+    "examples": [
+      {
+        "de": "Der Film ist mit Matthias Schweighöfer und Friedrich Mücke ideal besetzt.",
+        "tr": "Film Matthias Schweighöfer ve Friedrich Mücke ile ideal bir oyuncu kadrosuna sahip.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "Günlük: Ist der Platz besetzt? (Bu yer dolu mu?) Die Leitung ist besetzt (hat meşgul). die Besetzung = oyuncu kadrosu.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 15",
+    "tags": [
+      "kapitel-1",
+      "film"
+    ],
+    "createdAt": "2026-11-15"
+  },
+  {
+    "id": "situationskomik-bdb1",
+    "type": "noun",
+    "lemma": "Situationskomik",
+    "noun": {
+      "gender": "die",
+      "plural": null
+    },
+    "rektion": [],
+    "meaningTr": "durum komedisi",
+    "hintTr": "isim (birleşik)",
+    "cloze": "Der Film lebt vor allem von [der] [Situationskomik].",
+    "clozeTr": "Film özellikle durum komedisiyle ayakta duruyor.",
+    "examples": [
+      {
+        "de": "Die Story lebt von ihrer Situationskomik.",
+        "tr": "Hikâye durum komedisiyle canlı kalıyor.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "die Komik = komiklik; der Komiker = komedyen. von etw. leben = bir şey sayesinde ayakta durmak.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 15",
+    "tags": [
+      "kapitel-1",
+      "film"
+    ],
+    "createdAt": "2026-11-15"
+  },
+  {
+    "id": "wirken-765c",
+    "type": "verb",
+    "lemma": "wirken",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": null,
+      "praeteritum": "wirkte",
+      "partizip2": "gewirkt",
+      "auxiliary": "haben"
+    },
+    "rektion": [],
+    "meaningTr": "(… gibi) görünmek, izlenim vermek; etki etmek",
+    "hintTr": "fiil",
+    "cloze": "Du [wirkst] heute sehr müde. Ist alles in Ordnung?",
+    "clozeTr": "Bugün çok yorgun görünüyorsun. Her şey yolunda mı?",
+    "examples": [
+      {
+        "de": "Die Story wirkt an manchen Stellen übertrieben.",
+        "tr": "Hikâye bazı yerlerde abartılı görünüyor.",
+        "fromBook": true
+      },
+      {
+        "de": "Die Tablette wirkt nach etwa zwanzig Minuten.",
+        "tr": "Hap yaklaşık yirmi dakika sonra etki ediyor.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "die Wirkung = etki. wirken + sıfat = … izlenimi vermek (scheinen’e yakın).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 15",
+    "tags": [
+      "kapitel-1",
+      "film"
+    ],
+    "createdAt": "2026-11-15"
+  },
+  {
+    "id": "an-manchen-stellen-dde1",
+    "type": "expression",
+    "lemma": "an manchen Stellen",
+    "rektion": [],
+    "meaningTr": "bazı yerlerde (metinde, filmde)",
+    "hintTr": "kalıp (edat + isim)",
+    "cloze": "Der Text ist gut, aber [an] [manchen] [Stellen] etwas zu lang.",
+    "clozeTr": "Metin iyi ama bazı yerlerde biraz fazla uzun.",
+    "examples": [
+      {
+        "de": "Die Story wirkt an manchen Stellen übertrieben.",
+        "tr": "Hikâye bazı yerlerde abartılı görünüyor.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "an dieser Stelle = bu noktada / burada (metinde).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 15",
+    "tags": [
+      "kapitel-1",
+      "film"
+    ],
+    "createdAt": "2026-11-15"
+  },
+  {
+    "id": "uebertrieben-27be",
+    "type": "adjective",
+    "lemma": "übertrieben",
+    "adjective": {
+      "comparative": null,
+      "superlative": null
+    },
+    "rektion": [],
+    "meaningTr": "abartılı",
+    "hintTr": "sıfat",
+    "cloze": "Seine Reaktion war total [übertrieben].",
+    "clozeTr": "Tepkisi tamamen abartılıydı.",
+    "examples": [
+      {
+        "de": "Die Story wirkt an manchen Stellen übertrieben.",
+        "tr": "Hikâye bazı yerlerde abartılı görünüyor.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "Fiil: übertreiben (übertrieb, übertrieben) = abartmak. Du übertreibst! = Abartıyorsun!",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 15",
+    "tags": [
+      "kapitel-1",
+      "film"
+    ],
+    "createdAt": "2026-11-15"
+  },
+  {
+    "id": "dennoch-2e02",
+    "type": "other",
+    "lemma": "dennoch",
+    "rektion": [],
+    "meaningTr": "yine de, buna rağmen",
+    "hintTr": "zarf",
+    "cloze": "Es regnete stark, [dennoch] gingen wir spazieren.",
+    "clozeTr": "Yağmur şiddetliydi, buna rağmen yürüyüşe çıktık.",
+    "examples": [
+      {
+        "de": "Dennoch ist der Film durchaus empfehlenswert.",
+        "tr": "Yine de film kesinlikle tavsiye edilir.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": "trotzdem ile aynı: 1. pozisyonda fiil hemen arkasından gelir. Dennoch ist …",
+    "note": "trotzdem’den biraz daha resmî/yazı dili.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 15",
+    "tags": [
+      "kapitel-1",
+      "film"
+    ],
+    "createdAt": "2026-11-15"
+  },
+  {
+    "id": "empfehlenswert-cf9d",
+    "type": "adjective",
+    "lemma": "empfehlenswert",
+    "adjective": {
+      "comparative": null,
+      "superlative": null
+    },
+    "rektion": [],
+    "meaningTr": "tavsiye edilir, tavsiyeye değer",
+    "hintTr": "sıfat",
+    "cloze": "Das Restaurant am Hafen ist sehr [empfehlenswert].",
+    "clozeTr": "Limandaki restoran çok tavsiye edilir.",
+    "examples": [
+      {
+        "de": "Dennoch ist der Film durchaus empfehlenswert.",
+        "tr": "Yine de film kesinlikle tavsiye edilir.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "Aynı yapı: sehenswert, lesenswert (okunmaya değer).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 15",
+    "tags": [
+      "kapitel-1",
+      "film"
+    ],
+    "createdAt": "2026-11-15"
+  },
+  {
+    "id": "anlass-e38a",
+    "type": "noun",
+    "lemma": "Anlass",
+    "noun": {
+      "gender": "der",
+      "plural": "¨-e"
+    },
+    "rektion": [
+      {
+        "preposition": "zu",
+        "case": "Dat"
+      }
+    ],
+    "meaningTr": "vesile, sebep; özel gün",
+    "hintTr": "isim",
+    "cloze": "Zu welchem [Anlass] trägst du denn heute einen Anzug?",
+    "clozeTr": "Bugün hangi vesileyle takım elbise giydin?",
+    "examples": [
+      {
+        "de": "Ein unterhaltsames „Road-Movie“ mit vielen Anlässen zum Schmunzeln.",
+        "tr": "Gülümseten birçok anı olan eğlenceli bir „yol filmi“.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "aus diesem Anlass = bu vesileyle; ein besonderer Anlass = özel bir gün.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 15",
+    "tags": [
+      "kapitel-1",
+      "film"
+    ],
+    "createdAt": "2026-11-15"
+  },
+  {
+    "id": "schmunzeln-ca97",
+    "type": "verb",
+    "lemma": "schmunzeln",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": null,
+      "praeteritum": "schmunzelte",
+      "partizip2": "geschmunzelt",
+      "auxiliary": "haben"
+    },
+    "rektion": [
+      {
+        "preposition": "über",
+        "case": "Akk"
+      }
+    ],
+    "meaningTr": "gülümsemek (için için, hafifçe)",
+    "hintTr": "fiil",
+    "cloze": "Bei seiner Geschichte mussten alle [schmunzeln].",
+    "clozeTr": "Onun hikâyesinde herkes gülümsemeden edemedi.",
+    "examples": [
+      {
+        "de": "Ein unterhaltsames „Road-Movie“ mit vielen Anlässen zum Schmunzeln.",
+        "tr": "Gülümseten birçok anı olan eğlenceli bir „yol filmi“.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "lächeln = gülümsemek (genel); schmunzeln = komik bir şeye hafifçe, keyifle gülümsemek.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 15",
+    "tags": [
+      "kapitel-1",
+      "film"
+    ],
+    "createdAt": "2026-11-15"
   }
 ]
