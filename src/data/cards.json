@@ -20897,5 +20897,141 @@
       "grammatik"
     ],
     "createdAt": "2026-11-15"
+  },
+  {
+    "id": "stehen-bleiben-77b4",
+    "type": "verb",
+    "lemma": "stehen bleiben",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": null,
+      "praeteritum": "blieb stehen",
+      "partizip2": "stehen geblieben",
+      "auxiliary": "sein"
+    },
+    "rektion": [],
+    "meaningTr": "durmak, durup kalmak",
+    "hintTr": "fiil (iki kelime)",
+    "cloze": "Plötzlich [blieb] der Hund [stehen] und bellte.",
+    "clozeTr": "Köpek birden durdu ve havladı.",
+    "examples": [
+      {
+        "de": "Die meisten jungen Leute blieben aus Neugierde bei dem Reporter stehen.",
+        "tr": "Gençlerin çoğu meraktan muhabirin yanında durdu.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": "İki ayrı kelime yazılır ve ayrılır: Ich bleibe stehen. / Ich bin stehen geblieben (sein!).",
+    "note": "Saat için de: Meine Uhr ist stehen geblieben (saatim durdu).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 14",
+    "tags": [
+      "kapitel-1"
+    ],
+    "createdAt": "2026-11-15"
+  },
+  {
+    "id": "subjekt-ded5",
+    "type": "noun",
+    "lemma": "Subjekt",
+    "noun": {
+      "gender": "das",
+      "plural": "-e"
+    },
+    "rektion": [],
+    "meaningTr": "özne",
+    "hintTr": "isim (dil bilgisi terimi)",
+    "cloze": "In diesem Satz ist „der Journalist“ [das] [Subjekt].",
+    "clozeTr": "Bu cümlede „der Journalist“ öznedir.",
+    "examples": [
+      {
+        "de": "Unterstreichen Sie in den Sätzen das Subjekt, die Dativ- und die Akkusativergänzungen.",
+        "tr": "Cümlelerde öznenin, Dativ ve Akkusativ tümleçlerinin altını çizin.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "Özne her zaman Nominativ’dedir. das Objekt = nesne.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 14",
+    "tags": [
+      "kapitel-1",
+      "grammatik"
+    ],
+    "createdAt": "2026-11-15"
+  },
+  {
+    "id": "unterstreichen-9edd",
+    "type": "verb",
+    "lemma": "unterstreichen",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": null,
+      "praeteritum": "unterstrich",
+      "partizip2": "unterstrichen",
+      "auxiliary": "haben"
+    },
+    "rektion": [],
+    "meaningTr": "altını çizmek; vurgulamak",
+    "hintTr": "fiil (ayrılmaz)",
+    "cloze": "Bitte [unterstreichen] Sie alle Verben im Text.",
+    "clozeTr": "Lütfen metindeki bütün fiillerin altını çizin.",
+    "examples": [
+      {
+        "de": "Unterstreichen Sie in den Sätzen das Subjekt.",
+        "tr": "Cümlelerde öznenin altını çizin.",
+        "fromBook": true
+      },
+      {
+        "de": "Der Minister unterstrich die Bedeutung der Bildung.",
+        "tr": "Bakan eğitimin önemini vurguladı.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": "Ayrılmaz: Ich unterstreiche – unterstrich – habe unterstrichen (ge- yok).",
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 14",
+    "tags": [
+      "kapitel-1"
+    ],
+    "createdAt": "2026-11-15"
+  },
+  {
+    "id": "beantworten-aa87",
+    "type": "verb",
+    "lemma": "beantworten",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": null,
+      "praeteritum": "beantwortete",
+      "partizip2": "beantwortet",
+      "auxiliary": "haben"
+    },
+    "rektion": [
+      {
+        "preposition": null,
+        "case": "Akk"
+      }
+    ],
+    "meaningTr": "(bir şeyi) cevaplamak, yanıtlamak",
+    "hintTr": "fiil (+ Akk)",
+    "cloze": "Ich muss heute noch zwanzig E-Mails [beantworten].",
+    "clozeTr": "Bugün daha yirmi e-postayı cevaplamam lazım.",
+    "examples": [
+      {
+        "de": "Leider konnte ich nicht alle Fragen beantworten.",
+        "tr": "Maalesef bütün soruları cevaplayamadım.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "Fark: etw. beantworten (Akk, edatsız) = auf etw. antworten. ✗ auf eine Frage beantworten.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 14",
+    "tags": [
+      "kapitel-1"
+    ],
+    "createdAt": "2026-11-15"
   }
 ]
