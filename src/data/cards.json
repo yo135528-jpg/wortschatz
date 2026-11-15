@@ -19162,5 +19162,787 @@
       "freundschaft"
     ],
     "createdAt": "2026-11-14"
+  },
+  {
+    "id": "zwilling-e11e",
+    "type": "noun",
+    "lemma": "Zwilling",
+    "noun": {
+      "gender": "der",
+      "plural": "-e"
+    },
+    "rektion": [],
+    "meaningTr": "ikiz",
+    "hintTr": "isim",
+    "cloze": "Mein Bruder und ich sind [Zwillinge], aber wir sehen uns gar nicht ähnlich.",
+    "clozeTr": "Kardeşimle ben ikiziz ama birbirimize hiç benzemiyoruz.",
+    "examples": [
+      {
+        "de": "Karin und Beate sind Zwillingsschwestern und gute Freundinnen.",
+        "tr": "Karin ile Beate ikiz kız kardeşler ve iyi arkadaşlar.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "die Zwillingsschwester / der Zwillingsbruder = ikiz kız / erkek kardeş. Burç: die Zwillinge (İkizler).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 12",
+    "tags": [
+      "kapitel-1",
+      "freundschaft"
+    ],
+    "createdAt": "2026-11-14"
+  },
+  {
+    "id": "einrichtung-4eb5",
+    "type": "noun",
+    "lemma": "Einrichtung",
+    "noun": {
+      "gender": "die",
+      "plural": "-en"
+    },
+    "rektion": [],
+    "meaningTr": "(ev) dekorasyonu, döşeme; kurum",
+    "hintTr": "isim",
+    "cloze": "Die Wohnung ist schön, aber [die] [Einrichtung] ist etwas altmodisch.",
+    "clozeTr": "Daire güzel ama döşemesi biraz eski moda.",
+    "examples": [
+      {
+        "de": "Sie haben in Einrichtungsfragen den gleichen Geschmack.",
+        "tr": "Ev dekorasyonu konusunda aynı zevke sahipler.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "Fiil: einrichten (döşemek). İkinci anlam: kurum (eine soziale Einrichtung = bir sosyal kurum).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 12",
+    "tags": [
+      "kapitel-1",
+      "freundschaft"
+    ],
+    "createdAt": "2026-11-14"
+  },
+  {
+    "id": "kleidung-20e4",
+    "type": "noun",
+    "lemma": "Kleidung",
+    "noun": {
+      "gender": "die",
+      "plural": null
+    },
+    "rektion": [],
+    "meaningTr": "giyim, kıyafet(ler)",
+    "hintTr": "isim (tekil, toplu)",
+    "cloze": "Für die Wanderung brauchst du warme [Kleidung].",
+    "clozeTr": "Yürüyüş için sıcak kıyafete ihtiyacın var.",
+    "examples": [
+      {
+        "de": "In Kleidungsfragen haben sie einen sehr unterschiedlichen Stil.",
+        "tr": "Giyim konusunda tarzları çok farklı.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": "Toplu isim, tekil kullanılır: Die Kleidung ist teuer. Tek parça: das Kleidungsstück, -e.",
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 12",
+    "tags": [
+      "kapitel-1",
+      "freundschaft"
+    ],
+    "createdAt": "2026-11-14"
+  },
+  {
+    "id": "stil-15de",
+    "type": "noun",
+    "lemma": "Stil",
+    "noun": {
+      "gender": "der",
+      "plural": "-e"
+    },
+    "rektion": [],
+    "meaningTr": "tarz, üslup, stil",
+    "hintTr": "isim",
+    "cloze": "Ihr Bruder hat [einen] ganz eigenen [Stil], sich zu kleiden.",
+    "clozeTr": "Erkek kardeşinin giyinmekte kendine özgü bir tarzı var.",
+    "examples": [
+      {
+        "de": "In Kleidungsfragen haben sie einen sehr unterschiedlichen Stil.",
+        "tr": "Giyim konusunda tarzları çok farklı.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "Telaffuz: [ştil] ya da [stil], ikisi de duyulur.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 12",
+    "tags": [
+      "kapitel-1",
+      "freundschaft"
+    ],
+    "createdAt": "2026-11-14"
+  },
+  {
+    "id": "geheimnis-8f94",
+    "type": "noun",
+    "lemma": "Geheimnis",
+    "noun": {
+      "gender": "das",
+      "plural": "-se"
+    },
+    "rektion": [],
+    "meaningTr": "sır",
+    "hintTr": "isim",
+    "cloze": "Kannst du [ein] [Geheimnis] für dich behalten?",
+    "clozeTr": "Bir sırrı kendine saklayabilir misin?",
+    "examples": [
+      {
+        "de": "Sie vertrauen einander ihre Wünsche und ihre größten Geheimnisse an.",
+        "tr": "Birbirlerine dileklerini ve en büyük sırlarını açarlar.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": "-nis ile biten isimlerin çoğulu -se: das Geheimnis → die Geheimnisse (das Ergebnis → die Ergebnisse).",
+    "note": "Sıfat: geheim (gizli).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 12",
+    "tags": [
+      "kapitel-1",
+      "freundschaft"
+    ],
+    "createdAt": "2026-11-14"
+  },
+  {
+    "id": "ein-eigenes-leben-fuehren-282e",
+    "type": "expression",
+    "lemma": "ein eigenes Leben führen",
+    "rektion": [],
+    "meaningTr": "kendi hayatını yaşamak",
+    "hintTr": "kalıp (isim + fiil)",
+    "cloze": "Nach dem Studium wollte sie endlich [ein] [eigenes] [Leben] [führen].",
+    "clozeTr": "Üniversiteden sonra nihayet kendi hayatını yaşamak istedi.",
+    "examples": [
+      {
+        "de": "Jede möchte ihr eigenes Leben führen.",
+        "tr": "Her biri kendi hayatını yaşamak istiyor.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "führen burada „sürmek, yaşamak“: ein glückliches Leben führen, eine Ehe führen.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 12",
+    "tags": [
+      "kapitel-1",
+      "freundschaft"
+    ],
+    "createdAt": "2026-11-14"
+  },
+  {
+    "id": "sich-unwohl-fuehlen-d4f0",
+    "type": "expression",
+    "lemma": "sich unwohl fühlen",
+    "rektion": [],
+    "meaningTr": "kendini huzursuz / rahatsız hissetmek",
+    "hintTr": "fiil, dönüşlü + sıfat",
+    "cloze": "Auf großen Partys [fühle] ich [mich] oft [unwohl].",
+    "clozeTr": "Büyük partilerde kendimi çoğu zaman rahat hissetmiyorum.",
+    "examples": [
+      {
+        "de": "Sie fühlen sich unwohl, wenn sie nicht mehrmals die Woche miteinander telefonieren.",
+        "tr": "Haftada birkaç kez telefonda konuşmazlarsa kendilerini huzursuz hissediyorlar.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "Karşıtı: sich wohlfühlen (kendini iyi / rahat hissetmek).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 12",
+    "tags": [
+      "kapitel-1",
+      "freundschaft"
+    ],
+    "createdAt": "2026-11-14"
+  },
+  {
+    "id": "mehrmals-cd5c",
+    "type": "other",
+    "lemma": "mehrmals",
+    "rektion": [],
+    "meaningTr": "birkaç kez, defalarca",
+    "hintTr": "zarf",
+    "cloze": "Ich habe dich gestern [mehrmals] angerufen, aber du bist nicht rangegangen.",
+    "clozeTr": "Dün seni birkaç kez aradım ama açmadın.",
+    "examples": [
+      {
+        "de": "Sie telefonieren mehrmals die Woche miteinander.",
+        "tr": "Haftada birkaç kez birbirleriyle telefonda konuşuyorlar.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "mehrmals die Woche / im Monat = haftada / ayda birkaç kez.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 12",
+    "tags": [
+      "kapitel-1",
+      "freundschaft"
+    ],
+    "createdAt": "2026-11-14"
+  },
+  {
+    "id": "milchprodukt-6903",
+    "type": "noun",
+    "lemma": "Milchprodukt",
+    "noun": {
+      "gender": "das",
+      "plural": "-e"
+    },
+    "rektion": [],
+    "meaningTr": "süt ürünü",
+    "hintTr": "isim (birleşik)",
+    "cloze": "Käse und Joghurt sind [Milchprodukte].",
+    "clozeTr": "Peynir ve yoğurt süt ürünleridir.",
+    "examples": [
+      {
+        "de": "Sie essen kein Fleisch und auch keine Milchprodukte.",
+        "tr": "Et yemiyorlar, süt ürünleri de yemiyorlar.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 12",
+    "tags": [
+      "kapitel-1",
+      "freundschaft"
+    ],
+    "createdAt": "2026-11-14"
+  },
+  {
+    "id": "unterhaltsam-8cec",
+    "type": "adjective",
+    "lemma": "unterhaltsam",
+    "adjective": {
+      "comparative": null,
+      "superlative": null
+    },
+    "rektion": [],
+    "meaningTr": "eğlenceli, sohbeti hoş",
+    "hintTr": "sıfat",
+    "cloze": "Der Abend mit deinen Freunden war wirklich [unterhaltsam].",
+    "clozeTr": "Arkadaşlarınla geçen akşam gerçekten eğlenceliydi.",
+    "examples": [
+      {
+        "de": "An meinem Kollegen Hannes gefällt mir nicht nur, dass er sehr unterhaltsam ist, sondern auch, dass ich mich immer auf ihn verlassen kann.",
+        "tr": "Meslektaşım Hannes’te sadece çok eğlenceli olması değil, ona her zaman güvenebilmem de hoşuma gidiyor.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "sich unterhalten = sohbet etmek; die Unterhaltung = sohbet; eğlence.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 13",
+    "tags": [
+      "kapitel-1",
+      "freundschaft"
+    ],
+    "createdAt": "2026-11-14"
+  },
+  {
+    "id": "mindestens-6dcd",
+    "type": "other",
+    "lemma": "mindestens",
+    "rektion": [],
+    "meaningTr": "en az",
+    "hintTr": "zarf",
+    "cloze": "Du solltest [mindestens] acht Stunden pro Nacht schlafen.",
+    "clozeTr": "Gecede en az sekiz saat uyumalısın.",
+    "examples": [
+      {
+        "de": "Mit unseren Nachbarn treffen wir uns mindestens zweimal im Monat.",
+        "tr": "Komşularımızla ayda en az iki kez buluşuyoruz.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "Karşıtı: höchstens (en fazla). Karıştırma: wenigstens = hiç değilse, en azından.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 13",
+    "tags": [
+      "kapitel-1",
+      "freundschaft"
+    ],
+    "createdAt": "2026-11-14"
+  },
+  {
+    "id": "unabhaengigkeit-28a7",
+    "type": "noun",
+    "lemma": "Unabhängigkeit",
+    "noun": {
+      "gender": "die",
+      "plural": null
+    },
+    "rektion": [],
+    "meaningTr": "bağımsızlık",
+    "hintTr": "isim",
+    "cloze": "Für viele junge Leute ist [die] finanzielle [Unabhängigkeit] sehr wichtig.",
+    "clozeTr": "Birçok genç için mali bağımsızlık çok önemli.",
+    "examples": [
+      {
+        "de": "Einerseits liebe ich meine Unabhängigkeit.",
+        "tr": "Bir yandan bağımsızlığımı seviyorum.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "Sıfat: unabhängig von + Dat (… -den bağımsız).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 13",
+    "tags": [
+      "kapitel-1",
+      "freundschaft"
+    ],
+    "createdAt": "2026-11-14"
+  },
+  {
+    "id": "bedeuten-d708",
+    "type": "verb",
+    "lemma": "bedeuten",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": null,
+      "praeteritum": "bedeutete",
+      "partizip2": "bedeutet",
+      "auxiliary": "haben"
+    },
+    "rektion": [],
+    "meaningTr": "anlamına gelmek; (birine) bir şey ifade etmek",
+    "hintTr": "fiil",
+    "cloze": "Was [bedeutet] dieses Schild hier?",
+    "clozeTr": "Buradaki bu tabela ne anlama geliyor?",
+    "examples": [
+      {
+        "de": "Du hast mich gefragt, was es heißt, wenn ein Mann eine Frau als „Freundin“ bezeichnet.",
+        "tr": "Bir erkeğin bir kadını „Freundin“ diye adlandırmasının ne demek olduğunu sordun.",
+        "fromBook": true
+      },
+      {
+        "de": "Deine Freundschaft bedeutet mir sehr viel.",
+        "tr": "Dostluğun benim için çok şey ifade ediyor.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": "Kişi Dativ: jdm. viel bedeuten. İsim: die Bedeutung.",
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 13",
+    "tags": [
+      "kapitel-1",
+      "freundschaft"
+    ],
+    "createdAt": "2026-11-14"
+  },
+  {
+    "id": "meinen-8802",
+    "type": "verb",
+    "lemma": "meinen",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": null,
+      "praeteritum": "meinte",
+      "partizip2": "gemeint",
+      "auxiliary": "haben"
+    },
+    "rektion": [],
+    "meaningTr": "kastetmek, demek istemek; düşünmek",
+    "hintTr": "fiil",
+    "cloze": "Entschuldigung, wen [meinen] Sie genau?",
+    "clozeTr": "Affedersiniz, tam olarak kimi kastediyorsunuz?",
+    "examples": [
+      {
+        "de": "So habe ich das nicht gemeint!",
+        "tr": "Öyle demek istemedim!",
+        "fromBook": false
+      },
+      {
+        "de": "Was meinst du dazu?",
+        "tr": "Sen bu konuda ne düşünüyorsun?",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": "Edilgen: Damit ist … gemeint (Bununla … kastediliyor). Das war nicht so gemeint! = Öyle demek istemedim!",
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 13",
+    "tags": [
+      "kapitel-1",
+      "freundschaft"
+    ],
+    "createdAt": "2026-11-14"
+  },
+  {
+    "id": "kumpel-b99c",
+    "type": "noun",
+    "lemma": "Kumpel",
+    "noun": {
+      "gender": "der",
+      "plural": "-"
+    },
+    "rektion": [],
+    "meaningTr": "kanka, arkadaş (günlük dil)",
+    "hintTr": "isim (günlük dil)",
+    "cloze": "Am Wochenende spiele ich mit [meinen] [Kumpels] Fußball.",
+    "clozeTr": "Hafta sonu kankalarımla futbol oynuyorum.",
+    "examples": [
+      {
+        "de": "Sie hat zu ihm eine Beziehung wie zu einem Kumpel oder einem guten Freund.",
+        "tr": "Onunla ilişkisi bir kanka ya da iyi bir arkadaşla olan ilişki gibi.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "Çoğulu günlük dilde çoğunlukla „Kumpels“. Asıl anlamı: maden işçisi.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 13",
+    "tags": [
+      "kapitel-1",
+      "freundschaft",
+      "umgangssprache"
+    ],
+    "createdAt": "2026-11-14"
+  },
+  {
+    "id": "partner-d598",
+    "type": "noun",
+    "lemma": "Partner",
+    "noun": {
+      "gender": "der",
+      "plural": "-"
+    },
+    "rektion": [],
+    "meaningTr": "partner, sevgili, eş; (iş) ortağı",
+    "hintTr": "isim",
+    "cloze": "Zur Hochzeit dürfen alle Gäste [ihren] [Partner] mitbringen.",
+    "clozeTr": "Düğüne bütün misafirler partnerlerini getirebilir.",
+    "examples": [
+      {
+        "de": "Wenn man sagt: „Aline ist meine Partnerin“, dann ist Aline eine gute Freundin.",
+        "tr": "„Aline benim partnerim“ dersen, Aline iyi bir kız arkadaştır.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "Kadın: die Partnerin, -nen. die Partnerschaft = ortaklık, birliktelik.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 13",
+    "tags": [
+      "kapitel-1",
+      "freundschaft"
+    ],
+    "createdAt": "2026-11-14"
+  },
+  {
+    "id": "bezeichnung-1971",
+    "type": "noun",
+    "lemma": "Bezeichnung",
+    "noun": {
+      "gender": "die",
+      "plural": "-en"
+    },
+    "rektion": [],
+    "meaningTr": "ad, adlandırma, terim",
+    "hintTr": "isim",
+    "cloze": "Für dieses Gericht gibt es in jeder Region [eine] andere [Bezeichnung].",
+    "clozeTr": "Bu yemeğin her bölgede başka bir adı var.",
+    "examples": [
+      {
+        "de": "In anderen Sprachen gibt es dafür meist eine besondere Bezeichnung.",
+        "tr": "Başka dillerde bunun için çoğunlukla özel bir ad var.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "Fiil: bezeichnen als + Akk (… olarak adlandırmak).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 13",
+    "tags": [
+      "kapitel-1",
+      "freundschaft"
+    ],
+    "createdAt": "2026-11-14"
+  },
+  {
+    "id": "verlobte-7161",
+    "type": "noun",
+    "lemma": "Verlobte",
+    "noun": {
+      "gender": "der",
+      "plural": "-n"
+    },
+    "rektion": [],
+    "meaningTr": "nişanlı (erkek); die Verlobte = nişanlı (kadın)",
+    "hintTr": "isim (sıfattan, erkek)",
+    "cloze": "Sie hat uns gestern [ihren] [Verlobten] vorgestellt.",
+    "clozeTr": "Dün bize nişanlısını tanıttı.",
+    "examples": [
+      {
+        "de": "Das Wort „mein Verlobter“ oder „meine Verlobte“ klingt sehr altmodisch.",
+        "tr": "„Nişanlım“ sözcüğü kulağa çok eski moda geliyor.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": "Sıfat gibi çekilir: der Verlobte, ein Verlobter, meinen Verlobten, mit meinem Verlobten.",
+    "note": "Fiil: sich verloben (nişanlanmak); die Verlobung = nişan.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 13",
+    "tags": [
+      "kapitel-1",
+      "freundschaft"
+    ],
+    "createdAt": "2026-11-14"
+  },
+  {
+    "id": "altmodisch-9782",
+    "type": "adjective",
+    "lemma": "altmodisch",
+    "adjective": {
+      "comparative": null,
+      "superlative": null
+    },
+    "rektion": [],
+    "meaningTr": "eski moda, demode",
+    "hintTr": "sıfat",
+    "cloze": "Diese Brille ist doch total [altmodisch]!",
+    "clozeTr": "Bu gözlük tamamen demode!",
+    "examples": [
+      {
+        "de": "Es klingt aber sehr altmodisch und wird kaum verwendet.",
+        "tr": "Ama kulağa çok eski moda geliyor ve neredeyse hiç kullanılmıyor.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "Karşıtı: modern, modisch. Benzer: veraltet (daha çok bilgi, teknik, dil için).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 13",
+    "tags": [
+      "kapitel-1",
+      "freundschaft"
+    ],
+    "createdAt": "2026-11-14"
+  },
+  {
+    "id": "kompliziert-1de6",
+    "type": "adjective",
+    "lemma": "kompliziert",
+    "adjective": {
+      "comparative": null,
+      "superlative": null
+    },
+    "rektion": [],
+    "meaningTr": "karmaşık, zor",
+    "hintTr": "sıfat",
+    "cloze": "Das Formular ist viel zu [kompliziert], ich verstehe es nicht.",
+    "clozeTr": "Form çok karmaşık, anlamıyorum.",
+    "examples": [
+      {
+        "de": "Du siehst, es ist also ganz schön kompliziert, im Deutschen den richtigen Begriff zu verwenden.",
+        "tr": "Gördüğün gibi Almancada doğru sözcüğü kullanmak epey karmaşık.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "Karşıtı: einfach. ganz schön kompliziert = epey karmaşık (günlük dil).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 13",
+    "tags": [
+      "kapitel-1",
+      "freundschaft"
+    ],
+    "createdAt": "2026-11-14"
+  },
+  {
+    "id": "begriff-9385",
+    "type": "noun",
+    "lemma": "Begriff",
+    "noun": {
+      "gender": "der",
+      "plural": "-e"
+    },
+    "rektion": [],
+    "meaningTr": "kavram, terim, sözcük",
+    "hintTr": "isim",
+    "cloze": "Kannst du mir [diesen] [Begriff] bitte erklären?",
+    "clozeTr": "Bu terimi bana açıklayabilir misin?",
+    "examples": [
+      {
+        "de": "Es ist ganz schön kompliziert, im Deutschen den richtigen Begriff zu verwenden.",
+        "tr": "Almancada doğru sözcüğü kullanmak epey karmaşık.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "im Begriff sein, etw. zu tun = tam bir şeyi yapmak üzere olmak.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 13",
+    "tags": [
+      "kapitel-1",
+      "freundschaft"
+    ],
+    "createdAt": "2026-11-14"
+  },
+  {
+    "id": "zusammenarbeiten-f370",
+    "type": "verb",
+    "lemma": "zusammenarbeiten",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": "zusammen",
+      "praeteritum": "arbeitete zusammen",
+      "partizip2": "zusammengearbeitet",
+      "auxiliary": "haben"
+    },
+    "rektion": [
+      {
+        "preposition": "mit",
+        "case": "Dat"
+      }
+    ],
+    "meaningTr": "birlikte çalışmak, iş birliği yapmak",
+    "hintTr": "fiil, ayrılabilir",
+    "cloze": "Unsere Abteilung [arbeitet] eng mit dem Marketing [zusammen].",
+    "clozeTr": "Bölümümüz pazarlamayla yakın iş birliği yapıyor.",
+    "examples": [
+      {
+        "de": "Wir arbeiten schon seit zehn Jahren erfolgreich zusammen.",
+        "tr": "On yıldır başarıyla birlikte çalışıyoruz.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "İsim: die Zusammenarbeit (iş birliği).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 13",
+    "tags": [
+      "kapitel-1",
+      "freundschaft"
+    ],
+    "createdAt": "2026-11-14"
+  },
+  {
+    "id": "beruflich-c006",
+    "type": "adjective",
+    "lemma": "beruflich",
+    "adjective": {
+      "comparative": null,
+      "superlative": null
+    },
+    "rektion": [],
+    "meaningTr": "mesleki, iş ile ilgili; iş için",
+    "hintTr": "sıfat / zarf",
+    "cloze": "Ich bin nächste Woche [beruflich] in Hamburg.",
+    "clozeTr": "Gelecek hafta iş için Hamburg’dayım.",
+    "examples": [
+      {
+        "de": "Ich kenne ihn nur beruflich, nicht privat.",
+        "tr": "Onu sadece iş ortamından tanıyorum, özel hayattan değil.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "der Beruf = meslek. Karşıtı: privat (özel).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 13",
+    "tags": [
+      "kapitel-1",
+      "freundschaft"
+    ],
+    "createdAt": "2026-11-14"
+  },
+  {
+    "id": "tatsaechlich-bbc4",
+    "type": "other",
+    "lemma": "tatsächlich",
+    "rektion": [],
+    "meaningTr": "gerçekten, aslında",
+    "hintTr": "zarf",
+    "cloze": "Ich dachte, er macht Witze, aber er hat [tatsächlich] gekündigt.",
+    "clozeTr": "Şaka yaptığını sandım ama gerçekten istifa etti.",
+    "examples": [
+      {
+        "de": "Ja, das ist tatsächlich gar nicht so einfach.",
+        "tr": "Evet, bu gerçekten hiç de kolay değil.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "Şaşkınlıkla: Tatsächlich? = Sahi mi? die Tatsache = gerçek, olgu.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 13",
+    "tags": [
+      "kapitel-1",
+      "freundschaft"
+    ],
+    "createdAt": "2026-11-14"
+  },
+  {
+    "id": "naemlich-ebcc",
+    "type": "other",
+    "lemma": "nämlich",
+    "rektion": [],
+    "meaningTr": "çünkü (aslında), zira; yani",
+    "hintTr": "zarf (gerekçe)",
+    "cloze": "Ich komme heute nicht, ich bin [nämlich] krank.",
+    "clozeTr": "Bugün gelmiyorum, çünkü hastayım.",
+    "examples": [
+      {
+        "de": "Wenn man nämlich zum Beispiel sagt, „Aline ist eine Freundin von mir“, …",
+        "tr": "Çünkü mesela „Aline benim bir arkadaşım“ dersen, …",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": "Bağlaç değil, zarf: cümle başına gelmez, fiilden sonra durur. Ich bleibe zu Hause, ich bin nämlich müde.",
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 13",
+    "tags": [
+      "kapitel-1",
+      "freundschaft"
+    ],
+    "createdAt": "2026-11-14"
+  },
+  {
+    "id": "dagegen-7936",
+    "type": "other",
+    "lemma": "dagegen",
+    "rektion": [],
+    "meaningTr": "buna karşılık; (buna) karşı",
+    "hintTr": "zarf",
+    "cloze": "Mein Bruder liebt Sport, ich [dagegen] lese lieber.",
+    "clozeTr": "Ağabeyim sporu seviyor, ben ise okumayı tercih ederim.",
+    "examples": [
+      {
+        "de": "Wenn man dagegen nur sagt: „Das ist meine Freundin“, …",
+        "tr": "Buna karşılık sadece „Bu benim kız arkadaşım“ dersen, …",
+        "fromBook": true
+      },
+      {
+        "de": "Ich habe nichts dagegen.",
+        "tr": "Buna bir itirazım yok.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "İki anlam: karşılaştırma (ise, buna karşılık) ve itiraz (etwas dagegen haben = karşı olmak).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 13",
+    "tags": [
+      "kapitel-1",
+      "freundschaft"
+    ],
+    "createdAt": "2026-11-14"
   }
 ]
