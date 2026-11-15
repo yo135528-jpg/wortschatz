@@ -1,4 +1,5 @@
 import { h } from './dom';
+import { icon } from './icons';
 import { geminiClip } from './geminiTts';
 
 // Voice choice and API key are per device (each device has other voices; the key must never be
@@ -179,7 +180,7 @@ export function speakButton(text: string): HTMLButtonElement | null {
         button.classList.remove('loading');
       },
     },
-    '🔊',
+    icon('speaker'),
   );
   return button;
 }

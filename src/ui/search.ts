@@ -32,7 +32,7 @@ export class SearchView {
       },
     });
     this.results = h('div', { class: 'search-results', 'data-testid': 'search-results' });
-    root.append(h('h2', { class: 'section-title' }, '🔎 Her şeyde ara'), this.input, this.results);
+    root.append(h('h2', { class: 'section-title' }, 'Her şeyde ara'), this.input, this.results);
   }
 
   show(query: string): void {

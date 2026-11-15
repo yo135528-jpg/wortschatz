@@ -1,6 +1,8 @@
 import type { App } from '../app';
 import { scopeOptions } from '../domain/scope';
 import { h } from './dom';
+import { icon } from './icons';
+import { currentTheme, setTheme, THEME_LABELS, type Theme } from './theme';
 import { clearGeminiCache, GEMINI_VOICES } from './geminiTts';
 import {
   currentRate,
@@ -63,7 +65,7 @@ const SAMPLE_SENTENCE = 'Auf echte Freunde kann man sich immer verlassen.';
 function speechPanel(): HTMLElement {
   const speechStatus = h('p', { class: 'status', role: 'status', 'data-testid': 'speech-status' });
   const tryVoice = async () => {
-    speechStatus.textContent = geminiKey() && selectedVoice().startsWith(GEMINI_PREFIX) ? '⏳ Gemini sesi yükleniyor…' : '';
+    speechStatus.textContent = geminiKey() && selectedVoice().startsWith(GEMINI_PREFIX) ? 'Gemini sesi yükleniyor…' : '';
     await speakGerman(SAMPLE_SENTENCE);
     const error = lastSpeechError();
     speechStatus.textContent = error ? `✗ ${error} Tarayıcı sesi kullanıldı.` : '';
@@ -84,7 +86,7 @@ function speechPanel(): HTMLElement {
     const option = (value: string, label: string) => h('option', { value, selected: value === selected }, label);
     voiceSelect.replaceChildren(
       ...(geminiKey()
-        ? [h('optgroup', { label: '✨ Yapay zekâ (Gemini)' }, ...GEMINI_VOICES.map(([name, label]) => option(`${GEMINI_PREFIX}${name}`, label)))]
+        ? [h('optgroup', { label: 'Yapay zekâ (Gemini)' }, ...GEMINI_VOICES.map(([name, label]) => option(`${GEMINI_PREFIX}${name}`, label)))]
         : []),
       ...(browser.length ? [h('optgroup', { label: 'Tarayıcı sesi' }, ...browser.map((v) => option(v.name, v.name)))] : []),
     );
@@ -133,7 +135,7 @@ function speechPanel(): HTMLElement {
     h(
       'div',
       { class: 'button-row' },
-      h('button', { type: 'button', onclick: () => void tryVoice() }, '🔊 Dene'),
+      h('button', { type: 'button', onclick: () => void tryVoice() }, icon('speaker'), 'Dene'),
       h(
         'button',
         {
@@ -152,6 +154,32 @@ function speechPanel(): HTMLElement {
       { class: 'muted small' },
       'Anahtarı aistudio.google.com/apikey adresinden alırsın. Sadece bu tarayıcıda saklanır, siteye yüklenmez. Her cümle ilk çalışta Gemini\'den gelir (1–3 sn), sonra önbellekten anında çalar. Hata olursa tarayıcı sesi kullanılır.',
     ),
+  );
+}
+
+/** Light / dark / follow the system; applied immediately, stored per device. */
+function appearancePanel(): HTMLElement {
+  const themes: Theme[] = ['auto', 'light', 'dark'];
+  const buttons = themes.map((theme) =>
+    h(
+      'button',
+      {
+        type: 'button',
+        'data-testid': `theme-${theme}`,
+        'aria-pressed': String(theme === currentTheme()),
+        onclick: () => {
+          setTheme(theme);
+          buttons.forEach((button, index) => button.setAttribute('aria-pressed', String(themes[index] === theme)));
+        },
+      },
+      THEME_LABELS[theme],
+    ),
+  );
+  return h(
+    'section',
+    { class: 'panel' },
+    h('h2', {}, 'Görünüm'),
+    h('div', { class: 'field' }, h('span', {}, 'Tema'), h('div', { class: 'segmented-buttons', role: 'group', 'aria-label': 'Tema' }, ...buttons)),
   );
 }
 
@@ -216,6 +244,7 @@ export function renderSettings(app: App, root: HTMLElement, extraPanels: HTMLEle
       ),
       h('p', { class: 'muted small' }, 'Yüksek hedef = daha sık tekrar. 0.90 çoğu kişi için iyi bir denge.'),
     ),
+    appearancePanel(),
     speechPanel(),
     ...extraPanels,
     h(

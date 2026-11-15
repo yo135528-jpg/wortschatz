@@ -1,6 +1,7 @@
 import type { App } from '../app';
 import { syncWithGist } from '../storage/sync';
 import { h } from './dom';
+import { icon } from './icons';
 
 const STORAGE_KEY = 'wortschatz.sync';
 /** Automatic syncs (on open / when leaving the app) at most this often. */
@@ -73,7 +74,7 @@ export class SyncController {
   private async run(): Promise<void> {
     const stored = read();
     if (!stored.token) return;
-    this.setStatus('⏳ Senkronize ediliyor…');
+    this.setStatus('Senkronize ediliyor…');
     try {
       const result = await syncWithGist({ token: stored.token, gistId: stored.gistId }, await this.app.exportJson());
       if (result.imported) {
@@ -141,7 +142,7 @@ export class SyncController {
       h(
         'div',
         { class: 'button-row' },
-        h('button', { type: 'button', 'data-testid': 'sync-now', onclick: () => void this.sync() }, '🔄 Şimdi senkronize et'),
+        h('button', { type: 'button', 'data-testid': 'sync-now', onclick: () => void this.sync() }, icon('sync'), 'Şimdi senkronize et'),
       ),
       status,
       last,

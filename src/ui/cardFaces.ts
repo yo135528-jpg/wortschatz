@@ -5,6 +5,7 @@ import { clozeSolved, clozeWithGaps, parseCloze } from '../domain/cloze';
 import { buildHeadword, typeLabelTr, type Headword } from '../domain/format';
 import type { Direction, Note } from '../domain/schema';
 import { h } from './dom';
+import { icon } from './icons';
 import { speakButton } from './tts';
 
 function headwordView(headword: Headword, size: 'large' | 'small'): HTMLElement {
@@ -38,7 +39,7 @@ function examplesView(note: Note): HTMLElement {
         {},
         h('span', { class: 'example-de' }, example.de),
         speakButton(example.de),
-        example.fromBook && h('span', { class: 'badge', title: 'Kitaptan' }, '📖'),
+        example.fromBook && h('span', { class: 'badge', title: 'Kitaptan' }, icon('book', { label: 'Kitaptan' })),
         example.tr && h('div', { class: 'example-tr', 'data-testid': 'example-tr' }, example.tr),
       ),
     ),
@@ -67,7 +68,7 @@ function grammarView(note: Note): HTMLElement | null {
 }
 
 function noteView(note: Note): HTMLElement | null {
-  return note.note ? h('p', { class: 'note' }, `💡 ${note.note}`) : null;
+  return note.note ? h('p', { class: 'note' }, icon('bulb'), note.note) : null;
 }
 
 /** Front side: the prompt. tr2de shows no German except the gap sentence. */
@@ -117,7 +118,7 @@ export function renderBack(note: Note, direction: Direction): HTMLElement {
 }
 
 /**
- * "📖 İlgili gramer" chips. Topic titles live in the lazily loaded grammar chunk,
+ * "İlgili gramer" chips. Topic titles live in the lazily loaded grammar chunk,
  * so the chips are filled in once it is loaded.
  */
 function grammarLinks(note: Note): HTMLElement | null {
@@ -127,7 +128,7 @@ function grammarLinks(note: Note): HTMLElement | null {
   void loadGrammar().then((topics) => {
     const byId = new Map(topics.map((topic) => [topic.id, topic]));
     chips.replaceChildren(
-      h('span', { class: 'muted small' }, '📖 İlgili gramer:'),
+      h('span', { class: 'muted small' }, 'İlgili gramer:'),
       ...ids.flatMap((id) => {
         const topic = byId.get(id);
         if (!topic) return [];

@@ -2,12 +2,13 @@ import type { App } from '../app';
 import { chapterOf } from '../domain/scope';
 import { activityCalendar, dueForecast, groupProgress, type DayCount } from '../scheduling/stats';
 import { h } from './dom';
+import { icon, type IconName } from './icons';
 
-function tile(label: string, value: string, testId: string): HTMLElement {
+function tile(label: string, value: string, testId: string, iconName?: IconName): HTMLElement {
   return h(
     'div',
     { class: 'stat' },
-    h('div', { class: 'stat-value', 'data-testid': testId }, value),
+    h('div', { class: 'stat-value' }, iconName ? icon(iconName) : null, h('span', { 'data-testid': testId }, value)),
     h('div', { class: 'stat-label' }, label),
   );
 }
@@ -72,7 +73,7 @@ function forecastChart(days: DayCount[]): HTMLElement {
     h('h2', {}, 'Önümüzdeki 7 gün'),
     h(
       'div',
-      { class: 'bars', role: 'img', 'aria-label': days.map((d, i) => `${name(d, i)} ${d.count}`).join(', ') },
+      { class: total === 0 ? 'bars is-empty' : 'bars', role: 'img', 'aria-label': days.map((d, i) => `${name(d, i)} ${d.count}`).join(', ') },
       ...days.map((d, i) => {
         const text = `${name(d, i)}: ${d.count} kart tekrar edilecek`;
         return h(
@@ -154,7 +155,7 @@ export function renderStats(app: App, root: HTMLElement): void {
       tile('Yeni kart', String(stats.newCards), 'stat-new'),
       tile('Öğrenilmiş kart', String(stats.learned), 'stat-learned'),
       tile('Hatırlama (30 gün)', retention, 'stat-retention'),
-      tile('Seri (gün)', `🔥 ${stats.streak}`, 'stat-streak'),
+      tile('Seri (gün)', String(stats.streak), 'stat-streak', 'flame'),
       tile('Toplam tekrar', String(app.reviewLogs.length), 'stat-total'),
     ),
     forecastChart(dueForecast(app.allStates, now)),
