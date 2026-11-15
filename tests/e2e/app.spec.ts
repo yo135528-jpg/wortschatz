@@ -131,3 +131,30 @@ test('theme can be forced in settings and survives a reload', async ({ page }) =
   await page.getByTestId('theme-auto').click();
   await expect(page.locator('html')).not.toHaveAttribute('data-theme', /.+/);
 });
+
+test('ordering drill: build the sentence from shuffled words', async ({ page }) => {
+  await openApp(page, { hash: '#/study/satzbau' });
+  await page.getByTestId('drill-go').click();
+  const sentences = [
+    'Die Entscheidung für das neue Projekt fiel uns nicht leicht',
+    'Wir nehmen morgen an einem Deutschkurs teil',
+    'Die Eltern sind sehr stolz auf ihre Tochter',
+    'Bis Freitag müssen wir eine Entscheidung treffen',
+  ];
+  const shown = await page.getByTestId('order-token').allTextContents();
+  const key = (words: string[]) => [...words].sort().join(' ');
+  const solution = sentences.find((sentence) => key(sentence.split(' ')) === key(shown));
+  expect(solution, `unknown sentence: ${shown.join(' ')}`).toBeTruthy();
+
+  for (const word of solution!.split(' ')) {
+    await page.getByTestId('order-token').filter({ hasText: new RegExp(`^${word}$`) }).first().click();
+  }
+  await expect(page.getByTestId('order-token')).toHaveCount(0);
+  // A placed word can be taken back and placed again.
+  await page.getByTestId('order-placed').last().click();
+  await expect(page.getByTestId('order-token')).toHaveCount(1);
+  await page.getByTestId('order-token').click();
+
+  await page.getByTestId('drill-check').click();
+  await expect(page.getByTestId('drill-feedback')).toHaveClass(/is-correct/);
+});

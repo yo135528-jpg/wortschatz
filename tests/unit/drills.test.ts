@@ -6,8 +6,10 @@ import {
   artikelQuestions,
   dictationQuestions,
   grammarQuestions,
+  orderQuestions,
   pickRound,
   rektionQuestions,
+  sentenceTokens,
   streetQuestions,
   typedAnswers,
   verbQuestions,
@@ -120,5 +122,38 @@ describe('helpers', () => {
     const items = ['a', 'b', 'c', 'd', 'e'];
     expect(pickOfDay(items, '2026-11-09')).toBe(pickOfDay(items, '2026-11-09'));
     expect(pickOfDay([], '2026-11-09')).toBeNull();
+  });
+});
+
+describe('ordering drill', () => {
+  it('splits a sentence into tokens without the final full stop', () => {
+    expect(sentenceTokens('Wir nehmen morgen an einem Deutschkurs teil.')).toEqual(['Wir', 'nehmen', 'morgen', 'an', 'einem', 'Deutschkurs', 'teil']);
+    expect(sentenceTokens('  Kommst du mit?  ')).toEqual(['Kommst', 'du', 'mit']);
+  });
+
+  it('builds a scrambled question from short translated examples', () => {
+    const questions = orderQuestions(notes, seeded());
+    expect(questions.length).toBeGreaterThan(0);
+    for (const question of questions) {
+      const field = question.fields[0]!;
+      if (field.kind !== 'order') throw new Error('expected an order field');
+      expect(field.answer.length).toBeGreaterThanOrEqual(4);
+      expect(field.answer.length).toBeLessThanOrEqual(9);
+      // Same words, different order; the Turkish translation is the prompt.
+      expect([...field.tokens].sort()).toEqual([...field.answer].sort());
+      expect(field.tokens).not.toEqual(field.answer);
+      expect(question.subtitle).toBeTruthy();
+      expect(sentenceTokens(question.solution)).toEqual(field.answer);
+    }
+  });
+
+  it('skips long sentences, fragments and examples without a translation', () => {
+    const note = (examples: { de: string; tr?: string; fromBook: boolean }[]) => ({ ...byId('teilnehmen-2109'), examples });
+    expect(orderQuestions([note([{ de: 'Wir nehmen morgen an einem Deutschkurs teil.', fromBook: false }])] as never)).toEqual([]);
+    expect(orderQuestions([note([{ de: 'Ja, klar.', tr: 'Evet, tabii.', fromBook: false }])] as never)).toEqual([]);
+    expect(orderQuestions([note([{ de: 'Er sagte: „Ich komme morgen nicht mit.“', tr: 'x', fromBook: false }])] as never)).toEqual([]);
+    expect(
+      orderQuestions([note([{ de: 'Nach langem Überlegen hat sie sich endlich für das Studium in Wien entschieden.', tr: 'x', fromBook: false }])] as never),
+    ).toEqual([]);
   });
 });

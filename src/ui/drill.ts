@@ -5,6 +5,7 @@ import {
   artikelQuestions,
   dictationQuestions,
   grammarQuestions,
+  orderQuestions,
   pickRound,
   redemittelQuestions,
   rektionQuestions,
@@ -101,6 +102,13 @@ export const DRILLS: Record<DrillKind, DrillInfo> = {
     fromNotes: true,
     build: ({ notes }) => dictationQuestions(notes),
   },
+  satzbau: {
+    icon: 'order',
+    title: 'Cümle kur',
+    description: 'Türkçesini gör, karışık kelimeleri doğru sıraya diz.',
+    fromNotes: true,
+    build: ({ notes }) => orderQuestions(notes),
+  },
   gramer: {
     icon: 'blank',
     title: 'Gramer boşlukları',
@@ -125,7 +133,7 @@ export const DRILLS: Record<DrillKind, DrillInfo> = {
 };
 
 /** Drills whose results count as one skill when a question has no own skill. */
-const TRACKED = new Set<DrillKind>(['artikel', 'verben', 'rektion']);
+const TRACKED = new Set<DrillKind>(['artikel', 'verben', 'rektion', 'satzbau']);
 
 const CHAPTER_KEY = 'wortschatz.drill-scope';
 const ALL = ALL_SCOPE;
@@ -163,6 +171,8 @@ export class DrillView {
   private retried = new Set<string>();
   private answered = false;
   private picks: (string | null)[] = [];
+  /** Per field: indices of the tokens placed so far (ordering questions). */
+  private orders: number[][] = [];
   private inputs: HTMLInputElement[] = [];
   private lastInput: HTMLInputElement | null = null;
 
@@ -267,6 +277,7 @@ export class DrillView {
     const question = this.question;
     this.answered = false;
     this.picks = question.fields.map(() => null);
+    this.orders = question.fields.map(() => []);
     this.inputs = [];
     this.lastInput = null;
     const position = Math.min(this.index + 1, this.queue.length);
@@ -330,6 +341,7 @@ export class DrillView {
       this.inputs.push(input);
       return h('label', { class: 'drill-field', 'data-field': index }, h('span', { class: 'drill-label' }, field.label), input);
     }
+    if (field.kind === 'order') return this.renderOrderField(field, index);
     const buttons = field.options.map((option) =>
       h(
         'button',
@@ -355,6 +367,37 @@ export class DrillView {
       // Long options (translations) are stacked; short ones (der/die/das, -em) sit in one row.
       h('div', { class: `choices ${field.options.some((option) => option.length > 6) ? 'choices-list' : ''}` }, ...buttons),
     );
+  }
+
+  /** Word bank below, answer line above: tap a word to place it, tap a placed word to take it back. */
+  private renderOrderField(field: Extract<Field, { kind: 'order' }>, index: number): HTMLElement {
+    const line = h('div', { class: 'order-line', 'data-testid': 'order-line', 'aria-label': 'Cümlen' });
+    const bank = h('div', { class: 'order-bank', 'data-testid': 'order-bank', 'aria-label': 'Kelimeler' });
+    const render = () => {
+      const placed = this.orders[index]!;
+      const chip = (tokenIndex: number, inLine: boolean) =>
+        h(
+          'button',
+          {
+            type: 'button',
+            class: 'order-chip',
+            'data-testid': inLine ? 'order-placed' : 'order-token',
+            lang: 'de',
+            onclick: () => {
+              if (this.answered) return;
+              this.orders[index] = inLine ? placed.filter((i) => i !== tokenIndex) : [...placed, tokenIndex];
+              render();
+            },
+          },
+          field.tokens[tokenIndex]!,
+        );
+      line.replaceChildren(
+        ...(placed.length ? placed.map((i) => chip(i, true)) : [h('span', { class: 'order-hint muted small' }, 'Kelimelere dokun')]),
+      );
+      bank.replaceChildren(...field.tokens.map((_, i) => i).filter((i) => !placed.includes(i)).map((i) => chip(i, false)));
+    };
+    render();
+    return h('div', { class: 'drill-field order-field', 'data-field': index }, h('span', { class: 'drill-label' }, field.label), line, bank);
   }
 
   private umlautRow(): HTMLElement {
@@ -388,12 +431,18 @@ export class DrillView {
     const question = this.question;
     // Nothing chosen in a choice-only question yet: wait.
     if (question.fields.every((field, i) => field.kind === 'choice' && this.picks[i] === null)) return;
+    // Same for an ordering question with no word placed.
+    if (question.fields.every((field, i) => field.kind === 'order' && this.orders[i]!.length === 0)) return;
     let textIndex = 0;
     const verdicts: Verdict[] = question.fields.map((field, i) => {
       if (field.kind === 'text') {
         const input = this.inputs[textIndex++]!;
         input.readOnly = true;
         return checkAnswer(input.value, field.answers);
+      }
+      if (field.kind === 'order') {
+        const built = this.orders[i]!.map((tokenIndex) => field.tokens[tokenIndex]);
+        return built.join(' ') === field.answer.join(' ') ? 'correct' : 'wrong';
       }
       const pick = this.picks[i] ?? null;
       return pick !== null && (pick === field.answer || field.answer.split('/').includes(pick)) ? 'correct' : 'wrong';
@@ -429,6 +478,8 @@ export class DrillView {
           else if (value === this.picks[i]) button.classList.add('is-wrong-pick');
           button.disabled = true;
         });
+      } else if (field.kind === 'order') {
+        element?.querySelectorAll<HTMLButtonElement>('.order-chip').forEach((button) => (button.disabled = true));
       } else if (verdicts[i] !== 'correct') {
         element?.append(h('span', { class: 'drill-correct' }, `→ ${field.answers[0]}`));
       }

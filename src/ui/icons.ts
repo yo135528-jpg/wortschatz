@@ -25,6 +25,7 @@ const PATHS = {
   headphones:
     '<path d="M4 14v-2a8 8 0 0 1 16 0v2"/><path d="M4 14h3v6H5.5A1.5 1.5 0 0 1 4 18.5z"/><path d="M20 14h-3v6h1.5a1.5 1.5 0 0 0 1.5-1.5z"/>',
   blank: '<path d="M4 7h16M4 12h4M16 12h4M4 17h16"/><path d="M10 13.5h4"/>',
+  order: '<rect x="3" y="5" width="8" height="5" rx="1.5"/><rect x="13" y="5" width="8" height="5" rx="1.5"/><rect x="3" y="14" width="18" height="5" rx="1.5"/>',
   mic: '<rect x="9" y="3" width="6" height="11" rx="3"/><path d="M6 11a6 6 0 0 0 12 0M12 17v4"/>',
   trophy:
     '<path d="M8 4h8v5a4 4 0 0 1-8 0z"/><path d="M8 5.5H5v1.5a3 3 0 0 0 3 3M16 5.5h3v1.5a3 3 0 0 1-3 3"/><path d="M12 13v4M8.5 20h7M10 17h4v3h-4z"/>',
