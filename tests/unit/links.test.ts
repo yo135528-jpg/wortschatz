@@ -26,7 +26,23 @@ describe('grammar links', () => {
   });
 
   it('derives topics from verb structure', () => {
-    expect(grammarTopicsFor(verb)).toEqual(['reflexive-verben', 'trennbare-verben', 'verben-mit-praepositionen']);
+    expect(grammarTopicsFor(verb)).toEqual(['reflexive-verben', 'trennbare-verben', 'verben-mit-praepositionen', 'praefixe-trennbar']);
+  });
+
+  it('links a verb to the topic of its prefix group', () => {
+    const withForms = (lemma: string, separablePrefix: string | null, partizip2: string) =>
+      NoteSchema.parse({
+        ...verb,
+        lemma,
+        rektion: [],
+        verb: { reflexive: null, separablePrefix, praeteritum: 'x', partizip2, auxiliary: 'haben' },
+      });
+    expect(grammarTopicsFor(withForms('besuchen', null, 'besucht'))).toEqual(['praefixe-untrennbar']);
+    // "be" is part of the stem here, the participle takes ge-
+    expect(grammarTopicsFor(withForms('beten', null, 'gebetet'))).toEqual([]);
+    expect(grammarTopicsFor(withForms('unterschreiben', null, 'unterschrieben'))).toEqual(['praefixe-doppelt']);
+    expect(grammarTopicsFor(withForms('umziehen', 'um', 'umgezogen'))).toEqual(['trennbare-verben', 'praefixe-doppelt']);
+    expect(grammarTopicsFor(withForms('gehen', null, 'gegangen'))).toEqual([]);
   });
 
   it('derives topics from grammar text and connectors', () => {
