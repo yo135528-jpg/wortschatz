@@ -45,6 +45,22 @@ const CONNECTORS: Record<string, string> = {
   sodass: 'konnektoren-b2',
 };
 
+const DUAL_PREFIX = /^(durch|über|um|unter|wider|wieder)/;
+const INSEPARABLE_PREFIX = /^(be|emp|ent|er|hinter|miss|ver|zer)/;
+
+/**
+ * Which "what does this prefix add" topic fits a verb. A lemma that merely starts with the
+ * letters of an inseparable prefix (beten, erben) is told apart by its participle: real
+ * prefix verbs take no ge- (besucht), the others do (gebetet, geerbt).
+ */
+function prefixTopicFor(lemma: string, separablePrefix: string | null, partizip2: string): string | null {
+  const verb = lemma.toLowerCase();
+  if (DUAL_PREFIX.test(separablePrefix ?? verb) && (separablePrefix || !partizip2.startsWith('ge'))) return 'praefixe-doppelt';
+  if (separablePrefix) return 'praefixe-trennbar';
+  if (INSEPARABLE_PREFIX.test(verb) && !partizip2.startsWith('ge') && !partizip2.endsWith('iert')) return 'praefixe-untrennbar';
+  return null;
+}
+
 /** Grammar topic ids relevant to a note, most specific first, without duplicates. */
 export function grammarTopicsFor(note: Note): string[] {
   const topics: string[] = [];
@@ -58,6 +74,8 @@ export function grammarTopicsFor(note: Note): string[] {
     if (note.verb.separablePrefix) add('trennbare-verben');
     if (note.rektion.some((r) => r.preposition)) add('verben-mit-praepositionen');
     if (note.rektion.some((r) => !r.preposition && r.case === 'Dat')) add('verben-mit-dativ');
+    const prefixTopic = prefixTopicFor(note.lemma, note.verb.separablePrefix, note.verb.partizip2);
+    if (prefixTopic) add(prefixTopic);
   }
   if (note.type === 'adjective' && note.adjective.comparative) add('komparativ-superlativ');
 
@@ -84,6 +102,9 @@ export const LINKED_TOPIC_IDS = [
     'trennbare-verben',
     'verben-mit-praepositionen',
     'verben-mit-dativ',
+    'praefixe-trennbar',
+    'praefixe-untrennbar',
+    'praefixe-doppelt',
     'komparativ-superlativ',
     'adjektive-als-nomen',
     ...KEYWORDS.map(([, topic]) => topic),
