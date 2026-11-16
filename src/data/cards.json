@@ -7891,6 +7891,11 @@
         "de": "Seit einem Jahr hat sie eine feste Beziehung.",
         "tr": "Bir yıldır ciddi bir ilişkisi var.",
         "fromBook": false
+      },
+      {
+        "de": "Immer mehr junge Menschen unter 18 wünschen sich laut einer Umfrage eine feste Beziehung.",
+        "tr": "Bir ankete göre 18 yaşın altındaki gençler arasında ciddi bir ilişki isteyenlerin sayısı giderek artıyor.",
+        "fromBook": true
       }
     ],
     "grammarTr": null,
@@ -17399,6 +17404,11 @@
         "de": "Wir waren sogar schon mal in die gleiche Frau verliebt.",
         "tr": "Bir keresinde ikimiz aynı kadına âşık olmuştuk.",
         "fromBook": true
+      },
+      {
+        "de": "Die Sängerin ist nach eigenen Angaben frisch verliebt.",
+        "tr": "Şarkıcı kendi açıklamasına göre yeni âşık olmuş.",
+        "fromBook": true
       }
     ],
     "grammarTr": null,
@@ -19326,6 +19336,11 @@
       {
         "de": "Jede möchte ihr eigenes Leben führen.",
         "tr": "Her biri kendi hayatını yaşamak istiyor.",
+        "fromBook": true
+      },
+      {
+        "de": "Man wusste nicht, ob sie jemals wieder ein normales Leben führen könnte.",
+        "tr": "Bir daha normal bir hayat sürüp süremeyeceği bilinmiyordu.",
         "fromBook": true
       }
     ],
@@ -22344,5 +22359,2298 @@
       "film"
     ],
     "createdAt": "2026-11-15"
+  },
+  {
+    "id": "filmkritik-8257",
+    "type": "noun",
+    "lemma": "Filmkritik",
+    "noun": {
+      "gender": "die",
+      "plural": "-en"
+    },
+    "rektion": [],
+    "meaningTr": "film eleştirisi",
+    "hintTr": "isim",
+    "cloze": "[Die] [Filmkritik] in der Zeitung war ziemlich negativ.",
+    "clozeTr": "Gazetedeki film eleştirisi epey olumsuzdu.",
+    "examples": [
+      {
+        "de": "Lesen Sie die Filmkritik und markieren Sie.",
+        "tr": "Film eleştirisini okuyun ve işaretleyin.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 15",
+    "tags": [
+      "kapitel-1",
+      "film"
+    ],
+    "createdAt": "2026-11-16"
+  },
+  {
+    "id": "von-etwas-leben-ca1e",
+    "type": "expression",
+    "lemma": "von etwas leben",
+    "rektion": [
+      {
+        "preposition": "von",
+        "case": "Dat"
+      }
+    ],
+    "meaningTr": "gücünü (bir şeyden) almak, (bir şey) sayesinde ayakta durmak; (bir şeyle) geçinmek",
+    "hintTr": "fiil + edat kalıbı",
+    "cloze": "Der Film [lebt] [von] seinen großartigen Schauspielern.",
+    "clozeTr": "Film gücünü harika oyuncularından alıyor.",
+    "examples": [
+      {
+        "de": "Die Story lebt von ihrer Situationskomik, wirkt aber an manchen Stellen übertrieben.",
+        "tr": "Hikâye gücünü durum komedisinden alıyor ama yer yer abartılı duruyor.",
+        "fromBook": true
+      },
+      {
+        "de": "Von diesem Gehalt kann man in München kaum leben.",
+        "tr": "Bu maaşla Münih'te geçinmek neredeyse imkânsız.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 15",
+    "tags": [
+      "kapitel-1",
+      "film"
+    ],
+    "createdAt": "2026-11-16"
+  },
+  {
+    "id": "moderator-f035",
+    "type": "noun",
+    "lemma": "Moderator",
+    "noun": {
+      "gender": "der",
+      "plural": "-en"
+    },
+    "rektion": [],
+    "meaningTr": "sunucu, moderatör",
+    "hintTr": "isim",
+    "cloze": "[Der] [Moderator] stellte den Gästen kritische Fragen.",
+    "clozeTr": "Sunucu konuklara eleştirel sorular sordu.",
+    "examples": [
+      {
+        "de": "Dass die Moderatorin zu wenig über persönliche Erlebnisse berichtet hat.",
+        "tr": "Sunucunun kişisel yaşantılardan çok az söz etmesini.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "Kadın: die Moderatorin, -nen. Fiil: moderieren (sunmak, yönetmek).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 16",
+    "tags": [
+      "kapitel-1",
+      "freundschaft"
+    ],
+    "createdAt": "2026-11-16"
+  },
+  {
+    "id": "gespraechsteilnehmer-545e",
+    "type": "noun",
+    "lemma": "Gesprächsteilnehmer",
+    "noun": {
+      "gender": "der",
+      "plural": "-"
+    },
+    "rektion": [],
+    "meaningTr": "görüşmeye / sohbete katılan kişi",
+    "hintTr": "isim",
+    "cloze": "[Die] [Gesprächsteilnehmer] ließen einander kaum ausreden.",
+    "clozeTr": "Görüşmeye katılanlar birbirinin sözünü bitirmesine pek izin vermedi.",
+    "examples": [
+      {
+        "de": "Dass die Gesprächsteilnehmer die Fragen nicht gut verstanden haben.",
+        "tr": "Görüşmeye katılanların soruları iyi anlamamasını.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 16",
+    "tags": [
+      "kapitel-1",
+      "freundschaft"
+    ],
+    "createdAt": "2026-11-16"
+  },
+  {
+    "id": "diskussionsteilnehmer-34e4",
+    "type": "noun",
+    "lemma": "Diskussionsteilnehmer",
+    "noun": {
+      "gender": "der",
+      "plural": "-"
+    },
+    "rektion": [],
+    "meaningTr": "tartışmaya katılan kişi, tartışmacı",
+    "hintTr": "isim",
+    "cloze": "[Der] [Diskussionsteilnehmer] aus Wien widersprach dem Experten.",
+    "clozeTr": "Viyanalı tartışmacı uzmana karşı çıktı.",
+    "examples": [
+      {
+        "de": "Ich hatte zwar den Eindruck, dass die Moderatorin sich sehr bemüht hat, alle Diskussionsteilnehmer zu Wort kommen zu lassen.",
+        "tr": "Gerçi sunucunun bütün tartışmacılara söz hakkı vermek için çok çaba gösterdiği izlenimini edindim.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 16",
+    "tags": [
+      "kapitel-1",
+      "freundschaft"
+    ],
+    "createdAt": "2026-11-16"
+  },
+  {
+    "id": "aspekt-18b8",
+    "type": "noun",
+    "lemma": "Aspekt",
+    "noun": {
+      "gender": "der",
+      "plural": "-e"
+    },
+    "rektion": [],
+    "meaningTr": "yön, boyut, açı",
+    "hintTr": "isim",
+    "cloze": "[Der] finanzielle [Aspekt] spielt bei der Entscheidung eine große Rolle.",
+    "clozeTr": "İşin maddi boyutu kararda büyük rol oynuyor.",
+    "examples": [
+      {
+        "de": "Dass wichtige Aspekte des Themas nicht angesprochen wurden.",
+        "tr": "Konunun önemli yönlerine değinilmemesini.",
+        "fromBook": true
+      },
+      {
+        "de": "Unter diesem Aspekt habe ich das Problem noch nie betrachtet.",
+        "tr": "Soruna hiç bu açıdan bakmamıştım.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 16",
+    "tags": [
+      "kapitel-1",
+      "freundschaft"
+    ],
+    "createdAt": "2026-11-16"
+  },
+  {
+    "id": "ansprechen-0b87",
+    "type": "verb",
+    "lemma": "ansprechen",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": "an",
+      "praeteritum": "sprach an",
+      "partizip2": "angesprochen",
+      "auxiliary": "haben"
+    },
+    "rektion": [],
+    "meaningTr": "(bir konuyu) dile getirmek, değinmek; (birine) seslenmek",
+    "hintTr": "fiil, ayrılabilir",
+    "cloze": "Du solltest das Problem offen [ansprechen].",
+    "clozeTr": "Sorunu açıkça dile getirmelisin.",
+    "examples": [
+      {
+        "de": "Dass wichtige Aspekte des Themas nicht angesprochen wurden.",
+        "tr": "Konunun önemli yönlerine değinilmemesini.",
+        "fromBook": true
+      },
+      {
+        "de": "Auf der Straße sprach mich ein Tourist an und fragte nach dem Weg.",
+        "tr": "Sokakta bir turist bana seslenip yolu sordu.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 16",
+    "tags": [
+      "kapitel-1",
+      "freundschaft"
+    ],
+    "createdAt": "2026-11-16"
+  },
+  {
+    "id": "hochinteressant-ba42",
+    "type": "adjective",
+    "lemma": "hochinteressant",
+    "adjective": {
+      "comparative": null,
+      "superlative": null
+    },
+    "rektion": [],
+    "meaningTr": "son derece ilginç",
+    "hintTr": "sıfat",
+    "cloze": "Der Vortrag über künstliche Intelligenz war [hochinteressant].",
+    "clozeTr": "Yapay zekâ hakkındaki konuşma son derece ilginçti.",
+    "examples": [
+      {
+        "de": "Gestern hörte ich im Radio Ihre Sendung mit dem hochinteressanten Thema „Freundschaft – Was bedeutet sie uns heute eigentlich noch?“.",
+        "tr": "Dün radyoda „Dostluk – Bugün bizim için hâlâ ne ifade ediyor?“ gibi son derece ilginç bir konuyu işleyen programınızı dinledim.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "hoch- sıfatı güçlendirir: hochmodern, hochaktuell, hochmotiviert.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 16",
+    "tags": [
+      "kapitel-1",
+      "freundschaft"
+    ],
+    "createdAt": "2026-11-16"
+  },
+  {
+    "id": "oberflaechlich-13f9",
+    "type": "adjective",
+    "lemma": "oberflächlich",
+    "adjective": {
+      "comparative": null,
+      "superlative": null
+    },
+    "rektion": [],
+    "meaningTr": "yüzeysel",
+    "hintTr": "sıfat",
+    "cloze": "Wir kennen uns nur [oberflächlich], richtige Freunde sind wir nicht.",
+    "clozeTr": "Birbirimizi sadece yüzeysel tanıyoruz, gerçek arkadaş değiliz.",
+    "examples": [
+      {
+        "de": "Allerdings wurde die Diskussion meiner Meinung nach etwas oberflächlich geführt.",
+        "tr": "Ancak bence tartışma biraz yüzeysel kaldı.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "die Oberfläche = yüzey. Zıttı: gründlich (derinlemesine), tiefgründig.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 16",
+    "tags": [
+      "kapitel-1",
+      "freundschaft"
+    ],
+    "createdAt": "2026-11-16"
+  },
+  {
+    "id": "bemuehen-3d79",
+    "type": "verb",
+    "lemma": "bemühen",
+    "verb": {
+      "reflexive": "Akk",
+      "separablePrefix": null,
+      "praeteritum": "bemühte",
+      "partizip2": "bemüht",
+      "auxiliary": "haben"
+    },
+    "rektion": [
+      {
+        "preposition": "um",
+        "case": "Akk"
+      }
+    ],
+    "meaningTr": "çaba göstermek, uğraşmak",
+    "hintTr": "fiil, dönüşlü + edat",
+    "cloze": "Er [bemüht] sich sehr um eine gute Note.",
+    "clozeTr": "İyi bir not almak için çok çabalıyor.",
+    "examples": [
+      {
+        "de": "Ich hatte zwar den Eindruck, dass die Moderatorin sich sehr bemüht hat, alle Diskussionsteilnehmer zu Wort kommen zu lassen.",
+        "tr": "Gerçi sunucunun bütün tartışmacılara söz hakkı vermek için çok çaba gösterdiği izlenimini edindim.",
+        "fromBook": true
+      },
+      {
+        "de": "Ich bemühe mich seit Wochen um einen Termin beim Facharzt.",
+        "tr": "Haftalardır uzman doktordan randevu almaya uğraşıyorum.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": "Çoğu zaman zu + Infinitiv ile: Ich bemühe mich, pünktlich zu sein.",
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 16",
+    "tags": [
+      "kapitel-1",
+      "freundschaft"
+    ],
+    "createdAt": "2026-11-16"
+  },
+  {
+    "id": "zu-wort-kommen-72dd",
+    "type": "expression",
+    "lemma": "zu Wort kommen",
+    "rektion": [],
+    "meaningTr": "söz almak, konuşma fırsatı bulmak",
+    "hintTr": "isim + fiil kalıbı",
+    "cloze": "In der Diskussion bin ich leider kaum [zu] [Wort] [gekommen].",
+    "clozeTr": "Tartışmada ne yazık ki neredeyse hiç söz alamadım.",
+    "examples": [
+      {
+        "de": "Ich hatte zwar den Eindruck, dass die Moderatorin sich sehr bemüht hat, alle Diskussionsteilnehmer zu Wort kommen zu lassen.",
+        "tr": "Gerçi sunucunun bütün tartışmacılara söz hakkı vermek için çok çaba gösterdiği izlenimini edindim.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "jemanden zu Wort kommen lassen = birine söz hakkı vermek.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 16",
+    "tags": [
+      "kapitel-1",
+      "freundschaft",
+      "nomen-verb"
+    ],
+    "createdAt": "2026-11-16"
+  },
+  {
+    "id": "weit-gehen-a551",
+    "type": "expression",
+    "lemma": "weit gehen",
+    "rektion": [],
+    "meaningTr": "ileri gitmek, (bir şey için) çok şeyi göze almak",
+    "hintTr": "kalıp (mecaz)",
+    "cloze": "Für seine Karriere würde er sehr [weit] [gehen].",
+    "clozeTr": "Kariyeri için çok şeyi göze alır.",
+    "examples": [
+      {
+        "de": "Mir fehlte aber zum Beispiel die wichtige Frage, wie weit man für eine Freundschaft gehen würde.",
+        "tr": "Ama örneğin, insanın bir dostluk için nereye kadar gidebileceği gibi önemli bir sorunun eksikliğini hissettim.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "zu weit gehen = haddini aşmak, fazla ileri gitmek.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 16",
+    "tags": [
+      "kapitel-1",
+      "freundschaft"
+    ],
+    "createdAt": "2026-11-16"
+  },
+  {
+    "id": "tiefe-13e4",
+    "type": "noun",
+    "lemma": "Tiefe",
+    "noun": {
+      "gender": "die",
+      "plural": "-n"
+    },
+    "rektion": [],
+    "meaningTr": "derinlik",
+    "hintTr": "isim",
+    "cloze": "[Die] [Tiefe] des Sees beträgt über hundert Meter.",
+    "clozeTr": "Gölün derinliği yüz metreyi aşıyor.",
+    "examples": [
+      {
+        "de": "Das ist doch ganz entscheidend für die Tiefe und Qualität einer Freundschaft.",
+        "tr": "Bir dostluğun derinliği ve kalitesi açısından asıl belirleyici olan bu.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "Sıfat: tief (derin).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 16",
+    "tags": [
+      "kapitel-1",
+      "freundschaft"
+    ],
+    "createdAt": "2026-11-16"
+  },
+  {
+    "id": "qualitaet-784b",
+    "type": "noun",
+    "lemma": "Qualität",
+    "noun": {
+      "gender": "die",
+      "plural": "-en"
+    },
+    "rektion": [],
+    "meaningTr": "kalite, nitelik",
+    "hintTr": "isim",
+    "cloze": "[Die] [Qualität] dieser Produkte hat leider nachgelassen.",
+    "clozeTr": "Bu ürünlerin kalitesi maalesef düştü.",
+    "examples": [
+      {
+        "de": "Das ist doch ganz entscheidend für die Tiefe und Qualität einer Freundschaft.",
+        "tr": "Bir dostluğun derinliği ve kalitesi açısından asıl belirleyici olan bu.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "Zıt kavram: die Quantität (nicelik).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 16",
+    "tags": [
+      "kapitel-1",
+      "freundschaft"
+    ],
+    "createdAt": "2026-11-16"
+  },
+  {
+    "id": "wiederherstellen-e846",
+    "type": "verb",
+    "lemma": "wiederherstellen",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": "wiederher",
+      "praeteritum": "stellte wieder her",
+      "partizip2": "wiederhergestellt",
+      "auxiliary": "haben"
+    },
+    "rektion": [],
+    "meaningTr": "eski haline getirmek, yeniden kurmak",
+    "hintTr": "fiil, ayrılabilir",
+    "cloze": "Nach dem Stromausfall [stellten] die Techniker die Verbindung schnell [wieder] [her].",
+    "clozeTr": "Elektrik kesintisinden sonra teknisyenler bağlantıyı hızla yeniden kurdu.",
+    "examples": [
+      {
+        "de": "Mich würde interessieren, ob der Experte selber schon mal versucht hat, einen abgebrochenen oder schwierigen Kontakt zu einem ehemaligen Freund wiederherzustellen.",
+        "tr": "Uzmanın eski bir arkadaşıyla kopmuş ya da zorlaşmış bir ilişkiyi yeniden kurmayı kendisinin de hiç deneyip denemediğini merak ediyorum.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": "Ayrılınca iki parça yazılır: Er stellt den Kontakt wieder her. zu ortaya girer: wiederherzustellen.",
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 16",
+    "tags": [
+      "kapitel-1",
+      "freundschaft"
+    ],
+    "createdAt": "2026-11-16"
+  },
+  {
+    "id": "verlaufen-c6d6",
+    "type": "verb",
+    "lemma": "verlaufen",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": null,
+      "praeteritum": "verlief",
+      "partizip2": "verlaufen",
+      "auxiliary": "sein"
+    },
+    "rektion": [],
+    "meaningTr": "(olay, süreç) geçmek, seyretmek",
+    "hintTr": "fiil (süreç)",
+    "cloze": "Die Operation ist ohne Probleme [verlaufen].",
+    "clozeTr": "Ameliyat sorunsuz geçti.",
+    "examples": [
+      {
+        "de": "Ich wüsste gern, wie das Ganze verlaufen ist.",
+        "tr": "Bütün bunların nasıl sonuçlandığını bilmek isterdim.",
+        "fromBook": true
+      },
+      {
+        "de": "Das Vorstellungsgespräch verlief besser als erwartet.",
+        "tr": "İş görüşmesi beklenenden iyi geçti.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "sich verlaufen (haben) = yolunu kaybetmek: Ich habe mich im Wald verlaufen.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 16",
+    "tags": [
+      "kapitel-1",
+      "freundschaft"
+    ],
+    "createdAt": "2026-11-16"
+  },
+  {
+    "id": "ganze-0de2",
+    "type": "noun",
+    "lemma": "Ganze",
+    "noun": {
+      "gender": "das",
+      "plural": null
+    },
+    "rektion": [],
+    "meaningTr": "(olayın) tamamı, bütün mesele",
+    "hintTr": "isim (sıfattan)",
+    "cloze": "[Das] [Ganze] war nur ein Missverständnis.",
+    "clozeTr": "Bütün mesele sadece bir yanlış anlaşılmaydı.",
+    "examples": [
+      {
+        "de": "Ich wüsste gern, wie das Ganze verlaufen ist.",
+        "tr": "Bütün bunların nasıl sonuçlandığını bilmek isterdim.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": "Sıfattan türemiş isim, sıfat gibi çekilir: das Ganze, im Ganzen. im Großen und Ganzen = genel olarak.",
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 16",
+    "tags": [
+      "kapitel-1",
+      "freundschaft"
+    ],
+    "createdAt": "2026-11-16"
+  },
+  {
+    "id": "verhalten-40bb",
+    "type": "verb",
+    "lemma": "verhalten",
+    "verb": {
+      "reflexive": "Akk",
+      "separablePrefix": null,
+      "praeteritum": "verhielt",
+      "partizip2": "verhalten",
+      "auxiliary": "haben"
+    },
+    "rektion": [],
+    "meaningTr": "davranmak",
+    "hintTr": "fiil, dönüşlü",
+    "cloze": "In dieser Situation hat er sich völlig richtig [verhalten].",
+    "clozeTr": "Bu durumda tamamen doğru davrandı.",
+    "examples": [
+      {
+        "de": "Ich habe nämlich selbst schon mal so etwas erlebt und wusste nicht, wie ich mich verhalten sollte.",
+        "tr": "Çünkü ben de bir zamanlar böyle bir şey yaşadım ve nasıl davranacağımı bilemedim.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "das Verhalten = davranış. sich benehmen = (görgü açısından) davranmak.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 16",
+    "tags": [
+      "kapitel-1",
+      "freundschaft"
+    ],
+    "createdAt": "2026-11-16"
+  },
+  {
+    "id": "sodass-34e8",
+    "type": "other",
+    "lemma": "sodass",
+    "rektion": [],
+    "meaningTr": "öyle ki, bu yüzden",
+    "hintTr": "bağlaç (sonuç)",
+    "cloze": "Es regnete stark, [sodass] das Spiel abgesagt wurde.",
+    "clozeTr": "Çok yağmur yağdı, bu yüzden maç iptal edildi.",
+    "examples": [
+      {
+        "de": "Eine enge Freundin von mir hatte einen schweren Unfall, sodass man anfangs nicht wusste, ob sie jemals wieder ein normales Leben führen könnte.",
+        "tr": "Yakın bir arkadaşım ağır bir kaza geçirdi; öyle ki başta bir daha normal bir hayat sürüp süremeyeceği bilinmiyordu.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": "Yan cümle bağlacı, fiil sonda. Ayrı yazılırsa vurgu sıfatta: Es war so kalt, dass wir zu Hause blieben.",
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 16",
+    "tags": [
+      "kapitel-1",
+      "freundschaft"
+    ],
+    "createdAt": "2026-11-16"
+  },
+  {
+    "id": "jemals-ed87",
+    "type": "other",
+    "lemma": "jemals",
+    "rektion": [],
+    "meaningTr": "hiç (herhangi bir zaman)",
+    "hintTr": "zarf",
+    "cloze": "Hast du [jemals] so etwas Schönes gesehen?",
+    "clozeTr": "Hiç bu kadar güzel bir şey gördün mü?",
+    "examples": [
+      {
+        "de": "Man wusste anfangs nicht, ob sie jemals wieder ein normales Leben führen könnte.",
+        "tr": "Başta bir daha normal bir hayat sürüp süremeyeceği bilinmiyordu.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "Soru ve şart cümlelerinde kullanılır; olumsuzu niemals (asla).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 16",
+    "tags": [
+      "kapitel-1",
+      "freundschaft"
+    ],
+    "createdAt": "2026-11-16"
+  },
+  {
+    "id": "auslandspraktikum-a68c",
+    "type": "noun",
+    "lemma": "Auslandspraktikum",
+    "noun": {
+      "gender": "das",
+      "plural": "Auslandspraktika"
+    },
+    "rektion": [],
+    "meaningTr": "yurt dışı stajı",
+    "hintTr": "isim",
+    "cloze": "[Das] [Auslandspraktikum] in Spanien hat ihr beruflich sehr geholfen.",
+    "clozeTr": "İspanya'daki yurt dışı stajı ona mesleki açıdan çok yardımcı oldu.",
+    "examples": [
+      {
+        "de": "Ich stand damals kurz vor einem sechsmonatigen Auslandspraktikum und konnte sie vor der Abreise nur einmal im Krankenhaus besuchen.",
+        "tr": "O sıralar altı aylık bir yurt dışı stajına çıkmak üzereydim ve yola çıkmadan önce onu hastanede yalnızca bir kez ziyaret edebildim.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": "-um ile biten yabancı kelime, çoğulu -a: das Praktikum → die Praktika.",
+    "note": "ein Praktikum machen / absolvieren = staj yapmak.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 16",
+    "tags": [
+      "kapitel-1",
+      "freundschaft"
+    ],
+    "createdAt": "2026-11-16"
+  },
+  {
+    "id": "sechsmonatig-ada5",
+    "type": "adjective",
+    "lemma": "sechsmonatig",
+    "adjective": {
+      "comparative": null,
+      "superlative": null
+    },
+    "rektion": [],
+    "meaningTr": "altı aylık (altı ay süren)",
+    "hintTr": "sıfat",
+    "cloze": "Nach einer [sechsmonatigen] Probezeit bekam sie einen festen Vertrag.",
+    "clozeTr": "Altı aylık deneme süresinden sonra kalıcı sözleşme aldı.",
+    "examples": [
+      {
+        "de": "Ich stand damals kurz vor einem sechsmonatigen Auslandspraktikum und konnte sie vor der Abreise nur einmal im Krankenhaus besuchen.",
+        "tr": "O sıralar altı aylık bir yurt dışı stajına çıkmak üzereydim ve yola çıkmadan önce onu hastanede yalnızca bir kez ziyaret edebildim.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "-monatig = süre (dreimonatig = üç ay süren); -monatlich = sıklık (dreimonatlich = üç ayda bir).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 16",
+    "tags": [
+      "kapitel-1",
+      "freundschaft"
+    ],
+    "createdAt": "2026-11-16"
+  },
+  {
+    "id": "kurz-vor-etwas-stehen-7757",
+    "type": "expression",
+    "lemma": "kurz vor etwas stehen",
+    "rektion": [
+      {
+        "preposition": "vor",
+        "case": "Dat"
+      }
+    ],
+    "meaningTr": "(bir şeyin) eşiğinde olmak, … olmak üzere olmak",
+    "hintTr": "fiil + edat kalıbı",
+    "cloze": "Sie [steht] [kurz] [vor] dem Abschluss ihres Studiums.",
+    "clozeTr": "Üniversiteyi bitirmek üzere.",
+    "examples": [
+      {
+        "de": "Ich stand damals kurz vor einem sechsmonatigen Auslandspraktikum und konnte sie vor der Abreise nur einmal im Krankenhaus besuchen.",
+        "tr": "O sıralar altı aylık bir yurt dışı stajına çıkmak üzereydim ve yola çıkmadan önce onu hastanede yalnızca bir kez ziyaret edebildim.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 16",
+    "tags": [
+      "kapitel-1",
+      "freundschaft"
+    ],
+    "createdAt": "2026-11-16"
+  },
+  {
+    "id": "abreise-7c8e",
+    "type": "noun",
+    "lemma": "Abreise",
+    "noun": {
+      "gender": "die",
+      "plural": "-n"
+    },
+    "rektion": [],
+    "meaningTr": "yola çıkış, ayrılış",
+    "hintTr": "isim",
+    "cloze": "[Die] [Abreise] ist für Sonntagmorgen geplant.",
+    "clozeTr": "Yola çıkış pazar sabahına planlandı.",
+    "examples": [
+      {
+        "de": "Ich stand damals kurz vor einem sechsmonatigen Auslandspraktikum und konnte sie vor der Abreise nur einmal im Krankenhaus besuchen.",
+        "tr": "O sıralar altı aylık bir yurt dışı stajına çıkmak üzereydim ve yola çıkmadan önce onu hastanede yalnızca bir kez ziyaret edebildim.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "Fiil: abreisen (yola çıkmak). Zıttı: die Anreise (geliş yolculuğu).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 16",
+    "tags": [
+      "kapitel-1",
+      "freundschaft"
+    ],
+    "createdAt": "2026-11-16"
+  },
+  {
+    "id": "mehrfach-82d3",
+    "type": "other",
+    "lemma": "mehrfach",
+    "rektion": [],
+    "meaningTr": "birkaç kez, defalarca",
+    "hintTr": "zarf",
+    "cloze": "Ich habe ihn [mehrfach] angerufen, aber er geht nicht ran.",
+    "clozeTr": "Onu defalarca aradım ama açmıyor.",
+    "examples": [
+      {
+        "de": "Dabei ist mir aufgefallen, dass sie mich mehrfach fragte, ob ich mir wirklich sicher bin, dass ich dieses Praktikum machen wollte.",
+        "tr": "O sırada dikkatimi çekti: Bu stajı gerçekten yapmak istediğimden emin olup olmadığımı bana birkaç kez sordu.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "Sıfat olarak da kullanılır: der mehrfache Weltmeister (birçok kez dünya şampiyonu).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 16",
+    "tags": [
+      "kapitel-1",
+      "freundschaft"
+    ],
+    "createdAt": "2026-11-16"
+  },
+  {
+    "id": "indirekt-c8be",
+    "type": "adjective",
+    "lemma": "indirekt",
+    "adjective": {
+      "comparative": null,
+      "superlative": null
+    },
+    "rektion": [],
+    "meaningTr": "dolaylı",
+    "hintTr": "sıfat",
+    "cloze": "Er hat mich nur [indirekt] kritisiert, aber ich habe es verstanden.",
+    "clozeTr": "Beni sadece dolaylı yoldan eleştirdi ama ben anladım.",
+    "examples": [
+      {
+        "de": "Sie wollte mich wohl indirekt bitten, in ihrer Nähe zu bleiben.",
+        "tr": "Herhalde dolaylı yoldan benden yanında kalmamı istiyordu.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "Zıttı: direkt.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 16",
+    "tags": [
+      "kapitel-1",
+      "freundschaft"
+    ],
+    "createdAt": "2026-11-16"
+  },
+  {
+    "id": "naehe-9d30",
+    "type": "noun",
+    "lemma": "Nähe",
+    "noun": {
+      "gender": "die",
+      "plural": null
+    },
+    "rektion": [],
+    "meaningTr": "yakınlık; yakın çevre",
+    "hintTr": "isim",
+    "cloze": "Gibt es hier in [der] [Nähe] eine Apotheke?",
+    "clozeTr": "Buralarda yakında bir eczane var mı?",
+    "examples": [
+      {
+        "de": "Sie wollte mich wohl indirekt bitten, in ihrer Nähe zu bleiben.",
+        "tr": "Herhalde dolaylı yoldan benden yanında kalmamı istiyordu.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "in der Nähe von + Dat = … yakınında. Sıfat: nah (yakın).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 16",
+    "tags": [
+      "kapitel-1",
+      "freundschaft"
+    ],
+    "createdAt": "2026-11-16"
+  },
+  {
+    "id": "gott-sei-dank-39f4",
+    "type": "expression",
+    "lemma": "Gott sei Dank",
+    "rektion": [],
+    "meaningTr": "çok şükür, neyse ki",
+    "hintTr": "kalıp (rahatlama)",
+    "cloze": "Der Unfall sah schlimm aus, aber [Gott] [sei] [Dank] wurde niemand verletzt.",
+    "clozeTr": "Kaza kötü görünüyordu ama çok şükür kimse yaralanmadı.",
+    "examples": [
+      {
+        "de": "Gefahren bin ich aber dann doch und meine Freundin ist Gott sei Dank bald wieder gesund geworden.",
+        "tr": "Ama sonunda yine de gittim; arkadaşım da çok şükür kısa sürede iyileşti.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": "sei = sein fiilinin Konjunktiv I hali (dilek): „Tanrı'ya şükür olsun“.",
+    "note": "Eş anlamlı: zum Glück, glücklicherweise.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 16",
+    "tags": [
+      "kapitel-1",
+      "freundschaft"
+    ],
+    "createdAt": "2026-11-16"
+  },
+  {
+    "id": "anfangs-7df9",
+    "type": "other",
+    "lemma": "anfangs",
+    "rektion": [],
+    "meaningTr": "başta, ilk başlarda",
+    "hintTr": "zarf",
+    "cloze": "[Anfangs] war der Job schwer, aber jetzt macht er mir Spaß.",
+    "clozeTr": "İş başta zordu ama şimdi hoşuma gidiyor.",
+    "examples": [
+      {
+        "de": "Aber es hat lange gedauert, bis wir wieder gute Freundinnen waren, denn anfangs, als ich wieder aus dem Ausland zurück war, wollte sie nichts mehr mit mir zu tun haben.",
+        "tr": "Ama yeniden iyi arkadaş olmamız uzun sürdü, çünkü yurt dışından döndüğümde ilk başta benimle görüşmek bile istemedi.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "Eş anlamlı: am Anfang, zunächst.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 16",
+    "tags": [
+      "kapitel-1",
+      "freundschaft"
+    ],
+    "createdAt": "2026-11-16"
+  },
+  {
+    "id": "nichts-mit-jemandem-zu-tun-haben-wollen-2708",
+    "type": "expression",
+    "lemma": "nichts mit jemandem zu tun haben wollen",
+    "rektion": [
+      {
+        "preposition": "mit",
+        "case": "Dat"
+      }
+    ],
+    "meaningTr": "(biriyle) görüşmek istememek, hiçbir ilişkisi olsun istememek",
+    "hintTr": "kalıp (mit + Dat)",
+    "cloze": "Seit dem Streit will er [nichts] mehr mit seinem Bruder [zu] [tun] [haben].",
+    "clozeTr": "Kavgadan beri kardeşiyle hiçbir şekilde görüşmek istemiyor.",
+    "examples": [
+      {
+        "de": "Aber es hat lange gedauert, bis wir wieder gute Freundinnen waren, denn anfangs, als ich wieder aus dem Ausland zurück war, wollte sie nichts mehr mit mir zu tun haben.",
+        "tr": "Ama yeniden iyi arkadaş olmamız uzun sürdü, çünkü yurt dışından döndüğümde ilk başta benimle görüşmek bile istemedi.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "Aynı kalıp şeyler için de: Damit will ich nichts zu tun haben. (Bu işe hiç bulaşmak istemiyorum.)",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 16",
+    "tags": [
+      "kapitel-1",
+      "freundschaft"
+    ],
+    "createdAt": "2026-11-16"
+  },
+  {
+    "id": "erfahrungen-machen-b76a",
+    "type": "expression",
+    "lemma": "Erfahrungen machen",
+    "rektion": [
+      {
+        "preposition": "mit",
+        "case": "Dat"
+      }
+    ],
+    "meaningTr": "(bir şeyle ilgili) deneyim yaşamak, tecrübe edinmek",
+    "hintTr": "isim + fiil kalıbı",
+    "cloze": "Mit diesem Anbieter habe ich nur gute [Erfahrungen] [gemacht].",
+    "clozeTr": "Bu firmayla hep iyi deneyimlerim oldu.",
+    "examples": [
+      {
+        "de": "Deshalb würde ich gern wissen, ob andere Hörer ähnliche Erfahrungen gemacht haben.",
+        "tr": "Bu yüzden başka dinleyicilerin de benzer şeyler yaşayıp yaşamadığını bilmek isterdim.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "Erfahrungen sammeln = tecrübe kazanmak (zamanla biriktirmek).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 16",
+    "tags": [
+      "kapitel-1",
+      "freundschaft",
+      "nomen-verb"
+    ],
+    "createdAt": "2026-11-16"
+  },
+  {
+    "id": "selber-4faa",
+    "type": "other",
+    "lemma": "selber",
+    "rektion": [],
+    "meaningTr": "kendi(si), bizzat",
+    "hintTr": "zarf, konuşma dili (selbst'in günlük hali)",
+    "cloze": "Das Regal habe ich [selber] gebaut.",
+    "clozeTr": "Rafı kendim yaptım.",
+    "examples": [
+      {
+        "de": "Mich würde interessieren, ob der Experte selber schon mal versucht hat, einen abgebrochenen Kontakt wiederherzustellen.",
+        "tr": "Uzmanın kopmuş bir ilişkiyi yeniden kurmayı kendisinin de hiç deneyip denemediğini merak ediyorum.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "umgangssprachlich; yazı dilinde selbst tercih edilir.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 16",
+    "tags": [
+      "kapitel-1",
+      "freundschaft",
+      "umgangssprache"
+    ],
+    "createdAt": "2026-11-16"
+  },
+  {
+    "id": "ausmachen-6e6b",
+    "type": "verb",
+    "lemma": "ausmachen",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": "aus",
+      "praeteritum": "machte aus",
+      "partizip2": "ausgemacht",
+      "auxiliary": "haben"
+    },
+    "rektion": [],
+    "meaningTr": "(bir şeyin) özünü oluşturmak, onu o yapan şey olmak",
+    "hintTr": "fiil, ayrılabilir (özünü oluşturmak)",
+    "cloze": "Vertrauen und Ehrlichkeit [machen] eine gute Beziehung [aus].",
+    "clozeTr": "İyi bir ilişkiyi iyi yapan şey güven ve dürüstlüktür.",
+    "examples": [
+      {
+        "de": "Erläutern Sie, was für Sie persönlich eine Freundschaft ausmacht, und erklären Sie es mit einem Beispiel.",
+        "tr": "Sizin için bir dostluğu dostluk yapan şeyin ne olduğunu açıklayın ve bir örnekle anlatın.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "Başka anlamları: das Licht ausmachen (kapatmak), einen Termin ausmachen (kararlaştırmak).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 16",
+    "tags": [
+      "kapitel-1",
+      "freundschaft"
+    ],
+    "createdAt": "2026-11-16"
+  },
+  {
+    "id": "mit-grossem-interesse-2f78",
+    "type": "expression",
+    "lemma": "mit großem Interesse",
+    "rektion": [],
+    "meaningTr": "büyük bir ilgiyle",
+    "hintTr": "kalıp (mektup girişi)",
+    "cloze": "[Mit] [großem] [Interesse] habe ich Ihren Artikel über gesunde Ernährung gelesen.",
+    "clozeTr": "Sağlıklı beslenme hakkındaki yazınızı büyük bir ilgiyle okudum.",
+    "examples": [
+      {
+        "de": "Mit großem Interesse habe ich Ihren Brief gelesen.",
+        "tr": "Mektubunuzu büyük bir ilgiyle okudum.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": "mit + Dat, artikelsiz nötr isim: sıfat -em alır (mit großem Interesse).",
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 16",
+    "tags": [
+      "kapitel-1",
+      "freundschaft",
+      "schreiben"
+    ],
+    "createdAt": "2026-11-16"
+  },
+  {
+    "id": "rund-um-b186",
+    "type": "other",
+    "lemma": "rund um",
+    "rektion": [
+      {
+        "preposition": null,
+        "case": "Akk"
+      }
+    ],
+    "meaningTr": "… ile ilgili her şey, … üzerine; … çevresinde",
+    "hintTr": "edat + Akk (konu / çevre)",
+    "cloze": "Auf der Messe dreht sich alles [rund] [um] das Thema Reisen.",
+    "clozeTr": "Fuarda her şey seyahat konusu etrafında dönüyor.",
+    "examples": [
+      {
+        "de": "Rund um die Liebe",
+        "tr": "Aşka dair her şey",
+        "fromBook": true
+      },
+      {
+        "de": "Rund um den See gibt es einen schönen Wanderweg.",
+        "tr": "Gölün çevresinde güzel bir yürüyüş yolu var.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 17",
+    "tags": [
+      "kapitel-1",
+      "liebe"
+    ],
+    "createdAt": "2026-11-16"
+  },
+  {
+    "id": "schlagzeile-b892",
+    "type": "noun",
+    "lemma": "Schlagzeile",
+    "noun": {
+      "gender": "die",
+      "plural": "-n"
+    },
+    "rektion": [],
+    "meaningTr": "manşet, haber başlığı",
+    "hintTr": "isim",
+    "cloze": "[Die] [Schlagzeile] stand am nächsten Tag in allen Zeitungen.",
+    "clozeTr": "Manşet ertesi gün bütün gazetelerdeydi.",
+    "examples": [
+      {
+        "de": "Die Welt der Stars: Lesen Sie die Schlagzeilen und ergänzen Sie in der richtigen Form.",
+        "tr": "Yıldızların dünyası: Manşetleri okuyun ve doğru biçimde tamamlayın.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "Schlagzeilen machen = gündeme oturmak, manşet olmak.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 17",
+    "tags": [
+      "kapitel-1",
+      "liebe"
+    ],
+    "createdAt": "2026-11-16"
+  },
+  {
+    "id": "ergaenzen-3425",
+    "type": "verb",
+    "lemma": "ergänzen",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": null,
+      "praeteritum": "ergänzte",
+      "partizip2": "ergänzt",
+      "auxiliary": "haben"
+    },
+    "rektion": [],
+    "meaningTr": "tamamlamak, eklemek",
+    "hintTr": "fiil",
+    "cloze": "Bitte [ergänzen] Sie die fehlenden Angaben im Formular.",
+    "clozeTr": "Lütfen formdaki eksik bilgileri tamamlayın.",
+    "examples": [
+      {
+        "de": "Ergänzen Sie dann die Lücken.",
+        "tr": "Sonra boşlukları doldurun.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "die Ergänzung = tamamlama; (gramer) tümleç. sich ergänzen = birbirini tamamlamak.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 17",
+    "tags": [
+      "kapitel-1",
+      "liebe"
+    ],
+    "createdAt": "2026-11-16"
+  },
+  {
+    "id": "freundschaft-schliessen-7c50",
+    "type": "expression",
+    "lemma": "Freundschaft schließen",
+    "rektion": [
+      {
+        "preposition": "mit",
+        "case": "Dat"
+      }
+    ],
+    "meaningTr": "(biriyle) dost olmak, arkadaşlık kurmak",
+    "hintTr": "isim + fiil kalıbı",
+    "cloze": "Im Urlaub haben die Kinder schnell [Freundschaft] [geschlossen].",
+    "clozeTr": "Tatilde çocuklar hemen arkadaş oldu.",
+    "examples": [
+      {
+        "de": "Die großen Gegner und Konkurrenten im Tennis, Roger Lederer und Ramon Madal, haben anscheinend Freundschaft geschlossen.",
+        "tr": "Tenisin iki büyük rakibi Roger Lederer ve Ramon Madal anlaşılan dost olmuş.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "Süreç: Freundschaft schließen; durum: befreundet sein mit + Dat.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 17",
+    "tags": [
+      "kapitel-1",
+      "liebe",
+      "nomen-verb"
+    ],
+    "createdAt": "2026-11-16"
+  },
+  {
+    "id": "zusammenkommen-7199",
+    "type": "verb",
+    "lemma": "zusammenkommen",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": "zusammen",
+      "praeteritum": "kam zusammen",
+      "partizip2": "zusammengekommen",
+      "auxiliary": "sein"
+    },
+    "rektion": [
+      {
+        "preposition": "mit",
+        "case": "Dat"
+      }
+    ],
+    "meaningTr": "(biriyle) sevgili olmak, çıkmaya başlamak; bir araya gelmek",
+    "hintTr": "fiil, ayrılabilir",
+    "cloze": "Die beiden sind auf einer Party [zusammengekommen].",
+    "clozeTr": "İkisi bir partide sevgili oldu.",
+    "examples": [
+      {
+        "de": "Die meisten jungen Paare kommen im Alter zwischen 19 und 22 Jahren zusammen.",
+        "tr": "Genç çiftlerin çoğu 19 ile 22 yaşları arasında bir araya geliyor.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "Süreç: zusammenkommen; durum: zusammen sein mit + Dat (biriyle birlikte olmak).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 17",
+    "tags": [
+      "kapitel-1",
+      "liebe"
+    ],
+    "createdAt": "2026-11-16"
+  },
+  {
+    "id": "sich-scheiden-lassen-810b",
+    "type": "expression",
+    "lemma": "sich scheiden lassen",
+    "rektion": [
+      {
+        "preposition": "von",
+        "case": "Dat"
+      }
+    ],
+    "meaningTr": "(birinden) boşanmak",
+    "hintTr": "fiil kalıbı (lassen ile)",
+    "cloze": "Nach zwanzig Jahren Ehe [ließen] sie sich [scheiden].",
+    "clozeTr": "Yirmi yıllık evlilikten sonra boşandılar.",
+    "examples": [
+      {
+        "de": "Königin Sibylle will sich angeblich von ihrem Mann Ricardo scheiden lassen.",
+        "tr": "Kraliçe Sibylle'nin kocası Ricardo'dan boşanmak istediği söyleniyor.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": "Perfekt: Sie hat sich scheiden lassen (lassen değişmez). Durum: geschieden sein.",
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 17",
+    "tags": [
+      "kapitel-1",
+      "liebe"
+    ],
+    "createdAt": "2026-11-16"
+  },
+  {
+    "id": "getrennt-b505",
+    "type": "adjective",
+    "lemma": "getrennt",
+    "adjective": {
+      "comparative": null,
+      "superlative": null
+    },
+    "rektion": [
+      {
+        "preposition": "von",
+        "case": "Dat"
+      }
+    ],
+    "meaningTr": "ayrı, ayrılmış",
+    "hintTr": "sıfat + edat (çift)",
+    "cloze": "Die beiden leben seit einem Jahr [getrennt].",
+    "clozeTr": "İkisi bir yıldır ayrı yaşıyor.",
+    "examples": [
+      {
+        "de": "Angelika Lolie lebt seit zwei Monaten von ihrem Mann getrennt.",
+        "tr": "Angelika Lolie iki aydır kocasından ayrı yaşıyor.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "Süreç: sich trennen von + Dat; durum: getrennt sein / getrennt leben. Restoranda: Getrennt oder zusammen?",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 17",
+    "tags": [
+      "kapitel-1",
+      "liebe"
+    ],
+    "createdAt": "2026-11-16"
+  },
+  {
+    "id": "streit-eb7b",
+    "type": "noun",
+    "lemma": "Streit",
+    "noun": {
+      "gender": "der",
+      "plural": "-e"
+    },
+    "rektion": [
+      {
+        "preposition": "um",
+        "case": "Akk"
+      }
+    ],
+    "meaningTr": "kavga, tartışma, anlaşmazlık",
+    "hintTr": "isim",
+    "cloze": "[Der] [Streit] zwischen den Nachbarn dauert schon Jahre.",
+    "clozeTr": "Komşular arasındaki kavga yıllardır sürüyor.",
+    "examples": [
+      {
+        "de": "Jetzt gibt es Streit um die Kinder!",
+        "tr": "Şimdi de çocuklar yüzünden kavga var!",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "Fiil: (sich) streiten. Streit haben mit + Dat = biriyle kavgalı olmak.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 17",
+    "tags": [
+      "kapitel-1",
+      "liebe"
+    ],
+    "createdAt": "2026-11-16"
+  },
+  {
+    "id": "fussballer-16ee",
+    "type": "noun",
+    "lemma": "Fußballer",
+    "noun": {
+      "gender": "der",
+      "plural": "-"
+    },
+    "rektion": [],
+    "meaningTr": "futbolcu",
+    "hintTr": "isim",
+    "cloze": "[Der] [Fußballer] wechselt im Sommer zu einem anderen Verein.",
+    "clozeTr": "Futbolcu yazın başka bir kulübe geçiyor.",
+    "examples": [
+      {
+        "de": "Der Fußballer Leon Wessi heiratet seine langjährige Freundin.",
+        "tr": "Futbolcu Leon Wessi uzun yıllardır birlikte olduğu kız arkadaşıyla evleniyor.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "Daha resmî: der Fußballspieler. Kadın: die Fußballerin.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 17",
+    "tags": [
+      "kapitel-1",
+      "liebe"
+    ],
+    "createdAt": "2026-11-16"
+  },
+  {
+    "id": "gemeinsam-dc3c",
+    "type": "adjective",
+    "lemma": "gemeinsam",
+    "adjective": {
+      "comparative": null,
+      "superlative": null
+    },
+    "rektion": [],
+    "meaningTr": "ortak; birlikte",
+    "hintTr": "sıfat / zarf",
+    "cloze": "Lass uns das Problem [gemeinsam] lösen.",
+    "clozeTr": "Gel bu sorunu birlikte çözelim.",
+    "examples": [
+      {
+        "de": "Das Paar hat bereits ein gemeinsames Kind.",
+        "tr": "Çiftin şimdiden ortak bir çocuğu var.",
+        "fromBook": true
+      },
+      {
+        "de": "Neuerdings spielen sie gemeinsam Golf.",
+        "tr": "Son zamanlarda birlikte golf oynuyorlar.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "die Gemeinsamkeit = ortak nokta. etwas gemeinsam haben = ortak bir yanı olmak.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 17",
+    "tags": [
+      "kapitel-1",
+      "liebe"
+    ],
+    "createdAt": "2026-11-16"
+  },
+  {
+    "id": "gegner-d446",
+    "type": "noun",
+    "lemma": "Gegner",
+    "noun": {
+      "gender": "der",
+      "plural": "-"
+    },
+    "rektion": [],
+    "meaningTr": "rakip; karşıt",
+    "hintTr": "isim (karşı taraf)",
+    "cloze": "[Der] [Gegner] war in der zweiten Halbzeit deutlich stärker.",
+    "clozeTr": "Rakip ikinci yarıda belirgin biçimde daha güçlüydü.",
+    "examples": [
+      {
+        "de": "Die großen Gegner und Konkurrenten im Tennis, Roger Lederer und Ramon Madal, haben anscheinend Freundschaft geschlossen.",
+        "tr": "Tenisin iki büyük rakibi Roger Lederer ve Ramon Madal anlaşılan dost olmuş.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "Gegner = karşı taraf (maç, tartışma); Konkurrent = aynı hedef için yarışan rakip.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 17",
+    "tags": [
+      "kapitel-1",
+      "liebe"
+    ],
+    "createdAt": "2026-11-16"
+  },
+  {
+    "id": "konkurrent-7e7d",
+    "type": "noun",
+    "lemma": "Konkurrent",
+    "noun": {
+      "gender": "der",
+      "plural": "-en"
+    },
+    "rektion": [],
+    "meaningTr": "rakip (aynı hedef için yarışan)",
+    "hintTr": "isim (rekabet), n-Deklination",
+    "cloze": "[Der] größte [Konkurrent] der Firma sitzt in Japan.",
+    "clozeTr": "Şirketin en büyük rakibi Japonya'da.",
+    "examples": [
+      {
+        "de": "Die großen Gegner und Konkurrenten im Tennis, Roger Lederer und Ramon Madal, haben anscheinend Freundschaft geschlossen.",
+        "tr": "Tenisin iki büyük rakibi Roger Lederer ve Ramon Madal anlaşılan dost olmuş.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": "n-Deklination: den / dem / des Konkurrenten.",
+    "note": "die Konkurrenz = rekabet; rakipler.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 17",
+    "tags": [
+      "kapitel-1",
+      "liebe"
+    ],
+    "createdAt": "2026-11-16"
+  },
+  {
+    "id": "anscheinend-e815",
+    "type": "other",
+    "lemma": "anscheinend",
+    "rektion": [],
+    "meaningTr": "görünüşe göre, anlaşılan",
+    "hintTr": "zarf (tahmin)",
+    "cloze": "Er geht nicht ans Telefon, [anscheinend] schläft er schon.",
+    "clozeTr": "Telefonu açmıyor, anlaşılan uyumuş.",
+    "examples": [
+      {
+        "de": "Die großen Gegner und Konkurrenten im Tennis, Roger Lederer und Ramon Madal, haben anscheinend Freundschaft geschlossen.",
+        "tr": "Tenisin iki büyük rakibi Roger Lederer ve Ramon Madal anlaşılan dost olmuş.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "anscheinend = büyük ihtimalle öyle; scheinbar = öyle görünüyor ama aslında değil.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 17",
+    "tags": [
+      "kapitel-1",
+      "liebe"
+    ],
+    "createdAt": "2026-11-16"
+  },
+  {
+    "id": "neuerdings-0b89",
+    "type": "other",
+    "lemma": "neuerdings",
+    "rektion": [],
+    "meaningTr": "son zamanlarda, bu aralar (yeni bir durum)",
+    "hintTr": "zarf",
+    "cloze": "[Neuerdings] fährt er jeden Tag mit dem Rad zur Arbeit.",
+    "clozeTr": "Son zamanlarda işe her gün bisikletle gidiyor.",
+    "examples": [
+      {
+        "de": "Neuerdings spielen sie gemeinsam Golf.",
+        "tr": "Son zamanlarda birlikte golf oynuyorlar.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "Eskiden öyle olmayan yeni bir alışkanlık / durum için; in letzter Zeit daha geneldir.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 17",
+    "tags": [
+      "kapitel-1",
+      "liebe"
+    ],
+    "createdAt": "2026-11-16"
+  },
+  {
+    "id": "angeblich-d696",
+    "type": "other",
+    "lemma": "angeblich",
+    "rektion": [],
+    "meaningTr": "güya, sözde; söylendiğine göre",
+    "hintTr": "zarf (doğrulanmamış iddia)",
+    "cloze": "Er ist [angeblich] krank, aber ich habe ihn in der Stadt gesehen.",
+    "clozeTr": "Güya hasta, ama ben onu şehirde gördüm.",
+    "examples": [
+      {
+        "de": "Königin Sibylle will sich angeblich von ihrem Mann Ricardo scheiden lassen.",
+        "tr": "Kraliçe Sibylle'nin kocası Ricardo'dan boşanmak istediği söyleniyor.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "Konuşan kişi bilgiden emin değil ya da şüpheli; sıfat olarak: der angebliche Täter (sözde fail).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 17",
+    "tags": [
+      "kapitel-1",
+      "liebe"
+    ],
+    "createdAt": "2026-11-16"
+  },
+  {
+    "id": "affaere-4731",
+    "type": "noun",
+    "lemma": "Affäre",
+    "noun": {
+      "gender": "die",
+      "plural": "-n"
+    },
+    "rektion": [],
+    "meaningTr": "kaçamak, gizli ilişki; skandal",
+    "hintTr": "isim",
+    "cloze": "[Die] [Affäre] des Ministers wurde schnell öffentlich.",
+    "clozeTr": "Bakanın skandalı kısa sürede ortaya çıktı.",
+    "examples": [
+      {
+        "de": "Die vielen Affären des Regenten belasten die Ehe zu sehr.",
+        "tr": "Hükümdarın sayısız kaçamağı evliliği fazlasıyla yıpratıyor.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "eine Affäre haben mit + Dat = biriyle ilişkisi olmak.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 17",
+    "tags": [
+      "kapitel-1",
+      "liebe"
+    ],
+    "createdAt": "2026-11-16"
+  },
+  {
+    "id": "regent-1f37",
+    "type": "noun",
+    "lemma": "Regent",
+    "noun": {
+      "gender": "der",
+      "plural": "-en"
+    },
+    "rektion": [],
+    "meaningTr": "hükümdar; naip",
+    "hintTr": "isim, n-Deklination",
+    "cloze": "[Der] [Regent] herrschte über dreißig Jahre.",
+    "clozeTr": "Hükümdar otuz yılı aşkın süre hüküm sürdü.",
+    "examples": [
+      {
+        "de": "Die vielen Affären des Regenten belasten die Ehe zu sehr.",
+        "tr": "Hükümdarın sayısız kaçamağı evliliği fazlasıyla yıpratıyor.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": "n-Deklination: den / dem / des Regenten.",
+    "note": "Fiil: regieren (yönetmek, hüküm sürmek).",
+    "directions": ["de2tr"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 17",
+    "tags": [
+      "kapitel-1",
+      "liebe"
+    ],
+    "createdAt": "2026-11-16"
+  },
+  {
+    "id": "belasten-0976",
+    "type": "verb",
+    "lemma": "belasten",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": null,
+      "praeteritum": "belastete",
+      "partizip2": "belastet",
+      "auxiliary": "haben"
+    },
+    "rektion": [],
+    "meaningTr": "yıpratmak, yük olmak; zorlamak",
+    "hintTr": "fiil",
+    "cloze": "Der ständige Stress [belastet] seine Gesundheit.",
+    "clozeTr": "Sürekli stres sağlığını yıpratıyor.",
+    "examples": [
+      {
+        "de": "Die vielen Affären des Regenten belasten die Ehe zu sehr.",
+        "tr": "Hükümdarın sayısız kaçamağı evliliği fazlasıyla yıpratıyor.",
+        "fromBook": true
+      },
+      {
+        "de": "Die Trennung seiner Eltern hat ihn sehr belastet.",
+        "tr": "Anne babasının ayrılığı onu çok yıprattı.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "die Belastung = yük, baskı. Zıttı: entlasten (yükünü hafifletmek).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 17",
+    "tags": [
+      "kapitel-1",
+      "liebe"
+    ],
+    "createdAt": "2026-11-16"
+  },
+  {
+    "id": "nach-eigenen-angaben-5a6c",
+    "type": "expression",
+    "lemma": "nach eigenen Angaben",
+    "rektion": [],
+    "meaningTr": "kendi açıklamasına göre, kendi söylediğine göre",
+    "hintTr": "kalıp (haber dili)",
+    "cloze": "Der Täter war [nach] [eigenen] [Angaben] zur Tatzeit zu Hause.",
+    "clozeTr": "Fail, kendi söylediğine göre olay saatinde evdeydi.",
+    "examples": [
+      {
+        "de": "Die Sängerin Nena Müller-Landshut ist nach eigenen Angaben frisch verliebt.",
+        "tr": "Şarkıcı Nena Müller-Landshut kendi açıklamasına göre yeni âşık olmuş.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "nach Angaben der Polizei = polisin verdiği bilgiye göre.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 17",
+    "tags": [
+      "kapitel-1",
+      "liebe"
+    ],
+    "createdAt": "2026-11-16"
+  },
+  {
+    "id": "glueckliche-2a22",
+    "type": "noun",
+    "lemma": "Glückliche",
+    "noun": {
+      "gender": "der",
+      "plural": "-n"
+    },
+    "rektion": [],
+    "meaningTr": "şanslı kişi, talihli (erkek)",
+    "hintTr": "isim (sıfattan, erkek)",
+    "cloze": "Wer ist denn [der] [Glückliche], den sie heiraten will?",
+    "clozeTr": "Evlenmek istediği o şanslı kişi kimmiş?",
+    "examples": [
+      {
+        "de": "Wer der Glückliche ist, wollte sie der Presse allerdings noch nicht verraten.",
+        "tr": "Ancak o şanslı kişinin kim olduğunu basına henüz söylemek istemedi.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": "Sıfat gibi çekilir: der Glückliche, ein Glücklicher; kadın: die Glückliche.",
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 17",
+    "tags": [
+      "kapitel-1",
+      "liebe"
+    ],
+    "createdAt": "2026-11-16"
+  },
+  {
+    "id": "presse-d6a7",
+    "type": "noun",
+    "lemma": "Presse",
+    "noun": {
+      "gender": "die",
+      "plural": null
+    },
+    "rektion": [],
+    "meaningTr": "basın",
+    "hintTr": "isim",
+    "cloze": "[Die] [Presse] berichtete ausführlich über den Skandal.",
+    "clozeTr": "Basın skandalı ayrıntılı biçimde haberleştirdi.",
+    "examples": [
+      {
+        "de": "Wer der Glückliche ist, wollte sie der Presse allerdings noch nicht verraten.",
+        "tr": "Ancak o şanslı kişinin kim olduğunu basına henüz söylemek istemedi.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "die Pressefreiheit = basın özgürlüğü; die Pressekonferenz = basın toplantısı.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 17",
+    "tags": [
+      "kapitel-1",
+      "liebe"
+    ],
+    "createdAt": "2026-11-16"
+  },
+  {
+    "id": "verraten-e9b1",
+    "type": "verb",
+    "lemma": "verraten",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": null,
+      "praeteritum": "verriet",
+      "partizip2": "verraten",
+      "auxiliary": "haben"
+    },
+    "rektion": [
+      {
+        "preposition": null,
+        "case": "Dat"
+      }
+    ],
+    "meaningTr": "(sır) söylemek, açık etmek; ihanet etmek",
+    "hintTr": "fiil",
+    "cloze": "Ich [verrate] dir ein Geheimnis, aber sag es niemandem.",
+    "clozeTr": "Sana bir sır vereceğim ama kimseye söyleme.",
+    "examples": [
+      {
+        "de": "Wer der Glückliche ist, wollte sie der Presse allerdings noch nicht verraten.",
+        "tr": "Ancak o şanslı kişinin kim olduğunu basına henüz söylemek istemedi.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": "jemandem (Dat) etwas (Akk) verraten: Sie verrät der Presse den Namen nicht.",
+    "note": "der Verrat = ihanet; der Verräter = hain.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 17",
+    "tags": [
+      "kapitel-1",
+      "liebe"
+    ],
+    "createdAt": "2026-11-16"
+  },
+  {
+    "id": "rekordverdaechtig-1ee9",
+    "type": "adjective",
+    "lemma": "rekordverdächtig",
+    "adjective": {
+      "comparative": null,
+      "superlative": null
+    },
+    "rektion": [],
+    "meaningTr": "rekora aday, rekor kıracak gibi",
+    "hintTr": "sıfat",
+    "cloze": "Mit 40 Grad im Schatten war dieser Sommer [rekordverdächtig].",
+    "clozeTr": "Gölgede 40 dereceyle bu yaz rekora adaydı.",
+    "examples": [
+      {
+        "de": "Rekordverdächtig! Der attraktive Fernsehmoderator Michael Kranz ist schon zum vierten Mal verlobt, hat sich aber noch nie „getraut“!",
+        "tr": "Rekora aday! Yakışıklı televizyon sunucusu Michael Kranz dördüncü kez nişanlandı ama bugüne kadar bir kez bile „cesaret edip nikâh masasına oturmadı“!",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "verdächtig = şüpheli; -verdächtig = „… olacak gibi“ (oscarverdächtig).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 17",
+    "tags": [
+      "kapitel-1",
+      "liebe"
+    ],
+    "createdAt": "2026-11-16"
+  },
+  {
+    "id": "attraktiv-a972",
+    "type": "adjective",
+    "lemma": "attraktiv",
+    "adjective": {
+      "comparative": null,
+      "superlative": null
+    },
+    "rektion": [],
+    "meaningTr": "çekici, cazip; yakışıklı / güzel",
+    "hintTr": "sıfat",
+    "cloze": "Das Jobangebot ist finanziell sehr [attraktiv].",
+    "clozeTr": "İş teklifi maddi açıdan çok cazip.",
+    "examples": [
+      {
+        "de": "Rekordverdächtig! Der attraktive Fernsehmoderator Michael Kranz ist schon zum vierten Mal verlobt, hat sich aber noch nie „getraut“!",
+        "tr": "Rekora aday! Yakışıklı televizyon sunucusu Michael Kranz dördüncü kez nişanlandı ama bugüne kadar bir kez bile „cesaret edip nikâh masasına oturmadı“!",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 17",
+    "tags": [
+      "kapitel-1",
+      "liebe"
+    ],
+    "createdAt": "2026-11-16"
+  },
+  {
+    "id": "fernsehmoderator-3a3e",
+    "type": "noun",
+    "lemma": "Fernsehmoderator",
+    "noun": {
+      "gender": "der",
+      "plural": "-en"
+    },
+    "rektion": [],
+    "meaningTr": "televizyon sunucusu",
+    "hintTr": "isim",
+    "cloze": "[Der] [Fernsehmoderator] führt seit Jahren durch die Abendshow.",
+    "clozeTr": "Televizyon sunucusu yıllardır akşam şovunu sunuyor.",
+    "examples": [
+      {
+        "de": "Rekordverdächtig! Der attraktive Fernsehmoderator Michael Kranz ist schon zum vierten Mal verlobt, hat sich aber noch nie „getraut“!",
+        "tr": "Rekora aday! Yakışıklı televizyon sunucusu Michael Kranz dördüncü kez nişanlandı ama bugüne kadar bir kez bile „cesaret edip nikâh masasına oturmadı“!",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "Kadın: die Fernsehmoderatorin.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 17",
+    "tags": [
+      "kapitel-1",
+      "liebe"
+    ],
+    "createdAt": "2026-11-16"
+  },
+  {
+    "id": "trauen-e54d",
+    "type": "verb",
+    "lemma": "trauen",
+    "verb": {
+      "reflexive": "Akk",
+      "separablePrefix": null,
+      "praeteritum": "traute",
+      "partizip2": "getraut",
+      "auxiliary": "haben"
+    },
+    "rektion": [],
+    "meaningTr": "cesaret etmek, cesaretini toplamak",
+    "hintTr": "fiil, dönüşlü (cesaret)",
+    "cloze": "Er [traut] sich nicht, seinen Chef nach mehr Gehalt zu fragen.",
+    "clozeTr": "Patronundan zam istemeye cesaret edemiyor.",
+    "examples": [
+      {
+        "de": "Rekordverdächtig! Der attraktive Fernsehmoderator Michael Kranz ist schon zum vierten Mal verlobt, hat sich aber noch nie „getraut“!",
+        "tr": "Rekora aday! Yakışıklı televizyon sunucusu Michael Kranz dördüncü kez nişanlandı ama bugüne kadar bir kez bile „cesaret edip nikâh masasına oturmadı“!",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "Kitaptaki kelime oyunu: ein Paar trauen = nikâhını kıymak, sich trauen lassen = evlenmek. jemandem trauen (Dat) = birine güvenmek.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 17",
+    "tags": [
+      "kapitel-1",
+      "liebe"
+    ],
+    "createdAt": "2026-11-16"
+  },
+  {
+    "id": "laut-4653",
+    "type": "other",
+    "lemma": "laut",
+    "rektion": [
+      {
+        "preposition": null,
+        "case": "Dat"
+      }
+    ],
+    "meaningTr": "…-e göre (kaynak belirtir)",
+    "hintTr": "edat + Dat (kaynak)",
+    "cloze": "[Laut] dem Wetterbericht soll es morgen schneien.",
+    "clozeTr": "Hava raporuna göre yarın kar yağacakmış.",
+    "examples": [
+      {
+        "de": "Immer mehr junge Menschen unter 18 wünschen sich laut einer Umfrage eine feste Beziehung.",
+        "tr": "Bir ankete göre 18 yaşın altındaki gençler arasında ciddi bir ilişki isteyenlerin sayısı giderek artıyor.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "Resmî / haber dili; sıfat laut (gürültülü) ile karıştırma. Eş anlamlı: nach + Dat, … zufolge.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 17",
+    "tags": [
+      "kapitel-1",
+      "liebe"
+    ],
+    "createdAt": "2026-11-16"
+  },
+  {
+    "id": "wuenschen-74c8",
+    "type": "verb",
+    "lemma": "wünschen",
+    "verb": {
+      "reflexive": "Dat",
+      "separablePrefix": null,
+      "praeteritum": "wünschte",
+      "partizip2": "gewünscht",
+      "auxiliary": "haben"
+    },
+    "rektion": [],
+    "meaningTr": "(kendisi için bir şey) istemek, dilemek",
+    "hintTr": "fiil, dönüşlü (Dativ)",
+    "cloze": "Zum Geburtstag [wünsche] ich mir ein neues Fahrrad.",
+    "clozeTr": "Doğum günümde yeni bir bisiklet istiyorum.",
+    "examples": [
+      {
+        "de": "Immer mehr junge Menschen unter 18 wünschen sich laut einer Umfrage eine feste Beziehung.",
+        "tr": "Bir ankete göre 18 yaşın altındaki gençler arasında ciddi bir ilişki isteyenlerin sayısı giderek artıyor.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": "Dönüşlü zamir Dativ: ich wünsche mir, du wünschst dir. Dönüşsüz: jemandem etwas wünschen (Ich wünsche dir viel Glück).",
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 17",
+    "tags": [
+      "kapitel-1",
+      "liebe"
+    ],
+    "createdAt": "2026-11-16"
+  },
+  {
+    "id": "im-alter-von-0398",
+    "type": "expression",
+    "lemma": "im Alter von",
+    "rektion": [
+      {
+        "preposition": "von",
+        "case": "Dat"
+      }
+    ],
+    "meaningTr": "… yaşında",
+    "hintTr": "kalıp (yaş)",
+    "cloze": "Mozart starb [im] [Alter] [von] 35 Jahren.",
+    "clozeTr": "Mozart 35 yaşında öldü.",
+    "examples": [
+      {
+        "de": "Die meisten jungen Paare kommen im Alter zwischen 19 und 22 Jahren zusammen.",
+        "tr": "Genç çiftlerin çoğu 19 ile 22 yaşları arasında bir araya geliyor.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "im Alter zwischen … und … Jahren = … ile … yaşları arasında. Tek başına im Alter = yaşlılıkta.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 17",
+    "tags": [
+      "kapitel-1",
+      "liebe"
+    ],
+    "createdAt": "2026-11-16"
+  },
+  {
+    "id": "praeposition-3d62",
+    "type": "noun",
+    "lemma": "Präposition",
+    "noun": {
+      "gender": "die",
+      "plural": "-en"
+    },
+    "rektion": [],
+    "meaningTr": "edat",
+    "hintTr": "isim",
+    "cloze": "[Die] [Präposition] „mit“ verlangt immer den Dativ.",
+    "clozeTr": "„mit“ edatı her zaman Dativ ister.",
+    "examples": [
+      {
+        "de": "Ergänzen Sie die eingesetzten Ausdrücke (mit Präpositionen) in der Tabelle.",
+        "tr": "Yerleştirdiğiniz ifadeleri (edatlarıyla birlikte) tabloya yazın.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 17",
+    "tags": [
+      "kapitel-1",
+      "liebe",
+      "grammatik"
+    ],
+    "createdAt": "2026-11-16"
+  },
+  {
+    "id": "tabelle-1d86",
+    "type": "noun",
+    "lemma": "Tabelle",
+    "noun": {
+      "gender": "die",
+      "plural": "-n"
+    },
+    "rektion": [],
+    "meaningTr": "tablo, çizelge",
+    "hintTr": "isim",
+    "cloze": "Tragen Sie die Ergebnisse bitte in [die] [Tabelle] ein.",
+    "clozeTr": "Sonuçları lütfen tabloya yazın.",
+    "examples": [
+      {
+        "de": "Ergänzen Sie die eingesetzten Ausdrücke (mit Präpositionen) in der Tabelle.",
+        "tr": "Yerleştirdiğiniz ifadeleri (edatlarıyla birlikte) tabloya yazın.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "Sporda: puan cetveli (Tabellenführer = lider).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 17",
+    "tags": [
+      "kapitel-1",
+      "liebe"
+    ],
+    "createdAt": "2026-11-16"
+  },
+  {
+    "id": "achten-a19d",
+    "type": "verb",
+    "lemma": "achten",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": null,
+      "praeteritum": "achtete",
+      "partizip2": "geachtet",
+      "auxiliary": "haben"
+    },
+    "rektion": [
+      {
+        "preposition": "auf",
+        "case": "Akk"
+      }
+    ],
+    "meaningTr": "(bir şeye) dikkat etmek, özen göstermek",
+    "hintTr": "fiil + edat",
+    "cloze": "Beim Einkaufen [achte] ich immer auf den Preis.",
+    "clozeTr": "Alışverişte hep fiyata dikkat ederim.",
+    "examples": [
+      {
+        "de": "Achten Sie darauf, ob es sich um einen Prozess oder einen Zustand handelt.",
+        "tr": "Bir süreç mi yoksa bir durum mu söz konusu, buna dikkat edin.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": "Yan cümleden önce darauf: Achten Sie darauf, dass … / ob …",
+    "note": "aufpassen auf + Akk = göz kulak olmak; achten auf = özen göstermek, dikkate almak.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 17",
+    "tags": [
+      "kapitel-1",
+      "liebe"
+    ],
+    "createdAt": "2026-11-16"
+  },
+  {
+    "id": "prozess-793a",
+    "type": "noun",
+    "lemma": "Prozess",
+    "noun": {
+      "gender": "der",
+      "plural": "-e"
+    },
+    "rektion": [],
+    "meaningTr": "süreç; dava",
+    "hintTr": "isim",
+    "cloze": "Eine Sprache zu lernen ist [ein] langer [Prozess].",
+    "clozeTr": "Dil öğrenmek uzun bir süreçtir.",
+    "examples": [
+      {
+        "de": "Achten Sie darauf, ob es sich um einen Prozess oder einen Zustand handelt.",
+        "tr": "Bir süreç mi yoksa bir durum mu söz konusu, buna dikkat edin.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "Gramerde: Prozess (olan şey: sich verlieben) ↔ Zustand (durum: verliebt sein).",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 17",
+    "tags": [
+      "kapitel-1",
+      "liebe"
+    ],
+    "createdAt": "2026-11-16"
+  },
+  {
+    "id": "es-handelt-sich-um-e21a",
+    "type": "expression",
+    "lemma": "es handelt sich um",
+    "rektion": [
+      {
+        "preposition": "um",
+        "case": "Akk"
+      }
+    ],
+    "meaningTr": "… söz konusu, mesele … (-dır)",
+    "hintTr": "kalıp (es + sich + edat)",
+    "cloze": "Bei dem Bild [handelt] es [sich] [um] eine Fälschung.",
+    "clozeTr": "Söz konusu tablo bir sahte.",
+    "examples": [
+      {
+        "de": "Achten Sie darauf, ob es sich um einen Prozess oder einen Zustand handelt.",
+        "tr": "Bir süreç mi yoksa bir durum mu söz konusu, buna dikkat edin.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": "Özne her zaman es; neyin söz konusu olduğu bei + Dat ile verilir: Bei dem Mann handelt es sich um meinen Chef.",
+    "note": "handeln von + Dat = (kitap, film) … hakkında olmak.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 17",
+    "tags": [
+      "kapitel-1",
+      "liebe"
+    ],
+    "createdAt": "2026-11-16"
+  },
+  {
+    "id": "luecke-ea32",
+    "type": "noun",
+    "lemma": "Lücke",
+    "noun": {
+      "gender": "die",
+      "plural": "-n"
+    },
+    "rektion": [],
+    "meaningTr": "boşluk; eksik",
+    "hintTr": "isim",
+    "cloze": "Im Text fehlt ein Wort, füllen Sie [die] [Lücke] aus.",
+    "clozeTr": "Metinde bir kelime eksik, boşluğu doldurun.",
+    "examples": [
+      {
+        "de": "Ergänzen Sie dann die Lücken.",
+        "tr": "Sonra boşlukları doldurun.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "der Lückentext = boşluk doldurmalı metin; die Wissenslücke = bilgi eksiği.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 17",
+    "tags": [
+      "kapitel-1",
+      "liebe"
+    ],
+    "createdAt": "2026-11-16"
+  },
+  {
+    "id": "psychotherapeut-2e0e",
+    "type": "noun",
+    "lemma": "Psychotherapeut",
+    "noun": {
+      "gender": "der",
+      "plural": "-en"
+    },
+    "rektion": [],
+    "meaningTr": "psikoterapist",
+    "hintTr": "isim, n-Deklination",
+    "cloze": "Nach der Trennung ging er zu [einem] [Psychotherapeuten].",
+    "clozeTr": "Ayrılıktan sonra bir psikoterapiste gitti.",
+    "examples": [
+      {
+        "de": "Freundschaften sind wichtig für die Liebe, schreibt der Berliner Psychotherapeut Dr. Wolfgang Krüger in seinem neuen Buch.",
+        "tr": "Berlinli psikoterapist Dr. Wolfgang Krüger yeni kitabında, dostlukların aşk için önemli olduğunu yazıyor.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": "n-Deklination: den / dem / des Psychotherapeuten.",
+    "note": "Kadın: die Psychotherapeutin.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 17",
+    "tags": [
+      "kapitel-1",
+      "liebe"
+    ],
+    "createdAt": "2026-11-16"
+  },
+  {
+    "id": "verbessern-ea37",
+    "type": "verb",
+    "lemma": "verbessern",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": null,
+      "praeteritum": "verbesserte",
+      "partizip2": "verbessert",
+      "auxiliary": "haben"
+    },
+    "rektion": [],
+    "meaningTr": "iyileştirmek, geliştirmek; düzeltmek",
+    "hintTr": "fiil",
+    "cloze": "Ich möchte mein Deutsch so schnell wie möglich [verbessern].",
+    "clozeTr": "Almancamı olabildiğince çabuk geliştirmek istiyorum.",
+    "examples": [
+      {
+        "de": "„Freundschaft: Beginnen, verbessern, gestalten …“",
+        "tr": "„Dostluk: Başlamak, geliştirmek, biçimlendirmek …“",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "sich verbessern = kendini geliştirmek, daha iyi hale gelmek. die Verbesserung = iyileşme; düzeltme.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 17",
+    "tags": [
+      "kapitel-1",
+      "liebe"
+    ],
+    "createdAt": "2026-11-16"
+  },
+  {
+    "id": "liebesfaehig-412e",
+    "type": "adjective",
+    "lemma": "liebesfähig",
+    "adjective": {
+      "comparative": null,
+      "superlative": null
+    },
+    "rektion": [],
+    "meaningTr": "sevebilen, sevme yetisine sahip",
+    "hintTr": "sıfat",
+    "cloze": "Wer sich selbst nicht mag, ist kaum [liebesfähig].",
+    "clozeTr": "Kendini sevmeyen biri başkasını da pek sevemez.",
+    "examples": [
+      {
+        "de": "Menschen mit guten Freunden sind liebesfähiger und wählen den richtigen Partner mit Ruhe und Bedacht.",
+        "tr": "İyi arkadaşları olan insanlar sevmeyi daha iyi biliyor ve doğru partneri acele etmeden, düşünerek seçiyor.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "-fähig = „… yapabilen“: teamfähig, lernfähig, arbeitsfähig.",
+    "directions": ["de2tr"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 17",
+    "tags": [
+      "kapitel-1",
+      "liebe"
+    ],
+    "createdAt": "2026-11-16"
+  },
+  {
+    "id": "mit-bedacht-3916",
+    "type": "expression",
+    "lemma": "mit Bedacht",
+    "rektion": [],
+    "meaningTr": "düşünerek, ölçülü biçimde, özenle",
+    "hintTr": "kalıp (gehoben)",
+    "cloze": "Sie wählt ihre Worte immer [mit] [Bedacht].",
+    "clozeTr": "Sözlerini her zaman düşünerek seçer.",
+    "examples": [
+      {
+        "de": "Menschen mit guten Freunden sind liebesfähiger und wählen den richtigen Partner mit Ruhe und Bedacht.",
+        "tr": "İyi arkadaşları olan insanlar sevmeyi daha iyi biliyor ve doğru partneri acele etmeden, düşünerek seçiyor.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "gehoben. Günlük dilde: überlegt, vorsichtig.",
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 17",
+    "tags": [
+      "kapitel-1",
+      "liebe"
+    ],
+    "createdAt": "2026-11-16"
+  },
+  {
+    "id": "was-hat-es-damit-auf-sich-c8a6",
+    "type": "expression",
+    "lemma": "Was hat es damit auf sich?",
+    "rektion": [
+      {
+        "preposition": "mit",
+        "case": "Dat"
+      }
+    ],
+    "meaningTr": "Bunun aslı ne? / Bu işin arkasında ne var?",
+    "hintTr": "kalıp (es … auf sich haben)",
+    "cloze": "Ich wollte wissen, was es mit dem Gerücht [auf] [sich] [hat].",
+    "clozeTr": "O söylentinin aslı ne, öğrenmek istedim.",
+    "examples": [
+      {
+        "de": "Wir haben bei Dr. Krüger nachgefragt, was es damit genau auf sich hat.",
+        "tr": "Dr. Krüger'e bunun tam olarak ne anlama geldiğini sorduk.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": "es hat etwas auf sich mit + Dat; yan cümlede fiil sonda: …, was es damit auf sich hat.",
+    "note": null,
+    "directions": ["de2tr", "tr2de"],
+    "source": "Arbeitsbuch, Kapitel 1, S. 17",
+    "tags": [
+      "kapitel-1",
+      "liebe"
+    ],
+    "createdAt": "2026-11-16"
   }
 ]
