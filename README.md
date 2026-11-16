@@ -1,4 +1,4 @@
-# Wortschatz
+# Dilmaç (repo: wortschatz)
 
 Mobile-first German vocabulary flashcards (DE ⇄ TR) with FSRS scheduling ([ts-fsrs](https://github.com/open-spaced-repetition/ts-fsrs)).
 

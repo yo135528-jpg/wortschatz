@@ -174,7 +174,7 @@ kbd {
   width: 1.8rem;
   height: 1.8rem;
   border-radius: 9px;
-  background: var(--accent-fill);
+  background: linear-gradient(135deg, #2f62d8, #6a4fd0 60%, #b03a86 130%);
   color: var(--on-accent);
   font-weight: 800;
   font-size: 1rem;
@@ -1090,3 +1090,22 @@ button:disabled { opacity: 0.5; cursor: not-allowed; }
 /* ---------- Charts ---------- */
 .bars.is-empty { height: 64px; }
 .heat { border-radius: 4px; }
+.about { text-align: center; margin: 1.2rem 0 0; }
+
+/* ---------- Ordering drill ---------- */
+.order-line, .order-bank { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.order-line {
+  align-items: center;
+  min-height: 3.4rem;
+  padding: 0.55rem;
+  border: 2px dashed var(--border);
+  border-radius: var(--radius-m);
+  background: var(--bg);
+}
+.order-bank { min-height: 2.6rem; padding-top: 0.3rem; }
+.order-chip { padding: 0.45rem 0.75rem; border-radius: 10px; font-size: 1.02rem; font-weight: 550; box-shadow: var(--shadow-s); }
+.order-line .order-chip { border-color: color-mix(in srgb, var(--accent) 45%, var(--border)); background: color-mix(in srgb, var(--accent) 9%, var(--surface)); }
+.order-chip:disabled { opacity: 1; cursor: default; }
+.order-hint { padding: 0 0.3rem; }
+.order-field.is-correct .order-line { border-style: solid; border-color: var(--good); }
+.order-field.is-wrong .order-line { border-style: solid; border-color: var(--again); }

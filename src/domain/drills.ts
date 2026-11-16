@@ -9,11 +9,24 @@ import { REGISTER_LABELS, topicPhrases, type StreetTopic } from './street';
  * Practice drills. Pure question generators: they never touch the FSRS schedule,
  * so the learner can practise as much as they like.
  */
-export type DrillKind = 'artikel' | 'verben' | 'rektion' | 'adjektiv' | 'schreiben' | 'zor' | 'dikte' | 'gramer' | 'sokak' | 'kalip';
+export type DrillKind =
+  | 'artikel'
+  | 'verben'
+  | 'rektion'
+  | 'adjektiv'
+  | 'schreiben'
+  | 'zor'
+  | 'dikte'
+  | 'satzbau'
+  | 'gramer'
+  | 'sokak'
+  | 'kalip';
 
 export type Field =
   | { kind: 'choice'; label: string; options: string[]; answer: string }
-  | { kind: 'text'; label: string; answers: string[] };
+  | { kind: 'text'; label: string; answers: string[] }
+  /** Put the shuffled `tokens` back into the order of `answer`. */
+  | { kind: 'order'; label: string; tokens: string[]; answer: string[] };
 
 export interface Question {
   /** Stable id (for re-queuing mistakes). */
@@ -165,6 +178,52 @@ export function dictationQuestions(notes: Note[]): Question[] {
         solution: example.de,
         explain: example.tr,
       })),
+  );
+}
+
+/** Words of a sentence as movable tokens; the final full stop is dropped so it does not give the end away. */
+export function sentenceTokens(sentence: string): string[] {
+  return sentence
+    .trim()
+    .replace(/[.!?]+$/, '')
+    .split(/\s+/)
+    .filter(Boolean);
+}
+
+/** A shuffle that never returns the solved order (possible for every sentence with two different tokens). */
+function scramble(tokens: string[], random: Random): string[] {
+  for (let attempt = 0; attempt < 8; attempt++) {
+    const mixed = shuffle(tokens, random);
+    if (mixed.some((token, index) => token !== tokens[index])) return mixed;
+  }
+  return [...tokens].reverse();
+}
+
+export const ORDER_MIN_WORDS = 4;
+export const ORDER_MAX_WORDS = 9;
+
+/**
+ * Word order: the Turkish translation is the prompt, the learner rebuilds the German example.
+ * Short sentences only, so there is (nearly) always one natural order.
+ */
+export function orderQuestions(notes: Note[], random: Random = Math.random): Question[] {
+  return notes.flatMap((note) =>
+    note.examples.flatMap((example, index) => {
+      const answer = sentenceTokens(example.de);
+      // Dialogue lines, quotes and "…" fragments make poor ordering tasks.
+      if (!example.tr || answer.length < ORDER_MIN_WORDS || answer.length > ORDER_MAX_WORDS || /[„“"…:;()]/.test(example.de)) return [];
+      if (new Set(answer).size < 2) return [];
+      return [
+        {
+          id: `${note.id}#o${index}`,
+          title: 'Cümleyi kur',
+          subtitle: example.tr,
+          fields: [{ kind: 'order' as const, label: 'Kelimeleri doğru sıraya koy', tokens: scramble(answer, random), answer }],
+          solution: example.de,
+          audio: example.de,
+        } satisfies Question,
+      ];
+    }),
   );
 }
 

@@ -262,7 +262,7 @@ export function renderSettings(app: App, root: HTMLElement, extraPanels: HTMLEle
             'data-testid': 'export',
             onclick: async () => {
               const stamp = new Date().toISOString().slice(0, 10);
-              downloadText(`wortschatz-backup-${stamp}.json`, await app.exportJson());
+              downloadText(`dilmac-yedek-${stamp}.json`, await app.exportJson());
               status.textContent = '✓ Dışa aktarıldı.';
             },
           },
@@ -282,6 +282,12 @@ export function renderSettings(app: App, root: HTMLElement, extraPanels: HTMLEle
       ),
       fileInput,
       status,
+    ),
+    h(
+      'p',
+      { class: 'about muted small' },
+      h('strong', {}, 'Dilmaç'),
+      ': eski Türkçede „çevirmen“. Almancadaki „Dolmetscher“ kelimesi buradan gelir.',
     ),
   );
 }

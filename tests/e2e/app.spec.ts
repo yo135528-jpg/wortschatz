@@ -131,3 +131,49 @@ test('theme can be forced in settings and survives a reload', async ({ page }) =
   await page.getByTestId('theme-auto').click();
   await expect(page.locator('html')).not.toHaveAttribute('data-theme', /.+/);
 });
+
+test('ordering drill: build the sentence from shuffled words', async ({ page }) => {
+  await openApp(page, { hash: '#/study/satzbau' });
+  await page.getByTestId('drill-go').click();
+  const sentences = [
+    'Die Entscheidung für das neue Projekt fiel uns nicht leicht',
+    'Wir nehmen morgen an einem Deutschkurs teil',
+    'Die Eltern sind sehr stolz auf ihre Tochter',
+    'Bis Freitag müssen wir eine Entscheidung treffen',
+  ];
+  const shown = await page.getByTestId('order-token').allTextContents();
+  const key = (words: string[]) => [...words].sort().join(' ');
+  const solution = sentences.find((sentence) => key(sentence.split(' ')) === key(shown));
+  expect(solution, `unknown sentence: ${shown.join(' ')}`).toBeTruthy();
+
+  for (const word of solution!.split(' ')) {
+    await page.getByTestId('order-token').filter({ hasText: new RegExp(`^${word}$`) }).first().click();
+  }
+  await expect(page.getByTestId('order-token')).toHaveCount(0);
+  // A placed word can be taken back and placed again.
+  await page.getByTestId('order-placed').last().click();
+  await expect(page.getByTestId('order-token')).toHaveCount(1);
+  await page.getByTestId('order-token').click();
+
+  await page.getByTestId('drill-check').click();
+  await expect(page.getByTestId('drill-feedback')).toHaveClass(/is-correct/);
+});
+
+test('a Redemittel phrase can be added to the cards and survives a reload', async ({ page }) => {
+  await openApp(page, { hash: '#/library/redemittel/meinung-aeussern' });
+  const phrase = page.getByTestId('redemittel-item').filter({ hasText: 'Meiner Meinung nach' });
+  await phrase.getByTestId('add-card').click();
+  await expect(phrase.getByTestId('add-card')).toHaveText('✓ Kartlarda');
+
+  await openApp(page, { hash: '#/library/words', reload: false });
+  await openApp(page, { reload: true });
+  // 5 fixture words + the added phrase.
+  await expect(page.getByTestId('note-item')).toHaveCount(6);
+  await expect(page.locator('[data-testid="note-item"]').filter({ hasText: 'Meiner Meinung nach' })).toHaveCount(1);
+
+  // Removing it again takes the card away.
+  await openApp(page, { hash: '#/library/redemittel/meinung-aeussern' });
+  await page.getByTestId('redemittel-item').filter({ hasText: 'Meiner Meinung nach' }).getByTestId('add-card').click();
+  await openApp(page, { hash: '#/library/words' });
+  await expect(page.getByTestId('note-item')).toHaveCount(5);
+});
