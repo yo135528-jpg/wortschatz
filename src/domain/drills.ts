@@ -118,7 +118,19 @@ export function verbQuestions(notes: Note[]): Question[] {
   });
 }
 
-export function rektionQuestions(notes: Note[]): Question[] {
+/** Prepositions that commonly appear in a Rektion; wrong options for the preposition choice come from here. */
+export const REKTION_PREPOSITIONS = ['an', 'auf', 'aus', 'bei', 'für', 'gegen', 'in', 'mit', 'nach', 'über', 'um', 'von', 'vor', 'zu'];
+
+/** The right preposition plus three wrong ones, shuffled. */
+export function prepositionOptions(answer: string, random: Random = Math.random): string[] {
+  const wrong = shuffle(
+    REKTION_PREPOSITIONS.filter((p) => p !== answer),
+    random,
+  ).slice(0, 3);
+  return shuffle([answer, ...wrong], random);
+}
+
+export function rektionQuestions(notes: Note[], random: Random = Math.random): Question[] {
   return notes.flatMap((note) => {
     const entry = note.rektion.find((r) => r.preposition);
     if (!entry || !entry.preposition) return [];
@@ -130,7 +142,7 @@ export function rektionQuestions(notes: Note[]): Question[] {
         title: `${name} ___ + ?`,
         subtitle: note.meaningTr,
         fields: [
-          { kind: 'text', label: 'Edat', answers: [entry.preposition] },
+          { kind: 'choice', label: 'Edat', options: prepositionOptions(entry.preposition, random), answer: entry.preposition },
           { kind: 'choice', label: 'Hâl', options: ['Akk', 'Dat', 'Gen'], answer: entry.case },
         ],
         solution: `${name} ${entry.preposition} + ${entry.case}`,

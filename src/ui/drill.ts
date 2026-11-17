@@ -354,7 +354,9 @@ export class DrillView {
             if (this.answered) return;
             this.picks[index] = option;
             buttons.forEach((button) => button.setAttribute('aria-pressed', String(button.dataset.value === option)));
-            if (autoCheck) this.check();
+            // Check by itself once every field is a choice and each one is picked (e.g. preposition + case).
+            const allPicked = this.question.fields.every((f, i) => f.kind === 'choice' && this.picks[i] !== null);
+            if (autoCheck || allPicked) this.check();
           },
         },
         option,

@@ -9,6 +9,7 @@ import {
   orderQuestions,
   pickRound,
   rektionQuestions,
+  prepositionOptions,
   sentenceTokens,
   streetQuestions,
   typedAnswers,
@@ -48,8 +49,17 @@ describe('note drills', () => {
 
   it('rektion: only notes with a preposition', () => {
     const question = rektionQuestions(notes).find((q) => q.id === 'entscheiden-bb52')!;
-    expect(question.fields[0]).toMatchObject({ answers: ['für'] });
+    expect(question.fields[0]).toMatchObject({ kind: 'choice', answer: 'für' });
     expect(question.fields[1]).toMatchObject({ answer: 'Akk' });
+  });
+
+  it('rektion: the preposition is picked from four different options incl. the answer', () => {
+    for (let i = 0; i < 20; i++) {
+      const options = prepositionOptions('über');
+      expect(options).toHaveLength(4);
+      expect(new Set(options).size).toBe(4);
+      expect(options).toContain('über');
+    }
   });
 
   it('schreiben: nouns need the article, reflexive verbs accept "sich"', () => {
