@@ -11200,7 +11200,7 @@
       },
       {
         "de": "Hören Sie Tipps einer Deutschkursteilnehmerin zur Vorbereitung einer Präsentation.",
-        "tr": "Bir Almanca kursiyerinin sunuma hazırlık için verdiği ipuçlarını dinleyin.",
+        "tr": "Almanca kursuna giden bir öğrencinin sunuma hazırlanmak için verdiği ipuçlarını dinleyin.",
         "fromBook": true
       }
     ],
@@ -13035,14 +13035,14 @@
       "plural": "-"
     },
     "rektion": [],
-    "meaningTr": "kursiyer, kurs katılımcısı",
+    "meaningTr": "kurs katılımcısı, kurstaki öğrenci",
     "hintTr": "isim, birleşik",
     "cloze": "[Die] [Kursteilnehmer] kommen aus zwölf Ländern.",
-    "clozeTr": "Kursiyerler on iki farklı ülkeden geliyor.",
+    "clozeTr": "Kurstaki öğrenciler on iki farklı ülkeden geliyor.",
     "examples": [
       {
         "de": "Schreiben Sie eine Karte, entweder an einen Kursteilnehmenden oder an Ihre Lehrerin.",
-        "tr": "Ya bir kursiyere ya da öğretmeninize bir kart yazın.",
+        "tr": "Kurstan bir arkadaşınıza ya da öğretmeninize bir kart yazın.",
         "fromBook": true
       }
     ],
@@ -33599,7 +33599,7 @@
     "examples": [
       {
         "de": "Hören Sie Tipps einer Deutschkursteilnehmerin zur Vorbereitung einer Präsentation.",
-        "tr": "Bir Almanca kursiyerinin sunuma hazırlık için verdiği ipuçlarını dinleyin.",
+        "tr": "Almanca kursuna giden bir öğrencinin sunuma hazırlanmak için verdiği ipuçlarını dinleyin.",
         "fromBook": true
       }
     ],
@@ -34699,7 +34699,7 @@
     "examples": [
       {
         "de": "Für schüchterne Kursteilnehmer ist es oft schwierig, allein vor einer Gruppe zu sprechen – wer nicht präsentieren will, sollte nicht zu einer Präsentation verpflichtet werden.",
-        "tr": "Utangaç kursiyerler için tek başına bir grubun önünde konuşmak çoğu zaman zordur; sunum yapmak istemeyen buna zorlanmamalı.",
+        "tr": "Kurstaki utangaç öğrenciler için tek başına bir grubun önünde konuşmak çoğu zaman zordur; sunum yapmak istemeyen buna zorlanmamalı.",
         "fromBook": true
       }
     ],
@@ -34740,7 +34740,7 @@
     "examples": [
       {
         "de": "Für schüchterne Kursteilnehmer ist es oft schwierig, allein vor einer Gruppe zu sprechen – wer nicht präsentieren will, sollte nicht zu einer Präsentation verpflichtet werden.",
-        "tr": "Utangaç kursiyerler için tek başına bir grubun önünde konuşmak çoğu zaman zordur; sunum yapmak istemeyen buna zorlanmamalı.",
+        "tr": "Kurstaki utangaç öğrenciler için tek başına bir grubun önünde konuşmak çoğu zaman zordur; sunum yapmak istemeyen buna zorlanmamalı.",
         "fromBook": true
       }
     ],
