@@ -121,13 +121,38 @@ export function verbQuestions(notes: Note[]): Question[] {
 /** Prepositions that commonly appear in a Rektion; wrong options for the preposition choice come from here. */
 export const REKTION_PREPOSITIONS = ['an', 'auf', 'aus', 'bei', 'für', 'gegen', 'in', 'mit', 'nach', 'über', 'um', 'von', 'vor', 'zu'];
 
-/** The right preposition plus three wrong ones, shuffled. */
-export function prepositionOptions(answer: string, random: Random = Math.random): string[] {
-  const wrong = shuffle(
-    REKTION_PREPOSITIONS.filter((p) => p !== answer),
-    random,
-  ).slice(0, 3);
-  return shuffle([answer, ...wrong], random);
+/** Prepositions learners typically mix up with a given one; these are offered first as wrong options. */
+export const CONFUSABLE_PREPOSITIONS: Record<string, string[]> = {
+  an: ['auf', 'in', 'über'],
+  auf: ['an', 'über', 'für'],
+  aus: ['von', 'bei', 'nach'],
+  bei: ['mit', 'an', 'zu'],
+  für: ['vor', 'auf', 'über'],
+  gegen: ['für', 'an', 'vor'],
+  in: ['an', 'auf', 'bei'],
+  mit: ['bei', 'von', 'zu'],
+  nach: ['zu', 'um', 'auf'],
+  über: ['von', 'auf', 'an'],
+  um: ['für', 'nach', 'über'],
+  unter: ['über', 'bei', 'vor'],
+  von: ['über', 'aus', 'vor'],
+  vor: ['für', 'über', 'von'],
+  zu: ['nach', 'an', 'für'],
+  zwischen: ['unter', 'bei', 'mit'],
+};
+
+/**
+ * The right preposition plus three wrong ones, shuffled. Wrong options are the usual confusables,
+ * topped up from the common list; `alsoRight` (other prepositions of the same note) never appear.
+ */
+export function prepositionOptions(answer: string, random: Random = Math.random, alsoRight: string[] = []): string[] {
+  const allowed = (p: string) => p !== answer && !alsoRight.includes(p);
+  const wrong = (CONFUSABLE_PREPOSITIONS[answer] ?? []).filter(allowed);
+  for (const p of shuffle(REKTION_PREPOSITIONS, random)) {
+    if (wrong.length >= 3) break;
+    if (allowed(p) && !wrong.includes(p)) wrong.push(p);
+  }
+  return shuffle([answer, ...wrong.slice(0, 3)], random);
 }
 
 export function rektionQuestions(notes: Note[], random: Random = Math.random): Question[] {
@@ -142,7 +167,11 @@ export function rektionQuestions(notes: Note[], random: Random = Math.random): Q
         title: `${name} ___ + ?`,
         subtitle: note.meaningTr,
         fields: [
-          { kind: 'choice', label: 'Edat', options: prepositionOptions(entry.preposition, random), answer: entry.preposition },
+          { kind: 'choice', label: 'Edat', options: prepositionOptions(
+              entry.preposition,
+              random,
+              note.rektion.flatMap((r) => (r.preposition ? [r.preposition] : [])),
+            ), answer: entry.preposition },
           { kind: 'choice', label: 'Hâl', options: ['Akk', 'Dat', 'Gen'], answer: entry.case },
         ],
         solution: `${name} ${entry.preposition} + ${entry.case}`,
