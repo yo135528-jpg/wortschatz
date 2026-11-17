@@ -14066,6 +14066,11 @@
         "de": "Haben Sie Gemeinsamkeiten?",
         "tr": "Ortak noktalarınız var mı?",
         "fromBook": true
+      },
+      {
+        "de": "Beschreiben Sie auch Gemeinsamkeiten oder Unterschiede zwischen Ihnen beiden.",
+        "tr": "İkiniz arasındaki ortak noktaları ya da farkları da anlatın.",
+        "fromBook": true
       }
     ],
     "grammarTr": null,
@@ -19294,6 +19299,11 @@
         "de": "Und doch wird schon erneut über einen Umzug nachgedacht.",
         "tr": "Yine de şimdiden yeniden taşınmak düşünülüyor.",
         "fromBook": true
+      },
+      {
+        "de": "Ich habe nochmal darüber nachgedacht, warum mir … etwas bedeutet.",
+        "tr": "…nin benim için neden önemli olduğunu bir kez daha düşündüm.",
+        "fromBook": true
       }
     ],
     "grammarTr": "Düzensiz: denkt nach – dachte nach – nachgedacht. Cümledeki „wird nachgedacht“ öznesiz Passiv.",
@@ -21952,6 +21962,11 @@
         "de": "Ich schätze, die Fahrt dauert etwa zwei Stunden.",
         "tr": "Sanırım yolculuk iki saat kadar sürer.",
         "fromBook": false
+      },
+      {
+        "de": "Was ich an … besonders mag / schätze.",
+        "tr": "…de özellikle sevdiğim / değer verdiğim şey.",
+        "fromBook": true
       }
     ],
     "grammarTr": null,
@@ -22857,6 +22872,11 @@
         "de": "Die Brücke verbindet die beiden Stadtteile miteinander.",
         "tr": "Köprü iki semti birbirine bağlıyor.",
         "fromBook": false
+      },
+      {
+        "de": "Was uns verbindet.",
+        "tr": "Bizi birbirimize bağlayan şey.",
+        "fromBook": true
       }
     ],
     "grammarTr": null,
@@ -32378,6 +32398,1027 @@
       "kapitel-1",
       "freundschaft",
       "liebe"
+    ],
+    "createdAt": "2026-11-17"
+  },
+  {
+    "id": "erzeugen-6f63",
+    "type": "verb",
+    "lemma": "erzeugen",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": null,
+      "praeteritum": "erzeugte",
+      "partizip2": "erzeugt",
+      "auxiliary": "haben"
+    },
+    "rektion": [],
+    "meaningTr": "üretmek, oluşturmak",
+    "hintTr": "fiil",
+    "cloze": "Windräder [erzeugen] Strom.",
+    "clozeTr": "Rüzgâr türbinleri elektrik üretir.",
+    "examples": [
+      {
+        "de": "Ein Gerät, das „Wind“ erzeugt.",
+        "tr": "Rüzgâr üreten bir alet.",
+        "fromBook": true
+      },
+      {
+        "de": "Die Musik erzeugt eine ruhige Atmosphäre.",
+        "tr": "Müzik sakin bir atmosfer oluşturuyor.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": null,
+    "directions": [
+      "de2tr",
+      "tr2de"
+    ],
+    "source": "Arbeitsbuch, Kapitel 1, S. 19",
+    "tags": [
+      "kapitel-1",
+      "freundschaft",
+      "charakter"
+    ],
+    "createdAt": "2026-11-17"
+  },
+  {
+    "id": "meinungsaustausch-1f1d",
+    "type": "noun",
+    "lemma": "Meinungsaustausch",
+    "noun": {
+      "gender": "der",
+      "plural": null
+    },
+    "rektion": [],
+    "meaningTr": "fikir alışverişi",
+    "hintTr": "isim",
+    "cloze": "Das Treffen diente [dem] [Meinungsaustausch] zwischen Eltern und Lehrern.",
+    "clozeTr": "Toplantı veliler ve öğretmenler arasında fikir alışverişine hizmet etti.",
+    "examples": [
+      {
+        "de": "Der Meinungsaustausch zwischen zwei oder mehreren Personen.",
+        "tr": "İki ya da daha fazla kişi arasındaki fikir alışverişi.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": null,
+    "directions": [
+      "de2tr",
+      "tr2de"
+    ],
+    "source": "Arbeitsbuch, Kapitel 1, S. 19",
+    "tags": [
+      "kapitel-1",
+      "freundschaft",
+      "charakter"
+    ],
+    "createdAt": "2026-11-17"
+  },
+  {
+    "id": "optimist-6765",
+    "type": "noun",
+    "lemma": "Optimist",
+    "noun": {
+      "gender": "der",
+      "plural": "-en"
+    },
+    "rektion": [],
+    "meaningTr": "iyimser (kişi)",
+    "hintTr": "isim (n-Deklination)",
+    "cloze": "Trotz allem ist er [ein] [Optimist] geblieben.",
+    "clozeTr": "Her şeye rağmen iyimser biri olarak kaldı.",
+    "examples": [
+      {
+        "de": "Jemand, der alles gern positiv sieht.",
+        "tr": "Her şeyi olumlu görmeyi seven biri.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": "n-Deklination: der Optimist, den/dem/des Optimisten. Zıttı: der Pessimist.",
+    "note": null,
+    "directions": [
+      "de2tr",
+      "tr2de"
+    ],
+    "source": "Arbeitsbuch, Kapitel 1, S. 19",
+    "tags": [
+      "kapitel-1",
+      "freundschaft",
+      "charakter"
+    ],
+    "createdAt": "2026-11-17"
+  },
+  {
+    "id": "wissenswerte-53d4",
+    "type": "noun",
+    "lemma": "Wissenswerte",
+    "noun": {
+      "gender": "das",
+      "plural": null
+    },
+    "rektion": [],
+    "meaningTr": "bilinmeye değer şeyler, faydalı bilgiler",
+    "hintTr": "isim (sıfattan)",
+    "cloze": "Auf der Website finden Sie [alles] [Wissenswerte] über den Kurs.",
+    "clozeTr": "Web sitesinde kurs hakkında bilmeniz gereken her şeyi bulursunuz.",
+    "examples": [
+      {
+        "de": "Wissenswertes über eine Sache.",
+        "tr": "Bir konu hakkında bilinmeye değer şeyler.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": "Sıfattan isim: das Wissenswerte, aber: alles Wissenswerte, viel Wissenswertes (sıfat gibi çekimlenir).",
+    "note": null,
+    "directions": [
+      "de2tr",
+      "tr2de"
+    ],
+    "source": "Arbeitsbuch, Kapitel 1, S. 19",
+    "tags": [
+      "kapitel-1",
+      "freundschaft",
+      "charakter"
+    ],
+    "createdAt": "2026-11-17"
+  },
+  {
+    "id": "witz-e916",
+    "type": "noun",
+    "lemma": "Witz",
+    "noun": {
+      "gender": "der",
+      "plural": "-e"
+    },
+    "rektion": [],
+    "meaningTr": "fıkra, şaka; espri",
+    "hintTr": "isim",
+    "cloze": "Er erzählt auf jeder Party [denselben] [Witz].",
+    "clozeTr": "Her partide aynı fıkrayı anlatıyor.",
+    "examples": [
+      {
+        "de": "Eine Person, die viele Witze macht.",
+        "tr": "Çok şaka yapan biri.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "Witze machen/erzählen = şaka yapmak/fıkra anlatmak; Das ist doch ein Witz! = Dalga mı geçiyorsun!",
+    "directions": [
+      "de2tr",
+      "tr2de"
+    ],
+    "source": "Arbeitsbuch, Kapitel 1, S. 19",
+    "tags": [
+      "kapitel-1",
+      "freundschaft",
+      "charakter"
+    ],
+    "createdAt": "2026-11-17"
+  },
+  {
+    "id": "partnerschaft-83ae",
+    "type": "noun",
+    "lemma": "Partnerschaft",
+    "noun": {
+      "gender": "die",
+      "plural": "-en"
+    },
+    "rektion": [],
+    "meaningTr": "ortaklık; (çift) ilişki, birliktelik",
+    "hintTr": "isim",
+    "cloze": "Nach zehn Jahren [Partnerschaft] haben sie geheiratet.",
+    "clozeTr": "On yıllık birlikteliğin ardından evlendiler.",
+    "examples": [
+      {
+        "de": "Eine enge Beziehung zu einer anderen Person.",
+        "tr": "Başka biriyle kurulan yakın bir ilişki.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": null,
+    "directions": [
+      "de2tr",
+      "tr2de"
+    ],
+    "source": "Arbeitsbuch, Kapitel 1, S. 19",
+    "tags": [
+      "kapitel-1",
+      "freundschaft",
+      "charakter"
+    ],
+    "createdAt": "2026-11-17"
+  },
+  {
+    "id": "faehigkeit-55e0",
+    "type": "noun",
+    "lemma": "Fähigkeit",
+    "noun": {
+      "gender": "die",
+      "plural": "-en"
+    },
+    "rektion": [
+      {
+        "preposition": "zu",
+        "case": "Dat"
+      }
+    ],
+    "meaningTr": "yetenek, beceri",
+    "hintTr": "isim",
+    "cloze": "Er hat [die] [Fähigkeit], komplizierte Dinge einfach zu erklären.",
+    "clozeTr": "Karmaşık şeyleri basitçe anlatma yeteneği var.",
+    "examples": [
+      {
+        "de": "Die Fähigkeit zu verstehen, was ein anderer denkt, fühlt oder tut.",
+        "tr": "Başka birinin ne düşündüğünü, ne hissettiğini ya da ne yaptığını anlama yeteneği.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": "die Fähigkeit, etwas zu tun (zu-Infinitiv) ya da die Fähigkeit zu + Dat (zur Empathie).",
+    "note": null,
+    "directions": [
+      "de2tr",
+      "tr2de"
+    ],
+    "source": "Arbeitsbuch, Kapitel 1, S. 19",
+    "tags": [
+      "kapitel-1",
+      "freundschaft",
+      "charakter"
+    ],
+    "createdAt": "2026-11-17"
+  },
+  {
+    "id": "verstaendnis-dea7",
+    "type": "noun",
+    "lemma": "Verständnis",
+    "noun": {
+      "gender": "das",
+      "plural": null
+    },
+    "rektion": [
+      {
+        "preposition": "für",
+        "case": "Akk"
+      }
+    ],
+    "meaningTr": "anlayış",
+    "hintTr": "isim + edat",
+    "cloze": "Ich habe [kein] [Verständnis] für so ein Verhalten.",
+    "clozeTr": "Böyle bir davranışa hiç anlayış gösteremem.",
+    "examples": [
+      {
+        "de": "Die Fähigkeit zu verstehen, was ein anderer denkt, fühlt oder tut.",
+        "tr": "Başka birinin ne düşündüğünü, ne hissettiğini ya da ne yaptığını anlama yeteneği.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "Verständnis für etwas haben = bir şeye anlayış göstermek; ≠ Missverständnis (yanlış anlaşılma).",
+    "directions": [
+      "de2tr",
+      "tr2de"
+    ],
+    "source": "Arbeitsbuch, Kapitel 1, S. 19",
+    "tags": [
+      "kapitel-1",
+      "freundschaft",
+      "charakter"
+    ],
+    "createdAt": "2026-11-17"
+  },
+  {
+    "id": "emotion-3c9e",
+    "type": "noun",
+    "lemma": "Emotion",
+    "noun": {
+      "gender": "die",
+      "plural": "-en"
+    },
+    "rektion": [],
+    "meaningTr": "duygu",
+    "hintTr": "isim",
+    "cloze": "Bei der Hochzeit konnte sie [ihre] [Emotionen] kaum zurückhalten.",
+    "clozeTr": "Düğünde duygularını zor tuttu.",
+    "examples": [
+      {
+        "de": "Er zeigt seine Emotionen nur selten.",
+        "tr": "Duygularını nadiren belli eder.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "Gefühl ile aynı anlam; Emotion biraz daha resmî.",
+    "directions": [
+      "de2tr",
+      "tr2de"
+    ],
+    "source": "Arbeitsbuch, Kapitel 1, S. 19",
+    "tags": [
+      "kapitel-1",
+      "freundschaft",
+      "charakter"
+    ],
+    "createdAt": "2026-11-17"
+  },
+  {
+    "id": "charakterisieren-1c3a",
+    "type": "verb",
+    "lemma": "charakterisieren",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": null,
+      "praeteritum": "charakterisierte",
+      "partizip2": "charakterisiert",
+      "auxiliary": "haben"
+    },
+    "rektion": [],
+    "meaningTr": "(birinin) karakterini tarif etmek, nitelendirmek",
+    "hintTr": "fiil",
+    "cloze": "Wie würdest du deinen besten Freund [charakterisieren]?",
+    "clozeTr": "En iyi arkadaşının karakterini nasıl tarif ederdin?",
+    "examples": [
+      {
+        "de": "Berichten Sie nun Ihrer Familie in einer E-Mail über diese Person und charakterisieren Sie sie.",
+        "tr": "Şimdi ailenize bir e-postada bu kişiyi anlatın ve onun karakterini tarif edin.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": null,
+    "directions": [
+      "de2tr",
+      "tr2de"
+    ],
+    "source": "Arbeitsbuch, Kapitel 1, S. 19",
+    "tags": [
+      "kapitel-1",
+      "freundschaft",
+      "charakter"
+    ],
+    "createdAt": "2026-11-17"
+  },
+  {
+    "id": "unterschied-0b84",
+    "type": "noun",
+    "lemma": "Unterschied",
+    "noun": {
+      "gender": "der",
+      "plural": "-e"
+    },
+    "rektion": [
+      {
+        "preposition": "zwischen",
+        "case": "Dat"
+      }
+    ],
+    "meaningTr": "fark",
+    "hintTr": "isim",
+    "cloze": "Kannst du mir [den] [Unterschied] zwischen „seit“ und „seid“ erklären?",
+    "clozeTr": "„seit“ ile „seid“ arasındaki farkı bana açıklayabilir misin?",
+    "examples": [
+      {
+        "de": "Beschreiben Sie auch Gemeinsamkeiten oder Unterschiede zwischen Ihnen beiden.",
+        "tr": "İkiniz arasındaki ortak noktaları ya da farkları da anlatın.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": null,
+    "directions": [
+      "de2tr",
+      "tr2de"
+    ],
+    "source": "Arbeitsbuch, Kapitel 1, S. 19",
+    "tags": [
+      "kapitel-1",
+      "freundschaft",
+      "charakter"
+    ],
+    "createdAt": "2026-11-17"
+  },
+  {
+    "id": "charaktereigenschaft-ddd7",
+    "type": "noun",
+    "lemma": "Charaktereigenschaft",
+    "noun": {
+      "gender": "die",
+      "plural": "-en"
+    },
+    "rektion": [],
+    "meaningTr": "karakter özelliği",
+    "hintTr": "isim",
+    "cloze": "Geduld ist [eine] [Charaktereigenschaft], die ich sehr schätze.",
+    "clozeTr": "Sabır çok değer verdiğim bir karakter özelliği.",
+    "examples": [
+      {
+        "de": "Folgende Ausdrücke können Ihnen bei der Beschreibung der Charaktereigenschaften helfen.",
+        "tr": "Aşağıdaki ifadeler karakter özelliklerini anlatırken size yardımcı olabilir.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": null,
+    "directions": [
+      "de2tr",
+      "tr2de"
+    ],
+    "source": "Arbeitsbuch, Kapitel 1, S. 19",
+    "tags": [
+      "kapitel-1",
+      "freundschaft",
+      "charakter"
+    ],
+    "createdAt": "2026-11-17"
+  },
+  {
+    "id": "aussergewoehnlich-2ca9",
+    "type": "adjective",
+    "lemma": "außergewöhnlich",
+    "adjective": {
+      "comparative": null,
+      "superlative": null
+    },
+    "rektion": [],
+    "meaningTr": "sıra dışı, olağanüstü",
+    "hintTr": "sıfat",
+    "cloze": "Sie hat ein [außergewöhnliches] Talent für Sprachen.",
+    "clozeTr": "Dillere karşı olağanüstü bir yeteneği var.",
+    "examples": [
+      {
+        "de": "Sie hat ein außergewöhnliches Talent für Sprachen.",
+        "tr": "Dillere karşı olağanüstü bir yeteneği var.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "Zıttı: ganz normal, gewöhnlich.",
+    "directions": [
+      "de2tr",
+      "tr2de"
+    ],
+    "source": "Arbeitsbuch, Kapitel 1, S. 19",
+    "tags": [
+      "kapitel-1",
+      "freundschaft",
+      "charakter"
+    ],
+    "createdAt": "2026-11-17"
+  },
+  {
+    "id": "ruecksichtsvoll-f6c3",
+    "type": "adjective",
+    "lemma": "rücksichtsvoll",
+    "adjective": {
+      "comparative": null,
+      "superlative": null
+    },
+    "rektion": [
+      {
+        "preposition": "gegenüber",
+        "case": "Dat"
+      }
+    ],
+    "meaningTr": "düşünceli, başkalarını gözeten",
+    "hintTr": "sıfat",
+    "cloze": "Unsere Nachbarn sind sehr [rücksichtsvoll] und abends immer leise.",
+    "clozeTr": "Komşularımız çok düşünceli, akşamları hep sessizler.",
+    "examples": [
+      {
+        "de": "Unsere Nachbarn sind sehr rücksichtsvoll und abends immer leise.",
+        "tr": "Komşularımız çok düşünceli, akşamları hep sessizler.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "Rücksicht nehmen auf + Akk = birini gözetmek. Zıttı: rücksichtslos.",
+    "directions": [
+      "de2tr",
+      "tr2de"
+    ],
+    "source": "Arbeitsbuch, Kapitel 1, S. 19",
+    "tags": [
+      "kapitel-1",
+      "freundschaft",
+      "charakter"
+    ],
+    "createdAt": "2026-11-17"
+  },
+  {
+    "id": "ruecksichtslos-9424",
+    "type": "adjective",
+    "lemma": "rücksichtslos",
+    "adjective": {
+      "comparative": null,
+      "superlative": null
+    },
+    "rektion": [],
+    "meaningTr": "saygısız, bencilce davranan, pervasız",
+    "hintTr": "sıfat",
+    "cloze": "Er fährt total [rücksichtslos] und gefährdet andere.",
+    "clozeTr": "Tamamen pervasız araba kullanıyor ve başkalarını tehlikeye atıyor.",
+    "examples": [
+      {
+        "de": "Er fährt total rücksichtslos und gefährdet andere.",
+        "tr": "Tamamen pervasız araba kullanıyor ve başkalarını tehlikeye atıyor.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "Zıttı: rücksichtsvoll.",
+    "directions": [
+      "de2tr",
+      "tr2de"
+    ],
+    "source": "Arbeitsbuch, Kapitel 1, S. 19",
+    "tags": [
+      "kapitel-1",
+      "freundschaft",
+      "charakter"
+    ],
+    "createdAt": "2026-11-17"
+  },
+  {
+    "id": "hilfsbereit-86d9",
+    "type": "adjective",
+    "lemma": "hilfsbereit",
+    "adjective": {
+      "comparative": null,
+      "superlative": null
+    },
+    "rektion": [],
+    "meaningTr": "yardımsever",
+    "hintTr": "sıfat",
+    "cloze": "Meine Kollegin ist immer sehr [hilfsbereit].",
+    "clozeTr": "İş arkadaşım her zaman çok yardımseverdir.",
+    "examples": [
+      {
+        "de": "Meine Kollegin ist immer sehr hilfsbereit.",
+        "tr": "İş arkadaşım her zaman çok yardımseverdir.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": null,
+    "directions": [
+      "de2tr",
+      "tr2de"
+    ],
+    "source": "Arbeitsbuch, Kapitel 1, S. 19",
+    "tags": [
+      "kapitel-1",
+      "freundschaft",
+      "charakter"
+    ],
+    "createdAt": "2026-11-17"
+  },
+  {
+    "id": "egoistisch-9088",
+    "type": "adjective",
+    "lemma": "egoistisch",
+    "adjective": {
+      "comparative": null,
+      "superlative": null
+    },
+    "rektion": [],
+    "meaningTr": "bencil",
+    "hintTr": "sıfat",
+    "cloze": "Es war ziemlich [egoistisch], nur an dich zu denken.",
+    "clozeTr": "Sadece kendini düşünmen oldukça bencilceydi.",
+    "examples": [
+      {
+        "de": "Es war ziemlich egoistisch, nur an dich zu denken.",
+        "tr": "Sadece kendini düşünmen oldukça bencilceydi.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "der Egoist (n-Deklination) = bencil kişi.",
+    "directions": [
+      "de2tr",
+      "tr2de"
+    ],
+    "source": "Arbeitsbuch, Kapitel 1, S. 19",
+    "tags": [
+      "kapitel-1",
+      "freundschaft",
+      "charakter"
+    ],
+    "createdAt": "2026-11-17"
+  },
+  {
+    "id": "abenteuerlustig-ada3",
+    "type": "adjective",
+    "lemma": "abenteuerlustig",
+    "adjective": {
+      "comparative": null,
+      "superlative": null
+    },
+    "rektion": [],
+    "meaningTr": "macera seven, maceraperest",
+    "hintTr": "sıfat",
+    "cloze": "Als [abenteuerlustiger] Mensch reist sie am liebsten allein.",
+    "clozeTr": "Macera seven biri olarak en çok tek başına seyahat etmeyi sever.",
+    "examples": [
+      {
+        "de": "Als abenteuerlustiger Mensch reist sie am liebsten allein.",
+        "tr": "Macera seven biri olarak en çok tek başına seyahat etmeyi sever.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": null,
+    "directions": [
+      "de2tr",
+      "tr2de"
+    ],
+    "source": "Arbeitsbuch, Kapitel 1, S. 19",
+    "tags": [
+      "kapitel-1",
+      "freundschaft",
+      "charakter"
+    ],
+    "createdAt": "2026-11-17"
+  },
+  {
+    "id": "risikofreudig-65f1",
+    "type": "adjective",
+    "lemma": "risikofreudig",
+    "adjective": {
+      "comparative": null,
+      "superlative": null
+    },
+    "rektion": [],
+    "meaningTr": "risk almayı seven, gözü kara",
+    "hintTr": "sıfat",
+    "cloze": "Junge Gründer sind oft sehr [risikofreudig].",
+    "clozeTr": "Genç girişimciler çoğu zaman risk almayı çok sever.",
+    "examples": [
+      {
+        "de": "Junge Gründer sind oft sehr risikofreudig.",
+        "tr": "Genç girişimciler çoğu zaman risk almayı çok sever.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "Zıttı: vorsichtig.",
+    "directions": [
+      "de2tr",
+      "tr2de"
+    ],
+    "source": "Arbeitsbuch, Kapitel 1, S. 19",
+    "tags": [
+      "kapitel-1",
+      "freundschaft",
+      "charakter"
+    ],
+    "createdAt": "2026-11-17"
+  },
+  {
+    "id": "vorsichtig-53a8",
+    "type": "adjective",
+    "lemma": "vorsichtig",
+    "adjective": {
+      "comparative": null,
+      "superlative": null
+    },
+    "rektion": [],
+    "meaningTr": "dikkatli, temkinli",
+    "hintTr": "sıfat",
+    "cloze": "Sei [vorsichtig], die Straße ist glatt!",
+    "clozeTr": "Dikkatli ol, yol kaygan!",
+    "examples": [
+      {
+        "de": "Sei vorsichtig, die Straße ist glatt!",
+        "tr": "Dikkatli ol, yol kaygan!",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": null,
+    "directions": [
+      "de2tr",
+      "tr2de"
+    ],
+    "source": "Arbeitsbuch, Kapitel 1, S. 19",
+    "tags": [
+      "kapitel-1",
+      "freundschaft",
+      "charakter"
+    ],
+    "createdAt": "2026-11-17"
+  },
+  {
+    "id": "humorvoll-5e24",
+    "type": "adjective",
+    "lemma": "humorvoll",
+    "adjective": {
+      "comparative": null,
+      "superlative": null
+    },
+    "rektion": [],
+    "meaningTr": "esprili, espri anlayışı olan",
+    "hintTr": "sıfat",
+    "cloze": "Unser neuer Chef ist sehr [humorvoll].",
+    "clozeTr": "Yeni patronumuz çok esprili.",
+    "examples": [
+      {
+        "de": "Unser neuer Chef ist sehr humorvoll.",
+        "tr": "Yeni patronumuz çok esprili.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "Zıttı: humorlos.",
+    "directions": [
+      "de2tr",
+      "tr2de"
+    ],
+    "source": "Arbeitsbuch, Kapitel 1, S. 19",
+    "tags": [
+      "kapitel-1",
+      "freundschaft",
+      "charakter"
+    ],
+    "createdAt": "2026-11-17"
+  },
+  {
+    "id": "humorlos-8cd1",
+    "type": "adjective",
+    "lemma": "humorlos",
+    "adjective": {
+      "comparative": null,
+      "superlative": null
+    },
+    "rektion": [],
+    "meaningTr": "espri anlayışı olmayan, şakadan anlamayan",
+    "hintTr": "sıfat",
+    "cloze": "Sei doch nicht so [humorlos], das war nur Spaß!",
+    "clozeTr": "Bu kadar şakadan anlamaz olma, şakaydı sadece!",
+    "examples": [
+      {
+        "de": "Sei doch nicht so humorlos, das war nur Spaß!",
+        "tr": "Bu kadar şakadan anlamaz olma, şakaydı sadece!",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "Zıttı: humorvoll.",
+    "directions": [
+      "de2tr",
+      "tr2de"
+    ],
+    "source": "Arbeitsbuch, Kapitel 1, S. 19",
+    "tags": [
+      "kapitel-1",
+      "freundschaft",
+      "charakter"
+    ],
+    "createdAt": "2026-11-17"
+  },
+  {
+    "id": "extrovertiert-1c25",
+    "type": "adjective",
+    "lemma": "extrovertiert",
+    "adjective": {
+      "comparative": null,
+      "superlative": null
+    },
+    "rektion": [],
+    "meaningTr": "dışa dönük",
+    "hintTr": "sıfat",
+    "cloze": "Als [extrovertierter] Mensch lernt er schnell neue Leute kennen.",
+    "clozeTr": "Dışa dönük biri olarak yeni insanlarla çabuk tanışıyor.",
+    "examples": [
+      {
+        "de": "Als extrovertierter Mensch lernt er schnell neue Leute kennen.",
+        "tr": "Dışa dönük biri olarak yeni insanlarla çabuk tanışıyor.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "Zıttı: introvertiert.",
+    "directions": [
+      "de2tr",
+      "tr2de"
+    ],
+    "source": "Arbeitsbuch, Kapitel 1, S. 19",
+    "tags": [
+      "kapitel-1",
+      "freundschaft",
+      "charakter"
+    ],
+    "createdAt": "2026-11-17"
+  },
+  {
+    "id": "introvertiert-e55b",
+    "type": "adjective",
+    "lemma": "introvertiert",
+    "adjective": {
+      "comparative": null,
+      "superlative": null
+    },
+    "rektion": [],
+    "meaningTr": "içe dönük",
+    "hintTr": "sıfat",
+    "cloze": "Sie ist eher [introvertiert] und verbringt ihre Abende gern allein.",
+    "clozeTr": "Daha çok içe dönük biri, akşamlarını yalnız geçirmeyi sever.",
+    "examples": [
+      {
+        "de": "Sie ist eher introvertiert und verbringt ihre Abende gern allein.",
+        "tr": "Daha çok içe dönük biri, akşamlarını yalnız geçirmeyi sever.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "Zıttı: extrovertiert.",
+    "directions": [
+      "de2tr",
+      "tr2de"
+    ],
+    "source": "Arbeitsbuch, Kapitel 1, S. 19",
+    "tags": [
+      "kapitel-1",
+      "freundschaft",
+      "charakter"
+    ],
+    "createdAt": "2026-11-17"
+  },
+  {
+    "id": "spontan-11cf",
+    "type": "adjective",
+    "lemma": "spontan",
+    "adjective": {
+      "comparative": null,
+      "superlative": null
+    },
+    "rektion": [],
+    "meaningTr": "spontane, anlık karar veren",
+    "hintTr": "sıfat",
+    "cloze": "Wir sind ganz [spontan] ans Meer gefahren.",
+    "clozeTr": "Hiç plan yapmadan denize gittik.",
+    "examples": [
+      {
+        "de": "Wir sind ganz spontan ans Meer gefahren.",
+        "tr": "Hiç plan yapmadan denize gittik.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": null,
+    "directions": [
+      "de2tr",
+      "tr2de"
+    ],
+    "source": "Arbeitsbuch, Kapitel 1, S. 19",
+    "tags": [
+      "kapitel-1",
+      "freundschaft",
+      "charakter"
+    ],
+    "createdAt": "2026-11-17"
+  },
+  {
+    "id": "nachdenklich-147e",
+    "type": "adjective",
+    "lemma": "nachdenklich",
+    "adjective": {
+      "comparative": null,
+      "superlative": null
+    },
+    "rektion": [],
+    "meaningTr": "düşünceli, dalgın; düşündürücü",
+    "hintTr": "sıfat",
+    "cloze": "Nach dem Film war ich lange [nachdenklich].",
+    "clozeTr": "Filmden sonra uzun süre düşüncelere daldım.",
+    "examples": [
+      {
+        "de": "Nach dem Film war ich lange nachdenklich.",
+        "tr": "Filmden sonra uzun süre düşüncelere daldım.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "nachdenklich = düşüncelere dalmış (rücksichtsvoll anlamındaki \"düşünceli\" değil).",
+    "directions": [
+      "de2tr",
+      "tr2de"
+    ],
+    "source": "Arbeitsbuch, Kapitel 1, S. 19",
+    "tags": [
+      "kapitel-1",
+      "freundschaft",
+      "charakter"
+    ],
+    "createdAt": "2026-11-17"
+  },
+  {
+    "id": "wert-legen-auf-akk-f374",
+    "type": "expression",
+    "lemma": "Wert legen auf + Akk",
+    "rektion": [
+      {
+        "preposition": "auf",
+        "case": "Akk"
+      }
+    ],
+    "meaningTr": "(bir şeye) önem vermek",
+    "hintTr": "isim + fiil kalıbı + edat",
+    "cloze": "Ich [lege] großen [Wert] [auf] Pünktlichkeit.",
+    "clozeTr": "Dakikliğe çok önem veririm.",
+    "examples": [
+      {
+        "de": "Ich lege großen Wert auf Pünktlichkeit.",
+        "tr": "Dakikliğe çok önem veririm.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "Kitapta: auf Äußerlichkeiten viel / wenig Wert legen.",
+    "directions": [
+      "de2tr",
+      "tr2de"
+    ],
+    "source": "Arbeitsbuch, Kapitel 1, S. 19",
+    "tags": [
+      "kapitel-1",
+      "freundschaft",
+      "charakter"
+    ],
+    "createdAt": "2026-11-17"
+  },
+  {
+    "id": "aeusserlichkeit-3b45",
+    "type": "noun",
+    "lemma": "Äußerlichkeit",
+    "noun": {
+      "gender": "die",
+      "plural": "-en"
+    },
+    "rektion": [],
+    "meaningTr": "dış görünüş, yüzeysel şey",
+    "hintTr": "isim (genelde çoğul)",
+    "cloze": "Er achtet zu sehr auf [Äußerlichkeiten] wie Kleidung und Autos.",
+    "clozeTr": "Kıyafet ve araba gibi dış görünüşe fazla önem veriyor.",
+    "examples": [
+      {
+        "de": "Er achtet zu sehr auf Äußerlichkeiten wie Kleidung und Autos.",
+        "tr": "Kıyafet ve araba gibi dış görünüşe fazla önem veriyor.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": null,
+    "directions": [
+      "de2tr",
+      "tr2de"
+    ],
+    "source": "Arbeitsbuch, Kapitel 1, S. 19",
+    "tags": [
+      "kapitel-1",
+      "freundschaft",
+      "charakter"
+    ],
+    "createdAt": "2026-11-17"
+  },
+  {
+    "id": "stoeren-8eec",
+    "type": "verb",
+    "lemma": "stören",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": null,
+      "praeteritum": "störte",
+      "partizip2": "gestört",
+      "auxiliary": "haben"
+    },
+    "rektion": [],
+    "meaningTr": "rahatsız etmek; (birinin) hoşuna gitmemek",
+    "hintTr": "fiil",
+    "cloze": "Manchmal [stört] mich an ihm, dass er nie zuhört.",
+    "clozeTr": "Bazen onun hiç dinlememesi beni rahatsız ediyor.",
+    "examples": [
+      {
+        "de": "Manchmal stört mich an ihm, dass er nie zuhört.",
+        "tr": "Bazen onun hiç dinlememesi beni rahatsız ediyor.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "Was mich an … stört = …de beni rahatsız eden şey.",
+    "directions": [
+      "de2tr",
+      "tr2de"
+    ],
+    "source": "Arbeitsbuch, Kapitel 1, S. 19",
+    "tags": [
+      "kapitel-1",
+      "freundschaft",
+      "charakter"
     ],
     "createdAt": "2026-11-17"
   }
