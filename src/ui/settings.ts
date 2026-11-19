@@ -286,7 +286,7 @@ export function renderSettings(app: App, root: HTMLElement, extraPanels: HTMLEle
     h(
       'p',
       { class: 'about muted small' },
-      h('strong', {}, 'Dilmaç'),
+      h('strong', {}, 'Lügat'),
       ': eski Türkçede „çevirmen“. Almancadaki „Dolmetscher“ kelimesi buradan gelir.',
     ),
   );
