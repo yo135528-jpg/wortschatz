@@ -38357,5 +38357,38 @@
       "lernwortschatz"
     ],
     "createdAt": "2026-11-19"
+  },
+  {
+    "id": "ratgeber-e928",
+    "type": "noun",
+    "lemma": "Ratgeber",
+    "noun": {
+      "gender": "der",
+      "plural": "-"
+    },
+    "rektion": [],
+    "meaningTr": "danışman, öğüt veren; rehber kitap",
+    "hintTr": "isim",
+    "cloze": "In der Buchhandlung gibt es [einen] [Ratgeber] zum Thema Freundschaft.",
+    "clozeTr": "Kitapçıda arkadaşlık konusunda bir rehber kitap var.",
+    "examples": [
+      {
+        "de": "Meine Großmutter war immer meine beste Ratgeberin.",
+        "tr": "Babaannem her zaman en iyi danışmanımdı.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": null,
+    "directions": [
+      "de2tr",
+      "tr2de"
+    ],
+    "source": "Arbeitsbuch, Kapitel 1, S. 23",
+    "tags": [
+      "kapitel-1",
+      "lernwortschatz"
+    ],
+    "createdAt": "2026-11-19"
   }
 ]
