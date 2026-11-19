@@ -11,13 +11,6 @@ import { href, navigate } from './router';
 import { speakButton } from './tts';
 import { loadWeakSpots } from './weakSpots';
 
-function greeting(now: Date): string {
-  const hour = now.getHours();
-  if (hour < 11) return 'Günaydın';
-  if (hour < 18) return 'İyi günler';
-  return 'İyi akşamlar';
-}
-
 /** Home screen: what to do today, plus a phrase and a grammar topic of the day. */
 export class TodayView {
   /** Daily picks are async (lazy content) and change once per day, so they are cached per day. */
@@ -38,28 +31,38 @@ export class TodayView {
     const total = done + remaining;
     const percent = total === 0 ? 100 : Math.round((done / total) * 100);
 
+    const row = (label: string, value: string, valueClass = '') =>
+      h('div', { class: 'today-row' }, h('span', {}, label), h('span', { class: `today-row-value ${valueClass}` }, value));
+
+    // iOS-style layout: date + large title, one grouped card with the numbers, then the main action.
     const plan = h(
       'section',
       { class: 'today-plan', 'data-testid': 'today-plan' },
-      h('p', { class: 'today-greeting' }, greeting(now)),
-      remaining > 0
-        ? h(
-            'h2',
-            {},
-            `Bugün ${remaining} kart seni bekliyor`,
-            newCount ? h('span', { class: 'today-sub' }, ` · ${newCount} yeni`) : null,
-          )
-        : h('h2', {}, done > 0 ? 'Bugünlük kartlar bitti' : 'Bugün tekrar edilecek kart yok'),
       h(
         'div',
-        { class: 'progress', role: 'progressbar', 'aria-valuenow': percent, 'aria-valuemin': 0, 'aria-valuemax': 100 },
-        h('div', { class: 'progress-fill', style: `width:${percent}%` }),
+        { class: 'today-head' },
+        h('p', { class: 'today-date' }, now.toLocaleDateString('tr-TR', { weekday: 'long', day: 'numeric', month: 'long' })),
+        h('h1', { class: 'today-title' }, 'Bugün'),
       ),
       h(
-        'p',
-        { class: 'today-meta' },
-        h('span', {}, `${done} kart çalışıldı`),
-        h('span', { class: 'streak' }, icon('flame'), `${stats.streak} günlük seri`),
+        'div',
+        { class: 'today-group' },
+        h(
+          'div',
+          { class: 'today-group-main' },
+          remaining > 0
+            ? h('h2', {}, `${remaining} kart seni bekliyor`)
+            : h('h2', {}, done > 0 ? 'Bugünlük kartlar bitti' : 'Bugün tekrar edilecek kart yok'),
+          h(
+            'div',
+            { class: 'progress', role: 'progressbar', 'aria-valuenow': percent, 'aria-valuemin': 0, 'aria-valuemax': 100 },
+            h('div', { class: 'progress-fill', style: `width:${percent}%` }),
+          ),
+        ),
+        remaining > 0 ? row('Yeni', String(newCount)) : null,
+        remaining > 0 ? row('Tekrar', String(remaining - newCount)) : null,
+        row('Bugün çalışılan', `${done} kart`),
+        row('Seri', `${stats.streak} gün`, 'streak'),
       ),
       remaining > 0
         ? h(

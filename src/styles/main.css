@@ -2,15 +2,15 @@
 /* Every color is a light-dark() pair; the theme follows the system unless data-theme forces one. */
 :root {
   color-scheme: light dark;
-  --bg: light-dark(#f4f5f7, #0f1115);
-  --surface: light-dark(#ffffff, #181b21);
-  --surface-2: light-dark(#eceef2, #232730);
-  --text: light-dark(#15171c, #eceef2);
-  --muted: light-dark(#626875, #9aa1ae);
-  --border: light-dark(#e0e3e9, #2b303a);
+  --bg: light-dark(#f2f2f7, #000000);
+  --surface: light-dark(#ffffff, #1c1c1e);
+  --surface-2: light-dark(#ececf0, #2c2c2e);
+  --text: light-dark(#1c1c1e, #ffffff);
+  --muted: light-dark(#6c6c70, #98989f);
+  --border: light-dark(#e5e5ea, #38383a);
   /* --accent: text, icons, outlines. --accent-fill: filled buttons (white text passes AA on both). */
-  --accent: light-dark(#2f62d8, #86abff);
-  --accent-fill: light-dark(#2f62d8, #3f6fe8);
+  --accent: light-dark(#0a66d8, #409cff);
+  --accent-fill: light-dark(#0a66d8, #0a6fe0);
   --on-accent: #fff;
   --accent-soft: color-mix(in srgb, var(--accent) 13%, transparent);
 
@@ -45,8 +45,8 @@
   --good: light-dark(#23894e, #5fd193);
   --easy: light-dark(#2f62d8, #86abff);
 
-  --radius: 18px;
-  --radius-m: 12px;
+  --radius: 16px;
+  --radius-m: 14px;
   --radius-s: 9px;
   --shadow-color: light-dark(rgb(16 24 40 / 0.07), rgb(0 0 0 / 0.36));
   --shadow: 0 1px 2px var(--shadow-color), 0 8px 24px var(--shadow-color);
@@ -54,7 +54,7 @@
   --tabbar-h: 64px;
   --content-w: 640px;
   --rail-w: 0px;
-  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, system-ui, 'Segoe UI', Roboto, sans-serif;
 }
 :root[data-theme='light'] { color-scheme: light; }
 :root[data-theme='dark'] { color-scheme: dark; }
@@ -1109,3 +1109,70 @@ button:disabled { opacity: 0.5; cursor: not-allowed; }
 .order-hint { padding: 0 0.3rem; }
 .order-field.is-correct .order-line { border-style: solid; border-color: var(--good); }
 .order-field.is-wrong .order-line { border-style: solid; border-color: var(--again); }
+
+/* ---------- iOS look (grouped lists, flat cards, translucent bars) ---------- */
+/* Cards sit on the grey grouped background without borders or shadows, like iOS Settings. */
+.face, .today-plan, .note-item, .stat, .panel, .daily-card, .study-card, .street-card, .phrase,
+.search-item, .weak-item, .grammar-item, .session-summary, .drill-card {
+  border-color: transparent;
+  box-shadow: none;
+}
+.face { border-top-width: 4px; }
+.daily-street, .daily-grammar { border-left: 0; }
+
+/* Large title, as in iOS apps. */
+.topbar { background: color-mix(in srgb, var(--bg) 80%, transparent); backdrop-filter: saturate(1.8) blur(20px); -webkit-backdrop-filter: saturate(1.8) blur(20px); }
+.brand-mark { background: var(--accent-fill); border-radius: 8px; }
+
+/* Tab bar: translucent material, hairline on top, coloured icon for the active tab. */
+.tabbar {
+  background: color-mix(in srgb, var(--surface) 78%, transparent);
+  backdrop-filter: saturate(1.8) blur(20px);
+  -webkit-backdrop-filter: saturate(1.8) blur(20px);
+  border-top: 0.5px solid var(--border);
+}
+.tabbar a { font-size: 0.66rem; gap: 2px; padding-top: 6px; justify-content: flex-start; }
+.tabbar .icon { width: 1.6rem; height: 1.6rem; padding: 0; }
+.tabbar a[aria-current='true'] { color: var(--accent); font-weight: 600; }
+.tabbar a[aria-current='true'] .icon { background: none; }
+
+/* Buttons: filled for the main action, grey fill for the rest. */
+button, a.button { border-color: transparent; background: var(--surface-2); border-radius: 12px; }
+.primary, .show-answer { border-radius: 14px; }
+.big { padding: 0.95rem 1rem; font-size: 1.06rem; font-weight: 600; }
+.rate { border-radius: 14px; }
+
+/* Text fields: grey fill instead of an outline. */
+:where(input:not([type='checkbox'], [type='radio'], [type='file']), select, textarea) { border-color: transparent; background: var(--surface-2); }
+.search { background: color-mix(in srgb, var(--muted) 14%, transparent); border-color: transparent; }
+
+/* Segmented control. */
+.segmented, .segmented-buttons, .mode-toggle { background: color-mix(in srgb, var(--muted) 14%, transparent); border-radius: 10px; }
+.segmented a, .segmented-buttons button, .mode-toggle button { border-radius: 8px; }
+
+/* Section headers above grouped lists. */
+.section-title, .grammar-group-title, .daily-kicker, .phrase-heading, .card-rows-title {
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* ---------- Today (iOS layout) ---------- */
+.today-plan { background: none; padding: 0; gap: 0.9rem; margin-top: 0; }
+.today-head { display: grid; gap: 0.1rem; padding: 0 0.25rem; }
+.today-date { margin: 0; font-size: 0.8rem; font-weight: 600; color: var(--muted); text-transform: uppercase; }
+.today-title { margin: 0; font-size: 2.1rem; font-weight: 700; letter-spacing: -0.02em; line-height: 1.15; }
+.today-group { background: var(--surface); border-radius: var(--radius-m); overflow: hidden; }
+.today-group-main { display: grid; gap: 0.7rem; padding: 1rem; }
+.today-plan h2 { font-size: 1.25rem; font-weight: 600; }
+.today-plan .progress { height: 6px; }
+.today-plan .progress-fill { background: var(--accent-fill); }
+.today-row { display: flex; justify-content: space-between; align-items: center; gap: 1rem; margin: 0 0 0 1rem; padding: 0.75rem 1rem 0.75rem 0; border-top: 0.5px solid var(--border); font-size: 1.02rem; }
+.today-row-value { color: var(--muted); font-variant-numeric: tabular-nums; }
+.today-row-value.streak { color: var(--hard); }
+/* Card-like buttons keep the card's background instead of the grey button fill. */
+.note-summary { background: transparent; }
+/* Selected segment: white in light mode, iOS's lighter grey in dark mode. */
+.segmented a[aria-current='true'], .segmented-buttons button[aria-pressed='true'], .mode-toggle button[aria-pressed='true'] { background: light-dark(var(--surface), #636366); }
