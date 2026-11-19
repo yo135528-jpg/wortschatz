@@ -36192,5 +36192,74 @@
       "zufall"
     ],
     "createdAt": "2026-11-17"
+  },
+  {
+    "id": "auf-diesem-weg-82bf",
+    "type": "expression",
+    "lemma": "auf diesem Weg",
+    "rektion": [],
+    "meaningTr": "bu vesileyle, bu yolla",
+    "hintTr": "kalıp (resmi yazı/tebrik)",
+    "cloze": "Ich möchte mich [auf] [diesem] [Weg] bei allen Kollegen für die Unterstützung bedanken.",
+    "clozeTr": "Bu vesileyle tüm meslektaşlarıma destekleri için teşekkür etmek istiyorum.",
+    "examples": [
+      {
+        "de": "Der frisch gebackenen Akademikerin möchten wir auf diesem Weg herzlich gratulieren.",
+        "tr": "Yeni mezunumuzu bu vesileyle içtenlikle tebrik etmek istiyoruz.",
+        "fromBook": true
+      },
+      {
+        "de": "Auf diesem Weg wünschen wir Ihnen frohe Feiertage.",
+        "tr": "Bu vesileyle size iyi bayramlar diliyoruz.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": "Tebrik kartı, e-posta ve duyurularda sık geçen resmi bir kalıp.",
+    "directions": [
+      "de2tr",
+      "tr2de"
+    ],
+    "source": "Arbeitsbuch, Kapitel 1, S. 20",
+    "tags": [
+      "kapitel-1",
+      "redemittel",
+      "beruf"
+    ],
+    "createdAt": "2026-11-19"
+  },
+  {
+    "id": "alles-gute-zu-dat-fuer-akk-cd5f",
+    "type": "expression",
+    "lemma": "Alles Gute zu + Dat / für + Akk",
+    "rektion": [],
+    "meaningTr": "(bir şey) kutlu olsun, (bir şey için) her şey gönlünce olsun",
+    "hintTr": "kalıp, iyi dilek",
+    "cloze": "[Alles] [Gute] zum Geburtstag!",
+    "clozeTr": "Doğum günün kutlu olsun!",
+    "examples": [
+      {
+        "de": "Alles Gute zu Ihrem 25. Jahrestag in der Firma!",
+        "tr": "Firmadaki 25. yılınız kutlu olsun!",
+        "fromBook": true
+      },
+      {
+        "de": "Alles Gute für deine berufliche Zukunft.",
+        "tr": "Meslek hayatında her şey gönlünce olsun.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": "Bir olay/gün için \"zu + Dat\" (zum Geburtstag, zur Hochzeit), gelecek için \"für + Akk\" (für die Zukunft, für die Prüfung).",
+    "note": null,
+    "directions": [
+      "de2tr",
+      "tr2de"
+    ],
+    "source": "Arbeitsbuch, Kapitel 1, S. 20",
+    "tags": [
+      "kapitel-1",
+      "redemittel"
+    ],
+    "createdAt": "2026-11-19"
   }
 ]
