@@ -29,7 +29,7 @@ const html = (size, { bleed, rounded }) => `
     color: #ffd166;
   }
 </style>
-<div class="icon"><div class="letter">D</div><div class="accent">ç</div></div>`;
+<div class="icon"><div class="letter">L</div><div class="accent">ü</div></div>`;
 
 const TARGETS = [
   { file: 'icon-192.png', size: 192, rounded: true, bleed: false },

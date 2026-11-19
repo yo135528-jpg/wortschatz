@@ -1,6 +1,6 @@
-# Dilmaç — German learning app (repo name: wortschatz)
+# Lügat — German learning app (repo name: wortschatz)
 
-The app is shown to the user as **Dilmaç** (old Turkish for "interpreter", the origin of German *Dolmetscher*). The repository, URL, storage keys and database keep the old name `wortschatz`; never rename those (it would lose the learner's data).
+The app is shown to the user as **Lügat** (old Turkish for "dictionary"; it was called Dilmaç until 2026-11-20). The repository, URL, storage keys and database keep the old name `wortschatz`; never rename those (it would lose the learner's data).
 
 Static Vite + TypeScript app (no framework), deployed to GitHub Pages. Started as flashcards; now a learning app with several sections (cards, grammar, street German). Design new features as part of a learning app, not only as card features. Scheduling uses `ts-fsrs` (FSRS-7 via `DefaultScheduler`); never hand-roll the algorithm.
 
