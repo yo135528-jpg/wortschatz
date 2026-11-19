@@ -1176,3 +1176,29 @@ button, a.button { border-color: transparent; background: var(--surface-2); bord
 .note-summary { background: transparent; }
 /* Selected segment: white in light mode, iOS's lighter grey in dark mode. */
 .segmented a[aria-current='true'], .segmented-buttons button[aria-pressed='true'], .mode-toggle button[aria-pressed='true'] { background: light-dark(var(--surface), #636366); }
+
+/* ---------- Street lessons ---------- */
+.street-group { margin-bottom: 1.1rem; }
+.street-group .section-title { margin: 0.4rem 0.25rem 0.5rem; }
+.street-lesson-heading { margin: 1.2rem 0 0.1rem; font-size: 1.12rem; font-weight: 700; }
+.dialogue-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.4rem 0.75rem; }
+.dialogue-head .phrase-heading { margin: 0; }
+.dialogue-actions { display: flex; gap: 0.4rem; }
+.dialogue-action { display: inline-flex; align-items: center; gap: 0.35rem; padding: 0.35rem 0.75rem; font-size: 0.85rem; font-weight: 600; color: var(--accent); background: var(--surface); }
+.dialogue-action[aria-pressed='true'] { background: var(--accent-fill); color: var(--on-accent); }
+.bubble { transition: box-shadow 0.2s ease; }
+.bubble.is-playing { box-shadow: 0 0 0 2px var(--accent); }
+.bubble-hint { display: none; }
+/* Role play: your own German lines are hidden until you tap the bubble. */
+.dialogue.is-roleplay .bubble-me { cursor: pointer; }
+.dialogue.is-roleplay .bubble-me:not(.is-revealed) .bubble-de { display: none; }
+.dialogue.is-roleplay .bubble-me:not(.is-revealed) .bubble-hint { display: block; }
+.dialogue.is-roleplay .bubble-me:not(.is-revealed) .bubble-tr { color: var(--text); font-weight: 600; font-size: 0.95rem; }
+.street-check { display: grid; gap: 0.6rem; padding: 1rem; border-radius: var(--radius-m); background: var(--surface); }
+.street-check p { margin: 0; }
+.street-check-kicker { display: flex; gap: 0.4rem; align-items: center; font-size: 0.8rem; font-weight: 600; text-transform: uppercase; color: var(--accent); }
+.street-check-question { font-weight: 600; }
+.street-check-option { background: var(--surface-2); }
+.street-check-result { padding: 0.6rem 0.8rem; border-radius: 10px; font-size: 0.92rem; }
+.street-check-result.is-correct { background: color-mix(in srgb, var(--good) 14%, transparent); }
+.street-check-result.is-wrong { background: color-mix(in srgb, var(--again) 12%, transparent); }

@@ -48,3 +48,21 @@ test('a street phrase can be added to the cards and survives a reload', async ({
   await expect(page.getByTestId('note-item')).toHaveCount(6);
   await expect(page.locator('[data-testid="note-item"]').filter({ hasText: 'Ich bin pleite.' })).toHaveCount(1);
 });
+
+test('a street lesson has a self-check and a role-play dialogue', async ({ page }) => {
+  await openApp(page, { hash: '#/library/street/telefon' });
+  await expect(page.getByTestId('street-detail')).toHaveAttribute('data-id', 'telefon');
+
+  const check = page.getByTestId('street-check').first();
+  await check.getByTestId('street-check-option').first().click();
+  await expect(check.locator('.street-check-result')).toBeVisible();
+  await expect(check.getByTestId('street-check-option').first()).toBeDisabled();
+
+  const dialogue = page.getByTestId('dialogue').first();
+  const myLine = dialogue.locator('.bubble-me .bubble-de').first();
+  await expect(myLine).toBeVisible();
+  await dialogue.getByTestId('dialogue-roleplay').click();
+  await expect(myLine).toBeHidden();
+  await dialogue.locator('.bubble-me').first().click();
+  await expect(myLine).toBeVisible();
+});

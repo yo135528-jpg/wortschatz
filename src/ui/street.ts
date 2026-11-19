@@ -3,6 +3,8 @@ import {
   REGISTERS,
   REGISTER_HINTS,
   REGISTER_LABELS,
+  STREET_GROUPS,
+  STREET_GROUP_LABELS,
   registerCounts,
   searchPhrases,
   topicPhrases,
@@ -15,7 +17,7 @@ import {
 import { h } from './dom';
 import { icon } from './icons';
 import { navigate } from './router';
-import { speakButton } from './tts';
+import { speakButton, speakGermanToEnd, stopGerman } from './tts';
 
 /** Renders "**bold**" markers as <strong> using text nodes only (no HTML parsing). */
 function rich(value: string): Node {
@@ -80,6 +82,7 @@ export class StreetView {
         {},
         'Kitapta değil, sokakta, kasada, WhatsApp\'ta ve arkadaş arasında nasıl konuşulduğu. ',
         h('strong', {}, `${this.topics.length} konu, ${total} ifade.`),
+        ' Her konu bir ders gibi: açıklama, örnekler, diyaloglar ve sonunda kendini dene.',
       ),
     );
     const search = h('input', {
@@ -146,9 +149,26 @@ export class StreetView {
 
   private renderTopicGrid(): HTMLElement {
     return h(
+      'div',
+      { class: 'street-groups' },
+      ...STREET_GROUPS.map((group) => {
+        const topics = this.topics.filter((topic) => topic.group === group);
+        if (topics.length === 0) return null;
+        return h(
+          'section',
+          { class: 'street-group', 'data-testid': 'street-group' },
+          h('h3', { class: 'section-title' }, STREET_GROUP_LABELS[group]),
+          this.renderTopicList(topics),
+        );
+      }),
+    );
+  }
+
+  private renderTopicList(topics: StreetTopic[]): HTMLElement {
+    return h(
       'ul',
       { class: 'street-grid' },
-      ...this.topics.map((topic) => {
+      ...topics.map((topic) => {
         const counts = registerCounts(topic);
         const count = topicPhrases(topic).length;
         return h(
@@ -257,6 +277,10 @@ export class StreetView {
         return h('p', { class: 'grammar-callout grammar-tip' }, icon('bulb'), rich(block.text));
       case 'warning':
         return h('p', { class: 'grammar-callout grammar-warning' }, icon('warning'), rich(block.text));
+      case 'heading':
+        return h('h3', { class: 'street-lesson-heading' }, rich(block.text));
+      case 'check':
+        return this.renderCheck(block);
       case 'phrases':
         return h(
           'section',
@@ -265,20 +289,7 @@ export class StreetView {
           h('ul', { class: 'phrase-list' }, ...block.items.map((item) => this.renderPhrase(item, topic))),
         );
       case 'dialogue':
-        return h(
-          'section',
-          { class: 'dialogue' },
-          h('h3', { class: 'phrase-heading' }, icon('play'), block.title),
-          ...block.lines.map((line) =>
-            h(
-              'div',
-              { class: `bubble ${line.speaker === 'Du' ? 'bubble-me' : ''}` },
-              h('span', { class: 'bubble-speaker' }, line.speaker === 'Du' ? 'Sen' : line.speaker),
-              h('span', { class: 'bubble-de' }, rich(line.de), speakButton(plain(line.de))),
-              h('span', { class: 'bubble-tr' }, line.tr),
-            ),
-          ),
-        );
+        return this.renderDialogue(block);
       case 'table':
         return h(
           'div',
@@ -292,6 +303,123 @@ export class StreetView {
           ),
         );
     }
+  }
+
+  /** A short scene: listen to all lines in a row, or play "your" lines yourself (role play). */
+  private renderDialogue(block: Extract<StreetBlock, { type: 'dialogue' }>): HTMLElement {
+    let playing = false;
+    const bubbles = block.lines.map((line) => {
+      const mine = line.speaker === 'Du';
+      const bubble = h(
+        'div',
+        {
+          class: `bubble ${mine ? 'bubble-me' : ''}`,
+          onclick: () => {
+            if (mine && section.classList.contains('is-roleplay')) bubble.classList.toggle('is-revealed');
+          },
+        },
+        h('span', { class: 'bubble-speaker' }, mine ? 'Sen' : line.speaker),
+        h('span', { class: 'bubble-de' }, rich(line.de), speakButton(plain(line.de))),
+        h('span', { class: 'bubble-tr' }, line.tr),
+        mine ? h('span', { class: 'bubble-hint muted small' }, 'Almancasını söyle, sonra dokun') : null,
+      );
+      return bubble;
+    });
+    const stop = () => {
+      playing = false;
+      stopGerman();
+      playButton.replaceChildren(icon('play'), 'Dinle');
+      bubbles.forEach((bubble) => bubble.classList.remove('is-playing'));
+    };
+    const playButton: HTMLButtonElement = h(
+      'button',
+      {
+        type: 'button',
+        class: 'dialogue-action',
+        'data-testid': 'dialogue-play',
+        onclick: async () => {
+          if (playing) return stop();
+          playing = true;
+          playButton.replaceChildren(icon('pause'), 'Durdur');
+          for (const [index, line] of block.lines.entries()) {
+            if (!playing) return;
+            bubbles.forEach((bubble, i) => bubble.classList.toggle('is-playing', i === index));
+            bubbles[index]?.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+            await speakGermanToEnd(plain(line.de));
+            await new Promise((resolve) => setTimeout(resolve, 350));
+          }
+          stop();
+        },
+      },
+      icon('play'),
+      'Dinle',
+    );
+    const hasMine = block.lines.some((line) => line.speaker === 'Du');
+    const roleButton = hasMine
+      ? h(
+          'button',
+          {
+            type: 'button',
+            class: 'dialogue-action',
+            'aria-pressed': 'false',
+            'data-testid': 'dialogue-roleplay',
+            onclick: () => {
+              const on = section.classList.toggle('is-roleplay');
+              roleButton!.setAttribute('aria-pressed', String(on));
+              bubbles.forEach((bubble) => bubble.classList.remove('is-revealed'));
+            },
+          },
+          icon('mic'),
+          'Rol yap',
+        )
+      : null;
+    const section = h(
+      'section',
+      { class: 'dialogue', 'data-testid': 'dialogue' },
+      h(
+        'div',
+        { class: 'dialogue-head' },
+        h('h3', { class: 'phrase-heading' }, icon('chat'), block.title),
+        h('div', { class: 'dialogue-actions' }, playButton, roleButton),
+      ),
+      ...bubbles,
+    );
+    return section;
+  }
+
+  /** Self-check: one tap shows right/wrong and the explanation. */
+  private renderCheck(block: Extract<StreetBlock, { type: 'check' }>): HTMLElement {
+    const result = h('p', { class: 'street-check-result', hidden: true });
+    const buttons = block.options.map((option) =>
+      h(
+        'button',
+        {
+          type: 'button',
+          class: 'choice street-check-option',
+          'data-testid': 'street-check-option',
+          onclick: () => {
+            const right = option === block.answer;
+            buttons.forEach((button, i) => {
+              button.disabled = true;
+              if (block.options[i] === block.answer) button.classList.add('is-answer');
+            });
+            if (!right) buttons[block.options.indexOf(option)]?.classList.add('is-wrong-pick');
+            result.hidden = false;
+            result.className = `street-check-result ${right ? 'is-correct' : 'is-wrong'}`;
+            result.replaceChildren(h('strong', {}, right ? 'Doğru! ' : 'Tam değil. '), block.explain ? rich(block.explain) : '');
+          },
+        },
+        rich(option),
+      ),
+    );
+    return h(
+      'section',
+      { class: 'street-check', 'data-testid': 'street-check' },
+      h('p', { class: 'street-check-kicker' }, icon('bulb'), 'Kendini dene'),
+      h('p', { class: 'street-check-question' }, rich(block.question)),
+      h('div', { class: 'choices choices-list' }, ...buttons),
+      result,
+    );
   }
 
   private renderPhrase(phrase: StreetPhrase, topic: StreetTopic): HTMLElement {
