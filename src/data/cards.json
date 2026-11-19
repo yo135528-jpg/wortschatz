@@ -38241,5 +38241,121 @@
       "praesentation"
     ],
     "createdAt": "2026-11-19"
+  },
+  {
+    "id": "denselben-geschmack-haben-9e55",
+    "type": "expression",
+    "lemma": "denselben Geschmack haben",
+    "rektion": [],
+    "meaningTr": "aynı zevke sahip olmak, zevkleri uyuşmak",
+    "hintTr": "isim + fiil kalıbı",
+    "cloze": "Bei Filmen [haben] wir [denselben] [Geschmack].",
+    "clozeTr": "Film konusunda zevklerimiz aynı.",
+    "examples": [
+      {
+        "de": "Meine Schwester und ich haben denselben Geschmack, deshalb leihen wir uns oft Kleidung.",
+        "tr": "Kız kardeşimle zevklerimiz aynı, bu yüzden sık sık birbirimizden kıyafet ödünç alıyoruz.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": "derselbe çekimi: denselben (Akk, der), dieselbe (die), dasselbe (das); her iki parça da çekilir.",
+    "note": null,
+    "directions": [
+      "de2tr",
+      "tr2de"
+    ],
+    "source": "Arbeitsbuch, Kapitel 1, S. 23",
+    "tags": [
+      "kapitel-1",
+      "lernwortschatz"
+    ],
+    "createdAt": "2026-11-19"
+  },
+  {
+    "id": "neuigkeiten-austauschen-6aa7",
+    "type": "expression",
+    "lemma": "Neuigkeiten austauschen",
+    "rektion": [],
+    "meaningTr": "haberleşmek, yenilikleri paylaşmak",
+    "hintTr": "isim + fiil kalıbı",
+    "cloze": "Beim Kaffee [tauschen] wir immer [Neuigkeiten] [aus].",
+    "clozeTr": "Kahve içerken hep haberleşiriz.",
+    "examples": [
+      {
+        "de": "Wir versuchen, uns mindestens einmal im Monat zu treffen und Neuigkeiten auszutauschen.",
+        "tr": "Ayda en az bir kez buluşup haberleşmeye çalışıyoruz.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": null,
+    "directions": [
+      "de2tr",
+      "tr2de"
+    ],
+    "source": "Arbeitsbuch, Kapitel 1, S. 23",
+    "tags": [
+      "kapitel-1",
+      "lernwortschatz"
+    ],
+    "createdAt": "2026-11-19"
+  },
+  {
+    "id": "daten-auswerten-8a35",
+    "type": "expression",
+    "lemma": "Daten auswerten",
+    "rektion": [],
+    "meaningTr": "verileri değerlendirmek, analiz etmek",
+    "hintTr": "isim + fiil kalıbı (analiz)",
+    "cloze": "Nach der Umfrage müssen wir die [Daten] [auswerten].",
+    "clozeTr": "Anketten sonra verileri değerlendirmemiz gerekiyor.",
+    "examples": [
+      {
+        "de": "Die Forscher haben die Daten von 721 Millionen Nutzern ausgewertet.",
+        "tr": "Araştırmacılar 721 milyon kullanıcının verilerini değerlendirdi.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": null,
+    "directions": [
+      "de2tr",
+      "tr2de"
+    ],
+    "source": "Arbeitsbuch, Kapitel 1, S. 23",
+    "tags": [
+      "kapitel-1",
+      "lernwortschatz"
+    ],
+    "createdAt": "2026-11-19"
+  },
+  {
+    "id": "daten-erfassen-0148",
+    "type": "expression",
+    "lemma": "Daten erfassen",
+    "rektion": [],
+    "meaningTr": "veri toplamak, verileri kaydetmek",
+    "hintTr": "isim + fiil kalıbı (toplama)",
+    "cloze": "Die App [erfasst] alle [Daten] über deine Schritte.",
+    "clozeTr": "Uygulama adımlarınla ilgili tüm verileri kaydediyor.",
+    "examples": [
+      {
+        "de": "Zuerst werden die Daten erfasst, dann ausgewertet.",
+        "tr": "Önce veriler toplanır, sonra değerlendirilir.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": null,
+    "note": null,
+    "directions": [
+      "de2tr",
+      "tr2de"
+    ],
+    "source": "Arbeitsbuch, Kapitel 1, S. 23",
+    "tags": [
+      "kapitel-1",
+      "lernwortschatz"
+    ],
+    "createdAt": "2026-11-19"
   }
 ]
