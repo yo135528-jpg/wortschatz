@@ -25,6 +25,17 @@ export const REGISTER_HINTS: Record<Register, string> = {
 
 const text = z.string().min(1);
 
+/** Sections of the "Sokak" library, in display order. */
+export const STREET_GROUP_LABELS = {
+  temel: 'Temeller: konuşma dili nasıl işler',
+  gunluk: 'Günlük hayat',
+  insan: 'İnsanlar arası',
+  resmi: 'Resmî işler ve randevular',
+  argo: 'Argo, deyimler ve bölgeler',
+} as const;
+export type StreetGroup = keyof typeof STREET_GROUP_LABELS;
+export const STREET_GROUPS = Object.keys(STREET_GROUP_LABELS) as StreetGroup[];
+
 export const StreetPhraseSchema = z.object({
   /** The phrase as people actually say it. Supports **bold** markers. */
   de: text,
@@ -45,6 +56,16 @@ export const StreetBlockSchema = z.discriminatedUnion('type', [
   z.object({ type: z.literal('text'), text }),
   z.object({ type: z.literal('tip'), text }),
   z.object({ type: z.literal('warning'), text }),
+  /** A sub-heading that splits a long topic into lesson sections. */
+  z.object({ type: z.literal('heading'), text }),
+  /** A self-check question: pick the right option, then read why. */
+  z.object({
+    type: z.literal('check'),
+    question: text,
+    options: z.array(text).min(2).max(4),
+    answer: text,
+    explain: text.optional(),
+  }),
   /** A group of phrases under an optional heading. */
   z.object({ type: z.literal('phrases'), heading: text.optional(), items: z.array(StreetPhraseSchema).min(1) }),
   /** A realistic short scene. */
@@ -68,6 +89,7 @@ export const StreetTopicSchema = z.object({
   titleDe: text,
   /** One or two Turkish sentences: what this situation/topic is about. */
   intro: text,
+  group: z.enum(STREET_GROUPS as [StreetGroup, ...StreetGroup[]]).default('gunluk'),
   blocks: z.array(StreetBlockSchema).min(1),
   related: z.array(z.string()).default([]),
 });
@@ -95,6 +117,12 @@ export const StreetFileSchema = z.array(StreetTopicSchema).superRefine((topics, 
             });
           }
         });
+      }
+      if (block.type === 'check' && !block.options.includes(block.answer)) {
+        ctx.addIssue({ code: 'custom', path: [index, 'blocks', b, 'answer'], message: 'answer is not one of the options' });
+      }
+      if (block.type === 'check' && new Set(block.options).size !== block.options.length) {
+        ctx.addIssue({ code: 'custom', path: [index, 'blocks', b, 'options'], message: 'options must be unique' });
       }
       if (block.type === 'phrases') {
         block.items.forEach((item, i) => {

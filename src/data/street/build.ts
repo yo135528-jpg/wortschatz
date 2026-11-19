@@ -5,6 +5,16 @@ export const topic = (input: StreetTopicInput): StreetTopicInput => input;
 export const p = (text: string): StreetBlock => ({ type: 'text', text });
 export const tip = (text: string): StreetBlock => ({ type: 'tip', text });
 export const warn = (text: string): StreetBlock => ({ type: 'warning', text });
+/** Lesson sub-heading. */
+export const h3 = (text: string): StreetBlock => ({ type: 'heading', text });
+/** Self-check question; the first option is NOT special, `answer` names the right one. */
+export const check = (question: string, options: string[], answer: string, explain?: string): StreetBlock => ({
+  type: 'check',
+  question,
+  options,
+  answer,
+  ...(explain ? { explain } : {}),
+});
 
 type Extra = Partial<Pick<StreetPhrase, 'standard' | 'region' | 'note'>> & { ex?: [de: string, tr: string] };
 

@@ -13,6 +13,7 @@ const PATHS = {
   sync: '<path d="M20 4v5h-5"/><path d="M4 12a8 8 0 0 1 14-5.3L20 9"/><path d="M4 20v-5h5"/><path d="M20 12a8 8 0 0 1-14 5.3L4 15"/>',
   chat: '<path d="M4 5h16v11H9.5L4 20z"/><path d="M8 9.5h8M8 12.5h5"/>',
   play: '<circle cx="12" cy="12" r="9"/><path d="M10 8.5v7l5.5-3.5z"/>',
+  pause: '<circle cx="12" cy="12" r="9"/><path d="M10 9v6M14 9v6"/>',
   check: '<path d="m5 12.5 4.5 4.5L19 7.5"/>',
   undo: '<path d="M8 6 4 10l4 4"/><path d="M4 10h10a5 5 0 0 1 0 10h-3"/>',
   arrow: '<path d="M5 12h14"/><path d="m13 6 6 6-6 6"/>',

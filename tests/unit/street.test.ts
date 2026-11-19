@@ -80,3 +80,42 @@ describe('registerCounts', () => {
     expect(registerCounts(fixture[1]!)).toEqual({ regional: 1, alltag: 1 });
   });
 });
+
+describe('street lessons', () => {
+  const withBlocks = (blocks: StreetTopicInput['blocks']): StreetTopicInput => ({
+    ...base('lesson', [phrase('Hallo!', 'Merhaba!', 'alltag')]),
+    blocks: [{ type: 'phrases', items: [phrase('Hallo!', 'Merhaba!', 'alltag')] }, ...blocks],
+  });
+
+  it('defaults the group to daily life', () => {
+    expect(parseStreet([withBlocks([])])[0]!.group).toBe('gunluk');
+  });
+
+  it('accepts a heading and a self-check whose answer is an option', () => {
+    const [topic] = parseStreet([
+      withBlocks([
+        { type: 'heading', text: '1. Start' },
+        { type: 'check', question: 'Welche?', options: ['a', 'b'], answer: 'b', explain: 'Weil.' },
+      ]),
+    ]);
+    expect(topic!.blocks.map((block) => block.type)).toEqual(['phrases', 'heading', 'check']);
+  });
+
+  it('rejects a self-check whose answer is not an option', () => {
+    expect(() => parseStreet([withBlocks([{ type: 'check', question: 'Welche?', options: ['a', 'b'], answer: 'c' }])])).toThrow(
+      /answer is not one of the options/,
+    );
+  });
+
+  it('rejects duplicate options', () => {
+    expect(() => parseStreet([withBlocks([{ type: 'check', question: 'Welche?', options: ['a', 'a'], answer: 'a' }])])).toThrow(
+      /options must be unique/,
+    );
+  });
+
+  it('puts every real topic in a group', () => {
+    const topics = parseStreet(STREET_TOPICS);
+    const groups = new Set(topics.map((topic) => topic.group));
+    expect(groups.size).toBeGreaterThan(3);
+  });
+});

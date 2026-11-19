@@ -150,6 +150,59 @@ async function speakWithGemini(text: string, voice: string, apiKey: string, requ
   }
 }
 
+/** Stops any German speech that is playing. */
+export function stopGerman(): void {
+  requestNumber++;
+  stopSpeaking();
+}
+
+/**
+ * Speaks and resolves when playback has ENDED (or failed), for reading several lines in a row.
+ * A timeout guards against browsers (iOS Safari) that sometimes never fire the end event.
+ */
+export async function speakGermanToEnd(text: string): Promise<void> {
+  stopSpeaking();
+  const request = ++requestNumber;
+  const guardMs = 2500 + text.length * 120;
+  const voice = selectedVoice();
+  const apiKey = geminiKey();
+  if (voice.startsWith(GEMINI_PREFIX) && apiKey) {
+    try {
+      const blob = await geminiClip(text, voice.slice(GEMINI_PREFIX.length), apiKey);
+      if (request !== requestNumber) return;
+      const url = URL.createObjectURL(blob);
+      const audio = new Audio(url);
+      audio.playbackRate = currentRate() / DEFAULT_RATE;
+      currentAudio = audio;
+      await new Promise<void>((resolve) => {
+        const done = () => resolve();
+        audio.addEventListener('ended', done);
+        audio.addEventListener('error', done);
+        audio.addEventListener('pause', done);
+        setTimeout(done, guardMs * 2);
+        audio.play().catch(done);
+      });
+      URL.revokeObjectURL(url);
+      return;
+    } catch (error) {
+      lastError = (error as Error).message;
+      if (request !== requestNumber) return;
+    }
+  }
+  if (!isSpeechSupported()) return;
+  await new Promise<void>((resolve) => {
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = 'de-DE';
+    utterance.rate = currentRate();
+    const chosen = browserVoice();
+    if (chosen) utterance.voice = chosen;
+    utterance.onend = () => resolve();
+    utterance.onerror = () => resolve();
+    setTimeout(resolve, guardMs);
+    speechSynthesis.speak(utterance);
+  });
+}
+
 /** Speaks with the selected voice; resolves when playback has started (or failed). */
 export async function speakGerman(text: string): Promise<void> {
   stopSpeaking();
