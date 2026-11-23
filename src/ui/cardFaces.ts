@@ -92,7 +92,7 @@ export function renderFront(note: Note, direction: Direction): HTMLElement {
 }
 
 /** Back side: the answer plus context. */
-export function renderBack(note: Note, direction: Direction, family: VerbFamily | null = null): HTMLElement {
+export function renderBack(note: Note, direction: Direction, family: VerbFamily | null = null, fold = true): HTMLElement {
   if (direction === 'de2tr') {
     return h(
       'div',
@@ -100,10 +100,7 @@ export function renderBack(note: Note, direction: Direction, family: VerbFamily 
       headwordView(buildHeadword(note), 'small'),
       h('div', { class: 'meaning meaning-large', 'data-testid': 'meaning' }, note.meaningTr),
       examplesView(note),
-      grammarView(note),
-      noteView(note),
-      familyView(note, family),
-      grammarLinks(note),
+      moreView(note, family, fold),
     );
   }
   return h(
@@ -113,10 +110,46 @@ export function renderBack(note: Note, direction: Direction, family: VerbFamily 
     headwordView(buildHeadword(note), 'large'),
     clozeSolutionView(note),
     examplesView(note),
-    grammarView(note),
-    noteView(note),
-    familyView(note, family),
-    grammarLinks(note),
+    moreView(note, family, fold),
+  );
+}
+
+const MORE_KEY = 'wortschatz.card-more-open';
+
+/**
+ * Grammar, notes, word family and grammar links fold into "Daha fazla", so the back shows the
+ * meaning and examples first. The open/closed choice is remembered on this device.
+ */
+function moreView(note: Note, family: VerbFamily | null, fold: boolean): HTMLElement | null {
+  const parts = [grammarView(note), noteView(note), familyView(note, family), grammarLinks(note)].filter(
+    (part): part is HTMLElement => part !== null,
+  );
+  if (parts.length === 0) return null;
+  if (!fold) return h('div', { class: 'card-more-body' }, ...parts);
+  let open = false;
+  try {
+    open = localStorage.getItem(MORE_KEY) === '1';
+  } catch {
+    // Storage blocked: start closed.
+  }
+  const labels = [note.grammarTr && 'gramer', note.note && 'not', family && 'kelime ailesi'].filter(Boolean).join(' · ');
+  return h(
+    'details',
+    {
+      class: 'card-more',
+      open,
+      'data-testid': 'card-more',
+      onclick: (event: Event) => event.stopPropagation(),
+      ontoggle: (event: Event) => {
+        try {
+          localStorage.setItem(MORE_KEY, (event.currentTarget as HTMLDetailsElement).open ? '1' : '0');
+        } catch {
+          // Not remembered; fine.
+        }
+      },
+    },
+    h('summary', {}, 'Daha fazla', labels && h('span', { class: 'card-more-hint' }, labels)),
+    h('div', { class: 'card-more-body' }, ...parts),
   );
 }
 
