@@ -3,6 +3,7 @@ import { scopeOptions } from '../domain/scope';
 import { h } from './dom';
 import { icon } from './icons';
 import { currentTheme, setTheme, THEME_LABELS, type Theme } from './theme';
+import { currentStyle, setStyle, STYLES, type Style } from './style';
 import { clearGeminiCache, GEMINI_VOICES } from './geminiTts';
 import {
   currentRate,
@@ -180,7 +181,39 @@ function appearancePanel(): HTMLElement {
     { class: 'panel' },
     h('h2', {}, 'Görünüm'),
     h('div', { class: 'field' }, h('span', {}, 'Tema'), h('div', { class: 'segmented-buttons', role: 'group', 'aria-label': 'Tema' }, ...buttons)),
+    stylePicker(),
   );
+}
+
+/** Style cards with colour swatches; a tap applies the style immediately. */
+function stylePicker(): HTMLElement {
+  const ids = Object.keys(STYLES) as Style[];
+  const cards = ids.map((style) => {
+    const info = STYLES[style];
+    const [bg, surface, accent, second] = info.preview;
+    return h(
+      'button',
+      {
+        type: 'button',
+        class: 'style-card',
+        'data-testid': `style-${style}`,
+        'aria-pressed': String(style === currentStyle()),
+        onclick: () => {
+          setStyle(style);
+          cards.forEach((card, index) => card.setAttribute('aria-pressed', String(ids[index] === style)));
+        },
+      },
+      h(
+        'span',
+        { class: 'style-preview', style: `background:${bg}`, 'aria-hidden': 'true' },
+        h('span', { class: 'style-preview-card', style: `background:${surface}` }, h('i', { style: `background:${accent}` }), h('i', { style: `background:${second}` })),
+        h('span', { class: 'style-preview-button', style: `background:${accent}` }),
+      ),
+      h('strong', {}, info.label),
+      h('span', { class: 'muted small' }, info.description),
+    );
+  });
+  return h('div', { class: 'field style-field' }, h('span', {}, 'Stil'), h('div', { class: 'style-grid', role: 'group', 'aria-label': 'Stil' }, ...cards));
 }
 
 export function renderSettings(app: App, root: HTMLElement, extraPanels: HTMLElement[] = []): void {
