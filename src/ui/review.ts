@@ -326,6 +326,19 @@ export class ReviewView {
       h('div', { class: 'empty-icon' }, icon('check')),
       h('p', {}, this.app.settings.scope ? 'Bu bölümde bugünlük bu kadar!' : 'Bugünlük bu kadar!'),
       next && h('p', { class: 'muted' }, `Sıradaki öğrenme kartı ${formatInterval(new Date(), next)} sonra.`),
+      this.app.hasNewCards() &&
+        h(
+          'div',
+          { class: 'extra-new' },
+          h('p', { class: 'muted small' }, 'Daha fazla çalışmak ister misin? Bugüne yeni kart ekle:'),
+          ...[10, 20].map((count) =>
+            h(
+              'button',
+              { type: 'button', class: 'button', 'data-testid': `extra-new-${count}`, onclick: () => this.app.addExtraNew(count) },
+              `+${count} yeni kart`,
+            ),
+          ),
+        ),
       this.renderSessionSummary(),
     );
   }
