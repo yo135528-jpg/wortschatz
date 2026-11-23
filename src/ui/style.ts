@@ -2,7 +2,7 @@
  * Visual style (palette, shapes, type) on top of light/dark. Per device, like the theme:
  * stored in localStorage and applied by index.html before the first paint.
  */
-export type Style = 'ios' | 'pastel' | 'kagit' | 'oyun' | 'gece' | 'mono' | 'okyanus';
+export type Style = 'hikaye' | 'ios' | 'pastel' | 'kagit' | 'oyun' | 'gece' | 'mono' | 'okyanus';
 
 export const STYLE_KEY = 'wortschatz.style';
 
@@ -14,6 +14,7 @@ export interface StyleInfo {
 }
 
 export const STYLES: Record<Style, StyleInfo> = {
+  hikaye: { label: 'Hikâye', description: 'Krem zemin, kitap gibi serif Almanca, siyah düğmeler', preview: ['#fdfcf9', '#ffffff', '#1c1917', '#fef3c7'] },
   ios: { label: 'Sade (iOS)', description: 'Temiz, gri zemin, mavi vurgu', preview: ['#f2f2f7', '#ffffff', '#0a66d8', '#23894e'] },
   pastel: { label: 'Pastel', description: 'Yumuşak mor tonlar, yuvarlak hatlar', preview: ['#f5f2ff', '#ffffff', '#7048e8', '#f0a6ca'] },
   kagit: { label: 'Kâğıt', description: 'Sıcak kâğıt rengi, kitap gibi serif başlıklar', preview: ['#f4efe6', '#fffdf8', '#b5541c', '#5b7a4a'] },
@@ -28,22 +29,22 @@ const IDS = Object.keys(STYLES) as Style[];
 export function currentStyle(): Style {
   try {
     const stored = localStorage.getItem(STYLE_KEY) as Style | null;
-    return stored && IDS.includes(stored) ? stored : 'ios';
+    return stored && IDS.includes(stored) ? stored : DEFAULT_STYLE;
   } catch {
-    return 'ios';
+    return DEFAULT_STYLE;
   }
 }
 
+/** Used when the learner never picked a style. */
+export const DEFAULT_STYLE: Style = 'hikaye';
+
 export function applyStyle(style: Style): void {
-  const root = document.documentElement;
-  if (style === 'ios') delete root.dataset.style;
-  else root.dataset.style = style;
+  document.documentElement.dataset.style = style;
 }
 
 export function setStyle(style: Style): void {
   try {
-    if (style === 'ios') localStorage.removeItem(STYLE_KEY);
-    else localStorage.setItem(STYLE_KEY, style);
+    localStorage.setItem(STYLE_KEY, style);
   } catch {
     // Private mode: applies for this visit only.
   }

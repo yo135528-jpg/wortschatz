@@ -10,8 +10,7 @@
       try {
         var theme = localStorage.getItem('wortschatz.theme');
         if (theme === 'light' || theme === 'dark') document.documentElement.dataset.theme = theme;
-        var style = localStorage.getItem('wortschatz.style');
-        if (style) document.documentElement.dataset.style = style;
+        document.documentElement.dataset.style = localStorage.getItem('wortschatz.style') || 'hikaye';
       } catch (e) {}
     </script>
     <link rel="icon" type="image/png" href="./icons/icon-192.png" />
