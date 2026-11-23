@@ -16,6 +16,8 @@ describe('router', () => {
     { name: 'street', id: 'fluchen' },
     { name: 'phrases', id: null },
     { name: 'phrases', id: 'meinung-aeussern' },
+    { name: 'stories', id: null },
+    { name: 'stories', id: 'der-lange-weg-zur-arbeit' },
     { name: 'search', query: 'Bock haben' },
     { name: 'progress' },
     { name: 'settings' },

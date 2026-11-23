@@ -12,6 +12,7 @@ export type Route =
   | { name: 'grammar'; id: string | null }
   | { name: 'street'; id: string | null }
   | { name: 'phrases'; id: string | null }
+  | { name: 'stories'; id: string | null }
   | { name: 'search'; query: string }
   | { name: 'progress' }
   | { name: 'settings' };
@@ -35,6 +36,7 @@ export function tabOf(route: Route): Tab | null {
     case 'grammar':
     case 'street':
     case 'phrases':
+    case 'stories':
       return 'library';
     case 'progress':
       return 'progress';
@@ -57,6 +59,7 @@ export function parseRoute(hash: string): Route {
       if (sub === 'grammar') return { name: 'grammar', id: id ?? null };
       if (sub === 'street') return { name: 'street', id: id ?? null };
       if (sub === 'redemittel') return { name: 'phrases', id: id ?? null };
+      if (sub === 'okuma') return { name: 'stories', id: id ?? null };
       return { name: 'words', id: sub === 'words' ? (id ?? null) : null };
     case 'search':
       return { name: 'search', query: new URLSearchParams(query).get('q') ?? '' };
@@ -89,6 +92,8 @@ export function routeHash(route: Route): string {
       return route.id ? `#/library/street/${encodeURIComponent(route.id)}` : '#/library/street';
     case 'phrases':
       return route.id ? `#/library/redemittel/${encodeURIComponent(route.id)}` : '#/library/redemittel';
+    case 'stories':
+      return route.id ? `#/library/okuma/${encodeURIComponent(route.id)}` : '#/library/okuma';
     case 'search':
       return route.query ? `#/search?q=${encodeURIComponent(route.query)}` : '#/search';
     case 'progress':
