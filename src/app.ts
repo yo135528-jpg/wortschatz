@@ -18,7 +18,8 @@ import type { CardState, ReviewLogEntry, Settings } from './storage/types';
 import { createScheduler, newFsrsCard, rateCard, type ButtonGrade, type Scheduler } from './scheduling/fsrs';
 import { buildQueue, nextLearningDue, prioritize } from './scheduling/queue';
 import { computeStats, type Stats } from './scheduling/stats';
-import { startOfStudyDay } from './scheduling/day';
+import { startOfStudyDay, studyDayLabel } from './scheduling/day';
+import { State } from './scheduling/fsrs';
 
 /**
  * Application state and actions. The UI reads from here and calls the actions;
@@ -85,7 +86,28 @@ export class App {
   }
 
   queue(now = new Date()): CardState[] {
-    return buildQueue(this.scopedStates(), this.logs, { ...this.settings, now });
+    const newPerDay = this.settings.newPerDay + this.extraNewToday(now);
+    return buildQueue(this.scopedStates(), this.logs, { ...this.settings, newPerDay, now });
+  }
+
+  /** Extra new cards the learner asked for today ("+10 yeni kart"); resets with the study day. */
+  extraNewToday(now = new Date()): number {
+    const stored = readExtraNew();
+    return stored && stored.day === studyDayLabel(now) ? stored.count : 0;
+  }
+
+  /** Raises today's new-card budget once, without changing the daily setting. */
+  addExtraNew(count: number, now = new Date()): void {
+    writeExtraNew({ day: studyDayLabel(now), count: this.extraNewToday(now) + count });
+    this.emit();
+  }
+
+  /** True when unseen cards are left in the current scope and mode. */
+  hasNewCards(): boolean {
+    const { mode } = this.settings;
+    return this.scopedStates().some(
+      (state) => !state.suspended && state.fsrs.state === State.New && (mode === 'mixed' || state.direction === mode),
+    );
   }
 
   nextLearningDue(now = new Date()): Date | null {
@@ -196,5 +218,28 @@ export class App {
     this.logs = await getAllLogs(this.db);
     this.undoStack = [];
     this.emit();
+  }
+}
+
+const EXTRA_NEW_KEY = 'wortschatz.extra-new';
+
+let extraNewMemory: { day: string; count: number } | null = null;
+
+function readExtraNew(): { day: string; count: number } | null {
+  if (extraNewMemory) return extraNewMemory;
+  try {
+    const raw = localStorage.getItem(EXTRA_NEW_KEY);
+    return raw ? (JSON.parse(raw) as { day: string; count: number }) : null;
+  } catch {
+    return null;
+  }
+}
+
+function writeExtraNew(value: { day: string; count: number }): void {
+  extraNewMemory = value;
+  try {
+    localStorage.setItem(EXTRA_NEW_KEY, JSON.stringify(value));
+  } catch {
+    // Private mode: the extra cards just don't survive a reload.
   }
 }

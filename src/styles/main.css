@@ -1222,3 +1222,5 @@ button, a.button { border-color: transparent; background: var(--surface-2); bord
 .family-card.is-highlighted { outline: 2px solid var(--accent); }
 .browse-families { color: var(--accent); font-weight: 600; text-decoration: none; }
 .family-card { scroll-margin-top: 5rem; }
+.extra-new { display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; margin: 0.8rem 0; }
+.extra-new p { flex-basis: 100%; margin: 0; }
