@@ -1528,3 +1528,63 @@ button, a.button { border-color: transparent; background: var(--surface-2); bord
 .word-sheet .primary { background: light-dark(#fafaf9, #1c1917); color: light-dark(#1c1917, #fafaf9); border: none; }
 .word-sheet .primary:disabled { opacity: 0.6; }
 @media (min-width: 1000px) { .word-sheet { bottom: 24px; left: calc(50% + var(--rail-w) / 2); } }
+
+/* --- Hikâye (default since 2026-11-24): warm paper, book serif for German, ink-black actions --- */
+:root[data-style='hikaye'] {
+  --bg: light-dark(#fdfcf9, #151311);
+  --surface: light-dark(#ffffff, #201d1a);
+  --surface-2: light-dark(#f5f3ef, #2b2724);
+  --text: light-dark(#1c1917, #f5f3ef);
+  --muted: light-dark(#6f6862, #a8a29e);
+  --border: light-dark(#e7e5e4, #36312d);
+  --accent: light-dark(#1c1917, #f5f3ef);
+  --accent-fill: light-dark(#1c1917, #f5f3ef);
+  --on-accent: light-dark(#ffffff, #1c1917);
+  --accent-soft: light-dark(rgb(28 25 23 / 0.07), rgb(245 243 239 / 0.1));
+  --ring: light-dark(#1c1917, #f5f3ef);
+  --good: light-dark(#2f7a4b, #7fcf9c);
+  --easy: light-dark(#2563eb, #8ab4ff);
+  --radius: 22px; --radius-m: 16px;
+  --shadow-color: light-dark(rgb(28 25 23 / 0.06), rgb(0 0 0 / 0.4));
+  --shadow: 0 1px 2px var(--shadow-color), 0 10px 30px var(--shadow-color);
+  --shadow-s: 0 1px 2px var(--shadow-color);
+  --serif: 'Iowan Old Style', 'Literata', 'Palatino Linotype', Palatino, Charter, Georgia, serif;
+}
+/* German content reads like a book; Turkish and UI stay sans. */
+:root[data-style='hikaye'] :is(.lemma, .example-de, .cloze-de, .cloze, .daily-de, .meaning-large, .ring-number, .story-card-title, .sheet-word, .empty-title, .today-title) {
+  font-family: var(--serif);
+}
+:root[data-style='hikaye'] .today-title { font-weight: 600; letter-spacing: -0.01em; }
+:root[data-style='hikaye'] .example-de { font-style: normal; font-size: 1.05rem; line-height: 1.6; }
+:root[data-style='hikaye'] .lemma { font-weight: 600; }
+:root[data-style='hikaye'] :is(.card-type, .daily-kicker, .today-date, .section-title, .card-rows-title, .reader-kicker) {
+  font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted);
+}
+:root[data-style='hikaye'] :is(.face, .hero-row, .note-item, .stat, .panel, .daily-card, .study-card, .street-card, .phrase, .session-summary, .story-card) {
+  border: 1px solid var(--border); box-shadow: var(--shadow-s);
+}
+:root[data-style='hikaye'] .face { border-top-width: 1px; border-radius: 26px; }
+:root[data-style='hikaye'] .examples li { background: var(--surface-2); border-radius: 14px; }
+:root[data-style='hikaye'] .progress-fill, :root[data-style='hikaye'] .review-progress .progress-fill { background: var(--text); box-shadow: none; }
+:root[data-style='hikaye'] .progress { background: var(--border); }
+:root[data-style='hikaye'] .progress.thin, :root[data-style='hikaye'] .review-progress { height: 3px; }
+:root[data-style='hikaye'] :is(.primary, .show-answer) { border-radius: 16px; }
+:root[data-style='hikaye'] .hero-start::after { display: none; }
+/* Ratings: one calm row, colour only in the label. */
+:root[data-style='hikaye'] .rate { background: var(--surface); border: 1px solid var(--border); }
+/* Dark, floating action sheets like the reading word sheet. */
+:root[data-style='hikaye'] .review-actions { background: transparent; }
+:root[data-style='hikaye'] .answer-bar:not([hidden]) {
+  padding: 0.6rem; border-radius: 22px; background: light-dark(#1c1917, #f5f3ef); box-shadow: 0 16px 36px rgb(0 0 0 / 0.25);
+}
+:root[data-style='hikaye'] .answer-bar .rate { background: transparent; border-color: light-dark(rgb(255 255 255 / 0.16), rgb(0 0 0 / 0.14)); }
+:root[data-style='hikaye'] .answer-bar .rate-interval { color: light-dark(rgb(255 255 255 / 0.6), rgb(28 25 23 / 0.6)); }
+:root[data-style='hikaye'] .answer-bar .rate-1 { --c: light-dark(#ff8a8a, #c0263a); }
+:root[data-style='hikaye'] .answer-bar .rate-2 { --c: light-dark(#f5c26b, #a5650c); }
+:root[data-style='hikaye'] .answer-bar .rate-3 { --c: light-dark(#86e0a8, #1f7a45); }
+:root[data-style='hikaye'] .answer-bar .rate-4 { --c: light-dark(#9cc0ff, #2453c9); }
+:root[data-style='hikaye'] .answer-bar kbd { color: light-dark(rgb(255 255 255 / 0.5), rgb(28 25 23 / 0.5)); border-color: currentColor; }
+:root[data-style='hikaye'] .chip[aria-pressed='true'] { background: var(--text); color: var(--bg); }
+:root[data-style='hikaye'] .tabbar a[aria-current='true'] { color: var(--text); }
+:root[data-style='hikaye'] .brand-mark { background: var(--text); color: var(--bg); }
+:root[data-style='hikaye'] :is(.show-answer, button.primary) kbd { color: var(--on-accent); border-color: currentColor; opacity: 0.6; }
