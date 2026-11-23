@@ -4,7 +4,9 @@
  */
 import { readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
-import { parseNotes, type Note } from '../src/domain/schema';
+import { NotesFileSchema, parseNotes, type Note } from '../src/domain/schema';
+import { STORIES } from '../src/data/stories';
+import { glossaryEntry, parseStories, storyLemmas, storyNote } from '../src/domain/stories';
 import { GRAMMAR_TOPICS } from '../src/data/grammar';
 import { parseGrammar } from '../src/domain/grammar';
 import { REDEMITTEL } from '../src/data/redemittel';
@@ -48,6 +50,28 @@ try {
   const redemittel = parseRedemittel(REDEMITTEL);
   const redemittelCount = redemittel.reduce((sum, group) => sum + group.items.length, 0);
   console.log(`✓ Redemittel are valid: ${redemittel.length} groups, ${redemittelCount} phrases`);
+
+  // Stories: every linked word must be a card or a glossary entry, and glossary entries must be valid cards.
+  const stories = parseStories(STORIES);
+  const lemmas = new Set(notes.map((note) => note.lemma.toLowerCase()));
+  const storyErrors: string[] = [];
+  for (const story of stories) {
+    for (const lemma of storyLemmas(story)) {
+      if (!lemmas.has(lemma.toLowerCase()) && !glossaryEntry(story, lemma)) {
+        storyErrors.push(`${story.id}: "${lemma}" is neither a card nor in the glossary`);
+      }
+    }
+    try {
+      NotesFileSchema.parse(story.glossary.map((entry) => storyNote(story, entry, '2026-01-01')));
+    } catch (error) {
+      storyErrors.push(`${story.id} glossary: ${(error as Error).message}`);
+    }
+  }
+  if (storyErrors.length) {
+    console.error(`✗ stories:\n  ${storyErrors.join('\n  ')}`);
+    process.exit(1);
+  }
+  console.log(`✓ stories are valid: ${stories.length} stories`);
 } catch (error) {
   console.error(`✗ ${(error as Error).message}`);
   process.exit(1);

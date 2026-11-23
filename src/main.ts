@@ -1,7 +1,9 @@
 import './styles/main.css';
 import rawNotes from './data/cards.json';
 import { App } from './app';
-import { loadGrammar, loadRedemittel, loadStreet } from './content';
+import { loadGrammar, loadRedemittel, loadStories, loadStreet } from './content';
+import { isStoryKey, storyKey, storyNote, storyNotes } from './domain/stories';
+import { StoriesView } from './ui/stories';
 import { parseNotes } from './domain/schema';
 import { sortByBook } from './domain/scope';
 import { openDatabase } from './storage/db';
@@ -38,11 +40,12 @@ const VIEW_NAMES: ViewName[] = [
   'grammar',
   'street',
   'phrases',
+  'stories',
   'search',
   'progress',
   'settings',
 ];
-const LIBRARY: RouteName[] = ['words', 'families', 'grammar', 'street', 'phrases'];
+const LIBRARY: RouteName[] = ['words', 'families', 'grammar', 'street', 'phrases', 'stories'];
 
 async function start(): Promise<void> {
   // Study order: per chapter Kursbuch first, then Arbeitsbuch (cards.json is in the order pages were added).
@@ -53,9 +56,11 @@ async function start(): Promise<void> {
     const keys = app.settings.streetPhrases;
     const day = studyDayLabel(new Date());
     // The list holds street phrases and (prefixed) Redemittel; each content chunk is loaded only when needed.
-    const street = keys.some((key) => !isRedemittelKey(key)) ? streetNotes(await loadStreet(), keys, day) : [];
+    const isStreet = (key: string) => !isRedemittelKey(key) && !isStoryKey(key);
+    const street = keys.some(isStreet) ? streetNotes(await loadStreet(), keys, day) : [];
     const phrases = keys.some(isRedemittelKey) ? redemittelNotes(await loadRedemittel(), keys, day) : [];
-    await app.addNotes([...street, ...phrases].filter((note) => !app.notes.has(note.id)));
+    const words = keys.some(isStoryKey) ? storyNotes(await loadStories(), keys, day) : [];
+    await app.addNotes([...street, ...phrases, ...words].filter((note) => !app.notes.has(note.id)));
   };
   await loadStreetCards();
   const sync = new SyncController(app, loadStreetCards);
@@ -91,6 +96,19 @@ async function start(): Promise<void> {
     },
   };
 
+  const storyCards = {
+    notes: () => app.notes.values(),
+    has: (story: Parameters<typeof storyKey>[0], lemma: string) => app.settings.streetPhrases.includes(storyKey(story, lemma)),
+    async add(story: Parameters<typeof storyKey>[0], lemma: string) {
+      const key = storyKey(story, lemma);
+      if (app.settings.streetPhrases.includes(key)) return;
+      const entry = story.glossary.find((e) => String(e.lemma).toLowerCase() === lemma.toLowerCase());
+      if (!entry) return;
+      await app.updateSettings({ streetPhrases: [...app.settings.streetPhrases, key] });
+      await app.addNotes([storyNote(story, entry, studyDayLabel(new Date()))]);
+    },
+  };
+
   const views = Object.fromEntries(VIEW_NAMES.map((name) => [name, byId(`view-${name}`)])) as Record<ViewName, HTMLElement>;
   const today = new TodayView(app, views.today);
   const study = new StudyView(app, views.study, STUDY_ITEMS);
@@ -103,6 +121,8 @@ async function start(): Promise<void> {
   let grammar: Promise<GrammarView> | null = null;
   let street: Promise<StreetView> | null = null;
   let phrases: Promise<RedemittelView> | null = null;
+  let stories: Promise<StoriesView> | null = null;
+  const storiesView = () => (stories ??= loadStories().then((list) => new StoriesView(list, views.stories, storyCards)));
   const phrasesView = () => (phrases ??= loadRedemittel().then((groups) => new RedemittelView(groups, views.phrases, phraseCards)));
   const grammarView = () => (grammar ??= loadGrammar().then((topics) => new GrammarView(topics, views.grammar, notes)));
   const streetView = () => (street ??= loadStreet().then((topics) => new StreetView(topics, views.street, streetCards)));
@@ -168,6 +188,9 @@ async function start(): Promise<void> {
         break;
       case 'phrases':
         (await phrasesView()).show(next.id);
+        break;
+      case 'stories':
+        (await storiesView()).show(next.id);
         break;
       case 'search':
         search.show(next.query);
