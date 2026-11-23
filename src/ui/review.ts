@@ -8,6 +8,7 @@ import type { CardState } from '../storage/types';
 import { BUTTON_GRADES, formatInterval, previewDueDates, type ButtonGrade } from '../scheduling/fsrs';
 import { genderClass, renderBack, renderFront } from './cardFaces';
 import { h } from './dom';
+import { familiesFor, familyOf } from '../domain/families';
 import { icon } from './icons';
 import { scopeSelect } from './scopeSelect';
 import { speakGerman } from './tts';
@@ -257,7 +258,7 @@ export class ReviewView {
       },
       h('div', { class: 'card-inner' },
         h('div', { class: 'face face-front', 'data-testid': 'front' }, renderFront(note, card.direction), typeInput),
-        h('div', { class: `face face-back ${gender}`, 'data-testid': 'back' }, renderBack(note, card.direction)),
+        h('div', { class: `face face-back ${gender}`, 'data-testid': 'back' }, renderBack(note, card.direction, familyOf(familiesFor(this.app.notes), note))),
       ),
     );
 

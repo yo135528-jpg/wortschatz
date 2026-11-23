@@ -4,6 +4,7 @@ import { checkAnswer, diffWords, type Verdict } from '../domain/answer';
 import {
   artikelQuestions,
   dictationQuestions,
+  familyQuestions,
   grammarQuestions,
   orderQuestions,
   pickRound,
@@ -20,6 +21,7 @@ import { articleQuestions, noArticleQuestions } from '../domain/adjectives';
 import { shuffle } from '../domain/drills';
 import type { Note } from '../domain/schema';
 import { saveSkillAnswer } from '../storage/skillStore';
+import { familiesFor } from '../domain/families';
 import { buildRows } from './browseModel';
 import { ALL_SCOPE, inScope } from '../domain/scope';
 import { scopeSelect } from './scopeSelect';
@@ -108,6 +110,14 @@ export const DRILLS: Record<DrillKind, DrillInfo> = {
     description: 'Türkçesini gör, karışık kelimeleri doğru sıraya diz.',
     fromNotes: true,
     build: ({ notes }) => orderQuestions(notes),
+  },
+  aile: {
+    icon: 'family',
+    title: 'Fiil aileleri',
+    description: 'abbauen mı aufbauen mı? Aynı kökten doğru fiili seç.',
+    fromNotes: true,
+    build: ({ app, notes }) => familyQuestions(notes, familiesFor(app.notes)),
+    emptyText: 'Bu bölümde ailesi olan fiil yok. Tüm kitabı seçerek dene.',
   },
   gramer: {
     icon: 'blank',

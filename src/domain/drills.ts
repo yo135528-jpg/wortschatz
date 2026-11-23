@@ -2,6 +2,7 @@ import { buildHeadword, headwordToString } from './format';
 import type { GrammarTopic } from './grammar';
 import { parseInline } from './grammar';
 import type { Note } from './schema';
+import { familyOf, memberLabel, PREFIX_MEANINGS, type VerbFamily } from './families';
 import type { RedemittelGroup } from './redemittel';
 import { REGISTER_LABELS, topicPhrases, type StreetTopic } from './street';
 
@@ -20,7 +21,8 @@ export type DrillKind =
   | 'satzbau'
   | 'gramer'
   | 'sokak'
-  | 'kalip';
+  | 'kalip'
+  | 'aile';
 
 export type Field =
   | { kind: 'choice'; label: string; options: string[]; answer: string }
@@ -366,4 +368,36 @@ export const ROUND_SIZE = 15;
 /** Picks a round: random order, optionally capped. */
 export function pickRound(questions: Question[], size = ROUND_SIZE, random: Random = Math.random): Question[] {
   return shuffle(questions, random).slice(0, size);
+}
+
+// ---------- Verb families ----------
+
+/**
+ * "Which prefix?": the Turkish meaning plus the stem, options are the verb's own family
+ * (abbauen / aufbauen / umbauen), so the learner has to tell the relatives apart.
+ * Families come from all notes; questions only for the notes in scope.
+ */
+export function familyQuestions(notes: Note[], families: Map<string, VerbFamily>, random: Random = Math.random): Question[] {
+  return notes.flatMap((note) => {
+    const family = familyOf(families, note);
+    const self = family?.members.find((m) => m.note.id === note.id);
+    if (!family || !self) return [];
+    const answer = memberLabel(self);
+    const others = shuffle(
+      [...new Set(family.members.filter((m) => m.note.id !== note.id).map(memberLabel))].filter((label) => label !== answer),
+      random,
+    ).slice(0, 3);
+    const meaning = self.prefix ? PREFIX_MEANINGS[self.prefix] : undefined;
+    return [
+      {
+        id: note.id,
+        title: note.meaningTr,
+        subtitle: `kök: ${family.stem}`,
+        fields: [{ kind: 'choice', label: 'Fiil', options: shuffle([answer, ...others], random), answer }],
+        solution: answer,
+        explain: [meaning && `${self.prefix}-: ${meaning}`, note.examples[0]?.de].filter(Boolean).join(' · '),
+        skill: 'aile',
+      } satisfies Question,
+    ];
+  });
 }
