@@ -8,6 +8,7 @@ const SKILL_LABELS: Record<string, { label: string; route: Route }> = {
   artikel: { label: 'der · die · das', route: { name: 'drill', kind: 'artikel' } },
   verben: { label: 'Fiil çekimleri', route: { name: 'drill', kind: 'verben' } },
   rektion: { label: 'Fiil + edat', route: { name: 'drill', kind: 'rektion' } },
+  aile: { label: 'Fiil aileleri (ön ekler)', route: { name: 'drill', kind: 'aile' } },
   satzbau: { label: 'Cümle kurma (kelime sırası)', route: { name: 'drill', kind: 'satzbau' } },
   'adjektiv:none': { label: 'Sıfat çekimi: artikelsiz', route: { name: 'drill', kind: 'adjektiv' } },
   'adjektiv:definite': { label: 'Sıfat çekimi: der/die/das ile', route: { name: 'drill', kind: 'adjektiv' } },

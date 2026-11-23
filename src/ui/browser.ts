@@ -18,6 +18,8 @@ import {
 } from './browseModel';
 import { renderBack } from './cardFaces';
 import { h } from './dom';
+import { familiesFor, familyOf } from '../domain/families';
+import { href } from './router';
 
 const STATUS_LABELS: Record<NoteStatus, string> = {
   new: 'Yeni',
@@ -117,6 +119,7 @@ export class BrowserView {
           h('span', { class: 'g-die' }, 'die'),
           h('span', { class: 'g-das' }, 'das'),
         ),
+        h('a', { class: 'browse-families', href: href({ name: 'families', stem: null }), 'data-testid': 'families-link' }, 'Fiil aileleri'),
       ),
       h(
         'div',
@@ -267,7 +270,7 @@ export class BrowserView {
     return h(
       'div',
       { class: 'note-details' },
-      renderBack(note, 'tr2de'),
+      renderBack(note, 'tr2de', familyOf(familiesFor(this.app.notes), note)),
       h('div', { class: 'card-rows' }, h('div', { class: 'card-rows-title' }, 'Çalışma durumu'), ...rows),
     );
   }

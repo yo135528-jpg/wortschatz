@@ -7,6 +7,7 @@ import { sortByBook } from './domain/scope';
 import { openDatabase } from './storage/db';
 import type { StudyMode } from './storage/types';
 import { BrowserView } from './ui/browser';
+import { FamiliesView } from './ui/families';
 import { byId, h } from './ui/dom';
 import { GrammarView } from './ui/grammar';
 import { RedemittelView, type RedemittelCardActions } from './ui/redemittel';
@@ -33,6 +34,7 @@ const VIEW_NAMES: ViewName[] = [
   'review',
   'drill',
   'words',
+  'families',
   'grammar',
   'street',
   'phrases',
@@ -40,7 +42,7 @@ const VIEW_NAMES: ViewName[] = [
   'progress',
   'settings',
 ];
-const LIBRARY: RouteName[] = ['words', 'grammar', 'street', 'phrases'];
+const LIBRARY: RouteName[] = ['words', 'families', 'grammar', 'street', 'phrases'];
 
 async function start(): Promise<void> {
   // Study order: per chapter Kursbuch first, then Arbeitsbuch (cards.json is in the order pages were added).
@@ -95,6 +97,7 @@ async function start(): Promise<void> {
   const review = new ReviewView(app, views.review);
   const drill = new DrillView(app, views.drill);
   const browser = new BrowserView(app, views.words);
+  const families = new FamiliesView(app, views.families);
   const search = new SearchView(app, views.search);
   // Reference content is loaded lazily on first visit (separate chunks).
   let grammar: Promise<GrammarView> | null = null;
@@ -132,7 +135,8 @@ async function start(): Promise<void> {
     modeToggle.hidden = next.name !== 'review';
     libraryNav.hidden = !LIBRARY.includes(next.name);
     libraryNav.querySelectorAll<HTMLAnchorElement>('[data-lib]').forEach((link) => {
-      link.setAttribute('aria-current', String(link.dataset.lib === next.name));
+      // Verb families are a sub-screen of the word list.
+      link.setAttribute('aria-current', String(link.dataset.lib === (next.name === 'families' ? 'words' : next.name)));
     });
     // The settings link exists only in the wide-screen side rail.
     const tab = next.name === 'settings' ? 'settings' : tabOf(next);
@@ -152,6 +156,9 @@ async function start(): Promise<void> {
         break;
       case 'words':
         browser.focus(next.id);
+        break;
+      case 'families':
+        families.show(next.stem);
         break;
       case 'grammar':
         (await grammarView()).show(next.id);

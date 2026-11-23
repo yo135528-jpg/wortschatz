@@ -153,6 +153,7 @@ export const NotesFileSchema = z.array(NoteSchema).superRefine((notes, ctx) => {
 
 export type Note = z.infer<typeof NoteSchema>;
 export type NoteType = Note['type'];
+export type VerbNote = Extract<Note, { type: 'verb' }>;
 export type Direction = z.infer<typeof DirectionSchema>;
 export type Rektion = z.infer<typeof RektionSchema>;
 

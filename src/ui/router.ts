@@ -8,6 +8,7 @@ export type Route =
   | { name: 'review' }
   | { name: 'drill'; kind: string }
   | { name: 'words'; id: string | null }
+  | { name: 'families'; stem: string | null }
   | { name: 'grammar'; id: string | null }
   | { name: 'street'; id: string | null }
   | { name: 'phrases'; id: string | null }
@@ -30,6 +31,7 @@ export function tabOf(route: Route): Tab | null {
     case 'drill':
       return 'study';
     case 'words':
+    case 'families':
     case 'grammar':
     case 'street':
     case 'phrases':
@@ -51,6 +53,7 @@ export function parseRoute(hash: string): Route {
       if (sub) return { name: 'drill', kind: sub };
       return { name: 'study' };
     case 'library':
+      if (sub === 'families') return { name: 'families', stem: id ?? null };
       if (sub === 'grammar') return { name: 'grammar', id: id ?? null };
       if (sub === 'street') return { name: 'street', id: id ?? null };
       if (sub === 'redemittel') return { name: 'phrases', id: id ?? null };
@@ -78,6 +81,8 @@ export function routeHash(route: Route): string {
       return `#/study/${encodeURIComponent(route.kind)}`;
     case 'words':
       return route.id ? `#/library/words/${encodeURIComponent(route.id)}` : '#/library/words';
+    case 'families':
+      return route.stem ? `#/library/families/${encodeURIComponent(route.stem)}` : '#/library/families';
     case 'grammar':
       return route.id ? `#/library/grammar/${encodeURIComponent(route.id)}` : '#/library/grammar';
     case 'street':

@@ -1202,3 +1202,23 @@ button, a.button { border-color: transparent; background: var(--surface-2); bord
 .street-check-result { padding: 0.6rem 0.8rem; border-radius: 10px; font-size: 0.92rem; }
 .street-check-result.is-correct { background: color-mix(in srgb, var(--good) 14%, transparent); }
 .street-check-result.is-wrong { background: color-mix(in srgb, var(--again) 12%, transparent); }
+
+/* ---------- Verb families ---------- */
+.family { text-align: left; background: var(--surface-2); border-radius: 10px; padding: 0.6rem 0.75rem; display: grid; gap: 0.35rem; }
+.family-title { font-size: 0.85rem; color: var(--muted); display: flex; gap: 0.4rem; align-items: baseline; }
+.family-title strong { color: var(--text); }
+.family-hint { font-size: 0.85rem; color: var(--muted); }
+.family-hint strong { color: var(--accent); }
+.family-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.25rem; }
+.family-list li { display: flex; flex-wrap: wrap; gap: 0.15rem 0.5rem; align-items: baseline; padding: 0.1rem 0.35rem; border-radius: 6px; }
+.family-list li.is-current { background: color-mix(in srgb, var(--accent) 12%, transparent); }
+.family-word { font-weight: 600; }
+.family-prefix { color: var(--accent); }
+.family-meaning { color: var(--muted); font-size: 0.9rem; }
+.family-prefix-tr { flex-basis: 100%; color: var(--muted); font-size: 0.78rem; }
+.family-more { font-size: 0.85rem; color: var(--accent); justify-self: start; }
+.family-list a { color: inherit; text-decoration: none; }
+.family-page { display: grid; gap: 0.7rem; margin-top: 0.7rem; }
+.family-card.is-highlighted { outline: 2px solid var(--accent); }
+.browse-families { color: var(--accent); font-weight: 600; text-decoration: none; }
+.family-card { scroll-margin-top: 5rem; }

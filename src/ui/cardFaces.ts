@@ -3,6 +3,7 @@ import { grammarTopicsFor } from '../domain/links';
 import { href } from './router';
 import { clozeSolved, clozeWithGaps, parseCloze } from '../domain/cloze';
 import { buildHeadword, typeLabelTr, type Headword } from '../domain/format';
+import { PREFIX_MEANINGS, type FamilyMember, type VerbFamily } from '../domain/families';
 import type { Direction, Note } from '../domain/schema';
 import { h } from './dom';
 import { icon } from './icons';
@@ -91,7 +92,7 @@ export function renderFront(note: Note, direction: Direction): HTMLElement {
 }
 
 /** Back side: the answer plus context. */
-export function renderBack(note: Note, direction: Direction): HTMLElement {
+export function renderBack(note: Note, direction: Direction, family: VerbFamily | null = null): HTMLElement {
   if (direction === 'de2tr') {
     return h(
       'div',
@@ -101,6 +102,7 @@ export function renderBack(note: Note, direction: Direction): HTMLElement {
       examplesView(note),
       grammarView(note),
       noteView(note),
+      familyView(note, family),
       grammarLinks(note),
     );
   }
@@ -113,7 +115,57 @@ export function renderBack(note: Note, direction: Direction): HTMLElement {
     examplesView(note),
     grammarView(note),
     noteView(note),
+    familyView(note, family),
     grammarLinks(note),
+  );
+}
+
+/** Prefix highlighted: "**auf**·bauen", "**ver**arbeiten". */
+export function memberWord(member: FamilyMember): HTMLElement {
+  const { lemma } = member.note;
+  if (!member.prefix) return h('span', { class: 'family-word' }, lemma);
+  const cut = member.prefix.length;
+  return h(
+    'span',
+    { class: 'family-word' },
+    h('strong', { class: 'family-prefix' }, lemma.slice(0, cut)),
+    member.separable ? '·' : '',
+    lemma.slice(cut),
+  );
+}
+
+/** "Aynı kökten": the prefixed relatives of a verb, with what this verb's prefix adds. */
+function familyView(note: Note, family: VerbFamily | null): HTMLElement | null {
+  if (!family) return null;
+  const self = family.members.find((m) => m.note.id === note.id);
+  const meaning = self?.prefix ? PREFIX_MEANINGS[self.prefix] : undefined;
+  return h(
+    'div',
+    { class: 'family', 'data-testid': 'family' },
+    h('div', { class: 'family-title' }, 'Aynı kökten · ', h('strong', {}, family.stem)),
+    meaning && h('div', { class: 'family-hint' }, h('strong', {}, `${self!.prefix}-`), ` ${meaning}`),
+    h(
+      'ul',
+      { class: 'family-list' },
+      ...family.members.map((member) =>
+        h(
+          'li',
+          { class: member.note.id === note.id ? 'is-current' : '' },
+          memberWord(member),
+          h('span', { class: 'family-meaning' }, member.note.meaningTr),
+        ),
+      ),
+    ),
+    h(
+      'a',
+      {
+        class: 'family-more',
+        href: href({ name: 'families', stem: family.stem }),
+        // Inside a card: following the link must not flip it.
+        onclick: (event: Event) => event.stopPropagation(),
+      },
+      'Tüm aileler',
+    ),
   );
 }
 

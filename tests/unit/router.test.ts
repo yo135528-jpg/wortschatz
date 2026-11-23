@@ -9,6 +9,8 @@ describe('router', () => {
     { name: 'drill', kind: 'artikel' },
     { name: 'words', id: null },
     { name: 'words', id: 'entscheidung-86e2' },
+    { name: 'families', stem: null },
+    { name: 'families', stem: 'bauen' },
     { name: 'grammar', id: null },
     { name: 'grammar', id: 'passiv' },
     { name: 'street', id: 'fluchen' },
@@ -31,6 +33,7 @@ describe('router', () => {
   it('maps routes to bottom-bar tabs', () => {
     expect(tabOf({ name: 'review' })).toBe('study');
     expect(tabOf({ name: 'grammar', id: 'passiv' })).toBe('library');
+    expect(tabOf({ name: 'families', stem: null })).toBe('library');
     expect(tabOf({ name: 'settings' })).toBeNull();
   });
 });
