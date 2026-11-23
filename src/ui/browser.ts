@@ -270,7 +270,7 @@ export class BrowserView {
     return h(
       'div',
       { class: 'note-details' },
-      renderBack(note, 'tr2de', familyOf(familiesFor(this.app.notes), note)),
+      renderBack(note, 'tr2de', familyOf(familiesFor(this.app.notes), note), false),
       h('div', { class: 'card-rows' }, h('div', { class: 'card-rows-title' }, 'Çalışma durumu'), ...rows),
     );
   }

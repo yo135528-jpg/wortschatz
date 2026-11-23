@@ -12,6 +12,11 @@ import { familiesFor, familyOf } from '../domain/families';
 import { icon } from './icons';
 import { scopeSelect } from './scopeSelect';
 import { speakGerman } from './tts';
+import { confetti, haptic, pause } from './motion';
+
+/** Where a rated card flies out. */
+const FLY: Record<ButtonGrade, string> = { 1: 'left', 2: 'down', 3: 'right', 4: 'up' };
+const SWIPE_THRESHOLD = 90;
 
 /** Stable ids for test ids; the visible labels are Turkish. */
 const BUTTON_IDS: Record<ButtonGrade, string> = { 1: 'again', 2: 'hard', 3: 'good', 4: 'easy' };
@@ -31,6 +36,12 @@ export class ReviewView {
   private optionsOpen = false;
   /** Card whose German side was already read aloud (re-renders must not repeat it). */
   private spokenKey: string | null = null;
+  /** Correct answers in a row (Gut/Leicht), shown as a combo chip. */
+  private combo = 0;
+  /** The finish confetti runs once per session. */
+  private celebrated = false;
+  /** Progress of the previous render, so the bar animates from there. */
+  private lastPercent = 0;
 
   constructor(
     private readonly app: App,
@@ -130,12 +141,68 @@ export class ReviewView {
     if (!this.current || this.busy) return;
     this.busy = true;
     try {
-      // App emits a change event after saving, which calls refresh().
       this.session[grade]++;
+      this.combo = grade >= 3 ? this.combo + 1 : 0;
+      haptic(grade === 1 ? [12, 40, 12] : 8);
+      // The card leaves in the direction of the answer before the next one comes in.
+      const cardElement = this.root.querySelector<HTMLElement>('.card');
+      if (cardElement) {
+        cardElement.style.transform = '';
+        cardElement.classList.add(`fly-${FLY[grade]}`);
+        await pause(220);
+      }
+      // App emits a change event after saving, which calls refresh().
       await this.app.rate(this.current.key, grade);
     } finally {
       this.busy = false;
     }
+  }
+
+  /** Swipe on the answer side: right = İyi, left = Tekrar (like a card stack). */
+  private attachSwipe(cardElement: HTMLElement): void {
+    let startX = 0;
+    let startY = 0;
+    let dx = 0;
+    let tracking = false;
+    let horizontal: boolean | null = null;
+    const reset = () => {
+      cardElement.classList.remove('is-dragging');
+      cardElement.style.transform = '';
+      cardElement.style.removeProperty('--swipe');
+      delete cardElement.dataset.swipe;
+    };
+    cardElement.addEventListener('pointerdown', (event) => {
+      if (!this.flipped || this.busy || (event.target as HTMLElement).closest('button, a, input, summary')) return;
+      tracking = true;
+      horizontal = null;
+      startX = event.clientX;
+      startY = event.clientY;
+      dx = 0;
+    });
+    cardElement.addEventListener('pointermove', (event) => {
+      if (!tracking) return;
+      dx = event.clientX - startX;
+      const dy = event.clientY - startY;
+      if (horizontal === null && Math.hypot(dx, dy) > 8) horizontal = Math.abs(dx) > Math.abs(dy);
+      if (!horizontal) return;
+      cardElement.classList.add('is-dragging');
+      cardElement.style.transform = `translateX(${dx}px) rotate(${dx / 22}deg)`;
+      cardElement.style.setProperty('--swipe', String(Math.min(1, Math.abs(dx) / SWIPE_THRESHOLD)));
+      cardElement.dataset.swipe = dx > 0 ? 'good' : 'again';
+    });
+    const end = () => {
+      if (!tracking) return;
+      tracking = false;
+      if (horizontal && Math.abs(dx) >= SWIPE_THRESHOLD) {
+        cardElement.classList.remove('is-dragging');
+        void this.rate(dx > 0 ? 3 : 1);
+      } else reset();
+    };
+    cardElement.addEventListener('pointerup', end);
+    cardElement.addEventListener('pointercancel', () => {
+      tracking = false;
+      reset();
+    });
   }
 
   private toolbar(remaining: number | null): HTMLElement {
@@ -247,7 +314,7 @@ export class ReviewView {
     const cardElement = h(
       'div',
       {
-        class: `card ${card.direction === 'de2tr' ? gender : ''}`,
+        class: `card card-enter ${card.direction === 'de2tr' ? gender : ''}`,
         'data-testid': 'card',
         'data-direction': card.direction,
         'data-key': card.key,
@@ -256,6 +323,8 @@ export class ReviewView {
         'aria-label': 'Kartı çevir',
         onclick: () => (typeInput ? this.checkTyped(note, typeInput) : this.flip()),
       },
+      h('span', { class: 'swipe-label swipe-good', 'aria-hidden': 'true' }, 'İYİ'),
+      h('span', { class: 'swipe-label swipe-again', 'aria-hidden': 'true' }, 'TEKRAR'),
       h('div', { class: 'card-inner' },
         h('div', { class: 'face face-front', 'data-testid': 'front' }, renderFront(note, card.direction), typeInput),
         h('div', { class: `face face-back ${gender}`, 'data-testid': 'back' }, renderBack(note, card.direction, familyOf(familiesFor(this.app.notes), note))),
@@ -283,13 +352,18 @@ export class ReviewView {
 
     const done = this.app.reviewedToday(now);
     const percent = Math.round((done / Math.max(1, done + remaining)) * 100);
+    const fill = h('div', { class: 'progress-fill', style: `width:${this.lastPercent}%` });
+    requestAnimationFrame(() => requestAnimationFrame(() => (fill.style.width = `${percent}%`)));
+    this.lastPercent = percent;
+    this.attachSwipe(cardElement);
     this.root.append(
       this.toolbar(remaining),
       h(
         'div',
-        { class: 'progress thin', role: 'progressbar', 'aria-label': 'Bugünkü ilerleme', 'aria-valuenow': percent, 'aria-valuemin': 0, 'aria-valuemax': 100 },
-        h('div', { class: 'progress-fill', style: `width:${percent}%` }),
+        { class: 'progress thin review-progress', role: 'progressbar', 'aria-label': 'Bugünkü ilerleme', 'aria-valuenow': percent, 'aria-valuemin': 0, 'aria-valuemax': 100 },
+        fill,
       ),
+      ...(this.combo >= 3 ? [h('p', { class: 'combo', 'data-testid': 'combo' }, icon('flame'), `${this.combo} doğru üst üste`)] : []),
       h('p', { class: 'typed-verdict', 'data-testid': 'typed-verdict', hidden: true }),
       cardElement,
       // Sticky above the tab bar, so the buttons stay under the thumb however long the card is.
@@ -308,6 +382,7 @@ export class ReviewView {
           h('kbd', {}, typeInput ? 'Enter' : 'Space'),
         ),
         answerBar,
+        h('p', { class: 'swipe-hint' }, 'Sağa kaydır: İyi · Sola kaydır: Tekrar'),
       ),
     );
     typeInput?.focus({ preventScroll: true });
@@ -315,6 +390,13 @@ export class ReviewView {
   }
 
   private renderEmpty(): HTMLElement {
+    const rated = this.session[1] + this.session[2] + this.session[3] + this.session[4];
+    if (rated > 0 && !this.celebrated && this.isVisible()) {
+      this.celebrated = true;
+      haptic([10, 60, 10, 60, 30]);
+      requestAnimationFrame(() => confetti());
+    }
+    const streak = this.app.stats().streak;
     const next = this.app.nextLearningDue();
     if (next) {
       // Re-check automatically when the next learning step becomes due.
@@ -323,8 +405,9 @@ export class ReviewView {
     return h(
       'div',
       { class: 'empty', 'data-testid': 'empty' },
-      h('div', { class: 'empty-icon' }, icon('check')),
-      h('p', {}, this.app.settings.scope ? 'Bu bölümde bugünlük bu kadar!' : 'Bugünlük bu kadar!'),
+      h('div', { class: `empty-icon ${rated > 0 ? 'is-done' : ''}` }, icon('check')),
+      h('p', { class: 'empty-title' }, this.app.settings.scope ? 'Bu bölümde bugünlük bu kadar!' : 'Bugünlük bu kadar!'),
+      streak > 0 && h('p', { class: 'empty-streak' }, icon('flame'), `${streak} günlük seri`),
       next && h('p', { class: 'muted' }, `Sıradaki öğrenme kartı ${formatInterval(new Date(), next)} sonra.`),
       this.app.hasNewCards() &&
         h(

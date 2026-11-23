@@ -3,6 +3,7 @@ import { chapterOf } from '../domain/scope';
 import { activityCalendar, dueForecast, groupProgress, type DayCount } from '../scheduling/stats';
 import { h } from './dom';
 import { icon, type IconName } from './icons';
+import { countUp } from './motion';
 
 function tile(label: string, value: string, testId: string, iconName?: IconName): HTMLElement {
   return h(
@@ -158,9 +159,9 @@ export function renderStats(app: App, root: HTMLElement): void {
       tile('Seri (gün)', String(stats.streak), 'stat-streak', 'flame'),
       tile('Toplam tekrar', String(app.reviewLogs.length), 'stat-total'),
     ),
-    forecastChart(dueForecast(app.allStates, now)),
-    heatmap(activityCalendar([...app.reviewLogs], now)),
     chapterChart(app),
+    heatmap(activityCalendar([...app.reviewLogs], now)),
+    forecastChart(dueForecast(app.allStates, now)),
     h(
       'p',
       { class: 'muted small' },
@@ -169,4 +170,14 @@ export function renderStats(app: App, root: HTMLElement): void {
       )}%. Oturmuş: kartın hafızada en az 3 hafta kalacağı tahmin ediliyor.`,
     ),
   );
+  // Numbers count up and the chapter meters grow in, so progress feels earned.
+  root.querySelectorAll<HTMLElement>('.stat-value span[data-testid]').forEach((element) => {
+    const value = Number(element.textContent);
+    if (Number.isInteger(value) && value > 0) countUp(element, value);
+  });
+  root.querySelectorAll<HTMLElement>('.meter span').forEach((bar) => {
+    const width = bar.style.width;
+    bar.style.width = '0';
+    requestAnimationFrame(() => requestAnimationFrame(() => (bar.style.width = width)));
+  });
 }

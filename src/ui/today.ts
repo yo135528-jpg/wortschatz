@@ -9,6 +9,7 @@ import { h } from './dom';
 import { icon } from './icons';
 import { href, navigate } from './router';
 import { speakButton } from './tts';
+import { countUp } from './motion';
 import { loadWeakSpots } from './weakSpots';
 
 /** Home screen: what to do today, plus a phrase and a grammar topic of the day. */
@@ -31,47 +32,76 @@ export class TodayView {
     const total = done + remaining;
     const percent = total === 0 ? 100 : Math.round((done / total) * 100);
 
-    const row = (label: string, value: string, valueClass = '') =>
-      h('div', { class: 'today-row' }, h('span', {}, label), h('span', { class: `today-row-value ${valueClass}` }, value));
+    // Hero: a progress ring with today's cards, the streak, and one big action.
+    const ringSize = 132;
+    const radius = 56;
+    const circumference = 2 * Math.PI * radius;
+    const ring = svgRing(ringSize, radius, circumference, percent);
+    const centerNumber = h('span', { class: 'ring-number' }, String(remaining > 0 ? remaining : done));
 
-    // iOS-style layout: date + large title, one grouped card with the numbers, then the main action.
+    const allDone = remaining === 0 && done > 0;
     const plan = h(
       'section',
-      { class: 'today-plan', 'data-testid': 'today-plan' },
+      { class: `today-plan today-hero ${allDone ? 'is-done' : ''}`, 'data-testid': 'today-plan' },
       h(
         'div',
         { class: 'today-head' },
         h('p', { class: 'today-date' }, now.toLocaleDateString('tr-TR', { weekday: 'long', day: 'numeric', month: 'long' })),
-        h('h1', { class: 'today-title' }, 'Bugün'),
+        h('h1', { class: 'today-title' }, greeting(now)),
       ),
       h(
         'div',
-        { class: 'today-group' },
+        { class: 'hero-row' },
         h(
           'div',
-          { class: 'today-group-main' },
-          remaining > 0
-            ? h('h2', {}, `${remaining} kart seni bekliyor`)
-            : h('h2', {}, done > 0 ? 'Bugünlük kartlar bitti' : 'Bugün tekrar edilecek kart yok'),
-          h(
-            'div',
-            { class: 'progress', role: 'progressbar', 'aria-valuenow': percent, 'aria-valuemin': 0, 'aria-valuemax': 100 },
-            h('div', { class: 'progress-fill', style: `width:${percent}%` }),
-          ),
+          { class: 'ring', role: 'img', 'aria-label': `Bugünkü ilerleme yüzde ${percent}` },
+          ring,
+          h('div', { class: 'ring-center' }, allDone ? icon('check') : centerNumber, h('span', { class: 'ring-caption' }, allDone ? 'tamam' : remaining > 0 ? 'kart kaldı' : 'kart')),
         ),
-        remaining > 0 ? row('Yeni', String(newCount)) : null,
-        remaining > 0 ? row('Tekrar', String(remaining - newCount)) : null,
-        row('Bugün çalışılan', `${done} kart`),
-        row('Seri', `${stats.streak} gün`, 'streak'),
+        h(
+          'div',
+          { class: 'hero-side' },
+          h('p', { class: `streak-chip ${stats.streak > 0 ? 'is-on' : ''}` }, icon('flame'), h('strong', {}, String(stats.streak)), ' günlük seri'),
+          remaining > 0
+            ? h(
+                'p',
+                { class: 'hero-pills' },
+                h('span', { class: 'pill pill-new' }, `${newCount} yeni`),
+                h('span', { class: 'pill pill-review' }, `${remaining - newCount} tekrar`),
+              )
+            : null,
+          h('p', { class: 'hero-note' }, remaining > 0 ? `${remaining} kart seni bekliyor` : done > 0 ? `Bugün ${done} kart çalıştın` : 'Bugün tekrar edilecek kart yok'),
+        ),
       ),
       remaining > 0
         ? h(
             'button',
-            { type: 'button', class: 'primary big', 'data-testid': 'start-review', onclick: () => navigate({ name: 'review' }) },
-            'Çalışmaya başla',
+            { type: 'button', class: 'primary big hero-start', 'data-testid': 'start-review', onclick: () => navigate({ name: 'review' }) },
+            icon('play'),
+            done > 0 ? 'Devam et' : 'Başla',
           )
-        : h('a', { class: 'button big', href: href({ name: 'study' }) }, 'Antrenman yap'),
+        : h(
+            'div',
+            { class: 'hero-actions' },
+            this.app.hasNewCards()
+              ? h(
+                  'button',
+                  {
+                    type: 'button',
+                    class: 'primary big',
+                    'data-testid': 'today-extra-new',
+                    onclick: () => {
+                      this.app.addExtraNew(10);
+                      navigate({ name: 'review' });
+                    },
+                  },
+                  '+10 yeni kart',
+                )
+              : null,
+            h('a', { class: 'button big', href: href({ name: 'study' }) }, 'Antrenman yap'),
+          ),
     );
+    if (remaining > 0) countUp(centerNumber, remaining, 600);
 
     const search = h(
       'form',
@@ -153,4 +183,40 @@ export class TodayView {
     ];
     target.replaceChildren(...cards.filter((card): card is HTMLElement => card !== null));
   }
+}
+
+function greeting(now: Date): string {
+  const hour = now.getHours();
+  if (hour < 5) return 'İyi geceler';
+  if (hour < 12) return 'Günaydın';
+  if (hour < 18) return 'İyi günler';
+  return 'İyi akşamlar';
+}
+
+const SVG_NS = 'http://www.w3.org/2000/svg';
+
+/** Circular progress ring; the arc animates from empty to `percent`. */
+function svgRing(size: number, radius: number, circumference: number, percent: number): SVGSVGElement {
+  const svg = document.createElementNS(SVG_NS, 'svg');
+  svg.setAttribute('viewBox', `0 0 ${size} ${size}`);
+  svg.setAttribute('width', String(size));
+  svg.setAttribute('height', String(size));
+  svg.setAttribute('aria-hidden', 'true');
+  const circle = (cls: string) => {
+    const c = document.createElementNS(SVG_NS, 'circle');
+    c.setAttribute('cx', String(size / 2));
+    c.setAttribute('cy', String(size / 2));
+    c.setAttribute('r', String(radius));
+    c.setAttribute('class', cls);
+    return c;
+  };
+  const track = circle('ring-track');
+  const fill = circle('ring-fill');
+  fill.style.strokeDasharray = String(circumference);
+  fill.style.strokeDashoffset = String(circumference);
+  requestAnimationFrame(() =>
+    requestAnimationFrame(() => (fill.style.strokeDashoffset = String(circumference * (1 - percent / 100)))),
+  );
+  svg.append(track, fill);
+  return svg;
 }
