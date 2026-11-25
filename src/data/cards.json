@@ -46897,19 +46897,19 @@
       "plural": "-n"
     },
     "rektion": [],
-    "meaningTr": "vicdani soru, ahlaki ikilem",
+    "meaningTr": "ahlaki ikilem",
     "hintTr": "isim",
     "cloze": "In der Zeitschrift beantwortet eine Expertin jede Woche [eine] [Gewissensfrage].",
-    "clozeTr": "Dergide bir uzman her hafta bir vicdani soruyu yanıtlıyor.",
+    "clozeTr": "Dergide bir uzman her hafta okurların bir ahlaki ikilemini yanıtlıyor.",
     "examples": [
       {
         "de": "Lesen Sie die Gewissensfrage eines Lesers.",
-        "tr": "Bir okurun vicdani sorusunu okuyun.",
+        "tr": "Bir okurun ikilemini okuyun.",
         "fromBook": true
       }
     ],
     "grammarTr": null,
-    "note": null,
+    "note": "Tam Türkçe karşılığı yok: insanın 'doğrusu ne, yanlış mı yapıyorum?' diye sorduğu ahlak ya da görgü sorusu.",
     "directions": [
       "de2tr",
       "tr2de"
