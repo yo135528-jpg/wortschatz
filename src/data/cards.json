@@ -52636,5 +52636,177 @@
       "lektionstest"
     ],
     "createdAt": "2026-11-23"
+  },
+  {
+    "id": "ein-paar-worte-wechseln-b559",
+    "type": "expression",
+    "lemma": "ein paar Worte wechseln",
+    "rektion": [
+      {
+        "preposition": "mit",
+        "case": "Dat"
+      }
+    ],
+    "meaningTr": "(biriyle) birkaç kelime konuşmak, ayaküstü sohbet etmek",
+    "hintTr": "kalıp + mit",
+    "cloze": "Im Treppenhaus [wechseln] wir manchmal [ein] [paar] [Worte].",
+    "clozeTr": "Merdivenlerde bazen birkaç kelime konuşuyoruz.",
+    "examples": [
+      {
+        "de": "Aus Höflichkeit sollten Sie mit Kollegen aus Ihrer Abteilung auch ein, zwei Worte wechseln.",
+        "tr": "Nezaketen kendi bölümünüzdeki iş arkadaşlarınızla da bir iki kelime konuşmalısınız.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "Kitapta 'ein, zwei Worte wechseln' biçiminde geçiyor; anlam aynı.",
+    "directions": [
+      "de2tr",
+      "tr2de"
+    ],
+    "source": "Kursbuch, Kapitel 2, S. 32",
+    "tags": [
+      "kapitel-2",
+      "arbeit",
+      "hoeflichkeit"
+    ],
+    "createdAt": "2026-11-25"
+  },
+  {
+    "id": "ein-gespraech-fuehren-ddba",
+    "type": "expression",
+    "lemma": "ein Gespräch führen",
+    "rektion": [],
+    "meaningTr": "görüşme yapmak, sohbet etmek",
+    "hintTr": "isim + fiil kalıbı",
+    "cloze": "Morgen [führe] ich [ein] [Gespräch] mit meiner Chefin.",
+    "clozeTr": "Yarın şefimle bir görüşme yapacağım.",
+    "examples": [
+      {
+        "de": "Wenn Sie aber vor Müdigkeit kein weiteres Gespräch führen können, ist das auch in Ordnung.",
+        "tr": "Ama yorgunluktan daha fazla sohbet edemiyorsanız, bu da sorun değil.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "'ein Gespräch machen' denmez.",
+    "directions": [
+      "de2tr",
+      "tr2de"
+    ],
+    "source": "Kursbuch, Kapitel 2, S. 32",
+    "tags": [
+      "kapitel-2",
+      "arbeit",
+      "hoeflichkeit",
+      "nomen-verb"
+    ],
+    "createdAt": "2026-11-25"
+  },
+  {
+    "id": "verbringen-6554",
+    "type": "verb",
+    "lemma": "verbringen",
+    "rektion": [],
+    "meaningTr": "(zaman) geçirmek",
+    "hintTr": "fiil, + Akk (Zeit, Urlaub)",
+    "cloze": "Wir [haben] den ganzen Sommer am Meer [verbracht].",
+    "clozeTr": "Bütün yazı deniz kenarında geçirdik.",
+    "examples": [
+      {
+        "de": "Aufgrund Ihres langen Weges zur Arbeit verbringen Sie viel Zeit in der Bahn.",
+        "tr": "İş yolunuz uzun olduğu için trende çok zaman geçiriyorsunuz.",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": "verbringen – verbrachte – hat verbracht (düzensiz).",
+    "note": "sich die Zeit vertreiben = can sıkıntısını gidermek için oyalanmak; verbringen = zamanı bir yerde/bir şekilde geçirmek.",
+    "directions": [
+      "de2tr",
+      "tr2de"
+    ],
+    "source": "Kursbuch, Kapitel 2, S. 32",
+    "tags": [
+      "kapitel-2",
+      "arbeit",
+      "hoeflichkeit"
+    ],
+    "createdAt": "2026-11-25",
+    "verb": {
+      "reflexive": null,
+      "separablePrefix": null,
+      "praeteritum": "verbrachte",
+      "partizip2": "verbracht",
+      "auxiliary": "haben"
+    }
+  },
+  {
+    "id": "etwas-fuer-etwas-halten-c2e3",
+    "type": "expression",
+    "lemma": "etwas für etwas halten",
+    "rektion": [
+      {
+        "preposition": "für",
+        "case": "Akk"
+      }
+    ],
+    "meaningTr": "(bir şeyi) … olarak görmek, … bulmak",
+    "hintTr": "kalıp, für + Akk",
+    "cloze": "Ich [halte] diese Idee [für] gefährlich.",
+    "clozeTr": "Bu fikri tehlikeli buluyorum.",
+    "examples": [
+      {
+        "de": "Ich halte das für unhöflich, denn jeder ist gezwungen mitzuhören.",
+        "tr": "Bunu kaba buluyorum, çünkü herkes istemeden dinlemek zorunda kalıyor.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": "halten – hielt – hat gehalten; jemanden für klug halten = birini akıllı sanmak.",
+    "note": null,
+    "directions": [
+      "de2tr",
+      "tr2de"
+    ],
+    "source": "Kursbuch, Kapitel 2, S. 32",
+    "tags": [
+      "kapitel-2",
+      "arbeit",
+      "hoeflichkeit"
+    ],
+    "createdAt": "2026-11-25"
+  },
+  {
+    "id": "verhalten-2cdc",
+    "type": "noun",
+    "lemma": "Verhalten",
+    "rektion": [],
+    "meaningTr": "davranış",
+    "hintTr": "isim",
+    "cloze": "[Das] [Verhalten] des Kunden war sehr unhöflich.",
+    "clozeTr": "Müşterinin davranışı çok kabaydı.",
+    "examples": [
+      {
+        "de": "Wie bewertet die Expertin das Verhalten des Lesers?",
+        "tr": "Uzman okurun davranışını nasıl değerlendiriyor?",
+        "fromBook": true
+      }
+    ],
+    "grammarTr": null,
+    "note": "Fiili: sich verhalten (davranmak).",
+    "directions": [
+      "de2tr",
+      "tr2de"
+    ],
+    "source": "Kursbuch, Kapitel 2, S. 32",
+    "tags": [
+      "kapitel-2",
+      "arbeit",
+      "hoeflichkeit"
+    ],
+    "createdAt": "2026-11-25",
+    "noun": {
+      "gender": "das",
+      "plural": null
+    }
   }
 ]
