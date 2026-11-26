@@ -52808,5 +52808,51 @@
       "gender": "das",
       "plural": null
     }
+  },
+  {
+    "id": "treffen-94ae",
+    "type": "verb",
+    "lemma": "treffen",
+    "verb": {
+      "reflexive": "Akk",
+      "separablePrefix": null,
+      "praeteritum": "traf",
+      "partizip2": "getroffen",
+      "auxiliary": "haben"
+    },
+    "rektion": [
+      {
+        "preposition": "mit",
+        "case": "Dat"
+      }
+    ],
+    "meaningTr": "(biriyle) buluşmak",
+    "hintTr": "fiil, dönüşlü + mit (sözleşerek)",
+    "cloze": "Am Samstag [treffe] ich [mich] [mit] meinen alten Schulfreunden.",
+    "clozeTr": "Cumartesi eski okul arkadaşlarımla buluşuyorum.",
+    "examples": [
+      {
+        "de": "Wir treffen uns um acht vor dem Kino.",
+        "tr": "Saat sekizde sinemanın önünde buluşuyoruz.",
+        "fromBook": false
+      },
+      {
+        "de": "Im Zug habe ich zufällig einen Kollegen getroffen.",
+        "tr": "Trende tesadüfen bir iş arkadaşıma rastladım.",
+        "fromBook": false
+      }
+    ],
+    "grammarTr": "sich mit jemandem treffen = biriyle buluşmak (sözleşerek); jemanden treffen (sich yok) = birine rastlamak, karşılaşmak.",
+    "note": "Tesadüfi karşılaşmada 'sich' kullanılmaz: Ich habe ihn im Zug getroffen.",
+    "directions": [
+      "de2tr",
+      "tr2de"
+    ],
+    "source": "Kursbuch, Kapitel 2, S. 32",
+    "tags": [
+      "kapitel-2",
+      "alltag"
+    ],
+    "createdAt": "2026-11-26"
   }
 ]
